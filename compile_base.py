@@ -33,26 +33,6 @@ parser.add_argument("-k", "--keep_proto_file", action='store_true', help='Do not
 # parser.add_argument("-r", "--rpc", action='store_true', help='Generates Rpc proto.')
 args = parser.parse_args()
 
-# Add licenses
-head = '/*\n'
-head += '* Copyright 2016-2020 --=FurtiF=--.\n'
-head += '*\n'
-head += '* Licensed under the\n'
-head += '*	Educational Community License, Version 2.0 (the "License"); you may\n'
-head += '*	not use this file except in compliance with the License. You may\n'
-head += '*	obtain a copy of the License at\n'
-head += '*\n'
-head += '*	http://www.osedu.org/licenses/ECL-2.0\n'
-head += '*\n'
-head += '*	Unless required by applicable law or agreed to in writing,\n'
-head += '*	software distributed under the License is distributed on an "AS IS"\n'
-head += '*	BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express\n'
-head += '*	or implied. See the License for the specific language governing\n'
-head += '*	permissions and limitations under the License.\n'
-head += '*/\n\n'
-head += 'syntax = "proto3";\n'
-head += 'package %s;\n\n' % package_name
-
 # Set defaults
 lang = args.lang or "proto"
 out_path = args.out_path or "out/single_file/" + lang
@@ -69,6 +49,29 @@ raw_proto_file = os.path.abspath("base/" + raw_name)
 base_file = os.path.abspath("base/base.proto")
 protos_path = os.path.abspath("base")
 out_path = os.path.abspath(out_path)
+
+# Add licenses
+head = '/*\n'
+head += '* Copyright 2016-2020 --=FurtiF=--.\n'
+head += '*\n'
+head += '* Licensed under the\n'
+head += '*	Educational Community License, Version 2.0 (the "License"); you may\n'
+head += '*	not use this file except in compliance with the License. You may\n'
+head += '*	obtain a copy of the License at\n'
+head += '*\n'
+head += '*	http://www.osedu.org/licenses/ECL-2.0\n'
+head += '*\n'
+head += '*	Unless required by applicable law or agreed to in writing,\n'
+head += '*	software distributed under the License is distributed on an "AS IS"\n'
+head += '*	BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express\n'
+head += '*	or implied. See the License for the specific language governing\n'
+head += '*	permissions and limitations under the License.\n'
+head += '*\n'
+head += '*	Version: v0.' + version +'.proto.\n'
+head += '*\n'
+head += '*/\n\n'
+head += 'syntax = "proto3";\n'
+head += 'package %s;\n\n' % package_name
 
 ## Load Base
 base_enums = {}
