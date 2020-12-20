@@ -58,11 +58,18 @@ python compile_base.py -l cpp -1 -k:
 
 ### Addons as json
 
-| Additional resources   | Source                                                                               | Status 
+| Additional resources as JSON  | Source                                                                               | Status 
 |------------------------|--------------------------------------------------------------------------------------|--------
-| [v2_GAME_MASTER](https://github.com/Furtif/POGOProtos/tree/master/GM/v2_GAME_MASTER.json) | Root                                   |  OK    
-| [GAME_MASTER](https://github.com/Furtif/POGOProtos/tree/master/GM/GAME_MASTER.json) | Root                                   |  OK    
-| [ASSET_DIGEST](https://github.com/Furtif/POGOProtos/tree/master/GM/ASSET_DIGEST.json) | Root                                   |  OK    
+| [v2_GAME_MASTER JSON](https://github.com/Furtif/POGOProtos/tree/master/GM/v2_GAME_MASTER.json) | Root                                   |  OK    
+| [GAME_MASTER JSON](https://github.com/Furtif/POGOProtos/tree/master/GM/GAME_MASTER.json) | Root                                   |  OK    
+| [ASSET_DIGEST JSON](https://github.com/Furtif/POGOProtos/tree/master/GM/ASSET_DIGEST.json) | Root                                   |  OK
+
+### Addons as txt
+
+| Additional resources as TXT  | Source                                                                               | Status
+|------------------------|--------------------------------------------------------------------------------------|--------
+| [v2_GAME_MASTER TXT](https://github.com/Furtif/POGOProtos/tree/master/GM/v2_GAME_MASTER.txt) | Root                                   |  OK
+| [ASSET_DIGEST TXT](https://github.com/Furtif/POGOProtos/tree/master/GM/ASSET_DIGEST.txt) | Root                                   |  OK
 
 ### Code sources initial and credits
 - [AeonLucid](https://github.com/AeonLucid/POGOProtos)
