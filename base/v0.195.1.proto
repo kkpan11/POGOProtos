@@ -14552,7 +14552,7 @@ message PokemonProto {
 	repeated HoloTemporaryEvolutionId mega_evolved_forms = 63;
 	repeated PokemonEvolutionQuestProto evolution_quest_info = 64;
 	PokemonCreateDetail origin_detail = 66;
-	repeated fixed64 pokemon_tag_ids = 67;
+	repeated uint64 pokemon_tag_ids = 67;
 	repeated string origin_events = 68;
 	EggSlotType egg_slot_type = 69;
 	EggTelemetryProto egg_telemetry = 70;
