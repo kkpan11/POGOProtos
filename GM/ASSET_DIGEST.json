@@ -3280,6 +3280,13 @@
       "size": 664085
     },
     {
+      "assetId": "267b9ba3-7818-41e2-a6d0-3e8ed20ed849/1608570872051177",
+      "bundleName": "group_icons_bundle",
+      "version": "1608570872051177",
+      "checksum": 4039385021,
+      "size": 5506
+    },
+    {
       "assetId": "26c228cf-27ea-47cb-972b-531a9a4cc976/1584911525646035",
       "bundleName": "f_shirt_teamrocket_bundle",
       "version": "1584911525646035",
@@ -21275,6 +21282,6 @@
       "size": 290457
     }
   ],
-  "timestamp": "1608338318035625",
+  "timestamp": "1608570872051177",
   "result": "SUCCESS"
 }

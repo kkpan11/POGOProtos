@@ -3278,6 +3278,13 @@ digest {
   size: 664085
 }
 digest {
+  asset_id: "267b9ba3-7818-41e2-a6d0-3e8ed20ed849/1608570872051177"
+  bundle_name: "group_icons_bundle"
+  version: 1608570872051177
+  checksum: 4039385021
+  size: 5506
+}
+digest {
   asset_id: "26c228cf-27ea-47cb-972b-531a9a4cc976/1584911525646035"
   bundle_name: "f_shirt_teamrocket_bundle"
   version: 1584911525646035
@@ -21272,4 +21279,4 @@ digest {
   checksum: 2083115128
   size: 290457
 }
-timestamp: 1608338318035625
+timestamp: 1608570872051177
