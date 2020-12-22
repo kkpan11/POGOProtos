@@ -380,11 +380,11 @@
       "size": 331404
     },
     {
-      "assetId": "03faaaf1-c66f-4cfe-bc7c-3ad11ec85538/1584913888934379",
+      "assetId": "03faaaf1-c66f-4cfe-bc7c-3ad11ec85538/1608580436195307",
       "bundleName": "f_gloves_delibird_bundle",
-      "version": "1584913888934379",
-      "checksum": 3459142053,
-      "size": 203673
+      "version": "1608580436195307",
+      "checksum": 3540043359,
+      "size": 204174
     },
     {
       "assetId": "04035815-9094-4b38-a559-f1924bc50f1b/1584929568568675",
@@ -6578,11 +6578,11 @@
       "size": 17413
     },
     {
-      "assetId": "51a203bd-cdb5-4e6f-88aa-badb787d1d8e/1584913965181850",
+      "assetId": "51a203bd-cdb5-4e6f-88aa-badb787d1d8e/1608580432416669",
       "bundleName": "m_gloves_delibird_bundle",
-      "version": "1584913965181850",
-      "checksum": 3258272899,
-      "size": 201530
+      "version": "1608580432416669",
+      "checksum": 2415746717,
+      "size": 199562
     },
     {
       "assetId": "51afee74-19be-4f96-a278-a3d2cfd35d17/1603475036650130",
@@ -8251,11 +8251,11 @@
       "size": 682692
     },
     {
-      "assetId": "6637a6d0-a597-4b20-bb6b-74658c2cca80/1584913926791830",
+      "assetId": "6637a6d0-a597-4b20-bb6b-74658c2cca80/1608580434431155",
       "bundleName": "f_shirt_delibird_bundle",
-      "version": "1584913926791830",
-      "checksum": 258897660,
-      "size": 322503
+      "version": "1608580434431155",
+      "checksum": 513300382,
+      "size": 325492
     },
     {
       "assetId": "663c39d9-c876-413b-8953-b9a094454c46/1584901786052361",
@@ -11407,11 +11407,11 @@
       "size": 212091
     },
     {
-      "assetId": "8af70fc2-c73d-4315-b358-6df6f95d3fb1/1584914003416635",
+      "assetId": "8af70fc2-c73d-4315-b358-6df6f95d3fb1/1608580438003725",
       "bundleName": "m_shirt_delibird_bundle",
-      "version": "1584914003416635",
-      "checksum": 1050495842,
-      "size": 337320
+      "version": "1608580438003725",
+      "checksum": 1598556933,
+      "size": 339496
     },
     {
       "assetId": "8b291e3e-2a9d-4b5d-926a-ba49f59d7285/1584923165172445",
@@ -21282,6 +21282,6 @@
       "size": 290457
     }
   ],
-  "timestamp": "1608570872051177",
+  "timestamp": "1608580438003725",
   "result": "SUCCESS"
 }

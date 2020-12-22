@@ -378,11 +378,11 @@ digest {
   size: 331404
 }
 digest {
-  asset_id: "03faaaf1-c66f-4cfe-bc7c-3ad11ec85538/1584913888934379"
+  asset_id: "03faaaf1-c66f-4cfe-bc7c-3ad11ec85538/1608580436195307"
   bundle_name: "f_gloves_delibird_bundle"
-  version: 1584913888934379
-  checksum: 3459142053
-  size: 203673
+  version: 1608580436195307
+  checksum: 3540043359
+  size: 204174
 }
 digest {
   asset_id: "04035815-9094-4b38-a559-f1924bc50f1b/1584929568568675"
@@ -6576,11 +6576,11 @@ digest {
   size: 17413
 }
 digest {
-  asset_id: "51a203bd-cdb5-4e6f-88aa-badb787d1d8e/1584913965181850"
+  asset_id: "51a203bd-cdb5-4e6f-88aa-badb787d1d8e/1608580432416669"
   bundle_name: "m_gloves_delibird_bundle"
-  version: 1584913965181850
-  checksum: 3258272899
-  size: 201530
+  version: 1608580432416669
+  checksum: 2415746717
+  size: 199562
 }
 digest {
   asset_id: "51afee74-19be-4f96-a278-a3d2cfd35d17/1603475036650130"
@@ -8249,11 +8249,11 @@ digest {
   size: 682692
 }
 digest {
-  asset_id: "6637a6d0-a597-4b20-bb6b-74658c2cca80/1584913926791830"
+  asset_id: "6637a6d0-a597-4b20-bb6b-74658c2cca80/1608580434431155"
   bundle_name: "f_shirt_delibird_bundle"
-  version: 1584913926791830
-  checksum: 258897660
-  size: 322503
+  version: 1608580434431155
+  checksum: 513300382
+  size: 325492
 }
 digest {
   asset_id: "663c39d9-c876-413b-8953-b9a094454c46/1584901786052361"
@@ -11405,11 +11405,11 @@ digest {
   size: 212091
 }
 digest {
-  asset_id: "8af70fc2-c73d-4315-b358-6df6f95d3fb1/1584914003416635"
+  asset_id: "8af70fc2-c73d-4315-b358-6df6f95d3fb1/1608580438003725"
   bundle_name: "m_shirt_delibird_bundle"
-  version: 1584914003416635
-  checksum: 1050495842
-  size: 337320
+  version: 1608580438003725
+  checksum: 1598556933
+  size: 339496
 }
 digest {
   asset_id: "8b291e3e-2a9d-4b5d-926a-ba49f59d7285/1584923165172445"
@@ -21279,4 +21279,4 @@ digest {
   checksum: 2083115128
   size: 290457
 }
-timestamp: 1608570872051177
+timestamp: 1608580438003725
