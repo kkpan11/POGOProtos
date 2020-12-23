@@ -468,7 +468,7 @@ def open_proto_file(main_file, head):
                 proto_line = proto_line.replace("unset__variable_name", "UNSET")
             elif proto_name == "HoloholoClientTelemetryIds" and not operator.contains(proto_line,
                                                                                       "{") and not operator.contains(
-                    proto_line, "}") and operator.contains(proto_line, "HOLOHOLO_"):
+                proto_line, "}") and operator.contains(proto_line, "HOLOHOLO_"):
                 proto_line = proto_line.replace("HOLOHOLO_", "")
 
             ## Others conditions...
@@ -623,7 +623,7 @@ def open_proto_file(main_file, head):
         if not os.path.exists(last_files_path):
             os.makedirs(last_files_path)
 
-        head_file = head.replace('*\n* Version: 0.' + version + '\n*\n','*\n* Note: For references only.\n*\n')
+        head_file = head.replace('*\n* Version: 0.' + version + '\n*\n', '*\n* Note: For references only.\n*\n')
 
     for p in sorted(new_base_enums):
         new_base_file += new_base_enums[p] + "\n"
@@ -676,6 +676,7 @@ def add_command_for_new_proto_file(file):
     )
 
 
+print("Compile base version: " + version)
 # print("Protocol Buffers version:")
 # call(""""{0}" --version""".format(protoc_executable), shell=True)
 
