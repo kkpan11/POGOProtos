@@ -67,9 +67,7 @@ head += '*	software distributed under the License is distributed on an "AS IS"\n
 head += '*	BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express\n'
 head += '*	or implied. See the License for the specific language governing\n'
 head += '*	permissions and limitations under the License.\n'
-head += '*\n'
-head += '* Version: 0.' + version + '\n'
-head += '*\n'
+head += '*\n* Version: 0.' + version + '\n*\n'
 head += '*/\n\n'
 head += 'syntax = "proto3";\n'
 head += 'package %s;\n\n' % package_name
@@ -625,8 +623,7 @@ def open_proto_file(main_file, head):
         if not os.path.exists(last_files_path):
             os.makedirs(last_files_path)
 
-        head_file = 'syntax = "proto3";\n'
-        head_file += 'package %s;\n\n' % package_name
+        head_file = head.replace('*\n* Version: 0.' + version + '\n*\n','*\n* Note: For references only.\n*\n')
 
     for p in sorted(new_base_enums):
         new_base_file += new_base_enums[p] + "\n"
