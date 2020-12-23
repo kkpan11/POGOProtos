@@ -1,0 +1,6 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message PhotobombCreateDetail {
+	bool caught_in_photobomb = 1;
+}

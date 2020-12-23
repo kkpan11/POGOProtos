@@ -1,0 +1,6 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message WithEncounterTypeProto {
+	repeated EncounterType encounter_type = 1;
+}

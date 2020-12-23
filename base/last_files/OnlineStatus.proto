@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum OnlineStatus {
+	ONLINE_STATUS_NOT_ONLINE = 0;
+	ONLINE_STATUS_ONLINE_ELSEWHERE = 1;
+	ONLINE_STATUS_ONLINE = 2;
+}

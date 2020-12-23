@@ -1,0 +1,12 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message LimitedEditionPokemonEncounterRewardProto {
+	oneof Limit {
+		int32 lifetime_max_count = 3;
+		int32 per_competitive_combat_season_max_count = 4;
+	}
+
+	PokemonEncounterRewardProto pokemon = 1;
+	string identifier = 2;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum BadgeRank {
+	BADGE_RANK_NONE = 0;
+	BADGE_RANK_BRONZE = 1;
+	BADGE_RANK_SILVER = 2;
+	BADGE_RANK_GOLD = 3;
+	BADGE_RANK_PLATINUM = 4;
+}

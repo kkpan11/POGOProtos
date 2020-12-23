@@ -1,0 +1,22 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message LimitedPurchaseSkuRecordProto {
+	enum ChronoUnit {
+		UNSET = 0;
+		MINUTE = 1;
+		HOUR = 2;
+		DAY = 3;
+		WEEK = 4;
+		MONTH = 5;
+	}
+
+	message PurchaseProto {
+		int32 version = 1;
+		int32 num_purchases = 2;
+		int64 last_purchase_ms = 4;
+		int32 total_num_purchases = 5;
+	}
+
+	map<string, PurchaseProto> purchases = 1;
+}

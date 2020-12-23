@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum AnimationTake {
+	ANIMATION_TAKE_SINGLE = 0;
+	ANIMATION_TAKE_BRANCHING = 1;
+	ANIMATION_TAKE_SEQUENCE = 2;
+}

@@ -1,0 +1,24 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message SocialClientFeatures {
+	message CrossGameSocialClientSettingsProto {
+		enum AppLinkType {
+			NO_LINK = 0;
+			WEB_LINK = 1;
+			APP_STORE_LINK = 2;
+		}
+
+		enum FeatureType {
+			UNSET = 0;
+			NIANTIC_PROFILE = 1;
+			ONLINE_STATUS = 2;
+			FRIEND_LIST = 3;
+		}
+
+		repeated FeatureType disabled_features = 1;
+		AppLinkType app_link = 2;
+	}
+
+	CrossGameSocialClientSettingsProto cross_game_social_settings = 1;
+}

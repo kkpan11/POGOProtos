@@ -1,0 +1,10 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message UpdateProfileRequest {
+	message ProfileProto {
+		string profile_name_app_key = 1;
+	}
+
+	ProfileProto profile = 1;
+}

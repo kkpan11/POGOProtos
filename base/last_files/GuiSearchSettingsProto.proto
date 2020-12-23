@@ -1,0 +1,10 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message GuiSearchSettingsProto {
+	bool gui_search_enabled = 1;
+	repeated RecommendedSearchProto recommended_search = 2;
+	int32 max_number_recent_searches = 3;
+	int32 max_number_favorite_searches = 4;
+	int32 max_query_length = 5;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message SetLobbyVisibilityOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_NOT_LOBBY_CREATOR = 2;
+		ERROR_LOBBY_NOT_FOUND = 3;
+		ERROR_RAID_UNAVAILABLE = 4;
+	}
+
+	Result result = 1;
+	LobbyProto lobby = 2;
+}

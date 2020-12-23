@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum PoiEditImageEntrySource {
+	POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU = 0;
+	POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY = 1;
+	POI_EDIT_IMAGE_ENTRY_SOURCE_OTHER = 2;
+}

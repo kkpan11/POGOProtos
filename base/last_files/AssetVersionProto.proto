@@ -1,0 +1,12 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message AssetVersionProto {
+	message AssetVersionRequestProto {
+		string asset_id = 1;
+		fixed32 checksum = 2;
+	}
+
+	uint32 app_version = 1;
+	repeated AssetVersionRequestProto request = 2;
+}

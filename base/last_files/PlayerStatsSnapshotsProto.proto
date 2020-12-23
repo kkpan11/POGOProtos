@@ -1,0 +1,16 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message PlayerStatsSnapshotsProto {
+	message PlayerStatsSnapshotProto {
+		enum Reason {
+			UNSET = 0;
+			LEVEL_UP = 1;
+		}
+
+		Reason reason = 1;
+		PlayerStatsProto stats = 2;
+	}
+
+	repeated PlayerStatsSnapshotProto snap_shot = 1;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message ARMappingValidationStatusProto {
+	enum Status {
+		UNKNOWN = 0;
+		VALID = 1;
+		TOO_DARK = 2;
+		TOO_BLUR = 3;
+		TOO_LITTLE_MOTION = 4;
+	}
+}

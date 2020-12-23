@@ -1,0 +1,10 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message LevelUpRewardsSettingsProto {
+	int32 level = 1;
+	repeated Item items = 2;
+	repeated int32 items_count = 3;
+	repeated Item items_unlocked = 4;
+	repeated string avatar_template_ids = 5;
+}

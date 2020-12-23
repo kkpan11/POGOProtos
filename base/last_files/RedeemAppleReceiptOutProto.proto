@@ -1,0 +1,13 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message RedeemAppleReceiptOutProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		FAILURE = 2;
+	}
+
+	Status status = 1;
+	repeated string provisioned_transaction_tokens = 2;
+}

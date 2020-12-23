@@ -1,0 +1,16 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message UpdateFriendshipResponse {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_UNKNOWN = 2;
+		ERROR_NOT_FRIEND = 3;
+		ERROR_NICKNAME_WRONG_FORMAT = 4;
+		ERROR_FILTERED_NICKNAME = 5;
+		ERROR_EXCEEDED_CHANGE_LIMIT = 6;
+	}
+
+	Result result = 1;
+}

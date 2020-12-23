@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum IncidentStartContext {
+	INCIDENT_START_CONTEXT_NPC = 0;
+	INCIDENT_START_CONTEXT_POKESTOP = 1;
+	INCIDENT_START_CONTEXT_BALLOON = 2;
+}

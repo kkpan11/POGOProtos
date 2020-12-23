@@ -1,0 +1,13 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message DeepLinkingTelemetry {
+	enum LinkSource {
+		UNKNOWN = 0;
+		URL = 1;
+		NOTIFICATION = 2;
+	}
+
+	string action_name = 1;
+	LinkSource link_source = 2;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message GetWebTokenOutProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_UNKNOWN = 2;
+	}
+
+	Status status = 1;
+	string access_token = 2;
+}

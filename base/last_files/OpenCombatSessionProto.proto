@@ -1,0 +1,9 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message OpenCombatSessionProto {
+	string combat_id = 1;
+	repeated fixed64 attacking_pokemon_id = 2;
+	string combat_league_template_id = 3;
+	int64 lobby_join_time_ms = 4;
+}

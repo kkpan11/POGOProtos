@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum OnboardingPathIds {
+	ONBOARDING_PATH_IDS_V1 = 0;
+	ONBOARDING_PATH_IDS_V2 = 1;
+}

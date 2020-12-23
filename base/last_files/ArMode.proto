@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum ArMode {
+	AR_MODE_NONE = 0;
+	AR_MODE_ARSTANDARD = 1;
+	AR_MODE_ARPLUS = 2;
+}

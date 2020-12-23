@@ -1,0 +1,11 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message InventoryItemProto {
+	oneof InventoryItem {
+		HoloInventoryKeyProto deleted_item_key = 2;
+		HoloInventoryItemProto inventory_item_data = 3;
+	}
+
+	int64 modified_timestamp = 1;
+}

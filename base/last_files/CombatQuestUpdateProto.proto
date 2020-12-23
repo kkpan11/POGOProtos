@@ -1,0 +1,6 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message CombatQuestUpdateProto {
+	int32 super_effective_charged_attacks_update = 1;
+}

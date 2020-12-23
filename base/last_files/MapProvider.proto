@@ -1,0 +1,32 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message MapProvider {
+	enum MapType {
+		UNSET = 0;
+		GMM = 1;
+		OSM = 2;
+		BLANK = 3;
+		GMM_BUNDLE = 4;
+	}
+
+	oneof Settings {
+		GmmSettings gmm_settings = 4;
+		string settings_name = 5;
+	}
+
+	message BundleZoomRange {
+		int32 min_zoom = 1;
+		int32 max_zoom = 2;
+		int32 request_zoom_offset = 3;
+	}
+
+	string name = 1;
+	string base_url = 2;
+	string query_format = 3;
+	MapType map_type = 6;
+	bool hide_attribution = 7;
+	int32 min_tile_level = 8;
+	int32 max_tile_level = 9;
+	repeated BundleZoomRange bundle_zoom_range = 10;
+}

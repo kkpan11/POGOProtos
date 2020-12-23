@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message TransferPokemonToPokemonHomeProto {
+	int32 total_energy_cost = 1;
+	repeated uint64 pokemon_uuid = 2;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message BadgeData {
+	oneof Data {
+		MiniCollectionBadgeData mini_collection = 2;
+	}
+
+	HoloBadgeType badge = 1;
+}

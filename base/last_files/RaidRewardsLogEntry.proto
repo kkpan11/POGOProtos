@@ -1,0 +1,18 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message RaidRewardsLogEntry {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+	}
+
+	Result result = 1;
+	bool is_exclusive = 2;
+	repeated ItemProto items = 3;
+	repeated ItemProto default_rewards = 4;
+	int32 stardust = 5;
+	repeated LootItemProto stickers = 6;
+	bool is_mega = 7;
+	PokemonCandyRewardProto mega_resource = 8;
+}

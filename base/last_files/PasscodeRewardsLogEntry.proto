@@ -1,0 +1,13 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message PasscodeRewardsLogEntry {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+	}
+
+	Result result = 1;
+	string passcode = 2;
+	RedeemPasscodeRewardProto rewards = 3;
+}

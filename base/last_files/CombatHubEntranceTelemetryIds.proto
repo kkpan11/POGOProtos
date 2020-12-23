@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum CombatHubEntranceTelemetryIds {
+	COMBAT_HUB_ENTRANCE_TELEMETRY_IDS_UNDEFINED_EVENT = 0;
+	COMBAT_HUB_ENTRANCE_TELEMETRY_IDS_CLICKED_COMBAT_HUB_BUTTON = 1;
+}

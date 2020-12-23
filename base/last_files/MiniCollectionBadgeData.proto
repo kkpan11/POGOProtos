@@ -1,0 +1,6 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message MiniCollectionBadgeData {
+	repeated MiniCollectionBadgeEvent event = 1;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message LootItemProto {
+	oneof Type {
+		Item item = 1;
+		bool stardust = 2;
+		bool pokecoin = 3;
+		HoloPokemonId pokemon_candy = 4;
+		bool experience = 6;
+		PokemonProto pokemon_egg = 7;
+		string avatar_template_id = 8;
+		string sticker_id = 9;
+		HoloPokemonId mega_energy_pokemon_id = 10;
+		HoloPokemonId xl_candy = 11;
+	}
+
+	int32 count = 5;
+}

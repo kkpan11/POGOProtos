@@ -1,0 +1,10 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message ShoppingPageClickTelemetry {
+	ShoppingPageTelemetryIds shopping_page_click_id = 1;
+	ShoppingPageTelemetrySource shopping_page_click_source = 2;
+	string item_sku = 3;
+	bool has_item = 4;
+	string ml_bundle_tracking_id = 5;
+}

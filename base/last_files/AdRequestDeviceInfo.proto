@@ -1,0 +1,14 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message AdRequestDeviceInfo {
+	enum OperatingSystem {
+		PLATFORM_UNKNOWN = 0;
+		PLATFORM_ANDROID = 1;
+		PLATFORM_IOS = 2;
+	}
+
+	OperatingSystem operating_system = 1;
+	string device_model = 2;
+	string carrier = 3;
+}

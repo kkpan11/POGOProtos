@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message RemoveLoginActionProto {
+	IdentityProvider identity_provider = 1;
+	string auth_provider_id = 2;
+}

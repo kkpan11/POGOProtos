@@ -1,0 +1,12 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message RedeemSamsungReceiptOutProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		FAILURE = 2;
+	}
+
+	string purchase_id = 1;
+}

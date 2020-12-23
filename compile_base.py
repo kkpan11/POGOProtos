@@ -30,7 +30,7 @@ parser.add_argument("-m", "--java_multiple_files", action='store_true',
 parser.add_argument("-g", "--generate_only", action='store_true', help='Generates only proto compilable.')
 parser.add_argument("-b", "--generate_new_base", action='store_true', help='Generates new proto base refs.')
 parser.add_argument("-k", "--keep_proto_file", action='store_true', help='Do not remove .proto file after compiling.')
-# parser.add_argument("-r", "--rpc", action='store_true', help='Generates Rpc proto.')
+parser.add_argument("-gf", "--generate_proto_files", action='store_true', help='Generates base/files/*.proto.')
 args = parser.parse_args()
 
 # Set defaults
@@ -38,17 +38,18 @@ lang = args.lang or "proto"
 out_path = args.out_path or "out/single_file/" + lang
 java_multiple_files = args.java_multiple_files
 gen_only = args.generate_only
+gen_files = args.generate_proto_files
 version = args.version or "195.2"
 gen_base = args.generate_new_base
 keep_file = args.keep_proto_file
-# rpc = args.rpc
 
-# Determine where path's
-raw_name = "v0.195.2.proto"
+# Determine where path's and variables
+raw_name = "v0." + version + ".proto"
 raw_proto_file = os.path.abspath("base/" + raw_name)
 base_file = os.path.abspath("base/base.proto")
 protos_path = os.path.abspath("base")
 out_path = os.path.abspath(out_path)
+last_files_path = os.path.abspath("base/last_files")
 
 # Add licenses
 head = '/*\n'
@@ -67,7 +68,7 @@ head += '*	BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express\n
 head += '*	or implied. See the License for the specific language governing\n'
 head += '*	permissions and limitations under the License.\n'
 head += '*\n'
-head += '*	Version: v0.' + version +'.proto.\n'
+head += '* Version: v0.' + version + '.proto.\n'
 head += '*\n'
 head += '*/\n\n'
 head += 'syntax = "proto3";\n'
@@ -467,7 +468,8 @@ def open_proto_file(main_file, head):
             elif proto_name == "VariableName" and not operator.contains(proto_line, "{") and not operator.contains(
                     proto_line, "}") and operator.contains(proto_line, "unset__variable_name"):
                 proto_line = proto_line.replace("unset__variable_name", "UNSET")
-            elif proto_name == "HoloholoClientTelemetryIds" and not operator.contains(proto_line, "{") and not operator.contains(
+            elif proto_name == "HoloholoClientTelemetryIds" and not operator.contains(proto_line,
+                                                                                      "{") and not operator.contains(
                     proto_line, "}") and operator.contains(proto_line, "HOLOHOLO_"):
                 proto_line = proto_line.replace("HOLOHOLO_", "")
 
@@ -524,7 +526,7 @@ def open_proto_file(main_file, head):
                 proto_line = proto_line.replace("int32", "HoloPokemonId")
             ## others conditions
             elif operator.contains(proto_line, "Platform "):
-                 proto_line = proto_line.replace("Platform", "REF_PY_1")
+                proto_line = proto_line.replace("Platform", "REF_PY_1")
             ##
 
             messages += proto_line
@@ -614,11 +616,32 @@ def open_proto_file(main_file, head):
             new_base_data += proto_line + "\n"
 
     new_base_file = ''
+    head_file = None
+
+    if (gen_files):
+        if os.path.exists(last_files_path):
+            shutil.rmtree(last_files_path)
+
+        if not os.path.exists(last_files_path):
+            os.makedirs(last_files_path)
+
+        head_file = 'syntax = "proto3";\n'
+        head_file += 'package %s;\n\n' % package_name
 
     for p in sorted(new_base_enums):
         new_base_file += new_base_enums[p] + "\n"
+        if head_file is not None:
+            open_for_new_enum = open(last_files_path + "/" + p + '.proto', 'a')
+            open_for_new_enum.writelines(head_file)
+            open_for_new_enum.writelines(new_base_enums[p])
+            open_for_new_enum.close()
     for p in sorted(new_base_messages):
         new_base_file += new_base_messages[p] + "\n"
+        if head_file is not None:
+            open_for_new_message = open(last_files_path + "/" + p + '.proto', 'a')
+            open_for_new_message.writelines(head_file)
+            open_for_new_message.writelines(new_base_messages[p])
+            open_for_new_message.close()
 
     messages = new_base_file
     open_for_new.writelines(messages[:-1])

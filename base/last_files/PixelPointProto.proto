@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message PixelPointProto {
+	int32 pixel_x = 1;
+	int32 pixel_y = 2;
+	int32 zoom_level = 3;
+}

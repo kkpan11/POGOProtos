@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message AddLoginActionProto {
+	IdentityProvider identity_provider = 1;
+	bytes inner_message = 2;
+	string auth_provider_id = 3;
+}

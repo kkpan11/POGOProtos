@@ -1,0 +1,9 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message PokemonEvolutionQuestProto {
+	QuestProto quest_requirement = 1;
+	EvolutionQuestInfoProto quest_info = 2;
+	HoloPokemonId evolution = 3;
+	PokemonDisplayProto.Form form = 4;
+}

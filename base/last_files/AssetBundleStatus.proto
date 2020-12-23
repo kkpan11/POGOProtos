@@ -1,0 +1,9 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum AssetBundleStatus {
+	ASSET_BUNDLE_STATUS_UNLOADED = 0;
+	ASSET_BUNDLE_STATUS_LOADING = 1;
+	ASSET_BUNDLE_STATUS_LOADED = 2;
+	ASSET_BUNDLE_STATUS_FAILED = 3;
+}

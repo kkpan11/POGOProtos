@@ -1,0 +1,10 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message DeployPokemonTelemetry {
+	int32 status = 1;
+	PokemonTelemetry pokemon = 2;
+	string gym_id = 3;
+	Team team = 4;
+	int32 defender_count = 5;
+}

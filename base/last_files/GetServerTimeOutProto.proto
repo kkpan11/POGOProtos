@@ -1,0 +1,12 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message GetServerTimeOutProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+	}
+
+	Status status = 1;
+	int64 server_time_ms = 2;
+}

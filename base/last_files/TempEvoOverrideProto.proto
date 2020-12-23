@@ -1,0 +1,20 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message TempEvoOverrideProto {
+	HoloTemporaryEvolutionId temp_evo_id = 1;
+	PokemonStatsAttributesProto stats = 2;
+	float average_height_m = 3;
+	float average_weight_kg = 4;
+	HoloPokemonType type_override1 = 5;
+	HoloPokemonType type_override2 = 6;
+	float cp_multiplier_override = 7;
+	PokemonCameraAttributesProto camera = 8;
+	PokemonEncounterAttributesProto encounter = 9;
+	float model_scale_v2 = 10;
+	float model_height = 11;
+	repeated float buddy_offset_male = 12;
+	repeated float buddy_offset_female = 13;
+	repeated float buddy_portrait_offset = 14;
+	float raid_boss_distance_offset = 15;
+}

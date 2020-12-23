@@ -1,0 +1,15 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message RedeemPasscodeRewardProto {
+	repeated RedeemedItemProto items = 1;
+	repeated RedeemedAvatarItemProto avatar_items = 2;
+	repeated PokemonProto egg_pokemon = 3;
+	repeated PokemonProto pokemon = 4;
+	repeated PokeCandyProto poke_candy = 5;
+	int32 stardust = 6;
+	int32 pokecoins = 7;
+	repeated HoloBadgeType badges = 8;
+	repeated RedeemedStickerProto redeemed_stickers = 9;
+	repeated string quest_ids = 10;
+}

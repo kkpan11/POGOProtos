@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum WarnedPlayerReason {
+	WARNED_PLAYER_REASON_CHEAT_WARNING = 0;
+	WARNED_PLAYER_REASON_POST_SUSPENSION_WARNING = 1;
+}

@@ -1,0 +1,29 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message HoloInventoryItemProto {
+	oneof Type {
+		PokemonProto pokemon = 1;
+		ItemProto item = 2;
+		PokedexEntryProto pokedex_entry = 3;
+		PlayerStatsProto player_stats = 4;
+		PlayerCurrencyProto player_currency = 5;
+		PlayerCameraProto player_camera = 6;
+		InventoryUpgradesProto inventory_upgrades = 7;
+		AppliedItemsProto applied_items = 8;
+		EggIncubatorsProto egg_incubators = 9;
+		PokemonFamilyProto pokemon_family = 10;
+		QuestProto quest = 11;
+		AvatarItemProto avatar_item = 12;
+		RaidTicketsProto raid_tickets = 13;
+		QuestsProto quests = 14;
+		GiftBoxesProto gift_boxes = 15;
+		BelugaIncenseBoxProto beluga_incense = 16;
+		LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;
+		MegaEvolvePokemonSpeciesProto mega_evolve_species = 21;
+		StickerProto sticker = 22;
+		PokemonHomeProto pokemon_home = 23;
+		BadgeData badge_data = 24;
+		PlayerStatsSnapshotsProto player_stats_snapshots = 25;
+	}
+}

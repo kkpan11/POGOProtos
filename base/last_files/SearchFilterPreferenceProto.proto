@@ -1,0 +1,12 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message SearchFilterPreferenceProto {
+	message SearchFilterQueryProto {
+		string title = 1;
+		string query = 2;
+	}
+
+	repeated SearchFilterQueryProto recent_searches = 1;
+	repeated SearchFilterQueryProto favorite_searches = 2;
+}

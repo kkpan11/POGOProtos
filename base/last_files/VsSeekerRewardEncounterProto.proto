@@ -1,0 +1,6 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message VsSeekerRewardEncounterProto {
+	int32 win_index = 1;
+}

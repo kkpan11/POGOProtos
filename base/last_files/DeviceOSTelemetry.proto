@@ -1,0 +1,12 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message DeviceOSTelemetry {
+	enum OSArchitecture {
+		UNSET = 0;
+		arch32_bit = 1;
+		arch64_bit = 2;
+	}
+
+	OSArchitecture architecture = 1;
+}

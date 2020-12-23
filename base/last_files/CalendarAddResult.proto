@@ -1,0 +1,9 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum CalendarAddResult {
+	CALENDAR_ADD_RESULT_UNKNOWN = 0;
+	CALENDAR_ADD_RESULT_PERMISSION_DENIED = -2;
+	CALENDAR_ADD_RESULT_NOT_ADDED = -1;
+	CALENDAR_ADD_RESULT_ADDED = 1;
+}

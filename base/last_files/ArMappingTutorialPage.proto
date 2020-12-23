@@ -1,0 +1,6 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum ArMappingTutorialPage {
+	AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS = 0;
+}

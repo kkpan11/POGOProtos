@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum WebTelemetryIds {
+	WEB_TELEMETRY_IDS_UNDEFINED_WEB_EVENT = 0;
+	WEB_TELEMETRY_IDS_POINT_OF_INTEREST_DESCRIPTION_WEB_CLICK = 1;
+}

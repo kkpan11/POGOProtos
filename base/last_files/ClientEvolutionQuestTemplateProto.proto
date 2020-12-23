@@ -1,0 +1,10 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message ClientEvolutionQuestTemplateProto {
+	string quest_template_id = 1;
+	QuestType quest_type = 2;
+	repeated QuestGoalProto goals = 3;
+	QuestProto.Context context = 4;
+	QuestDisplayProto display = 5;
+}

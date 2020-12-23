@@ -1,0 +1,14 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message EncounterTutorialCompleteOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_INVALID_POKEMON = 2;
+	}
+
+	Result result = 1;
+	PokemonProto pokemon = 2;
+	CaptureScoreProto scores = 3;
+}

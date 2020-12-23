@@ -1,0 +1,10 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum VfxLevel {
+	VFX_LEVEL_NONE = 0;
+	VFX_LEVEL_START = 1;
+	VFX_LEVEL_NICE = 2;
+	VFX_LEVEL_GREAT = 3;
+	VFX_LEVEL_EXCELLENT = 4;
+}

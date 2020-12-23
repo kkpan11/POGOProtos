@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message MiniCollectionBadgeEvent {
+	string event_id = 1;
+	int64 completed_timestamp = 2;
+}

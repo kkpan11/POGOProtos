@@ -1,0 +1,6 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum ArToggleContext {
+	AR_TOGGLE_CONTEXT_ENCOUNTER = 0;
+}

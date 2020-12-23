@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message MegaEvolvePokemonSpeciesProto {
+	int32 energy_count = 1;
+	int32 pokemon_species_id = 2;
+}

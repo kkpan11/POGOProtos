@@ -1,0 +1,9 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message PokemonTagSettingsProto {
+	int32 min_player_level_for_pokemon_tagging = 1;
+	repeated PokemonTagColorBinding color_binding = 2;
+	int32 max_num_tags_allowed = 3;
+	int32 tag_name_character_limit = 4;
+}

@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message FormSettingsProto {
+	HoloPokemonId pokemon = 1;
+	repeated FormProto forms = 2;
+}

@@ -56,6 +56,23 @@ python compile_base.py -l cpp -1 -k:
  -                -> out/single_file/cpp/POGOProtos.Rpc.proto
 ```
 
+ Same up but others langs:
+
+```
+  python compile_base.py -l csharp -k
+  python compile_base.py -l java -k
+  python compile_base.py -l js -k
+  python compile_base.py -l python -k
+  python compile_base.py -l php -k
+  python compile_base.py -l objc -k
+  python compile_base.py -l ruby -k
+  *python compile_base.py -l swif -k
+  *python compile_base.py -l go -k
+  *python compile_base.py -l lua -k
+```
+
+_* = Needs plugins_
+
 ### Addons as json
 
 | Additional resources as JSON  | Source                                                                               | Status 

@@ -1,0 +1,15 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message GetNpcCombatRewardsOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_INVALD_NUMBER_ATTACKING_POKEMON_IDS = 2;
+	}
+
+	Result result = 1;
+	CombatRewardStatus reward_status = 2;
+	LootProto rewards = 3;
+	int32 number_rewarded_npc_battles_today = 4;
+}

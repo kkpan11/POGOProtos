@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum CombatPlayerFinishState {
+	COMBAT_PLAYER_FINISH_STATE_WINNER = 0;
+	COMBAT_PLAYER_FINISH_STATE_LOSER = 1;
+	COMBAT_PLAYER_FINISH_STATE_DRAW = 2;
+}

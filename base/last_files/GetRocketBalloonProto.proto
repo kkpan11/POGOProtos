@@ -1,0 +1,6 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message GetRocketBalloonProto {
+	Item equipped_item = 1;
+}

@@ -1,0 +1,6 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message WithSingleDayProto {
+	int64 last_window = 1;
+}

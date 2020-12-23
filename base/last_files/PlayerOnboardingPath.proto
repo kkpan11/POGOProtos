@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum PlayerOnboardingPath {
+	PLAYER_ONBOARDING_PATH_UNSET = 0;
+	PLAYER_ONBOARDING_PATH_V1 = 1;
+	PLAYER_ONBOARDING_PATH_V2 = 2;
+}

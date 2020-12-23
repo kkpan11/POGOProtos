@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message MapCompositionRoot {
+	repeated MapArea map_area = 1;
+	repeated MapProvider map_provider = 2;
+	repeated NamedMapSettings named_map_settings = 3;
+}

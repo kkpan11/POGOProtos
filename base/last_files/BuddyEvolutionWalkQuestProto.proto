@@ -1,0 +1,6 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message BuddyEvolutionWalkQuestProto {
+	float last_km_recorded = 1;
+}

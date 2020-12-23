@@ -1,0 +1,10 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message TimedGroupChallengeDefinitionProto {
+	string challenge_id = 1;
+	GroupChallengeDisplayProto display = 2;
+	int64 start_time_ms_inclusive = 3;
+	int64 end_time_ms_exclusive = 4;
+	GroupChallengeCriteriaProto challenge_criteria = 5;
+}

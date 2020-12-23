@@ -1,0 +1,63 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message QuestProto {
+	enum Context {
+		UNSET = 0;
+		STORY_QUEST = 1;
+		CHALLENGE_QUEST = 2;
+		DAILY_COIN_QUEST = 3;
+		TIMED_STORY_QUEST = 4;
+		NON_NARRATIVE_STORY_QUEST = 5;
+		LEVEL_UP_QUEST = 6;
+		TGC_TRACKING_QUEST = 7;
+		EVOLUTION_QUEST = 8;
+		TIMED_MINI_COLLECTION_QUEST = 9;
+	}
+
+	oneof Quest {
+		DailyQuestProto daily_quest = 2;
+		MultiPartQuestProto multi_part = 3;
+		CatchPokemonQuestProto catch_pokemon = 4;
+		AddFriendQuestProto add_friend = 5;
+		TradePokemonQuestProto trade_pokemon = 6;
+		DailyBuddyAffectionQuestProto daily_buddy_affection = 7;
+		QuestWalkProto quest_walk = 8;
+		EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;
+		GetStardustQuestProto get_stardust = 10;
+		MiniCollectionProto mini_collection = 11;
+		GeotargetedQuestProto geotargeted_quest = 12;
+		BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;
+	}
+
+	enum Status {
+		STATUS_UNDEFINED = 0;
+		STATUS_ACTIVE = 1;
+		STATUS_COMPLETED = 2;
+	}
+
+	QuestType quest_type = 1;
+	WithSingleDayProto with_single_day = 98;
+	DaysWithARowQuestProto days_in_arow = 99;
+	string quest_id = 100;
+	int64 quest_seed = 101;
+	Context quest_context = 102;
+	string template_id = 103;
+	int32 progress = 104;
+	QuestGoalProto goal = 105;
+	Status status = 106;
+	repeated QuestRewardProto quest_rewards = 107;
+	int64 creation_timestamp_ms = 108;
+	int64 last_update_timestamp_ms = 109;
+	int64 completion_timestamp_ms = 110;
+	string fort_id = 111;
+	bool admin_generated = 112;
+	bool stamp_count_override_enabled = 113;
+	int32 stamp_count_override = 114;
+	int64 s2_cell_id = 115;
+	int32 story_quest_template_version = 116;
+	DailyCounterProto daily_counter = 117;
+	string reward_pokemon_icon_url = 118;
+	int64 end_timestamp_ms = 119;
+	bool is_bonus_challenge = 120;
+}

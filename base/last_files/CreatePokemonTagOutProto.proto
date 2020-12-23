@@ -1,0 +1,16 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message CreatePokemonTagOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_PLAYER_LEVEL_TOO_LOW = 2;
+		TAG_ALREADY_EXISTS = 3;
+		PLAYER_HAS_MAXIMUM_NUMBER_OF_TAGS = 4;
+		TAG_NAME_CONTAINS_PROFANITY = 5;
+	}
+
+	Result result = 1;
+	PokemonTagProto created_tag = 2;
+}

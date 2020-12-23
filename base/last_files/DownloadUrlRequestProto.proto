@@ -1,0 +1,6 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message DownloadUrlRequestProto {
+	repeated string asset_id = 1;
+}

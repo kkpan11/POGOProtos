@@ -1,0 +1,9 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum CameraType {
+	CAMERA_TYPE_DEFAULT = 0;
+	CAMERA_TYPE_SHOULDER = 1;
+	CAMERA_TYPE_ENEMY_POKEMON_FOCUS = 2;
+	CAMERA_TYPE_MY_POKEMON_FOCUS = 3;
+}

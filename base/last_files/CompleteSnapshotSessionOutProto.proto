@@ -1,0 +1,13 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message CompleteSnapshotSessionOutProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_PHOTO_POKEMON_INVALID = 2;
+		ERROR_UNKNOWN = 3;
+	}
+
+	Status status = 1;
+}

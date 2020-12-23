@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message RaidCreateDetail {
+	bool is_exclusive = 1;
+	bool is_mega = 2;
+	int64 player_captured_s2_cell_id = 3;
+}

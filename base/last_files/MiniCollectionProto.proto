@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message MiniCollectionProto {
+	repeated MiniCollectionPokemon pokemon = 1;
+	bool completed = 2;
+}

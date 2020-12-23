@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message CatchPokemonQuestProto {
+	repeated HoloPokemonId unique_pokemon_id = 1;
+	fixed64 active_encounter_id = 2;
+}

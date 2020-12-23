@@ -1,0 +1,12 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message EggDistributionProto {
+	message EggDistributionEntryProto {
+		HoloPokemonClass rarity = 1;
+		HoloPokemonId pokemon_id = 2;
+		PokemonDisplayProto pokemon_display = 3;
+	}
+
+	repeated EggDistributionEntryProto egg_distribution = 1;
+}

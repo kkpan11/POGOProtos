@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum VsSeekerRewardTrack {
+	VS_SEEKER_REWARD_TRACK_FREE = 0;
+	VS_SEEKER_REWARD_TRACK_PREMIUM = 1;
+}

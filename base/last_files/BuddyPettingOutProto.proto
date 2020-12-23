@@ -1,0 +1,14 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message BuddyPettingOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_BUDDY_NOT_VALID = 2;
+	}
+
+	Result result = 1;
+	BuddyObservedData observed_data = 2;
+	BuddyStatsShownHearts.BuddyShownHeartType shown_hearts = 3;
+}

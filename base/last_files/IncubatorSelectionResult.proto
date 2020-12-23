@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum IncubatorSelectionResult {
+	INCUBATOR_SELECTION_RESULT_SELECTED = 0;
+	INCUBATOR_SELECTION_RESULT_EXIT = 1;
+}

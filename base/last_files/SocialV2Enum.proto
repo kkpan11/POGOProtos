@@ -1,0 +1,16 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message SocialV2Enum {
+	enum InvitationStatus {
+		INVITATION_STATUS_UNSET = 0;
+		INVITED = 1;
+	}
+
+	enum OnlineStatus {
+		STATUS_UNSET = 0;
+		STATUS_UNKNOWN = 1;
+		STATUS_ONLINE = 2;
+		STATUS_OFFLINE = 3;
+	}
+}

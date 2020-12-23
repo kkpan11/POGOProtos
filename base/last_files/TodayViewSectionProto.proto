@@ -1,0 +1,16 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message TodayViewSectionProto {
+	oneof Section {
+		PokecoinSectionProto pokecoin = 1;
+		GymPokemonSectionProto gym_pokemon = 2;
+		DailyStreaksProto streaks = 3;
+		EventSectionProto event = 4;
+		UpNextSectionProto up_next = 5;
+		TimedQuestSectionProto timed_quest = 6;
+		EventBannerSectionProto event_banner = 7;
+		TimedGroupChallengeSectionProto timed_group_challenge = 8;
+		MiniCollectionSectionProto mini_collection = 9;
+	}
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message CancelMatchmakingOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESSFULLY_CANCELLED = 1;
+		ERROR_ALREADY_MATCHED = 2;
+		ERROR_PLAYER_NOT_FOUND = 3;
+		ERROR_QUEUE_NOT_FOUND = 4;
+	}
+
+	Result result = 1;
+}

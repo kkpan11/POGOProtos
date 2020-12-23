@@ -1,0 +1,9 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum HoloTemporaryEvolutionId {
+	TEMP_EVOLUTION_UNSET = 0;
+	TEMP_EVOLUTION_MEGA = 1;
+	TEMP_EVOLUTION_MEGA_X = 2;
+	TEMP_EVOLUTION_MEGA_Y = 3;
+}

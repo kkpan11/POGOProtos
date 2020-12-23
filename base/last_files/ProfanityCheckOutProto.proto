@@ -1,0 +1,13 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message ProfanityCheckOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR = 2;
+	}
+
+	Result result = 1;
+	repeated int32 invalid_contents_indexes = 2;
+}

@@ -1,0 +1,6 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message CombatDefensiveInputChallengeSettings {
+	float full_rotations_for_max_score = 1;
+}

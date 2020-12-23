@@ -1,0 +1,14 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message SubmitPlayerImageVoteForPoiOutProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		POI_NOT_FOUND = 2;
+		POI_IMAGE_NOT_FOUND = 3;
+		INVALID_REQUEST = 6;
+	}
+
+	Status status = 1;
+}

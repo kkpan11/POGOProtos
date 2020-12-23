@@ -1,0 +1,17 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message BuddyFeedingOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_BUDDY_NOT_VALID = 2;
+		FAILED_INSUFFICIENT_RESOURCES = 3;
+		FAILED_INVALID_ITEM_REQUIREMENT = 4;
+		FAILED_BUDDY_STILL_FULL_FROM_POFFIN = 5;
+	}
+
+	Result result = 1;
+	BuddyObservedData observed_data = 3;
+	BuddyStatsShownHearts.BuddyShownHeartType shown_hearts = 4;
+}

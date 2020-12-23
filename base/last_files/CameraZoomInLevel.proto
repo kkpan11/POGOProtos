@@ -1,0 +1,9 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum CameraZoomInLevel {
+	CAMERA_ZOOM_IN_LEVEL_DEFAULT = 0;
+	CAMERA_ZOOM_IN_LEVEL_NICE = 1;
+	CAMERA_ZOOM_IN_LEVEL_GREAT = 2;
+	CAMERA_ZOOM_IN_LEVEL_EXCELLENT = 3;
+}

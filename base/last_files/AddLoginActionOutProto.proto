@@ -1,0 +1,14 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message AddLoginActionOutProto {
+	enum Status {
+		UNSET = 0;
+		AUTH_FAILURE = 1;
+		LOGIN_TAKEN = 2;
+	}
+
+	bool success = 1;
+	repeated LoginDetail login_detail = 2;
+	Status status = 3;
+}

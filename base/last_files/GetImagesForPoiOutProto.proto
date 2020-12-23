@@ -1,0 +1,14 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message GetImagesForPoiOutProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		POI_NOT_FOUND = 2;
+		INVALID_REQUEST = 3;
+	}
+
+	Status status = 1;
+	repeated GameClientPhotoGalleryPoiImageProto photo_gallery_poi_images = 2;
+}

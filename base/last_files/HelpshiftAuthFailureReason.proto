@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum HelpshiftAuthFailureReason {
+	HELPSHIFT_AUTH_FAILURE_REASON_AUTH_TOKEN_NOT_PROVIDED = 0;
+	HELPSHIFT_AUTH_FAILURE_REASON_INVALID_AUTH_TOKEN = 1;
+}

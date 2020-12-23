@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum SelectMode {
+	SELECT_MODE_REGULAR = 0;
+	SELECT_MODE_BELUGA = 1;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message PokemonEncounterRewardProto {
+	oneof Type {
+		HoloPokemonId pokemon_id = 1;
+		bool use_quest_pokemon_encounter_distribuition = 2;
+	}
+
+	PokemonDisplayProto pokemon_display = 3;
+	bool is_hidden_ditto = 4;
+	PokemonDisplayProto ditto_display = 5;
+}

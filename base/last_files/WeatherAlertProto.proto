@@ -1,0 +1,12 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message WeatherAlertProto {
+	enum Severity {
+		NONE = 0;
+		MODERATE = 1;
+		EXTREME = 2;
+	}
+
+	bool warn_weather = 2;
+}

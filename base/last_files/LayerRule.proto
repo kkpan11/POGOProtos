@@ -1,0 +1,28 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message LayerRule {
+	enum GmmLayerType {
+		AREA = 0;
+		ROAD = 1;
+		BUILDING = 2;
+		LINE_MESH = 3;
+	}
+
+	enum GmmRoadPriority {
+		PRIORITY_NONE = 0;
+		PRIORITY_TERMINAL = 1;
+		PRIORITY_LOCAL = 2;
+		PRIORITY_MINOR_ARTERIAL = 3;
+		PRIORITY_MAJOR_ARTERIAL = 4;
+		PRIORITY_SECONDARY_ROAD = 5;
+		PRIORITY_PRIMARY_HIGHWAY = 6;
+		PRIORITY_LIMITED_ACCESS = 7;
+		PRIORITY_CONTROLLED_ACCESS = 8;
+		PRIORITY_NON_TRAFFIC = 9;
+	}
+
+	repeated MaskedColor fill_colors = 1;
+	repeated GmmRoadPriority road_priority = 2;
+	uint32 road_attribute_bitfield = 3;
+}

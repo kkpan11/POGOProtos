@@ -1,0 +1,13 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message CompleteQuestStampCardOutProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_STILL_IN_PROGRESS = 2;
+	}
+
+	Status status = 1;
+	repeated QuestRewardProto reward = 2;
+}

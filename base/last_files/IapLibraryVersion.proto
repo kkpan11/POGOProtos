@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum IapLibraryVersion {
+	IAP_LIBRARY_VERSION_DEFAULT = 0;
+	IAP_LIBRARY_VERSION_IODINE_1_8 = 1;
+	IAP_LIBRARY_VERSION_NIA_IAP_4 = 2;
+}

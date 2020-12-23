@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum CurrencyType {
+	CURRENCY_TYPE_UNKNOWN = 0;
+	CURRENCY_TYPE_POKECOIN = 1;
+	CURRENCY_TYPE_STARDUST = 2;
+}

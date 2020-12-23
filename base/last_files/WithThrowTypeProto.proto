@@ -1,0 +1,9 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message WithThrowTypeProto {
+	oneof Throw {
+		HoloActivityType throw_type = 1;
+		bool hit = 2;
+	}
+}

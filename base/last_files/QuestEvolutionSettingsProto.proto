@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message QuestEvolutionSettingsProto {
+	bool enable_quest_evolutions = 1;
+	bool enable_walking_quest_evolutions = 2;
+}

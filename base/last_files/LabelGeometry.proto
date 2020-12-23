@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message LabelGeometry {
+	PixelPointProto point = 1;
+	int32 min_zoom = 2;
+	int32 max_zoom = 3;
+}

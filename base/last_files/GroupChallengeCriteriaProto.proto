@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message GroupChallengeCriteriaProto {
+	QuestType challenge_type = 1;
+	QuestGoalProto challenge_goal = 2;
+}

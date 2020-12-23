@@ -1,0 +1,11 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message AvatarGroupOrderSettingsProto {
+	message AvatarGroupOrderProto {
+		string name = 1;
+		int32 order = 2;
+	}
+
+	repeated AvatarGroupOrderProto group = 1;
+}

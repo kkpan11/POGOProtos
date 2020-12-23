@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message EggCreateDetail {
+	int64 hatched_time_ms = 1;
+	int64 player_hatched_s2_cell_id = 2;
+	int64 received_time_ms = 3;
+}

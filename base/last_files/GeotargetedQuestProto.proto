@@ -1,0 +1,11 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message GeotargetedQuestProto {
+	string name = 1;
+	string call_to_action_link = 2;
+	string image_url = 3;
+	double latitude = 4;
+	double longitude = 5;
+	string fort_id = 6;
+}

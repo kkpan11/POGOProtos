@@ -1,0 +1,11 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message TimedGroupChallengePlayerStatsProto {
+	message IndividualChallengeStats {
+		string challenge_id = 1;
+		int32 player_score = 2;
+	}
+
+	repeated IndividualChallengeStats challenges = 1;
+}

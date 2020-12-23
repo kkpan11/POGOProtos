@@ -1,0 +1,13 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message FetchAllNewsOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		NO_NEWS_FOUND = 2;
+	}
+
+	Result result = 1;
+	CurrentNewsProto current_news = 2;
+}

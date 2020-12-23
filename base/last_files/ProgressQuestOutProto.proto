@@ -1,0 +1,15 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message ProgressQuestOutProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_QUEST_NOT_FOUND = 2;
+		ERROR_EXCEEDED_GEOTARGETED_SUBMISSION_LIMIT = 3;
+		ERROR_VALIDATION_FAILED = 4;
+	}
+
+	Status status = 1;
+	ClientQuestProto quest = 2;
+}

@@ -1,0 +1,45 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message DeepLinkingEnumWrapperProto {
+	enum DeepLinkingActionName {
+		UNSET = 0;
+		OPEN_SHOP = 1;
+		OPEN_NEWS = 2;
+		OPEN_BATTLE_LEAGUE = 3;
+		OPEN_SETTINGS = 4;
+		OPEN_PLAYER_PROFILE = 5;
+		OPEN_BUDDY = 6;
+		OPEN_AVATAR_ITEMS = 7;
+		OPEN_QUEST_LIST = 8;
+		OPEN_POKEMON_INVENTORY = 9;
+		OPEN_NEARBY_POKEMON = 10;
+		OPEN_POKEDEX = 11;
+		OPEN_EVENTS = 12;
+		OPEN_JOURNAL = 13;
+		OPEN_TIPS = 14;
+		OPEN_ITEM_INVENTORY = 15;
+	}
+
+	enum NearbyPokemonTab {
+		NEARBY_POKEMON = 0;
+		RAIDS = 1;
+	}
+
+	enum PlayerProfileTab {
+		PROFILE = 0;
+		FRIENDS = 1;
+	}
+
+	enum PokemonInventoryTab {
+		COMBAT_PARTY = 0;
+		POKEMON = 1;
+		EGGS = 2;
+	}
+
+	enum QuestListTab {
+		TODAY_VIEW = 0;
+		FIELD_RESEARCH = 1;
+		SPECIAL_RESEARCH = 2;
+	}
+}

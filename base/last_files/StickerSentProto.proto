@@ -1,0 +1,6 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message StickerSentProto {
+	string sticker_id = 1;
+}

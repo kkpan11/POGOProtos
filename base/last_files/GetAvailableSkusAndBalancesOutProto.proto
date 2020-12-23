@@ -1,0 +1,15 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message GetAvailableSkusAndBalancesOutProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		FAILURE = 2;
+	}
+
+	Status status = 1;
+	repeated AvailableSkuProto available_sku = 2;
+	repeated CurrencyQuantityProto balance = 3;
+	string player_token = 4;
+}

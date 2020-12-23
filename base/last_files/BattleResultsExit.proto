@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum BattleResultsExit {
+	BATTLE_RESULTS_EXIT_LEAVE_GYM = 0;
+	BATTLE_RESULTS_EXIT_LEAVE_BATTLE = 1;
+	BATTLE_RESULTS_EXIT_CONTINUE_BATTLE = 2;
+}

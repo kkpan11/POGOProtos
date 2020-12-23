@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message MegaEvoInfoProto {
+	HoloPokemonId pokedex_id = 1;
+	HoloTemporaryEvolutionId temp_evo_id = 2;
+	int64 evo_expiration_time_ms = 3;
+}

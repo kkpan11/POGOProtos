@@ -1,0 +1,9 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message MapArea {
+	string description = 1;
+	int32 epoch = 2;
+	string map_provider = 3;
+	repeated BoundingRect bounding_rect = 4;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message SetPokemonTagsForPokemonProto {
+	message PokemonTagChangeProto {
+		int64 pokemon_id = 1;
+		repeated uint64 tags_to_add = 2;
+		repeated uint64 tags_to_remove = 3;
+	}
+
+	repeated PokemonTagChangeProto tag_changes = 1;
+}

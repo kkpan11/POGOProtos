@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message IsSkuAvailableProto {
+	string sku_id = 1;
+	bool verify_price = 2;
+	int32 coin_cost = 3;
+}

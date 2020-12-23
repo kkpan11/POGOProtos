@@ -1,0 +1,12 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message GameClientPhotoGalleryPoiImageProto {
+	string image_id = 1;
+	string poi_id = 2;
+	string submitter_codename = 3;
+	string image_url = 4;
+	int64 creation_timestamp_ms = 5;
+	bool has_player_voted = 6;
+	int32 num_votes_from_game = 7;
+}

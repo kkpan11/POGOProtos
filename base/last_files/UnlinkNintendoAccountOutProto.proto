@@ -1,0 +1,14 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message UnlinkNintendoAccountOutProto {
+	enum Status {
+		UNKNOWN = 0;
+		SUCCESS = 1;
+		ERROR_PLAYER_LEVEL_TOO_LOW = 2;
+		ERROR_NO_LINKED_NAID = 3;
+		ERROR_TRANSFER_IN_PROGRESS = 4;
+	}
+
+	Status status = 1;
+}

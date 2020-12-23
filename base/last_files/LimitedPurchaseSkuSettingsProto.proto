@@ -1,0 +1,10 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message LimitedPurchaseSkuSettingsProto {
+	int32 purchase_limit = 1;
+	int32 version = 2;
+	LimitedPurchaseSkuRecordProto.ChronoUnit chrono_unit = 3;
+	string loot_table_id = 4;
+	int32 reset_interval = 20;
+}

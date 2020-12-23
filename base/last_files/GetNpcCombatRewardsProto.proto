@@ -1,0 +1,10 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message GetNpcCombatRewardsProto {
+	string combat_npc_trainer_template_id = 1;
+	CombatPlayerFinishState finish_state = 2;
+	repeated fixed64 attacking_pokemon_id = 3;
+	string combat_id = 4;
+	CombatQuestUpdateProto combat_quest_update = 5;
+}

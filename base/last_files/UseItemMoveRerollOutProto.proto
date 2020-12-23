@@ -1,0 +1,21 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message UseItemMoveRerollOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		NO_POKEMON = 2;
+		NO_OTHER_MOVES = 3;
+		NO_PLAYER = 4;
+		WRONG_ITEM_TYPE = 5;
+		ITEM_NOT_IN_INVENTORY = 6;
+		INVALID_POKEMON = 7;
+		MOVE_LOCKED = 8;
+		MOVE_CANNOT_BE_REROLLED = 9;
+		INVALID_ELITE_MOVE = 10;
+	}
+
+	Result result = 1;
+	PokemonProto updated_pokemon = 2;
+}

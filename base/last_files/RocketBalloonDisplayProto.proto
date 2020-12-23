@@ -1,0 +1,12 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message RocketBalloonDisplayProto {
+	enum BalloonType {
+		ROCKET = 0;
+		ROCKET_B = 1;
+	}
+
+	BalloonType type = 1;
+	RocketBalloonIncidentDisplayProto incident_display = 2;
+}

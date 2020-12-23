@@ -1,0 +1,12 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message NianticProfileTelemetry {
+	enum NianticProfileTelemetryIds {
+		UNDEFINED = 0;
+		OPEN_MY_PROFILE = 1;
+		OPEN_FRIEND_PROFILE = 2;
+	}
+
+	NianticProfileTelemetryIds niantic_profile_telemetry_id = 1;
+}

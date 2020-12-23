@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum PushNotificationTelemetryIds {
+	PUSH_NOTIFICATION_TELEMETRY_IDS_UNDEFINED_PUSH_NOTIFICATION_EVENT = 0;
+	PUSH_NOTIFICATION_TELEMETRY_IDS_OPEN_APP = 1;
+}

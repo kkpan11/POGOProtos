@@ -1,0 +1,6 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message ClientPokestopNpcDialogueStepProto {
+	repeated ClientDialogueLineProto dialogue_line = 1;
+}

@@ -1,0 +1,6 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message DeletePokemonTagProto {
+	uint64 tag_id = 1;
+}

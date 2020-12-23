@@ -1,0 +1,9 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+message UpgradePokemonProto {
+	fixed64 pokemon_id = 1;
+	bool preview = 2;
+	uint32 number_of_upgrades = 3;
+	int32 pokemon_current_cp = 4;
+}

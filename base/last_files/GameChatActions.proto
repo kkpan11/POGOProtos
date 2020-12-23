@@ -1,0 +1,7 @@
+syntax = "proto3";
+package POGOProtos.Rpc;
+
+enum GameChatActions {
+	GAME_CHAT_ACTIONS_UNKNOWN_GAME_CHAT_ACTION = 0;
+	GAME_CHAT_ACTIONS_PROXY_CHAT_ACTION = 660000;
+}
