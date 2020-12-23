@@ -68,7 +68,7 @@ head += '*	BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express\n
 head += '*	or implied. See the License for the specific language governing\n'
 head += '*	permissions and limitations under the License.\n'
 head += '*\n'
-head += '* Version: v0.' + version + '.proto.\n'
+head += '* Version: 0.' + version + '\n'
 head += '*\n'
 head += '*/\n\n'
 head += 'syntax = "proto3";\n'
