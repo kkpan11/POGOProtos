@@ -1601,11 +1601,11 @@ digest {
   size: 9353
 }
 digest {
-  asset_id: "115dc97f-358a-4c45-8ac1-e20e4821f609/1608338318035625"
+  asset_id: "115dc97f-358a-4c45-8ac1-e20e4821f609/1608749721756066"
   bundle_name: "json_patch_i18n_russian"
-  version: 1608338318035625
-  checksum: 2236952999
-  size: 101449
+  version: 1608749721756066
+  checksum: 3354228144
+  size: 104204
 }
 digest {
   asset_id: "11616b6c-6439-4fab-868d-d6795c6e9162/1605722674181968"
@@ -2296,11 +2296,11 @@ digest {
   size: 5206
 }
 digest {
-  asset_id: "1bb14249-cfa4-44d4-a0d6-1c58e8261650/1608338297189627"
+  asset_id: "1bb14249-cfa4-44d4-a0d6-1c58e8261650/1608749703158164"
   bundle_name: "json_patch_i18n_italian"
-  version: 1608338297189627
-  checksum: 4181206198
-  size: 32035
+  version: 1608749703158164
+  checksum: 2039984222
+  size: 32163
 }
 digest {
   asset_id: "1bdc4adc-4bcb-4aac-b5bb-6dfef458409b/1584926521002640"
@@ -2343,6 +2343,13 @@ digest {
   version: 1584913254250027
   checksum: 875940033
   size: 202013
+}
+digest {
+  asset_id: "1c704cf6-72fa-4c20-b4c3-641c85f8b480/1608757098345078"
+  bundle_name: "f_hat_newyearhat2021_00_bundle_icon"
+  version: 1608757098345078
+  checksum: 1145322688
+  size: 11903
 }
 digest {
   asset_id: "1c75c0ae-206e-4a88-8fe4-03aa9b8f98c2/1584921152535033"
@@ -3278,6 +3285,13 @@ digest {
   size: 664085
 }
 digest {
+  asset_id: "266d8428-aa72-4498-ac26-9f6aeed8a70b/1608757093739860"
+  bundle_name: "m_hat_newyearhat2021_bundle"
+  version: 1608757093739860
+  checksum: 2020250351
+  size: 195208
+}
+digest {
   asset_id: "267b9ba3-7818-41e2-a6d0-3e8ed20ed849/1608570872051177"
   bundle_name: "group_icons_bundle"
   version: 1608570872051177
@@ -3681,11 +3695,11 @@ digest {
   key: "\374Q\005\356\025\014\363\231\203\303hC\353\265\235I"
 }
 digest {
-  asset_id: "2b58a4ea-6704-4b59-baa3-93d3322eb74d/1608338292940037"
+  asset_id: "2b58a4ea-6704-4b59-baa3-93d3322eb74d/1608749699101864"
   bundle_name: "json_patch_i18n_german"
-  version: 1608338292940037
-  checksum: 437170860
-  size: 30678
+  version: 1608749699101864
+  checksum: 1882004202
+  size: 30809
 }
 digest {
   asset_id: "2b62593e-546c-4844-ab6d-d5b8c0f5fbea/1606497658049797"
@@ -5034,11 +5048,11 @@ digest {
   size: 10141
 }
 digest {
-  asset_id: "3d93143b-a6da-43a5-95c4-153d6045925e/1608338309706333"
+  asset_id: "3d93143b-a6da-43a5-95c4-153d6045925e/1608749714167682"
   bundle_name: "json_patch_i18n_brazilianportuguese"
-  version: 1608338309706333
-  checksum: 1820771798
-  size: 27041
+  version: 1608749714167682
+  checksum: 265069912
+  size: 27228
 }
 digest {
   asset_id: "3da83d1a-267a-4f63-9854-420c6f75b881/1605722763517762"
@@ -5355,6 +5369,13 @@ digest {
   version: 1584926142939294
   checksum: 2714712637
   size: 385187
+}
+digest {
+  asset_id: "41d62e2b-891f-4784-a00e-35df24e88923/1608757097482078"
+  bundle_name: "m_hat_newyearhat2021_00_bundle_icon"
+  version: 1608757097482078
+  checksum: 3402380542
+  size: 11831
 }
 digest {
   asset_id: "41f9bd0d-6205-4489-adf8-a790ad664f65/1584926784677040"
@@ -5820,11 +5841,11 @@ digest {
   size: 10112
 }
 digest {
-  asset_id: "4894c86c-9a45-4814-9215-0a92968690f7/1608338280021275"
+  asset_id: "4894c86c-9a45-4814-9215-0a92968690f7/1608749686749715"
   bundle_name: "json_patch_i18n_japanese"
-  version: 1608338280021275
-  checksum: 1277361404
-  size: 27184
+  version: 1608749686749715
+  checksum: 233727543
+  size: 27299
 }
 digest {
   asset_id: "489e8bc1-e751-473f-8ff8-7729dd807d8c/1584917767023332"
@@ -6496,6 +6517,13 @@ digest {
   checksum: 4133531911
   size: 204178
   key: "b\3566\317\377\035\024I\010\224\3316RB\212\020"
+}
+digest {
+  asset_id: "50a56bb6-2e09-4b89-aa2e-d5d95d55ae71/1608757088520782"
+  bundle_name: "f_hat_newyearhat2021_bundle"
+  version: 1608757088520782
+  checksum: 2145946458
+  size: 189553
 }
 digest {
   asset_id: "50b31579-e21e-47d9-821c-3ce2eafb5772/1590599240489449"
@@ -7221,6 +7249,13 @@ digest {
   version: 1584923764380342
   checksum: 1224729239
   size: 440697
+}
+digest {
+  asset_id: "59ea2d6e-31a9-4512-ba8a-176f7fe3e2f8/1608757095363704"
+  bundle_name: "f_glasses_newyearglasses2021_00_bundle_icon"
+  version: 1608757095363704
+  checksum: 139752869
+  size: 8180
 }
 digest {
   asset_id: "59f51972-693e-4c16-869f-85519962a2a5/1608144732742546"
@@ -8001,11 +8036,11 @@ digest {
   size: 19525
 }
 digest {
-  asset_id: "636575d6-7213-4ffc-88e8-5f125e7112d6/1608338305560935"
+  asset_id: "636575d6-7213-4ffc-88e8-5f125e7112d6/1608749710487453"
   bundle_name: "json_patch_i18n_chinesetraditional"
-  version: 1608338305560935
-  checksum: 3611290058
-  size: 27859
+  version: 1608749710487453
+  checksum: 1595504619
+  size: 28007
 }
 digest {
   asset_id: "63747ce3-3770-4b98-bdfb-999dc27bc558/1605722790130702"
@@ -8766,11 +8801,11 @@ digest {
   size: 830650
 }
 digest {
-  asset_id: "6b8f3fef-4233-45f7-9395-39f56e0912e1/1608338313828551"
+  asset_id: "6b8f3fef-4233-45f7-9395-39f56e0912e1/1608749718066013"
   bundle_name: "json_patch_i18n_thai"
-  version: 1608338313828551
-  checksum: 470729966
-  size: 37320
+  version: 1608749718066013
+  checksum: 3008604414
+  size: 37498
 }
 digest {
   asset_id: "6bab0511-7fd0-4e48-851c-1ba9a8c0e2f9/1602526094676398"
@@ -13542,11 +13577,11 @@ digest {
   size: 8667
 }
 digest {
-  asset_id: "a381995c-f9ca-4de5-93db-38159a7d032c/1608338288433170"
+  asset_id: "a381995c-f9ca-4de5-93db-38159a7d032c/1608749695099153"
   bundle_name: "json_patch_i18n_spanish"
-  version: 1608338288433170
-  checksum: 3061955811
-  size: 28263
+  version: 1608749695099153
+  checksum: 1517187294
+  size: 28384
 }
 digest {
   asset_id: "a3880a65-ed02-4d13-a333-cb71a7226cb0/1608077065827435"
@@ -14089,6 +14124,13 @@ digest {
   key: "$\257\277d\243\221\036\217#\201\003BbL\350\301"
 }
 digest {
+  asset_id: "a9f26049-4062-4e68-bbfb-3255ec74d5f6/1608757091823035"
+  bundle_name: "m_glasses_newyearglasses2021_bundle"
+  version: 1608757091823035
+  checksum: 1650309656
+  size: 68642
+}
+digest {
   asset_id: "aa0e2695-052b-42d5-bf77-0459a9dac86b/1584917294339895"
   bundle_name: "m_shirt_poloshirt_bundle"
   version: 1584917294339895
@@ -14108,6 +14150,13 @@ digest {
   version: 1598559120909557
   checksum: 862914144
   size: 9356
+}
+digest {
+  asset_id: "aa2d29a6-d034-4846-a214-d35c35d22ee6/1608757096412036"
+  bundle_name: "f_glasses_newyearglasses2021_bundle"
+  version: 1608757096412036
+  checksum: 2812877704
+  size: 70429
 }
 digest {
   asset_id: "aa30eba2-d4e9-4060-907a-63fc3193de0e/1584916482363060"
@@ -16611,6 +16660,13 @@ digest {
   key: "e\267HT\302Wl{A\033\264\303\265w\362["
 }
 digest {
+  asset_id: "c8eae000-8601-4723-a436-37582156a49b/1608757099252748"
+  bundle_name: "m_glasses_newyearglasses2021_00_bundle_icon"
+  version: 1608757099252748
+  checksum: 661413059
+  size: 8884
+}
+digest {
   asset_id: "c90b25fc-ad8a-4cef-84a2-fad6e549b7e2/1606844751893683"
   bundle_name: "f_shirt_lvl50_00_bundle_icon"
   version: 1606844751893683
@@ -17007,11 +17063,11 @@ digest {
   size: 509961
 }
 digest {
-  asset_id: "cd53a84f-5c55-4563-84b3-edda474e01f1/1608338275706613"
+  asset_id: "cd53a84f-5c55-4563-84b3-edda474e01f1/1608749682542805"
   bundle_name: "json_patch_i18n_english"
-  version: 1608338275706613
-  checksum: 2681807074
-  size: 25510
+  version: 1608749682542805
+  checksum: 4169056299
+  size: 25653
 }
 digest {
   asset_id: "cd6505ba-8c14-49d2-9bb8-2b8840b60f6a/1584900513103046"
@@ -18299,11 +18355,11 @@ digest {
   size: 7554
 }
 digest {
-  asset_id: "dccbb419-951a-4bf9-8448-8a32e5bae6d1/1608338301460387"
+  asset_id: "dccbb419-951a-4bf9-8448-8a32e5bae6d1/1608749706945937"
   bundle_name: "json_patch_i18n_korean"
-  version: 1608338301460387
-  checksum: 2867748713
-  size: 26494
+  version: 1608749706945937
+  checksum: 78524298
+  size: 26654
 }
 digest {
   asset_id: "dcd89218-66fa-4ea3-a549-7d49df98b5d1/1512759924956220"
@@ -20589,11 +20645,11 @@ digest {
   size: 9420
 }
 digest {
-  asset_id: "f81c317b-b38c-454e-ac41-b716acec654f/1608338284364053"
+  asset_id: "f81c317b-b38c-454e-ac41-b716acec654f/1608749691426414"
   bundle_name: "json_patch_i18n_french"
-  version: 1608338284364053
-  checksum: 3970310101
-  size: 28568
+  version: 1608749691426414
+  checksum: 4073795223
+  size: 28659
 }
 digest {
   asset_id: "f826a71a-90f8-46c9-a731-f05a07d215ef/1584914399966786"
@@ -21279,4 +21335,4 @@ digest {
   checksum: 2083115128
   size: 290457
 }
-timestamp: 1608580438003725
+timestamp: 1608757099252748
