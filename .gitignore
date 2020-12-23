@@ -12,3 +12,4 @@ out/
 # Backup files
 *~
 raw_protos.proto
+base/last/
