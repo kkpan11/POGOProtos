@@ -643,8 +643,10 @@ def open_proto_file(main_file, head):
     ## find imports ..
     if head_file is not None:
         for p in sorted(new_base_messages):
+            yes = False
             if os.path.exists(last_files_path + "/" + p + '.proto'):
                 os.remove(last_files_path + "/" + p + '.proto')
+                yes = True
 
             open_for_new_message = open(last_files_path + "/" + p + '.proto', 'a')
             open_for_new_message.writelines(head_file)
@@ -658,7 +660,7 @@ def open_proto_file(main_file, head):
                 if message.startswith("\trepeated"):
                     file_for_includes = message.split(" ")[1].strip() + '.proto'
 
-                if os.path.exists(last_files_path + "/" + file_for_includes):
+                if yes and os.path.exists(last_files_path + "/" + file_for_includes):
                     includes += 'import "' + file_for_includes + '";\n'
 
             if includes != '':
