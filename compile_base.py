@@ -711,13 +711,8 @@ if gen_base:
 
     shutil.copy(generated_file, base_file)
 
-shutil.move(generated_file, out_path)
-
 if keep_file:
-    try:
-        shutil.move(generated_file, out_path)
-    except OSError:
-        pass
+    shutil.move(generated_file, out_path)
 
 # Add new desc version
 if not gen_only:
