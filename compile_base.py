@@ -513,7 +513,7 @@ def open_proto_file(main_file, head):
             elif operator.contains(proto_line, "int32 rarity "):
                 proto_line = proto_line.replace("int32", "HoloPokemonClass")
             elif operator.contains(proto_line, "int32 pokemon_type_id "):
-                proto_line = proto_line.replace("int32", "HoloPokemonType")
+                proto_line = proto_line.replace("int32", "HoloPokemonId")
             elif operator.contains(proto_line, "int32 pokedex_entry_id "):
                 proto_line = proto_line.replace("int32", "HoloPokemonId")
             elif operator.contains(proto_line, "int32 pokemon_family_id "):

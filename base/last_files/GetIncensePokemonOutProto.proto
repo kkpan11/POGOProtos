@@ -21,7 +21,7 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "HoloPokemonType.proto";
+import "HoloPokemonId.proto";
 import "PokemonDisplayProto.proto";
 
 message GetIncensePokemonOutProto {
@@ -32,7 +32,7 @@ message GetIncensePokemonOutProto {
 	}
 
 	Result result = 1;
-	HoloPokemonType pokemon_type_id = 2;
+	HoloPokemonId pokemon_type_id = 2;
 	double lat = 3;
 	double lng = 4;
 	string encounter_location = 5;
