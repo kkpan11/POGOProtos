@@ -3,10 +3,13 @@
 
 POGOProtos [![Build Status](https://travis-ci.org/Furtif/POGOProtos.svg?branch=master)](https://travis-ci.org/Furtif/POGOProtos) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/rocketbot) <!-- [![Maintainability](https://api.codeclimate.com/v1/badges/f4fbd03daa49a667d1b7/maintainability)](https://codeclimate.com/github/Furtif/POGOProtos/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/f4fbd03daa49a667d1b7/test_coverage)](https://codeclimate.com/github/Furtif/POGOProtos/test_coverage)-->
 ===================
-
 ![alt text][1.1] <strong><em>`The contents of this repo are a proof of concept and are for educational use only`</em></strong>![alt text][1.1]<br/>
 
+---
+
 This repository contains the [ProtoBuf](https://github.com/google/protobuf) `.proto` files needed to decode the PokémonGo RPC.
+
+---
 
 <!--
 ### ![alt text][1.1] NOTE: All content of folder ```./src/*``` except the ```./src/Rpc``` ``(obfuscated)`` folder is deprecated ![alt text][1.1]
@@ -68,7 +71,7 @@ python compile_base.py -l cpp -k:
  -                -> out/single_file/cpp/POGOProtos.Rpc.proto
 ```
 
- Same up but others langs:
+#####Same similar outputs up but others langs:
 
 ```
   python compile_base.py -l csharp -k
@@ -84,6 +87,8 @@ python compile_base.py -l cpp -k:
 ```
 
 _* = Needs plugins_
+
+---
 
 ### Initial [UpStream](https://github.com/Furtif/POGOProtos/tree/upstream)
 - [AeonLucid](https://github.com/AeonLucid/POGOProtos)
