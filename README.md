@@ -88,5 +88,5 @@ _* = Needs plugins_
 | [v2_GAME_MASTER.txt](https://github.com/Furtif/POGOProtos/tree/master/GM/v2_GAME_MASTER.txt) | Root                                   |  OK
 | [ASSET_DIGEST.txt](https://github.com/Furtif/POGOProtos/tree/master/GM/ASSET_DIGEST.txt) | Root                                   |  OK
 
-### Initial UpStream
+### Initial [upstream](https://github.com/Furtif/POGOProtos/tree/upstream)
 - [AeonLucid](https://github.com/AeonLucid/POGOProtos)
