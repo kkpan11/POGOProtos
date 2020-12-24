@@ -8941,7 +8941,7 @@ message GetIncensePokemonOutProto {
 	}
 
 	Result result = 1;
-	HoloPokemonId pokemon_type_id = 2;
+	HoloPokemonType pokemon_type_id = 2;
 	double lat = 3;
 	double lng = 4;
 	string encounter_location = 5;
