@@ -711,7 +711,7 @@ def add_command_for_new_proto_file(file):
 
 
 print("Compile base...")
-print("POGOProtos.Rpc " + version)
+print(package_name + " " + version)
 call(""""{0}" --version""".format(protoc_executable), shell=True)
 
 open_proto_file(raw_proto_file, head)
