@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "Item.proto";
+
 message EventTicketActiveTimeProto {
 	Item event_ticket = 1;
 	int64 event_start_ms = 2;

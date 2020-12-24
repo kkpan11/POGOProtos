@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "TradingProto.proto";
+
 message GetTradingOutProto {
 	enum Result {
 		UNSET = 0;

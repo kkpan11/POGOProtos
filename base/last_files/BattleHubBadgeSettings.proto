@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloBadgeType.proto";
+
 message BattleHubBadgeSettings {
 	repeated HoloBadgeType combat_hub_displayed_badges = 1;
 }

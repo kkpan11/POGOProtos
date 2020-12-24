@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BattleActionProto.proto";
+import "BattleActionProto.proto";
+
 message GymBattleAttackProto {
 	string gym_id = 1;
 	string battle_id = 2;

@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "CombatActionProto.proto";
+
 message UpdateCombatProto {
 	string combat_id = 1;
 	CombatActionProto action = 2;

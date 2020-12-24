@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PlayerAvatarProto.proto";
+import "PlayerPublicProfileProto.proto";
+import "CombatType.proto";
+
 message CombatChallengeProto {
 	enum CombatChallengeState {
 		UNSET = 0;

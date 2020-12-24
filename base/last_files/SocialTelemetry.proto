@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "SocialTelemetryIds.proto";
+
 message SocialTelemetry {
 	SocialTelemetryIds social_click_id = 1;
 	int32 pages_scrolled_in_friends_list = 2;

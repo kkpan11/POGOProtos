@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "CameraInterpolation.proto";
+import "CameraTarget.proto";
+
 message CameraSettingsProto {
 	string next_camera = 1;
 	repeated CameraInterpolation interpolation = 2;

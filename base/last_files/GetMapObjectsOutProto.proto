@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "ClientMapCellProto.proto";
+import "ClientWeatherProto.proto";
+
 message GetMapObjectsOutProto {
 	enum Status {
 		UNSET = 0;

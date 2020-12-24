@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "SouvenirTypeId.proto";
+
 message SouvenirProto {
 	message SouvenirDetails {
 		int64 time_picked_up = 1;

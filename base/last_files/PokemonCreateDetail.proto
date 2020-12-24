@@ -21,6 +21,15 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "WildCreateDetail.proto";
+import "EggCreateDetail.proto";
+import "RaidCreateDetail.proto";
+import "QuestCreateDetail.proto";
+import "VsSeekerCreateDetail.proto";
+import "InvasionCreateDetail.proto";
+import "PhotobombCreateDetail.proto";
+import "TutorialCreateDetail.proto";
+
 message PokemonCreateDetail {
 	oneof OriginDetail {
 		WildCreateDetail wild_detail = 1;

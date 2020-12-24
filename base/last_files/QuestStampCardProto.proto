@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "QuestStampProto.proto";
+
 message QuestStampCardProto {
 	repeated QuestStampProto stamp = 1;
 	int32 target = 2;

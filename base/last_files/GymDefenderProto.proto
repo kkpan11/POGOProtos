@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "MotivatedPokemonProto.proto";
+import "DeploymentTotalsProto.proto";
+import "PlayerPublicProfileProto.proto";
+
 message GymDefenderProto {
 	MotivatedPokemonProto motivated_pokemon = 1;
 	DeploymentTotalsProto deployment_totals = 2;

@@ -21,6 +21,11 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "IncidentLookupProto.proto";
+import "PokemonStaminaUpdateProto.proto";
+import "UpdateType.proto";
+import "CombatQuestUpdateProto.proto";
+
 message UpdateInvasionBattleProto {
 	enum UpdateType {
 		POKEMON_HEALTH = 0;

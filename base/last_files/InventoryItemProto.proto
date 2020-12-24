@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloInventoryKeyProto.proto";
+import "HoloInventoryItemProto.proto";
+
 message InventoryItemProto {
 	oneof InventoryItem {
 		HoloInventoryKeyProto deleted_item_key = 2;

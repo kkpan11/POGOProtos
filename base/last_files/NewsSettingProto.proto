@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "NewsProto.proto";
+
 message NewsSettingProto {
 	repeated NewsProto news_protos = 1;
 }

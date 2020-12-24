@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "Item.proto";
+import "ExclusiveTicketInfoProto.proto";
+
 message RaidTicketProto {
 	string ticket_id = 1;
 	Item item = 2;

@@ -21,6 +21,25 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "DailyQuestProto.proto";
+import "MultiPartQuestProto.proto";
+import "CatchPokemonQuestProto.proto";
+import "AddFriendQuestProto.proto";
+import "TradePokemonQuestProto.proto";
+import "DailyBuddyAffectionQuestProto.proto";
+import "QuestWalkProto.proto";
+import "EvolveIntoPokemonQuestProto.proto";
+import "GetStardustQuestProto.proto";
+import "MiniCollectionProto.proto";
+import "GeotargetedQuestProto.proto";
+import "BuddyEvolutionWalkQuestProto.proto";
+import "QuestType.proto";
+import "WithSingleDayProto.proto";
+import "DaysWithARowQuestProto.proto";
+import "QuestGoalProto.proto";
+import "QuestRewardProto.proto";
+import "DailyCounterProto.proto";
+
 message QuestProto {
 	enum Context {
 		UNSET = 0;

@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "GrapeshotAuthenticationDataProto.proto";
+import "GrapeshotAuthenticationDataProto.proto";
+
 message GrapeshotChunkDataProto {
 	string chunk_file_path = 1;
 	uint32 chunk_number = 2;

@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonDisplayProto.proto";
+
 message NearbyPokemonProto {
 	int32 pokedex_number = 1;
 	float distance_meters = 2;

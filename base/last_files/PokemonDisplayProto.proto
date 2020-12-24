@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonBadge.proto";
+import "HoloTemporaryEvolutionId.proto";
+import "HoloTemporaryEvolutionId.proto";
+
 message PokemonDisplayProto {
 	enum Alignment {
 		ALIGNMENT_UNSET = 0;

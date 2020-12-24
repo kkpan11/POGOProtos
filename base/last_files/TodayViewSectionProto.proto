@@ -21,6 +21,16 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokecoinSectionProto.proto";
+import "GymPokemonSectionProto.proto";
+import "DailyStreaksProto.proto";
+import "EventSectionProto.proto";
+import "UpNextSectionProto.proto";
+import "TimedQuestSectionProto.proto";
+import "EventBannerSectionProto.proto";
+import "TimedGroupChallengeSectionProto.proto";
+import "MiniCollectionSectionProto.proto";
+
 message TodayViewSectionProto {
 	oneof Section {
 		PokecoinSectionProto pokecoin = 1;

@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HashedKeyProto.proto";
+
 message JournalRemoveEntryProto {
 	HashedKeyProto hashed_key = 1;
 }

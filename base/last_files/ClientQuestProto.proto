@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "QuestProto.proto";
+import "QuestDisplayProto.proto";
+
 message ClientQuestProto {
 	QuestProto quest = 1;
 	QuestDisplayProto quest_display = 2;

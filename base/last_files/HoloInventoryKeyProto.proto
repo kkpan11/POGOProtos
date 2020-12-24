@@ -21,6 +21,12 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "Item.proto";
+import "HoloPokemonId.proto";
+import "HoloPokemonFamilyId.proto";
+import "QuestType.proto";
+import "HoloBadgeType.proto";
+
 message HoloInventoryKeyProto {
 	oneof Type {
 		fixed64 pokemon_id = 1;

@@ -21,6 +21,12 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloPokemonId.proto";
+import "Item.proto";
+import "Item.proto";
+import "HoloTemporaryEvolutionId.proto";
+import "EvolutionQuestInfoProto.proto";
+
 message EvolutionBranchProto {
 	HoloPokemonId evolution = 1;
 	Item evolution_item_requirement = 2;

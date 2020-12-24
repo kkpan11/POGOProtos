@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "WebTelemetryIds.proto";
+
 message WebTelemetry {
 	WebTelemetryIds web_click_ids = 1;
 	string url = 2;

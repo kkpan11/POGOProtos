@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonDisplayProto.proto";
+import "EncounterType.proto";
+
 message CompleteQuestPokemonEncounterLogEntry {
 	enum Result {
 		UNSET = 0;

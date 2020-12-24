@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "FriendshipLevelMilestone.proto";
+
 message ParticipationProto {
 	int32 individual_damage_pokeballs = 1;
 	int32 team_damage_pokeballs = 2;

@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "GameClientPhotoGalleryPoiImageProto.proto";
+
 message GetImagesForPoiOutProto {
 	enum Status {
 		UNSET = 0;

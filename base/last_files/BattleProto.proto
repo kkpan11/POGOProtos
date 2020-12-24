@@ -21,6 +21,11 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BattleParticipantProto.proto";
+import "BattleLogProto.proto";
+import "BattleParticipantProto.proto";
+import "FriendshipLevelMilestone.proto";
+
 message BattleProto {
 	int64 battle_start_ms = 1;
 	int64 battle_end_ms = 2;

@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonTagColor.proto";
+
 message PokemonTagColorBinding {
 	PokemonTagColor color = 1;
 	string hex_code = 2;

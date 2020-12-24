@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "ImageTextCreativeProto.proto";
+
 message SponsoredDetailsProto {
 	enum PromoButtonMessageType {
 		UNSET = 0;

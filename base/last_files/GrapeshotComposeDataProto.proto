@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "GrapeshotAuthenticationDataProto.proto";
+
 message GrapeshotComposeDataProto {
 	string target_file_path = 1;
 	GrapeshotAuthenticationDataProto authentication = 2;

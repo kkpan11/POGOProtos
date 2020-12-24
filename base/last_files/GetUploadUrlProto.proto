@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PlayerSubmissionTypeProto.proto";
+
 message GetUploadUrlProto {
 	string user_id = 1;
 	string game_unique_id = 2;

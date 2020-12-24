@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "Item.proto";
+
 message UseItemEncounterProto {
 	Item item = 1;
 	fixed64 encounter_id = 2;

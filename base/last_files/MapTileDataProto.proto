@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "MapTileProto.proto";
+import "MapCompositionRoot.proto";
+import "LabelTile.proto";
+
 message MapTileDataProto {
 	MapTileProto map_tile = 1;
 	MapCompositionRoot tile_data = 2;

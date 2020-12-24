@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloPokemonClass.proto";
+
 message PokemonHomeEnergyCostsProto {
 	HoloPokemonClass pokemon_class = 1;
 	int32 base = 2;

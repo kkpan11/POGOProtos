@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "InventoryUpgradeProto.proto";
+
 message InventoryUpgradesProto {
 	repeated InventoryUpgradeProto inventory_upgrade = 1;
 }

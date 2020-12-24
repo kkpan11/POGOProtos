@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "GymStatusAndDefendersProto.proto";
+import "AwardedGymBadge.proto";
+import "HoloPokemonFamilyId.proto";
+
 message GymFeedPokemonOutProto {
 	enum Result {
 		UNSET = 0;

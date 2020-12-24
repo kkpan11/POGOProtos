@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloPokemonId.proto";
+
 message RaidProto {
 	int64 raid_seed = 1;
 	int64 started_ms = 2;

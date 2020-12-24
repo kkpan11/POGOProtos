@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloPokemonId.proto";
+import "TemporaryEvolutionProto.proto";
+
 message TemporaryEvolutionSettingsProto {
 	HoloPokemonId pokemon = 1;
 	repeated TemporaryEvolutionProto temporary_evolutions = 2;

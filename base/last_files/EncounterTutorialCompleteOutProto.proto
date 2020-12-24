@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonProto.proto";
+import "CaptureScoreProto.proto";
+
 message EncounterTutorialCompleteOutProto {
 	enum Result {
 		UNSET = 0;

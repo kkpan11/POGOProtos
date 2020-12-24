@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloBadgeType.proto";
+
 message WithPvpCombatProto {
 	bool requires_win = 1;
 	repeated string combat_league_template_id = 2;

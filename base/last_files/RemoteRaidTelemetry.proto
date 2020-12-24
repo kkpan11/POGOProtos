@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "RemoteRaidTelemetryIds.proto";
+import "RemoteRaidJoinSource.proto";
+import "RemoteRaidInviteAcceptSource.proto";
+
 message RemoteRaidTelemetry {
 	RemoteRaidTelemetryIds remote_raid_telemetry_id = 1;
 	RemoteRaidJoinSource remote_raid_join_source = 2;

@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "VsSeekerAttributesProto.proto";
+import "CombatLogProto.proto";
+
 message GetVsSeekerStatusOutProto {
 	enum Result {
 		UNSET = 0;

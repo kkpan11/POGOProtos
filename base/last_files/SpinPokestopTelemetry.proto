@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokestopReward.proto";
+
 message SpinPokestopTelemetry {
 	string result = 1;
 	string fort_id = 2;

@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloPokemonId.proto";
+import "EncounterType.proto";
+
 message BuddyEncounterHelpTelemetry {
 	HoloPokemonId pokemon_id = 1;
 	int32 cp = 2;

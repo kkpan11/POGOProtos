@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "ShoppingPageScrollIds.proto";
+
 message ShoppingPageScrollTelemetry {
 	ShoppingPageScrollIds scroll_type = 1;
 	int32 scroll_row = 2;

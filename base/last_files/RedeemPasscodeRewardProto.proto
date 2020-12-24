@@ -21,6 +21,14 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "RedeemedItemProto.proto";
+import "RedeemedAvatarItemProto.proto";
+import "PokemonProto.proto";
+import "PokemonProto.proto";
+import "PokeCandyProto.proto";
+import "HoloBadgeType.proto";
+import "RedeemedStickerProto.proto";
+
 message RedeemPasscodeRewardProto {
 	repeated RedeemedItemProto items = 1;
 	repeated RedeemedAvatarItemProto avatar_items = 2;

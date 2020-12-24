@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "QuestProto.proto";
+import "QuestPokemonEncounterProto.proto";
+import "QuestStampCardProto.proto";
+
 message QuestsProto {
 	repeated QuestProto quest = 1;
 	repeated string completed_story_quest = 2;

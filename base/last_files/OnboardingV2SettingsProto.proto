@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloPokemonId.proto";
+import "HoloPokemonId.proto";
+
 message OnboardingV2SettingsProto {
 	bool enable_onboarding_v2 = 1;
 	repeated HoloPokemonId pokedex_id = 2;

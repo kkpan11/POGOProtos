@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "Item.proto";
+import "HoloPokemonId.proto";
+
 message UseItemRareCandyProto {
 	Item item = 1;
 	HoloPokemonId pokemon_id = 2;

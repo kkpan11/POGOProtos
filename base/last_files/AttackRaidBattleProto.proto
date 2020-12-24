@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BattleActionProto.proto";
+import "BattleActionProto.proto";
+import "AdTargetingInfoProto.proto";
+
 message AttackRaidBattleProto {
 	string gym_id = 1;
 	string battle_id = 2;

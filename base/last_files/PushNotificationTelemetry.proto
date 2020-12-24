@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PushNotificationTelemetryIds.proto";
+
 message PushNotificationTelemetry {
 	PushNotificationTelemetryIds notification_id = 1;
 	string category = 2;

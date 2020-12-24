@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "RaidLevel.proto";
+import "RaidLevel.proto";
+
 message RaidClientSettingsProto {
 	bool remote_raid_enabled = 1;
 	int32 max_remote_raid_passes = 2;

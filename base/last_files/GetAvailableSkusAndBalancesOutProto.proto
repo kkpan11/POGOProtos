@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "AvailableSkuProto.proto";
+import "CurrencyQuantityProto.proto";
+
 message GetAvailableSkusAndBalancesOutProto {
 	enum Status {
 		UNSET = 0;

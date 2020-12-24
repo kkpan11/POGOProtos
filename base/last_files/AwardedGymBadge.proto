@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "GymBadgeType.proto";
+import "GymBadgeStats.proto";
+import "PlayerRaidInfoProto.proto";
+
 message AwardedGymBadge {
 	string fort_id = 1;
 	GymBadgeType gym_badge_type = 2;

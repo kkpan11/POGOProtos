@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonTelemetry.proto";
+import "PokemonTelemetry.proto";
+
 message EvolvePokemonTelemetry {
 	PokemonTelemetry pokemon = 1;
 	PokemonTelemetry evolved_pokemon = 2;

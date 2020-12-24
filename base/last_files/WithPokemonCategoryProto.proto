@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloPokemonId.proto";
+
 message WithPokemonCategoryProto {
 	string category_name = 1;
 	repeated HoloPokemonId pokemon_ids = 2;

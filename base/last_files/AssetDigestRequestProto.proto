@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "Platform.proto";
+
 message AssetDigestRequestProto {
 	Platform platform = 1;
 	string device_manufacturer = 2;

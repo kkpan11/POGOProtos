@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BreadcrumbRecordProto.proto";
+
 message UpdateBreadcrumbHistoryRequestProto {
 	string session_context = 1;
 	repeated BreadcrumbRecordProto breadcrumb_history = 2;

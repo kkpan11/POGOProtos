@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "ClientPlayerProto.proto";
+
 message MarkTutorialCompleteOutProto {
 	bool success = 1;
 	ClientPlayerProto player = 2;

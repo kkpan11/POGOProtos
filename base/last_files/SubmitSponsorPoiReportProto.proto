@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "SponsorPoiInvalidReason.proto";
+
 message SubmitSponsorPoiReportProto {
 	string poi_id = 1;
 	SponsorPoiInvalidReason invalid_reason = 2;

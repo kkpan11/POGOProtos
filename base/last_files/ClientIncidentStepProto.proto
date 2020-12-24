@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "ClientInvasionBattleStepProto.proto";
+import "ClientInvasionEncounterStepProto.proto";
+import "ClientPokestopNpcDialogueStepProto.proto";
+
 message ClientIncidentStepProto {
 	oneof ClientIncidentStep {
 		ClientInvasionBattleStepProto invasion_battle = 1;

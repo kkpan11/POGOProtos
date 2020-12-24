@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "IncidentLookupProto.proto";
+
 message CompleteInvasionDialogueProto {
 	IncidentLookupProto incident_lookup = 1;
 	int32 step = 2;

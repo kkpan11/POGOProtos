@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "Item.proto";
+import "EggIncubatorType.proto";
+
 message EggIncubatorProto {
 	string item_id = 1;
 	Item item = 2;

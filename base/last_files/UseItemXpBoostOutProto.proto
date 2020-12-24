@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "AppliedItemsProto.proto";
+
 message UseItemXpBoostOutProto {
 	enum Result {
 		UNSET = 0;

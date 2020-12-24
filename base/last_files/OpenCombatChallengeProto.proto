@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "CombatType.proto";
+
 message OpenCombatChallengeProto {
 	CombatType type = 1;
 	string challenge_id = 2;

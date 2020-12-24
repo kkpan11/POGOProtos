@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "CombatPlayerFinishState.proto";
+import "LootProto.proto";
+
 message CombatLogEntry {
 	enum Result {
 		UNSET = 0;

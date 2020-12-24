@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonProto.proto";
+import "CaptureProbabilityProto.proto";
+import "Item.proto";
+
 message IncenseEncounterOutProto {
 	enum Result {
 		INCENSE_ENCOUNTER_UNKNOWN = 0;

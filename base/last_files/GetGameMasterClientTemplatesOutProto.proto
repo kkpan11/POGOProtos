@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "GameMasterClientTemplateProto.proto";
+
 message GetGameMasterClientTemplatesOutProto {
 	enum Result {
 		UNSET = 0;

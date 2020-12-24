@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonProto.proto";
+import "RaidLevel.proto";
+
 message RaidInfoProto {
 	int64 raid_seed = 1;
 	int64 raid_spawn_ms = 2;

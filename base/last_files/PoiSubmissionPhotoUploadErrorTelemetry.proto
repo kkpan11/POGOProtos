@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PoiImageType.proto";
+
 message PoiSubmissionPhotoUploadErrorTelemetry {
 	enum PoiSubmissionPhotoUploadErrorIds {
 		UNSET = 0;

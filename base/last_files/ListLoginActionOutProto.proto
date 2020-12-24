@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "LoginDetail.proto";
+
 message ListLoginActionOutProto {
 	bool success = 1;
 	repeated LoginDetail login_detail = 2;

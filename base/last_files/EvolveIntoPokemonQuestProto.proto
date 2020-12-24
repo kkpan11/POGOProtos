@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloPokemonId.proto";
+
 message EvolveIntoPokemonQuestProto {
 	repeated HoloPokemonId unique_pokemon_id = 1;
 }

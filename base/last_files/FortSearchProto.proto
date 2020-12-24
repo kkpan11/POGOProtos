@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "AdTargetingInfoProto.proto";
+
 message FortSearchProto {
 	string id = 1;
 	double player_lat_degrees = 2;

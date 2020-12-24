@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "QuestType.proto";
+
 message DailyStreaksProto {
 	message StreakProto {
 		QuestType quest_type = 1;

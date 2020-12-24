@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloPokemonType.proto";
+import "SpawnTablePokemonProto.proto";
+
 message IncenseAttributesProto {
 	int32 incense_lifetime_seconds = 1;
 	repeated HoloPokemonType pokemon_type = 2;

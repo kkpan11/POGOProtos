@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "AwardedGymBadge.proto";
+
 message ListGymBadgesOutProto {
 	repeated AwardedGymBadge gym_badge = 1;
 }

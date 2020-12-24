@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "GymEventProto.proto";
+
 message GymDisplayProto {
 	repeated GymEventProto gym_event = 1;
 	int32 total_gym_cp = 2;

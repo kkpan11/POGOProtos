@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloPokemonId.proto";
+import "PokemonDisplayProto.proto";
+
 message GetIncensePokemonOutProto {
 	enum Result {
 		INCENSE_ENCOUNTER_UNKNOWN = 0;

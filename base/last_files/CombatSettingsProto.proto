@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "CombatOffensiveInputChallengeSettings.proto";
+import "CombatDefensiveInputChallengeSettings.proto";
+
 message CombatSettingsProto {
 	float round_duration_seconds = 1;
 	float turn_duration_seconds = 2;

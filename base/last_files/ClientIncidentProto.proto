@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "ClientIncidentStepProto.proto";
+import "PokestopIncidentDisplayProto.proto";
+
 message ClientIncidentProto {
 	string incident_id = 1;
 	string fort_id = 2;

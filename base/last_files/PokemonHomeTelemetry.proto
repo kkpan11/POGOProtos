@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonHomeTelemetryIds.proto";
+
 message PokemonHomeTelemetry {
 	PokemonHomeTelemetryIds pokemon_home_click_ids = 1;
 }

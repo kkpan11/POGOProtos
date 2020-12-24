@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonDisplayProto.proto";
+import "PokemonDisplayProto.proto";
+import "MegaEvoInfoProto.proto";
+
 message PlayerFriendDisplayProto {
 	PokemonDisplayProto buddy = 1;
 	int32 buddy_display_pokemon_id = 2;

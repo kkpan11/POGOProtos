@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "LobbyProto.proto";
+
 message SetLobbyVisibilityOutProto {
 	enum Result {
 		UNSET = 0;

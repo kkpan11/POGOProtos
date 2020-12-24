@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PoiInvalidReason.proto";
+
 message SubmitPoiTakedownRequestProto {
 	string poi_id = 1;
 	PoiInvalidReason invalid_reason = 2;

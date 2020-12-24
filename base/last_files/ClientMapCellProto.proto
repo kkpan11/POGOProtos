@@ -21,6 +21,14 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonFortProto.proto";
+import "ClientSpawnPointProto.proto";
+import "WildPokemonProto.proto";
+import "PokemonSummaryFortProto.proto";
+import "ClientSpawnPointProto.proto";
+import "MapPokemonProto.proto";
+import "NearbyPokemonProto.proto";
+
 message ClientMapCellProto {
 	uint64 s2_cell_id = 1;
 	int64 as_of_time_ms = 2;

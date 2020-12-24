@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PermissionContextTelemetryIds.proto";
+import "DeviceServiceTelemetryIds.proto";
+import "PermissionFlowStepTelemetryIds.proto";
+
 message PermissionsFlowTelemetry {
 	PermissionContextTelemetryIds permission_context_telemetry_ids = 1;
 	DeviceServiceTelemetryIds device_service_telemetry_ids = 2;

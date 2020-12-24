@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "GmmSettings.proto";
+
 message NamedMapSettings {
 	string name = 1;
 	GmmSettings gmm_settings = 2;

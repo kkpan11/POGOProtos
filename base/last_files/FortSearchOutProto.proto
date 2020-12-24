@@ -21,6 +21,16 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "AwardItemProto.proto";
+import "PokemonProto.proto";
+import "AwardedGymBadge.proto";
+import "LootProto.proto";
+import "LootProto.proto";
+import "LootProto.proto";
+import "ClientQuestProto.proto";
+import "GiftBoxProto.proto";
+import "AdDetails.proto";
+
 message FortSearchOutProto {
 	enum Result {
 		NO_RESULT_SET = 0;

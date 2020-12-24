@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "RaidTelemetryIds.proto";
+
 message RaidTelemetry {
 	RaidTelemetryIds raid_telemetry_id = 1;
 	string bundle_version = 2;

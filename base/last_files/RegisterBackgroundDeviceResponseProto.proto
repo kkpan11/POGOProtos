@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BackgroundToken.proto";
+
 message RegisterBackgroundDeviceResponseProto {
 	enum Status {
 		UNSET = 0;

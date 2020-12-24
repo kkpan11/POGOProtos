@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PlayerPublicProfileProto.proto";
+import "FriendshipLevelDataProto.proto";
+
 message LeveledUpFriendsProto {
 	repeated PlayerPublicProfileProto friend_profiles = 1;
 	repeated FriendshipLevelDataProto friend_milestone_levels = 2;

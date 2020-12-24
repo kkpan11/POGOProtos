@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "RocketBalloonIncidentDisplayProto.proto";
+
 message RocketBalloonDisplayProto {
 	enum BalloonType {
 		ROCKET = 0;

@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloPokemonMovementType.proto";
+
 message PokemonEncounterAttributesProto {
 	float base_capture_rate = 1;
 	float base_flee_rate = 2;

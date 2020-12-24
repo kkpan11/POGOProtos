@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonFortProto.proto";
+import "GymMembershipProto.proto";
+
 message GymStateProto {
 	PokemonFortProto fort_map_data = 1;
 	repeated GymMembershipProto gym_membership = 2;

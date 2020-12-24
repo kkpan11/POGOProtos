@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "AvailableSubmissionsPerSubmissionType.proto";
+
 message GetAvailableSubmissionsOutProto {
 	int32 submissions_left = 1;
 	int32 min_player_level = 2;

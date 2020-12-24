@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "CaptureScoreProto.proto";
+import "HoloPokemonId.proto";
+import "PokemonDisplayProto.proto";
+
 message CatchPokemonOutProto {
 	enum CaptureReason {
 		UNSET = 0;

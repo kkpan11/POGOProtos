@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloTemporaryEvolutionId.proto";
+
 message MegaEvolvePokemonProto {
 	fixed64 pokemon_id = 1;
 	HoloTemporaryEvolutionId temp_evo_id = 2;

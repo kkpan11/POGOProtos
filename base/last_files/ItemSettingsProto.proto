@@ -21,6 +21,23 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "Item.proto";
+import "HoloItemType.proto";
+import "HoloItemCategory.proto";
+import "PokeBallAttributesProto.proto";
+import "PotionAttributesProto.proto";
+import "ReviveAttributesProto.proto";
+import "BattleAttributesProto.proto";
+import "FoodAttributesProto.proto";
+import "InventoryUpgradeAttributesProto.proto";
+import "ExperienceBoostAttributesProto.proto";
+import "IncenseAttributesProto.proto";
+import "EggIncubatorAttributesProto.proto";
+import "FortModifierAttributesProto.proto";
+import "StardustBoostAttributesProto.proto";
+import "IncidentTicketAttributesProto.proto";
+import "GlobalEventTicketAttributesProto.proto";
+
 message ItemSettingsProto {
 	Item unique_id = 1;
 	HoloItemType item_type = 2;

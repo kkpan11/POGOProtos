@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "AccountSettingsProto.proto";
+
 message SetAccountSettingsProto {
 	AccountSettingsProto settings = 1;
 }

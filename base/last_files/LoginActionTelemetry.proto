@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "LoginActionTelemetryIds.proto";
+
 message LoginActionTelemetry {
 	LoginActionTelemetryIds login_action_id = 1;
 	bool first_time = 2;

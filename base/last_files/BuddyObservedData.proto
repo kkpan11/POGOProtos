@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BuddyStats.proto";
+import "BuddyGiftProto.proto";
+import "BuddyStatsShownHearts.proto";
+
 message BuddyObservedData {
 	enum BuddyValidationResult {
 		UNSET = 0;

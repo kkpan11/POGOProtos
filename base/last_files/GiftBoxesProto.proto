@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "GiftBoxProto.proto";
+
 message GiftBoxesProto {
 	repeated GiftBoxProto gifts = 1;
 }

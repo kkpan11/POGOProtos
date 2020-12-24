@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "FriendshipLevelMilestone.proto";
+import "FriendshipLevelMilestone.proto";
+
 message FriendshipLevelDataProto {
 	int64 bucket = 1;
 	int32 points_earned_today = 2;

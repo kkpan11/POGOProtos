@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "LobbyProto.proto";
+import "BattleProto.proto";
+import "RaidInfoProto.proto";
+
 message GetRaidDetailsOutProto {
 	enum Result {
 		UNSET = 0;

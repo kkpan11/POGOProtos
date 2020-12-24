@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "Item.proto";
+
 message ClientFortModifierProto {
 	Item modifier_type = 1;
 	int64 expiration_time_ms = 2;

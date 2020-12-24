@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "AssetTelemetryIds.proto";
+
 message AssetStreamCacheCulledTelemetry {
 	AssetTelemetryIds asset_event_id = 1;
 	uint32 space_released = 2;

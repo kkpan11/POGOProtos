@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "CharacterDisplayProto.proto";
+import "InvasionFinishedDisplayProto.proto";
+import "IncidentDisplayType.proto";
+
 message PokestopIncidentDisplayProto {
 	oneof MapDisplay {
 		CharacterDisplayProto character_display = 10;

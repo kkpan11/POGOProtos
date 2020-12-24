@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonInventoryTelemetryIds.proto";
+
 message PokemonInventoryTelemetry {
 	PokemonInventoryTelemetryIds pokemon_inventory_click_ids = 1;
 	string sort_id = 2;

@@ -21,6 +21,11 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BattleLogProto.proto";
+import "PokemonInfo.proto";
+import "PokemonInfo.proto";
+import "FriendshipLevelMilestone.proto";
+
 message BattleUpdateProto {
 	BattleLogProto battle_log = 1;
 	string battle_id = 2;

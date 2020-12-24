@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "SocialPlayerSettingsProto.proto";
+
 message SaveSocialPlayerSettingsProto {
 	SocialPlayerSettingsProto settings = 1;
 }

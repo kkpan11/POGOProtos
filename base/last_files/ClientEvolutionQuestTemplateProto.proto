@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "QuestType.proto";
+import "QuestGoalProto.proto";
+import "QuestDisplayProto.proto";
+
 message ClientEvolutionQuestTemplateProto {
 	string quest_template_id = 1;
 	QuestType quest_type = 2;

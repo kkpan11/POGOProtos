@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloTemporaryEvolutionId.proto";
+
 message PokedexEntryProto {
 	message TempEvoData {
 		HoloTemporaryEvolutionId temp_evo_id = 1;

@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "IncidentDisplayType.proto";
+
 message RocketBalloonIncidentDisplayProto {
 	string incident_id = 1;
 	IncidentDisplayType incident_display_type = 2;

@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "MetricData.proto";
+
 message FrameRate {
 	MetricData sampled_frame_rate = 1;
 }

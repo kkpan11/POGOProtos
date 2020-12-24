@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "AvatarCustomizationTelemetryIds.proto";
+
 message AvatarCustomizationTelemetry {
 	AvatarCustomizationTelemetryIds avatar_customization_click_id = 1;
 	string asset_name = 2;

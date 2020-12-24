@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonTagProto.proto";
+
 message EditPokemonTagProto {
 	repeated PokemonTagProto tag_to_edit = 2;
 }

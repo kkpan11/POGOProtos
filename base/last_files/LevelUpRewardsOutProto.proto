@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "AwardItemProto.proto";
+import "Item.proto";
+
 message LevelUpRewardsOutProto {
 	enum Result {
 		UNSET = 0;

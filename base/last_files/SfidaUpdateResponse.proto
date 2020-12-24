@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "EncounterType.proto";
+
 message SfidaUpdateResponse {
 	enum Status {
 		UNSET = 0;

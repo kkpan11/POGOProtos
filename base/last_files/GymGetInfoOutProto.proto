@@ -21,6 +21,12 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "GymStatusAndDefendersProto.proto";
+import "AwardedGymBadge.proto";
+import "EventInfoProto.proto";
+import "DisplayWeatherProto.proto";
+import "SponsoredDetailsProto.proto";
+
 message GymGetInfoOutProto {
 	enum Result {
 		UNSET = 0;

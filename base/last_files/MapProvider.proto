@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "GmmSettings.proto";
+
 message MapProvider {
 	enum MapType {
 		UNSET = 0;

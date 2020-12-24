@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloPokemonId.proto";
+import "PokemonDisplayProto.proto";
+import "PokemonDisplayProto.proto";
+
 message PokemonEncounterRewardProto {
 	oneof Type {
 		HoloPokemonId pokemon_id = 1;

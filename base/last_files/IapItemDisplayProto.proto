@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloIapItemCategory.proto";
+
 message IapItemDisplayProto {
 	string sku = 1;
 	HoloIapItemCategory category = 2;

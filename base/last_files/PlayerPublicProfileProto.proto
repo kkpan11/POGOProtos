@@ -21,6 +21,12 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PlayerAvatarProto.proto";
+import "Team.proto";
+import "GymBadgeType.proto";
+import "PlayerBadgeProto.proto";
+import "TimedGroupChallengePlayerStatsProto.proto";
+
 message PlayerPublicProfileProto {
 	string name = 1;
 	int32 level = 2;

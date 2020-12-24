@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "TimedGroupChallengeDefinitionProto.proto";
+
 message GetTimedGroupChallengeOutProto {
 	enum Status {
 		UNSET = 0;

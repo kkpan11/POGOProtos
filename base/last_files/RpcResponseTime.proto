@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "Method.proto";
+
 message RpcResponseTime {
 	Method rpc_id = 1;
 	int32 count_call = 2;

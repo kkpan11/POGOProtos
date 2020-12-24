@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonGoPlusIds.proto";
+
 message PokemonGoPlusTelemetry {
 	PokemonGoPlusIds pgp_event_ids = 1;
 	int32 count = 2;

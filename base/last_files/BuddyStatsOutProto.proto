@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BuddyObservedData.proto";
+
 message BuddyStatsOutProto {
 	enum Result {
 		UNSET = 0;

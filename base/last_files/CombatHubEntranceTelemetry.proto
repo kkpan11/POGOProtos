@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "CombatHubEntranceTelemetryIds.proto";
+
 message CombatHubEntranceTelemetry {
 	CombatHubEntranceTelemetryIds combat_hub_telemetry_id = 1;
 }

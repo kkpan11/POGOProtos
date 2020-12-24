@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "QuestType.proto";
+import "QuestGoalProto.proto";
+
 message GroupChallengeCriteriaProto {
 	QuestType challenge_type = 1;
 	QuestGoalProto challenge_goal = 2;

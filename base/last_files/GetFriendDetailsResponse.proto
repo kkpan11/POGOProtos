@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "ProfileDetailsProto.proto";
+import "FriendDetailsProto.proto";
+import "PlayerLocaleProto.proto";
+
 message GetFriendDetailsResponse {
 	enum Result {
 		UNSET = 0;

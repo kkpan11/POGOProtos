@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonProto.proto";
+
 message MegaEvolvePokemonOutProto {
 	enum Result {
 		UNSET = 0;

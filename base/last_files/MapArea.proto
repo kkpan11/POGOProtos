@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BoundingRect.proto";
+
 message MapArea {
 	string description = 1;
 	int32 epoch = 2;

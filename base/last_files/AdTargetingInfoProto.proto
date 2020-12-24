@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "AdRequestDeviceInfo.proto";
+
 message AdTargetingInfoProto {
 	AdRequestDeviceInfo device_info = 1;
 }

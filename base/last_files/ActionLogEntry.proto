@@ -21,6 +21,29 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "CatchPokemonLogEntry.proto";
+import "FortSearchLogEntry.proto";
+import "BuddyPokemonLogEntry.proto";
+import "RaidRewardsLogEntry.proto";
+import "PasscodeRewardsLogEntry.proto";
+import "CompleteQuestLogEntry.proto";
+import "CompleteQuestStampCardLogEntry.proto";
+import "CompleteQuestPokemonEncounterLogEntry.proto";
+import "BelugaDailyTransferLogEntry.proto";
+import "OpenGiftLogEntry.proto";
+import "SendGiftLogEntry.proto";
+import "TradingLogEntry.proto";
+import "ShareExRaidPassLogEntry.proto";
+import "DeclineExRaidPassLogEntry.proto";
+import "FitnessRewardsLogEntry.proto";
+import "CombatLogEntry.proto";
+import "PurifyPokemonLogEntry.proto";
+import "InvasionVictoryLogEntry.proto";
+import "VsSeekerSetLogEntry.proto";
+import "VsSeekerCompleteSeasonLogEntry.proto";
+import "VsSeekerWinRewardsLogEntry.proto";
+import "BuddyConsumablesLogEntry.proto";
+
 message ActionLogEntry {
 	oneof Action {
 		CatchPokemonLogEntry catch_pokemon = 3;

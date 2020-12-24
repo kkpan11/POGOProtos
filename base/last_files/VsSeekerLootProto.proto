@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "LootItemProto.proto";
+import "VsSeekerRewardTrack.proto";
+
 message VsSeekerLootProto {
 	message RewardProto {
 		oneof RewardType {

@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "EggIncubatorProto.proto";
+
 message UseItemEggIncubatorOutProto {
 	enum Result {
 		UNSET = 0;

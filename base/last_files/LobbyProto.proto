@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BattleParticipantProto.proto";
+
 message LobbyProto {
 	repeated int32 lobby_id = 1;
 	repeated BattleParticipantProto players = 2;

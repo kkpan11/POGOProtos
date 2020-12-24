@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "LootProto.proto";
+
 message VsSeekerCompleteSeasonLogEntry {
 	enum Result {
 		UNSET = 0;

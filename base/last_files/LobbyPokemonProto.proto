@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloPokemonId.proto";
+
 message LobbyPokemonProto {
 	int64 id = 1;
 	HoloPokemonId pokedex_id = 2;

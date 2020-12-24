@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "LocationE6Proto.proto";
+
 message SubmitSponsorPoiLocationUpdateProto {
 	string poi_id = 1;
 	LocationE6Proto location = 2;

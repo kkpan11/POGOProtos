@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "RedeemPasscodeRewardProto.proto";
+
 message PasscodeRewardsLogEntry {
 	enum Result {
 		UNSET = 0;

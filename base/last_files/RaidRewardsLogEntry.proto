@@ -21,6 +21,11 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "ItemProto.proto";
+import "ItemProto.proto";
+import "LootItemProto.proto";
+import "PokemonCandyRewardProto.proto";
+
 message RaidRewardsLogEntry {
 	enum Result {
 		UNSET = 0;

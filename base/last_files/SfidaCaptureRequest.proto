@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "EncounterType.proto";
+
 message SfidaCaptureRequest {
 	string spawnpoint_id = 1;
 	int64 encounter_id = 2;

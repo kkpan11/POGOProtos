@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "MapEventsTelemetryIds.proto";
+import "Team.proto";
+
 message MapEventsTelemetry {
 	MapEventsTelemetryIds map_event_click_id = 1;
 	string fort_id = 2;

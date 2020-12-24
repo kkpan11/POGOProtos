@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloTemporaryEvolutionId.proto";
+
 message TemporaryEvolutionResourceProto {
 	HoloTemporaryEvolutionId temporary_evolution_id = 1;
 	int32 energy_count = 2;

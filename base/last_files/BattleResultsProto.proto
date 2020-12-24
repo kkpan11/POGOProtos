@@ -21,6 +21,15 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "GymStateProto.proto";
+import "BattleParticipantProto.proto";
+import "GymStatusAndDefendersProto.proto";
+import "ParticipationProto.proto";
+import "LootProto.proto";
+import "RaidEncounterProto.proto";
+import "AwardedGymBadge.proto";
+import "LootProto.proto";
+
 message BattleResultsProto {
 	GymStateProto gym_state = 1;
 	repeated BattleParticipantProto attackers = 2;

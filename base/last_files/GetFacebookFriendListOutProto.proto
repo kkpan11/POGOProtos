@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PlayerSummaryProto.proto";
+
 message GetFacebookFriendListOutProto {
 	enum Result {
 		UNSET = 0;

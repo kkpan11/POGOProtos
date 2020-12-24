@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloBadgeType.proto";
+
 message EventBadgeSettingsProto {
 	int64 valid_from_ms = 1;
 	int64 valid_to_ms = 2;

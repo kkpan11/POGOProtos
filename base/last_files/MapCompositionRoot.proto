@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "MapArea.proto";
+import "MapProvider.proto";
+import "NamedMapSettings.proto";
+
 message MapCompositionRoot {
 	repeated MapArea map_area = 1;
 	repeated MapProvider map_provider = 2;

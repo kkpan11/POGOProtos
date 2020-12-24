@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "EggIncubatorType.proto";
+
 message EggIncubatorAttributesProto {
 	EggIncubatorType incubator_type = 1;
 	int32 uses = 2;

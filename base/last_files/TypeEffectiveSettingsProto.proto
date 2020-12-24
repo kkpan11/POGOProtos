@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloPokemonType.proto";
+
 message TypeEffectiveSettingsProto {
 	repeated float attack_scalar = 1;
 	HoloPokemonType attack_type = 2;

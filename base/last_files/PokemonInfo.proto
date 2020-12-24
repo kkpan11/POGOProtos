@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonProto.proto";
+
 message PokemonInfo {
 	PokemonProto pokemon = 1;
 	int32 current_health = 2;

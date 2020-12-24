@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "DailyCounterProto.proto";
+
 message BuddyPokemonProto {
 	fixed64 buddy_pokemon_id = 1;
 	double start_km_walked = 2;

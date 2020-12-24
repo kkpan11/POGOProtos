@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "CrossGameSocialSettingsProto.proto";
+
 message SocialClientGlobalSettings {
 	message CrossGameSocialSettingsProto {
 		bool niantic_profile_codename_opt_out_enabled = 1;

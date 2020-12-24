@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "LootItemProto.proto";
+
 message LootProto {
 	repeated LootItemProto loot_item = 1;
 }

@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "GeotargetedQuestValidation.proto";
+
 message ProgressQuestProto {
 	oneof Validation {
 		GeotargetedQuestValidation geotargeted_quest_validation = 3;

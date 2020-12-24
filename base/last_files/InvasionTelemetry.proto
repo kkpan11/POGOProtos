@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "InvasionTelemetryIds.proto";
+
 message InvasionTelemetry {
 	InvasionTelemetryIds invasion_telemetry_id = 1;
 	EnumWrapper.InvasionCharacter npc_id = 2;

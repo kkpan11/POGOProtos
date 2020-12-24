@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "NotificationState.proto";
+
 message UpdateNotificationProto {
 	repeated string notification_ids = 1;
 	repeated int64 create_timestamp_ms = 2;

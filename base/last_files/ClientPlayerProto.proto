@@ -21,6 +21,24 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "Team.proto";
+import "TutorialCompletion.proto";
+import "PlayerAvatarProto.proto";
+import "DailyBonusProto.proto";
+import "EquippedBadgeProto.proto";
+import "ContactSettingsProto.proto";
+import "CurrencyQuantityProto.proto";
+import "BuddyPokemonProto.proto";
+import "PlayerAvatarProto.proto";
+import "SocialPlayerSettingsProto.proto";
+import "CombatPlayerPreferencesProto.proto";
+import "TeamChangeInfoProto.proto";
+import "HoloPokemonId.proto";
+import "CombatLogProto.proto";
+import "BuddyObservedData.proto";
+import "PlayerPreferencesProto.proto";
+import "EventTicketActiveTimeProto.proto";
+
 message ClientPlayerProto {
 	int64 creation_time_ms = 1;
 	string name = 2;

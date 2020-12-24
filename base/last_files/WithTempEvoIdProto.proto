@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloTemporaryEvolutionId.proto";
+
 message WithTempEvoIdProto {
 	repeated HoloTemporaryEvolutionId mega_form = 1;
 }

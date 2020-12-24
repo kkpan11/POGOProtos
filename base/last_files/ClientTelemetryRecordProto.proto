@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "ClientTelemetryCommonFilterProto.proto";
+
 message ClientTelemetryRecordProto {
 	string record_id = 1;
 	bytes encoded_message = 2;

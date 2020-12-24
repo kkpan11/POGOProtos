@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "IncomingFriendInviteProto.proto";
+import "PlayerSummaryProto.proto";
+
 message IncomingFriendInviteDisplayProto {
 	IncomingFriendInviteProto invite = 1;
 	PlayerSummaryProto player = 2;

@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloPokemonType.proto";
+
 message CombatTypeProto {
 	HoloPokemonType type = 1;
 	float nice_level_threshold = 2;

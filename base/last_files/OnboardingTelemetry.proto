@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "OnboardingPathIds.proto";
+import "OnboardingEventIds.proto";
+import "OnboardingArStatus.proto";
+
 message OnboardingTelemetry {
 	OnboardingPathIds onboarding_path = 1;
 	OnboardingEventIds event_id = 2;

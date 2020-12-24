@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "SocialClientFeatures.proto";
+import "SocialClientGlobalSettings.proto";
+
 message GetClientFeatureFlagsResponse {
 	SocialClientFeatures feature_flags = 1;
 	SocialClientGlobalSettings global_settings = 2;

@@ -21,6 +21,11 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BattleParticipantProto.proto";
+import "BattleResultsProto.proto";
+import "BattleParticipantProto.proto";
+import "LeveledUpFriendsProto.proto";
+
 message BattleActionProto {
 	enum ActionType {
 		UNSET = 0;

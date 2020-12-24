@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonTagProto.proto";
+
 message GetPokemonTagsOutProto {
 	enum Result {
 		UNSET = 0;

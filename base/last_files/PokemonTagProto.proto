@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonTagColor.proto";
+
 message PokemonTagProto {
 	uint64 id = 1;
 	string name = 2;

@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "EquippedBadgeProto.proto";
+
 message EquipBadgeOutProto {
 	enum Result {
 		UNSET = 0;

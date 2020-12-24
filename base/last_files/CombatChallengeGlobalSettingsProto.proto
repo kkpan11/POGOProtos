@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "FriendshipLevelMilestone.proto";
+
 message CombatChallengeGlobalSettingsProto {
 	FriendshipLevelMilestone distance_check_override_friendship_level = 1;
 	int32 get_combat_challenge_polling_interval_sec = 2;

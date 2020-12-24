@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BattlePartyTelemetryIds.proto";
+
 message BattlePartyTelemetry {
 	BattlePartyTelemetryIds battle_party_click_id = 1;
 	int32 battle_party_count = 2;

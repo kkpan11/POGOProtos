@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BattleHubSection.proto";
+
 message BattleHubOrderSettings {
 	message SectionGroup {
 		repeated BattleHubSection section = 1;

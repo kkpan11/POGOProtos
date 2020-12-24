@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "ShoppingPageTelemetryIds.proto";
+
 message ShoppingPageTelemetry {
 	ShoppingPageTelemetryIds shopping_page_click_id = 1;
 }

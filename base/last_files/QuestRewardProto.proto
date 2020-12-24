@@ -21,6 +21,14 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "ItemRewardProto.proto";
+import "PokemonCandyRewardProto.proto";
+import "PokemonEncounterRewardProto.proto";
+import "PokemonCandyRewardProto.proto";
+import "StickerRewardProto.proto";
+import "PokemonCandyRewardProto.proto";
+import "ITEM.proto";
+
 message QuestRewardProto {
 	oneof Reward {
 		int32 exp = 2;

@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PlayerAvatarProto.proto";
+
 message InvasionNpcDisplaySettingsProto {
 	string trainer_name = 1;
 	PlayerAvatarProto avatar = 2;

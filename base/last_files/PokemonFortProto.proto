@@ -21,6 +21,17 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "Team.proto";
+import "HoloPokemonId.proto";
+import "FortType.proto";
+import "Item.proto";
+import "MapPokemonProto.proto";
+import "PokemonDisplayProto.proto";
+import "RaidInfoProto.proto";
+import "GymDisplayProto.proto";
+import "PokestopIncidentDisplayProto.proto";
+import "PokestopIncidentDisplayProto.proto";
+
 message PokemonFortProto {
 	string fort_id = 1;
 	int64 last_modified_ms = 2;

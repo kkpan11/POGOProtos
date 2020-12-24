@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "CombatPlayerFinishState.proto";
+
 message VsSeekerBattleResult {
 	CombatPlayerFinishState battle_result = 1;
 	bool rewards_claimed = 2;

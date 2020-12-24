@@ -21,6 +21,38 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "WithPokemonTypeProto.proto";
+import "WithPokemonCategoryProto.proto";
+import "WithWeatherBoostProto.proto";
+import "WithDailyCaptureBonusProto.proto";
+import "WithDailySpinBonusProto.proto";
+import "WithWinRaidStatusProto.proto";
+import "WithRaidLevelProto.proto";
+import "WithThrowTypeProto.proto";
+import "WithWinGymBattleStatusProto.proto";
+import "WithSuperEffectiveChargeMoveProto.proto";
+import "WithItemProto.proto";
+import "WithUniquePokestopProto.proto";
+import "WithQuestContextProto.proto";
+import "WithBadgeTypeProto.proto";
+import "WithPlayerLevelProto.proto";
+import "WithWinBattleStatusProto.proto";
+import "WithUniquePokemonProto.proto";
+import "WithNpcCombatProto.proto";
+import "WithPvpCombatProto.proto";
+import "WithLocationProto.proto";
+import "WithDistanceProto.proto";
+import "WithInvasionCharacterProto.proto";
+import "WithPokemonAlignmentProto.proto";
+import "WithBuddyProto.proto";
+import "WithDailyBuddyAffectionProto.proto";
+import "WithPokemonLevelProto.proto";
+import "WithMaxCpProto.proto";
+import "WithTempEvoIdProto.proto";
+import "WithGblRankProto.proto";
+import "WithEncounterTypeProto.proto";
+import "WithCombatTypeProto.proto";
+
 message QuestConditionProto {
 	oneof Condition {
 		WithPokemonTypeProto with_pokemon_type = 2;

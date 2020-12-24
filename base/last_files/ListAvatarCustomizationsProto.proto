@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PlayerAvatarType.proto";
+
 message ListAvatarCustomizationsProto {
 	enum Filter {
 		UNSET = 0;

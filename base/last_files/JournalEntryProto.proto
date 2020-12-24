@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "JournalAddEntryProto.proto";
+import "JournalReadEntryProto.proto";
+import "JournalRemoveEntryProto.proto";
+
 message JournalEntryProto {
 	oneof Subentry {
 		JournalAddEntryProto add_entry = 1;

@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "RecommendedSearchProto.proto";
+
 message GuiSearchSettingsProto {
 	bool gui_search_enabled = 1;
 	repeated RecommendedSearchProto recommended_search = 2;

@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "ShareExRaidPassResult.proto";
+import "FriendshipLevelDataProto.proto";
+import "PlayerPublicProfileProto.proto";
+
 message ShareExRaidPassOutProto {
 	ShareExRaidPassResult result = 1;
 	FriendshipLevelDataProto updated_friendship_data = 2;

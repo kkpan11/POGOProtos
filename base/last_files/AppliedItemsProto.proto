@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "AppliedItemProto.proto";
+
 message AppliedItemsProto {
 	repeated AppliedItemProto item = 4;
 }

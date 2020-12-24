@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "Item.proto";
+
 message GetRocketBalloonProto {
 	Item equipped_item = 1;
 }

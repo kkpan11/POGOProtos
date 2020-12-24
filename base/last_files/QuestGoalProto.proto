@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "QuestConditionProto.proto";
+
 message QuestGoalProto {
 	repeated QuestConditionProto condition = 1;
 	int32 target = 2;

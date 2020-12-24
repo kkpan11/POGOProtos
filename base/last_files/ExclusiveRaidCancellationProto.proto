@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "LootItemProto.proto";
+
 message ExclusiveRaidCancellationProto {
 	string fort_id = 1;
 	int64 start_time_ms = 2;

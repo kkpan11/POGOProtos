@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "LayerRule.proto";
+
 message GmmSettings {
 	repeated LayerRule layer_rules = 1;
 }

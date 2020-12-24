@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "AdventureSyncSettingsProto.proto";
+
 message GetAdventureSyncSettingsResponseProto {
 	enum Status {
 		UNSET = 0;

@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "VsSeekerRewardTrack.proto";
+
 message ActivateVsSeekerProto {
 	VsSeekerRewardTrack reward_track = 1;
 }

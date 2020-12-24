@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "StickerSentProto.proto";
+
 message GiftBoxDetailsProto {
 	uint64 giftbox_id = 1;
 	string sender_id = 2;

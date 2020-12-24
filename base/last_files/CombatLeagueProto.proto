@@ -21,6 +21,17 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "WithPokemonCpLimitProto.proto";
+import "WithPokemonTypeProto.proto";
+import "WithPokemonCategoryProto.proto";
+import "HoloPokemonId.proto";
+import "WithPlayerLevelProto.proto";
+import "WithPokemonCpLimitProto.proto";
+import "WithPokemonTypeProto.proto";
+import "WithPokemonCategoryProto.proto";
+import "HoloPokemonId.proto";
+import "HoloBadgeType.proto";
+
 message CombatLeagueProto {
 	enum ConditionType {
 		UNSET = 0;

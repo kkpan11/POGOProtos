@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "RaidLevel.proto";
+
 message WithRaidLevelProto {
 	repeated RaidLevel raid_level = 1;
 }

@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "QuestProto.proto";
+import "EvolutionQuestInfoProto.proto";
+import "HoloPokemonId.proto";
+
 message PokemonEvolutionQuestProto {
 	QuestProto quest_requirement = 1;
 	EvolutionQuestInfoProto quest_info = 2;

@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "DeviceServiceTelemetryIds.proto";
+
 message DeviceServiceToggleTelemetry {
 	DeviceServiceTelemetryIds device_service_telemetry_id = 1;
 	bool was_enabled = 2;

@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "InventoryDeltaProto.proto";
+
 message GetHoloholoInventoryOutProto {
 	bool success = 1;
 	InventoryDeltaProto inventory_delta = 2;

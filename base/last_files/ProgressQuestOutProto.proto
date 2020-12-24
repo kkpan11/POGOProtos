@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "ClientQuestProto.proto";
+
 message ProgressQuestOutProto {
 	enum Status {
 		UNSET = 0;

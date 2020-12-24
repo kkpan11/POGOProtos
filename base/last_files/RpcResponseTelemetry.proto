@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "RpcResponseTime.proto";
+
 message RpcResponseTelemetry {
 	float window_duration = 1;
 	repeated RpcResponseTime response_timings = 2;

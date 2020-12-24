@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BattleActionProto.proto";
+
 message BattleLogProto {
 	enum BattleType {
 		BATTLE_TYPE_UNSET = 0;

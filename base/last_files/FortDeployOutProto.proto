@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "FortDetailsOutProto.proto";
+import "PokemonProto.proto";
+import "GymStateProto.proto";
+
 message FortDeployOutProto {
 	enum Result {
 		NO_RESULT_SET = 0;

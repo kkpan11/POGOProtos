@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "GroupChallengeDisplayProto.proto";
+import "GroupChallengeCriteriaProto.proto";
+
 message TimedGroupChallengeDefinitionProto {
 	string challenge_id = 1;
 	GroupChallengeDisplayProto display = 2;

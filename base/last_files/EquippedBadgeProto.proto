@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloBadgeType.proto";
+
 message EquippedBadgeProto {
 	HoloBadgeType equipped_badge = 1;
 	int32 level = 2;

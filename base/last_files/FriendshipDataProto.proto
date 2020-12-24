@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "FriendshipLevelDataProto.proto";
+import "GiftBoxDetailsProto.proto";
+
 message FriendshipDataProto {
 	FriendshipLevelDataProto friendship_level_data = 1;
 	repeated GiftBoxDetailsProto giftbox_details = 2;

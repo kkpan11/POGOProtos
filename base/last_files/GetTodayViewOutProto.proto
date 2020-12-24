@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "TodayViewProto.proto";
+
 message GetTodayViewOutProto {
 	enum Status {
 		UNSET = 0;

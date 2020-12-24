@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "SouvenirProto.proto";
+import "LootProto.proto";
+
 message BuddyGiftProto {
 	SouvenirProto souvenir = 1;
 	LootProto loot_proto = 2;

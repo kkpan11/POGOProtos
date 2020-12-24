@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloBadgeType.proto";
+import "PlayerCombatStatsProto.proto";
+
 message PlayerStatsProto {
 	int32 level = 1;
 	int64 experience = 2;

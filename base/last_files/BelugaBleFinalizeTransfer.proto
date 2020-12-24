@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BelugaBleTransferCompleteProto.proto";
+
 message BelugaBleFinalizeTransfer {
 	BelugaBleTransferCompleteProto beluga_transfer_complete = 1;
 	bytes server_signature = 2;

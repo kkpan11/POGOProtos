@@ -21,6 +21,11 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BuddyGiftProto.proto";
+import "PokemonDisplayProto.proto";
+import "HoloPokemonId.proto";
+import "Item.proto";
+
 message BuddyDataProto {
 	message BuddyStoredStats {
 		int64 window = 1;

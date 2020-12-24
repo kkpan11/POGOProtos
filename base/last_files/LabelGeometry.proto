@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PixelPointProto.proto";
+
 message LabelGeometry {
 	PixelPointProto point = 1;
 	int32 min_zoom = 2;

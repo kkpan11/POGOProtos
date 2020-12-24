@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PlayerPublicProfileProto.proto";
+import "CombatPlayerPreferencesProto.proto";
+
 message CombatPlayerProfileProto {
 	message Location {
 		double lat_degree = 1;

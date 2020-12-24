@@ -21,6 +21,12 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "RangeProto.proto";
+import "PokemonEncounterRewardProto.proto";
+import "LimitedEditionPokemonEncounterRewardProto.proto";
+import "LimitedEditionPokemonEncounterRewardProto.proto";
+import "VsSeekerRewardTrack.proto";
+
 message VsSeekerPokemonRewardsProto {
 	message OverrideIvRangeProto {
 		oneof OverrideType {

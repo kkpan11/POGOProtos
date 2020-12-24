@@ -21,6 +21,11 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "CurrencyQuantityProto.proto";
+import "CurrencyQuantityProto.proto";
+import "GameItemContentProto.proto";
+import "SkuPresentationProto.proto";
+
 message AvailableSkuProto {
 	string id = 1;
 	bool is_third_party_vendor_item = 2;

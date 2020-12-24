@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonTagColorBinding.proto";
+
 message PokemonTagSettingsProto {
 	int32 min_player_level_for_pokemon_tagging = 1;
 	repeated PokemonTagColorBinding color_binding = 2;

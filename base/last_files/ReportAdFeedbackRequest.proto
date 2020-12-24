@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "AdFeedbackComplaintReason.proto";
+import "AdFeedbackNotInterestedReason.proto";
+import "AdFeedbackLikeReason.proto";
+
 message ReportAdFeedbackRequest {
 	oneof Feedback {
 		AdFeedbackComplaintReason complaint_reason = 5;

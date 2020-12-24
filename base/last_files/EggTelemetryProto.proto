@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "EggSlotType.proto";
+
 message EggTelemetryProto {
 	string egg_loot_table_id = 1;
 	EggSlotType original_egg_slot_type = 2;

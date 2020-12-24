@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "QuestRewardProto.proto";
+
 message CompleteQuestStampCardLogEntry {
 	enum Result {
 		UNSET = 0;

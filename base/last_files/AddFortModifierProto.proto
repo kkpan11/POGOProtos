@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "Item.proto";
+
 message AddFortModifierProto {
 	Item modifier_type = 1;
 	string fort_id = 2;

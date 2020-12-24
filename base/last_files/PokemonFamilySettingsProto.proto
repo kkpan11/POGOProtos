@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloPokemonFamilyId.proto";
+import "HoloPokemonId.proto";
+
 message PokemonFamilySettingsProto {
 	HoloPokemonFamilyId family_id = 1;
 	int32 candy_per_xl_candy = 2;

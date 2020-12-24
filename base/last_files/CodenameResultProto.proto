@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "ClientPlayerProto.proto";
+
 message CodenameResultProto {
 	enum Status {
 		UNSET = 0;

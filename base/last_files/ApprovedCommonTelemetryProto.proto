@@ -21,6 +21,15 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "CommonTelemetryBootTime.proto";
+import "CommonTelemetryShopClick.proto";
+import "CommonTelemetryShopView.proto";
+import "PoiSubmissionTelemetry.proto";
+import "PoiSubmissionPhotoUploadErrorTelemetry.proto";
+import "CommonTelemetryLogIn.proto";
+import "ServerRecordMetadata.proto";
+import "ClientTelemetryCommonFilterProto.proto";
+
 message ApprovedCommonTelemetryProto {
 	oneof TelemetryData {
 		CommonTelemetryBootTime boot_time = 1;

@@ -21,6 +21,11 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonProto.proto";
+import "PokemonProto.proto";
+import "LootProto.proto";
+import "LootProto.proto";
+
 message TradingLogEntry {
 	enum Result {
 		UNSET = 0;

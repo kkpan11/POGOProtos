@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "Team.proto";
+
 message SetPlayerTeamProto {
 	Team team = 1;
 }

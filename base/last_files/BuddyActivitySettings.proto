@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BuddyActivity.proto";
+import "BuddyActivityCategory.proto";
+
 message BuddyActivitySettings {
 	BuddyActivity activity = 1;
 	BuddyActivityCategory activity_category = 2;

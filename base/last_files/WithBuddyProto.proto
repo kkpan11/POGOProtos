@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BuddyLevel.proto";
+
 message WithBuddyProto {
 	BuddyLevel min_buddy_level = 1;
 	bool must_be_on_map = 2;

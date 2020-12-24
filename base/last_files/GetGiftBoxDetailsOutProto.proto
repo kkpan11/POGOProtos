@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "GiftBoxDetailsProto.proto";
+
 message GetGiftBoxDetailsOutProto {
 	enum Result {
 		UNSET = 0;

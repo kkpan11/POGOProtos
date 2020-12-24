@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "TutorialCompletion.proto";
+
 message MarkTutorialCompleteProto {
 	repeated TutorialCompletion tutorial_complete = 1;
 	bool send_marketing_emails = 2;

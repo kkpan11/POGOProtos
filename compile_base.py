@@ -640,6 +640,33 @@ def open_proto_file(main_file, head):
             open_for_new_message.writelines(new_base_messages[p])
             open_for_new_message.close()
 
+    ## find imports ..
+    if head_file is not None:
+        for p in sorted(new_base_messages):
+            if os.path.exists(last_files_path + "/" + p + '.proto'):
+                os.remove(last_files_path + "/" + p + '.proto')
+
+            open_for_new_message = open(last_files_path + "/" + p + '.proto', 'a')
+            open_for_new_message.writelines(head_file)
+            includes = ''
+
+            for message in new_base_messages[p].split("\n"):
+                if message.startswith("message") or message.startswith("enum") or message.startswith("}"):
+                    continue
+                file_for_includes = message.split(" ")[0].strip() + '.proto'
+
+                if message.startswith("\trepeated"):
+                    file_for_includes = message.split(" ")[1].strip() + '.proto'
+
+                if os.path.exists(last_files_path + "/" + file_for_includes):
+                    includes += 'import "' + file_for_includes + '";\n'
+
+            if includes != '':
+                open_for_new_message.writelines(includes + '\n')
+
+            open_for_new_message.writelines(new_base_messages[p])
+            open_for_new_message.close()
+
     messages = new_base_file
     open_for_new.writelines(messages[:-1])
     open_for_new.close()

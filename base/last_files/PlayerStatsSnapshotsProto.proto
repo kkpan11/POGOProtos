@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PlayerStatsProto.proto";
+
 message PlayerStatsSnapshotsProto {
 	message PlayerStatsSnapshotProto {
 		enum Reason {

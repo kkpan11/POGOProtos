@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "HoloItemEffect.proto";
+
 message PokeBallAttributesProto {
 	HoloItemEffect item_effect = 1;
 	float capture_multi = 2;

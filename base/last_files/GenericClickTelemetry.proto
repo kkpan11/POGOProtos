@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "GenericClickTelemetryIds.proto";
+
 message GenericClickTelemetry {
 	GenericClickTelemetryIds generic_click_id = 1;
 }

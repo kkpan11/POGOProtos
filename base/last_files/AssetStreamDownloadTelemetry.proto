@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "AssetTelemetryIds.proto";
+
 message AssetStreamDownloadTelemetry {
 	AssetTelemetryIds asset_event_id = 1;
 	string url = 2;

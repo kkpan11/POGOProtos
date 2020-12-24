@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "BattleProto.proto";
+
 message StartRaidBattleOutProto {
 	enum Result {
 		UNSET = 0;

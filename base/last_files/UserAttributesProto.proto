@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "Team.proto";
+
 message UserAttributesProto {
 	int32 level = 1;
 	int64 xp_percentage = 2;

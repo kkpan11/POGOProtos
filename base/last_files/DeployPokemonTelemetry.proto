@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonTelemetry.proto";
+import "Team.proto";
+
 message DeployPokemonTelemetry {
 	int32 status = 1;
 	PokemonTelemetry pokemon = 2;

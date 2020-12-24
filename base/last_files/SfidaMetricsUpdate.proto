@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "UpdateType.proto";
+import "SfidaMetrics.proto";
+
 message SfidaMetricsUpdate {
 	enum UpdateType {
 		UNSET = 0;

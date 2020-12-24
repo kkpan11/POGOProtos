@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "PokemonEncounterRewardProto.proto";
+
 message LimitedEditionPokemonEncounterRewardProto {
 	oneof Limit {
 		int32 lifetime_max_count = 3;

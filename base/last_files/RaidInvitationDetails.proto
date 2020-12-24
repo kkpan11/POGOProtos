@@ -21,6 +21,12 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "RaidLevel.proto";
+import "HoloPokemonId.proto";
+import "PlayerAvatarProto.proto";
+import "Team.proto";
+import "HoloTemporaryEvolutionId.proto";
+
 message RaidInvitationDetails {
 	string gym_id = 1;
 	repeated int32 lobby_id = 2;

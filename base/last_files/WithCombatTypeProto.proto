@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "CombatType.proto";
+
 message WithCombatTypeProto {
 	repeated CombatType combat_type = 1;
 }

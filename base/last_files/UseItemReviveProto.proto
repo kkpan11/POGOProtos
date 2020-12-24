@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "Item.proto";
+
 message UseItemReviveProto {
 	Item item = 1;
 	fixed64 pokemon_id = 2;

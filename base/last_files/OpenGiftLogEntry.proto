@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "LootProto.proto";
+import "PokemonProto.proto";
+
 message OpenGiftLogEntry {
 	enum Result {
 		UNSET = 0;
