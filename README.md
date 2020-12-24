@@ -61,7 +61,7 @@ This is an example of how the generated code will be organized:
  * _Note: the *.desc file is auto created in this function_
 
 ```
-python compile_base.py -l cpp -1 -k:
+python compile_base.py -l cpp -k:
  - v0.195.2.proto -> out/single_file/cpp/POGOProtos.Rpc.desc
  -                -> out/single_file/cpp/POGOProtos.Rpc.pb.cc
  -                -> out/single_file/cpp/POGOProtos.Rpc.pb.h
