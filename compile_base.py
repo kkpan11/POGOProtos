@@ -676,9 +676,9 @@ def add_command_for_new_proto_file(file):
     )
 
 
-print("Compile base version: " + version)
-# print("Protocol Buffers version:")
-# call(""""{0}" --version""".format(protoc_executable), shell=True)
+print("Compile base...")
+print("version: " + version)
+call(""""{0}" --version""".format(protoc_executable), shell=True)
 
 open_proto_file(raw_proto_file, head)
 generated_file = raw_proto_file.replace(raw_name, input_file)
