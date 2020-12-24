@@ -66,9 +66,9 @@ python compile_base.py -l cpp -1 -k:
   python compile_base.py -l php -k
   python compile_base.py -l objc -k
   python compile_base.py -l ruby -k
-  *python compile_base.py -l swif -k
-  *python compile_base.py -l go -k
-  *python compile_base.py -l lua -k
+  * python compile_base.py -l swif -k
+  * python compile_base.py -l go -k
+  * python compile_base.py -l lua -k
 ```
 
 _* = Needs plugins_
