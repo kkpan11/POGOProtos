@@ -23,7 +23,6 @@ package POGOProtos.Rpc;
 
 import "PokemonBadge.proto";
 import "HoloTemporaryEvolutionId.proto";
-import "HoloTemporaryEvolutionId.proto";
 
 message PokemonDisplayProto {
 	enum Alignment {

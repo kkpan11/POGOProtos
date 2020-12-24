@@ -22,7 +22,6 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 import "ClientQuestProto.proto";
-import "ClientQuestProto.proto";
 
 message GetNewQuestsOutProto {
 	enum Status {

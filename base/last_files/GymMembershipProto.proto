@@ -23,7 +23,6 @@ package POGOProtos.Rpc;
 
 import "PokemonProto.proto";
 import "PlayerPublicProfileProto.proto";
-import "PokemonProto.proto";
 
 message GymMembershipProto {
 	PokemonProto pokemon = 1;

@@ -23,7 +23,6 @@ package POGOProtos.Rpc;
 
 import "HoloPokemonId.proto";
 import "PokemonDisplayProto.proto";
-import "PokemonDisplayProto.proto";
 
 message PokemonEncounterRewardProto {
 	oneof Type {

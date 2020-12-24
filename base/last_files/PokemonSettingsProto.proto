@@ -23,24 +23,16 @@ package POGOProtos.Rpc;
 
 import "HoloPokemonId.proto";
 import "HoloPokemonType.proto";
-import "HoloPokemonType.proto";
 import "PokemonCameraAttributesProto.proto";
 import "PokemonEncounterAttributesProto.proto";
 import "PokemonStatsAttributesProto.proto";
 import "HoloPokemonMove.proto";
-import "HoloPokemonMove.proto";
-import "HoloPokemonId.proto";
 import "HoloPokemonClass.proto";
-import "HoloPokemonId.proto";
 import "HoloPokemonFamilyId.proto";
 import "EvolutionBranchProto.proto";
-import "HoloPokemonMove.proto";
-import "HoloPokemonMove.proto";
 import "PokemonThirdMoveAttributesProto.proto";
 import "AnimationOverrideProto.proto";
 import "ShadowAttributesProto.proto";
-import "HoloPokemonMove.proto";
-import "HoloPokemonMove.proto";
 import "TempEvoOverrideProto.proto";
 
 message PokemonSettingsProto {

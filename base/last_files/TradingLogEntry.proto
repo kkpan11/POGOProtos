@@ -22,8 +22,6 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 import "PokemonProto.proto";
-import "PokemonProto.proto";
-import "LootProto.proto";
 import "LootProto.proto";
 
 message TradingLogEntry {

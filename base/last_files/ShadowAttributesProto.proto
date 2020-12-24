@@ -22,7 +22,6 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 import "HoloPokemonMove.proto";
-import "HoloPokemonMove.proto";
 
 message ShadowAttributesProto {
 	uint32 purification_stardust_needed = 1;

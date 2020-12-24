@@ -24,7 +24,6 @@ package POGOProtos.Rpc;
 import "HoloTemporaryEvolutionId.proto";
 import "PokemonStatsAttributesProto.proto";
 import "HoloPokemonType.proto";
-import "HoloPokemonType.proto";
 import "PokemonCameraAttributesProto.proto";
 import "PokemonEncounterAttributesProto.proto";
 

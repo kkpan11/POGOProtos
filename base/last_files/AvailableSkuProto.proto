@@ -22,7 +22,6 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 import "CurrencyQuantityProto.proto";
-import "CurrencyQuantityProto.proto";
 import "GameItemContentProto.proto";
 import "SkuPresentationProto.proto";
 

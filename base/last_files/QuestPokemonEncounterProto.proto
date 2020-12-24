@@ -23,7 +23,6 @@ package POGOProtos.Rpc;
 
 import "PokemonProto.proto";
 import "EncounterType.proto";
-import "PokemonProto.proto";
 
 message QuestPokemonEncounterProto {
 	string quest_id = 1;

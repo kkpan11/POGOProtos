@@ -23,8 +23,6 @@ package POGOProtos.Rpc;
 
 import "PokemonInfo.proto";
 import "PlayerPublicProfileProto.proto";
-import "PokemonInfo.proto";
-import "PokemonInfo.proto";
 import "LobbyPokemonProto.proto";
 import "FriendshipLevelMilestone.proto";
 

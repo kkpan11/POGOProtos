@@ -24,7 +24,6 @@ package POGOProtos.Rpc;
 import "Team.proto";
 import "HoloPokemonId.proto";
 import "HoloPokemonMove.proto";
-import "HoloPokemonMove.proto";
 
 message BelugaPokemonProto {
 	enum PokemonCostume {

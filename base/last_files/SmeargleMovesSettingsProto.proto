@@ -22,7 +22,6 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 import "HoloPokemonMove.proto";
-import "HoloPokemonMove.proto";
 
 message SmeargleMovesSettingsProto {
 	repeated HoloPokemonMove quick_moves = 1;

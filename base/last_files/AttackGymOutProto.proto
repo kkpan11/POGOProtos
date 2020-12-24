@@ -23,7 +23,6 @@ package POGOProtos.Rpc;
 
 import "BattleLogProto.proto";
 import "PokemonInfo.proto";
-import "PokemonInfo.proto";
 import "BattleUpdateProto.proto";
 
 message AttackGymOutProto {

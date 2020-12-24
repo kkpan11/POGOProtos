@@ -22,7 +22,6 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 import "FitnessReportProto.proto";
-import "FitnessReportProto.proto";
 
 message GetFitnessReportOutProto {
 	enum Status {

@@ -30,7 +30,6 @@ import "PokemonDisplayProto.proto";
 import "RaidInfoProto.proto";
 import "GymDisplayProto.proto";
 import "PokestopIncidentDisplayProto.proto";
-import "PokestopIncidentDisplayProto.proto";
 
 message PokemonFortProto {
 	string fort_id = 1;

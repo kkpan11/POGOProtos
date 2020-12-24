@@ -22,7 +22,6 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 import "PlayerSubmissionTypeProto.proto";
-import "PlayerSubmissionTypeProto.proto";
 
 message GetAvailableSubmissionsProto {
 	PlayerSubmissionTypeProto submission_type = 1;

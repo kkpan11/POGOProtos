@@ -26,10 +26,6 @@ import "WithPokemonTypeProto.proto";
 import "WithPokemonCategoryProto.proto";
 import "HoloPokemonId.proto";
 import "WithPlayerLevelProto.proto";
-import "WithPokemonCpLimitProto.proto";
-import "WithPokemonTypeProto.proto";
-import "WithPokemonCategoryProto.proto";
-import "HoloPokemonId.proto";
 import "HoloBadgeType.proto";
 
 message CombatLeagueProto {

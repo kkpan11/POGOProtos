@@ -29,7 +29,6 @@ import "EquippedBadgeProto.proto";
 import "ContactSettingsProto.proto";
 import "CurrencyQuantityProto.proto";
 import "BuddyPokemonProto.proto";
-import "PlayerAvatarProto.proto";
 import "SocialPlayerSettingsProto.proto";
 import "CombatPlayerPreferencesProto.proto";
 import "TeamChangeInfoProto.proto";

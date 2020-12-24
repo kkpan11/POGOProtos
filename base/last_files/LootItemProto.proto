@@ -24,8 +24,6 @@ package POGOProtos.Rpc;
 import "Item.proto";
 import "HoloPokemonId.proto";
 import "PokemonProto.proto";
-import "HoloPokemonId.proto";
-import "HoloPokemonId.proto";
 
 message LootItemProto {
 	oneof Type {

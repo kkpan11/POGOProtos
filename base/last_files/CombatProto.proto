@@ -23,10 +23,7 @@ package POGOProtos.Rpc;
 
 import "PlayerPublicProfileProto.proto";
 import "CombatActionProto.proto";
-import "CombatActionProto.proto";
 import "HoloPokemonId.proto";
-import "HoloPokemonMove.proto";
-import "HoloPokemonMove.proto";
 import "HoloPokemonMove.proto";
 import "PokemonDisplayProto.proto";
 import "Item.proto";

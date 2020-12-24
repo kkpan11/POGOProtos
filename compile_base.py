@@ -650,7 +650,7 @@ def open_proto_file(main_file, head):
 
             open_for_new_message = open(last_files_path + "/" + p + '.proto', 'a')
             open_for_new_message.writelines(head_file)
-            includes = ''
+            includes = []
 
             for message in new_base_messages[p].split("\n"):
                 if message.startswith("message") or message.startswith("enum") or message.startswith("}"):
@@ -661,10 +661,15 @@ def open_proto_file(main_file, head):
                     file_for_includes = message.split(" ")[1].strip() + '.proto'
 
                 if yes and os.path.exists(last_files_path + "/" + file_for_includes):
-                    includes += 'import "' + file_for_includes + '";\n'
+                    if file_for_includes not in includes:
+                        includes.append(file_for_includes)
 
-            if includes != '':
-                open_for_new_message.writelines(includes + '\n')
+            if len(includes) > 0:
+                files_inc = ''
+                for file in includes:
+                    files_inc += 'import "' + file + '";\n'
+                if files_inc != '':
+                    open_for_new_message.writelines(files_inc + '\n')
 
             open_for_new_message.writelines(new_base_messages[p])
             open_for_new_message.close()

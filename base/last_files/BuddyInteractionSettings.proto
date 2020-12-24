@@ -22,7 +22,6 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 import "Item.proto";
-import "Item.proto";
 
 message BuddyInteractionSettings {
 	repeated Item feed_item_whitelist = 1;

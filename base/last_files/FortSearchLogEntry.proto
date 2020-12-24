@@ -24,9 +24,6 @@ package POGOProtos.Rpc;
 import "ItemProto.proto";
 import "PokemonProto.proto";
 import "FortType.proto";
-import "ItemProto.proto";
-import "ItemProto.proto";
-import "ItemProto.proto";
 import "GiftBoxProto.proto";
 import "LootItemProto.proto";
 

@@ -23,7 +23,6 @@ package POGOProtos.Rpc;
 
 import "HoloPokemonId.proto";
 import "Item.proto";
-import "Item.proto";
 import "HoloTemporaryEvolutionId.proto";
 import "EvolutionQuestInfoProto.proto";
 

@@ -23,7 +23,6 @@ package POGOProtos.Rpc;
 
 import "PokemonProto.proto";
 import "SharedExclusiveTicketTrainerInfo.proto";
-import "SharedExclusiveTicketTrainerInfo.proto";
 
 message ExclusiveTicketInfoProto {
 	int64 raid_seed = 1;

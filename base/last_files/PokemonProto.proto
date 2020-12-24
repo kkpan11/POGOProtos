@@ -23,12 +23,9 @@ package POGOProtos.Rpc;
 
 import "HoloPokemonId.proto";
 import "HoloPokemonMove.proto";
-import "HoloPokemonMove.proto";
 import "PokemonCreateContext.proto";
 import "Item.proto";
 import "PokemonDisplayProto.proto";
-import "HoloPokemonMove.proto";
-import "PokemonCombatStatsProto.proto";
 import "PokemonCombatStatsProto.proto";
 import "HoloPokemonEggType.proto";
 import "HoloTemporaryEvolutionId.proto";

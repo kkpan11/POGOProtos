@@ -23,14 +23,10 @@ package POGOProtos.Rpc;
 
 import "PlayerPublicProfileProto.proto";
 import "LootProto.proto";
-import "LootProto.proto";
-import "HoloPokemonMove.proto";
 import "HoloPokemonMove.proto";
 import "PokemonDisplayProto.proto";
 import "PokemonProto.proto";
 import "Item.proto";
-import "HoloPokemonMove.proto";
-import "FriendshipLevelDataProto.proto";
 import "FriendshipLevelDataProto.proto";
 
 message TradingProto {

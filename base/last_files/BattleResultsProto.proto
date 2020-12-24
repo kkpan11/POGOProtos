@@ -28,7 +28,6 @@ import "ParticipationProto.proto";
 import "LootProto.proto";
 import "RaidEncounterProto.proto";
 import "AwardedGymBadge.proto";
-import "LootProto.proto";
 
 message BattleResultsProto {
 	GymStateProto gym_state = 1;

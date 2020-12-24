@@ -25,7 +25,6 @@ import "PokemonFortProto.proto";
 import "ClientSpawnPointProto.proto";
 import "WildPokemonProto.proto";
 import "PokemonSummaryFortProto.proto";
-import "ClientSpawnPointProto.proto";
 import "MapPokemonProto.proto";
 import "NearbyPokemonProto.proto";
 

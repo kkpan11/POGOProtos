@@ -22,9 +22,7 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 import "CombatSeasonResult.proto";
-import "CombatSeasonResult.proto";
 import "VsSeekerBattleResult.proto";
-import "CombatSeasonResult.proto";
 
 message CombatLogProto {
 	CombatSeasonResult lifetime_results = 1;

@@ -23,7 +23,6 @@ package POGOProtos.Rpc;
 
 import "BattleParticipantProto.proto";
 import "BattleLogProto.proto";
-import "BattleParticipantProto.proto";
 import "BattleProto.proto";
 
 message StartGymBattleOutProto {
