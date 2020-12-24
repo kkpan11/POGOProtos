@@ -1,8 +1,10 @@
 <!-- define variables -->
 [1.1]: http://i.imgur.com/M4fJ65n.png (ATTENTION)
 
-POGOProtos [![Build Status](https://travis-ci.com/Furtif/POGOProtos.svg?branch=master)](https://travis-ci.com/Furtif/POGOProtos) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/rocketbot) <!-- [![Maintainability](https://api.codeclimate.com/v1/badges/f4fbd03daa49a667d1b7/maintainability)](https://codeclimate.com/github/Furtif/POGOProtos/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/f4fbd03daa49a667d1b7/test_coverage)](https://codeclimate.com/github/Furtif/POGOProtos/test_coverage)-->
-===================
+## POGOProtos [![Build Status](https://travis-ci.com/Furtif/POGOProtos.svg?branch=master)](https://travis-ci.com/Furtif/POGOProtos) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/rocketbot) <!-- [![Maintainability](https://api.codeclimate.com/v1/badges/f4fbd03daa49a667d1b7/maintainability)](https://codeclimate.com/github/Furtif/POGOProtos/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/f4fbd03daa49a667d1b7/test_coverage)](https://codeclimate.com/github/Furtif/POGOProtos/test_coverage)-->
+
+---
+
 ![alt text][1.1] <strong><em>`The contents of this repo are a proof of concept and are for educational use only`</em></strong>![alt text][1.1]<br/>
 
 ---
@@ -10,13 +12,6 @@ POGOProtos [![Build Status](https://travis-ci.com/Furtif/POGOProtos.svg?branch=m
 This repository contains the [ProtoBuf](https://github.com/google/protobuf) `.proto` files needed to decode the PokémonGo RPC.
 
 ---
-
-<!--
-### ![alt text][1.1] NOTE: All content of folder ```./src/*``` except the ```./src/Rpc``` ``(obfuscated)`` folder is deprecated ![alt text][1.1]
-
- * **Recommend using the base [Rpc](https://github.com/Furtif/POGOProtos/blob/master/src/POGOProtos/Rpc/Rpc.proto)**
- * **NOTE:** (__*old ```compile.py``` has a new name: ```compile_src.py```*__) works but uses ```POGOProtos.Rpc.*```
--->
 
 ### Versioning
 We are following [semantic versioning](http://semver.org/) for POGOProtos.  Every version will be mapped to their current PokémonGo version.
@@ -26,6 +21,7 @@ We are following [semantic versioning](http://semver.org/) for POGOProtos.  Ever
 | 2.53.3       |  [v0.195.2](https://github.com/Furtif/POGOProtos/blob/master/base/v0.195.2.proto)                         | **Updated** (_/base/base.proto_)  |  Protocol Buffers v3.14.0     |
 
 ### Addons
+
 | Additional resources as *.json files | Source                                                                               | Status
 |------------------------|--------------------------------------------------------------------------------------|--------
 | [v2_GAME_MASTER.json](https://github.com/Furtif/POGOProtos/tree/master/GM/v2_GAME_MASTER.json) | Root                                   |  OK
