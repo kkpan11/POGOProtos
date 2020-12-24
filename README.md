@@ -67,7 +67,7 @@ python compile_base.py -l cpp -k:
  -                -> out/single_file/cpp/POGOProtos.Rpc.proto
 ```
 
-#####Same similar outputs up but others langs:
+##### Same similar outputs up but others langs:
 
 ```
   python compile_base.py -l csharp -k
