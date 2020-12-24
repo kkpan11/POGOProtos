@@ -677,7 +677,7 @@ def add_command_for_new_proto_file(file):
 
 
 print("Compile base...")
-print("version: " + version)
+print("POGOProtos.Rpc " + version)
 call(""""{0}" --version""".format(protoc_executable), shell=True)
 
 open_proto_file(raw_proto_file, head)
@@ -700,25 +700,18 @@ if not gen_only:
 
 # Add new proto version
 if gen_only:
-    # if rpc:
-    #     dir_rpc = 'src/' + input_file.replace('.proto', '').replace('.', '/')
-    #     if os.path.exists(dir_rpc):
-    #         shutil.rmtree(dir_rpc)
-    #
-    #     if not os.path.exists(dir_rpc):
-    #         os.makedirs(dir_rpc)
-    #
-    #     shutil.copy(generated_file, dir_rpc + '/Rpc.proto')
     shutil.copy(generated_file, protos_path + '/v0.' + version + '.proto')
-    # New base for next references names
-    if gen_base:
-        try:
-            os.unlink(base_file)
-        except OSError:
-            pass
 
-        shutil.copy(generated_file, base_file)
-    shutil.move(generated_file, out_path)
+# New base for next references names
+if gen_base:
+    try:
+        os.unlink(base_file)
+    except OSError:
+        pass
+
+    shutil.copy(generated_file, base_file)
+
+shutil.move(generated_file, out_path)
 
 if keep_file:
     shutil.move(generated_file, out_path)
