@@ -767,8 +767,20 @@ def add_command_for_new_proto_file(file):
         )
     )
 
+compile_ext = 'proto'
 
-print("Compile base...")
+if lang != 'proto':
+    compile_ext = lang
+elif gen_base and gen_files and gen_only:
+    compile_ext = "remaster all"
+elif gen_base and not gen_only and not gen_files:
+    compile_ext = 'base'
+elif not gen_base and gen_only and not gen_files:
+    compile_ext = raw_name
+elif not gen_base and not gen_only and gen_files:
+    compile_ext = 'v' + version + '.proto, generate files'
+
+print("Compile: " + compile_ext + ", please await...")
 print(package_name + " " + version)
 call(""""{0}" --version""".format(protoc_executable), shell=True)
 
@@ -785,7 +797,7 @@ commands.append(
         ' '.join(descriptor_file_arguments),
         generated_file))
 
-if not gen_only and not gen_base and not gen_files:
+if not gen_only and not gen_base and not gen_files and not lang == 'proto':
     # Compile commands
     for command in commands:
         call(command, shell=True)
