@@ -60,7 +60,7 @@ last_files_path = os.path.abspath("base/last_files")
 
 if gen_asset_digest is not None:
     if not os.path.exists(gen_asset_digest):
-        print("Copy file v2* binary to GM folder.")
+        print("Binary not found.")
         exit(0)
     commands = []
     print("Try to decode " + gen_asset_digest + ".txt....")
@@ -85,7 +85,7 @@ if gen_asset_digest is not None:
 
 if gen_game_master is not None:
     if not os.path.exists(gen_game_master):
-        print("Copy file v2* binary to GM folder.")
+        print("Binary not found.")
         exit(0)
     commands = []
     print("Try to decode " + gen_game_master + ".txt....")
