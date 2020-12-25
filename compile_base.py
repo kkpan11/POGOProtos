@@ -547,7 +547,7 @@ def open_proto_file(main_file, head):
     messages = messages.replace("Titan", "")
     messages = messages.replace("Platform", "")
     if clean_holo_string:
-        messages = messages.replace("Holo", "")
+        messages = messages.replace("Holo", "").replace("holo", "")
     # revert ref_py_x
     messages = messages.replace("REF_PY_1", "Platform")
     ##
