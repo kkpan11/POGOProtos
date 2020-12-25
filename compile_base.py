@@ -24,13 +24,15 @@ def is_blank(my_string):
 parser = argparse.ArgumentParser()
 parser.add_argument("-l", "--lang", help="Language to produce proto single file.")
 parser.add_argument("-v", "--version", help="Set version out ex:. (189.0_obf)")
-parser.add_argument("-o", "--out_path", help="Output path for roto single file.")
+parser.add_argument("-o", "--out_path", help="Output path for proto single file.")
 parser.add_argument("-m", "--java_multiple_files", action='store_true',
                     help='Write each message to a separate .java file.')
 parser.add_argument("-g", "--generate_only", action='store_true', help='Generates only proto compilable.')
 parser.add_argument("-b", "--generate_new_base", action='store_true', help='Generates new proto base refs.')
 parser.add_argument("-k", "--keep_proto_file", action='store_true', help='Do not remove .proto file after compiling.')
 parser.add_argument("-gf", "--generate_proto_files", action='store_true', help='Generates base/files/*.proto.')
+parser.add_argument("-ch", "--clean_holo_string", action='store_true',
+                    help='Remove holo* from names out HoloPokemonId -> PokemonId.')
 args = parser.parse_args()
 
 # Set defaults
@@ -42,6 +44,7 @@ gen_files = args.generate_proto_files
 version = args.version or "195.2"
 gen_base = args.generate_new_base
 keep_file = args.keep_proto_file
+clean_holo_string = args.clean_holo_string
 
 # Determine where path's and variables
 raw_name = "v0." + version + ".proto"
@@ -543,7 +546,8 @@ def open_proto_file(main_file, head):
     ## fixes other names...
     messages = messages.replace("Titan", "")
     messages = messages.replace("Platform", "")
-    # messages = messages.replace("Holo", "")
+    if clean_holo_string:
+        messages = messages.replace("Holo", "")
     # revert ref_py_x
     messages = messages.replace("REF_PY_1", "Platform")
     ##
@@ -734,7 +738,6 @@ if not gen_only:
     # Add new desc version
     descriptor_file = generated_file.replace(".proto", ".desc")
     shutil.move(descriptor_file, out_path)
-
 
 # Add new proto version
 if gen_only:
