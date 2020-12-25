@@ -23,7 +23,7 @@ def is_blank(my_string):
 # args
 parser = argparse.ArgumentParser()
 parser.add_argument("-l", "--lang", help="Language to produce proto single file.")
-parser.add_argument("-v", "--version", help="Set version out ex:. (189.0_obf)")
+parser.add_argument("-v", "--version", help="Set version out ex:. (0.195.2)")
 parser.add_argument("-o", "--out_path", help="Output path for proto single file.")
 parser.add_argument("-m", "--java_multiple_files", action='store_true',
                     help='Write each message to a separate .java file.')
@@ -41,13 +41,13 @@ out_path = args.out_path or "out/single_file/" + lang
 java_multiple_files = args.java_multiple_files
 gen_only = args.generate_only
 gen_files = args.generate_proto_files
-version = args.version or "195.2"
+version = args.version or "0.195.2"
 gen_base = args.generate_new_base
 keep_file = args.keep_proto_file
 clean_holo_string = args.clean_holo_string
 
 # Determine where path's and variables
-raw_name = "v0." + version + ".proto"
+raw_name = "v" + version + ".proto"
 raw_proto_file = os.path.abspath("base/" + raw_name)
 base_file = os.path.abspath("base/base.proto")
 protos_path = os.path.abspath("base")
@@ -70,7 +70,7 @@ head += '*	software distributed under the License is distributed on an "AS IS"\n
 head += '*	BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express\n'
 head += '*	or implied. See the License for the specific language governing\n'
 head += '*	permissions and limitations under the License.\n'
-head += '*\n* Version: 0.' + version + '\n*\n'
+head += '*\n* Version: ' + version + '\n*\n'
 head += '*/\n\n'
 head += 'syntax = "proto3";\n'
 head += 'package %s;\n\n' % package_name
@@ -626,7 +626,7 @@ def open_proto_file(main_file, head):
         if not os.path.exists(last_files_path):
             os.makedirs(last_files_path)
 
-        head_file = head.replace('*\n* Version: 0.' + version + '\n*\n', '*\n* Note: For references only.\n*\n')
+        head_file = head.replace('*\n* Version: ' + version + '\n*\n', '*\n* Note: For references only.\n*\n')
 
     for p in sorted(new_base_enums):
         new_base_file += new_base_enums[p] + "\n"
@@ -741,7 +741,7 @@ if not gen_only and not gen_base and not gen_files:
 
 # Add new proto version
 if gen_only:
-    shutil.copy(generated_file, protos_path + '/v0.' + version + '.proto')
+    shutil.copy(generated_file, protos_path + '/v' + version + '.proto')
 
 # New base for next references names
 if gen_base:
