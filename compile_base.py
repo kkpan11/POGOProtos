@@ -22,6 +22,8 @@ def is_blank(my_string):
 
 # args
 parser = argparse.ArgumentParser()
+parser.add_argument("-gm", "--generate_game_master", help="Generates v2_GAME_MASTER.txt.")
+parser.add_argument("-ga", "--generate_asset_digest", help="Generates ASSET_DIGEST.txt.")
 parser.add_argument("-l", "--lang", help="Language to produce proto single file.")
 parser.add_argument("-v", "--version", help="Set version out ex:. (0.195.2)")
 parser.add_argument("-o", "--out_path", help="Output path for proto single file.")
@@ -45,6 +47,8 @@ version = args.version or "0.195.2"
 gen_base = args.generate_new_base
 keep_file = args.keep_proto_file
 clean_holo_string = args.clean_holo_string
+gen_game_master = args.generate_game_master or None
+gen_asset_digest = args.generate_asset_digest or None
 
 # Determine where path's and variables
 raw_name = "v" + version + ".proto"
@@ -53,6 +57,56 @@ base_file = os.path.abspath("base/base.proto")
 protos_path = os.path.abspath("base")
 out_path = os.path.abspath(out_path)
 last_files_path = os.path.abspath("base/last_files")
+
+if gen_asset_digest is not None:
+    if not os.path.exists(gen_asset_digest):
+        print("Copy file v2* binary to GM folder.")
+        exit(0)
+    commands = []
+    print("Try to decode " + gen_asset_digest + ".txt....")
+    pogo_protos_path = './base'
+    pogo_protos_target = 'POGOProtos.Rpc.AssetDigestOutProto'
+    pogo_protos_template = './base/' + raw_name
+
+    commands.append(
+        """"{0}" --proto_path="{1}" --decode "{2}" {3} <{4}> {5}""".format(
+            protoc_executable,
+            pogo_protos_path,
+            pogo_protos_target,
+            pogo_protos_template,
+            gen_asset_digest,
+            gen_asset_digest + '.txt'
+        ))
+
+    for command in commands:
+        call(command, shell=True)
+
+    exit(0);
+
+if gen_game_master is not None:
+    if not os.path.exists(gen_game_master):
+        print("Copy file v2* binary to GM folder.")
+        exit(0)
+    commands = []
+    print("Try to decode " + gen_game_master + ".txt....")
+    pogo_protos_path = './base'
+    pogo_protos_target = 'POGOProtos.Rpc.DownloadGmTemplatesResponseProto'
+    pogo_protos_template = './base/' + raw_name
+
+    commands.append(
+        """"{0}" --proto_path="{1}" --decode "{2}" {3} <{4}> {5}""".format(
+            protoc_executable,
+            pogo_protos_path,
+            pogo_protos_target,
+            pogo_protos_template,
+            gen_game_master,
+            gen_game_master + '.txt'
+        ))
+
+    for command in commands:
+        call(command, shell=True)
+
+    exit(0);
 
 # Add licenses
 head = '/*\n'
