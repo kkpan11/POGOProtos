@@ -79,6 +79,7 @@ python compile_base.py -l cpp -k:
   * python compile_base.py -l swif -k
   * python compile_base.py -l go -k
   * python compile_base.py -l lua -k
+  * python compile_base.py -l dart -k
 ```
 
 _* = Needs plugins_

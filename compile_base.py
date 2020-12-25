@@ -149,7 +149,7 @@ def finish_compile(out_path, lang):
 
 
 def open_proto_file(main_file, head):
-    new_proto_single_file = main_file.replace(raw_name, "POGOProtos.Rpc.proto")
+    new_proto_single_file = main_file.replace(raw_name, input_file)
 
     if os.path.exists(new_proto_single_file):
         os.unlink(new_proto_single_file)
@@ -540,12 +540,11 @@ def open_proto_file(main_file, head):
     ## clean bad spaces...
     messages = messages.replace("}\n\n}", "}\n}")
     messages = messages.replace("\t\t}\n\n\t}", "\t\t}\n\t}")
-    ##
-
     ## fixes other names...
     messages = messages.replace("Titan", "")
     messages = messages.replace("Platform", "")
-    # revert ref_1
+    # messages = messages.replace("Holo", "")
+    # revert ref_py_x
     messages = messages.replace("REF_PY_1", "Platform")
     ##
 
@@ -732,6 +731,11 @@ if not gen_only:
     for command in commands:
         call(command, shell=True)
 
+    # Add new desc version
+    descriptor_file = generated_file.replace(".proto", ".desc")
+    shutil.move(descriptor_file, out_path)
+
+
 # Add new proto version
 if gen_only:
     shutil.copy(generated_file, protos_path + '/v0.' + version + '.proto')
@@ -747,11 +751,6 @@ if gen_base:
 
 if keep_file:
     shutil.move(generated_file, out_path)
-
-# Add new desc version
-if not gen_only:
-    descriptor_file = generated_file.replace(".proto", ".desc")
-    shutil.move(descriptor_file, out_path)
 
 if lang == 'python':
     finish_compile(out_path, lang)
