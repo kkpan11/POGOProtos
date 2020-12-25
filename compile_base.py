@@ -9,9 +9,13 @@ import shutil
 from subprocess import call
 
 # Variables
+global_version = '0.195.2'
 protoc_executable = "protoc"
 package_name = 'POGOProtos.Rpc'
 input_file = "POGOProtos.Rpc.proto"
+base_file = os.path.abspath("base/base.proto")
+protos_path = os.path.abspath("base")
+gen_last_files = os.path.abspath("base/last_files")
 
 
 def is_blank(my_string):
@@ -37,13 +41,13 @@ parser.add_argument("-ch", "--clean_holo_string", action='store_true',
                     help='Remove holo* from names out HoloPokemonId -> PokemonId.')
 args = parser.parse_args()
 
-# Set defaults
+# Set defaults args
 lang = args.lang or "proto"
 out_path = args.out_path or "out/single_file/" + lang
 java_multiple_files = args.java_multiple_files
 gen_only = args.generate_only
 gen_files = args.generate_proto_files
-version = args.version or "0.195.2"
+version = args.version or global_version
 gen_base = args.generate_new_base
 keep_file = args.keep_proto_file
 clean_holo_string = args.clean_holo_string
@@ -53,10 +57,7 @@ gen_asset_digest = args.generate_asset_digest or None
 # Determine where path's and variables
 raw_name = "v" + version + ".proto"
 raw_proto_file = os.path.abspath("base/" + raw_name)
-base_file = os.path.abspath("base/base.proto")
-protos_path = os.path.abspath("base")
 out_path = os.path.abspath(out_path)
-last_files_path = os.path.abspath("base/last_files")
 
 if gen_asset_digest is not None:
     if not os.path.exists(gen_asset_digest):
@@ -674,25 +675,25 @@ def open_proto_file(main_file, head):
     head_file = None
 
     if (gen_files):
-        if os.path.exists(last_files_path):
-            shutil.rmtree(last_files_path)
+        if os.path.exists(gen_last_files):
+            shutil.rmtree(gen_last_files)
 
-        if not os.path.exists(last_files_path):
-            os.makedirs(last_files_path)
+        if not os.path.exists(gen_last_files):
+            os.makedirs(gen_last_files)
 
         head_file = head.replace('*\n* Version: ' + version + '\n*\n', '*\n* Note: For references only.\n*\n')
 
     for p in sorted(new_base_enums):
         new_base_file += new_base_enums[p] + "\n"
         if head_file is not None:
-            open_for_new_enum = open(last_files_path + "/" + p + '.proto', 'a')
+            open_for_new_enum = open(gen_last_files + "/" + p + '.proto', 'a')
             open_for_new_enum.writelines(head_file)
             open_for_new_enum.writelines(new_base_enums[p])
             open_for_new_enum.close()
     for p in sorted(new_base_messages):
         new_base_file += new_base_messages[p] + "\n"
         if head_file is not None:
-            open_for_new_message = open(last_files_path + "/" + p + '.proto', 'a')
+            open_for_new_message = open(gen_last_files + "/" + p + '.proto', 'a')
             open_for_new_message.writelines(head_file)
             open_for_new_message.writelines(new_base_messages[p])
             open_for_new_message.close()
@@ -701,11 +702,11 @@ def open_proto_file(main_file, head):
     if head_file is not None:
         for p in sorted(new_base_messages):
             yes = False
-            if os.path.exists(last_files_path + "/" + p + '.proto'):
-                os.remove(last_files_path + "/" + p + '.proto')
+            if os.path.exists(gen_last_files + "/" + p + '.proto'):
+                os.remove(gen_last_files + "/" + p + '.proto')
                 yes = True
 
-            open_for_new_message = open(last_files_path + "/" + p + '.proto', 'a')
+            open_for_new_message = open(gen_last_files + "/" + p + '.proto', 'a')
             open_for_new_message.writelines(head_file)
             includes = []
 
@@ -717,7 +718,7 @@ def open_proto_file(main_file, head):
                 if message.startswith("\trepeated"):
                     file_for_includes = message.split(" ")[1].strip() + '.proto'
 
-                if yes and os.path.exists(last_files_path + "/" + file_for_includes):
+                if yes and os.path.exists(gen_last_files + "/" + file_for_includes):
                     if file_for_includes not in includes:
                         includes.append(file_for_includes)
 
