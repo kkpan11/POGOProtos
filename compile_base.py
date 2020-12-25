@@ -730,7 +730,7 @@ commands.append(
         ' '.join(descriptor_file_arguments),
         generated_file))
 
-if not gen_only:
+if not gen_only and not gen_base and not gen_files:
     # Compile commands
     for command in commands:
         call(command, shell=True)
