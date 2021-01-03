@@ -84,6 +84,12 @@ python compile_base.py -l cpp -k:
 
 _* = Needs plugins_
 
+##### Decode Game Master or Asset Digest:
+
+```
+  python compile_base.py -gm [./BIN] (as txt)
+  python compile_base.py -ga [./BIN] (as txt)
+```
 ---
 
 ### Initial [UpStream](https://github.com/Furtif/POGOProtos/tree/upstream)
