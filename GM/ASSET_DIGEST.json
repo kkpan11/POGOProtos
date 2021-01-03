@@ -1183,6 +1183,13 @@
       "size": 9575
     },
     {
+      "assetId": "0c8e6040-5da5-47ce-90ac-8d07c84b3312/1609704640481535",
+      "bundleName": "f_shirt_guccitshirts_00_bundle_icon",
+      "version": "1609704640481535",
+      "checksum": 1303482411,
+      "size": 11181
+    },
+    {
       "assetId": "0ca30254-1763-449c-bfb9-7da5e055e5eb/1584927734589073",
       "bundleName": "pm0512_00",
       "version": "1584927734589073",
@@ -1813,6 +1820,13 @@
       "version": "1584912082839111",
       "checksum": 1626336010,
       "size": 222331
+    },
+    {
+      "assetId": "1403a81e-f35f-46f2-a159-5b5a5fa81baa/1609704644648183",
+      "bundleName": "f_hat_guccihat_bundle",
+      "version": "1609704644648183",
+      "checksum": 3706584019,
+      "size": 202985
     },
     {
       "assetId": "1414248b-6e2f-4f7b-af93-eb97a3d220a1/1584900169128094",
@@ -5577,6 +5591,13 @@
       "key": "t6lm5axdw5Gc3/HuaVsSNA=="
     },
     {
+      "assetId": "44769bde-e9e0-41fb-8423-e2c43588f599/1609704639664068",
+      "bundleName": "m_backpack_guccibackpack_00_bundle_icon",
+      "version": "1609704639664068",
+      "checksum": 3961569572,
+      "size": 15130
+    },
+    {
       "assetId": "448972af-0bff-4454-8e4b-310e74cb4a60/1584910758607235",
       "bundleName": "m_glasses_3d_bundle",
       "version": "1584910758607235",
@@ -6583,6 +6604,13 @@
       "checksum": 2923511330,
       "size": 356610,
       "key": "3TmKup4qKn8i2LH4vb4osQ=="
+    },
+    {
+      "assetId": "5175b6b7-f029-45f5-bb85-4633f6c87416/1609704641282509",
+      "bundleName": "m_hat_guccihat_00_bundle_icon",
+      "version": "1609704641282509",
+      "checksum": 642781279,
+      "size": 11028
     },
     {
       "assetId": "5192c790-dc54-42fb-a925-b8a26507ba40/1603474973069210",
@@ -12506,6 +12534,13 @@
       "size": 226439
     },
     {
+      "assetId": "9714c753-a9ac-42d4-a37a-0692f238a2ea/1609704646085928",
+      "bundleName": "f_backpack_guccibackpack_bundle",
+      "version": "1609704646085928",
+      "checksum": 3959302711,
+      "size": 242109
+    },
+    {
       "assetId": "9719f52e-3ad7-4d4c-8de5-39b2b55a00f4/1584911183634353",
       "bundleName": "f_gloves_battlegirl_bundle",
       "version": "1584911183634353",
@@ -14003,6 +14038,13 @@
       "version": "1605722660960255",
       "checksum": 3337398632,
       "size": 36588
+    },
+    {
+      "assetId": "a81f72d3-8b85-45d9-bb1a-c47cf71c2dfb/1609704638543955",
+      "bundleName": "m_backpack_guccibackpack_bundle",
+      "version": "1609704638543955",
+      "checksum": 2829475425,
+      "size": 241230
     },
     {
       "assetId": "a841fbad-c259-47c5-a762-1bc0a59f3153/1606497941849653",
@@ -16181,6 +16223,13 @@
       "size": 307510
     },
     {
+      "assetId": "c3773c2f-957b-4258-ae38-5d660d3774c7/1609704635504430",
+      "bundleName": "m_shirt_guccitshirts_bundle",
+      "version": "1609704635504430",
+      "checksum": 445872105,
+      "size": 268503
+    },
+    {
       "assetId": "c3a605a1-4999-4d7a-a7d1-e20ce4ae2629/1584910085007330",
       "bundleName": "m_shirt_default_3_bundle_icon",
       "version": "1584910085007330",
@@ -16596,6 +16645,13 @@
       "size": 9499
     },
     {
+      "assetId": "c87c5b92-f219-417f-ad8b-37c98cc66aa8/1609704634240114",
+      "bundleName": "m_shirt_guccitshirts_00_bundle_icon",
+      "version": "1609704634240114",
+      "checksum": 2662688922,
+      "size": 10734
+    },
+    {
       "assetId": "c88e9c53-f944-4b8c-a934-3845c2b93730/1584904010103158",
       "bundleName": "pokemon_icon_516",
       "version": "1584904010103158",
@@ -16752,6 +16808,13 @@
       "version": "1584921837362622",
       "checksum": 2396017329,
       "size": 96786
+    },
+    {
+      "assetId": "ca1dce20-6199-46db-8aab-e3eab011e09e/1609704637104928",
+      "bundleName": "f_shirt_guccitshirts_bundle",
+      "version": "1609704637104928",
+      "checksum": 3925926633,
+      "size": 252736
     },
     {
       "assetId": "ca2ceee6-d706-4fed-b5cc-77586baf5619/1584926226855304",
@@ -17838,6 +17901,13 @@
       "version": "1606498518740575",
       "checksum": 1019919572,
       "size": 744924
+    },
+    {
+      "assetId": "d61583dd-2f0c-43b5-aa16-c0c8afaee28c/1609704647210839",
+      "bundleName": "f_backpack_guccibackpack_00_bundle_icon",
+      "version": "1609704647210839",
+      "checksum": 874807746,
+      "size": 12425
     },
     {
       "assetId": "d630a199-2f97-4df7-a88c-94c391cde8c4/1509480244619682",
@@ -20153,6 +20223,13 @@
       "size": 8944
     },
     {
+      "assetId": "f248e09f-1dcc-4af3-a2b0-9751b3a3a36e/1609704643546535",
+      "bundleName": "f_hat_guccihat_00_bundle_icon",
+      "version": "1609704643546535",
+      "checksum": 889118831,
+      "size": 10806
+    },
+    {
       "assetId": "f25ce1d2-3bdb-4c3c-bf33-5c1c727b643e/1584925295175840",
       "bundleName": "pm0421_12",
       "version": "1584925295175840",
@@ -20314,6 +20391,13 @@
       "version": "1584899427404377",
       "checksum": 3445787083,
       "size": 28618
+    },
+    {
+      "assetId": "f3cfa5a6-b0f3-4d5b-8988-e868ec4355f2/1609704642367111",
+      "bundleName": "m_hat_guccihat_bundle",
+      "version": "1609704642367111",
+      "checksum": 1238816652,
+      "size": 198999
     },
     {
       "assetId": "f3f2bed5-a214-478a-940b-de7bea57702b/1584898761352364",
@@ -21338,6 +21422,6 @@
       "size": 290457
     }
   ],
-  "timestamp": "1608757099252748",
+  "timestamp": "1609704647210839",
   "result": "SUCCESS"
 }
