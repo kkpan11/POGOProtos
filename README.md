@@ -62,9 +62,9 @@ This is an example of how the generated code will be organized:
 ```
 python compile_base.py -l cpp -k:
  - v0.197.0_p_obf.proto -> out/single_file/cpp/POGOProtos.Rpc.desc
- -                -> out/single_file/cpp/POGOProtos.Rpc.pb.cc
- -                -> out/single_file/cpp/POGOProtos.Rpc.pb.h
- -                -> out/single_file/cpp/POGOProtos.Rpc.proto
+ -                      -> out/single_file/cpp/POGOProtos.Rpc.pb.cc
+ -                      -> out/single_file/cpp/POGOProtos.Rpc.pb.h
+ -                      -> out/single_file/cpp/POGOProtos.Rpc.proto
 ```
 
 ##### Same similar outputs up but others langs:
