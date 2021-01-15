@@ -9,7 +9,7 @@ import shutil
 from subprocess import call
 
 # Variables
-global_version = '0.195.2'
+global_version = '0.197.0'
 protoc_executable = "protoc"
 package_name = 'POGOProtos.Rpc'
 input_file = "POGOProtos.Rpc.proto"
