@@ -527,6 +527,15 @@ def open_proto_file(main_file, head):
             elif proto_name == "SubscriptionState" and not operator.contains(proto_line, "{") and not operator.contains(
                     proto_line, "}") and operator.contains(proto_line, "PLATFORM_"):
                 proto_line = proto_line.replace("PLATFORM_", "")
+            elif proto_name == "PokemonAlignment" and not operator.contains(proto_line, "{") and not operator.contains(
+                    proto_line, "}") and operator.contains(proto_line, "ALIGNMENT_UNSET "):
+                proto_line = proto_line.replace("POKEMON_ALIGNMENT_ALIGNMENT_UNSET", "POKEMON_ALIGNMENT_UNSET")
+            elif proto_name == "PokemonGender" and not operator.contains(proto_line, "{") and not operator.contains(
+                    proto_line, "}") and operator.contains(proto_line, "GENDER_UNSET "):
+                proto_line = proto_line.replace("POKEMON_GENDER_GENDER_UNSET", "POKEMON_GENDER_UNSET")
+            elif proto_name == "GameChatActions" and not operator.contains(proto_line, "{") and not operator.contains(
+                    proto_line, "}") and operator.contains(proto_line, "GAME_CHAT_ACTIONS_"):
+                proto_line = proto_line.replace("GAME_CHAT_ACTIONS_", "")
             elif proto_name == "HoloholoClientTelemetryIds" and not operator.contains(proto_line,
                                                                                       "{") and not operator.contains(
                 proto_line, "}") and operator.contains(proto_line, "HOLOHOLO_"):
