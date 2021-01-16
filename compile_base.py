@@ -36,7 +36,7 @@ parser.add_argument("-m", "--java_multiple_files", action='store_true',
 parser.add_argument("-g", "--generate_only", action='store_true', help='Generates only proto compilable.')
 parser.add_argument("-b", "--generate_new_base", action='store_true', help='Generates new proto base refs.')
 parser.add_argument("-k", "--keep_proto_file", action='store_true', help='Do not remove .proto file after compiling.')
-parser.add_argument("-gf", "--generate_proto_files", action='store_true', help='Generates base/files/*.proto.')
+parser.add_argument("-gf", "--generate_proto_files", action='store_true', help='Generates base/last_files/*.proto.')
 parser.add_argument("-ch", "--clean_holo_string", action='store_true',
                     help='Remove holo* from names out HoloPokemonId -> PokemonId.')
 args = parser.parse_args()
