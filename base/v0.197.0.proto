@@ -5596,7 +5596,7 @@ message CatchPokemonQuestProto {
 message CatchPokemonTelemetry {
 	string status = 1;
 	EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;
-	int32 balltype = 3;
+	Item balltype = 3;
 	int32 hit_grade = 4;
 	bool curve_ball = 5;
 	double miss_percent = 6;
