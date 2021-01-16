@@ -4041,11 +4041,32 @@ message ActivateVsSeekerProto {
 	VsSeekerRewardTrack reward_track = 1;
 }
 
+message AdDetails {
+	ImageTextCreativeProto image_text_creative = 1;
+	bytes encrypted_ad_token = 2;
+}
+
 message AdFeedbackSettingsProto {
 	bool enabled = 1;
 	bool enable_report_ad = 2;
 	bool enable_not_interested = 3;
 	bool enable_see_more = 4;
+}
+
+message AdRequestDeviceInfo {
+	enum OperatingSystem {
+		PLATFORM_UNKNOWN = 0;
+		PLATFORM_ANDROID = 1;
+		PLATFORM_IOS = 2;
+	}
+
+	OperatingSystem operating_system = 1;
+	string device_model = 2;
+	string carrier = 3;
+}
+
+message AdTargetingInfoProto {
+	AdRequestDeviceInfo device_info = 1;
 }
 
 message AddFortModifierOutProto {
@@ -4499,7 +4520,7 @@ message AttackRaidBattleOutProto {
 
 	Result result = 1;
 	BattleUpdateProto battle_update = 2;
-	GIAKCPCOEEN sponsored_gift = 3;
+	AdDetails sponsored_gift = 3;
 }
 
 message AttackRaidBattleProto {
@@ -4508,7 +4529,7 @@ message AttackRaidBattleProto {
 	repeated BattleActionProto attacker_actions = 3;
 	BattleActionProto last_retrieved_action = 4;
 	int64 timestamp_ms = 5;
-	JIPGOEMPNIN ad_targeting_info = 6;
+	AdTargetingInfoProto ad_targeting_info = 6;
 }
 
 message AvailableSkuProto {
@@ -8062,7 +8083,7 @@ message FortSearchOutProto {
 	string fort_id = 13;
 	ClientQuestProto challenge_quest = 14;
 	GiftBoxProto gift_box = 15;
-	GIAKCPCOEEN sponsored_gift = 16;
+	AdDetails sponsored_gift = 16;
 }
 
 message FortSearchProto {
@@ -8071,7 +8092,7 @@ message FortSearchProto {
 	double player_lng_degrees = 3;
 	double fort_lat_degrees = 4;
 	double fort_lng_degrees = 5;
-	JIPGOEMPNIN ad_targeting_info = 7;
+	AdTargetingInfoProto ad_targeting_info = 7;
 	bool is_player_eligible_for_geotargeted_quest = 8;
 }
 
@@ -8194,22 +8215,8 @@ message FriendshipMilestoneRewardProto {
 	FriendshipLevelMilestone friendship_milestone = 2;
 }
 
-message GABGPINDIJM {
-	string lgjfpbjicie = 1;
-	string ghkodohohbk = 2;
-	string hldncaeanaa = 3;
-	string nacfalmaglp = 4;
-	string gclmpneifpi = 5;
-	string pdhplpehpln = 6;
-}
-
 message GGAJAJOJDOD {
 	bytes nklmfkkigod = 1;
-}
-
-message GIAKCPCOEEN {
-	GABGPINDIJM gilcfbhbemc = 1;
-	bytes nklmfkkigod = 2;
 }
 
 message GLLOHKCAIFG {
@@ -10230,6 +10237,15 @@ message IdfaSettingsProto {
 	bool optin_enabled = 1;
 }
 
+message ImageTextCreativeProto {
+	string name = 1;
+	string title = 2;
+	string description = 3;
+	string preview_image_url = 4;
+	string fullscreen_image_url = 5;
+	string cta_link = 6;
+}
+
 message InGamePurchaseDetails {
 	string ingame_type = 1;
 	int64 ingame_price = 2;
@@ -10536,10 +10552,6 @@ message ItemTelemetry {
 	string item_id_string = 5;
 }
 
-message JIPGOEMPNIN {
-	LBJFNLCDBLN plegocnlmma = 1;
-}
-
 message JoinBuddyMultiplayerSessionOutProto {
 	enum Result {
 		JOIN_SUCCESS = 0;
@@ -10630,44 +10642,6 @@ message KoalaSettingsProto {
 	string app_id = 1;
 	bool use_sandbox = 2;
 	bool use_koala = 3;
-}
-
-message LBJFNLCDBLN {
-	enum EFIPMCMJNCJ {
-		PLATFORM_UNKNOWN = 0;
-		PLATFORM_ANDROID = 1;
-		PLATFORM_IOS = 2;
-	}
-
-	EFIPMCMJNCJ jeemfjapigj = 1;
-	string gekhknifldh = 2;
-	string efknhnmmhcc = 3;
-}
-
-message LENFHDBFLJD {
-	enum ECCDOINGBBH {
-		UNSET = 0;
-		STAGE1 = 1;
-		STAGE2 = 2;
-		STAGE3 = 3;
-	}
-
-	ECCDOINGBBH pfefmfcaofl = 1;
-	bytes fngjbikifmh = 2;
-}
-
-message LIKGPMLOCLK {
-	enum PCILMGNKBAK {
-		PLATFORM_UNKNOWN = 0;
-		PLATFORM_ANDROID = 1;
-		PLATFORM_IOS = 2;
-		PLATFORM_WEB = 3;
-	}
-
-	string iglmhbpchfo = 1;
-	string iggjiodjkje = 2;
-	PCILMGNKBAK jclhpieoiha = 3;
-	string efknhnmmhcc = 4;
 }
 
 message Label {
@@ -11767,6 +11741,20 @@ message PasscodeRedeemTelemetry {
 	string country_code = 3;
 	string language_code = 4;
 	string bundle_version = 5;
+}
+
+message PasscodeRedemptionFlowRequest {
+	enum DevicePlatform {
+		PLATFORM_UNKNOWN = 0;
+		PLATFORM_ANDROID = 1;
+		PLATFORM_IOS = 2;
+		PLATFORM_WEB = 3;
+	}
+
+	string passcode = 1;
+	string poi_guid = 2;
+	DevicePlatform device_platform = 3;
+	string carrier = 4;
 }
 
 message PasscodeRewardsLogEntry {
@@ -16395,6 +16383,18 @@ message SfidaCaptureResponse {
 	int32 xp_gain = 2;
 }
 
+message SfidaCertificationRequest {
+	enum SfidaCertificationStage {
+		UNSET = 0;
+		STAGE1 = 1;
+		STAGE2 = 2;
+		STAGE3 = 3;
+	}
+
+	SfidaCertificationStage stage = 1;
+	bytes payload = 2;
+}
+
 message SfidaDowserResponse {
 	enum Result {
 		UNSET = 0;
@@ -16612,7 +16612,7 @@ message SponsoredDetailsProto {
 	string call_to_action_link = 3;
 	PromoButtonMessageType promo_button_message_type = 4;
 	string campaign_id = 5;
-	GABGPINDIJM promo_image_creative = 6;
+	ImageTextCreativeProto promo_image_creative = 6;
 }
 
 message SponsoredGeofenceGiftSettingsProto {
