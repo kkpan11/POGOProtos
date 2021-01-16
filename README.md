@@ -60,10 +60,10 @@ This is an example of how the generated code will be organized:
 
 ```
 python compile_base.py -l cpp -k:
- - v0.197.0_p_obf.proto -> out/single_file/cpp/POGOProtos.Rpc.desc
- -                      -> out/single_file/cpp/POGOProtos.Rpc.pb.cc
- -                      -> out/single_file/cpp/POGOProtos.Rpc.pb.h
- -                      -> out/single_file/cpp/POGOProtos.Rpc.proto
+ - v0.197.0.proto -> out/single_file/cpp/POGOProtos.Rpc.desc
+ -                -> out/single_file/cpp/POGOProtos.Rpc.pb.cc
+ -                -> out/single_file/cpp/POGOProtos.Rpc.pb.h
+ -                -> out/single_file/cpp/POGOProtos.Rpc.proto
 ```
 
 ##### Same similar outputs up but others langs:
@@ -76,7 +76,7 @@ python compile_base.py -l cpp -k:
   python compile_base.py -l php -k
   python compile_base.py -l objc -k
   python compile_base.py -l ruby -k
-  * python compile_base.py -l swif -k
+  * python compile_base.py -l swift -k
   * python compile_base.py -l go -k
   * python compile_base.py -l lua -k
   * python compile_base.py -l dart -k
