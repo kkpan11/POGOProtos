@@ -3891,6 +3891,13 @@ enum WebTelemetryIds {
 }
 
 message ACNEJDAHGEL {
+	oneof IBAADMLCHGG {
+		PKIHGDGCBMJ view_impression = 5;
+		PKBECOOABMA view_fullscreen = 6;
+		HAPABEBKFLP fullscreen_interaction = 7;
+		HLFJBDIGMMB cta_clicked = 8;
+	}
+
 	message HAPABEBKFLP {
 		string gclmpneifpi = 1;
 		int64 lgciholhebh = 2;
@@ -3915,10 +3922,6 @@ message ACNEJDAHGEL {
 	string iehlmkjapfa = 2;
 	string hbcfgpgimac = 3;
 	bytes nklmfkkigod = 4;
-	PKIHGDGCBMJ cpeeeojjbaj = 5;
-	PKBECOOABMA kaajmjipgdi = 6;
-	HAPABEBKFLP nahnmmleeoh = 7;
-	HLFJBDIGMMB ajgainacjfd = 8;
 }
 
 message AKDJGAPPDJH {
@@ -8273,9 +8276,11 @@ message GIAKCPCOEEN {
 }
 
 message GKCIOCBPCCD {
-	GPOMOMDPAME kaefkjhhkjj = 1;
-	PNGCEHKOIFD dhnnjclpbgk = 2;
-	IEEBGMGNIFB jmcgednmafa = 3;
+	oneof GJEMEOMBHMG {
+		GPOMOMDPAME add_entry = 1;
+		PNGCEHKOIFD read_entry = 2;
+		IEEBGMGNIFB remove_entry = 3;
+	}
 }
 
 message GLLOHKCAIFG {
@@ -10247,9 +10252,12 @@ message HoloholoClientTelemetryOmniProto {
 }
 
 message IBKPPGHEHNE {
-	PoiSubmissionTelemetry cjodlcmhjfa = 1;
-	JDEECEHKBLE ojbdhmaakig = 2;
-	OACGBKPGAOL hjandlppacp = 3;
+	oneof JGCOOAIAEEN {
+		PoiSubmissionTelemetry poi_submission_telemetry = 1;
+		JDEECEHKBLE poi_submission_photo_upload_error_telemetry = 2;
+		OACGBKPGAOL player_metadata_telemetry = 3;
+	}
+
 	ServerData efjlkbiipde = 1001;
 }
 
@@ -11578,14 +11586,17 @@ message OACGBKPGAOL {
 }
 
 message OAPPJKPPIGD {
+	oneof GDBIBOOHKNB {
+		AdFeedbackComplaintReason complaint_reason = 5;
+		AdFeedbackNotInterestedReason not_interested_reason = 6;
+		AdFeedbackLikeReason like_reason = 7;
+	}
+
 	string hikhonakghb = 1;
 	string iehlmkjapfa = 2;
 	string hbcfgpgimac = 3;
 	bytes nklmfkkigod = 4;
 	string cloebeiapad = 8;
-	AdFeedbackComplaintReason ofdenhkhgmo = 9;
-	AdFeedbackNotInterestedReason lhfjmnabphk = 10;
-	AdFeedbackLikeReason kopmacgbnfp = 11;
 }
 
 message ODIDKHABAFE {
