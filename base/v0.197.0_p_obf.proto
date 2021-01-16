@@ -3890,54 +3890,6 @@ enum WebTelemetryIds {
 	WEB_TELEMETRY_IDS_POINT_OF_INTEREST_DESCRIPTION_WEB_CLICK = 1;
 }
 
-message ACNEJDAHGEL {
-	oneof IBAADMLCHGG {
-		PKIHGDGCBMJ view_impression = 5;
-		PKBECOOABMA view_fullscreen = 6;
-		HAPABEBKFLP fullscreen_interaction = 7;
-		HLFJBDIGMMB cta_clicked = 8;
-	}
-
-	message HAPABEBKFLP {
-		string gclmpneifpi = 1;
-		int64 lgciholhebh = 2;
-		int64 inmjkhohefo = 3;
-		bool mmojmndmbih = 4;
-	}
-
-	message HLFJBDIGMMB {
-		string gkbabdeaflk = 6;
-	}
-
-	message PKBECOOABMA {
-		string gclmpneifpi = 1;
-	}
-
-	message PKIHGDGCBMJ {
-		string nacfalmaglp = 1;
-		bool algopiepdjl = 2;
-	}
-
-	string hikhonakghb = 1;
-	string iehlmkjapfa = 2;
-	string hbcfgpgimac = 3;
-	bytes nklmfkkigod = 4;
-}
-
-message AKDJGAPPDJH {
-	string flhnldmnmgl = 1;
-}
-
-message ALFEOHHOAHF {
-	enum PDKDJGDICHI {
-		SUCCESS = 0;
-		MALFORMED = 1;
-		EXPIRED = 2;
-	}
-
-	PDKDJGDICHI hjkpbpbegfg = 1;
-}
-
 message ARBuddyMultiplayerSessionTelemetry {
 	bool camera_permission_granted = 1;
 	int64 host_time_to_publish_first_map = 2;
@@ -8275,24 +8227,11 @@ message GIAKCPCOEEN {
 	bytes nklmfkkigod = 2;
 }
 
-message GKCIOCBPCCD {
-	oneof GJEMEOMBHMG {
-		GPOMOMDPAME add_entry = 1;
-		PNGCEHKOIFD read_entry = 2;
-		IEEBGMGNIFB remove_entry = 3;
-	}
-}
-
 message GLLOHKCAIFG {
 	double gaebccjkfmg = 1;
 	int32 plejkjcamhl = 2;
 	double comfgagbckp = 3;
 	int64 lakebbgjfdc = 4;
-}
-
-message GPOMOMDPAME {
-	AKDJGAPPDJH gfmpidepcpe = 1;
-	int64 gmkhelafbem = 2;
 }
 
 message GameClientPhotoGalleryPoiImageProto {
@@ -10105,6 +10044,10 @@ message HJHOGJAMCAA {
 	string aoijhgmjnag = 4;
 }
 
+message HashedKeyProto {
+	string hashed_key_raw = 1;
+}
+
 message HelpshiftSettingsProto {
 	uint32 min_player_level = 1;
 	uint32 default_player_level = 2;
@@ -10259,10 +10202,6 @@ message IBKPPGHEHNE {
 	}
 
 	ServerData efjlkbiipde = 1001;
-}
-
-message IEEBGMGNIFB {
-	AKDJGAPPDJH gfmpidepcpe = 1;
 }
 
 message IOJONCONPEI {
@@ -10694,6 +10633,27 @@ message JoinLobbyProto {
 	double gym_lng_degrees = 8;
 	bool use_remote_pass = 9;
 	string inviter_id = 10;
+}
+
+message JournalAddEntryProto {
+	HashedKeyProto hashed_key = 1;
+	int64 entry_size = 2;
+}
+
+message JournalEntryProto {
+	oneof Subentry {
+		JournalAddEntryProto add_entry = 1;
+		JournalReadEntryProto read_entry = 2;
+		JournalRemoveEntryProto remove_entry = 3;
+	}
+}
+
+message JournalReadEntryProto {
+	HashedKeyProto hashed_key = 1;
+}
+
+message JournalRemoveEntryProto {
+	HashedKeyProto hashed_key = 1;
 }
 
 message KangarooSettingsProto {
@@ -11837,10 +11797,6 @@ message OpenTradingProto {
 
 message OptOutProto {
 	repeated string categories = 1;
-}
-
-message PNGCEHKOIFD {
-	AKDJGAPPDJH gfmpidepcpe = 1;
 }
 
 message ParticipationProto {
@@ -15951,6 +15907,50 @@ message RemoveQuestOutProto {
 
 message RemoveQuestProto {
 	string quest_id = 1;
+}
+
+message ReportAdInteractionProto {
+	oneof InteractionType {
+		ViewImpressionInteraction view_impression = 5;
+		ViewFullscreenInteraction view_fullscreen = 6;
+		FullScreenInteraction fullscreen_interaction = 7;
+		CTAClickInteraction cta_clicked = 8;
+	}
+
+	message FullScreenInteraction {
+		string fullscreen_image_url = 1;
+		int64 total_residence_time_ms = 2;
+		int64 time_away_ms = 3;
+		bool took_screenshot = 4;
+	}
+
+	message CTAClickInteraction {
+		string cta_url = 6;
+	}
+
+	message ViewFullscreenInteraction {
+		string fullscreen_image_url = 1;
+	}
+
+	message ViewImpressionInteraction {
+		string preview_image_url = 1;
+		bool is_persisted_gift = 2;
+	}
+
+	string game_id = 1;
+	string user_id = 2;
+	string guid = 3;
+	bytes encrypted_ad_token = 4;
+}
+
+message ReportAdInteractionResponse {
+	enum Status {
+		SUCCESS = 0;
+		MALFORMED = 1;
+		EXPIRED = 2;
+	}
+
+	Status status = 1;
 }
 
 message ReviveAttributesProto {
