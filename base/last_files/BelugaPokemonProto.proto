@@ -1,5 +1,5 @@
 /*
-* Copyright 2016-2020 --=FurtiF=--.
+* Copyright 2016-2021 --=FurtiF=--.
 *
 * Licensed under the
 *	Educational Community License, Version 2.0 (the "License"); you may
@@ -23,6 +23,7 @@ package POGOProtos.Rpc;
 
 import "Team.proto";
 import "HoloPokemonId.proto";
+import "PokemonGender.proto";
 import "HoloPokemonMove.proto";
 
 message BelugaPokemonProto {

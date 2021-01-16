@@ -1,5 +1,5 @@
 /*
-* Copyright 2016-2020 --=FurtiF=--.
+* Copyright 2016-2021 --=FurtiF=--.
 *
 * Licensed under the
 *	Educational Community License, Version 2.0 (the "License"); you may
@@ -29,15 +29,15 @@ message ReportAdInteractionProto {
 		CTAClickInteraction cta_clicked = 8;
 	}
 
-	message CTAClickInteraction {
-		string cta_url = 6;
-	}
-
 	message FullScreenInteraction {
 		string fullscreen_image_url = 1;
 		int64 total_residence_time_ms = 2;
 		int64 time_away_ms = 3;
 		bool took_screenshot = 4;
+	}
+
+	message CTAClickInteraction {
+		string cta_url = 6;
 	}
 
 	message ViewFullscreenInteraction {

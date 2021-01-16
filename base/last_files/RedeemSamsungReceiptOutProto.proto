@@ -1,5 +1,5 @@
 /*
-* Copyright 2016-2020 --=FurtiF=--.
+* Copyright 2016-2021 --=FurtiF=--.
 *
 * Licensed under the
 *	Educational Community License, Version 2.0 (the "License"); you may
@@ -28,5 +28,6 @@ message RedeemSamsungReceiptOutProto {
 		FAILURE = 2;
 	}
 
-	string purchase_id = 1;
+	Status status = 1;
+	string purchase_id = 2;
 }
