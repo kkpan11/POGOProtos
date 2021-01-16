@@ -4679,23 +4679,8 @@ message AwardedGymBadge {
 	PlayerRaidInfoProto raids = 15;
 }
 
-message BBACOAIFKML {
-	bytes kkdegabfpgc = 1;
-	string aogbdpfamhi = 2;
-}
-
 message BLHCJBAPHFL {
 	int32 pdnkcpemagh = 1;
-}
-
-message BNOHFELHKMB {
-	string oepnijekefg = 1;
-	repeated ODIDKHABAFE jfbpbneppka = 2;
-}
-
-message BPOFKCMEFBM {
-	double bhpbojbpakp = 1;
-	double epbficeioob = 2;
 }
 
 message BackgroundModeGlobalSettingsProto {
@@ -5108,6 +5093,12 @@ message BoundingRect {
 	double west = 4;
 }
 
+message BreadcrumbRecordProto {
+	int64 timestamp_ms = 1;
+	double latitude_deg = 2;
+	double longitude_deg = 3;
+}
+
 message BuddyActivityCategorySettings {
 	BuddyActivityCategory activity_category = 1;
 	int32 max_points_per_day = 2;
@@ -5454,24 +5445,6 @@ message BuddySwapSettings {
 
 message BuddyWalkSettings {
 	float km_required_per_affection_point = 1;
-}
-
-message CELMMAAONEJ {
-	enum LPJIJBHPMFH {
-		UNSET = 0;
-		SUCCESS = 1;
-	}
-
-	LPJIJBHPMFH hjkpbpbegfg = 1;
-	bool gdiahnjbcoa = 2;
-	bool ioemhpehalg = 3;
-	bool gamlhoeakjd = 4;
-	string gjbhhlepcpm = 5;
-	int64 deccmcgckmn = 6;
-	bool llflekogflf = 7;
-	string olnglbnaomn = 8;
-	EncounterType iibdgkcfoep = 9;
-	int32 bemlejebhap = 10;
 }
 
 message CameraSettingsProto {
@@ -6889,10 +6862,6 @@ message CurrentNewsProto {
 	int64 last_updated_timestamp = 3;
 }
 
-message DAIHEBCJHPD {
-	repeated GameMasterClientTemplateProto gbempanbkei = 1;
-}
-
 message DailyBonusProto {
 	int64 next_collect_timestamp_ms = 1;
 	int64 next_defender_bonus_collect_timestamp_ms = 2;
@@ -7829,15 +7798,6 @@ message ExperienceBoostAttributesProto {
 	int32 boost_duration_ms = 2;
 }
 
-message FPAPCGMEECG {
-	enum PKKBAEJADLO {
-		SUCCESS = 0;
-		ERROR = 1;
-	}
-
-	PKKBAEJADLO hjkpbpbegfg = 1;
-}
-
 message FavoritePokemonTelemetry {
 	PokemonTelemetry pokemon = 1;
 	bool favored = 2;
@@ -8215,17 +8175,6 @@ message FriendshipMilestoneRewardProto {
 	FriendshipLevelMilestone friendship_milestone = 2;
 }
 
-message GGAJAJOJDOD {
-	bytes nklmfkkigod = 1;
-}
-
-message GLLOHKCAIFG {
-	double gaebccjkfmg = 1;
-	int32 plejkjcamhl = 2;
-	double comfgagbckp = 3;
-	int64 lakebbgjfdc = 4;
-}
-
 message GameClientPhotoGalleryPoiImageProto {
 	string image_id = 1;
 	string poi_id = 2;
@@ -8345,6 +8294,10 @@ message GameMasterClientTemplateProto {
 	PokemonTagSettingsProto pokemon_tag_settings = 101;
 	RecommendedSearchProto recommended_search_proto = 102;
 	InventorySettingsProto inventory_settings = 103;
+}
+
+message GameMasterLocalProto {
+	repeated GameMasterClientTemplateProto templates = 1;
 }
 
 message GameplayWeatherProto {
@@ -10032,13 +9985,6 @@ message GymStatusAndDefendersProto {
 	repeated GymDefenderProto gym_defender = 2;
 }
 
-message HJHOGJAMCAA {
-	string bcjelekhcpi = 1;
-	string mfhmkmbacem = 2;
-	string lpcjifdpopf = 3;
-	string aoijhgmjnag = 4;
-}
-
 message HashedKeyProto {
 	string hashed_key_raw = 1;
 }
@@ -10189,10 +10135,6 @@ message HoloholoClientTelemetryOmniProto {
 	CommonFilterProto common_filters = 1002;
 }
 
-message IOJONCONPEI {
-	int64 deccmcgckmn = 1;
-}
-
 message IapItemCategoryDisplayProto {
 	HoloIapItemCategory category = 1;
 	string name = 2;
@@ -10326,6 +10268,13 @@ message InputSettingsProto {
 	bool enable_frame_independent_spin = 1;
 	int32 milliseconds_processed_spin_force = 2;
 	float spin_speed_multiplier = 3;
+}
+
+message InternalAuthProto {
+	string email = 1;
+	string player_id = 2;
+	string app_id = 3;
+	string key = 4;
 }
 
 message InvasionAvailabilitySettingsProto {
@@ -10984,28 +10933,6 @@ message LuckyPokemonSettingsProto {
 	float power_up_stardust_discount_percent = 1;
 }
 
-message MLCLKKHNPAG {
-	enum DFAICCBKMJB {
-		UNSET = 0;
-		INITIALIZATION = 1;
-		ACCUMULATION = 2;
-	}
-
-	DFAICCBKMJB ogbbkbiboke = 1;
-	int64 nfnbkihloam = 2;
-	GLLOHKCAIFG leiffegjkeh = 3;
-}
-
-message MOPBHPIBHDN {
-	string gjbhhlepcpm = 1;
-	int64 deccmcgckmn = 2;
-	double bhpbojbpakp = 3;
-	double epbficeioob = 4;
-	EncounterType iibdgkcfoep = 5;
-	double gpddahachdk = 6;
-	double loehhigkohp = 7;
-}
-
 message MapArea {
 	string description = 1;
 	int32 epoch = 2;
@@ -11347,47 +11274,6 @@ message MultiPartQuestProto {
 	repeated QuestProto sub_quests = 1;
 }
 
-message NINEFOCBGHL {
-	bytes fngjbikifmh = 1;
-}
-
-message NIOBEGKIGDI {
-	enum JAKHDEIEEBM {
-		UNSET = 0;
-		SUCCESS = 1;
-		ERROR_UNKNOWN = 2;
-		ERROR_PLAYER_NOT_FOUND = 3;
-	}
-
-	JAKHDEIEEBM hjkpbpbegfg = 1;
-}
-
-message NKNGCIPKOLM {
-	enum KNLMANDCPNP {
-		STATUS_UNKNOWN = 0;
-		STATUS_SUCCESS = 1;
-		STATUS_ALREADY_REDEEMED = 2;
-		STATUS_FAILED_INVENTORY_CHECK = 3;
-		STATUS_OUT_OF_RANGE = 4;
-		STATUS_WRONG_LOCATION = 5;
-		STATUS_RATE_LIMITED = 6;
-		STATUS_INVALID = 7;
-		STATUS_FULLY_REDEEMED = 8;
-		STATUS_EXPIRED = 9;
-	}
-
-	message OMJKMONBCBD {
-		string hjibaegmjfl = 1;
-		int32 ifnbfapdjgl = 2;
-	}
-
-	KNLMANDCPNP hjkpbpbegfg = 1;
-	int32 adcephpbklf = 2;
-	repeated OMJKMONBCBD ellnbcgabjf = 3;
-	string ialnkpagjci = 5;
-	bytes lncncopacoe = 6;
-}
-
 message NamedMapSettings {
 	string name = 1;
 	GmmSettings gmm_settings = 2;
@@ -11478,12 +11364,6 @@ message NotificationSettingsProto {
 message NpcPokemonProto {
 	HoloPokemonId pokemon_type = 1;
 	PokemonDisplayProto pokemon_display = 2;
-}
-
-message ODIDKHABAFE {
-	int64 nfnbkihloam = 1;
-	double hdddjcaonim = 2;
-	double degnfankdoj = 3;
 }
 
 message OnboardingSettingsProto {
@@ -11671,6 +11551,10 @@ message OpenSponsoredGiftOutProto {
 	LootProto rewards = 2;
 }
 
+message OpenSponsoredGiftProto {
+	bytes encrypted_ad_token = 1;
+}
+
 message OpenTradingOutProto {
 	enum Result {
 		UNSET = 0;
@@ -11755,6 +11639,32 @@ message PasscodeRedemptionFlowRequest {
 	string poi_guid = 2;
 	DevicePlatform device_platform = 3;
 	string carrier = 4;
+}
+
+message PasscodeRedemptionFlowResponse {
+	enum Status {
+		STATUS_UNKNOWN = 0;
+		STATUS_SUCCESS = 1;
+		STATUS_ALREADY_REDEEMED = 2;
+		STATUS_FAILED_INVENTORY_CHECK = 3;
+		STATUS_OUT_OF_RANGE = 4;
+		STATUS_WRONG_LOCATION = 5;
+		STATUS_RATE_LIMITED = 6;
+		STATUS_INVALID = 7;
+		STATUS_FULLY_REDEEMED = 8;
+		STATUS_EXPIRED = 9;
+	}
+
+	message Reward {
+		string hjibaegmjfl = 1;
+		int32 ifnbfapdjgl = 2;
+	}
+
+	Status status = 1;
+	int32 inventory_check_failed_reason = 2;
+	repeated Reward rewards = 3;
+	string passcode_batch_id = 5;
+	bytes in_game_reward = 6;
 }
 
 message PasscodeRewardsLogEntry {
@@ -15847,6 +15757,15 @@ message ReportAdFeedbackRequest {
 	string free_text_response = 8;
 }
 
+message ReportAdFeedbackResponse {
+	enum Status {
+		SUCCESS = 0;
+		ERROR = 1;
+	}
+
+	Status status = 1;
+}
+
 message ReportAdInteractionProto {
 	oneof InteractionType {
 		ViewImpressionInteraction view_impression = 5;
@@ -16367,6 +16286,21 @@ message SetPokemonTagsForPokemonProto {
 	repeated PokemonTagChangeProto tag_changes = 1;
 }
 
+message SfidaAuthToken {
+	bytes response_token = 1;
+	string sfida_id = 2;
+}
+
+message SfidaCaptureRequest {
+	string spawnpoint_id = 1;
+	int64 encounter_id = 2;
+	double player_lat = 3;
+	double player_lng = 4;
+	EncounterType encounter_type = 5;
+	double gym_lat = 6;
+	double gym_lng = 7;
+}
+
 message SfidaCaptureResponse {
 	enum Result {
 		UNSET = 0;
@@ -16395,6 +16329,14 @@ message SfidaCertificationRequest {
 	bytes payload = 2;
 }
 
+message SfidaCertificationResponse {
+	bytes payload = 1;
+}
+
+message SfidaDowserRequest {
+	int64 encounter_id = 1;
+}
+
 message SfidaDowserResponse {
 	enum Result {
 		UNSET = 0;
@@ -16412,6 +16354,48 @@ message SfidaDowserResponse {
 
 message SfidaGlobalSettingsProto {
 	float low_battery_threshold = 1;
+}
+
+message SfidaMetrics {
+	double distance_walked_km = 1;
+	int32 step_count = 2;
+	double calories_burned = 3;
+	int64 exercise_time_ms = 4;
+}
+
+message SfidaMetricsUpdate {
+	enum UpdateType {
+		UNSET = 0;
+		INITIALIZATION = 1;
+		ACCUMULATION = 2;
+	}
+
+	UpdateType update_type = 1;
+	int64 timestamp_ms = 2;
+	SfidaMetrics metrics = 3;
+}
+
+message SfidaUpdateRequest {
+	double player_lat = 1;
+	double player_lng = 2;
+}
+
+message SfidaUpdateResponse {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+	}
+
+	Status status = 1;
+	bool nearby_pokemon = 2;
+	bool uncaught_pokemon = 3;
+	bool legendary_pokemon = 4;
+	string spawnpoint_id = 5;
+	int64 encounter_id = 6;
+	bool nearby_pokestop = 7;
+	string pokestop_id = 8;
+	EncounterType encounter_type = 9;
+	int32 pokedex_number = 10;
 }
 
 message ShadowAttributesProto {
@@ -17222,6 +17206,22 @@ message UpdateAdventureSyncFitnessResponseProto {
 
 message UpdateAdventureSyncSettingsRequestProto {
 	AdventureSyncSettingsProto adventure_sync_settings = 1;
+}
+
+message UpdateBreadcrumbHistoryRequestProto {
+	string session_context = 1;
+	repeated BreadcrumbRecordProto breadcrumb_history = 2;
+}
+
+message UpdateBreadcrumbHistoryResponseProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_UNKNOWN = 2;
+		ERROR_PLAYER_NOT_FOUND = 3;
+	}
+
+	Status status = 1;
 }
 
 message UpdateCombatOutProto {
