@@ -14,12 +14,23 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: 0.197.0_p_obf
+* Version: 0.197.0
 *
 */
 
 syntax = "proto3";
 package POGOProtos.Rpc;
+
+enum AA_NEW_ENUM_0 {
+	AA_NEW_ENUM_0_NORMAL = 0;
+	AA_NEW_ENUM_0_CALL_TO_ACTION = 1;
+}
+
+enum AA_NEW_ENUM_1 {
+	AA_NEW_ENUM_1_POI = 0;
+	AA_NEW_ENUM_1_GIFT = 1;
+	AA_NEW_ENUM_1_NEARBY_POKEMON = 2;
+}
 
 enum AdFeedbackComplaintReason {
 	AD_FEEDBACK_COMPLAINT_REASON_INVALID = 0;
@@ -422,11 +433,6 @@ enum DeviceServiceTelemetryIds {
 	DEVICE_SERVICE_TELEMETRY_IDS_SFIDA = 3;
 	DEVICE_SERVICE_TELEMETRY_IDS_AWARENESS = 4;
 	DEVICE_SERVICE_TELEMETRY_IDS_ADVENTURE_SYNC = 5;
-}
-
-enum EPDNNCBIPOI {
-	EPDNNCBIPOI_NORMAL = 0;
-	EPDNNCBIPOI_CALL_TO_ACTION = 1;
 }
 
 enum EggIncubatorType {
@@ -2723,12 +2729,6 @@ enum ItemUseTelemetryIds {
 	ITEM_USE_TELEMETRY_IDS_UPDATE_ITEM_EQUIPPED = 3;
 }
 
-enum LMDOGPBNGHK {
-	LMDOGPBNGHK_POI = 0;
-	LMDOGPBNGHK_GIFT = 1;
-	LMDOGPBNGHK_NEARBY_POKEMON = 2;
-}
-
 enum LoginActionTelemetryIds {
 	LOGIN_ACTION_TELEMETRY_IDS_UNDEFINED_LOGIN_ACTION = 0;
 	LOGIN_ACTION_TELEMETRY_IDS_CLICK_AGE_GATE = 1;
@@ -3126,7 +3126,7 @@ enum OnboardingType {
 
 enum OnlineStatus {
 	ONLINE_STATUS_NOT_ONLINE = 0;
-	ONLINE_STATUS__ONLINE_ELSEWHERE = 1;
+	ONLINE_STATUS_ONLINE_ELSEWHERE = 1;
 	ONLINE_STATUS_ONLINE = 2;
 }
 
@@ -3681,13 +3681,13 @@ enum Store {
 }
 
 enum SubscriptionState {
-	PLATFORM_SUBSCRIPTION_STATE_UNKNOWN = 0;
-	PLATFORM_SUBSCRIPTION_STATE_ACTIVE = 1;
-	PLATFORM_SUBSCRIPTION_STATE_CANCELLED = 2;
-	PLATFORM_SUBSCRIPTION_STATE_EXPIRED = 3;
-	PLATFORM_SUBSCRIPTION_STATE_GRACE_PERIOD = 4;
-	PLATFORM_SUBSCRIPTION_STATE_FREE_TRIAL = 5;
-	PLATFORM_SUBSCRIPTION_STATE_PENDING_PURCHASE = 6;
+	SUBSCRIPTION_STATE_UNKNOWN = 0;
+	SUBSCRIPTION_STATE_ACTIVE = 1;
+	SUBSCRIPTION_STATE_CANCELLED = 2;
+	SUBSCRIPTION_STATE_EXPIRED = 3;
+	SUBSCRIPTION_STATE_GRACE_PERIOD = 4;
+	SUBSCRIPTION_STATE_FREE_TRIAL = 5;
+	SUBSCRIPTION_STATE_PENDING_PURCHASE = 6;
 }
 
 enum Team {
@@ -4677,10 +4677,6 @@ message AwardedGymBadge {
 	float progress = 13;
 	bool level_up = 14;
 	PlayerRaidInfoProto raids = 15;
-}
-
-message BLHCJBAPHFL {
-	int32 pdnkcpemagh = 1;
 }
 
 message BackgroundModeGlobalSettingsProto {
@@ -10583,6 +10579,10 @@ message JournalRemoveEntryProto {
 	HashedKeyProto hashed_key = 1;
 }
 
+message JournalVersionProto {
+	int32 version = 1;
+}
+
 message KangarooSettingsProto {
 	bool enable_kangaroo_v2 = 1;
 }
@@ -11656,8 +11656,8 @@ message PasscodeRedemptionFlowResponse {
 	}
 
 	message Reward {
-		string hjibaegmjfl = 1;
-		int32 ifnbfapdjgl = 2;
+		string item = 1;
+		int32 count = 2;
 	}
 
 	Status status = 1;

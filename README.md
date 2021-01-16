@@ -17,8 +17,7 @@ We are following [semantic versioning](http://semver.org/) for POGOProtos.  Ever
 
 | Version      | Base                                                                                                      | Notes                  | Extra                           |
 |--------------|-----------------------------------------------------------------------------------------------------------|------------------------|---------------------------------|
-| 2.53.4       |  [v0.197.0_p_obf](https://github.com/Furtif/POGOProtos/blob/master/base/v0.197.0_p_obf.proto)                         | **Partial Obfuscated** (_/base/v0.197.0_p_obf.proto_)  |  Protocol Buffers v3.14.0     |
-| 2.53.3       |  [v0.195.2](https://github.com/Furtif/POGOProtos/blob/master/base/v0.195.2.proto)                         | **Updated** (_/base/base.proto_)  |  Protocol Buffers v3.14.0     |
+| 2.53.4       |  [v0.197.0](https://github.com/Furtif/POGOProtos/blob/master/base/v0.197.0.proto)                         | **Updated** (_/base/base.proto_)  |  Protocol Buffers v3.14.0     |
 
 ### Addons
 

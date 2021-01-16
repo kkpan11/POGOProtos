@@ -9,7 +9,7 @@ import shutil
 from subprocess import call
 
 # Variables
-global_version = '0.197.0_p_obf'
+global_version = '0.197.0'
 protoc_executable = "protoc"
 package_name = 'POGOProtos.Rpc'
 input_file = "POGOProtos.Rpc.proto"
@@ -524,6 +524,9 @@ def open_proto_file(main_file, head):
             elif proto_name == "VariableName" and not operator.contains(proto_line, "{") and not operator.contains(
                     proto_line, "}") and operator.contains(proto_line, "unset__variable_name"):
                 proto_line = proto_line.replace("unset__variable_name", "UNSET")
+            elif proto_name == "SubscriptionState" and not operator.contains(proto_line, "{") and not operator.contains(
+                    proto_line, "}") and operator.contains(proto_line, "PLATFORM_"):
+                proto_line = proto_line.replace("PLATFORM_", "")
             elif proto_name == "HoloholoClientTelemetryIds" and not operator.contains(proto_line,
                                                                                       "{") and not operator.contains(
                 proto_line, "}") and operator.contains(proto_line, "HOLOHOLO_"):
