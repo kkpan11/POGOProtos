@@ -17963,7 +17963,7 @@ message UserAttributesProto {
 message UserIssueWeatherReport {
 	string gameplayer_weather = 1;
 	bool alert_active = 2;
-	int32 severity = 3;
+	WeatherAlertProto.Severity severity = 3;
 	int32 user_report = 4;
 }
 
@@ -18192,7 +18192,7 @@ message WeatherBonusProto {
 message WeatherDetailClickTelemetry {
 	string gameplay_weather_type = 1;
 	bool alert_active = 2;
-	int32 severity = 3;
+	WeatherAlertProto.Severity severity = 3;
 }
 
 message WebTelemetry {

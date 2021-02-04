@@ -598,6 +598,8 @@ def open_proto_file(main_file, head):
                 proto_line = proto_line.replace("int32", "Item")
             elif operator.contains(proto_line, "int32 balltype "):
                 proto_line = proto_line.replace("int32", "Item")
+            elif operator.contains(proto_line, "int32 severity "):
+                proto_line = proto_line.replace("int32", "WeatherAlertProto.Severity")
             ## others conditions
             elif operator.contains(proto_line, "Platform "):
                 proto_line = proto_line.replace("Platform", "REF_PY_1")
