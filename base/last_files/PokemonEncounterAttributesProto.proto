@@ -42,4 +42,5 @@ message PokemonEncounterAttributesProto {
 	float camera_distance = 16;
 	float min_pokemon_action_frequency_s = 17;
 	float max_pokemon_action_frequency_s = 18;
+	int32 bonus_xl_candy_capture_reward = 19;
 }

@@ -28,4 +28,5 @@ message MonodepthSettingsProto {
 	bool enable_ground_suppression = 4;
 	float min_ground_suppression_thresh = 5;
 	uint32 suppression_channel_id = 6;
+	string suppression_channel_name = 7;
 }

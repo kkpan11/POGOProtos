@@ -21,8 +21,14 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-enum AA_NEW_ENUM_0 {
-	AA_NEW_ENUM_0_POI = 0;
-	AA_NEW_ENUM_0_GIFT = 1;
-	AA_NEW_ENUM_0_NEARBY_POKEMON = 2;
+import "IncidentDisplayType.proto";
+
+message IncidentPrioritySettingsProto {
+	message IncidentPriority {
+		int32 priority = 1;
+		IncidentDisplayType display_type = 2;
+		repeated HoloBadgeType one_of_badge_types = 3;
+	}
+
+	repeated IncidentPriority incident_priority = 1;
 }

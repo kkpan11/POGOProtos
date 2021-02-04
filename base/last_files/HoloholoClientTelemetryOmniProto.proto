@@ -91,6 +91,8 @@ import "DeepLinkingTelemetry.proto";
 import "ArMappingSessionTelemetryProto.proto";
 import "PokemonHomeTelemetry.proto";
 import "PokemonSearchTelemetry.proto";
+import "ImageGalleryTelemetry.proto";
+import "PlayerShownLevelUpShareScreenTelemetry.proto";
 import "ServerData.proto";
 import "CommonFilterProto.proto";
 
@@ -166,6 +168,8 @@ message HoloholoClientTelemetryOmniProto {
 		ArMappingSessionTelemetryProto ar_mapping_session_telemetry = 68;
 		PokemonHomeTelemetry pokemon_home_telemetry = 69;
 		PokemonSearchTelemetry pokemon_search_telemetry = 70;
+		ImageGalleryTelemetry image_gallery_telemetry = 71;
+		PlayerShownLevelUpShareScreenTelemetry player_shown_level_up_share_screen_telemetry = 72;
 	}
 
 	ServerData server_data = 1001;

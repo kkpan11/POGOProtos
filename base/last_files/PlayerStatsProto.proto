@@ -81,6 +81,7 @@ message PlayerStatsProto {
 	int32 num_total_mega_evolutions = 56;
 	int32 num_unique_mega_evolutions = 57;
 	int32 num_mini_collection_event_completed = 60;
+	int32 num_pokemon_form_changes = 61;
 	int32 num_rocket_balloon_battles_won = 62;
 	int32 num_rocket_balloon_battles_total = 63;
 }

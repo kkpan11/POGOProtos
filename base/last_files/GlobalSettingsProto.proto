@@ -78,6 +78,7 @@ import "SponsoredPoiFeedbackSettingsProto.proto";
 import "CrashlyticsSettingsProto.proto";
 import "CatchPokemonGlobalSettingsProto.proto";
 import "IdfaSettingsProto.proto";
+import "FormChangeSettingsProto.proto";
 import "StoreIapSettingsProto.proto";
 
 message GlobalSettingsProto {
@@ -142,5 +143,6 @@ message GlobalSettingsProto {
 	CrashlyticsSettingsProto crashlytics_settings = 65;
 	CatchPokemonGlobalSettingsProto catch_pokemon_settings = 66;
 	IdfaSettingsProto idfa_settings = 67;
+	FormChangeSettingsProto form_change_settings = 68;
 	repeated StoreIapSettingsProto iap_settings = 69;
 }

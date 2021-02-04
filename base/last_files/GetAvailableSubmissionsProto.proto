@@ -24,6 +24,5 @@ package POGOProtos.Rpc;
 import "PlayerSubmissionTypeProto.proto";
 
 message GetAvailableSubmissionsProto {
-	PlayerSubmissionTypeProto submission_type = 1;
-	repeated PlayerSubmissionTypeProto submission_types = 2;
+	repeated PlayerSubmissionTypeProto submission_types = 1;
 }

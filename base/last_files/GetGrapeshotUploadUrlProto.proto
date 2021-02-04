@@ -21,10 +21,7 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "PlayerSubmissionTypeProto.proto";
-
 message GetGrapeshotUploadUrlProto {
-	PlayerSubmissionTypeProto submission_type = 1;
-	string submission_id = 2;
-	repeated string file_upload_context = 3;
+	string submission_id = 1;
+	repeated string file_upload_context = 2;
 }

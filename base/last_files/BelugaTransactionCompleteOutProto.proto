@@ -42,4 +42,5 @@ message BelugaTransactionCompleteOutProto {
 	LootProto loot_awarded = 3;
 	BelugaBleFinalizeTransfer beluga_finalize_response = 4;
 	int32 buckets_until_weekly_award = 5;
+	map<int32, int32> xl_candy_awarded_per_id = 6;
 }

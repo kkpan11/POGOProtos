@@ -53,5 +53,6 @@ message HoloInventoryKeyProto {
 		HoloBadgeType badge = 24;
 		bool player_stats_snapshot = 25;
 		int64 unknown_key = 26;
+		uint64 dummy_data = 27;
 	}
 }

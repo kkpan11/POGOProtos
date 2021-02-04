@@ -21,8 +21,6 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "PlayerSubmissionTypeProto.proto";
-
 message AsyncFileUploadCompleteOutProto {
 	enum ErrorStatus {
 		UNSET = 0;
@@ -32,7 +30,5 @@ message AsyncFileUploadCompleteOutProto {
 		MISSING_UPLOAD_STATUS = 4;
 	}
 
-	ErrorStatus error = 1;
-	PlayerSubmissionTypeProto submission_type = 2;
-	string poi_id = 3;
+	string poi_id = 1;
 }

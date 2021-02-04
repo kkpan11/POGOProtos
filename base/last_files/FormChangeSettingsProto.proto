@@ -21,8 +21,6 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-enum AA_NEW_ENUM_1 {
-	AA_NEW_ENUM_1_POI = 0;
-	AA_NEW_ENUM_1_GIFT = 1;
-	AA_NEW_ENUM_1_NEARBY_POKEMON = 2;
+message FormChangeSettingsProto {
+	bool enabled = 1;
 }

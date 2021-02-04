@@ -21,8 +21,7 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-enum AA_NEW_ENUM_0 {
-	AA_NEW_ENUM_0_POI = 0;
-	AA_NEW_ENUM_0_GIFT = 1;
-	AA_NEW_ENUM_0_NEARBY_POKEMON = 2;
+message DismissOutgoingGameInvitesRequest {
+	string friend_id = 1;
+	repeated string app_key = 2;
 }

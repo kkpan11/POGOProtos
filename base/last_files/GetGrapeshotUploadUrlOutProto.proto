@@ -33,5 +33,5 @@ message GetGrapeshotUploadUrlOutProto {
 	}
 
 	Status status = 1;
-	map<string, GrapeshotUploadingDataProto> file_context_to_grapeshot_data = 4;
+	map<string, GrapeshotUploadingDataProto> file_context_to_grapeshot_data = 2;
 }

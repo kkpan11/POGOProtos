@@ -308,4 +308,5 @@ enum HoloPokemonMove {
 	GUST_FAST = 345;
 	INCINERATE_FAST = 346;
 	DARK_VOID = 347;
+	FEATHER_DANCE = 348;
 }

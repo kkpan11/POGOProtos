@@ -32,4 +32,5 @@ message GetBuddyWalkedOutProto {
 	double last_km_awarded = 5;
 	int32 mega_energy_earned_count = 6;
 	HoloPokemonId mega_pokemon_id = 7;
+	int32 xl_candy = 8;
 }

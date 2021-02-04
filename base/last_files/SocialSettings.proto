@@ -31,7 +31,7 @@ message SocialSettings {
 	enum TutorialType {
 		UNSET = 0;
 		PROFILE = 1;
-		FRIEND_LIST_V2 = 2;
+		CROSS_GAME_FRIEND_LIST = 2;
 		ONLINE_STATUS_OVERVIEW = 3;
 		ONLINE_STATUS_TOGGLE = 4;
 	}

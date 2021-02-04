@@ -21,8 +21,16 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-enum AA_NEW_ENUM_0 {
-	AA_NEW_ENUM_0_POI = 0;
-	AA_NEW_ENUM_0_GIFT = 1;
-	AA_NEW_ENUM_0_NEARBY_POKEMON = 2;
+message InviteGameResponse {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_UNKNOWN = 2;
+		ERROR_NOT_FRIEND = 3;
+		ERROR_EXCEED_LIMIT = 4;
+		ERROR_ALREADY_SIGNED_UP = 5;
+		ERROR_EMAIL_FAILED = 6;
+	}
+
+	Status status = 1;
 }

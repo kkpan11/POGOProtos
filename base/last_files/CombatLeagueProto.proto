@@ -85,6 +85,7 @@ message CombatLeagueProto {
 	message PokemonWithForm {
 		HoloPokemonId id = 1;
 		PokemonDisplayProto.Form form = 2;
+		repeated PokemonDisplayProto.Form forms = 3;
 	}
 
 	message UnlockConditionProto {

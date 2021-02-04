@@ -21,7 +21,13 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message UploadPoiPhotoByUrlProto {
-	string request_id = 1;
-	string image_url = 2;
+import "Item.proto";
+import "EvolutionQuestInfoProto.proto";
+
+message FormChangeProto {
+	repeated PokemonDisplayProto.Form available_form = 1;
+	int32 candy_cost = 2;
+	int32 stardust_cost = 3;
+	Item item_cost = 4;
+	repeated EvolutionQuestInfoProto quest_requirement = 5;
 }

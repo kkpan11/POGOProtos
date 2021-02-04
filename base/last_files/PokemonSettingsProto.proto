@@ -34,6 +34,7 @@ import "PokemonThirdMoveAttributesProto.proto";
 import "AnimationOverrideProto.proto";
 import "ShadowAttributesProto.proto";
 import "TempEvoOverrideProto.proto";
+import "FormChangeProto.proto";
 
 message PokemonSettingsProto {
 	enum BuddySize {
@@ -97,4 +98,5 @@ message PokemonSettingsProto {
 	int32 buddy_walked_mega_energy_award = 52;
 	bool disable_transfer_to_pokemon_home = 61;
 	float raid_boss_distance_offset = 62;
+	repeated FormChangeProto form_change = 63;
 }

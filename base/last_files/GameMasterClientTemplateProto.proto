@@ -113,6 +113,7 @@ import "GeotargetedQuestSettingsProto.proto";
 import "PokemonTagSettingsProto.proto";
 import "RecommendedSearchProto.proto";
 import "InventorySettingsProto.proto";
+import "IncidentPrioritySettingsProto.proto";
 
 message GameMasterClientTemplateProto {
 	string template_id = 1;
@@ -208,4 +209,5 @@ message GameMasterClientTemplateProto {
 	PokemonTagSettingsProto pokemon_tag_settings = 101;
 	RecommendedSearchProto recommended_search_proto = 102;
 	InventorySettingsProto inventory_settings = 103;
+	IncidentPrioritySettingsProto incident_priority_settings = 108;
 }

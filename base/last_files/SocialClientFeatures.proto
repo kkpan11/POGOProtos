@@ -33,7 +33,12 @@ message SocialClientFeatures {
 			UNSET = 0;
 			NIANTIC_PROFILE = 1;
 			ONLINE_STATUS = 2;
-			FRIEND_LIST = 3;
+			CROSS_GAME_FRIEND_LIST = 3;
+			GAME_INVITE_SENDER = 4;
+			SHARED_FRIEND_GRAPH = 5;
+			NICKNAME = 6;
+			CROSS_GAME_ONLINE_STATUS = 7;
+			GAME_INVITE_RECEIVER = 8;
 		}
 
 		repeated FeatureType disabled_features = 1;

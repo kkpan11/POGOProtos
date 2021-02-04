@@ -21,8 +21,17 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-enum AA_NEW_ENUM_0 {
-	AA_NEW_ENUM_0_POI = 0;
-	AA_NEW_ENUM_0_GIFT = 1;
-	AA_NEW_ENUM_0_NEARBY_POKEMON = 2;
+message ImageGalleryTelemetry {
+	enum ImageGalleryEventId {
+		UNKNOWN = 0;
+		ENTER_IMAGE_GALLERY = 1;
+		ENTER_IMAGE_DETAILS_PAGE = 2;
+		VOTE_FROM_MAIN_GALLERY_PAGE = 3;
+		UNVOTE_FROM_MAIN_GALLERY_PAGE = 4;
+		VOTE_FROM_IMAGE_DETAILS_PAGE = 5;
+		UNVOTE_FROM_IMAGE_DETAILS_PAGE = 6;
+		ENTER_IMAGE_EDIT_FROM_GALLERY = 7;
+	}
+
+	ImageGalleryEventId image_gallery_telemetry_id = 1;
 }

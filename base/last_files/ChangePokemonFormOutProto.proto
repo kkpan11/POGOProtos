@@ -21,8 +21,22 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-enum AA_NEW_ENUM_0 {
-	AA_NEW_ENUM_0_POI = 0;
-	AA_NEW_ENUM_0_GIFT = 1;
-	AA_NEW_ENUM_0_NEARBY_POKEMON = 2;
+import "PokemonProto.proto";
+
+message ChangePokemonFormOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_POKEMON_MISSING = 2;
+		ERROR_INSUFFICIENT_RESOURCES = 3;
+		ERROR_QUEST_INCOMPLETE = 4;
+		ERROR_POKEMON_CANNOT_CHANGE = 5;
+		ERROR_POKEMON_DEPLOYED = 6;
+		ERROR_FEATURE_DISABLED = 7;
+	}
+
+	Result result = 1;
+	PokemonProto changed_pokemon = 2;
+	int32 exp_awarded = 3;
+	int32 candy_awarded = 4;
 }
