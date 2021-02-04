@@ -9,7 +9,7 @@ import shutil
 from subprocess import call
 
 # Variables
-global_version = '0.197.1'
+global_version = '0.199.0'
 protoc_executable = "protoc"
 package_name = 'POGOProtos.Rpc'
 input_file = "POGOProtos.Rpc.proto"
@@ -195,7 +195,7 @@ commands = []
 
 def finish_compile(out_path, lang):
     if lang == 'python':
-        pogo_protos_path = os.path.join(out_path, "pogoprotos")
+        pogo_protos_path = os.path.join(out_path, "POGOProtos")
 
         for root, dirnames, filenames in os.walk(pogo_protos_path):
             init_path = os.path.join(root, '__init__.py')

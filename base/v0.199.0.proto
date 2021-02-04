@@ -21,32 +21,34 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-enum AEAKNINODPN {
-	AEAKNINODPN_NOT_ONLINE = 0;
-	AEAKNINODPN_ONLINE_ELSEWHERE = 1;
-	AEAKNINODPN_ONLINE = 2;
+enum AA_NEW_ENUM_0 {
+	AA_NEW_ENUM_0_POI = 0;
+	AA_NEW_ENUM_0_GIFT = 1;
+	AA_NEW_ENUM_0_NEARBY_POKEMON = 2;
 }
 
-enum AFIOFCCKLLM {
-	AFIOFCCKLLM_COLOR = 0;
-	AFIOFCCKLLM_POSITION = 1;
-	AFIOFCCKLLM_SIZE = 2;
-	AFIOFCCKLLM_TEXT = 3;
-	AFIOFCCKLLM_ACTIVE = 4;
-	AFIOFCCKLLM_ICON = 5;
-	AFIOFCCKLLM_SET_RAID_DATA = 6;
-	AFIOFCCKLLM_NEARBY_CARROT_VISIBLE = 7;
-	AFIOFCCKLLM_SET_LOWEST_MOTIVATION = 8;
-	AFIOFCCKLLM_SET_NPC_CLICKED_ACTION = 9;
-	AFIOFCCKLLM_BEGIN_EXIT = 10;
+enum AdFeedbackComplaintReason {
+	AD_FEEDBACK_COMPLAINT_REASON_INVALID = 0;
+	AD_FEEDBACK_COMPLAINT_REASON_OFFENSIVE = 1;
+	AD_FEEDBACK_COMPLAINT_REASON_SPAM = 2;
+	AD_FEEDBACK_COMPLAINT_REASON_SEXUALLY_INAPPROPRIATE = 3;
+	AD_FEEDBACK_COMPLAINT_REASON_SCAM_OR_MISLEADING = 4;
+	AD_FEEDBACK_COMPLAINT_REASON_VIOLENCE_OR_PROHIBITED = 5;
+	AD_FEEDBACK_COMPLAINT_REASON_POLITICAL = 6;
 }
 
-enum AOPJAHHKPMB {
-	AOPJAHHKPMB_AD_FEEDBACK_LIKE_REASON_INVALID = 0;
-	AOPJAHHKPMB_AD_FEEDBACK_LIKE_REASON_CATEGORY = 1;
-	AOPJAHHKPMB_AD_FEEDBACK_LIKE_REASON_SEE_MORE = 2;
-	AOPJAHHKPMB_AD_FEEDBACK_LIKE_REASON_MORE_SPONSORED_GIFTS = 3;
-	AOPJAHHKPMB_AD_FEEDBACK_LIKE_REASON_OTHER = 4;
+enum AdFeedbackLikeReason {
+	AD_FEEDBACK_LIKE_REASON_INVALID = 0;
+	AD_FEEDBACK_LIKE_REASON_CATEGORY = 1;
+	AD_FEEDBACK_LIKE_REASON_SEE_MORE = 2;
+	AD_FEEDBACK_LIKE_REASON_MORE_SPONSORED_GIFTS = 3;
+	AD_FEEDBACK_LIKE_REASON_OTHER = 4;
+}
+
+enum AdFeedbackNotInterestedReason {
+	AD_FEEDBACK_NOT_INTERESTED_REASON_INVALID = 0;
+	AD_FEEDBACK_NOT_INTERESTED_REASON_NOT_RELEVANT = 1;
+	AD_FEEDBACK_NOT_INTERESTED_REASON_SEEN_TOO_OFTEN = 2;
 }
 
 enum AnimationTake {
@@ -71,6 +73,23 @@ enum ArMappingTutorialPage {
 	AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS = 0;
 }
 
+enum ArMode {
+	AR_MODE_NONE = 0;
+	AR_MODE_ARSTANDARD = 1;
+	AR_MODE_ARPLUS = 2;
+}
+
+enum ArToggleContext {
+	AR_TOGGLE_CONTEXT_ENCOUNTER = 0;
+}
+
+enum AssetBundleStatus {
+	ASSET_BUNDLE_STATUS_UNLOADED = 0;
+	ASSET_BUNDLE_STATUS_LOADING = 1;
+	ASSET_BUNDLE_STATUS_LOADED = 2;
+	ASSET_BUNDLE_STATUS_FAILED = 3;
+}
+
 enum AssetTelemetryIds {
 	ASSET_TELEMETRY_IDS_UNDEFINED_ASSET_EVENT = 0;
 	ASSET_TELEMETRY_IDS_DOWNLOAD_START = 1;
@@ -78,6 +97,11 @@ enum AssetTelemetryIds {
 	ASSET_TELEMETRY_IDS_DOWNLOAD_FAILED = 3;
 	ASSET_TELEMETRY_IDS_ASSET_RETRIEVED_FROM_CACHE = 4;
 	ASSET_TELEMETRY_IDS_CACHE_THRASH = 5;
+}
+
+enum AvatarCompletion {
+	AVATAR_COMPLETION_SUCCESS = 0;
+	AVATAR_COMPLETION_QUIT = 1;
 }
 
 enum AvatarCustomizationTelemetryIds {
@@ -93,25 +117,19 @@ enum AvatarCustomizationTelemetryIds {
 	AVATAR_CUSTOMIZATION_TELEMETRY_IDS_SHOW_QUICK_SHOP = 9;
 }
 
-enum BEBAEACCLGK {
-	BEBAEACCLGK_NONE = 0;
-	BEBAEACCLGK_START = 1;
-	BEBAEACCLGK_NICE = 2;
-	BEBAEACCLGK_GREAT = 3;
-	BEBAEACCLGK_EXCELLENT = 4;
+enum BadgeRank {
+	BADGE_RANK_NONE = 0;
+	BADGE_RANK_BRONZE = 1;
+	BADGE_RANK_SILVER = 2;
+	BADGE_RANK_GOLD = 3;
+	BADGE_RANK_PLATINUM = 4;
 }
 
-enum BJPOMKOCDGE {
-	BJPOMKOCDGE_POI = 0;
-	BJPOMKOCDGE_GIFT = 1;
-	BJPOMKOCDGE_NEARBY_POKEMON = 2;
-}
-
-enum BMANOBLFNBJ {
-	BMANOBLFNBJ_BMANOBLFNBJ_AUTO_INVALID = 0;
-	BMANOBLFNBJ_FOLLOW_X = 1;
-	BMANOBLFNBJ_FOLLOW_Y = 2;
-	BMANOBLFNBJ_FOLLOW_Z = 4;
+enum BannedPlayerReason {
+	BANNED_PLAYER_REASON_BANNED = 0;
+	BANNED_PLAYER_REASON_UNAUTHORIZED_DEVICE = 1;
+	BANNED_PLAYER_REASON_SUSPENDED = 2;
+	BANNED_PLAYER_REASON_RESTRICTION_VIOLATION = 3;
 }
 
 enum BattleHubSection {
@@ -140,6 +158,12 @@ enum BattlePartyTelemetryIds {
 	BATTLE_PARTY_TELEMETRY_IDS_GYM_BATTLE = 3;
 	BATTLE_PARTY_TELEMETRY_IDS_RAID_BATTLE = 4;
 	BATTLE_PARTY_TELEMETRY_IDS_BATTLE_POKEMON_CHANGED = 5;
+}
+
+enum BattleResultsExit {
+	BATTLE_RESULTS_EXIT_LEAVE_GYM = 0;
+	BATTLE_RESULTS_EXIT_LEAVE_BATTLE = 1;
+	BATTLE_RESULTS_EXIT_CONTINUE_BATTLE = 2;
 }
 
 enum BuddyActivity {
@@ -199,56 +223,11 @@ enum BuddyLevel {
 	BUDDY_LEVEL_5 = 6;
 }
 
-enum CKOIJPEINPJ {
-	CKOIJPEINPJ_NONE = 0;
-	CKOIJPEINPJ_GYM_REMOVAL = 1;
-	CKOIJPEINPJ_POKEMON_HUNGRY = 2;
-	CKOIJPEINPJ_EXCLUSIVE_RAID_INVITE = 3;
-	CKOIJPEINPJ_EXCLUSIVE_RAID_CANCELLATION = 4;
-	CKOIJPEINPJ_SHARED_EXCLUSIVE_RAID_INVITE = 5;
-	CKOIJPEINPJ_GIFTBOX_INCOMING = 6;
-	CKOIJPEINPJ_GIFTBOX_DELIVERED = 7;
-	CKOIJPEINPJ_FRIENDSHIP_MILESTONE_REWARD = 8;
-	CKOIJPEINPJ_GYM_BATTLE_FRIENDSHIP_INCREMENT = 9;
-	CKOIJPEINPJ_BGMODE_EGG_HATCH = 10;
-	CKOIJPEINPJ_BGMODE_BUDDY_CANDY = 11;
-	CKOIJPEINPJ_BGMODE_WEEKLY_FITNESS_REPORT = 12;
-	CKOIJPEINPJ_BGMODE_OFF_SESSION_DISTANCE = 13;
-	CKOIJPEINPJ_BGMODE_POI_PROXIMITY = 14;
-	CKOIJPEINPJ_BGMODE_NAMED_BUDDY_CANDY = 15;
-	CKOIJPEINPJ_APP_BADGE_ONLY = 16;
-	CKOIJPEINPJ_COMBAT_CHALLENGE_OPENED = 17;
-	CKOIJPEINPJ_LUCKY_FRIEND = 18;
-	CKOIJPEINPJ_BUDDY_HUNGRY = 19;
-	CKOIJPEINPJ_BUDDY_FOUND_GIFT = 20;
-	CKOIJPEINPJ_BUDDY_AFFECTION_LEVEL_MILESTONE = 21;
-	CKOIJPEINPJ_BUDDY_AFFECTION_WALKING = 22;
-	CKOIJPEINPJ_BUDDY_AFFECTION_CARE = 23;
-	CKOIJPEINPJ_BUDDY_AFFECTION_BATTLE = 24;
-	CKOIJPEINPJ_BUDDY_AFFECTION_PHOTO = 25;
-	CKOIJPEINPJ_BUDDY_AFFECTION_POI = 26;
-	CKOIJPEINPJ_BUDDY_ATTRACTIVE_POI = 27;
-	CKOIJPEINPJ_FRIEND_INVITE_RECEIVED = 28;
-	CKOIJPEINPJ_FRIEND_INVITE_ACCEPTED = 29;
-	CKOIJPEINPJ_COMBAT_VS_SEEKER_CHARGED = 30;
-	CKOIJPEINPJ_COMBAT_COMPETITIVE_SEASON_END = 31;
-	CKOIJPEINPJ_BUDDY_AFFECTION_ATTRACTIVE_POI = 32;
-	CKOIJPEINPJ_POI_PASSCODE_REDEEMED = 33;
-	CKOIJPEINPJ_NO_EGGS_INCUBATING = 34;
-	CKOIJPEINPJ_RETENTION_UNOPENED_GIFTS = 39;
-	CKOIJPEINPJ_RETENTION_STARPIECE = 40;
-	CKOIJPEINPJ_RETENTION_INCENSE = 41;
-	CKOIJPEINPJ_RETENTION_LUCKY_EGG = 42;
-	CKOIJPEINPJ_RETENTION_ADVSYNC_REWARDS = 43;
-	CKOIJPEINPJ_RETENTION_EGGS_NOT_INCUBATING = 44;
-	CKOIJPEINPJ_RETENTION_POWER_WALK = 45;
-	CKOIJPEINPJ_RETENTION_FUN_WITH_FRIENDS = 46;
-	CKOIJPEINPJ_BUDDY_REMOTE_GIFT = 47;
-	CKOIJPEINPJ_BGMODE_BUDDY_REMOTE_GIFT = 48;
-	CKOIJPEINPJ_REMOTE_RAID_INVITATION = 49;
-	CKOIJPEINPJ_ITEM_REWARDS = 50;
-	CKOIJPEINPJ_TIMED_GROUP_CHALLENGE_STARTED = 51;
-	CKOIJPEINPJ_TIMED_GROUP_CHALLENGE_GOAL_MET = 52;
+enum CalendarAddResult {
+	CALENDAR_ADD_RESULT_UNKNOWN = 0;
+	CALENDAR_ADD_RESULT_PERMISSION_DENIED = -2;
+	CALENDAR_ADD_RESULT_NOT_ADDED = -1;
+	CALENDAR_ADD_RESULT_ADDED = 1;
 }
 
 enum CameraInterpolation {
@@ -274,6 +253,20 @@ enum CameraTarget {
 	CAM_TARGET_SHOULDER_ATTACKER_DEFENDER = 12;
 	CAM_TARGET_SHOULDER_ATTACKER_DEFENDER_MIRROR = 13;
 	CAM_TARGET_ATTACKER_DEFENDER_WORLD = 14;
+}
+
+enum CameraType {
+	CAMERA_TYPE_DEFAULT = 0;
+	CAMERA_TYPE_SHOULDER = 1;
+	CAMERA_TYPE_ENEMY_POKEMON_FOCUS = 2;
+	CAMERA_TYPE_MY_POKEMON_FOCUS = 3;
+}
+
+enum CameraZoomInLevel {
+	CAMERA_ZOOM_IN_LEVEL_DEFAULT = 0;
+	CAMERA_ZOOM_IN_LEVEL_NICE = 1;
+	CAMERA_ZOOM_IN_LEVEL_GREAT = 2;
+	CAMERA_ZOOM_IN_LEVEL_EXCELLENT = 3;
 }
 
 enum CentralState {
@@ -336,6 +329,58 @@ enum ClientAction {
 	CLIENT_ACTION_UPDATE_ADVENTURE_SYNC_SETTINGS = 5047;
 }
 
+enum ClientInboxServiceNotificationCategory {
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_NONE = 0;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_GYM_REMOVAL = 1;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_POKEMON_HUNGRY = 2;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_EXCLUSIVE_RAID_INVITE = 3;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_EXCLUSIVE_RAID_CANCELLATION = 4;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_SHARED_EXCLUSIVE_RAID_INVITE = 5;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_GIFTBOX_INCOMING = 6;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_GIFTBOX_DELIVERED = 7;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_FRIENDSHIP_MILESTONE_REWARD = 8;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_GYM_BATTLE_FRIENDSHIP_INCREMENT = 9;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BGMODE_EGG_HATCH = 10;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BGMODE_BUDDY_CANDY = 11;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BGMODE_WEEKLY_FITNESS_REPORT = 12;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BGMODE_OFF_SESSION_DISTANCE = 13;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BGMODE_POI_PROXIMITY = 14;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BGMODE_NAMED_BUDDY_CANDY = 15;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_APP_BADGE_ONLY = 16;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_COMBAT_CHALLENGE_OPENED = 17;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_LUCKY_FRIEND = 18;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BUDDY_HUNGRY = 19;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BUDDY_FOUND_GIFT = 20;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BUDDY_AFFECTION_LEVEL_MILESTONE = 21;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BUDDY_AFFECTION_WALKING = 22;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BUDDY_AFFECTION_CARE = 23;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BUDDY_AFFECTION_BATTLE = 24;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BUDDY_AFFECTION_PHOTO = 25;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BUDDY_AFFECTION_POI = 26;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BUDDY_ATTRACTIVE_POI = 27;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_FRIEND_INVITE_RECEIVED = 28;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_FRIEND_INVITE_ACCEPTED = 29;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_COMBAT_VS_SEEKER_CHARGED = 30;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_COMBAT_COMPETITIVE_SEASON_END = 31;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BUDDY_AFFECTION_ATTRACTIVE_POI = 32;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_POI_PASSCODE_REDEEMED = 33;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_NO_EGGS_INCUBATING = 34;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_RETENTION_UNOPENED_GIFTS = 39;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_RETENTION_STARPIECE = 40;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_RETENTION_INCENSE = 41;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_RETENTION_LUCKY_EGG = 42;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_RETENTION_ADVSYNC_REWARDS = 43;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_RETENTION_EGGS_NOT_INCUBATING = 44;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_RETENTION_POWER_WALK = 45;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_RETENTION_FUN_WITH_FRIENDS = 46;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BUDDY_REMOTE_GIFT = 47;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_BGMODE_BUDDY_REMOTE_GIFT = 48;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_REMOTE_RAID_INVITATION = 49;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_ITEM_REWARDS = 50;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_TIMED_GROUP_CHALLENGE_STARTED = 51;
+	CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_TIMED_GROUP_CHALLENGE_GOAL_MET = 52;
+}
+
 enum CombatHubEntranceTelemetryIds {
 	COMBAT_HUB_ENTRANCE_TELEMETRY_IDS_UNDEFINED_EVENT = 0;
 	COMBAT_HUB_ENTRANCE_TELEMETRY_IDS_CLICKED_COMBAT_HUB_BUTTON = 1;
@@ -365,11 +410,10 @@ enum CombatType {
 	COMBAT_TYPE_VS_SEEKER = 6;
 }
 
-enum DOGIEKDNMEF {
-	DOGIEKDNMEF_UNLOADED = 0;
-	DOGIEKDNMEF_LOADING = 1;
-	DOGIEKDNMEF_LOADED = 2;
-	DOGIEKDNMEF_FAILED = 3;
+enum CurrencyType {
+	CURRENCY_TYPE_UNKNOWN = 0;
+	CURRENCY_TYPE_POKECOIN = 1;
+	CURRENCY_TYPE_STARDUST = 2;
 }
 
 enum DeviceKind {
@@ -384,24 +428,6 @@ enum DeviceServiceTelemetryIds {
 	DEVICE_SERVICE_TELEMETRY_IDS_SFIDA = 3;
 	DEVICE_SERVICE_TELEMETRY_IDS_AWARENESS = 4;
 	DEVICE_SERVICE_TELEMETRY_IDS_ADVENTURE_SYNC = 5;
-}
-
-enum EGLGEPIICEO {
-	EGLGEPIICEO_NONE = 0;
-	EGLGEPIICEO_VICTORY = 1;
-}
-
-enum ENOKFENDOAN {
-	ENOKFENDOAN_DEFAULT = 0;
-	ENOKFENDOAN_NICE = 1;
-	ENOKFENDOAN_GREAT = 2;
-	ENOKFENDOAN_EXCELLENT = 3;
-}
-
-enum EPAPAEHBFJB {
-	EPAPAEHBFJB_UNSET = 0;
-	EPAPAEHBFJB_MAIN = 1;
-	EPAPAEHBFJB_SURROUNDING = 2;
 }
 
 enum EggIncubatorType {
@@ -430,16 +456,9 @@ enum EncounterType {
 	ENCOUNTER_TYPE_TIMED_MINI_COLLECTION_QUEST = 13;
 }
 
-enum FGCOKEPPJKP {
-	FGCOKEPPJKP_ONBOARDING_INTRODUCTION = 0;
-	FGCOKEPPJKP_ONBOARDING_ENCOUNTER = 1;
-	FGCOKEPPJKP_ONBOARDING_SHADOW = 2;
-	FGCOKEPPJKP_ONBOARDING_MAP_FRAGMENT = 3;
-	FGCOKEPPJKP_ONBOARDING_MAP_1 = 4;
-	FGCOKEPPJKP_ONBOARDING_MAP_2 = 5;
-	FGCOKEPPJKP_INSPIRE = 6;
-	FGCOKEPPJKP_MAP_TIME_WARNING = 7;
-	FGCOKEPPJKP_MAP_EMPTY_WARNING = 8;
+enum ExitVfxContext {
+	EXIT_VFX_CONTEXT_NORMAL = 0;
+	EXIT_VFX_CONTEXT_VICTORY = 1;
 }
 
 enum FeatureKind {
@@ -559,16 +578,9 @@ enum FriendshipLevelMilestone {
 	FRIENDSHIP_LEVEL_4 = 5;
 }
 
-enum GNFHDEMJDAP {
-	GNFHDEMJDAP_NONE = 0;
-	GNFHDEMJDAP_PORTRAIT = 1;
-	GNFHDEMJDAP_DIALOG = 2;
-}
-
-enum GPNJOBFOIBG {
-	GPNJOBFOIBG_AD_FEEDBACK_NOT_INTERESTED_REASON_INVALID = 0;
-	GPNJOBFOIBG_AD_FEEDBACK_NOT_INTERESTED_REASON_NOT_RELEVANT = 1;
-	GPNJOBFOIBG_AD_FEEDBACK_NOT_INTERESTED_REASON_SEEN_TOO_OFTEN = 2;
+enum GameChatActions {
+	UNKNOWN_GAME_CHAT_ACTION = 0;
+	PROXY_CHAT_ACTION = 660000;
 }
 
 enum GenericClickTelemetryIds {
@@ -589,18 +601,6 @@ enum GymBadgeType {
 	GYM_BADGE_BRONZE = 2;
 	GYM_BADGE_SILVER = 3;
 	GYM_BADGE_GOLD = 4;
-}
-
-enum HHBACHLPBDB {
-	HHBACHLPBDB_UNKNOWN_GAME_CHAT_ACTION = 0;
-	HHBACHLPBDB_PROXY_CHAT_ACTION = 660000;
-}
-
-enum HJFJANLDOJE {
-	HJFJANLDOJE_WHAT_IS_POKESTOP = 0;
-	HJFJANLDOJE_SUBMIT_FOR_REVIEW = 1;
-	HJFJANLDOJE_HOW_TO_CHOOSE_A_LOCATION = 2;
-	HJFJANLDOJE_DESCRIBE_A_LOCATION = 3;
 }
 
 enum HelpshiftAuthFailureReason {
@@ -2545,17 +2545,6 @@ enum HoloholoClientTelemetryIds {
 	CLIENT_TELEMETRY_IDS_POKEMON_HOME_TELEMETRY = 49;
 }
 
-enum IJHDFOFECOG {
-	IJHDFOFECOG_NPC = 0;
-	IJHDFOFECOG_POKESTOP = 1;
-	IJHDFOFECOG_BALLOON = 2;
-}
-
-enum ILIADNIDNND {
-	ILIADNIDNND_NORMAL = 0;
-	ILIADNIDNND_VICTORY = 1;
-}
-
 enum IapLibraryVersion {
 	IAP_LIBRARY_VERSION_DEFAULT = 0;
 	IAP_LIBRARY_VERSION_IODINE_1_8 = 1;
@@ -2585,6 +2574,56 @@ enum IncidentDisplayType {
 	INCIDENT_DISPLAY_TYPE_INVASION_GIOVANNI = 3;
 	INCIDENT_DISPLAY_TYPE_INVASION_GRUNTB = 4;
 	INCIDENT_DISPLAY_TYPE_INVASION_EVENT_NPC = 5;
+}
+
+enum IncidentDynamicStringTypes {
+	INCIDENT_DYNAMIC_STRING_TYPES_GREETING = 0;
+	INCIDENT_DYNAMIC_STRING_TYPES_CHALLENGE = 1;
+	INCIDENT_DYNAMIC_STRING_TYPES_DEFEAT = 2;
+	INCIDENT_DYNAMIC_STRING_TYPES_VICTORY = 3;
+	INCIDENT_DYNAMIC_STRING_TYPES_PRE_BATTLE = 4;
+	INCIDENT_DYNAMIC_STRING_TYPES_POST_BATTLE = 5;
+	INCIDENT_DYNAMIC_STRING_TYPES_ITEMS_STOLEN = 6;
+	INCIDENT_DYNAMIC_STRING_TYPES_TUTORIAL = 7;
+	INCIDENT_DYNAMIC_STRING_TYPES_COMBAT_QUOTE = 8;
+	INCIDENT_DYNAMIC_STRING_TYPES_CANDELA_INSPIRE = 9;
+	INCIDENT_DYNAMIC_STRING_TYPES_BLANCHE_INSPIRE = 10;
+	INCIDENT_DYNAMIC_STRING_TYPES_SPARK_INSPIRE = 11;
+	INCIDENT_DYNAMIC_STRING_TYPES_GRUNT_DECOY = 12;
+	INCIDENT_DYNAMIC_STRING_TYPES_COMBAT_DECOY_QUOTE = 13;
+}
+
+enum IncidentFinishSequence {
+	INCIDENT_FINISH_SEQUENCE_NONE = 0;
+	INCIDENT_FINISH_SEQUENCE_VICTORY = 1;
+}
+
+enum IncidentLeaderStringTypes {
+	INCIDENT_LEADER_STRING_TYPES_ONBOARDING_INTRODUCTION = 0;
+	INCIDENT_LEADER_STRING_TYPES_ONBOARDING_ENCOUNTER = 1;
+	INCIDENT_LEADER_STRING_TYPES_ONBOARDING_SHADOW = 2;
+	INCIDENT_LEADER_STRING_TYPES_ONBOARDING_MAP_FRAGMENT = 3;
+	INCIDENT_LEADER_STRING_TYPES_ONBOARDING_MAP_1 = 4;
+	INCIDENT_LEADER_STRING_TYPES_ONBOARDING_MAP_2 = 5;
+	INCIDENT_LEADER_STRING_TYPES_INSPIRE = 6;
+	INCIDENT_LEADER_STRING_TYPES_MAP_TIME_WARNING = 7;
+	INCIDENT_LEADER_STRING_TYPES_MAP_EMPTY_WARNING = 8;
+}
+
+enum IncidentStartContext {
+	INCIDENT_START_CONTEXT_NPC = 0;
+	INCIDENT_START_CONTEXT_POKESTOP = 1;
+	INCIDENT_START_CONTEXT_BALLOON = 2;
+}
+
+enum IncubationResult {
+	INCUBATION_RESULT_SUCCESS = 0;
+	INCUBATION_RESULT_FAILURE = 1;
+}
+
+enum IncubatorSelectionResult {
+	INCUBATOR_SELECTION_RESULT_SELECTED = 0;
+	INCUBATOR_SELECTION_RESULT_EXIT = 1;
 }
 
 enum InvasionTelemetryIds {
@@ -2702,74 +2741,6 @@ enum ItemUseTelemetryIds {
 	ITEM_USE_TELEMETRY_IDS_UPDATE_ITEM_EQUIPPED = 3;
 }
 
-enum JECIEICBKEL {
-	JECIEICBKEL_ENCOUNTER = 0;
-}
-
-enum JFFCPLKOJOP {
-	JFFCPLKOJOP_LEAVE_GYM = 0;
-	JFFCPLKOJOP_LEAVE_BATTLE = 1;
-	JFFCPLKOJOP_CONTINUE_BATTLE = 2;
-}
-
-enum JOAMKDIMAHF {
-	JOAMKDIMAHF_UNKNOWN = 0;
-	JOAMKDIMAHF_CATEGORY = 1;
-	JOAMKDIMAHF_SORT = 2;
-	JOAMKDIMAHF_SALE = 3;
-	JOAMKDIMAHF_ML_BUNDLE_TRACKING_ID = 4;
-	JOAMKDIMAHF_CLIENT_TIME_ZONE_ENABLE_MS = 5;
-	JOAMKDIMAHF_CLIENT_TIME_ZONE_DISABLE_MS = 6;
-}
-
-enum KCBABPNCFEA {
-	KCBABPNCFEA_BANNED = 0;
-	KCBABPNCFEA_UNAUTHORIZED_DEVICE = 1;
-	KCBABPNCFEA_SUSPENDED = 2;
-	KCBABPNCFEA_RESTRICTION_VIOLATION = 3;
-}
-
-enum KKFNEBMIECG {
-	KKFNEBMIECG_SUCCESS = 0;
-	KKFNEBMIECG_QUIT = 1;
-}
-
-enum KMNKOPEOCNL {
-	KMNKOPEOCNL_GEN1 = 0;
-	KMNKOPEOCNL_GEN2 = 1;
-	KMNKOPEOCNL_GEN3 = 2;
-	KMNKOPEOCNL_GEN4 = 3;
-	KMNKOPEOCNL_GEN5 = 4;
-	KMNKOPEOCNL_GEN6 = 5;
-	KMNKOPEOCNL_GEN7 = 6;
-	KMNKOPEOCNL_GEN8 = 7;
-	KMNKOPEOCNL_MELTAN = 1001;
-	KMNKOPEOCNL_MEGAEVO = 1002;
-	KMNKOPEOCNL_ALL = 5001;
-}
-
-enum LANCCGKKJPC {
-	LANCCGKKJPC_UNSET = 0;
-	LANCCGKKJPC_V1 = 1;
-	LANCCGKKJPC_V2 = 2;
-}
-
-enum LAPNIKPPCPJ {
-	LAPNIKPPCPJ_REGULAR = 0;
-	LAPNIKPPCPJ_BELUGA = 1;
-}
-
-enum LLMMCOBKKAO {
-	LLMMCOBKKAO_NONE = 0;
-	LLMMCOBKKAO_ARSTANDARD = 1;
-	LLMMCOBKKAO_ARPLUS = 2;
-}
-
-enum LPCONANAMLC {
-	LPCONANAMLC_SUCCESS = 0;
-	LPCONANAMLC_FAILURE = 1;
-}
-
 enum LoginActionTelemetryIds {
 	LOGIN_ACTION_TELEMETRY_IDS_UNDEFINED_LOGIN_ACTION = 0;
 	LOGIN_ACTION_TELEMETRY_IDS_CLICK_AGE_GATE = 1;
@@ -2800,11 +2771,6 @@ enum LoginActionTelemetryIds {
 	LOGIN_ACTION_TELEMETRY_IDS_CLICK_APPLE = 26;
 	LOGIN_ACTION_TELEMETRY_IDS_COMPLETE_APPLE = 27;
 	LOGIN_ACTION_TELEMETRY_IDS_CANCEL_APPLE = 28;
-}
-
-enum MDAJGCAIIJA {
-	MDAJGCAIIJA_CHEAT_WARNING = 0;
-	MDAJGCAIIJA_POST_SUSPENSION_WARNING = 1;
 }
 
 enum MapEventsTelemetryIds {
@@ -3041,38 +3007,6 @@ enum Method {
 	METHOD_CHOOSE_EVENT_VARIANT = 1723;
 }
 
-enum NAGOEOLFIFP {
-	NAGOEOLFIFP_UNKNOWN = 0;
-	NAGOEOLFIFP_PERMISSION_DENIED = -2;
-	NAGOEOLFIFP_NOT_ADDED = -1;
-	NAGOEOLFIFP_ADDED = 1;
-}
-
-enum NFDJHMIHNKH {
-	NFDJHMIHNKH_AD_FEEDBACK_COMPLAINT_REASON_INVALID = 0;
-	NFDJHMIHNKH_AD_FEEDBACK_COMPLAINT_REASON_OFFENSIVE = 1;
-	NFDJHMIHNKH_AD_FEEDBACK_COMPLAINT_REASON_SPAM = 2;
-	NFDJHMIHNKH_AD_FEEDBACK_COMPLAINT_REASON_SEXUALLY_INAPPROPRIATE = 3;
-	NFDJHMIHNKH_AD_FEEDBACK_COMPLAINT_REASON_SCAM_OR_MISLEADING = 4;
-	NFDJHMIHNKH_AD_FEEDBACK_COMPLAINT_REASON_VIOLENCE_OR_PROHIBITED = 5;
-	NFDJHMIHNKH_AD_FEEDBACK_COMPLAINT_REASON_POLITICAL = 6;
-}
-
-enum NKGLPKEFDPJ {
-	NKGLPKEFDPJ_ADD = 0;
-	NKGLPKEFDPJ_MODIFY = 1;
-	NKGLPKEFDPJ_REMOVE = 2;
-	NKGLPKEFDPJ_PREDICTED_MODIFY = 3;
-	NKGLPKEFDPJ_PREDICTED_REMOVE = 4;
-	NKGLPKEFDPJ_ROLLED_BACK_MODIFY = 5;
-	NKGLPKEFDPJ_ROLLED_BACK_REMOVE = 6;
-}
-
-enum NONFGACCPGC {
-	NONFGACCPGC_SELECTED = 0;
-	NONFGACCPGC_EXIT = 1;
-}
-
 enum NewsPageTelemetryIds {
 	NEWS_PAGE_TELEMETRY_IDS_UNDEFINED_NEWS_EVENT = 0;
 	NEWS_PAGE_TELEMETRY_IDS_NEWS_VIEWED = 1;
@@ -3147,37 +3081,6 @@ enum NotificationType {
 	NOTIFICATION_TYPE_SYSTEM_NOTIFICATIONS = 4;
 }
 
-enum OGAJGOLKAPF {
-	OGAJGOLKAPF_DEFAULT = 0;
-	OGAJGOLKAPF_SHOULDER = 1;
-	OGAJGOLKAPF_ENEMY_POKEMON_FOCUS = 2;
-	OGAJGOLKAPF_MY_POKEMON_FOCUS = 3;
-}
-
-enum OIOHHGFKAJC {
-	OIOHHGFKAJC_GREETING = 0;
-	OIOHHGFKAJC_CHALLENGE = 1;
-	OIOHHGFKAJC_DEFEAT = 2;
-	OIOHHGFKAJC_VICTORY = 3;
-	OIOHHGFKAJC_PRE_BATTLE = 4;
-	OIOHHGFKAJC_POST_BATTLE = 5;
-	OIOHHGFKAJC_ITEMS_STOLEN = 6;
-	OIOHHGFKAJC_TUTORIAL = 7;
-	OIOHHGFKAJC_COMBAT_QUOTE = 8;
-	OIOHHGFKAJC_CANDELA_INSPIRE = 9;
-	OIOHHGFKAJC_BLANCHE_INSPIRE = 10;
-	OIOHHGFKAJC_SPARK_INSPIRE = 11;
-	OIOHHGFKAJC_GRUNT_DECOY = 12;
-	OIOHHGFKAJC_COMBAT_DECOY_QUOTE = 13;
-}
-
-enum OMCKEFIEHME {
-	OMCKEFIEHME_PROF = 0;
-	OMCKEFIEHME_BLUE_LEADER = 1;
-	OMCKEFIEHME_RED_LEADER = 2;
-	OMCKEFIEHME_YELLOW_LEADER = 3;
-}
-
 enum OmniNotificationSubscriptionType {
 	OMNI_NOTIFICATION_SUBSCRIPTION_TYPE_OPTED_IN = 0;
 	OMNI_NOTIFICATION_SUBSCRIPTION_TYPE_SUBSCRIBED = 1;
@@ -3235,18 +3138,31 @@ enum OnboardingType {
 	ONBOARDING_TYPE_ONLINE_STATUS_TOGGLE = 4;
 }
 
-enum PFNAKFPFGDP {
-	PFNAKFPFGDP_UNKNOWN = 0;
-	PFNAKFPFGDP_POKECOIN = 1;
-	PFNAKFPFGDP_STARDUST = 2;
+enum OnlineStatus {
+	ONLINE_STATUS_NOT_ONLINE = 0;
+	ONLINE_STATUS_ONLINE_ELSEWHERE = 1;
+	ONLINE_STATUS_ONLINE = 2;
 }
 
-enum PJNAHBOMJBH {
-	PJNAHBOMJBH_NONE = 0;
-	PJNAHBOMJBH_BRONZE = 1;
-	PJNAHBOMJBH_SILVER = 2;
-	PJNAHBOMJBH_GOLD = 3;
-	PJNAHBOMJBH_PLATINUM = 4;
+enum POIDecorationFollowFlags {
+	POI_DECORATION_FOLLOW_FLAGS_UNSET = 0;
+	POI_DECORATION_FOLLOW_FLAGS_FOLLOW_X = 1;
+	POI_DECORATION_FOLLOW_FLAGS_FOLLOW_Y = 2;
+	POI_DECORATION_FOLLOW_FLAGS_FOLLOW_Z = 4;
+}
+
+enum POIDecorationProperties {
+	POI_DECORATION_PROPERTIES_COLOR = 0;
+	POI_DECORATION_PROPERTIES_POSITION = 1;
+	POI_DECORATION_PROPERTIES_SIZE = 2;
+	POI_DECORATION_PROPERTIES_TEXT = 3;
+	POI_DECORATION_PROPERTIES_ACTIVE = 4;
+	POI_DECORATION_PROPERTIES_ICON = 5;
+	POI_DECORATION_PROPERTIES_SET_RAID_DATA = 6;
+	POI_DECORATION_PROPERTIES_NEARBY_CARROT_VISIBLE = 7;
+	POI_DECORATION_PROPERTIES_SET_LOWEST_MOTIVATION = 8;
+	POI_DECORATION_PROPERTIES_SET_NPC_CLICKED_ACTION = 9;
+	POI_DECORATION_PROPERTIES_BEGIN_EXIT = 10;
 }
 
 enum PermissionContextTelemetryIds {
@@ -3268,6 +3184,12 @@ enum PermissionFlowStepTelemetryIds {
 	PERMISSION_FLOW_STEP_TELEMETRY_IDS_ACTIVITY_PERMISSIONS = 4;
 }
 
+enum PhoneBoothPresentationMode {
+	PHONE_BOOTH_PRESENTATION_MODE_NONE = 0;
+	PHONE_BOOTH_PRESENTATION_MODE_PORTRAIT = 1;
+	PHONE_BOOTH_PRESENTATION_MODE_DIALOG = 2;
+}
+
 enum Platform {
 	PLATFORM_UNSET = 0;
 	PLATFORM_IOS = 1;
@@ -3280,6 +3202,12 @@ enum Platform {
 enum PlayerAvatarType {
 	PLAYER_AVATAR_MALE = 0;
 	PLAYER_AVATAR_FEMALE = 1;
+}
+
+enum PlayerOnboardingPath {
+	PLAYER_ONBOARDING_PATH_UNSET = 0;
+	PLAYER_ONBOARDING_PATH_V1 = 1;
+	PLAYER_ONBOARDING_PATH_V2 = 2;
 }
 
 enum PlayerSubmissionAction {
@@ -3349,6 +3277,27 @@ enum PoiInvalidReason {
 	POI_INVALID_REASON_SCHOOL = 4;
 	POI_INVALID_REASON_PERMANENTLY_REMOVED = 5;
 	POI_INVALID_REASON_DUPLICATE = 6;
+}
+
+enum PoiSubmissionTutorialPage {
+	POI_SUBMISSION_TUTORIAL_PAGE_WHAT_IS_POKESTOP = 0;
+	POI_SUBMISSION_TUTORIAL_PAGE_SUBMIT_FOR_REVIEW = 1;
+	POI_SUBMISSION_TUTORIAL_PAGE_HOW_TO_CHOOSE_A_LOCATION = 2;
+	POI_SUBMISSION_TUTORIAL_PAGE_DESCRIBE_A_LOCATION = 3;
+}
+
+enum PokedexGenerationId {
+	POKEDEX_GENERATION_ID_GEN1 = 0;
+	POKEDEX_GENERATION_ID_GEN2 = 1;
+	POKEDEX_GENERATION_ID_GEN3 = 2;
+	POKEDEX_GENERATION_ID_GEN4 = 3;
+	POKEDEX_GENERATION_ID_GEN5 = 4;
+	POKEDEX_GENERATION_ID_GEN6 = 5;
+	POKEDEX_GENERATION_ID_GEN7 = 6;
+	POKEDEX_GENERATION_ID_GEN8 = 7;
+	POKEDEX_GENERATION_ID_MELTAN = 1001;
+	POKEDEX_GENERATION_ID_MEGAEVO = 1002;
+	POKEDEX_GENERATION_ID_ALL = 5001;
 }
 
 enum PokemonAlignment {
@@ -3433,6 +3382,16 @@ enum PokemonTagColor {
 	POKEMON_TAG_COLOR_ORANGE = 6;
 	POKEMON_TAG_COLOR_GREY = 7;
 	POKEMON_TAG_COLOR_BLACK = 8;
+}
+
+enum PresentationType {
+	PRESENTATION_TYPE_UNKNOWN = 0;
+	PRESENTATION_TYPE_CATEGORY = 1;
+	PRESENTATION_TYPE_SORT = 2;
+	PRESENTATION_TYPE_SALE = 3;
+	PRESENTATION_TYPE_ML_BUNDLE_TRACKING_ID = 4;
+	PRESENTATION_TYPE_CLIENT_TIME_ZONE_ENABLE_MS = 5;
+	PRESENTATION_TYPE_CLIENT_TIME_ZONE_DISABLE_MS = 6;
 }
 
 enum ProfilePageTelemetryIds {
@@ -3556,6 +3515,11 @@ enum RemoteRaidTelemetryIds {
 	REMOTE_RAID_TELEMETRY_IDS_REMOTE_RAID_INVITE_SENT = 2;
 	REMOTE_RAID_TELEMETRY_IDS_REMOTE_RAID_INVITE_ACCEPTED = 3;
 	REMOTE_RAID_TELEMETRY_IDS_REMOTE_RAID_INVITE_REJECTED = 4;
+}
+
+enum SelectMode {
+	SELECT_MODE_REGULAR = 0;
+	SELECT_MODE_BELUGA = 1;
 }
 
 enum SfidaConnectState {
@@ -3718,6 +3682,13 @@ enum SouvenirTypeId {
 	SOUVENIR_PIKACHU_VISOR = 17;
 }
 
+enum Speaker {
+	SPEAKER_PROF = 0;
+	SPEAKER_BLUE_LEADER = 1;
+	SPEAKER_RED_LEADER = 2;
+	SPEAKER_YELLOW_LEADER = 3;
+}
+
 enum SponsorPoiInvalidReason {
 	SPONSOR_POI_INVALID_REASON_SPONSOR_POI_REASON_UNSPECIFIED = 0;
 	SPONSOR_POI_INVALID_REASON_SPONSOR_POI_REASON_DOES_NOT_EXIST = 1;
@@ -3849,6 +3820,16 @@ enum TweenAction {
 	TWEEN_ACTION_CANVAS_SCALE = 43;
 }
 
+enum UpdateType {
+	UPDATE_TYPE_ADD = 0;
+	UPDATE_TYPE_MODIFY = 1;
+	UPDATE_TYPE_REMOVE = 2;
+	UPDATE_TYPE_PREDICTED_MODIFY = 3;
+	UPDATE_TYPE_PREDICTED_REMOVE = 4;
+	UPDATE_TYPE_ROLLED_BACK_MODIFY = 5;
+	UPDATE_TYPE_ROLLED_BACK_REMOVE = 6;
+}
+
 enum VariableName {
 	VARIABLE_NAME_UNSET = 0;
 	VARIABLE_NAME_CODE_NAME = 1;
@@ -3911,43 +3892,27 @@ enum VariableName {
 	VARIABLE_NAME_DL_ID = 1105;
 }
 
+enum VfxLevel {
+	VFX_LEVEL_NONE = 0;
+	VFX_LEVEL_START = 1;
+	VFX_LEVEL_NICE = 2;
+	VFX_LEVEL_GREAT = 3;
+	VFX_LEVEL_EXCELLENT = 4;
+}
+
 enum VsSeekerRewardTrack {
 	VS_SEEKER_REWARD_TRACK_FREE = 0;
 	VS_SEEKER_REWARD_TRACK_PREMIUM = 1;
 }
 
+enum WarnedPlayerReason {
+	WARNED_PLAYER_REASON_CHEAT_WARNING = 0;
+	WARNED_PLAYER_REASON_POST_SUSPENSION_WARNING = 1;
+}
+
 enum WebTelemetryIds {
 	WEB_TELEMETRY_IDS_UNDEFINED_WEB_EVENT = 0;
 	WEB_TELEMETRY_IDS_POINT_OF_INTEREST_DESCRIPTION_WEB_CLICK = 1;
-}
-
-message AHKBDBNLFFN {
-	oneof BCFPCOLEDDI {
-		NFDJHMIHNKH complaint_reason = 5;
-		GPNJOBFOIBG not_interested_reason = 6;
-		AOPJAHHKPMB like_reason = 7;
-	}
-
-	string onelkdmhoch = 1;
-	string fjnkknohkah = 2;
-	string hahgjiddklf = 3;
-	bytes efpemkekfji = 4;
-	string nghhmjoenoj = 8;
-}
-
-message APKGFJCDNPD {
-	enum HFDMMOBJIGL {
-		UNSET = 0;
-		FOUND = 1;
-		NEARBY = 2;
-		OUT_OF_RANGE = 3;
-		ALREADY_CAUGHT = 4;
-		NOT_AVAILABLE = 5;
-	}
-
-	HFDMMOBJIGL lgoljgohiel = 1;
-	int32 cliholleblf = 2;
-	string hhmopacedle = 3;
 }
 
 message ARBuddyMultiplayerSessionTelemetry {
@@ -4091,11 +4056,32 @@ message ActivateVsSeekerProto {
 	VsSeekerRewardTrack reward_track = 1;
 }
 
+message AdDetails {
+	ImageTextCreativeProto image_text_creative = 1;
+	bytes encrypted_ad_token = 2;
+}
+
 message AdFeedbackSettingsProto {
 	bool enabled = 1;
 	bool enable_report_ad = 2;
 	bool enable_not_interested = 3;
 	bool enable_see_more = 4;
+}
+
+message AdRequestDeviceInfo {
+	enum OperatingSystem {
+		PLATFORM_UNKNOWN = 0;
+		PLATFORM_ANDROID = 1;
+		PLATFORM_IOS = 2;
+	}
+
+	OperatingSystem operating_system = 1;
+	string device_model = 2;
+	string carrier = 3;
+}
+
+message AdTargetingInfoProto {
+	AdRequestDeviceInfo device_info = 1;
 }
 
 message AddFortModifierOutProto {
@@ -4547,7 +4533,7 @@ message AttackRaidBattleOutProto {
 
 	Result result = 1;
 	BattleUpdateProto battle_update = 2;
-	HPEALJKJFMK sponsored_gift = 3;
+	AdDetails sponsored_gift = 3;
 }
 
 message AttackRaidBattleProto {
@@ -4556,7 +4542,7 @@ message AttackRaidBattleProto {
 	repeated BattleActionProto attacker_actions = 3;
 	BattleActionProto last_retrieved_action = 4;
 	int64 timestamp_ms = 5;
-	HNKPENKECHL ad_targeting_info = 6;
+	AdTargetingInfoProto ad_targeting_info = 6;
 }
 
 message AvailableSkuProto {
@@ -4702,18 +4688,6 @@ message AwardedGymBadge {
 	float progress = 13;
 	bool level_up = 14;
 	PlayerRaidInfoProto raids = 15;
-}
-
-message BNJBPIDLDFN {
-	enum PIHOAPPIKOF {
-		UNSET = 0;
-		STAGE1 = 1;
-		STAGE2 = 2;
-		STAGE3 = 3;
-	}
-
-	PIHOAPPIKOF bjjimoebehn = 1;
-	bytes pkbpjgeopan = 2;
 }
 
 message BackgroundModeGlobalSettingsProto {
@@ -5131,6 +5105,12 @@ message BoundingRect {
 	double west = 4;
 }
 
+message BreadcrumbRecordProto {
+	int64 timestamp_ms = 1;
+	double latitude_deg = 2;
+	double longitude_deg = 3;
+}
+
 message BuddyActivityCategorySettings {
 	BuddyActivityCategory activity_category = 1;
 	int32 max_points_per_day = 2;
@@ -5477,12 +5457,6 @@ message BuddySwapSettings {
 
 message BuddyWalkSettings {
 	float km_required_per_affection_point = 1;
-}
-
-message CJHFGEBCEDH {
-	int64 fijfigliblc = 1;
-	double hnoobmcfdfl = 2;
-	double bojmbedjhkm = 3;
 }
 
 message CameraSettingsProto {
@@ -6939,34 +6913,6 @@ message CurrentNewsProto {
 	int64 last_updated_timestamp = 3;
 }
 
-message DEGLPLAJDEN {
-	HIBINIBNHMN mkmgigfclih = 1;
-}
-
-message DLDBELCCKKK {
-	string dkomfmapmda = 1;
-	string iacdjkjcplf = 2;
-	string kifjlcdcefe = 3;
-	string adhfgbgmdii = 4;
-}
-
-message DNNGPMFNAAA {
-	oneof KJDNCCGPNDG {
-		OLPNIDBEOOI add_entry = 1;
-		IOMIBNLDBJD read_entry = 2;
-		DEGLPLAJDEN remove_entry = 3;
-	}
-}
-
-message DPAPGBPEHIN {
-	enum KMMMOHJFOCO {
-		SUCCESS = 0;
-		ERROR = 1;
-	}
-
-	KMMMOHJFOCO hcchpjakpdh = 1;
-}
-
 message DailyBonusProto {
 	int64 next_collect_timestamp_ms = 1;
 	int64 next_defender_bonus_collect_timestamp_ms = 2;
@@ -7404,33 +7350,6 @@ message DumbBeaconProto {
 
 message DummyDataProto {
 	PokemonProto dummy_pokemon = 1;
-}
-
-message EKOMBPJNPGO {
-	enum CIIGGOKGLKC {
-		UNSET = 0;
-		SUCCESS = 1;
-		ERROR_UNKNOWN = 2;
-		ERROR_PLAYER_NOT_FOUND = 3;
-	}
-
-	CIIGGOKGLKC hcchpjakpdh = 1;
-}
-
-message ENPKMHBBMLF {
-	enum DCLKHEACBEC {
-		UNSET = 0;
-		POKEMON_CAPTURED = 1;
-		POKEMON_FLED = 2;
-		NOT_FOUND = 3;
-		NO_MORE_POKEBALLS = 4;
-		POKEMON_INVENTORY_FULL = 5;
-		NOT_IN_RANGE = 6;
-		ENCOUNTER_ALREADY_FINISHED = 7;
-	}
-
-	DCLKHEACBEC lgoljgohiel = 1;
-	int32 ebkcgplbjhk = 2;
 }
 
 message EchoOutProto {
@@ -7960,91 +7879,6 @@ message ExperienceBoostAttributesProto {
 	int32 boost_duration_ms = 2;
 }
 
-message FAGPKFNNECP {
-	enum EMICCOKOMIM {
-		AD_TYPE_UNKNOWN = 0;
-		AD_TYPE_SPONSORED_GIFT = 1;
-		AD_TYPE_SPONSORED_BALLOON = 2;
-	}
-
-	oneof LIFDOPPKDLD {
-		DBJOBNEKOJA view_impression = 5;
-		KDHAGJMKFLG view_fullscreen = 6;
-		IMDDPNBIHCA fullscreen_interaction = 7;
-		NFGFINMLLPN cta_clicked = 8;
-		CKNKIOENCKE ad_spawned = 9;
-		EJMGGDKOOHN ad_dismissed = 10;
-	}
-
-	message CKNKIOENCKE {
-		enum CGIGEEKIGBH {
-			AD_INHIBITION_UNKNOWN = 0;
-			AD_INHIBITION_TR_PREVENTS_BALLOON_SPAWN = 1;
-			AD_INHIBITION_CLIENT_ERROR = 2;
-		}
-
-		bool aeloodobnnc = 1;
-		CGIGEEKIGBH ophckhaaffo = 2;
-	}
-
-	message DBJOBNEKOJA {
-		string hfldjjmhmjl = 1;
-		bool ghiflieenan = 2;
-	}
-
-	message EJMGGDKOOHN {
-		enum POHECOBMLBK {
-			AD_DISMISSAL_UNKNOWN = 0;
-			AD_DISMISSAL_TR_DISPLACES_AD_BALLOON = 1;
-		}
-
-		POHECOBMLBK cemcpfnnamp = 1;
-	}
-
-	message IMDDPNBIHCA {
-		string pjoglibjbga = 1;
-		int64 mncopihjbgf = 2;
-		int64 mkcdbccikkm = 3;
-		bool hhajeffncnh = 4;
-	}
-
-	message KDHAGJMKFLG {
-		string pjoglibjbga = 1;
-	}
-
-	message NFGFINMLLPN {
-		string bhfmjcpdbkp = 6;
-	}
-
-	string onelkdmhoch = 1;
-	string fjnkknohkah = 2;
-	string hahgjiddklf = 3;
-	bytes efpemkekfji = 4;
-	EMICCOKOMIM oppffjjcocf = 100;
-}
-
-message FMNIFHAPOED {
-	enum ONCCHMCANKM {
-		PLATFORM_UNKNOWN = 0;
-		PLATFORM_ANDROID = 1;
-		PLATFORM_IOS = 2;
-	}
-
-	ONCCHMCANKM nibmmbihnka = 1;
-	string kmnmphfihhf = 2;
-	string kfnokggdffo = 3;
-}
-
-message FPOOHNEJGGI {
-	enum IFMGIJFHBAJ {
-		SUCCESS = 0;
-		MALFORMED = 1;
-		EXPIRED = 2;
-	}
-
-	IFMGIJFHBAJ hcchpjakpdh = 1;
-}
-
 message FavoritePokemonTelemetry {
 	PokemonTelemetry pokemon = 1;
 	bool favored = 2;
@@ -8302,7 +8136,7 @@ message FortSearchOutProto {
 	string fort_id = 13;
 	ClientQuestProto challenge_quest = 14;
 	GiftBoxProto gift_box = 15;
-	HPEALJKJFMK sponsored_gift = 16;
+	AdDetails sponsored_gift = 16;
 }
 
 message FortSearchProto {
@@ -8311,7 +8145,7 @@ message FortSearchProto {
 	double player_lng_degrees = 3;
 	double fort_lat_degrees = 4;
 	double fort_lng_degrees = 5;
-	HNKPENKECHL ad_targeting_info = 7;
+	AdTargetingInfoProto ad_targeting_info = 7;
 	bool is_player_eligible_for_geotargeted_quest = 8;
 }
 
@@ -8434,29 +8268,6 @@ message FriendshipMilestoneRewardProto {
 	FriendshipLevelMilestone friendship_milestone = 2;
 }
 
-message GCFJHCDACBK {
-	string ohjgbgnjblc = 1;
-	repeated CJHFGEBCEDH fbpckleehbd = 2;
-}
-
-message GFBNHFBLAAO {
-	enum MDNJEEGKMCN {
-		UNSET = 0;
-		SUCCESS = 1;
-	}
-
-	MDNJEEGKMCN hcchpjakpdh = 1;
-	bool gpkcdpflkgi = 2;
-	bool nmhcicffhle = 3;
-	bool jbfejkidkcn = 4;
-	string hhmopacedle = 5;
-	int64 fkjipifnmod = 6;
-	bool emooefdkjjn = 7;
-	string nhhenoihcmb = 8;
-	EncounterType gipjhejlhkb = 9;
-	int32 gobbkcmhelk = 10;
-}
-
 message GameClientPhotoGalleryPoiImageProto {
 	string image_id = 1;
 	string poi_id = 2;
@@ -8465,6 +8276,16 @@ message GameClientPhotoGalleryPoiImageProto {
 	int64 creation_timestamp_ms = 5;
 	bool has_player_voted = 6;
 	int32 num_votes_from_game = 7;
+}
+
+message GameClientTelemetryOmniProto {
+	oneof TelemetryData {
+		PoiSubmissionTelemetry poi_submission_telemetry = 1;
+		PoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 2;
+		PoiPlayerMetadataTelemetry player_metadata_telemetry = 3;
+	}
+
+	ServerData server_data = 1001;
 }
 
 message GameItemContentProto {
@@ -8567,6 +8388,10 @@ message GameMasterClientTemplateProto {
 	RecommendedSearchProto recommended_search_proto = 102;
 	InventorySettingsProto inventory_settings = 103;
 	IncidentPrioritySettingsProto incident_priority_settings = 108;
+}
+
+message GameMasterLocalProto {
+	repeated GameMasterClientTemplateProto templates = 1;
 }
 
 message GameplayWeatherProto {
@@ -10297,25 +10122,8 @@ message GymStatusAndDefendersProto {
 	repeated GymDefenderProto gym_defender = 2;
 }
 
-message HBJGDPENFIA {
-	int32 kiegpfeeigh = 1;
-}
-
-message HCLMPLJJHBH {
-	bytes pkbpjgeopan = 1;
-}
-
-message HIBINIBNHMN {
-	string oildagjbnbo = 1;
-}
-
-message HNKPENKECHL {
-	FMNIFHAPOED pbdfkccenol = 1;
-}
-
-message HPEALJKJFMK {
-	PACDJOPBCCM gmimoknenbi = 1;
-	bytes efpemkekfji = 2;
+message HashedKeyProto {
+	string hashed_key_raw = 1;
 }
 
 message HelpshiftSettingsProto {
@@ -10468,53 +10276,6 @@ message HoloholoClientTelemetryOmniProto {
 	CommonFilterProto common_filters = 1002;
 }
 
-message IECOOKFFHMD {
-	enum PBJFFAEEAOC {
-		UNSET = 0;
-		POI_PHOTO_UPLOAD_ERROR = 1;
-		POI_PHOTO_UPLOAD_TIMEOUT = 2;
-	}
-
-	PBJFFAEEAOC aakbnpjekjj = 1;
-	EPAPAEHBFJB lkmgbmchmjf = 2;
-	string eikkpohijmk = 3;
-}
-
-message IEIFNPCJNPI {
-	enum HIJOGEEHLAI {
-		STATUS_UNKNOWN = 0;
-		STATUS_SUCCESS = 1;
-		STATUS_ALREADY_REDEEMED = 2;
-		STATUS_FAILED_INVENTORY_CHECK = 3;
-		STATUS_OUT_OF_RANGE = 4;
-		STATUS_WRONG_LOCATION = 5;
-		STATUS_RATE_LIMITED = 6;
-		STATUS_INVALID = 7;
-		STATUS_FULLY_REDEEMED = 8;
-		STATUS_EXPIRED = 9;
-	}
-
-	message NEBBGINJLKP {
-		string mmbcjjnpmeh = 1;
-		int32 epbaibcgbkb = 2;
-	}
-
-	HIJOGEEHLAI hcchpjakpdh = 1;
-	int32 omklenaddcd = 2;
-	repeated NEBBGINJLKP dmhnbmfobbb = 3;
-	string lbdabpmjdfc = 5;
-	bytes lkkeaobpaed = 6;
-}
-
-message IGCOPKLFGEK {
-	double joccoajejgb = 1;
-	double lofngbekngc = 2;
-}
-
-message IOMIBNLDBJD {
-	HIBINIBNHMN mkmgigfclih = 1;
-}
-
 message IapItemCategoryDisplayProto {
 	HoloIapItemCategory category = 1;
 	string name = 2;
@@ -10572,6 +10333,15 @@ message ImageGalleryTelemetry {
 	}
 
 	ImageGalleryEventId image_gallery_telemetry_id = 1;
+}
+
+message ImageTextCreativeProto {
+	string name = 1;
+	string title = 2;
+	string description = 3;
+	string preview_image_url = 4;
+	string fullscreen_image_url = 5;
+	string cta_link = 6;
 }
 
 message InGamePurchaseDetails {
@@ -10664,6 +10434,13 @@ message InputSettingsProto {
 	bool enable_frame_independent_spin = 1;
 	int32 milliseconds_processed_spin_force = 2;
 	float spin_speed_multiplier = 3;
+}
+
+message InternalAuthProto {
+	string email = 1;
+	string player_id = 2;
+	string app_id = 3;
+	string key = 4;
 }
 
 message InvasionAvailabilitySettingsProto {
@@ -10970,15 +10747,29 @@ message JoinLobbyProto {
 	string inviter_id = 10;
 }
 
-message KDCFBIBFMCE {
-	double lacknainbdb = 1;
-	int32 cjblmkdkpno = 2;
-	double jkochbcpgin = 3;
-	int64 jknfecijhbm = 4;
+message JournalAddEntryProto {
+	HashedKeyProto hashed_key = 1;
+	int64 entry_size = 2;
 }
 
-message KEHMPBPFHGH {
-	int64 fkjipifnmod = 1;
+message JournalEntryProto {
+	oneof Subentry {
+		JournalAddEntryProto add_entry = 1;
+		JournalReadEntryProto read_entry = 2;
+		JournalRemoveEntryProto remove_entry = 3;
+	}
+}
+
+message JournalReadEntryProto {
+	HashedKeyProto hashed_key = 1;
+}
+
+message JournalRemoveEntryProto {
+	HashedKeyProto hashed_key = 1;
+}
+
+message JournalVersionProto {
+	int32 version = 1;
 }
 
 message KangarooSettingsProto {
@@ -10989,27 +10780,6 @@ message KoalaSettingsProto {
 	string app_id = 1;
 	bool use_sandbox = 2;
 	bool use_koala = 3;
-}
-
-message LGMHDLBBIKF {
-	string kmnmphfihhf = 1;
-	string ggjkeajjdfj = 2;
-}
-
-message LGMHHNCMNNB {
-	enum MLCABKKLCNN {
-		UNSET = 0;
-		INITIALIZATION = 1;
-		ACCUMULATION = 2;
-	}
-
-	MLCABKKLCNN nkglpkefdpj = 1;
-	int64 fijfigliblc = 2;
-	KDCFBIBFMCE gjnchneodia = 3;
-}
-
-message LKMDNKNLJFE {
-	repeated GameMasterClientTemplateProto aagbicdkole = 1;
 }
 
 message Label {
@@ -11395,42 +11165,6 @@ message LuckyPokemonSettingsProto {
 	float power_up_stardust_discount_percent = 1;
 }
 
-message MEKDICJHJBN {
-	bytes efpemkekfji = 1;
-}
-
-message MGHBGELBCOG {
-	enum GBLMEGLPHGG {
-		UNSET = 0;
-		ENTER = 1;
-		RETAKE = 2;
-		CONFIRM = 3;
-		EXIT = 4;
-	}
-
-	enum KABDNELAIIJ {
-		UNKNOWN = 0;
-		POI_NOMINATION_ENTER = 1;
-		POI_TUTORIAL_COMPLETE = 2;
-		POI_MAP_CHANGEDVIEW_MAP = 3;
-		POI_MAP_CHANGEDVIEW_SATELLITE = 4;
-		POI_MAP_CENTER_LOCATION = 5;
-		POI_LOCATION_SET = 6;
-		POI_PHOTO_CAMERA_ENTER = 7;
-		POI_PHOTO_CAMERA_EXIT = 8;
-		POI_TITLE_ENTERED = 9;
-		POI_DESCRIPTION_ENTER = 10;
-		POI_DETAILS_CONFIRM = 11;
-		POI_SUPPORTINGINFO_ENTER = 12;
-		POI_SUBMIT_BUTTON_HIT = 13;
-		POI_EXIT_BUTTON_HIT = 14;
-	}
-
-	KABDNELAIIJ hknignhbbjm = 1;
-	EPAPAEHBFJB lkmgbmchmjf = 2;
-	GBLMEGLPHGG ckompannfag = 3;
-}
-
 message MapArea {
 	string description = 1;
 	int32 epoch = 2;
@@ -11783,26 +11517,6 @@ message MultiPartQuestProto {
 	repeated QuestProto sub_quests = 1;
 }
 
-message NHEDPEAHKBA {
-	enum DDOLDADDGMA {
-		UNSET = 0;
-		SUCCESS = 1;
-		ERROR_UNKNOWN = 2;
-		ERROR_PLAYER_BAG_FULL = 3;
-		ERROR_GIFT_REDEEMED = 4;
-	}
-
-	DDOLDADDGMA lgoljgohiel = 1;
-	LootProto dmhnbmfobbb = 2;
-}
-
-message NIKAIJAJKLM {
-	enum OEGJCFKCHFL {
-		INVALID_VASA_CLIENT_ACTION = 0;
-		COLLECT_ADID = 8000;
-	}
-}
-
 message NamedMapSettings {
 	string name = 1;
 	GmmSettings gmm_settings = 2;
@@ -11893,40 +11607,6 @@ message NotificationSettingsProto {
 message NpcPokemonProto {
 	HoloPokemonId pokemon_type = 1;
 	PokemonDisplayProto pokemon_display = 2;
-}
-
-message OCPPHNFEFCK {
-	bytes codhapjcmho = 1;
-	string kboofedfnlh = 2;
-}
-
-message OKADPPFOEOC {
-	enum CODIEBDIKJD {
-		PLATFORM_UNKNOWN = 0;
-		PLATFORM_ANDROID = 1;
-		PLATFORM_IOS = 2;
-		PLATFORM_WEB = 3;
-	}
-
-	string ckefeajgmeb = 1;
-	string kfnamkgflnd = 2;
-	CODIEBDIKJD jjgccjoaeah = 3;
-	string kfnokggdffo = 4;
-}
-
-message OLPNIDBEOOI {
-	HIBINIBNHMN mkmgigfclih = 1;
-	int64 abeihmaoopd = 2;
-}
-
-message OOLPOLOLDAL {
-	string hhmopacedle = 1;
-	int64 fkjipifnmod = 2;
-	double joccoajejgb = 3;
-	double lofngbekngc = 4;
-	EncounterType gipjhejlhkb = 5;
-	double pkalogbmjdl = 6;
-	double eiminempmic = 7;
 }
 
 message OnboardingSettingsProto {
@@ -12101,6 +11781,23 @@ message OpenNpcCombatSessionProto {
 	int64 lobby_join_time_ms = 3;
 }
 
+message OpenSponsoredGiftOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_UNKNOWN = 2;
+		ERROR_PLAYER_BAG_FULL = 3;
+		ERROR_GIFT_REDEEMED = 4;
+	}
+
+	Result result = 1;
+	LootProto rewards = 2;
+}
+
+message OpenSponsoredGiftProto {
+	bytes encrypted_ad_token = 1;
+}
+
 message OpenTradingOutProto {
 	enum Result {
 		UNSET = 0;
@@ -12132,25 +11829,6 @@ message OpenTradingProto {
 
 message OptOutProto {
 	repeated string categories = 1;
-}
-
-message PACDJOPBCCM {
-	string nadipknahid = 1;
-	string akaammohhoj = 2;
-	string fdhhcgigafn = 3;
-	string hfldjjmhmjl = 4;
-	string pjoglibjbga = 5;
-	string logndahnemn = 6;
-}
-
-message PPNBFDFNOJD {
-	oneof JAGNHHPJLOD {
-		MGHBGELBCOG poi_submission_telemetry = 1;
-		IECOOKFFHMD poi_submission_photo_upload_error_telemetry = 2;
-		LGMHDLBBIKF player_metadata_telemetry = 3;
-	}
-
-	ServerData kdlnmipolcl = 1001;
 }
 
 message ParticipationProto {
@@ -12190,6 +11868,46 @@ message PasscodeRedeemTelemetry {
 	string country_code = 3;
 	string language_code = 4;
 	string bundle_version = 5;
+}
+
+message PasscodeRedemptionFlowRequest {
+	enum DevicePlatform {
+		PLATFORM_UNKNOWN = 0;
+		PLATFORM_ANDROID = 1;
+		PLATFORM_IOS = 2;
+		PLATFORM_WEB = 3;
+	}
+
+	string passcode = 1;
+	string poi_guid = 2;
+	DevicePlatform device_platform = 3;
+	string carrier = 4;
+}
+
+message PasscodeRedemptionFlowResponse {
+	enum Status {
+		STATUS_UNKNOWN = 0;
+		STATUS_SUCCESS = 1;
+		STATUS_ALREADY_REDEEMED = 2;
+		STATUS_FAILED_INVENTORY_CHECK = 3;
+		STATUS_OUT_OF_RANGE = 4;
+		STATUS_WRONG_LOCATION = 5;
+		STATUS_RATE_LIMITED = 6;
+		STATUS_INVALID = 7;
+		STATUS_FULLY_REDEEMED = 8;
+		STATUS_EXPIRED = 9;
+	}
+
+	message Reward {
+		string item = 1;
+		int32 count = 2;
+	}
+
+	Status status = 1;
+	int32 inventory_check_failed_reason = 2;
+	repeated Reward rewards = 3;
+	string passcode_batch_id = 5;
+	bytes in_game_reward = 6;
 }
 
 message PasscodeRewardsLogEntry {
@@ -12491,6 +12209,11 @@ message PoiGlobalSettingsProto {
 	repeated string player_submission_type_enabled = 2;
 }
 
+message PoiPlayerMetadataTelemetry {
+	string device_model = 1;
+	string device_os = 2;
+}
+
 message PoiSubmissionPhotoUploadErrorTelemetry {
 	enum PoiSubmissionPhotoUploadErrorIds {
 		UNSET = 0;
@@ -12528,7 +12251,6 @@ message PoiSubmissionTelemetry {
 		POI_SUPPORTINGINFO_ENTER = 12;
 		POI_SUBMIT_BUTTON_HIT = 13;
 		POI_EXIT_BUTTON_HIT = 14;
-		POI_NOMINATION_GUIDELINES_HIT = 15;
 	}
 
 	PoiSubmissionGuiEventId gui_event_id = 1;
@@ -16262,6 +15984,102 @@ message RemoveQuestProto {
 	string quest_id = 1;
 }
 
+message ReportAdFeedbackRequest {
+	oneof Feedback {
+		AdFeedbackComplaintReason complaint_reason = 5;
+		AdFeedbackNotInterestedReason not_interested_reason = 6;
+		AdFeedbackLikeReason like_reason = 7;
+	}
+
+	string game_id = 1;
+	string user_id = 2;
+	string guid = 3;
+	bytes encrypted_ad_token = 4;
+	string free_text_response = 8;
+}
+
+message ReportAdFeedbackResponse {
+	enum Status {
+		SUCCESS = 0;
+		ERROR = 1;
+	}
+
+	Status status = 1;
+}
+
+message ReportAdInteractionProto {
+	oneof InteractionType {
+		ViewImpressionInteraction view_impression = 5;
+		ViewFullscreenInteraction view_fullscreen = 6;
+		FullScreenInteraction fullscreen_interaction = 7;
+		CTAClickInteraction cta_clicked = 8;
+		AdSpawendInteraction ad_spawned = 9;
+		AdDismissedInteraction ad_dismissed = 10;
+	}
+
+	message AdSpawendInteraction {
+		enum AdInhibition {
+			AD_INHIBITION_UNKNOWN = 0;
+			AD_INHIBITION_TR_PREVENTS_BALLOON_SPAWN = 1;
+			AD_INHIBITION_CLIENT_ERROR = 2;
+		}
+
+		bool ad_spawend_bool = 1;
+		AdInhibition ad_inhibition = 2;
+	}
+
+	enum AdType {
+		AD_TYPE_UNKNOWN = 0;
+		AD_TYPE_SPONSORED_GIFT = 1;
+		AD_TYPE_SPONSORED_BALLOON = 2;
+	}
+
+	message ViewImpressionInteraction {
+		string preview_image_url = 1;
+		bool is_persisted_gift = 2;
+	}
+
+	message AdDismissedInteraction {
+		enum AdDismissal {
+			AD_DISMISSAL_UNKNOWN = 0;
+			AD_DISMISSAL_TR_DISPLACES_AD_BALLOON = 1;
+		}
+
+		AdDismissal ad_dismissal = 1;
+	}
+
+	message FullScreenInteraction {
+		string fullscreen_image_url = 1;
+		int64 total_residence_time_ms = 2;
+		int64 time_away_ms = 3;
+		bool took_screenshot = 4;
+	}
+
+	message ViewFullscreenInteraction {
+		string fullscreen_image_url = 1;
+	}
+
+	message CTAClickInteraction {
+		string cta_url = 6;
+	}
+
+	string game_id = 1;
+	string user_id = 2;
+	string guid = 3;
+	bytes encrypted_ad_token = 4;
+	AdType ad_type = 100;
+}
+
+message ReportAdInteractionResponse {
+	enum Status {
+		SUCCESS = 0;
+		MALFORMED = 1;
+		EXPIRED = 2;
+	}
+
+	Status status = 1;
+}
+
 message ReviveAttributesProto {
 	float sta_percent = 1;
 }
@@ -16738,8 +16556,116 @@ message SetPokemonTagsForPokemonProto {
 	repeated PokemonTagChangeProto tag_changes = 1;
 }
 
+message SfidaAuthToken {
+	bytes response_token = 1;
+	string sfida_id = 2;
+}
+
+message SfidaCaptureRequest {
+	string spawnpoint_id = 1;
+	int64 encounter_id = 2;
+	double player_lat = 3;
+	double player_lng = 4;
+	EncounterType encounter_type = 5;
+	double gym_lat = 6;
+	double gym_lng = 7;
+}
+
+message SfidaCaptureResponse {
+	enum Result {
+		UNSET = 0;
+		POKEMON_CAPTURED = 1;
+		POKEMON_FLED = 2;
+		NOT_FOUND = 3;
+		NO_MORE_POKEBALLS = 4;
+		POKEMON_INVENTORY_FULL = 5;
+		NOT_IN_RANGE = 6;
+		ENCOUNTER_ALREADY_FINISHED = 7;
+	}
+
+	Result result = 1;
+	int32 xp_gain = 2;
+}
+
+message SfidaCertificationRequest {
+	enum SfidaCertificationStage {
+		UNSET = 0;
+		STAGE1 = 1;
+		STAGE2 = 2;
+		STAGE3 = 3;
+	}
+
+	SfidaCertificationStage stage = 1;
+	bytes payload = 2;
+}
+
+message SfidaCertificationResponse {
+	bytes payload = 1;
+}
+
+message SfidaDowserRequest {
+	int64 encounter_id = 1;
+}
+
+message SfidaDowserResponse {
+	enum Result {
+		UNSET = 0;
+		FOUND = 1;
+		NEARBY = 2;
+		OUT_OF_RANGE = 3;
+		ALREADY_CAUGHT = 4;
+		NOT_AVAILABLE = 5;
+	}
+
+	Result result = 1;
+	int32 proximity = 2;
+	string spawnpoint_id = 3;
+}
+
 message SfidaGlobalSettingsProto {
 	float low_battery_threshold = 1;
+}
+
+message SfidaMetrics {
+	double distance_walked_km = 1;
+	int32 step_count = 2;
+	double calories_burned = 3;
+	int64 exercise_time_ms = 4;
+}
+
+message SfidaMetricsUpdate {
+	enum UpdateType {
+		UNSET = 0;
+		INITIALIZATION = 1;
+		ACCUMULATION = 2;
+	}
+
+	UpdateType update_type = 1;
+	int64 timestamp_ms = 2;
+	SfidaMetrics metrics = 3;
+}
+
+message SfidaUpdateRequest {
+	double player_lat = 1;
+	double player_lng = 2;
+}
+
+message SfidaUpdateResponse {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+	}
+
+	Status status = 1;
+	bool nearby_pokemon = 2;
+	bool uncaught_pokemon = 3;
+	bool legendary_pokemon = 4;
+	string spawnpoint_id = 5;
+	int64 encounter_id = 6;
+	bool nearby_pokestop = 7;
+	string pokestop_id = 8;
+	EncounterType encounter_type = 9;
+	int32 pokedex_number = 10;
 }
 
 message ShadowAttributesProto {
@@ -16946,7 +16872,7 @@ message SponsoredDetailsProto {
 	string call_to_action_link = 3;
 	PromoButtonMessageType promo_button_message_type = 4;
 	string campaign_id = 5;
-	PACDJOPBCCM promo_image_creative = 6;
+	ImageTextCreativeProto promo_image_creative = 6;
 }
 
 message SponsoredGeofenceGiftSettingsProto {
@@ -17557,6 +17483,22 @@ message UpdateAdventureSyncFitnessResponseProto {
 
 message UpdateAdventureSyncSettingsRequestProto {
 	AdventureSyncSettingsProto adventure_sync_settings = 1;
+}
+
+message UpdateBreadcrumbHistoryRequestProto {
+	string session_context = 1;
+	repeated BreadcrumbRecordProto breadcrumb_history = 2;
+}
+
+message UpdateBreadcrumbHistoryResponseProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_UNKNOWN = 2;
+		ERROR_PLAYER_NOT_FOUND = 3;
+	}
+
+	Status status = 1;
 }
 
 message UpdateCombatOutProto {
