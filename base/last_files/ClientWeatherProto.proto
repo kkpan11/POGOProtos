@@ -22,10 +22,12 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 import "DisplayWeatherProto.proto";
+import "GameplayWeatherProto.proto";
+import "WeatherAlertProto.proto";
 
 message ClientWeatherProto {
 	int64 s2_cell_id = 1;
 	DisplayWeatherProto display_weather = 2;
-	GameplayWeatherProto.WeatherCondition gameplay_weather = 3;
-	repeated WeatherAlertProto.Severity alerts = 4;
+	GameplayWeatherProto gameplay_weather = 3;
+	repeated WeatherAlertProto alerts = 4;
 }
