@@ -540,6 +540,14 @@ def open_proto_file(main_file, head):
                                                                                       "{") and not operator.contains(
                 proto_line, "}") and operator.contains(proto_line, "HOLOHOLO_"):
                 proto_line = proto_line.replace("HOLOHOLO_", "")
+            elif proto_name == "ClientWeatherProto" and operator.contains(proto_line,
+                                                                          "GameplayWeatherProto") and not operator.contains(
+                proto_line, "WeatherCondition"):
+                proto_line = proto_line.replace("GameplayWeatherProto", "GameplayWeatherProto.WeatherCondition")
+            elif proto_name == "ClientWeatherProto" and operator.contains(proto_line,
+                                                                          "WeatherAlertProto") and not operator.contains(
+                proto_line, "Severity"):
+                proto_line = proto_line.replace("WeatherAlertProto", "WeatherAlertProto.Severity")
 
             ## Others conditions...
             if not proto_line.startswith("enum") and not proto_line.startswith("message") and operator.contains(
@@ -786,6 +794,7 @@ def add_command_for_new_proto_file(file):
             file
         )
     )
+
 
 compile_ext = 'proto'
 
