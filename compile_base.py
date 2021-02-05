@@ -540,14 +540,6 @@ def open_proto_file(main_file, head):
                                                                                       "{") and not operator.contains(
                 proto_line, "}") and operator.contains(proto_line, "HOLOHOLO_"):
                 proto_line = proto_line.replace("HOLOHOLO_", "")
-            elif proto_name == "ClientWeatherProto" and operator.contains(proto_line,
-                                                                          "GameplayWeatherProto") and not operator.contains(
-                proto_line, "WeatherCondition"):
-                proto_line = proto_line.replace("GameplayWeatherProto", "GameplayWeatherProto.WeatherCondition")
-            elif proto_name == "ClientWeatherProto" and operator.contains(proto_line,
-                                                                          "WeatherAlertProto") and not operator.contains(
-                proto_line, "Severity"):
-                proto_line = proto_line.replace("WeatherAlertProto", "WeatherAlertProto.Severity")
 
             ## Others conditions...
             if not proto_line.startswith("enum") and not proto_line.startswith("message") and operator.contains(
@@ -691,6 +683,11 @@ def open_proto_file(main_file, head):
             if new_base_is_enum:
                 new_base_enums.setdefault(new_base_proto_name, new_base_data)
             else:
+                # fix Weather stuff
+                if new_base_proto_name == "WeatherAlertProto" and not operator.contains(new_base_data, "Severity severity = 1;"):
+                    new_base_data = new_base_data.replace("bool warn_weather = 2;", "Severity severity = 1;\n\tbool warn_weather = 2;")
+                if new_base_proto_name == "GameplayWeatherProto" and not operator.contains(new_base_data, "WeatherCondition gameplay_condition = 1;"):
+                    new_base_data = new_base_data.replace("\t}", "\t}\n\n\tWeatherCondition gameplay_condition = 1;")
                 new_base_messages.setdefault(new_base_proto_name, new_base_data)
             new_base_as_data = False
             new_base_is_enum = False

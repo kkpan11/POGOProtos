@@ -32,4 +32,6 @@ message GameplayWeatherProto {
 		SNOW = 6;
 		FOG = 7;
 	}
+
+	WeatherCondition gameplay_condition = 1;
 }
