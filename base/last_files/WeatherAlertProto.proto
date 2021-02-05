@@ -28,5 +28,6 @@ message WeatherAlertProto {
 		EXTREME = 2;
 	}
 
+	Severity severity = 1;
 	bool warn_weather = 2;
 }

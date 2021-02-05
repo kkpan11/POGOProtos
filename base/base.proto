@@ -5999,8 +5999,8 @@ message ClientVersionProto {
 message ClientWeatherProto {
 	int64 s2_cell_id = 1;
 	DisplayWeatherProto display_weather = 2;
-	GameplayWeatherProto gameplay_weather = 3;
-	repeated WeatherAlertProto alerts = 4;
+	GameplayWeatherProto.WeatherCondition gameplay_weather = 3;
+	repeated WeatherAlertProto.Severity alerts = 4;
 }
 
 message CodenameResultProto {
@@ -18175,6 +18175,7 @@ message WeatherAlertProto {
 		EXTREME = 2;
 	}
 
+	Severity severity = 1;
 	bool warn_weather = 2;
 }
 
