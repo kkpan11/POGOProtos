@@ -113,6 +113,7 @@ import "GeotargetedQuestSettingsProto.proto";
 import "PokemonTagSettingsProto.proto";
 import "RecommendedSearchProto.proto";
 import "InventorySettingsProto.proto";
+import "EggTransparencySettingsProto.proto";
 import "IncidentPrioritySettingsProto.proto";
 
 message GameMasterClientTemplateProto {
@@ -209,5 +210,6 @@ message GameMasterClientTemplateProto {
 	PokemonTagSettingsProto pokemon_tag_settings = 101;
 	RecommendedSearchProto recommended_search_proto = 102;
 	InventorySettingsProto inventory_settings = 103;
+	EggTransparencySettingsProto egg_transparency_settings = 105;
 	IncidentPrioritySettingsProto incident_priority_settings = 108;
 }

@@ -31,17 +31,6 @@ message ReportAdInteractionProto {
 		AdDismissedInteraction ad_dismissed = 10;
 	}
 
-	message AdSpawendInteraction {
-		enum AdInhibition {
-			AD_INHIBITION_UNKNOWN = 0;
-			AD_INHIBITION_TR_PREVENTS_BALLOON_SPAWN = 1;
-			AD_INHIBITION_CLIENT_ERROR = 2;
-		}
-
-		bool ad_spawend_bool = 1;
-		AdInhibition ad_inhibition = 2;
-	}
-
 	enum AdType {
 		AD_TYPE_UNKNOWN = 0;
 		AD_TYPE_SPONSORED_GIFT = 1;
@@ -51,6 +40,14 @@ message ReportAdInteractionProto {
 	message ViewImpressionInteraction {
 		string preview_image_url = 1;
 		bool is_persisted_gift = 2;
+	}
+
+	message CTAClickInteraction {
+		string cta_url = 6;
+	}
+
+	message ViewFullscreenInteraction {
+		string fullscreen_image_url = 1;
 	}
 
 	message AdDismissedInteraction {
@@ -69,12 +66,15 @@ message ReportAdInteractionProto {
 		bool took_screenshot = 4;
 	}
 
-	message ViewFullscreenInteraction {
-		string fullscreen_image_url = 1;
-	}
+	message AdSpawendInteraction {
+		enum AdInhibition {
+			AD_INHIBITION_UNKNOWN = 0;
+			AD_INHIBITION_TR_PREVENTS_BALLOON_SPAWN = 1;
+			AD_INHIBITION_CLIENT_ERROR = 2;
+		}
 
-	message CTAClickInteraction {
-		string cta_url = 6;
+		bool ad_spawend_bool = 1;
+		AdInhibition ad_inhibition = 2;
 	}
 
 	string game_id = 1;
