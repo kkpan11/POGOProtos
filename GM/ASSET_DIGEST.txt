@@ -6970,11 +6970,11 @@ digest {
   size: 60372
 }
 digest {
-  asset_id: "53db2400-3fd6-4f52-8c74-d63d04f59349/1613686040170044"
+  asset_id: "53db2400-3fd6-4f52-8c74-d63d04f59349/1614037773565345"
   bundle_name: "music"
-  version: 1613686040170044
-  checksum: 1429698011
-  size: 14935584
+  version: 1614037773565345
+  checksum: 3482563552
+  size: 15019833
 }
 digest {
   asset_id: "53e40ee0-8702-461c-9df7-03a08d0ecf51/1584910667950742"
@@ -21811,4 +21811,4 @@ digest {
   checksum: 3580061142
   size: 290355
 }
-timestamp: 1613686040170044
+timestamp: 1614037773565345
