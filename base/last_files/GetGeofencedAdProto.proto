@@ -23,8 +23,8 @@ package POGOProtos.Rpc;
 
 import "AdTargetingInfoProto.proto";
 
-message ZZ_UNKONW_PROTO_0 {
-	double double_0 = 1;
-	double double_1 = 2;
+message GetGeofencedAdProto {
+	double lat_degrees = 1;
+	double lng_degrees = 2;
 	AdTargetingInfoProto ad_targeting_info = 3;
 }
