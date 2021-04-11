@@ -722,10 +722,8 @@ def open_proto_file(main_file, head):
     ## find imports ..
     if head_file is not None:
         for p in sorted(new_base_messages):
-            yes = False
             if os.path.exists(gen_last_files + "/" + p + '.proto'):
                 os.remove(gen_last_files + "/" + p + '.proto')
-                yes = True
 
             open_for_new_message = open(gen_last_files + "/" + p + '.proto', 'a')
             open_for_new_message.writelines(head_file)
@@ -734,21 +732,23 @@ def open_proto_file(main_file, head):
             for message in new_base_messages[p].split("\n"):
                 if message.startswith("message") or message.startswith("enum") or message.startswith("}"):
                     continue
-                file_for_includes = message.split(" ")[0].strip() + '.proto'
-
-                if message.startswith('\tmap<'):
+                elif message.startswith('\tmap<'):
                     v = message.split("map<")[1].strip().split('>')[0].strip().replace(",","")
                     v1 = v.split(" ")[0].strip() + '.proto'
                     v2 = v.split(" ")[1].strip() + '.proto'
                     if os.path.exists(gen_last_files + "/" + v1):
-                        file_for_includes = v1
+                        if v1 not in includes:
+                            includes.append(v1)
                     if os.path.exists(gen_last_files + "/" + v2):
-                        file_for_includes = v2
-                if message.startswith('\trepeated'):
+                        if v2 not in includes:
+                            includes.append(v2)
+                elif message.startswith('\trepeated'):
                     file_for_includes = message.split(" ")[1].strip() + '.proto'
-
-                if yes and os.path.exists(gen_last_files + "/" + file_for_includes):
-                    if file_for_includes not in includes:
+                    if os.path.exists(gen_last_files + "/" + file_for_includes) and file_for_includes not in includes:
+                        includes.append(file_for_includes)
+                else:
+                    file_for_includes = message.split(" ")[0].strip() + '.proto'
+                    if os.path.exists(gen_last_files + "/" + file_for_includes) and file_for_includes not in includes:
                         includes.append(file_for_includes)
 
             if len(includes) > 0:
@@ -756,7 +756,6 @@ def open_proto_file(main_file, head):
                 for file in includes:
                     if file == 'ITEM.proto':
                         continue
-                        #file = 'Item.proto'
                     files_inc += 'import "' + file + '";\n'
                 if files_inc != '':
                     open_for_new_message.writelines(files_inc + '\n')
