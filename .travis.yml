@@ -19,4 +19,4 @@ script:
   - chmod +x ./compile_base.py
   - ./compile_base.py -g -b -gf
   - clang-format-3.8 -i -style file $(find base -name "base.proto")
-  - git diff --exit-code
+  # - git diff --exit-code
