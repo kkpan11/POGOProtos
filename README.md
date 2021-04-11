@@ -126,5 +126,5 @@ _* = Needs plugins_
 ```
 ---
 
-### Initial [UpStream](https://github.com/Furtif/POGOProtos/tree/upstream)
+### Initial
 - [AeonLucid](https://github.com/AeonLucid/POGOProtos)
