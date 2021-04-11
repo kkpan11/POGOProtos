@@ -746,6 +746,9 @@ def open_proto_file(main_file, head):
             if len(includes) > 0:
                 files_inc = ''
                 for file in includes:
+                    if file == 'ITEM.proto':
+                        continue
+                        #file = 'Item.proto'
                     files_inc += 'import "' + file + '";\n'
                 if files_inc != '':
                     open_for_new_message.writelines(files_inc + '\n')

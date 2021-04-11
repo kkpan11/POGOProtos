@@ -25,7 +25,6 @@ import "ItemRewardProto.proto";
 import "PokemonCandyRewardProto.proto";
 import "PokemonEncounterRewardProto.proto";
 import "StickerRewardProto.proto";
-import "ITEM.proto";
 
 message QuestRewardProto {
 	oneof Reward {
