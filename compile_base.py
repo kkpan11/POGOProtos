@@ -736,7 +736,15 @@ def open_proto_file(main_file, head):
                     continue
                 file_for_includes = message.split(" ")[0].strip() + '.proto'
 
-                if message.startswith("\trepeated"):
+                if message.startswith('\tmap<'):
+                    v = message.split("map<")[1].strip().split('>')[0].strip().replace(",","")
+                    v1 = v.split(" ")[0].strip() + '.proto'
+                    v2 = v.split(" ")[1].strip() + '.proto'
+                    if os.path.exists(gen_last_files + "/" + v1):
+                        file_for_includes = v1
+                    if os.path.exists(gen_last_files + "/" + v2):
+                        file_for_includes = v2
+                if message.startswith('\trepeated'):
                     file_for_includes = message.split(" ")[1].strip() + '.proto'
 
                 if yes and os.path.exists(gen_last_files + "/" + file_for_includes):
