@@ -14,9 +14,10 @@ install:
   - unzip protoc-3.15.8-linux-x86_64.zip
   - popd
   - export PATH=/tmp/bin:$PATH
+  - chmod +x ./compile_base.py
 script:
   # Generates remaster_all(), base(), generate_new(), generate_files(), out_mode(cpp)...
-  - chmod +x ./compile_base.py
+  # - chmod +x ./compile_base.py
   - ./compile_base.py -g -b -gf
   - clang-format-3.8 -i -style file $(find base -name "base.proto")
-  # - git diff --exit-code
+  - git diff --exit-code
