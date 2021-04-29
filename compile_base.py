@@ -9,7 +9,7 @@ import shutil
 from subprocess import call
 
 # Variables
-global_version = '0.205.0'
+global_version = '0.207.0'
 protoc_executable = "protoc"
 package_name = 'POGOProtos.Rpc'
 input_file = "POGOProtos.Rpc.proto"
@@ -560,47 +560,48 @@ def open_proto_file(main_file, head):
             #             pass
 
             ## fixes int32 team, pokemon_id and others..
-            if operator.contains(proto_line, "int32 team "):
-                proto_line = proto_line.replace("int32", "Team")
-            elif operator.contains(proto_line, "int32 pokedex_id "):
-                proto_line = proto_line.replace("int32", "HoloPokemonId")
-            elif operator.contains(proto_line, "int32 pokedex_id "):
-                proto_line = proto_line.replace("int32", "HoloPokemonId")
-            elif operator.contains(proto_line, "int32 move1 "):
-                proto_line = proto_line.replace("int32", "HoloPokemonMove")
-            elif operator.contains(proto_line, "int32 move2 "):
-                proto_line = proto_line.replace("int32", "HoloPokemonMove")
-            elif operator.contains(proto_line, "int32 move3 "):
-                proto_line = proto_line.replace("int32", "HoloPokemonMove")
-            elif operator.contains(proto_line, "int32 move "):
-                proto_line = proto_line.replace("int32", "HoloPokemonMove")
-            elif operator.contains(proto_line, "int32 pokemon_id "):
-                proto_line = proto_line.replace("int32", "HoloPokemonId")
-            elif operator.contains(proto_line, "int32 display_pokedex_id "):
-                proto_line = proto_line.replace("int32", "HoloPokemonId")
-            elif operator.contains(proto_line, "int32 rarity "):
-                proto_line = proto_line.replace("int32", "HoloPokemonClass")
-            elif operator.contains(proto_line, "int32 pokemon_type_id "):
-                proto_line = proto_line.replace("int32", "HoloPokemonId")
-            elif operator.contains(proto_line, "int32 pokedex_entry_id "):
-                proto_line = proto_line.replace("int32", "HoloPokemonId")
-            elif operator.contains(proto_line, "int32 pokemon_family_id "):
-                proto_line = proto_line.replace("int32", "HoloPokemonFamilyId")
-            # elif operator.contains(proto_line, "int32 pokedex_entry_number "):
+            ## Note this is too obfuscated to use this
+            # if operator.contains(proto_line, "int32 team "):
+            #     proto_line = proto_line.replace("int32", "Team")
+            # elif operator.contains(proto_line, "int32 pokedex_id "):
             #     proto_line = proto_line.replace("int32", "HoloPokemonId")
-            elif operator.contains(proto_line, "int32 guard_pokemon_id "):
-                proto_line = proto_line.replace("int32", "HoloPokemonId")
-            elif operator.contains(proto_line, "int32 item_id "):
-                proto_line = proto_line.replace("int32", "Item")
-            elif operator.contains(proto_line, "int32 pokeball "):
-                proto_line = proto_line.replace("int32", "Item")
-            elif operator.contains(proto_line, "int32 balltype "):
-                proto_line = proto_line.replace("int32", "Item")
-            elif operator.contains(proto_line, "int32 severity "):
-                proto_line = proto_line.replace("int32", "WeatherAlertProto.Severity")
-            ## others conditions
-            elif operator.contains(proto_line, "Platform "):
-                proto_line = proto_line.replace("Platform", "REF_PY_1")
+            # elif operator.contains(proto_line, "int32 pokedex_id "):
+            #     proto_line = proto_line.replace("int32", "HoloPokemonId")
+            # elif operator.contains(proto_line, "int32 move1 "):
+            #     proto_line = proto_line.replace("int32", "HoloPokemonMove")
+            # elif operator.contains(proto_line, "int32 move2 "):
+            #     proto_line = proto_line.replace("int32", "HoloPokemonMove")
+            # elif operator.contains(proto_line, "int32 move3 "):
+            #     proto_line = proto_line.replace("int32", "HoloPokemonMove")
+            # elif operator.contains(proto_line, "int32 move "):
+            #     proto_line = proto_line.replace("int32", "HoloPokemonMove")
+            # elif operator.contains(proto_line, "int32 pokemon_id "):
+            #     proto_line = proto_line.replace("int32", "HoloPokemonId")
+            # elif operator.contains(proto_line, "int32 display_pokedex_id "):
+            #     proto_line = proto_line.replace("int32", "HoloPokemonId")
+            # elif operator.contains(proto_line, "int32 rarity "):
+            #     proto_line = proto_line.replace("int32", "HoloPokemonClass")
+            # elif operator.contains(proto_line, "int32 pokemon_type_id "):
+            #     proto_line = proto_line.replace("int32", "HoloPokemonId")
+            # elif operator.contains(proto_line, "int32 pokedex_entry_id "):
+            #     proto_line = proto_line.replace("int32", "HoloPokemonId")
+            # elif operator.contains(proto_line, "int32 pokemon_family_id "):
+            #     proto_line = proto_line.replace("int32", "HoloPokemonFamilyId")
+            # # elif operator.contains(proto_line, "int32 pokedex_entry_number "):
+            # #     proto_line = proto_line.replace("int32", "HoloPokemonId")
+            # elif operator.contains(proto_line, "int32 guard_pokemon_id "):
+            #     proto_line = proto_line.replace("int32", "HoloPokemonId")
+            # elif operator.contains(proto_line, "int32 item_id "):
+            #     proto_line = proto_line.replace("int32", "Item")
+            # elif operator.contains(proto_line, "int32 pokeball "):
+            #     proto_line = proto_line.replace("int32", "Item")
+            # elif operator.contains(proto_line, "int32 balltype "):
+            #     proto_line = proto_line.replace("int32", "Item")
+            # elif operator.contains(proto_line, "int32 severity "):
+            #     proto_line = proto_line.replace("int32", "WeatherAlertProto.Severity")
+            # ## others conditions
+            # elif operator.contains(proto_line, "Platform "):
+            #     proto_line = proto_line.replace("Platform", "REF_PY_1")
             ##
 
             messages += proto_line
