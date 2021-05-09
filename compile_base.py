@@ -9,7 +9,7 @@ import shutil
 from subprocess import call
 
 # Variables
-global_version = '0.207.0'
+global_version = '0.207.2_obf'
 protoc_executable = "protoc"
 package_name = 'POGOProtos.Rpc'
 input_file = "POGOProtos.Rpc.proto"
@@ -222,19 +222,10 @@ def open_proto_file(main_file, head):
     open_for_new.writelines(head)
 
     messages = ''
-    # ignored_one_of = {}
-    # is_ignored = False
     proto_name = ''
 
     with open(main_file, 'r') as proto_file:
         for proto_line in proto_file.readlines():
-            # if is_ignored and operator.contains(proto_line, "//}"):
-            #     is_ignored = False
-            # if operator.contains(proto_line, "//ignored_"):
-            #     proto_line = proto_line.replace("//ignored_", "//")
-            #     is_ignored = True
-            # if is_ignored and operator.contains(proto_line, "=") and not operator.contains(proto_line, "//none = 0;"):
-            #     ignored_one_of.setdefault(proto_line.strip().split("=")[1], proto_line.strip().split("=")[0].strip())
             if proto_line.startswith("syntax"):
                 continue
             if proto_line.startswith("package"):
@@ -540,24 +531,9 @@ def open_proto_file(main_file, head):
                 proto_line = proto_line.replace("HOLOHOLO_", "")
 
             ## Others conditions...
-            if not proto_line.startswith("enum") and not proto_line.startswith("message") and operator.contains(
-                    proto_line, "enum") or operator.contains(proto_line, "message"):
-                check_sub_message_end = False
             if operator.contains(proto_line, "enum Platform"):
                 proto_line = proto_line.replace("Platorm", "REF_PY_1")
             ##
-
-            # ## find ingored oneof's...
-            # if len(ignored_one_of) > 0 and operator.contains(proto_line,
-            #                                                  "=") and not is_ignored and not operator.contains(
-            #     proto_line, "//") and not is_one_off and not is_enum and check_sub_message_end:
-            #     if proto_line.strip().split("=")[1] in ignored_one_of:
-            #         proto_line = proto_line.replace(proto_line.strip().split("=")[0].split(" ")[1],
-            #                                         ignored_one_of[proto_line.strip().split("=")[1]]).replace("//", "")
-            #         try:
-            #             ignored_one_of.pop(proto_line.strip().split("=")[1], None)
-            #         except KeyError:
-            #             pass
 
             ## fixes int32 team, pokemon_id and others..
             ## Note this is too obfuscated to use this
@@ -600,8 +576,8 @@ def open_proto_file(main_file, head):
             # elif operator.contains(proto_line, "int32 severity "):
             #     proto_line = proto_line.replace("int32", "WeatherAlertProto.Severity")
             # ## others conditions
-            # elif operator.contains(proto_line, "Platform "):
-            #     proto_line = proto_line.replace("Platform", "REF_PY_1")
+            if operator.contains(proto_line, "Platform "):
+                proto_line = proto_line.replace("Platform", "REF_PY_1")
             ##
 
             messages += proto_line
