@@ -669,6 +669,14 @@ def open_proto_file(main_file, head):
         if new_base_as_data:
             new_base_data += proto_line + "\n"
 
+    ## TODO: Compare from matrix base or last full cleaned
+    for m in new_base_messages:
+        if m in base_messages:
+            proto_obf = new_base_messages[m]
+            proto_clean = base_messages[m]
+            #.....
+    ##
+
     new_base_file = ''
     head_file = None
 
