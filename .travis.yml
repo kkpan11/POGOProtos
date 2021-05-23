@@ -19,4 +19,5 @@ script:
   # Generates remaster_all(), base(), generate_new(), generate_files(), out_mode(cpp)...
   - ./compile_base.py -g -b -gf
   - clang-format-3.8 -i -style file $(find base -name "base.proto")
+  - clang-format-3.8 -i -style file $(find base -name "v0.209.0_p_obf.proto")
   # - git diff --exit-code
