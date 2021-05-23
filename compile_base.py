@@ -26,8 +26,8 @@ def is_blank(my_string):
 
 # args
 parser = argparse.ArgumentParser()
-parser.add_argument("-gm", "--generate_game_master", help="Generates v2_GAME_MASTER.txt form GENERATE_GAME_MASTER = PATH/MY_BINARY.")
-parser.add_argument("-ga", "--generate_asset_digest", help="Generates ASSET_DIGEST.txt form GENERATE_ASSET_DIGEST = PATH/MY_BINARY.")
+parser.add_argument("-gm", "--generate_game_master", help="Generates v2_GAME_MASTER.txt form PATH/v2_GAME_MASTER.")
+parser.add_argument("-ga", "--generate_asset_digest", help="Generates ASSET_DIGEST.txt form PATH/ASSET_DIGEST.")
 parser.add_argument("-l", "--lang", help="Language to produce proto single file.")
 parser.add_argument("-v", "--version", help="Set version out ex:. (0.195.2)")
 parser.add_argument("-o", "--out_path", help="Output path for proto single file.")

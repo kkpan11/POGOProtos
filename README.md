@@ -50,14 +50,12 @@ usage: compile_base.py [-h] [-gm GENERATE_GAME_MASTER]
 optional arguments:
   -h, --help            show this help message and exit
   -gm GENERATE_GAME_MASTER, --generate_game_master GENERATE_GAME_MASTER
-                        Generates v2_GAME_MASTER.txt form GENERATE_GAME_MASTER
-                        = PATH/MY_BINARY.
+                        Generates v2_GAME_MASTER.txt form PATH/v2_GAME_MASTER.
   -ga GENERATE_ASSET_DIGEST, --generate_asset_digest GENERATE_ASSET_DIGEST
-                        Generates ASSET_DIGEST.txt form GENERATE_ASSET_DIGEST
-                        = PATH/MY_BINARY.
+                        Generates ASSET_DIGEST.txt form PATH/ASSET_DIGEST.
   -l LANG, --lang LANG  Language to produce proto single file.
   -v VERSION, --version VERSION
-                        Set version out ex:. (0.205.0)
+                        Set version out ex:. (0.195.2)
   -o OUT_PATH, --out_path OUT_PATH
                         Output path for proto single file.
   -m, --java_multiple_files
@@ -122,8 +120,8 @@ _* = Needs plugins_
 ##### Decode Game Master or Asset Digest:
 
 ```
-  python compile_base.py -gm [./BIN] (as txt)
-  python compile_base.py -ga [./BIN] (as txt)
+  python compile_base.py -gm [./v2_GAME_MASTER] (out as same bin name *.txt)
+  python compile_base.py -ga [./ASSET_DIGEST] (out as same bin name *.txt)
 ```
 ---
 
