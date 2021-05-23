@@ -51,12 +51,6 @@ enum AA_NEW_ENUM_3 {
 	AA_NEW_ENUM_3_TOO_FAR_AWAY_FROM_LAST_POI = 5;
 }
 
-enum AA_NEW_ENUM_4 {
-	AA_NEW_ENUM_4_UNDEFINED_SOURCE = 0;
-	AA_NEW_ENUM_4_INVITE_PAGE = 1;
-	AA_NEW_ENUM_4_ADDRESS_BOOK = 2;
-}
-
 enum AdFeedbackComplaintReason {
 	AD_FEEDBACK_COMPLAINT_REASON_INVALID = 0;
 	AD_FEEDBACK_COMPLAINT_REASON_OFFENSIVE = 1;
@@ -3552,6 +3546,12 @@ enum ReferralTelemetryIds {
 	REFERRAL_TELEMETRY_IDS_OPEN_APP_THROUGH_DEEP_LINK = 8;
 }
 
+enum ReferralTelemetrySource {
+	REFERRAL_TELEMETRY_SOURCE_UNDEFINED_SOURCE = 0;
+	REFERRAL_TELEMETRY_SOURCE_INVITE_PAGE = 1;
+	REFERRAL_TELEMETRY_SOURCE_ADDRESS_BOOK = 2;
+}
+
 enum RemoteRaidInviteAcceptSource {
 	REMOTE_RAID_INVITE_ACCEPT_SOURCE_UNDEFINED_REMOTE_RAID_INVITE_ACCEPT_SOURCE = 0;
 	REMOTE_RAID_INVITE_ACCEPT_SOURCE_REMOTE_RAID_IN_APP = 1;
@@ -4401,7 +4401,7 @@ message APPMCLIHDOE {
 	uint64 hmdedgnkjok = 8;
 	uint64 lkflnlghnie = 14;
 	float jckhihlepem = 15;
-	int32 move = 16;
+	HoloPokemonMove move = 16;
 }
 
 message ARBuddyMultiplayerSessionTelemetry {
@@ -5549,7 +5549,7 @@ message BuddyEncounterCameoSettings {
 }
 
 message BuddyEncounterHelpTelemetry {
-	int32 pokemon_id = 1;
+	HoloPokemonId pokemon_id = 1;
 	int32 cp = 2;
 	string encounter_type = 3;
 	bool ar_classic_enabled = 4;
@@ -5608,7 +5608,7 @@ message BuddyLevelSettings {
 }
 
 message BuddyMapEmotionCheckTelemetry {
-	int32 pokemon_id = 1;
+	HoloPokemonId pokemon_id = 1;
 	int32 current_emotion_points = 2;
 	int32 current_affection_points = 3;
 }
@@ -6096,7 +6096,7 @@ message CatchPokemonQuestProto {
 message CatchPokemonTelemetry {
 	string status = 1;
 	EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;
-	int32 balltype = 3;
+	Item balltype = 3;
 	int32 hit_grade = 4;
 	bool curve_ball = 5;
 	double miss_percent = 6;
@@ -7341,7 +7341,7 @@ message DeployPokemonTelemetry {
 	int32 status = 1;
 	PokemonTelemetry pokemon = 2;
 	string gym_id = 3;
-	int32 team = 4;
+	Team team = 4;
 	int32 defender_count = 5;
 }
 
@@ -8362,7 +8362,7 @@ message FeedPokemonTelemetry {
 	int32 status = 1;
 	PokemonTelemetry pokemon = 2;
 	string gym_id = 3;
-	int32 team = 4;
+	Team team = 4;
 	int32 defender_count = 5;
 	int32 motivation = 6;
 	int32 cp_now = 7;
@@ -10014,14 +10014,14 @@ message HoloInventoryKeyProto {
 	oneof Type {
 		uint64 pokemon_id = 1;
 		Item item = 2;
-		int32 pokedex_entry_id = 3;
+		HoloPokemonId pokedex_entry_id = 3;
 		bool player_stats = 4;
 		bool player_currency = 5;
 		bool player_camera = 6;
 		bool inventory_upgrades = 7;
 		bool applied_items = 8;
 		bool egg_incubators = 9;
-		int32 pokemon_family_id = 10;
+		HoloPokemonFamilyId pokemon_family_id = 10;
 		QuestType quest_type = 11;
 		string avatar_template_id = 12;
 		bool raid_tickets = 13;
@@ -10638,8 +10638,8 @@ message InventoryDeltaProto {
 
 message InventoryItemProto {
 	oneof InventoryItem {
-		bytes deleted_item_key = 2;
-		bytes item = 3;
+		HoloInventoryKeyProto deleted_item_key = 2;
+		HoloInventoryItemProto inventory_item_data = 3;
 	}
 
 	int64 modified_timestamp = 1;
@@ -10712,7 +10712,7 @@ message InviteGameResponse {
 }
 
 message ItemProto {
-	Item item = 1;
+	Item item_id = 1;
 	int32 akcjpbnnjoe = 2;
 	bool amplmhkincn = 3;
 }
@@ -10741,7 +10741,7 @@ message ItemSettingsProto {
 
 message ItemTelemetry {
 	ItemUseTelemetryIds item_use_click_id = 1;
-	int32 item_id = 2;
+	Item item_id = 2;
 	bool equipped = 3;
 	bool from_inventory = 4;
 	string item_id_string = 5;
@@ -13016,7 +13016,7 @@ message MapEventsTelemetry {
 	MapEventsTelemetryIds map_event_click_id = 1;
 	string fort_id = 2;
 	repeated int32 guard_pokemon_level = 3;
-	int32 team = 4;
+	Team team = 4;
 	bool is_player_in_range = 5;
 }
 
@@ -13056,8 +13056,8 @@ message MapTileBundle {
 
 message MapTileDataProto {
 	MapTileProto map_tile = 1;
-	bytes tile_data = 2;
-	bytes label_data = 3;
+	MapCompositionRoot tile_data = 2;
+	LabelTile label_data = 3;
 }
 
 message MapTileProto {
@@ -17435,7 +17435,7 @@ message PokemonTagSettingsProto {
 }
 
 message PokemonTelemetry {
-	int32 pokemon_id = 1;
+	HoloPokemonId pokemon_id = 1;
 	int32 cp = 2;
 	float weight_kg = 3;
 	float height_m = 4;
@@ -17474,7 +17474,7 @@ message PokestopIncidentDisplayProto {
 }
 
 message PokestopReward {
-	int32 item_id = 1;
+	Item item_id = 1;
 	int32 item_count = 2;
 }
 
@@ -17891,7 +17891,7 @@ message ReferralTelemetry {
 	ReferralTelemetryIds igbefhobecf = 1;
 	ReferralRole bejmhonlknm = 2;
 	string pdjajceodlc = 3;
-	AA_NEW_ENUM_4 ikgabgljane = 4;
+	ReferralTelemetrySource ikgabgljane = 4;
 }
 
 message RegisterBackgroundDeviceActionProto {
@@ -19119,7 +19119,7 @@ message UserAttributesProto {
 	int32 level = 1;
 	int64 xp_percentage = 2;
 	int64 pokecoin_count = 3;
-	int32 team = 4;
+	Team team = 4;
 	int32 catch_streak = 5;
 	int32 spin_streak = 6;
 	string buddy_name = 7;
@@ -19180,7 +19180,7 @@ message UserAttributesProto {
 message UserIssueWeatherReport {
 	string gameplayer_weather = 1;
 	bool alert_active = 2;
-	int32 severity = 3;
+	WeatherAlertProto.Severity severity = 3;
 	int32 user_report = 4;
 }
 
@@ -19371,7 +19371,7 @@ message WeatherBonusProto {
 message WeatherDetailClickTelemetry {
 	string gameplay_weather_type = 1;
 	bool alert_active = 2;
-	int32 severity = 3;
+	WeatherAlertProto.Severity severity = 3;
 }
 
 message WebTelemetry {

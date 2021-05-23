@@ -31,8 +31,7 @@ parser.add_argument("-ga", "--generate_asset_digest", help="Generates ASSET_DIGE
 parser.add_argument("-l", "--lang", help="Language to produce proto single file.")
 parser.add_argument("-v", "--version", help="Set version out ex:. (0.195.2)")
 parser.add_argument("-o", "--out_path", help="Output path for proto single file.")
-parser.add_argument("-m", "--java_multiple_files", action='store_true',
-                    help='Write each message to a separate .java file.')
+parser.add_argument("-m", "--java_multiple_files", action='store_true', help='Write each message to a separate .java file.')
 parser.add_argument("-g", "--generate_only", action='store_true', help='Generates only proto compilable.')
 parser.add_argument("-b", "--generate_new_base", action='store_true', help='Generates new proto base refs.')
 parser.add_argument("-k", "--keep_proto_file", action='store_true', help='Do not remove .proto file after compiling.')
@@ -844,7 +843,7 @@ if gen_base:
 
     shutil.copy(generated_file, base_file)
 
-if keep_file:
+if keep_file or lang == "proto":
     shutil.move(generated_file, out_path)
 
 if lang == 'python':
