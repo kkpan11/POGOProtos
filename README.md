@@ -87,7 +87,7 @@ Use `homebrew` to install `protobuf ` with `brew install --devel protobuf`.
 The compilation creates output specifically for the target language, i.e. respecting naming conventions, etc.  
 This is an example of how the generated code will be organized:
 
-##### Compile vx.xxx.x.proto [depending on the version chosen, or uses -v 0.205.x (or other version)](https://github.com/Furtif/POGOProtos/blob/master/compile_base.py#L12)
+##### Compile vx.xxx.x.proto [depending on the version chosen, or uses -v 0.205.x (or other version present into base folder > 0.175.x)](https://github.com/Furtif/POGOProtos/blob/master/compile_base.py#L12)
 
  * _Note: the *.desc file is auto created in this function_
 
