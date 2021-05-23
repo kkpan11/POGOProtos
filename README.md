@@ -55,7 +55,7 @@ optional arguments:
                         Generates ASSET_DIGEST.txt form PATH/ASSET_DIGEST.
   -l LANG, --lang LANG  Language to produce proto single file.
   -v VERSION, --version VERSION
-                        Set version out ex:. (0.195.2)
+                        Set version out ex:. (0.205.x)
   -o OUT_PATH, --out_path OUT_PATH
                         Output path for proto single file.
   -m, --java_multiple_files
