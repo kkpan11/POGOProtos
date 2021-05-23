@@ -18,20 +18,20 @@ We are following [semantic versioning](http://semver.org/) for POGOProtos.  Ever
 | Version      | Base                                                                                                      | Notes                  | Extra                           |
 |--------------|-----------------------------------------------------------------------------------------------------------|------------------------|---------------------------------|
 | Obfuscated (partial)       |  [v0.209.0](https://github.com/Furtif/POGOProtos/blob/master/base/v0.209.0_p_obf.proto)                         | Compilable  |  Protocol Buffers v3.17.0     |
-| [2.54.1](https://github.com/Furtif/POGOProtos/raw/master/.current-version)       |  [v0.205.1](https://github.com/Furtif/POGOProtos/blob/master/base/v0.205.0.proto)                         | **Updated** (_[/base/base.proto](https://github.com/Furtif/POGOProtos/blob/master/base/base.proto)_)  |  Protocol Buffers v3.15.8     |
+| [2.54.1](https://github.com/Furtif/POGOProtos/raw/master/.current-version)       |  [v0.205.x](https://github.com/Furtif/POGOProtos/blob/master/base/v0.205.x.proto)                         | **Updated** (_[/base/base.proto](https://github.com/Furtif/POGOProtos/blob/master/base/base.proto)_)  |  Protocol Buffers v3.15.8     |
 
 ### Addons
 
 | Additional resources as *.json files | Source                                                                               | Status
 |------------------------|--------------------------------------------------------------------------------------|--------
-| [v2_GAME_MASTER.json](https://raw.githubusercontent.com/Furtif/POGOProtos/master/GM/v2_GAME_MASTER.json) | [Root](https://github.com/Furtif/POGOProtos/tree/master/GM)                                   |  OK (205.1)
-| [GAME_MASTER.json](https://raw.githubusercontent.com/Furtif/POGOProtos/master/GM/GAME_MASTER.json) | [Root](https://github.com/Furtif/POGOProtos/tree/master/GM)                                   |  OK (205.1)
-| [ASSET_DIGEST.json](https://raw.githubusercontent.com/Furtif/POGOProtos/master/GM/ASSET_DIGEST.json) | [Root](https://github.com/Furtif/POGOProtos/tree/master/GM)                                   |  OK (205.1)
+| [v2_GAME_MASTER.json](https://raw.githubusercontent.com/Furtif/POGOProtos/master/GM/v2_GAME_MASTER.json) | [Root](https://github.com/Furtif/POGOProtos/tree/master/GM)                                   |  OK (205.x)
+| [GAME_MASTER.json](https://raw.githubusercontent.com/Furtif/POGOProtos/master/GM/GAME_MASTER.json) | [Root](https://github.com/Furtif/POGOProtos/tree/master/GM)                                   |  OK (205.x)
+| [ASSET_DIGEST.json](https://raw.githubusercontent.com/Furtif/POGOProtos/master/GM/ASSET_DIGEST.json) | [Root](https://github.com/Furtif/POGOProtos/tree/master/GM)                                   |  OK (205.x)
 
 | Additional resources as *.txt files (_[Decode mode by script](https://github.com/Furtif/POGOProtos#decode-game-master-or-asset-digest)_)| Source                                                                               | Status
 |------------------------|--------------------------------------------------------------------------------------|--------
-| [v2_GAME_MASTER.txt](https://raw.githubusercontent.com/Furtif/POGOProtos/master/GM/v2_GAME_MASTER.txt) | [Root](https://github.com/Furtif/POGOProtos/tree/master/GM)                                   |  OK (205.1)
-| [ASSET_DIGEST.txt](https://raw.githubusercontent.com/Furtif/POGOProtos/master/GM/ASSET_DIGEST.txt) | [Root](https://github.com/Furtif/POGOProtos/tree/master/GM)                                   |  OK (205.1)
+| [v2_GAME_MASTER.txt](https://raw.githubusercontent.com/Furtif/POGOProtos/master/GM/v2_GAME_MASTER.txt) | [Root](https://github.com/Furtif/POGOProtos/tree/master/GM)                                   |  OK (205.x)
+| [ASSET_DIGEST.txt](https://raw.githubusercontent.com/Furtif/POGOProtos/master/GM/ASSET_DIGEST.txt) | [Root](https://github.com/Furtif/POGOProtos/tree/master/GM)                                   |  OK (205.x)
 
 | Additional resources as *.xml files | Source                                                                               | Status
 |------------------------|--------------------------------------------------------------------------------------|--------
@@ -87,13 +87,13 @@ Use `homebrew` to install `protobuf ` with `brew install --devel protobuf`.
 The compilation creates output specifically for the target language, i.e. respecting naming conventions, etc.  
 This is an example of how the generated code will be organized:
 
-##### Compile vx.xxx.x.proto [depending on the version chosen](https://github.com/Furtif/POGOProtos/blob/master/compile_base.py#L12)
+##### Compile vx.xxx.x.proto [depending on the version chosen, or uses -v 0.205.x (or other version)](https://github.com/Furtif/POGOProtos/blob/master/compile_base.py#L12)
 
  * _Note: the *.desc file is auto created in this function_
 
 ```
-python compile_base.py -l cpp -k:
- - vx.xxx.x*.proto -> out/single_file/cpp/POGOProtos.Rpc.desc
+python compile_base.py -l cpp -k -v 0.205.x:
+ - v0.205.x.proto -> out/single_file/cpp/POGOProtos.Rpc.desc
  -                -> out/single_file/cpp/POGOProtos.Rpc.pb.cc
  -                -> out/single_file/cpp/POGOProtos.Rpc.pb.h
  -                -> out/single_file/cpp/POGOProtos.Rpc.proto
