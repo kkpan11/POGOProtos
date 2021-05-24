@@ -14,7 +14,7 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: 0.203.1
+* Version: 0.203.x
 *
 */
 
@@ -303,7 +303,7 @@ enum CentralState {
 }
 
 enum ClientAction {
-	CLIENT_ACTION_UNKNOWN_PLATFORM_CLIENT_ACTION = 0;
+	CLIENT_ACTION_UNKNOWN_CLIENT_ACTION = 0;
 	CLIENT_ACTION_REGISTER_PUSH_NOTIFICATION = 5000;
 	CLIENT_ACTION_UNREGISTER_PUSH_NOTIFICATION = 5001;
 	CLIENT_ACTION_UPDATE_NOTIFICATION_STATUS = 5002;

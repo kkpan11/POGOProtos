@@ -1,5 +1,5 @@
 /*
-* Copyright 2016-2020 --=FurtiF=--.
+* Copyright 2016-2021 --=FurtiF=--.
 *
 * Licensed under the
 *	Educational Community License, Version 2.0 (the "License"); you may
@@ -14,7 +14,7 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: 0.195.2
+* Version: 0.195.x
 *
 */
 
@@ -273,7 +273,7 @@ enum CentralState {
 }
 
 enum ClientAction {
-	CLIENT_ACTION_UNKNOWN_PLATFORM_CLIENT_ACTION = 0;
+	CLIENT_ACTION_UNKNOWN_CLIENT_ACTION = 0;
 	CLIENT_ACTION_REGISTER_PUSH_NOTIFICATION = 5000;
 	CLIENT_ACTION_UNREGISTER_PUSH_NOTIFICATION = 5001;
 	CLIENT_ACTION_UPDATE_NOTIFICATION_STATUS = 5002;
@@ -567,8 +567,8 @@ enum FriendshipLevelMilestone {
 }
 
 enum GameChatActions {
-	GAME_CHAT_ACTIONS_UNKNOWN_GAME_CHAT_ACTION = 0;
-	GAME_CHAT_ACTIONS_PROXY_CHAT_ACTION = 660000;
+	UNKNOWN_GAME_CHAT_ACTION = 0;
+	PROXY_CHAT_ACTION = 660000;
 }
 
 enum GenericClickTelemetryIds {
@@ -5544,7 +5544,7 @@ message CatchPokemonOutProto {
 
 message CatchPokemonProto {
 	fixed64 encounter_id = 1;
-	int32 pokeball = 2;
+	Item pokeball = 2;
 	double normalized_reticle_size = 3;
 	string spawn_point_guid = 4;
 	bool hit_pokemon = 5;
@@ -5561,7 +5561,7 @@ message CatchPokemonQuestProto {
 message CatchPokemonTelemetry {
 	string status = 1;
 	EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;
-	int32 balltype = 3;
+	Item balltype = 3;
 	int32 hit_grade = 4;
 	bool curve_ball = 5;
 	double miss_percent = 6;
@@ -7957,6 +7957,8 @@ message FortRenderingType {
 		DEFAULT = 0;
 		INTERNAL_TEST = 1;
 	}
+
+	RenderingType rendering_type = 1;
 }
 
 message FortSearchLogEntry {
@@ -8060,6 +8062,8 @@ message FortSponsor {
 		NIA_OPS = 22;
 		WHISK = 23;
 	}
+
+	Sponsor sponsor = 1;
 }
 
 message FrameRate {
@@ -8272,6 +8276,8 @@ message GameplayWeatherProto {
 		SNOW = 6;
 		FOG = 7;
 	}
+
+	WeatherCondition gameplay_condition = 1;
 }
 
 message GcmToken {
@@ -10314,6 +10320,8 @@ message InvasionStatus {
 		ERROR_INVALID_HEALTH_UPDATES = 20;
 		ERROR_ATTACKING_POKEMON_INVALID = 30;
 	}
+
+	Status status = 1;
 }
 
 message InvasionTelemetry {
@@ -10456,7 +10464,7 @@ message ItemSettingsProto {
 
 message ItemTelemetry {
 	ItemUseTelemetryIds item_use_click_id = 1;
-	int32 item_id = 2;
+	Item item_id = 2;
 	bool equipped = 3;
 	bool from_inventory = 4;
 	string item_id_string = 5;
@@ -14718,7 +14726,7 @@ message PokestopIncidentDisplayProto {
 }
 
 message PokestopReward {
-	int32 item_id = 1;
+	Item item_id = 1;
 	int32 item_count = 2;
 }
 
@@ -16487,6 +16495,8 @@ message SocialProto {
 		HOLOHOLO_DELETED = 2;
 		LEXICON_DELETED = 3;
 	}
+
+	AppKey app_key = 1;
 }
 
 message SocialSettings {
@@ -17631,7 +17641,7 @@ message UserAttributesProto {
 message UserIssueWeatherReport {
 	string gameplayer_weather = 1;
 	bool alert_active = 2;
-	int32 severity = 3;
+	WeatherAlertProto.Severity severity = 3;
 	int32 user_report = 4;
 }
 
@@ -17640,6 +17650,8 @@ message VasaClientAction {
 		INVALID_VASA_CLIENT_ACTION = 0;
 		COLLECT_ADID = 8000;
 	}
+
+	ActionEnum action = 1;
 }
 
 message VerifyChallengeOutProto {
@@ -17843,6 +17855,7 @@ message WeatherAlertProto {
 		EXTREME = 2;
 	}
 
+	Severity severity = 1;
 	bool warn_weather = 2;
 }
 
@@ -17860,7 +17873,7 @@ message WeatherBonusProto {
 message WeatherDetailClickTelemetry {
 	string gameplay_weather_type = 1;
 	bool alert_active = 2;
-	int32 severity = 3;
+	WeatherAlertProto.Severity severity = 3;
 }
 
 message WebTelemetry {
