@@ -6188,9 +6188,15 @@ message ClientGameMasterTemplateProto {
 	GameMasterClientTemplateProto data = 2;
 }
 
+message ClientGenderProto {
+	float gkblcijcimk = 1;
+	float fohhgbgmgkp = 2;
+	float pfaafgeiile = 3;
+}
+
 message ClientGenderSettingsProto {
 	HoloPokemonId pokemon = 1;
-	IBDEOBKKKBF dihmpojgpfj = 2;
+	ClientGenderProto gender = 2;
 }
 
 message ClientInbox {
@@ -10148,12 +10154,6 @@ message IBCMJMKNIKE {
 	int64 oieajfnkcmn = 3;
 }
 
-message IBDEOBKKKBF {
-	float gkblcijcimk = 1;
-	float fohhgbgmgkp = 2;
-	float pfaafgeiile = 3;
-}
-
 message IBEMBBHPNHJ {
 	repeated string ckcpbjipopf = 1;
 }
@@ -11479,7 +11479,7 @@ message KNLOFNOCLNN {
 	int32 pebdmoecdnb = 17;
 	int32 hpgpllpfppm = 18;
 	string hfpmnjbddbc = 19;
-	NIBEDLDNMFH dihmpojgpfj = 20;
+	NIBEDLDNMFH gender = 20;
 	EPJHHMHKAPJ mnajbolalel = 21;
 	BIBAINGLFHG abbmgbjiicc = 22;
 	bool kmcemciligk = 23;
@@ -17174,7 +17174,7 @@ message PokemonDisplayProto {
 	}
 
 	Costume mnajbolalel = 1;
-	Gender dihmpojgpfj = 2;
+	Gender gender = 2;
 	bool kmcemciligk = 3;
 	Form abbmgbjiicc = 4;
 	GameplayWeatherProto.WeatherCondition bgflagejcaa = 5;
