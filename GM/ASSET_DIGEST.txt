@@ -55,11 +55,11 @@ digest {
   size: 10010
 }
 digest {
-  asset_id: "006e8d7a-bd12-4be0-8549-e2a3edf62567/1616644437841481"
+  asset_id: "006e8d7a-bd12-4be0-8549-e2a3edf62567/1622845089926569"
   bundle_name: "pm0080_51"
-  version: 1616644437841481
-  checksum: 1344418865
-  size: 420603
+  version: 1622845089926569
+  checksum: 991435616
+  size: 399231
 }
 digest {
   asset_id: "00752794-6689-43e2-8c9f-ab2a285a43ce/1616622753510415"
@@ -74,6 +74,13 @@ digest {
   version: 1616623281721706
   checksum: 3343263662
   size: 6861
+}
+digest {
+  asset_id: "00cc3873-ca73-468c-9fe3-ce781cf9cf0e/1622156598855325"
+  bundle_name: "f_gloves_korrina_00_bundle_icon"
+  version: 1622156598855325
+  checksum: 3549914964
+  size: 6952
 }
 digest {
   asset_id: "00cf7899-72c2-4bba-bd25-9952487f8301/1616694712220859"
@@ -244,11 +251,11 @@ digest {
   size: 8378
 }
 digest {
-  asset_id: "02952048-94b3-4a12-b50b-987b72fab6d4/1616644474257662"
+  asset_id: "02952048-94b3-4a12-b50b-987b72fab6d4/1622845097343615"
   bundle_name: "pm0080_00_pgo_2021"
-  version: 1616644474257662
-  checksum: 403202768
-  size: 472935
+  version: 1622845097343615
+  checksum: 690163546
+  size: 465956
 }
 digest {
   asset_id: "02a5bcd3-9c74-47df-8bdf-be248acd3be6/1616624032186465"
@@ -369,6 +376,13 @@ digest {
   version: 1616694710610847
   checksum: 2262166248
   size: 490688
+}
+digest {
+  asset_id: "038b7322-13cd-42a6-95bf-997507b5136d/1621628090797766"
+  bundle_name: "f_shoes_sylveonitems_00_bundle_icon"
+  version: 1621628090797766
+  checksum: 4267360435
+  size: 11172
 }
 digest {
   asset_id: "039bfc03-118d-419c-9893-6fec06172ca9/1616623112592359"
@@ -737,6 +751,13 @@ digest {
   size: 17602
 }
 digest {
+  asset_id: "07f7b211-ff32-4dcc-a1ed-1deabd130c8e/1622156530385205"
+  bundle_name: "f_shirt_korrina_bundle"
+  version: 1622156530385205
+  checksum: 1140921764
+  size: 245935
+}
+digest {
   asset_id: "08119100-37a6-4316-b4c8-e952374b6517/1616694708919737"
   bundle_name: "pm0508_00"
   version: 1616694708919737
@@ -758,11 +779,11 @@ digest {
   size: 15376
 }
 digest {
-  asset_id: "0861fd39-eb65-4b98-828b-0f54f5d443c3/1616616041791706"
+  asset_id: "0861fd39-eb65-4b98-828b-0f54f5d443c3/1622156612971352"
   bundle_name: "m_avatar_poses_bundle"
-  version: 1616616041791706
-  checksum: 2679101656
-  size: 229451
+  version: 1622156612971352
+  checksum: 4141811077
+  size: 236580
 }
 digest {
   asset_id: "086ac75b-11be-449a-9f87-0193c30f2d72/1616622035301236"
@@ -920,11 +941,11 @@ digest {
   size: 20594
 }
 digest {
-  asset_id: "098beef3-6e27-45f5-9f27-80c43e60a388/1618619499265619"
+  asset_id: "098beef3-6e27-45f5-9f27-80c43e60a388/1622845082937451"
   bundle_name: "global_pokemon"
-  version: 1618619499265619
-  checksum: 651586422
-  size: 1190571
+  version: 1622845082937451
+  checksum: 3395953916
+  size: 1199151
 }
 digest {
   asset_id: "0996a5eb-a5f0-4923-9d40-7e07cad80d9c/1616697317024515"
@@ -939,6 +960,13 @@ digest {
   version: 1616632347749020
   checksum: 2821140008
   size: 33425
+}
+digest {
+  asset_id: "09b5d35e-72c5-405f-a7d4-6bb411d0756f/1622156557880426"
+  bundle_name: "m_gloves_korrina_bundle"
+  version: 1622156557880426
+  checksum: 3054131085
+  size: 142182
 }
 digest {
   asset_id: "09b94f34-f3dc-4108-b9d5-703c77851980/1616622175255509"
@@ -1348,9 +1376,9 @@ digest {
   size: 514227
 }
 digest {
-  asset_id: "0d634186-ef17-42dd-8202-3e674f4b3e5b/1618619504013804"
+  asset_id: "0d634186-ef17-42dd-8202-3e674f4b3e5b/1619807959580684"
   bundle_name: "buddy_crown"
-  version: 1618619504013804
+  version: 1619807959580684
   checksum: 715617280
   size: 76386
 }
@@ -1370,11 +1398,11 @@ digest {
   size: 26990
 }
 digest {
-  asset_id: "0d859e6f-4cf0-4375-845c-455af1306fd2/1618421423336053"
+  asset_id: "0d859e6f-4cf0-4375-845c-455af1306fd2/1619807910513313"
   bundle_name: "pm0700_00"
-  version: 1618421423336053
-  checksum: 149913165
-  size: 918686
+  version: 1619807910513313
+  checksum: 2527574242
+  size: 936786
 }
 digest {
   asset_id: "0d86a055-1e9e-48c4-ad28-674085935613/1616697234397511"
@@ -1425,6 +1453,13 @@ digest {
   version: 1616689861805661
   checksum: 3216902437
   size: 430115
+}
+digest {
+  asset_id: "0e285241-cdd9-4fea-92cc-d0701a278517/1622156594023879"
+  bundle_name: "f_shoes_regiicejersies_bundle"
+  version: 1622156594023879
+  checksum: 2635569002
+  size: 165630
 }
 digest {
   asset_id: "0e3c07a1-90b3-4018-9c0b-b66e231644f0/1616632667632011"
@@ -1525,11 +1560,11 @@ digest {
   size: 248993
 }
 digest {
-  asset_id: "0f4b1c56-308b-46c8-8b18-5a417e2551bc/1616691020855071"
+  asset_id: "0f4b1c56-308b-46c8-8b18-5a417e2551bc/1619807945804655"
   bundle_name: "pm0261_00"
-  version: 1616691020855071
-  checksum: 1010611665
-  size: 459581
+  version: 1619807945804655
+  checksum: 392862682
+  size: 467375
 }
 digest {
   asset_id: "0f5b7b3e-ac0a-4d5d-8d5d-835ad1241094/1616631829502758"
@@ -1611,6 +1646,13 @@ digest {
   key: "~J\316\204\204\337V\212\023\305n\3041\3774\317"
 }
 digest {
+  asset_id: "106d5dbb-39f8-46a0-b545-0b4ba4e8fcc8/1622843813181700"
+  bundle_name: "m_hat_slowpoketailshirts_00_bundle_icon"
+  version: 1622843813181700
+  checksum: 2344917762
+  size: 12174
+}
+digest {
   asset_id: "10990bfb-43de-4b71-9940-a6fdbcdfe3fa/1616632294296989"
   bundle_name: "pokemon_icon_277"
   version: 1616632294296989
@@ -1654,11 +1696,11 @@ digest {
   size: 14156
 }
 digest {
-  asset_id: "10ec5183-22cd-4f1b-8034-142e348d6d6a/1616691017895021"
+  asset_id: "10ec5183-22cd-4f1b-8034-142e348d6d6a/1619807936659291"
   bundle_name: "pm0256_00"
-  version: 1616691017895021
-  checksum: 1348162963
-  size: 646269
+  version: 1619807936659291
+  checksum: 535195202
+  size: 651801
 }
 digest {
   asset_id: "10f5ba8c-6119-4763-945e-1834f6647fa9/1616697370407568"
@@ -1747,11 +1789,11 @@ digest {
   size: 9499
 }
 digest {
-  asset_id: "115dc97f-358a-4c45-8ac1-e20e4821f609/1619136870462596"
+  asset_id: "115dc97f-358a-4c45-8ac1-e20e4821f609/1622773513096212"
   bundle_name: "json_patch_i18n_russian"
-  version: 1619136870462596
-  checksum: 3063069420
-  size: 43159
+  version: 1622773513096212
+  checksum: 2343940463
+  size: 23738
 }
 digest {
   asset_id: "11616b6c-6439-4fab-868d-d6795c6e9162/1616639682677249"
@@ -2030,6 +2072,13 @@ digest {
   size: 232577
 }
 digest {
+  asset_id: "14f4f10b-becf-4cab-b9e6-05fa22a32267/1622156580580471"
+  bundle_name: "m_hat_korrina_bundle"
+  version: 1622156580580471
+  checksum: 3453339815
+  size: 172726
+}
+digest {
   asset_id: "1512005a-ca80-443d-b1e3-db95bb786718/1512759631248582"
   bundle_name: "pm0040"
   version: 1512759631248582
@@ -2172,6 +2221,13 @@ digest {
   size: 439459
 }
 digest {
+  asset_id: "17227adc-25ff-4bc2-b2b0-fc94542b796d/1622156611341283"
+  bundle_name: "m_pants_registeeljersies_00_bundle_icon"
+  version: 1622156611341283
+  checksum: 2177975108
+  size: 6650
+}
+digest {
   asset_id: "175d2c2e-e85f-4596-a082-019a73737804/1616621894869076"
   bundle_name: "m_hat_kantotourcapred_bundle"
   version: 1616621894869076
@@ -2200,11 +2256,11 @@ digest {
   size: 959987
 }
 digest {
-  asset_id: "17cd3133-18c8-4be0-8d10-32835e65e9e5/1616690967505439"
+  asset_id: "17cd3133-18c8-4be0-8d10-32835e65e9e5/1619807907829968"
   bundle_name: "pm0296_00"
-  version: 1616690967505439
-  checksum: 2608003443
-  size: 432245
+  version: 1619807907829968
+  checksum: 3257789324
+  size: 453531
 }
 digest {
   asset_id: "17e94739-b461-45b2-bba2-254e8b6ebe0e/1512759506233405"
@@ -2406,6 +2462,13 @@ digest {
   size: 19474
 }
 digest {
+  asset_id: "1a41902e-f993-41ae-99d3-9eef6cdf33a3/1622156621830967"
+  bundle_name: "m_hat_korrina_00_bundle_icon"
+  version: 1622156621830967
+  checksum: 3226262761
+  size: 10425
+}
+digest {
   asset_id: "1a449cb7-b0fc-4728-b821-6cc136697d02/1616697235949276"
   bundle_name: "pm0629_00"
   version: 1616697235949276
@@ -2533,11 +2596,11 @@ digest {
   size: 5310
 }
 digest {
-  asset_id: "1bb14249-cfa4-44d4-a0d6-1c58e8261650/1619136859332857"
+  asset_id: "1bb14249-cfa4-44d4-a0d6-1c58e8261650/1622773501305191"
   bundle_name: "json_patch_i18n_italian"
-  version: 1619136859332857
-  checksum: 583966551
-  size: 14166
+  version: 1622773501305191
+  checksum: 4112335464
+  size: 6964
 }
 digest {
   asset_id: "1bbc5eec-7ce1-4649-8e00-dce0ed5864fc/1616622439114263"
@@ -2674,11 +2737,11 @@ digest {
   size: 5972
 }
 digest {
-  asset_id: "1d377b35-9b97-4a93-8eea-54622042b8b4/1616697255806821"
+  asset_id: "1d377b35-9b97-4a93-8eea-54622042b8b4/1621625736334635"
   bundle_name: "pm0808_00"
-  version: 1616697255806821
-  checksum: 1030329198
-  size: 612126
+  version: 1621625736334635
+  checksum: 4232545666
+  size: 681318
 }
 digest {
   asset_id: "1d5cc47d-2552-4aef-9f7c-75ece678dbef/1616622230369663"
@@ -2897,11 +2960,11 @@ digest {
   size: 166000
 }
 digest {
-  asset_id: "1e915772-63b2-4c29-b159-dabdadae284c/1616697441958799"
+  asset_id: "1e915772-63b2-4c29-b159-dabdadae284c/1619807969140892"
   bundle_name: "pm0675_00"
-  version: 1616697441958799
-  checksum: 830800826
-  size: 564793
+  version: 1619807969140892
+  checksum: 4006335091
+  size: 557832
 }
 digest {
   asset_id: "1e97b116-5c54-43c5-8ba9-e1f3a52f9575/1616632533439530"
@@ -2925,11 +2988,11 @@ digest {
   size: 11317
 }
 digest {
-  asset_id: "1eb4479a-e204-4b2b-82f9-736e9a2b5a4a/1616692890141407"
+  asset_id: "1eb4479a-e204-4b2b-82f9-736e9a2b5a4a/1619807960493490"
   bundle_name: "pm0399_00"
-  version: 1616692890141407
-  checksum: 2138969812
-  size: 514715
+  version: 1619807960493490
+  checksum: 46621162
+  size: 461884
 }
 digest {
   asset_id: "1ebdcbcf-005e-44f5-9688-eaf429711e4e/1616632019571319"
@@ -3191,6 +3254,13 @@ digest {
   size: 423438
 }
 digest {
+  asset_id: "2194f830-fabe-4fb9-955d-c63b9296c71c/1622156597809922"
+  bundle_name: "f_shoes_regiicejersies_00_bundle_icon"
+  version: 1622156597809922
+  checksum: 3665204622
+  size: 8480
+}
+digest {
   asset_id: "21b82d06-0057-4ade-abbb-6a0284273ab4/1616689953182479"
   bundle_name: "pm0188_00"
   version: 1616689953182479
@@ -3205,11 +3275,11 @@ digest {
   size: 1209246
 }
 digest {
-  asset_id: "21d8a0c5-ebd9-48a4-9dc4-7f306114bf7f/1616644588196480"
+  asset_id: "21d8a0c5-ebd9-48a4-9dc4-7f306114bf7f/1622845106282895"
   bundle_name: "pm0079_31"
-  version: 1616644588196480
-  checksum: 157846095
-  size: 492810
+  version: 1622845106282895
+  checksum: 888070365
+  size: 512836
 }
 digest {
   asset_id: "21e4a822-bed7-453e-b38a-bb43ec974019/1616622973063509"
@@ -3501,6 +3571,13 @@ digest {
   size: 12809
 }
 digest {
+  asset_id: "25c86bbd-e6fe-459f-bcd9-df15db1302d6/1622156600300926"
+  bundle_name: "f_pants_regirockjersies_bundle"
+  version: 1622156600300926
+  checksum: 3838450413
+  size: 172749
+}
+digest {
   asset_id: "25d3b79e-8ea1-42d9-8084-008096202eaa/1616622720512819"
   bundle_name: "f_gloves_delibird_0_bundle_icon"
   version: 1616622720512819
@@ -3620,10 +3697,10 @@ digest {
   size: 185215
 }
 digest {
-  asset_id: "26fdaf14-b82a-42db-a44c-df5382b11300/1616631825116680"
+  asset_id: "26fdaf14-b82a-42db-a44c-df5382b11300/1619809691615254"
   bundle_name: "pokemon_icon_004"
-  version: 1616631825116680
-  checksum: 217899110
+  version: 1619809691615254
+  checksum: 4053443430
   size: 21597
 }
 digest {
@@ -3690,6 +3767,13 @@ digest {
   version: 1616632569609637
   checksum: 3348266854
   size: 11900
+}
+digest {
+  asset_id: "281e17f6-76b1-4bde-9fd8-68f6d0dbe1f9/1622156606228340"
+  bundle_name: "m_hat_regirockjersies_00_bundle_icon"
+  version: 1622156606228340
+  checksum: 4070234492
+  size: 7640
 }
 digest {
   asset_id: "282fce91-fb98-4870-966e-28040a867774/1616632411166066"
@@ -3917,6 +4001,13 @@ digest {
   size: 621509
 }
 digest {
+  asset_id: "2aad8042-e448-4b01-b7c7-9dd735fc85d1/1622156615066578"
+  bundle_name: "m_shirt_korrina_bundle"
+  version: 1622156615066578
+  checksum: 1281489774
+  size: 218898
+}
+digest {
   asset_id: "2abcd7c0-f6fb-42f5-a6ba-7ed05370523d/1616622036748561"
   bundle_name: "f_shirt_melmetaljacket_00_bundle_icon"
   version: 1616622036748561
@@ -3957,6 +4048,13 @@ digest {
   version: 1616694744532148
   checksum: 1306008896
   size: 1729800
+}
+digest {
+  asset_id: "2b1b6378-3f18-4829-97ca-532e399b5ef8/1622156553181521"
+  bundle_name: "m_pants_korrina_00_bundle_icon"
+  version: 1622156553181521
+  checksum: 1008138902
+  size: 6794
 }
 digest {
   asset_id: "2b36718b-cd52-4936-8f24-427c1c8c3d04/1616632779164770"
@@ -4002,11 +4100,11 @@ digest {
   key: "\374Q\005\356\025\014\363\231\203\303hC\353\265\235I"
 }
 digest {
-  asset_id: "2b58a4ea-6704-4b59-baa3-93d3322eb74d/1619136855616289"
+  asset_id: "2b58a4ea-6704-4b59-baa3-93d3322eb74d/1622773497840085"
   bundle_name: "json_patch_i18n_german"
-  version: 1619136855616289
-  checksum: 1558451220
-  size: 14848
+  version: 1622773497840085
+  checksum: 1638492836
+  size: 6945
 }
 digest {
   asset_id: "2b62593e-546c-4844-ab6d-d5b8c0f5fbea/1616644561055323"
@@ -4023,11 +4121,11 @@ digest {
   size: 149440
 }
 digest {
-  asset_id: "2b94aa69-c757-45dd-bae3-52f105762a56/1616631789014789"
+  asset_id: "2b94aa69-c757-45dd-bae3-52f105762a56/1622845080070991"
   bundle_name: "pokemon_icon_079"
-  version: 1616631789014789
-  checksum: 74467272
-  size: 27350
+  version: 1622845080070991
+  checksum: 347195212
+  size: 27009
 }
 digest {
   asset_id: "2bd06a3e-4687-4133-82d2-941aebcdead5/1616691093925978"
@@ -4170,11 +4268,11 @@ digest {
   size: 177067
 }
 digest {
-  asset_id: "2e0163d0-9985-49d1-916a-ca5a088f4488/1616692905180557"
+  asset_id: "2e0163d0-9985-49d1-916a-ca5a088f4488/1619812212475131"
   bundle_name: "pm0330_00"
-  version: 1616692905180557
-  checksum: 3058198620
-  size: 636072
+  version: 1619812212475131
+  checksum: 4116833159
+  size: 631032
 }
 digest {
   asset_id: "2e3d0341-cbab-4dfb-8aa5-13903a561cc1/1617657791695704"
@@ -4361,11 +4459,11 @@ digest {
   size: 24825
 }
 digest {
-  asset_id: "303daeaa-8a05-4037-a0e2-f1816fbaf568/1616689853603030"
+  asset_id: "303daeaa-8a05-4037-a0e2-f1816fbaf568/1619807946771240"
   bundle_name: "pm0114_00"
-  version: 1616689853603030
-  checksum: 4151956906
-  size: 483858
+  version: 1619807946771240
+  checksum: 348041683
+  size: 482197
 }
 digest {
   asset_id: "306af119-7fbb-4d03-b38b-4722a232020d/1603305305371467"
@@ -4394,6 +4492,13 @@ digest {
   version: 1616632432793640
   checksum: 3191244963
   size: 13391
+}
+digest {
+  asset_id: "30bcfc17-3683-4819-8248-1ef6c2166d27/1622156618692803"
+  bundle_name: "m_shoes_korrina_bundle"
+  version: 1622156618692803
+  checksum: 175308883
+  size: 158951
 }
 digest {
   asset_id: "30e356c5-edb6-417b-8525-f9d3f7afdaac/1616622943257671"
@@ -4453,11 +4558,11 @@ digest {
   size: 11294
 }
 digest {
-  asset_id: "312d4f9f-0bed-4c32-8f98-4257fa079862/1616691124678854"
+  asset_id: "312d4f9f-0bed-4c32-8f98-4257fa079862/1619807971051222"
   bundle_name: "pm0210_00"
-  version: 1616691124678854
-  checksum: 2674322119
-  size: 492128
+  version: 1619807971051222
+  checksum: 3457712051
+  size: 496994
 }
 digest {
   asset_id: "315313ce-2320-4080-a302-026ce5110fd7/1616694952169623"
@@ -4486,6 +4591,13 @@ digest {
   version: 1616639666833487
   checksum: 3117986861
   size: 12976
+}
+digest {
+  asset_id: "3195df26-d803-4ee6-89a6-51b186598ba7/1622843815623027"
+  bundle_name: "m_hat_slowpoketailshirts_bundle"
+  version: 1622843815623027
+  checksum: 2122634193
+  size: 177261
 }
 digest {
   asset_id: "31db0571-20f9-4673-b97a-41687a24dced/1616689882011146"
@@ -4565,6 +4677,13 @@ digest {
   version: 1616644475874259
   checksum: 4028175598
   size: 476746
+}
+digest {
+  asset_id: "32d0dabf-03a5-4eb5-8a3b-d29e46a30472/1622156579128177"
+  bundle_name: "m_hat_regirockjersies_bundle"
+  version: 1622156579128177
+  checksum: 1595110999
+  size: 153455
 }
 digest {
   asset_id: "32e812c9-886d-40f6-8d7e-97add93b5ee1/1616639695548347"
@@ -4828,11 +4947,11 @@ digest {
   size: 44050
 }
 digest {
-  asset_id: "363667c0-3df8-47af-809c-d454ece8b784/1616694750556499"
+  asset_id: "363667c0-3df8-47af-809c-d454ece8b784/1619807951464203"
   bundle_name: "pm0451_00"
-  version: 1616694750556499
-  checksum: 944373095
-  size: 323806
+  version: 1619807951464203
+  checksum: 1724383549
+  size: 319605
 }
 digest {
   asset_id: "363b464d-e7aa-47b9-84a7-f49b212f5ee2/1616622985056045"
@@ -4920,6 +5039,13 @@ digest {
   size: 275829
 }
 digest {
+  asset_id: "378c8867-e0d3-4428-9712-d3bdb8fd0807/1622156601994883"
+  bundle_name: "m_pants_regirockjersies_00_bundle_icon"
+  version: 1622156601994883
+  checksum: 2129889553
+  size: 8052
+}
+digest {
   asset_id: "378f8cef-7ef5-4372-806c-05c925861479/1616632568161874"
   bundle_name: "pokemon_icon_136"
   version: 1616632568161874
@@ -4927,11 +5053,11 @@ digest {
   size: 16758
 }
 digest {
-  asset_id: "37bf71bc-7e18-4157-9d37-f16e22c0fb39/1616690978728868"
+  asset_id: "37bf71bc-7e18-4157-9d37-f16e22c0fb39/1619807914917929"
   bundle_name: "pm0255_00"
-  version: 1616690978728868
-  checksum: 1469563770
-  size: 604263
+  version: 1619807914917929
+  checksum: 1031274624
+  size: 689819
 }
 digest {
   asset_id: "37d12911-0412-4ce3-8dee-09007d798036/1554313241789968"
@@ -5155,11 +5281,18 @@ digest {
   size: 16553
 }
 digest {
-  asset_id: "3a910a53-19f2-4ce7-9a42-b8c3669ecee5/1616632522185569"
+  asset_id: "3a8b0930-47be-4cd4-af08-33bed0dc68d7/1621628087648462"
+  bundle_name: "f_hat_sylveonitems_bundle"
+  version: 1621628087648462
+  checksum: 1779496727
+  size: 187568
+}
+digest {
+  asset_id: "3a910a53-19f2-4ce7-9a42-b8c3669ecee5/1619807966385946"
   bundle_name: "pokemon_icon_700"
-  version: 1616632522185569
-  checksum: 1608359001
-  size: 13970
+  version: 1619807966385946
+  checksum: 365519395
+  size: 14675
 }
 digest {
   asset_id: "3a9b3743-f8e0-4d1a-b6a6-229aee95ec6c/1616622086536239"
@@ -5188,6 +5321,13 @@ digest {
   version: 1616622358099229
   checksum: 574003069
   size: 10906
+}
+digest {
+  asset_id: "3acb1507-d463-40a6-a076-4fe2c253480a/1622156607709881"
+  bundle_name: "m_pants_regiicejersies_bundle"
+  version: 1622156607709881
+  checksum: 3738358787
+  size: 162976
 }
 digest {
   asset_id: "3acf6140-7167-4ea3-814a-f654998d9f24/1616622623658565"
@@ -5260,6 +5400,13 @@ digest {
   size: 6826
 }
 digest {
+  asset_id: "3b87d07c-b94d-44d6-81e1-dc623116e715/1622156546820068"
+  bundle_name: "m_shirt_korrina_00_bundle_icon"
+  version: 1622156546820068
+  checksum: 3587734657
+  size: 7504
+}
+digest {
   asset_id: "3b95ca22-3569-41f0-9a2b-1b04205a96bc/1616691038144873"
   bundle_name: "pm0201_23"
   version: 1616691038144873
@@ -5288,18 +5435,18 @@ digest {
   size: 421671
 }
 digest {
-  asset_id: "3bcc19a6-4901-442e-a018-68ea0fe31a26/1616631995204229"
+  asset_id: "3bcc19a6-4901-442e-a018-68ea0fe31a26/1619807932909259"
   bundle_name: "pokemon_icon_684"
-  version: 1616631995204229
-  checksum: 2917111413
-  size: 13361
+  version: 1619807932909259
+  checksum: 3528626827
+  size: 13369
 }
 digest {
-  asset_id: "3bdb7c82-8278-4121-82da-eefbf11df097/1616632650188716"
+  asset_id: "3bdb7c82-8278-4121-82da-eefbf11df097/1619807972914924"
   bundle_name: "pokemon_icon_706"
-  version: 1616632650188716
-  checksum: 3911123207
-  size: 21851
+  version: 1619807972914924
+  checksum: 3873859563
+  size: 22177
 }
 digest {
   asset_id: "3be63533-3c5d-4026-be64-2b57e7de4782/1616622723684134"
@@ -5409,11 +5556,11 @@ digest {
   size: 21172
 }
 digest {
-  asset_id: "3ccd1ca3-27b4-4893-a155-d29abce38089/1616692893079966"
+  asset_id: "3ccd1ca3-27b4-4893-a155-d29abce38089/1621466207997141"
   bundle_name: "pm0334_51"
-  version: 1616692893079966
-  checksum: 3283990408
-  size: 1202706
+  version: 1621466207997141
+  checksum: 764162644
+  size: 1141438
 }
 digest {
   asset_id: "3cefaefe-8c53-40e4-b9fc-802ae7e658a8/1616690989278824"
@@ -5481,11 +5628,11 @@ digest {
   size: 10300
 }
 digest {
-  asset_id: "3d93143b-a6da-43a5-95c4-153d6045925e/1619136839823219"
+  asset_id: "3d93143b-a6da-43a5-95c4-153d6045925e/1622773482200115"
   bundle_name: "json_patch_i18n_brazilianportuguese"
-  version: 1619136839823219
-  checksum: 436923244
-  size: 14600
+  version: 1622773482200115
+  checksum: 3090364562
+  size: 7780
 }
 digest {
   asset_id: "3da83d1a-267a-4f63-9854-420c6f75b881/1616639619237986"
@@ -5493,6 +5640,13 @@ digest {
   version: 1616639619237986
   checksum: 1538829830
   size: 33056
+}
+digest {
+  asset_id: "3da8b511-a9f6-4456-9321-addbbca81850/1622843802893107"
+  bundle_name: "m_shirt_slowpokeshirts_bundle"
+  version: 1622843802893107
+  checksum: 782140471
+  size: 222710
 }
 digest {
   asset_id: "3dae93db-4a63-4eb7-98db-eda9e99b723e/1616631945110473"
@@ -5528,6 +5682,13 @@ digest {
   version: 1616692915536434
   checksum: 2995684156
   size: 366621
+}
+digest {
+  asset_id: "3df1823d-9678-43d6-88f0-44f9aeed386d/1622156590068044"
+  bundle_name: "f_shoes_regirockjersies_bundle"
+  version: 1622156590068044
+  checksum: 3721387835
+  size: 165968
 }
 digest {
   asset_id: "3e36feeb-ab88-4eb6-ab1e-94985906aeb2/1618421443479627"
@@ -5649,6 +5810,13 @@ digest {
   size: 23067
 }
 digest {
+  asset_id: "3fb89a25-6bf9-4ff1-a73a-e54cc051d018/1621628106245347"
+  bundle_name: "m_shirt_sylveonitems_00_bundle_icon"
+  version: 1621628106245347
+  checksum: 3460013906
+  size: 12633
+}
+digest {
   asset_id: "3fd17d1e-e2d6-4a47-b001-7e37909ff692/1616639679351716"
   bundle_name: "badge_21"
   version: 1616639679351716
@@ -5675,6 +5843,13 @@ digest {
   version: 1616632605919817
   checksum: 4136106898
   size: 16058
+}
+digest {
+  asset_id: "4016828d-770c-42d7-8099-6e7283613416/1622156534241826"
+  bundle_name: "m_shoes_regiicejersies_00_bundle_icon"
+  version: 1622156534241826
+  checksum: 3414627654
+  size: 9562
 }
 digest {
   asset_id: "401aa78b-7da4-4819-a001-8bd07ea5b4fd/1616622895857404"
@@ -5951,11 +6126,11 @@ digest {
   size: 406449
 }
 digest {
-  asset_id: "43334d65-6ff6-4410-9434-d5d8f20a6998/1616632199818808"
+  asset_id: "43334d65-6ff6-4410-9434-d5d8f20a6998/1619807948479469"
   bundle_name: "pokemon_icon_704"
-  version: 1616632199818808
-  checksum: 2650856785
-  size: 11116
+  version: 1619807948479469
+  checksum: 4137596507
+  size: 11076
 }
 digest {
   asset_id: "43525a24-db39-45ba-9b39-1be055295f54/1616624044239419"
@@ -5993,11 +6168,11 @@ digest {
   size: 9281
 }
 digest {
-  asset_id: "4391b65e-be19-4898-83fe-411c7ff06809/1616692768034133"
+  asset_id: "4391b65e-be19-4898-83fe-411c7ff06809/1619807908763662"
   bundle_name: "pm0309_00"
-  version: 1616692768034133
-  checksum: 568180550
-  size: 439567
+  version: 1619807908763662
+  checksum: 622644548
+  size: 445357
 }
 digest {
   asset_id: "439b3ac7-870e-4384-b7e2-b4ecf00dd521/1616691033005771"
@@ -6111,6 +6286,13 @@ digest {
   version: 1616622688403183
   checksum: 828607950
   size: 321448
+}
+digest {
+  asset_id: "44c392f8-74a8-464f-b7ea-2af78f27bc70/1622843817439796"
+  bundle_name: "m_shirt_slowpoketailshirts_bundle"
+  version: 1622843817439796
+  checksum: 3826865995
+  size: 234629
 }
 digest {
   asset_id: "44cbf7ac-91e4-4f27-8205-f19d89e76454/1616632165932486"
@@ -6316,11 +6498,11 @@ digest {
   size: 4546
 }
 digest {
-  asset_id: "48127b1b-fb3a-409f-ac4e-a6b908b1bfd0/1616697465183661"
+  asset_id: "48127b1b-fb3a-409f-ac4e-a6b908b1bfd0/1619807978034525"
   bundle_name: "pm0684_00"
-  version: 1616697465183661
-  checksum: 1703433567
-  size: 438860
+  version: 1619807978034525
+  checksum: 2646636859
+  size: 435663
 }
 digest {
   asset_id: "48345a0f-fa8f-401e-9ac2-fab2547d3a56/1617657771715044"
@@ -6372,11 +6554,11 @@ digest {
   size: 10233
 }
 digest {
-  asset_id: "4894c86c-9a45-4814-9215-0a92968690f7/1619136863079722"
+  asset_id: "4894c86c-9a45-4814-9215-0a92968690f7/1622773504917463"
   bundle_name: "json_patch_i18n_japanese"
-  version: 1619136863079722
-  checksum: 63131946
-  size: 16541
+  version: 1622773504917463
+  checksum: 1812218252
+  size: 6828
 }
 digest {
   asset_id: "489e8bc1-e751-473f-8ff8-7729dd807d8c/1616623103984061"
@@ -6414,6 +6596,13 @@ digest {
   size: 18967
 }
 digest {
+  asset_id: "48e37831-63b4-4dc7-b256-71ca142db547/1619641801043052"
+  bundle_name: "f_backpack_snapcamera_bundle"
+  version: 1619641801043052
+  checksum: 1548455025
+  size: 188853
+}
+digest {
   asset_id: "48f5ae0c-fcf1-44ce-8681-e69336fe83ad/1616632486016005"
   bundle_name: "pokemon_icon_559"
   version: 1616632486016005
@@ -6449,11 +6638,11 @@ digest {
   size: 681323
 }
 digest {
-  asset_id: "4991687c-97cb-4504-81f0-b1bd8c17a242/1616644527540974"
+  asset_id: "4991687c-97cb-4504-81f0-b1bd8c17a242/1622845104324574"
   bundle_name: "pm0080_00"
-  version: 1616644527540974
-  checksum: 2291018761
-  size: 437215
+  version: 1622845104324574
+  checksum: 2258695369
+  size: 430290
 }
 digest {
   asset_id: "499224be-1be3-499c-bac4-6beb0250d1d5/1616622821310392"
@@ -6639,6 +6828,13 @@ digest {
   size: 22221
 }
 digest {
+  asset_id: "4bfa9828-c763-424b-a4ae-6233e59e222d/1622156536003614"
+  bundle_name: "m_shoes_regirockjersies_bundle"
+  version: 1622156536003614
+  checksum: 1729445823
+  size: 145665
+}
+digest {
   asset_id: "4c03f24a-de88-4179-bea9-b52b68ad2147/1616639710789974"
   bundle_name: "badge_5"
   version: 1616639710789974
@@ -6688,11 +6884,11 @@ digest {
   size: 487678
 }
 digest {
-  asset_id: "4c805a65-acb8-4913-a1e4-ecddc291754f/1616692816788640"
+  asset_id: "4c805a65-acb8-4913-a1e4-ecddc291754f/1619807935689376"
   bundle_name: "pm0397_00"
-  version: 1616692816788640
-  checksum: 1664338246
-  size: 526486
+  version: 1619807935689376
+  checksum: 3923365143
+  size: 522946
 }
 digest {
   asset_id: "4c92778d-0315-4453-9340-5ada064a19ff/1616639746473067"
@@ -7106,6 +7302,13 @@ digest {
   size: 157345
 }
 digest {
+  asset_id: "5109a006-e15b-484b-bc66-f8b006bcdd0a/1622156626077670"
+  bundle_name: "f_pants_registeeljersies_bundle"
+  version: 1622156626077670
+  checksum: 2774796951
+  size: 166654
+}
+digest {
   asset_id: "51399882-5189-42c8-aa45-7baad3b569e1/1616694854724039"
   bundle_name: "pm0450_00"
   version: 1616694854724039
@@ -7191,6 +7394,13 @@ digest {
   size: 201273
 }
 digest {
+  asset_id: "51bfdb2b-cefa-4f3a-bcf4-4b4d5a18a0ce/1622156630199156"
+  bundle_name: "m_shoes_regiicejersies_bundle"
+  version: 1622156630199156
+  checksum: 2791438767
+  size: 145136
+}
+digest {
   asset_id: "51c507fe-7acb-43b9-a80c-6a155f02255d/1616631775831839"
   bundle_name: "pokemon_icon_452"
   version: 1616631775831839
@@ -7247,11 +7457,18 @@ digest {
   size: 173883
 }
 digest {
-  asset_id: "52059cbf-035b-428f-b02b-cfbfb1b8bc25/1616697247334266"
+  asset_id: "52028d8e-5875-448c-94da-5172189425ef/1622156627610845"
+  bundle_name: "m_hat_regiicejersies_bundle"
+  version: 1622156627610845
+  checksum: 1578674057
+  size: 153130
+}
+digest {
+  asset_id: "52059cbf-035b-428f-b02b-cfbfb1b8bc25/1619807911677219"
   bundle_name: "pm0683_00"
-  version: 1616697247334266
-  checksum: 2165844761
-  size: 671902
+  version: 1619807911677219
+  checksum: 3789889290
+  size: 661856
 }
 digest {
   asset_id: "52093eda-a088-41c6-93d2-448ba6853bb6/1616631966763450"
@@ -7282,6 +7499,13 @@ digest {
   size: 88442
 }
 digest {
+  asset_id: "523de5a1-0d99-49e2-a41a-1ee8aedc6006/1622843807971741"
+  bundle_name: "f_shirt_slowpokeshirts_bundle"
+  version: 1622843807971741
+  checksum: 1434230514
+  size: 227940
+}
+digest {
   asset_id: "52483fa3-f4b5-4178-818c-82d9e8d79159/1616623287616414"
   bundle_name: "m_shoes_sandals_2_bundle_icon"
   version: 1616623287616414
@@ -7294,6 +7518,13 @@ digest {
   version: 1616622550312223
   checksum: 2308302587
   size: 10364
+}
+digest {
+  asset_id: "527b0198-2229-469b-9f39-1e33f251957e/1622156591555192"
+  bundle_name: "m_hat_registeeljersies_00_bundle_icon"
+  version: 1622156591555192
+  checksum: 3580561892
+  size: 7065
 }
 digest {
   asset_id: "529960c6-f1de-4799-91d2-cc71604429da/1616622532759836"
@@ -7438,6 +7669,13 @@ digest {
   size: 4768
 }
 digest {
+  asset_id: "53ea0928-122a-45f5-94a8-082a42c45d57/1622156595607227"
+  bundle_name: "f_shirt_korrina_00_bundle_icon"
+  version: 1622156595607227
+  checksum: 3304068770
+  size: 9197
+}
+digest {
   asset_id: "53efb692-7a2b-46dc-941f-39739ca697b0/1616632217238706"
   bundle_name: "pokemon_icon_091"
   version: 1616632217238706
@@ -7527,6 +7765,13 @@ digest {
   version: 1616621951952770
   checksum: 3742572279
   size: 72892
+}
+digest {
+  asset_id: "54efbf4a-9006-4ca3-84b8-afe971f20e7d/1622156609628526"
+  bundle_name: "f_shirt_regirockjersies_bundle"
+  version: 1622156609628526
+  checksum: 2317239395
+  size: 264219
 }
 digest {
   asset_id: "55035036-f6b8-4eee-8956-231da4b48a11/1613176469868642"
@@ -7873,11 +8118,18 @@ digest {
   size: 175052
 }
 digest {
-  asset_id: "592741b3-f906-458e-8b10-1378ce7b96cd/1616697391037720"
+  asset_id: "592741b3-f906-458e-8b10-1378ce7b96cd/1621625739897554"
   bundle_name: "pm0809_00"
-  version: 1616697391037720
-  checksum: 1902207226
-  size: 1276845
+  version: 1621625739897554
+  checksum: 2533934966
+  size: 1279370
+}
+digest {
+  asset_id: "59605052-d753-4e5f-a9b3-812cb31f0376/1621628101235276"
+  bundle_name: "m_shirt_sylveonitems_bundle"
+  version: 1621628101235276
+  checksum: 3891983705
+  size: 327490
 }
 digest {
   asset_id: "596da95e-5e8f-4727-b353-8226fb302ca8/1616639477639143"
@@ -8375,6 +8627,13 @@ digest {
   size: 6362
 }
 digest {
+  asset_id: "5ed4b3f2-622d-4d74-aaa8-5304b9ec9ffb/1622156575842855"
+  bundle_name: "m_shoes_registeeljersies_00_bundle_icon"
+  version: 1622156575842855
+  checksum: 591722126
+  size: 8972
+}
+digest {
   asset_id: "5edd13c2-fd19-49b2-b171-6b29da7e2ecf/1616644371976662"
   bundle_name: "pm0088_00"
   version: 1616644371976662
@@ -8396,11 +8655,11 @@ digest {
   size: 553598
 }
 digest {
-  asset_id: "5f165c3b-a0d2-4cca-b1a6-8ac6d6031d21/1616697437494801"
+  asset_id: "5f165c3b-a0d2-4cca-b1a6-8ac6d6031d21/1619807967981725"
   bundle_name: "pm0717_00"
-  version: 1616697437494801
-  checksum: 4066697388
-  size: 924639
+  version: 1619807967981725
+  checksum: 1206692839
+  size: 911917
 }
 digest {
   asset_id: "5f1de4a0-6a93-4cbb-a255-44d1d553109d/1616690991955906"
@@ -8429,6 +8688,13 @@ digest {
   version: 1616622498149759
   checksum: 20777681
   size: 60470
+}
+digest {
+  asset_id: "5f8adfc2-b947-45b3-86f7-b4b3ffe7ea4e/1622843819405274"
+  bundle_name: "f_shirt_slowpoketailshirts_00_bundle_icon"
+  version: 1622843819405274
+  checksum: 3474840421
+  size: 12508
 }
 digest {
   asset_id: "5f93cfd5-734e-4a74-b813-a0c9117a4b8f/1616632223154233"
@@ -8616,11 +8882,11 @@ digest {
   size: 9199
 }
 digest {
-  asset_id: "624f404a-748d-481c-acf4-724e63c431b0/1616692916942660"
+  asset_id: "624f404a-748d-481c-acf4-724e63c431b0/1619807973822861"
   bundle_name: "pm0396_00"
-  version: 1616692916942660
-  checksum: 2534787875
-  size: 605439
+  version: 1619807973822861
+  checksum: 2264502745
+  size: 600452
 }
 digest {
   asset_id: "62604d1c-b1cf-4f1a-a6cc-f8af7ad2ce94/1616622228934229"
@@ -8763,11 +9029,18 @@ digest {
   size: 42069
 }
 digest {
-  asset_id: "636575d6-7213-4ffc-88e8-5f125e7112d6/1619136844271576"
+  asset_id: "636575d6-7213-4ffc-88e8-5f125e7112d6/1622773486349999"
   bundle_name: "json_patch_i18n_chinesetraditional"
-  version: 1619136844271576
-  checksum: 4201999887
-  size: 17504
+  version: 1622773486349999
+  checksum: 3421248525
+  size: 7099
+}
+digest {
+  asset_id: "636a2145-97ff-494c-96ba-1e1f839a5173/1622156537281446"
+  bundle_name: "m_gloves_korrina_00_bundle_icon"
+  version: 1622156537281446
+  checksum: 2790240073
+  size: 7037
 }
 digest {
   asset_id: "63747ce3-3770-4b98-bdfb-999dc27bc558/1616639620868591"
@@ -9025,6 +9298,13 @@ digest {
   size: 675532
 }
 digest {
+  asset_id: "66343b87-4695-471b-9679-c1899d33fb26/1622156617178560"
+  bundle_name: "f_hat_regiicejersies_00_bundle_icon"
+  version: 1622156617178560
+  checksum: 3308507728
+  size: 6984
+}
+digest {
   asset_id: "6637a6d0-a597-4b20-bb6b-74658c2cca80/1616622779447059"
   bundle_name: "f_shirt_delibird_bundle"
   version: 1616622779447059
@@ -9259,6 +9539,13 @@ digest {
   size: 241726
 }
 digest {
+  asset_id: "67c896af-4b4a-4eeb-85f8-2ac700787d79/1622156541465112"
+  bundle_name: "f_shoes_registeeljersies_00_bundle_icon"
+  version: 1622156541465112
+  checksum: 2735633121
+  size: 7918
+}
+digest {
   asset_id: "67fc225d-fdae-4062-ab4f-56d382107dd6/1616642748291045"
   bundle_name: "buddy_socialgifting_tutorials"
   version: 1616642748291045
@@ -9365,11 +9652,25 @@ digest {
   size: 149763
 }
 digest {
+  asset_id: "68f84c42-f5c2-4442-bd2b-3d856dc410b1/1622843810390455"
+  bundle_name: "f_shirt_slowpoketailshirts_bundle"
+  version: 1622843810390455
+  checksum: 694492733
+  size: 251385
+}
+digest {
   asset_id: "691a4d96-d6d0-477e-b49c-f6602e54829b/1616622665281111"
   bundle_name: "f_shirt_detectivepikachu_0_bundle_icon"
   version: 1616622665281111
   checksum: 1977962850
   size: 10508
+}
+digest {
+  asset_id: "691b2449-89a7-42be-91cd-6f161117e799/1622156623142677"
+  bundle_name: "f_hat_korrina_bundle"
+  version: 1622156623142677
+  checksum: 3947609628
+  size: 186463
 }
 digest {
   asset_id: "691e2358-27f7-49b5-a5e7-af6a28bff312/1617657779043495"
@@ -9584,11 +9885,11 @@ digest {
   size: 814561
 }
 digest {
-  asset_id: "6b8f3fef-4233-45f7-9395-39f56e0912e1/1619136877913159"
+  asset_id: "6b8f3fef-4233-45f7-9395-39f56e0912e1/1622773520561229"
   bundle_name: "json_patch_i18n_thai"
-  version: 1619136877913159
-  checksum: 2229456640
-  size: 18323
+  version: 1622773520561229
+  checksum: 2898829471
+  size: 7466
 }
 digest {
   asset_id: "6bab0511-7fd0-4e48-851c-1ba9a8c0e2f9/1616623917520435"
@@ -9633,11 +9934,11 @@ digest {
   size: 662969
 }
 digest {
-  asset_id: "6c50d468-5887-43d4-b4b6-eea3f6b8e4ae/1616692903735249"
+  asset_id: "6c50d468-5887-43d4-b4b6-eea3f6b8e4ae/1619807970094559"
   bundle_name: "pm0310_51"
-  version: 1616692903735249
-  checksum: 733001883
-  size: 389365
+  version: 1619807970094559
+  checksum: 998999346
+  size: 355259
 }
 digest {
   asset_id: "6c543fc2-a956-4480-ba81-ca9cdbe8a965/1616622684132935"
@@ -9816,11 +10117,11 @@ digest {
   size: 411807
 }
 digest {
-  asset_id: "6e3f2019-41cc-40fb-8c51-44e9e6a2eda5/1616689896264123"
+  asset_id: "6e3f2019-41cc-40fb-8c51-44e9e6a2eda5/1619807955029104"
   bundle_name: "pm0116_00"
-  version: 1616689896264123
-  checksum: 2452258421
-  size: 243119
+  version: 1619807955029104
+  checksum: 1591355698
+  size: 253037
 }
 digest {
   asset_id: "6e529bf7-88ad-4162-b2ba-1e785dceaceb/1616697387744358"
@@ -10060,6 +10361,13 @@ digest {
   size: 18875
 }
 digest {
+  asset_id: "70da1f3f-a463-4c9c-bef9-294c5bede4d3/1622156620338892"
+  bundle_name: "m_shoes_registeeljersies_bundle"
+  version: 1622156620338892
+  checksum: 2105905733
+  size: 144627
+}
+digest {
   asset_id: "70e6e94e-f758-4c0d-a2d8-5e929e800b52/1616624020148851"
   bundle_name: "m_shirt_whitecoat_bundle"
   version: 1616624020148851
@@ -10123,11 +10431,11 @@ digest {
   size: 242197
 }
 digest {
-  asset_id: "71a0daa9-da8e-49e4-8630-37b18d0d0fb5/1616644515310622"
+  asset_id: "71a0daa9-da8e-49e4-8630-37b18d0d0fb5/1619812211111824"
   bundle_name: "pm0004_00"
-  version: 1616644515310622
-  checksum: 2610270887
-  size: 534725
+  version: 1619812211111824
+  checksum: 206571256
+  size: 593231
 }
 digest {
   asset_id: "71adbf99-2bd1-441f-91b4-ae9a1a8150d6/1512759846118833"
@@ -10341,11 +10649,11 @@ digest {
   size: 160638
 }
 digest {
-  asset_id: "744c61be-b947-4274-b0fc-1c957d3247a7/1616632135516713"
+  asset_id: "744c61be-b947-4274-b0fc-1c957d3247a7/1619807943920420"
   bundle_name: "pokemon_icon_682"
-  version: 1616632135516713
-  checksum: 3769061517
-  size: 11401
+  version: 1619807943920420
+  checksum: 4282285325
+  size: 11538
 }
 digest {
   asset_id: "74c33910-64e4-4d71-bbe4-720e28878900/1616622601704949"
@@ -10490,6 +10798,13 @@ digest {
   size: 241357
 }
 digest {
+  asset_id: "7640131d-7af2-4eaa-86a6-ee7d38aca3c3/1622156588964350"
+  bundle_name: "m_pants_regiicejersies_00_bundle_icon"
+  version: 1622156588964350
+  checksum: 3820332837
+  size: 8146
+}
+digest {
   asset_id: "76448570-9d8e-426e-b263-55f9b72c2556/1616632048138075"
   bundle_name: "pokemon_icon_246"
   version: 1616632048138075
@@ -10572,6 +10887,13 @@ digest {
   version: 1616623259399395
   checksum: 2604524246
   size: 15766
+}
+digest {
+  asset_id: "772a51b8-5d0d-4490-a03e-50d610032c5a/1621628093915013"
+  bundle_name: "m_hat_sylveonitems_bundle"
+  version: 1621628093915013
+  checksum: 3451939820
+  size: 183416
 }
 digest {
   asset_id: "772fd66e-99f9-432a-872e-3050aa8bc3a8/1616631783128054"
@@ -10798,11 +11120,11 @@ digest {
   size: 57168
 }
 digest {
-  asset_id: "7904d6c1-4b46-4fcc-9c6f-7bba4b13b26c/1616689832659846"
+  asset_id: "7904d6c1-4b46-4fcc-9c6f-7bba4b13b26c/1619809696280201"
   bundle_name: "pm0150_00_pgo_a"
-  version: 1616689832659846
-  checksum: 1095020232
-  size: 928725
+  version: 1619809696280201
+  checksum: 3543395578
+  size: 928817
 }
 digest {
   asset_id: "794095cb-d2c6-4f3b-ac43-094f09afb70c/1616631894789398"
@@ -10847,11 +11169,11 @@ digest {
   size: 153855
 }
 digest {
-  asset_id: "79e8610e-0a36-4da1-b57f-14a24785ae62/1616632424087197"
+  asset_id: "79e8610e-0a36-4da1-b57f-14a24785ae62/1619807956794608"
   bundle_name: "pokemon_icon_674"
-  version: 1616632424087197
-  checksum: 2715539597
-  size: 11354
+  version: 1619807956794608
+  checksum: 327620637
+  size: 12255
 }
 digest {
   asset_id: "79ef3732-9e81-4919-9859-43461da6f5fb/1616632638527692"
@@ -11256,6 +11578,13 @@ digest {
   key: "\361*\034\332\251u\332<B\r\333#6u_\275"
 }
 digest {
+  asset_id: "7e3bfad5-5409-4d2c-8878-78c4e719615d/1622156604502474"
+  bundle_name: "f_shirt_regiicejersies_bundle"
+  version: 1622156604502474
+  checksum: 70345471
+  size: 259849
+}
+digest {
   asset_id: "7e71890d-c194-4598-a257-c563476b2ef9/1616692793929803"
   bundle_name: "pm0322_00"
   version: 1616692793929803
@@ -11411,6 +11740,13 @@ digest {
   size: 12222
 }
 digest {
+  asset_id: "7fa9a1b7-f997-45f6-9417-11ea2fb089d5/1622156545749862"
+  bundle_name: "f_pants_regiicejersies_00_bundle_icon"
+  version: 1622156545749862
+  checksum: 2452196723
+  size: 7945
+}
+digest {
   asset_id: "7fd908f9-dc2a-44a5-81fd-ebb5b8092b75/1512759552321846"
   bundle_name: "pm0018"
   version: 1512759552321846
@@ -11517,6 +11853,13 @@ digest {
   size: 40444
 }
 digest {
+  asset_id: "80ffb3e7-b27a-4e1f-869a-f21e9c8b9388/1622843806143859"
+  bundle_name: "f_hat_slowpoketailshirts_bundle"
+  version: 1622843806143859
+  checksum: 1092686546
+  size: 176857
+}
+digest {
   asset_id: "8103c160-0fab-49e0-b785-4640f5f00e8d/1616644351863125"
   bundle_name: "pm0052_00"
   version: 1616644351863125
@@ -11543,6 +11886,13 @@ digest {
   version: 1616632447338147
   checksum: 3177421592
   size: 40946
+}
+digest {
+  asset_id: "818bc0e7-fdc8-484a-9f1a-c664ec77b385/1622156559746951"
+  bundle_name: "f_shirt_registeeljersies_00_bundle_icon"
+  version: 1622156559746951
+  checksum: 3988160177
+  size: 12008
 }
 digest {
   asset_id: "81a8205d-b751-43bb-941e-c88f15d88b80/1616622335066957"
@@ -11651,11 +12001,11 @@ digest {
   size: 532082
 }
 digest {
-  asset_id: "82d09d14-7132-4a7a-8bc7-907b2c712ab8/1616632136942612"
+  asset_id: "82d09d14-7132-4a7a-8bc7-907b2c712ab8/1619807944798315"
   bundle_name: "pokemon_icon_683"
-  version: 1616632136942612
-  checksum: 2633725399
-  size: 18939
+  version: 1619807944798315
+  checksum: 396512165
+  size: 19062
 }
 digest {
   asset_id: "82e4a63d-d5d2-47be-ad7f-6ac069e7064d/1616623920599382"
@@ -11663,6 +12013,13 @@ digest {
   version: 1616623920599382
   checksum: 1975434462
   size: 178712
+}
+digest {
+  asset_id: "82fe60de-d64e-4c6f-812b-2e649575e914/1622156603074121"
+  bundle_name: "f_shirt_regiicejersies_00_bundle_icon"
+  version: 1622156603074121
+  checksum: 3741993564
+  size: 11513
 }
 digest {
   asset_id: "83086d0b-cd24-4d3f-9bb3-f749c7e650db/1512759579376607"
@@ -11751,6 +12108,13 @@ digest {
   size: 8862
 }
 digest {
+  asset_id: "8388c0fc-98c2-43a4-b497-e24adcbde3c1/1621628096750790"
+  bundle_name: "f_shoes_sylveonitems_bundle"
+  version: 1621628096750790
+  checksum: 3411916920
+  size: 168920
+}
+digest {
   asset_id: "83b71ec7-a05c-4d61-98f6-74f591c6fbfe/1616697304519304"
   bundle_name: "pm0608_00"
   version: 1616697304519304
@@ -11784,6 +12148,13 @@ digest {
   version: 1616622492491186
   checksum: 1752718895
   size: 234322
+}
+digest {
+  asset_id: "8426571c-925f-4866-956c-c6bdffaa14b4/1622843812281990"
+  bundle_name: "m_shirt_slowpoketailshirts_00_bundle_icon"
+  version: 1622843812281990
+  checksum: 3456664845
+  size: 11738
 }
 digest {
   asset_id: "8447a5d0-121a-46fb-9342-fa6de4dcb4b0/1616632399522587"
@@ -12048,6 +12419,13 @@ digest {
   version: 1616631855829014
   checksum: 1700848206
   size: 8557
+}
+digest {
+  asset_id: "86cd70da-9b21-4275-9598-ef1ba1928935/1622156563262985"
+  bundle_name: "m_shirt_regirockjersies_bundle"
+  version: 1622156563262985
+  checksum: 3908761041
+  size: 258555
 }
 digest {
   asset_id: "86df19e8-9545-4d04-87c0-8352e6fcfc56/1616631909271895"
@@ -12334,11 +12712,11 @@ digest {
   size: 24648
 }
 digest {
-  asset_id: "8a09135a-107d-4329-9357-170ed2caced6/1616697312318924"
+  asset_id: "8a09135a-107d-4329-9357-170ed2caced6/1619807934739783"
   bundle_name: "pm0685_00"
-  version: 1616697312318924
-  checksum: 3067809129
-  size: 403644
+  version: 1619807934739783
+  checksum: 2934768464
+  size: 403142
 }
 digest {
   asset_id: "8a16335a-e4fa-4b24-b5bb-e02c532e27ad/1616691002252801"
@@ -12375,6 +12753,13 @@ digest {
   version: 1616622635080484
   checksum: 949194381
   size: 5464
+}
+digest {
+  asset_id: "8aa55c00-d20a-4461-b8fe-fc947652e420/1622156569948011"
+  bundle_name: "f_shoes_regirockjersies_00_bundle_icon"
+  version: 1622156569948011
+  checksum: 3133328321
+  size: 8616
 }
 digest {
   asset_id: "8ad128a9-bb8d-4a33-ad7b-6e482766bc8c/1616623880267485"
@@ -12693,6 +13078,13 @@ digest {
   size: 16325
 }
 digest {
+  asset_id: "8df282ba-7845-4bbd-b8e7-dd31eba9dabd/1622156574689669"
+  bundle_name: "m_shoes_regirockjersies_00_bundle_icon"
+  version: 1622156574689669
+  checksum: 2023095139
+  size: 9748
+}
+digest {
   asset_id: "8e037a1a-ffc3-49b9-be00-4bc489e336e7/1616622420045404"
   bundle_name: "m_pants_acetrainersm_bundle"
   version: 1616622420045404
@@ -12805,6 +13197,13 @@ digest {
   size: 141480
 }
 digest {
+  asset_id: "8ed42cc9-befb-46bf-bb69-61a00ad5618a/1622156544584361"
+  bundle_name: "f_pants_regirockjersies_00_bundle_icon"
+  version: 1622156544584361
+  checksum: 624910341
+  size: 7873
+}
+digest {
   asset_id: "8eed3d3b-3225-47a6-b5b2-5424431ee02f/1616623897239557"
   bundle_name: "f_glasses_goteamrocketarlo_00_bundle_icon"
   version: 1616623897239557
@@ -12901,6 +13300,13 @@ digest {
   version: 1616623189164306
   checksum: 879209127
   size: 207961
+}
+digest {
+  asset_id: "901e4566-7404-4913-bbbf-0cbae14e61f5/1622156573245059"
+  bundle_name: "f_hat_regirockjersies_bundle"
+  version: 1622156573245059
+  checksum: 1145828950
+  size: 169229
 }
 digest {
   asset_id: "901f5ee1-a323-4587-aa53-c61353f4e2dc/1616624064752074"
@@ -13158,6 +13564,13 @@ digest {
   size: 618144
 }
 digest {
+  asset_id: "92bce41e-0457-4690-bba8-edf01c34286e/1622156556556204"
+  bundle_name: "m_shirt_regirockjersies_00_bundle_icon"
+  version: 1622156556556204
+  checksum: 163202108
+  size: 12358
+}
+digest {
   asset_id: "92c411b8-e95b-48b5-9f90-c2725b2f09c0/1616694564673265"
   bundle_name: "pm0481_00"
   version: 1616694564673265
@@ -13359,6 +13772,13 @@ digest {
   version: 1616632753284086
   checksum: 409858205
   size: 19692
+}
+digest {
+  asset_id: "95c09532-2d88-4d0f-8320-6b39f9c0b194/1622845101989607"
+  bundle_name: "pm0199_31"
+  version: 1622845101989607
+  checksum: 2342800694
+  size: 1326630
 }
 digest {
   asset_id: "95c59a1f-8f81-4a0c-9cc3-a8115b393120/1616621965933671"
@@ -13710,11 +14130,11 @@ digest {
   size: 4369
 }
 digest {
-  asset_id: "98d0fa4d-a1e0-44cb-ade3-fbe7c73a1da8/1616694653590863"
+  asset_id: "98d0fa4d-a1e0-44cb-ade3-fbe7c73a1da8/1619807930808993"
   bundle_name: "pm0465_00"
-  version: 1616694653590863
-  checksum: 3216269503
-  size: 942799
+  version: 1619807930808993
+  checksum: 2269701371
+  size: 937204
 }
 digest {
   asset_id: "98d67ede-0d22-4bca-a7d7-c987b598983b/1616697452122778"
@@ -14045,6 +14465,13 @@ digest {
   version: 1616689785146377
   checksum: 3134103189
   size: 343289
+}
+digest {
+  asset_id: "9c7614ed-3fc1-462a-abf3-fae2c76b4108/1622156543161460"
+  bundle_name: "m_pants_regirockjersies_bundle"
+  version: 1622156543161460
+  checksum: 3582983551
+  size: 164147
 }
 digest {
   asset_id: "9c7c2cad-13aa-4c80-9b66-7ee0d931c89d/1616623139553145"
@@ -14399,11 +14826,11 @@ digest {
   size: 11588
 }
 digest {
-  asset_id: "9fb5ac9a-9dc0-4026-8e05-528e6f50fac0/1616697353331440"
+  asset_id: "9fb5ac9a-9dc0-4026-8e05-528e6f50fac0/1619822034300610"
   bundle_name: "pm0716_00"
-  version: 1616697353331440
-  checksum: 3380437751
-  size: 584113
+  version: 1619822034300610
+  checksum: 2666383841
+  size: 583909
 }
 digest {
   asset_id: "9fbe821f-8b15-4688-abc2-2616682a0e9d/1616622639292814"
@@ -14583,11 +15010,11 @@ digest {
   size: 563953
 }
 digest {
-  asset_id: "a1bc6022-1504-47c1-a674-f7d9f0760d43/1616632368004141"
+  asset_id: "a1bc6022-1504-47c1-a674-f7d9f0760d43/1619822035240651"
   bundle_name: "pokemon_icon_716"
-  version: 1616632368004141
-  checksum: 1409520244
-  size: 20298
+  version: 1619822035240651
+  checksum: 339690053
+  size: 22132
 }
 digest {
   asset_id: "a1f90800-bfee-4cce-9bd4-ac4929d1855d/1616622108605169"
@@ -14724,11 +15151,11 @@ digest {
   size: 8821
 }
 digest {
-  asset_id: "a381995c-f9ca-4de5-93db-38159a7d032c/1619136874249490"
+  asset_id: "a381995c-f9ca-4de5-93db-38159a7d032c/1622773516904108"
   bundle_name: "json_patch_i18n_spanish"
-  version: 1619136874249490
-  checksum: 4115733740
-  size: 14562
+  version: 1622773516904108
+  checksum: 429289116
+  size: 7270
 }
 digest {
   asset_id: "a3880a65-ed02-4d13-a333-cb71a7226cb0/1616622633691673"
@@ -14772,6 +15199,13 @@ digest {
   version: 1616623894040169
   checksum: 2991894171
   size: 168703
+}
+digest {
+  asset_id: "a3f7ccd8-1807-4643-af96-53c5dd6244ee/1622156592744670"
+  bundle_name: "m_hat_regiicejersies_00_bundle_icon"
+  version: 1622156592744670
+  checksum: 888512235
+  size: 7297
 }
 digest {
   asset_id: "a3fafe10-33e1-43f1-8535-711d81918852/1512759795727212"
@@ -15192,6 +15626,13 @@ digest {
   size: 218018
 }
 digest {
+  asset_id: "a82acaab-70a1-4ad5-a842-1a14f4a3e3ae/1621628089429760"
+  bundle_name: "m_hat_sylveonitems_00_bundle_icon"
+  version: 1621628089429760
+  checksum: 1711213728
+  size: 7179
+}
+digest {
   asset_id: "a841fbad-c259-47c5-a762-1bc0a59f3153/1616689929889702"
   bundle_name: "pm0109_00"
   version: 1616689929889702
@@ -15206,11 +15647,11 @@ digest {
   size: 640312
 }
 digest {
-  asset_id: "a86c996d-12a5-48a0-aec1-cc9d5c83bc12/1616689865160973"
+  asset_id: "a86c996d-12a5-48a0-aec1-cc9d5c83bc12/1619809698520018"
   bundle_name: "pm0150_52"
-  version: 1616689865160973
-  checksum: 1053661599
-  size: 439385
+  version: 1619809698520018
+  checksum: 922568061
+  size: 438189
 }
 digest {
   asset_id: "a8b29301-c3dd-4457-95f6-3c83b655cf42/1616632701155344"
@@ -15516,6 +15957,13 @@ digest {
   size: 8147
 }
 digest {
+  asset_id: "ac397ff9-abe6-4cd6-a89b-44e112cd177b/1622156561294760"
+  bundle_name: "m_pants_registeeljersies_bundle"
+  version: 1622156561294760
+  checksum: 1818731379
+  size: 155755
+}
+digest {
   asset_id: "ac400659-37a1-475f-9c8e-c3f75ceb4acc/1616630862687377"
   bundle_name: "m_combat_grunt"
   version: 1616630862687377
@@ -15571,6 +16019,13 @@ digest {
   version: 1616644549447121
   checksum: 1144080742
   size: 1323354
+}
+digest {
+  asset_id: "acdc237d-ee5c-4439-a3e5-479bfbe1cfa6/1622156527941594"
+  bundle_name: "f_gloves_korrina_bundle"
+  version: 1622156527941594
+  checksum: 545910814
+  size: 149447
 }
 digest {
   asset_id: "ad03aa61-8f8f-4890-93c9-da013f5a7d5f/1616622697064188"
@@ -15939,6 +16394,13 @@ digest {
   size: 494578
 }
 digest {
+  asset_id: "b110beb2-aade-47ac-99f3-52815aa5b289/1619641797313909"
+  bundle_name: "f_backpack_snapcamera_00_bundle_icon"
+  version: 1619641797313909
+  checksum: 3569399089
+  size: 9230
+}
+digest {
   asset_id: "b11edb3c-a278-4a2b-a8ae-fc4ea290983b/1616622521193696"
   bundle_name: "f_shoes_green_00_bundle_icon"
   version: 1616622521193696
@@ -15946,11 +16408,18 @@ digest {
   size: 11737
 }
 digest {
-  asset_id: "b132f164-95d5-494e-b759-3e28430d294d/1616697399555703"
+  asset_id: "b132f164-95d5-494e-b759-3e28430d294d/1619807955946658"
   bundle_name: "pm0682_00"
-  version: 1616697399555703
-  checksum: 2271963482
-  size: 356704
+  version: 1619807955946658
+  checksum: 306400440
+  size: 350642
+}
+digest {
+  asset_id: "b13b5dd4-3cad-4263-be8a-ac302d5bd8de/1621628099419444"
+  bundle_name: "m_shoes_sylveonitems_bundle"
+  version: 1621628099419444
+  checksum: 3222044901
+  size: 172922
 }
 digest {
   asset_id: "b14d3d8c-648e-4d53-a863-470a8dda99f3/1616641859600764"
@@ -16364,11 +16833,11 @@ digest {
   size: 13070
 }
 digest {
-  asset_id: "b53f4b5b-4c74-43e0-80c0-6561428fece6/1616692758022068"
+  asset_id: "b53f4b5b-4c74-43e0-80c0-6561428fece6/1619807905783181"
   bundle_name: "pm0398_00"
-  version: 1616692758022068
-  checksum: 746921506
-  size: 636821
+  version: 1619807905783181
+  checksum: 3623020001
+  size: 634631
 }
 digest {
   asset_id: "b56759cf-0e96-43ff-ae28-8c5cf63b680a/1616630869192732"
@@ -16520,11 +16989,11 @@ digest {
   size: 5168
 }
 digest {
-  asset_id: "b6bec89d-93d7-491d-ba19-e877dab74dc3/1616691138508218"
+  asset_id: "b6bec89d-93d7-491d-ba19-e877dab74dc3/1619807976748580"
   bundle_name: "pm0257_00"
-  version: 1616691138508218
-  checksum: 2530543711
-  size: 673640
+  version: 1619807976748580
+  checksum: 1393345325
+  size: 700898
 }
 digest {
   asset_id: "b6c5eeb5-756b-4739-bfb3-f73055073d28/1616632021039210"
@@ -16609,6 +17078,13 @@ digest {
   version: 1616632738657901
   checksum: 1901872725
   size: 8849
+}
+digest {
+  asset_id: "b801741d-8a43-4140-961e-2856e8822b06/1622156568513020"
+  bundle_name: "m_pants_korrina_bundle"
+  version: 1622156568513020
+  checksum: 1132448487
+  size: 175532
 }
 digest {
   asset_id: "b822cff2-0bed-4d98-8c92-399d0dca4f96/1616639587610091"
@@ -16907,6 +17383,13 @@ digest {
   size: 252798
 }
 digest {
+  asset_id: "bbe6b8da-f4c9-42bc-a2c8-c1f22e8b7e38/1622156582439962"
+  bundle_name: "f_pants_regiicejersies_bundle"
+  version: 1622156582439962
+  checksum: 568457181
+  size: 172594
+}
+digest {
   asset_id: "bbfe539e-134a-426e-8bb0-45575f49a975/1616622245264908"
   bundle_name: "f_shirt_ocshirt_045_bundle_icon"
   version: 1616622245264908
@@ -16963,6 +17446,13 @@ digest {
   size: 626701
 }
 digest {
+  asset_id: "bc86a40f-e635-4508-a2d2-5ad51225179d/1621628095285600"
+  bundle_name: "f_hat_sylveonitems_00_bundle_icon"
+  version: 1621628095285600
+  checksum: 1665196785
+  size: 9091
+}
+digest {
   asset_id: "bc99a265-d04f-4d30-ac90-90c60a6eabb3/1616632307413569"
   bundle_name: "pokemon_icon_067"
   version: 1616632307413569
@@ -17011,6 +17501,13 @@ digest {
   version: 1616697451109251
   checksum: 33490688
   size: 400514
+}
+digest {
+  asset_id: "bd3ce8e1-fe41-4a65-b493-30579bc9d12a/1622843801054152"
+  bundle_name: "f_hat_slowpoketailshirts_00_bundle_icon"
+  version: 1622843801054152
+  checksum: 42263786
+  size: 12219
 }
 digest {
   asset_id: "bd6b0e47-6c9a-4b70-a9d8-3a01be70c352/1616632059570809"
@@ -17351,11 +17848,11 @@ digest {
   size: 16092
 }
 digest {
-  asset_id: "c0b4ab02-fb32-437f-9236-6fc9603ed326/1616694903430168"
+  asset_id: "c0b4ab02-fb32-437f-9236-6fc9603ed326/1619807972049748"
   bundle_name: "pm0584_00"
-  version: 1616694903430168
-  checksum: 3162683350
-  size: 309033
+  version: 1619807972049748
+  checksum: 3815653320
+  size: 307054
 }
 digest {
   asset_id: "c0b66304-f54e-411b-92e4-44ff10d34a83/1616692818643682"
@@ -17498,6 +17995,13 @@ digest {
   version: 1616631914926171
   checksum: 88801519
   size: 21716
+}
+digest {
+  asset_id: "c24ead39-c603-45d1-afdf-febde5091596/1622843804702696"
+  bundle_name: "m_shirt_slowpokeshirts_00_bundle_icon"
+  version: 1622843804702696
+  checksum: 3046669153
+  size: 11164
 }
 digest {
   asset_id: "c2551b99-d6be-4b27-8610-d0fdc9e19b17/1616622785608450"
@@ -18071,11 +18575,11 @@ digest {
   size: 5357
 }
 digest {
-  asset_id: "c89ec499-76f5-44f9-ab2a-4e6f8da290f7/1616689786897445"
+  asset_id: "c89ec499-76f5-44f9-ab2a-4e6f8da290f7/1619807912756263"
   bundle_name: "pm0117_00"
-  version: 1616689786897445
-  checksum: 2119126190
-  size: 388930
+  version: 1619807912756263
+  checksum: 385386323
+  size: 409157
 }
 digest {
   asset_id: "c8b54236-fd30-4ea7-bd83-3543e906aeec/1616632285592416"
@@ -18193,11 +18697,11 @@ digest {
   size: 156601
 }
 digest {
-  asset_id: "c9e823aa-2829-4f1a-8c4b-ac599fecd330/1616697332621212"
+  asset_id: "c9e823aa-2829-4f1a-8c4b-ac599fecd330/1621900443651459"
   bundle_name: "pm0653_00"
-  version: 1616697332621212
-  checksum: 1975269164
-  size: 554510
+  version: 1621900443651459
+  checksum: 4053607183
+  size: 635356
 }
 digest {
   asset_id: "c9f24a3b-dc06-45a9-b004-6533c5b1ffa0/1616691024395677"
@@ -18293,11 +18797,11 @@ digest {
   size: 1355752
 }
 digest {
-  asset_id: "cb18c520-8fe4-485f-bec2-f8ec9c22c4c2/1616697350533034"
+  asset_id: "cb18c520-8fe4-485f-bec2-f8ec9c22c4c2/1619807949455852"
   bundle_name: "pm0674_00"
-  version: 1616697350533034
-  checksum: 1150173205
-  size: 558364
+  version: 1619807949455852
+  checksum: 4153036077
+  size: 608343
 }
 digest {
   asset_id: "cb1a6038-d241-4db3-89d2-896c108e5fbc/1616622172418709"
@@ -18419,11 +18923,11 @@ digest {
   size: 4582
 }
 digest {
-  asset_id: "cc0eff29-bafb-4856-a107-b4fc8681db1f/1616644467657709"
+  asset_id: "cc0eff29-bafb-4856-a107-b4fc8681db1f/1619812209729392"
   bundle_name: "pm0021_00"
-  version: 1616644467657709
-  checksum: 1388127601
-  size: 475771
+  version: 1619812209729392
+  checksum: 1019920190
+  size: 470336
 }
 digest {
   asset_id: "cc130544-8c80-49b7-ba6d-bd38f43c7abc/1616622825617702"
@@ -18497,11 +19001,11 @@ digest {
   size: 520662
 }
 digest {
-  asset_id: "cc883526-9c40-4fe6-a53a-f2ad1fcf57bc/1616691131266738"
+  asset_id: "cc883526-9c40-4fe6-a53a-f2ad1fcf57bc/1619807974756760"
   bundle_name: "pm0209_00"
-  version: 1616691131266738
-  checksum: 1878991312
-  size: 471176
+  version: 1619807974756760
+  checksum: 2014989533
+  size: 478946
 }
 digest {
   asset_id: "ccb54ca4-d18c-4377-91f5-57b395d396cd/1616689888984972"
@@ -18546,11 +19050,11 @@ digest {
   size: 441419
 }
 digest {
-  asset_id: "cd53a84f-5c55-4563-84b3-edda474e01f1/1619136847958554"
+  asset_id: "cd53a84f-5c55-4563-84b3-edda474e01f1/1622773490026686"
   bundle_name: "json_patch_i18n_english"
-  version: 1619136847958554
-  checksum: 2803050494
-  size: 12947
+  version: 1622773490026686
+  checksum: 88358790
+  size: 6320
 }
 digest {
   asset_id: "cd6505ba-8c14-49d2-9bb8-2b8840b60f6a/1616632654516245"
@@ -18731,18 +19235,18 @@ digest {
   size: 32579
 }
 digest {
-  asset_id: "cf2f4f05-ae15-4e2c-8a89-7690b3817620/1616644501295515"
+  asset_id: "cf2f4f05-ae15-4e2c-8a89-7690b3817620/1622845099254206"
   bundle_name: "pm0079_00_pgo_2020"
-  version: 1616644501295515
-  checksum: 3858060695
-  size: 417282
+  version: 1622845099254206
+  checksum: 886942750
+  size: 442589
 }
 digest {
-  asset_id: "cf39b573-eb14-4527-9bf4-93afd53592c6/1616691096308253"
+  asset_id: "cf39b573-eb14-4527-9bf4-93afd53592c6/1619807958662848"
   bundle_name: "pm0297_00"
-  version: 1616691096308253
-  checksum: 1859103001
-  size: 599804
+  version: 1619807958662848
+  checksum: 1410567821
+  size: 607698
 }
 digest {
   asset_id: "cf5e4911-24e2-49e7-8f9e-86e8df703638/1616631919223489"
@@ -18759,11 +19263,11 @@ digest {
   size: 18510
 }
 digest {
-  asset_id: "cfbb69a8-e00e-4063-96aa-46bc2ace4935/1616690999590675"
+  asset_id: "cfbb69a8-e00e-4063-96aa-46bc2ace4935/1619807933798596"
   bundle_name: "pm0230_00"
-  version: 1616690999590675
-  checksum: 2424359396
-  size: 306618
+  version: 1619807933798596
+  checksum: 1829998496
+  size: 314675
 }
 digest {
   asset_id: "cfcde6ea-0e98-4d9f-a9b4-7c91b38f7053/1616692770372118"
@@ -18801,11 +19305,11 @@ digest {
   size: 23820
 }
 digest {
-  asset_id: "cff9f956-74c2-434e-9e1f-1764ca0da726/1616697322594970"
+  asset_id: "cff9f956-74c2-434e-9e1f-1764ca0da726/1619807938506948"
   bundle_name: "pm0706_00"
-  version: 1616697322594970
-  checksum: 1406045413
-  size: 977676
+  version: 1619807938506948
+  checksum: 1293550226
+  size: 972833
 }
 digest {
   asset_id: "d009f82c-7b33-4789-8438-c23c55c93825/1616632254497616"
@@ -18857,11 +19361,11 @@ digest {
   size: 6651
 }
 digest {
-  asset_id: "d0563e49-a8bd-4bed-a4d4-d44f418f4b13/1616694572469397"
+  asset_id: "d0563e49-a8bd-4bed-a4d4-d44f418f4b13/1619807906892608"
   bundle_name: "pm0452_00"
-  version: 1616694572469397
-  checksum: 3042075130
-  size: 494557
+  version: 1619807906892608
+  checksum: 2216950277
+  size: 492566
 }
 digest {
   asset_id: "d05eeddf-0066-49b7-bff5-93ac0d77282a/1616622430107068"
@@ -18878,11 +19382,11 @@ digest {
   size: 19404
 }
 digest {
-  asset_id: "d0a025fa-c1e9-4eee-8482-8f065aca8f02/1616692820027688"
+  asset_id: "d0a025fa-c1e9-4eee-8482-8f065aca8f02/1619807942687654"
   bundle_name: "pm0334_00"
-  version: 1616692820027688
-  checksum: 2057432280
-  size: 827664
+  version: 1619807942687654
+  checksum: 4048303995
+  size: 925336
 }
 digest {
   asset_id: "d0bddfe2-a2ab-4b32-aa19-55d486527a48/1616623958764000"
@@ -19039,11 +19543,11 @@ digest {
   size: 5798
 }
 digest {
-  asset_id: "d2a46958-fcfd-45f8-a8ce-0f77df7b28c3/1616697389847643"
+  asset_id: "d2a46958-fcfd-45f8-a8ce-0f77df7b28c3/1619807954128597"
   bundle_name: "pm0704_00"
-  version: 1616697389847643
-  checksum: 2465817256
-  size: 297750
+  version: 1619807954128597
+  checksum: 3319717666
+  size: 295921
 }
 digest {
   asset_id: "d2b0d6ad-e2f2-4881-9893-2894830bffbc/1616622743504089"
@@ -19065,6 +19569,13 @@ digest {
   version: 1616632724270289
   checksum: 3691123361
   size: 30043
+}
+digest {
+  asset_id: "d2da8c28-184c-48b8-9cc8-be23a9edb06b/1621628092049271"
+  bundle_name: "m_shoes_sylveonitems_00_bundle_icon"
+  version: 1621628092049271
+  checksum: 4059062243
+  size: 12695
 }
 digest {
   asset_id: "d2db6a46-2221-4e04-8ce7-adad17fc1ee3/1616644419625637"
@@ -19173,6 +19684,13 @@ digest {
   size: 997501
 }
 digest {
+  asset_id: "d3aa9ece-30bd-4a81-aae0-072cad653ed9/1621628098183389"
+  bundle_name: "f_shirt_sylveonitems_00_bundle_icon"
+  version: 1621628098183389
+  checksum: 1510589613
+  size: 12373
+}
+digest {
   asset_id: "d3adf298-d848-46ee-a6c8-f7787883b418/1616622166576614"
   bundle_name: "m_shirt_verizon2020sweater_0_bundle_icon"
   version: 1616622166576614
@@ -19279,11 +19797,11 @@ digest {
   size: 175895
 }
 digest {
-  asset_id: "d519e1d4-4f44-47fa-bcfa-c74abacacb02/1616644497724449"
+  asset_id: "d519e1d4-4f44-47fa-bcfa-c74abacacb02/1619809699600058"
   bundle_name: "pm0004_00_pgo_fall2019"
-  version: 1616644497724449
-  checksum: 2435754990
-  size: 534607
+  version: 1619809699600058
+  checksum: 968381265
+  size: 592599
 }
 digest {
   asset_id: "d5467c29-961f-4bcb-9bd6-a746a3795cc3/1616632063944446"
@@ -19293,11 +19811,11 @@ digest {
   size: 26845
 }
 digest {
-  asset_id: "d5722a9b-a9a3-4ca5-9f56-f825642bf311/1616616039710375"
+  asset_id: "d5722a9b-a9a3-4ca5-9f56-f825642bf311/1622156577318347"
   bundle_name: "f_avatar_poses_bundle"
-  version: 1616616039710375
-  checksum: 2659373644
-  size: 218267
+  version: 1622156577318347
+  checksum: 3447583988
+  size: 224618
 }
 digest {
   asset_id: "d574e934-a789-4912-9ad2-d5cd2cf8df6c/1616622986509724"
@@ -19314,11 +19832,11 @@ digest {
   size: 16102
 }
 digest {
-  asset_id: "d5894c34-400e-4a64-941f-684b97512b0a/1616631950808494"
+  asset_id: "d5894c34-400e-4a64-941f-684b97512b0a/1619807928105674"
   bundle_name: "pokemon_icon_334"
-  version: 1616631950808494
-  checksum: 2121978282
-  size: 18626
+  version: 1619807928105674
+  checksum: 725858942
+  size: 35954
 }
 digest {
   asset_id: "d59f46a2-0232-402d-a44f-4bf52251cfe6/1616623037750727"
@@ -19363,11 +19881,11 @@ digest {
   size: 695755
 }
 digest {
-  asset_id: "d61109e9-0db8-4d93-ae22-95612cde53c5/1616689850183713"
+  asset_id: "d61109e9-0db8-4d93-ae22-95612cde53c5/1622845091813967"
   bundle_name: "pm0199_00"
-  version: 1616689850183713
-  checksum: 748823776
-  size: 733056
+  version: 1622845091813967
+  checksum: 341543287
+  size: 731106
 }
 digest {
   asset_id: "d61583dd-2f0c-43b5-aa16-c0c8afaee28c/1616624060435773"
@@ -19483,11 +20001,11 @@ digest {
   size: 26254
 }
 digest {
-  asset_id: "d73442c6-0c17-49b2-b9f3-420751f18107/1616632211490868"
+  asset_id: "d73442c6-0c17-49b2-b9f3-420751f18107/1622845093405664"
   bundle_name: "pokemon_icon_199"
-  version: 1616632211490868
-  checksum: 2158323171
-  size: 21074
+  version: 1622845093405664
+  checksum: 1959889322
+  size: 34627
 }
 digest {
   asset_id: "d760a71b-24e5-4c4a-9824-408502852fd2/1616632288371940"
@@ -19553,11 +20071,11 @@ digest {
   size: 667823
 }
 digest {
-  asset_id: "d83109d4-b129-4314-803f-fadeb328c642/1616697257030600"
+  asset_id: "d83109d4-b129-4314-803f-fadeb328c642/1619807915969383"
   bundle_name: "pm0705_00"
-  version: 1616697257030600
-  checksum: 3063935970
-  size: 423969
+  version: 1619807915969383
+  checksum: 1528183351
+  size: 421637
 }
 digest {
   asset_id: "d84cb8b4-4f72-43a7-b5ae-9901cd80609f/1616694695459438"
@@ -19714,6 +20232,13 @@ digest {
   checksum: 1375801739
   size: 13413
   key: "`W\276N\210\262\357\271.=_\371\006\2721\316"
+}
+digest {
+  asset_id: "d9cd3ffa-7d9f-4e2d-9cb6-e87f605d5f2c/1622156624617060"
+  bundle_name: "f_hat_regiicejersies_bundle"
+  version: 1622156624617060
+  checksum: 2250320265
+  size: 168941
 }
 digest {
   asset_id: "d9dbcc92-f718-4727-a626-f4b32d54f3e9/1616689894631909"
@@ -19943,11 +20468,11 @@ digest {
   size: 7664
 }
 digest {
-  asset_id: "dccbb419-951a-4bf9-8448-8a32e5bae6d1/1619136866696651"
+  asset_id: "dccbb419-951a-4bf9-8448-8a32e5bae6d1/1622773509378040"
   bundle_name: "json_patch_i18n_korean"
-  version: 1619136866696651
-  checksum: 970746640
-  size: 16300
+  version: 1622773509378040
+  checksum: 3560984484
+  size: 6590
 }
 digest {
   asset_id: "dcd89218-66fa-4ea3-a549-7d49df98b5d1/1512759924956220"
@@ -20000,11 +20525,11 @@ digest {
   size: 402777
 }
 digest {
-  asset_id: "dd3866d4-f0ae-44cd-8679-9d80ca3c493b/1616692789935524"
+  asset_id: "dd3866d4-f0ae-44cd-8679-9d80ca3c493b/1619807929024176"
   bundle_name: "pm0310_00"
-  version: 1616692789935524
-  checksum: 2846631921
-  size: 453048
+  version: 1619807929024176
+  checksum: 1286992864
+  size: 466571
 }
 digest {
   asset_id: "dd40dfd7-450e-446b-97f1-39c1a1802bfd/1616694759629147"
@@ -20154,11 +20679,25 @@ digest {
   size: 10178
 }
 digest {
+  asset_id: "dede5334-b0db-45bc-83c0-4ca967bef52c/1619641799852195"
+  bundle_name: "m_backpack_snapcamera_00_bundle_icon"
+  version: 1619641799852195
+  checksum: 3311818292
+  size: 9219
+}
+digest {
   asset_id: "dee980a2-2435-46f7-848e-490d567bbbd6/1616632158653736"
   bundle_name: "pokemon_icon_367"
   version: 1616632158653736
   checksum: 3953746151
   size: 9449
+}
+digest {
+  asset_id: "def5a62b-78fb-48e8-bf7d-ee9e683b03c6/1621628103632516"
+  bundle_name: "f_shirt_sylveonitems_bundle"
+  version: 1621628103632516
+  checksum: 4102165793
+  size: 317795
 }
 digest {
   asset_id: "defdc39b-bac1-4f40-9108-65a05dbd8ab3/1616623080996706"
@@ -20217,11 +20756,11 @@ digest {
   size: 11601
 }
 digest {
-  asset_id: "df787210-9c54-46f1-877b-8b79e1447f94/1616631969643248"
+  asset_id: "df787210-9c54-46f1-877b-8b79e1447f94/1622845086685026"
   bundle_name: "pokemon_icon_080"
-  version: 1616631969643248
-  checksum: 1789455876
-  size: 27191
+  version: 1622845086685026
+  checksum: 1293615975
+  size: 68788
 }
 digest {
   asset_id: "df7bbf84-6bd6-4d91-b482-b82378ff6793/1616692926497439"
@@ -20229,6 +20768,13 @@ digest {
   version: 1616692926497439
   checksum: 3501985715
   size: 1189819
+}
+digest {
+  asset_id: "df7df72a-e35d-43fe-bd42-2baea21a2edd/1622156596798328"
+  bundle_name: "f_shirt_regirockjersies_00_bundle_icon"
+  version: 1622156596798328
+  checksum: 693426287
+  size: 12579
 }
 digest {
   asset_id: "df8527a2-3722-46f7-aaf9-6aab3e5ba889/1616622616457245"
@@ -20258,6 +20804,13 @@ digest {
   version: 1616697274021027
   checksum: 1552269218
   size: 741372
+}
+digest {
+  asset_id: "dfad08de-53a5-48a0-9bc4-769507b47827/1622156587522595"
+  bundle_name: "m_shirt_regiicejersies_bundle"
+  version: 1622156587522595
+  checksum: 1191821134
+  size: 255298
 }
 digest {
   asset_id: "dfb7e715-c5c3-4df2-b17b-9b1fd4ad19bc/1616622178271012"
@@ -20309,11 +20862,11 @@ digest {
   size: 8419
 }
 digest {
-  asset_id: "e0ac9cb8-3f28-4978-90da-b628e1f5a634/1616631993871184"
+  asset_id: "e0ac9cb8-3f28-4978-90da-b628e1f5a634/1619807931850461"
   bundle_name: "pokemon_icon_685"
-  version: 1616631993871184
-  checksum: 4054958099
-  size: 17621
+  version: 1619807931850461
+  checksum: 1183875761
+  size: 17572
 }
 digest {
   asset_id: "e0afb59c-c07e-4990-8a70-65868b244725/1616694768645400"
@@ -20548,11 +21101,11 @@ digest {
   size: 5853
 }
 digest {
-  asset_id: "e3603e13-ceb3-44f7-a0bf-d540334dc51a/1616689793853652"
+  asset_id: "e3603e13-ceb3-44f7-a0bf-d540334dc51a/1619812207996096"
   bundle_name: "pm0150_00"
-  version: 1616689793853652
-  checksum: 4288819675
-  size: 549135
+  version: 1619812207996096
+  checksum: 3203136707
+  size: 548609
 }
 digest {
   asset_id: "e373acb3-4866-4f26-89e7-0e32427b5064/1603825166429926"
@@ -20887,6 +21440,20 @@ digest {
   size: 236696
 }
 digest {
+  asset_id: "e66fbbce-b355-4fee-8283-9b476f8023c1/1622156532584398"
+  bundle_name: "f_shoes_korrina_bundle"
+  version: 1622156532584398
+  checksum: 3437992013
+  size: 161414
+}
+digest {
+  asset_id: "e67f01a6-31f5-4968-a307-02524ec4ded3/1622156631540104"
+  bundle_name: "m_shirt_registeeljersies_00_bundle_icon"
+  version: 1622156631540104
+  checksum: 619575216
+  size: 11870
+}
+digest {
   asset_id: "e691e425-761b-4b61-a56e-e44c24e75d93/1616644460757425"
   bundle_name: "pm0097_00"
   version: 1616644460757425
@@ -20965,11 +21532,11 @@ digest {
   size: 21066
 }
 digest {
-  asset_id: "e73af35c-4f47-46e7-9c11-63c54ccb789d/1616689920030121"
+  asset_id: "e73af35c-4f47-46e7-9c11-63c54ccb789d/1619809701922853"
   bundle_name: "pm0150_51"
-  version: 1616689920030121
-  checksum: 3612692
-  size: 514852
+  version: 1619809701922853
+  checksum: 3121305721
+  size: 513782
 }
 digest {
   asset_id: "e73afc84-c906-443e-8b2c-2a8c54fdddb1/1616621844135321"
@@ -21033,6 +21600,13 @@ digest {
   version: 1616622321587221
   checksum: 3050352440
   size: 15278
+}
+digest {
+  asset_id: "e7e792a2-f758-4633-9d33-b2645123ffbb/1622156567212171"
+  bundle_name: "m_shoes_korrina_00_bundle_icon"
+  version: 1622156567212171
+  checksum: 1715775583
+  size: 11385
 }
 digest {
   asset_id: "e7e9270a-6369-4037-b891-3b1461b625ac/1616644494077826"
@@ -21161,11 +21735,11 @@ digest {
   size: 569309
 }
 digest {
-  asset_id: "e9aae74c-16d1-48c5-b0d6-27a5100491b8/1616639737192146"
+  asset_id: "e9aae74c-16d1-48c5-b0d6-27a5100491b8/1619545661088797"
   bundle_name: "badge_general"
-  version: 1616639737192146
-  checksum: 1469997309
-  size: 177186
+  version: 1619545661088797
+  checksum: 3026023723
+  size: 177159
 }
 digest {
   asset_id: "e9b9bbb9-c72d-4a4f-9145-4e7102d23a87/1616632107529012"
@@ -21302,6 +21876,13 @@ digest {
   size: 10911
 }
 digest {
+  asset_id: "eafbde02-2d9b-456c-89eb-87ca3a26b8d3/1622156551020608"
+  bundle_name: "f_hat_registeeljersies_00_bundle_icon"
+  version: 1622156551020608
+  checksum: 2900280535
+  size: 6778
+}
+digest {
   asset_id: "eb12189d-ee5b-4870-b6a4-b9fefb11fa8e/1616622750690405"
   bundle_name: "f_hat_gofest_pikachuvisor_bundle"
   version: 1616622750690405
@@ -21323,11 +21904,11 @@ digest {
   size: 5674
 }
 digest {
-  asset_id: "eb3b2e56-3d69-4f8b-ba45-f900fd5755d0/1616692775846749"
+  asset_id: "eb3b2e56-3d69-4f8b-ba45-f900fd5755d0/1619807916946657"
   bundle_name: "pm0400_00"
-  version: 1616692775846749
-  checksum: 3183663674
-  size: 458587
+  version: 1619807916946657
+  checksum: 572293812
+  size: 437538
 }
 digest {
   asset_id: "eb51d6da-45d4-482a-8162-189192fe11ac/1616623174888780"
@@ -21518,11 +22099,11 @@ digest {
   size: 448126
 }
 digest {
-  asset_id: "ed5badb8-4039-49b2-afaa-ac5c83236fa2/1616632425457091"
+  asset_id: "ed5badb8-4039-49b2-afaa-ac5c83236fa2/1619807957689621"
   bundle_name: "pokemon_icon_675"
-  version: 1616632425457091
-  checksum: 3361474093
-  size: 35115
+  version: 1619807957689621
+  checksum: 3510862710
+  size: 32395
 }
 digest {
   asset_id: "ed624b41-9bba-464d-adb5-2f5980905f9d/1616632081300755"
@@ -21589,6 +22170,13 @@ digest {
   size: 974213
 }
 digest {
+  asset_id: "ee5257ee-c952-4e30-a451-c8983f394114/1622156564930043"
+  bundle_name: "f_pants_registeeljersies_00_bundle_icon"
+  version: 1622156564930043
+  checksum: 2373506534
+  size: 6497
+}
+digest {
   asset_id: "ee58ad57-5246-49da-b88a-cb298f04a808/1616632220129403"
   bundle_name: "pokemon_icon_484"
   version: 1616632220129403
@@ -21652,6 +22240,13 @@ digest {
   size: 371455
 }
 digest {
+  asset_id: "eef8a2e2-61d4-44e8-a970-4b9a87710bfe/1622845095085148"
+  bundle_name: "pm0080_31"
+  version: 1622845095085148
+  checksum: 1172255717
+  size: 939166
+}
+digest {
   asset_id: "ef1ca87c-5dde-4c13-b39f-8fee606f2437/1616622752092317"
   bundle_name: "m_gloves_teamaqua_0_bundle_icon"
   version: 1616622752092317
@@ -21709,6 +22304,13 @@ digest {
   size: 778394
 }
 digest {
+  asset_id: "f024371b-ed2e-40f7-b86d-2d381472c569/1622156585405848"
+  bundle_name: "f_shirt_registeeljersies_bundle"
+  version: 1622156585405848
+  checksum: 1254880692
+  size: 259991
+}
+digest {
   asset_id: "f02f2968-6fb5-4064-8f73-1321070346ee/1616694573538589"
   bundle_name: "pm0530_00"
   version: 1616694573538589
@@ -21750,6 +22352,13 @@ digest {
   version: 1616622920799637
   checksum: 3852750047
   size: 12796
+}
+digest {
+  asset_id: "f0b4c66d-8ac2-420c-89f3-a111b649e419/1622156540249717"
+  bundle_name: "m_hat_registeeljersies_bundle"
+  version: 1622156540249717
+  checksum: 3014779632
+  size: 151481
 }
 digest {
   asset_id: "f0d4140e-e93f-4e10-a407-590a2cd9fa50/1616694927489706"
@@ -21829,11 +22438,18 @@ digest {
   size: 15789
 }
 digest {
-  asset_id: "f1c31696-5427-4db1-b18f-7311f270cd0c/1616690975224851"
+  asset_id: "f1b2310e-f7d2-43ba-a5c8-e0651d2b1952/1622156554903532"
+  bundle_name: "f_shoes_registeeljersies_bundle"
+  version: 1622156554903532
+  checksum: 1292226429
+  size: 165413
+}
+digest {
+  asset_id: "f1c31696-5427-4db1-b18f-7311f270cd0c/1619807913784601"
   bundle_name: "pm0262_00"
-  version: 1616690975224851
-  checksum: 858404077
-  size: 723518
+  version: 1619807913784601
+  checksum: 3819369820
+  size: 738332
 }
 digest {
   asset_id: "f1da41e8-93f5-4d5d-9b35-589b91256955/1616632126918381"
@@ -21907,6 +22523,13 @@ digest {
   size: 16293
 }
 digest {
+  asset_id: "f26f51ee-ec4c-4e85-9c63-dd80953d8642/1622156571557039"
+  bundle_name: "f_hat_registeeljersies_bundle"
+  version: 1622156571557039
+  checksum: 2737587461
+  size: 167464
+}
+digest {
   asset_id: "f271a008-e647-4168-9b7b-2b80d6906133/1616622522648356"
   bundle_name: "f_shirt_greedentsweater_bundle"
   version: 1616622522648356
@@ -21935,18 +22558,18 @@ digest {
   size: 14045
 }
 digest {
-  asset_id: "f2bbd8c6-78a3-46ec-85b2-0161f1a0a1bf/1616644407172791"
+  asset_id: "f2bbd8c6-78a3-46ec-85b2-0161f1a0a1bf/1622845088156203"
   bundle_name: "pm0079_00"
-  version: 1616644407172791
-  checksum: 1377825418
-  size: 372166
+  version: 1622845088156203
+  checksum: 1206743572
+  size: 398524
 }
 digest {
-  asset_id: "f2c89d17-bded-4e44-a844-54cd28634340/1616632372212958"
+  asset_id: "f2c89d17-bded-4e44-a844-54cd28634340/1619807953251613"
   bundle_name: "pokemon_icon_717"
-  version: 1616632372212958
-  checksum: 378502463
-  size: 27508
+  version: 1619807953251613
+  checksum: 1529621097
+  size: 27741
 }
 digest {
   asset_id: "f2c8f95e-b821-4891-9af1-9f672adda0da/1616622201312083"
@@ -21990,6 +22613,13 @@ digest {
   version: 1616632240733650
   checksum: 847308775
   size: 19163
+}
+digest {
+  asset_id: "f2fdb9c0-213c-486f-8295-5e54a65f64b4/1622156538400200"
+  bundle_name: "f_hat_korrina_00_bundle_icon"
+  version: 1622156538400200
+  checksum: 2751825482
+  size: 10290
 }
 digest {
   asset_id: "f3057f22-edb8-40ab-82dc-a8316f8996bf/1616622854600189"
@@ -22091,6 +22721,13 @@ digest {
   size: 7250
 }
 digest {
+  asset_id: "f3f51367-b189-46d0-988b-bced54faad01/1622156552098371"
+  bundle_name: "f_hat_regirockjersies_00_bundle_icon"
+  version: 1622156552098371
+  checksum: 225101379
+  size: 7327
+}
+digest {
   asset_id: "f3fc14f6-c514-40c1-9c95-f9145464ea60/1617657786951824"
   bundle_name: "f_shirt_holifestival2021black_00_bundle_icon"
   version: 1617657786951824
@@ -22103,6 +22740,13 @@ digest {
   version: 1616622121932786
   checksum: 560365638
   size: 437570
+}
+digest {
+  asset_id: "f42dff19-40c9-478f-a72f-e03d70065f47/1622156566033593"
+  bundle_name: "m_shirt_regiicejersies_00_bundle_icon"
+  version: 1622156566033593
+  checksum: 1915074354
+  size: 11544
 }
 digest {
   asset_id: "f43345cb-f714-4478-9f36-3c523f42e876/1616623086721415"
@@ -22125,6 +22769,13 @@ digest {
   checksum: 3336834028
   size: 140741
   key: "\035\262A\324\001=\352{\007\226\270\246&>7\014"
+}
+digest {
+  asset_id: "f46b3448-a307-4061-afb6-c9f277f1d933/1619641798474971"
+  bundle_name: "m_backpack_snapcamera_bundle"
+  version: 1619641798474971
+  checksum: 2218721933
+  size: 188393
 }
 digest {
   asset_id: "f48ee809-cb3c-4e2d-b259-317a966ae735/1616630847771645"
@@ -22197,10 +22848,10 @@ digest {
   size: 262435
 }
 digest {
-  asset_id: "f5cecf4e-3382-4575-80b8-306da8f6c61a/1616632051002323"
+  asset_id: "f5cecf4e-3382-4575-80b8-306da8f6c61a/1619809694052311"
   bundle_name: "pokemon_icon_021"
-  version: 1616632051002323
-  checksum: 2758759634
+  version: 1619809694052311
+  checksum: 2332710860
   size: 6746
 }
 digest {
@@ -22408,6 +23059,13 @@ digest {
   size: 432375
 }
 digest {
+  asset_id: "f78655ab-7257-494e-8f0e-de87c35a1b04/1622156629031115"
+  bundle_name: "f_shoes_korrina_00_bundle_icon"
+  version: 1622156629031115
+  checksum: 1309095441
+  size: 11809
+}
+digest {
   asset_id: "f796d234-a346-451a-bb0d-d63f44ae23f1/1616691120879300"
   bundle_name: "pm0222_00"
   version: 1616691120879300
@@ -22471,11 +23129,11 @@ digest {
   size: 9629
 }
 digest {
-  asset_id: "f81c317b-b38c-454e-ac41-b716acec654f/1619136851822152"
+  asset_id: "f81c317b-b38c-454e-ac41-b716acec654f/1622773493761745"
   bundle_name: "json_patch_i18n_french"
-  version: 1619136851822152
-  checksum: 1196282938
-  size: 14237
+  version: 1622773493761745
+  checksum: 3330973713
+  size: 7177
 }
 digest {
   asset_id: "f826a71a-90f8-46c9-a731-f05a07d215ef/1616623200692894"
@@ -22853,6 +23511,13 @@ digest {
   size: 10860
 }
 digest {
+  asset_id: "fbf65257-ea43-4a13-9599-b35b19bfad8f/1622156549457620"
+  bundle_name: "m_shirt_registeeljersies_bundle"
+  version: 1622156549457620
+  checksum: 2283904953
+  size: 253462
+}
+digest {
   asset_id: "fbfaeda1-7d47-4b10-949d-768d832f7e63/1616692878322069"
   bundle_name: "pm0356_00"
   version: 1616692878322069
@@ -22909,6 +23574,13 @@ digest {
   size: 355843
 }
 digest {
+  asset_id: "fc763cac-2aaf-4822-86c8-7ce38e8f78d0/1622843814243322"
+  bundle_name: "f_shirt_slowpokeshirts_00_bundle_icon"
+  version: 1622843814243322
+  checksum: 3885790308
+  size: 11519
+}
+digest {
   asset_id: "fc7d2574-7176-4c18-ba33-9090a0df84d0/1515704932449257"
   bundle_name: "pm0150"
   version: 1515704932449257
@@ -22924,11 +23596,11 @@ digest {
   size: 320748
 }
 digest {
-  asset_id: "fcc10d7f-8db3-4d40-98b5-456e519d69ca/1616632198380523"
+  asset_id: "fcc10d7f-8db3-4d40-98b5-456e519d69ca/1619807947643176"
   bundle_name: "pokemon_icon_705"
-  version: 1616632198380523
-  checksum: 972822010
-  size: 13807
+  version: 1619807947643176
+  checksum: 1445866790
+  size: 13950
 }
 digest {
   asset_id: "fcc15480-01c5-49f3-a7ba-660800b4b61d/1616632780606333"
@@ -23210,4 +23882,4 @@ digest {
   checksum: 2527820101
   size: 1240971
 }
-timestamp: 1619224118701897
+timestamp: 1622845106282895
