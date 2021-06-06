@@ -4234,7 +4234,7 @@ message AKGKHEBEAHG {
 	}
 
 	string ihhoabbcaek = 1;
-	KIBFGDMAIOM mccdlfkngpd = 2;
+	PlayerPublicProfileProto mccdlfkngpd = 2;
 	repeated string iilgeelplpm = 3;
 	uint64 bejagboaejg = 4;
 	BMPMCEELPIB nflnekagdio = 5;
@@ -4436,7 +4436,7 @@ message AcceptCombatChallengeOutProto {
 	}
 
 	Result result = 1;
-	PEBGPDIDLDK ldjhogpccdg = 2;
+	CombatChallengeProto challenge = 2;
 }
 
 message AcceptFriendInviteOutProto {
@@ -4897,14 +4897,6 @@ message BAENPGKOHLH {
 	VsSeekerRewardTrack lkoejlokflf = 1;
 }
 
-message BALMODJHLLN {
-	HoloBadgeType jhpadpfpnbk = 1;
-	int32 cfdpfokpleb = 2;
-	int32 emhpehgpjcl = 3;
-	int32 jlijhjiaccd = 4;
-	double menakldmnlm = 5;
-}
-
 message BAPBIFFHNOK {
 	string eaafkccghje = 1;
 	string edfcpefpiil = 2;
@@ -4944,7 +4936,7 @@ message BBOAGEPEOCB {
 		double jnoecadcngg = 6;
 	}
 
-	KIBFGDMAIOM kcgknkfjiee = 1;
+	PlayerPublicProfileProto kcgknkfjiee = 1;
 	KHBJELFDCOI jlcohacmfei = 3;
 	LCBHOAHDALM flaajgaamdm = 4;
 }
@@ -5021,15 +5013,6 @@ message BEGFEHFJOKI {
 	bool aahpnadlnjp = 2;
 }
 
-message BEPEOKHDKBP {
-	message FDCAKMMOBLB {
-		string bdkigfmmdof = 1;
-		int32 ljifbcoikii = 2;
-	}
-
-	repeated FDCAKMMOBLB nlneiaciaci = 1;
-}
-
 message BFBFDNMPDNB {
 	string gfghnnpnffc = 1;
 	string njppiedjfeh = 2;
@@ -5064,7 +5047,7 @@ message BFNMLBCMOKA {
 
 message BGFCGOPDPDE {
 	PokemonProto pokemon = 1;
-	KIBFGDMAIOM glfipcgagfe = 2;
+	PlayerPublicProfileProto glfipcgagfe = 2;
 	PokemonProto dencohpnhjc = 3;
 }
 
@@ -5370,7 +5353,7 @@ message BattleActionProto {
 	int64 eognmkgdiel = 12;
 	MHKJHFPLDMN pekekalkgad = 13;
 	uint64 lkflnlghnie = 14;
-	IJGPBMKEBJF hjbcejpongb = 15;
+	LeveledUpFriendsProto hjbcejpongb = 15;
 }
 
 message BattleHubBadgeSettings {
@@ -5441,7 +5424,7 @@ message BelugaDailyTransferLogEntry {
 
 	Result result = 1;
 	bool mmcnkmjemnj = 2;
-	GKCPGGHJIKM hbbgkohbmhl = 3;
+	LootProto hbbgkohbmhl = 3;
 }
 
 message BelugaIncenseBoxProto {
@@ -5513,7 +5496,7 @@ message BuddyActivitySettings {
 }
 
 message BuddyConsumablesLogEntry {
-	GKCPGGHJIKM cofmckifiap = 1;
+	LootProto rewards = 1;
 }
 
 message BuddyEmotionLevelSettings {
@@ -5852,7 +5835,7 @@ message CJLNHNONAJL {
 	repeated KDKGEDMFCBJ phhjcaeghhg = 5;
 	int32 hagbjelihnh = 6;
 	int32 gjdpglpbpkh = 7;
-	repeated HoloBadgeType hfddonlkdfo = 8;
+	repeated HoloBadgeType badges = 8;
 	repeated NIGEKOGBIIG hkkepnaimed = 9;
 	repeated string kmhpgkiipan = 10;
 }
@@ -5961,7 +5944,7 @@ message CMJEFHFMODC {
 	PokemonDisplayProto.Form deadppgcngn = 11;
 	string kgiblgmcpod = 12;
 	string glmllaolhck = 13;
-	FKADKBIFECN holjmnpfljb = 14;
+	PlayerAvatarProto holjmnpfljb = 14;
 	Team pifidppgggo = 15;
 	HoloTemporaryEvolutionId pdfdhnafemd = 16;
 	PokemonDisplayProto.Costume addbknkikfd = 17;
@@ -6140,7 +6123,7 @@ message ClaimVsSeekerRewardsOutProto {
 	}
 
 	Result result = 1;
-	GKCPGGHJIKM cofmckifiap = 2;
+	LootProto rewards = 2;
 }
 
 message ClientApiSettingsProto {
@@ -6358,6 +6341,37 @@ message CollectDailyDefenderBonusOutProto {
 	int32 fpjhkckpbkk = 4;
 }
 
+message CombatChallengeProto {
+	enum CombatChallengeState {
+		UNSET = 0;
+		CREATED = 1;
+		OPENED = 2;
+		CANCELLED = 3;
+		ACCEPTED = 4;
+		DECLINED = 5;
+		READY = 6;
+		TIMEOUT = 7;
+	}
+
+	message ChallengePlayer {
+		string ihhoabbcaek = 1;
+		PlayerAvatarProto mpfjbggoiea = 2;
+		int64 fgpojghbgfj = 3;
+		repeated uint64 fndobachigg = 4;
+		PlayerPublicProfileProto mccdlfkngpd = 5;
+	}
+
+	string bdkigfmmdof = 1;
+	CombatType dofdaglmamd = 2;
+	string iilgeelplpm = 3;
+	ChallengePlayer liffpaapfkf = 5;
+	ChallengePlayer cmafcpelbmb = 6;
+	CombatChallengeState ghmfjbmideb = 7;
+	int64 mggbdcdhifo = 8;
+	int64 eljklhchiio = 19;
+	string obfaehbilki = 20;
+}
+
 message CombatCompetitiveSeasonSettingsProto {
 	repeated uint64 glhjbogdamo = 1;
 	float kjcihkiljfg = 2;
@@ -6471,7 +6485,7 @@ message CombatLogEntry {
 
 	Result result = 1;
 	CombatPlayerFinishState pjelhfaaife = 2;
-	GKCPGGHJIKM cofmckifiap = 3;
+	LootProto rewards = 3;
 	string cmafcpelbmb = 4;
 	string iilgeelplpm = 5;
 	string dkiecpedhbi = 6;
@@ -6523,7 +6537,7 @@ message CombatNpcTrainerProto {
 	string cfnpjeiklop = 3;
 	string mndfaiaekdp = 4;
 	string fpicelgipnh = 5;
-	FKADKBIFECN gmjjdgndkdp = 7;
+	PlayerAvatarProto avatar = 7;
 	repeated DNGLPPFFNLB dacodhpkjoi = 8;
 	string dnliloecmna = 9;
 	string fgpmcccflji = 10;
@@ -6568,7 +6582,7 @@ message CombatProto {
 	}
 
 	message MNKHAJGPBHE {
-		KIBFGDMAIOM mccdlfkngpd = 1;
+		PlayerPublicProfileProto mccdlfkngpd = 1;
 		HLEPFFPAAOL hnjjngoeila = 2;
 		repeated HLEPFFPAAOL jljbngampnd = 3;
 		repeated HLEPFFPAAOL ddkpolmfpnh = 4;
@@ -6815,7 +6829,7 @@ message CompleteVsSeekerAndRestartChargingOutProto {
 
 	Result result = 1;
 	VsSeekerAttributesProto oalhnbgdlak = 2;
-	GKCPGGHJIKM ckbfanpedlk = 3;
+	LootProto ckbfanpedlk = 3;
 	DHGMADMONJG nlhfkahhcnc = 4;
 	int32 pkgccjhcjln = 5;
 	float pcojghngfjj = 6;
@@ -7614,7 +7628,7 @@ message EIAJJLHDHAC {
 
 message EIBAKLLBAOG {
 	RoutePlayStatus.Status status = 1;
-	GKCPGGHJIKM gojligibfep = 2;
+	LootProto gojligibfep = 2;
 }
 
 message EICADJPOAIG {
@@ -7662,7 +7676,7 @@ message ENLNFFLAJBM {
 }
 
 message ENOGEMLGHFK {
-	FIKFFDLFKAB npjknmbmolk = 1;
+	FriendshipLevelDataProto npjknmbmolk = 1;
 	repeated NDOGLKPBJBL mnooojfibej = 2;
 	string fdnafdedpic = 3;
 	string hfpmnjbddbc = 4;
@@ -7746,7 +7760,7 @@ message EPPNBBJDAIK {
 	message GLPKOMDMHAM {
 	}
 
-	GKCPGGHJIKM gbnjddnpngn = 4;
+	LootProto gbnjddnpngn = 4;
 	BBOAGEPEOCB dgddncgdnnc = 5;
 }
 
@@ -8131,7 +8145,7 @@ message FGJHDCCIONF {
 }
 
 message FGMHGCHIGFG {
-	FKADKBIFECN injihekejim = 2;
+	PlayerAvatarProto injihekejim = 2;
 }
 
 message FGOGOCGPLED {
@@ -8177,43 +8191,7 @@ message FIIIJBBHODO {
 	float ghligfcapoe = 1;
 }
 
-message FIKFFDLFKAB {
-	int64 eoiegcookna = 1;
-	int32 ickkhpoanjf = 2;
-	FriendshipLevelMilestone fbdbdhnhhan = 3;
-	FriendshipLevelMilestone fnfcloenodi = 4;
-	double ijedhfcnahj = 5;
-	int32 nfijiicbanj = 6;
-}
-
 message FJLLGGADBKF {
-}
-
-message FKADKBIFECN {
-	int32 gmjjdgndkdp = 8;
-	int32 ibngpakbmpb = 9;
-	int32 ongcnbfbpmd = 10;
-	int32 ljlkacfbolb = 11;
-	int32 djafknkalma = 12;
-	int32 idadfechpck = 13;
-	int32 ijadoejdcdf = 14;
-	int32 lgldpobjlmo = 15;
-	int32 lkabekecndk = 16;
-	string gbpkkebbcmk = 17;
-	string dcpigbgehgl = 18;
-	string oidgaheikcc = 19;
-	string mhhpbolhlbm = 20;
-	string nfjpgjlpioe = 21;
-	string dpknkfodmpl = 22;
-	string bpdjgplcjhj = 23;
-	string aalmilopfhb = 24;
-	string ghpdhnhddpj = 25;
-	string bphkjgklklk = 26;
-	string mdhpgnafjkf = 27;
-	string ighadlaifho = 28;
-	string ifijnkjngbc = 29;
-	string hdjmhnenknd = 30;
-	string hejcdbeemlc = 31;
 }
 
 message FKFCCIOLFOB {
@@ -8348,7 +8326,7 @@ message FitnessRewardsLogEntry {
 	}
 
 	Result result = 1;
-	GKCPGGHJIKM cofmckifiap = 2;
+	LootProto rewards = 2;
 	double jegpdbcnfbh = 3;
 }
 
@@ -8420,10 +8398,10 @@ message FortSearchOutProto {
 	int64 pckhecjbpif = 6;
 	int32 gagdinlhnoa = 7;
 	HGIOCLKJMGF mdjnjpgigmo = 8;
-	GKCPGGHJIKM cooebbcjfdg = 9;
-	GKCPGGHJIKM ndlhddjcjfj = 10;
+	LootProto cooebbcjfdg = 9;
+	LootProto ndlhddjcjfj = 10;
 	int32 lipkoeapkce = 11;
-	GKCPGGHJIKM ccfifpejkje = 12;
+	LootProto ccfifpejkje = 12;
 	string lgjffhmjhin = 13;
 	LLFBCGPNFBJ ghmgcnbdhgl = 14;
 	HDJDOLLIMDL cglppgjmpeg = 15;
@@ -8482,6 +8460,15 @@ message FriendDetailsProto {
 
 message FriendProfileSettingsProto {
 	bool kflomgekjlj = 1;
+}
+
+message FriendshipLevelDataProto {
+	int64 eoiegcookna = 1;
+	int32 ickkhpoanjf = 2;
+	FriendshipLevelMilestone fbdbdhnhhan = 3;
+	FriendshipLevelMilestone fnfcloenodi = 4;
+	double ijedhfcnahj = 5;
+	int32 nfijiicbanj = 6;
 }
 
 message FriendshipLevelMilestoneSettingsProto {
@@ -8654,10 +8641,6 @@ message GJOKMKIKNHN {
 	string mnfopjehiaa = 2;
 }
 
-message GKCPGGHJIKM {
-	repeated LootItemProto mjlaajbhiln = 1;
-}
-
 message GLGDEIJBHIH {
 	int32 bmbhdjifdoh = 1;
 }
@@ -8685,8 +8668,8 @@ message GMNOGJDGOJO {
 
 message GNOAIPJAFAN {
 	ShareExRaidPassResult result = 1;
-	FIKFFDLFKAB aojpjlikngg = 2;
-	KIBFGDMAIOM immofggmdoa = 3;
+	FriendshipLevelDataProto aojpjlikngg = 2;
+	PlayerPublicProfileProto immofggmdoa = 3;
 }
 
 message GNPLLDBACCA {
@@ -9002,7 +8985,7 @@ message GetCombatChallengeOutProto {
 	}
 
 	Result result = 1;
-	PEBGPDIDLDK ldjhogpccdg = 2;
+	CombatChallengeProto challenge = 2;
 }
 
 message GetCombatResultsOutProto {
@@ -9014,18 +8997,18 @@ message GetCombatResultsOutProto {
 		ERROR_PLAYER_QUIT = 4;
 	}
 
-	message MAPEDKCIEDK {
+	message CombatRematchProto {
 		string lhhhejmjncp = 1;
 		string iilgeelplpm = 2;
 	}
 
 	Result result = 1;
 	CombatRewardStatus kabpndhhfbm = 2;
-	GKCPGGHJIKM cofmckifiap = 3;
-	IJGPBMKEBJF jelgafeaalk = 4;
+	LootProto rewards = 3;
+	LeveledUpFriendsProto friend_level_up = 4;
 	int32 kjpapbaacbd = 5;
 	CombatPlayerFinishState eodinkcgkmj = 6;
-	MAPEDKCIEDK ijpnhbhnmap = 7;
+	CombatRematchProto ijpnhbhnmap = 7;
 }
 
 message GetDailyEncounterOutProto {
@@ -9104,7 +9087,7 @@ message GetFitnessRewardsOutProto {
 	}
 
 	Result result = 1;
-	GKCPGGHJIKM cofmckifiap = 2;
+	LootProto rewards = 2;
 }
 
 message GetFriendCodeOutProto {
@@ -9857,7 +9840,7 @@ message HKFANABMOCG {
 }
 
 message HLENCOODHDB {
-	map<int32, FGJHDCCIONF> hfddonlkdfo = 1;
+	map<int32, FGJHDCCIONF> badges = 1;
 }
 
 message HMCLCAKJENP {
@@ -10092,7 +10075,7 @@ message ICANBJEMJII {
 	double dhcpcjdefee = 5;
 	double ddgdeapcijd = 6;
 	string jhnggcgifhc = 7;
-	repeated LootItemProto cofmckifiap = 8;
+	repeated LootItemProto rewards = 8;
 }
 
 message ICEICFMNILK {
@@ -10269,11 +10252,6 @@ message IIHIGLFHALN {
 
 message IJEHHALGDFJ {
 	Item lgnagmbnojc = 1;
-}
-
-message IJGPBMKEBJF {
-	repeated KIBFGDMAIOM gpdaenmgefd = 1;
-	repeated FIKFFDLFKAB gchimenchie = 2;
 }
 
 message IJHCOOKGLEO {
@@ -10508,7 +10486,7 @@ message InvasionFinishedDisplayProto {
 
 message InvasionNpcDisplaySettingsProto {
 	string ogmejnnmfma = 1;
-	FKADKBIFECN gmjjdgndkdp = 2;
+	PlayerAvatarProto avatar = 2;
 	string dnliloecmna = 3;
 	string fgpmcccflji = 4;
 	string epnfepfmkad = 5;
@@ -10558,7 +10536,7 @@ message InvasionTelemetry {
 }
 
 message InvasionVictoryLogEntry {
-	GKCPGGHJIKM cofmckifiap = 1;
+	LootProto rewards = 1;
 	EnumWrapper.InvasionCharacter anldkdphhbp = 2;
 }
 
@@ -10932,10 +10910,10 @@ message JPOOLBBGOAD {
 	int32 gpmgiimijfo = 5;
 	LLNLBCHOJDO cgempdjnhib = 6;
 	repeated PPPABJGGHPA nfkiooofkga = 7;
-	repeated GKCPGGHJIKM focfoeomoam = 8;
+	repeated LootProto focfoeomoam = 8;
 	repeated NJLHLODOIMK dciafhecknl = 9;
 	repeated HGIOCLKJMGF hdaaedahibn = 10;
-	repeated GKCPGGHJIKM mejpiialkon = 11;
+	repeated LootProto mejpiialkon = 11;
 	int64 plbffpofghk = 12;
 }
 
@@ -11101,7 +11079,7 @@ message KHFMBLKCFIL {
 	}
 
 	Result result = 1;
-	GKCPGGHJIKM ckbfanpedlk = 2;
+	LootProto ckbfanpedlk = 2;
 	int32 aefojhjkgad = 3;
 	float cbibpmalmgc = 4;
 	DHGMADMONJG nakljlmkehf = 5;
@@ -11115,23 +11093,6 @@ message KHHBGELJFLA {
 message KHOABCGEPOB {
 	string nglliioidjj = 1;
 	PokemonTagColor jdodijhpmid = 2;
-}
-
-message KIBFGDMAIOM {
-	string nglliioidjj = 1;
-	int32 gpffnnkmlom = 2;
-	FKADKBIFECN gmjjdgndkdp = 3;
-	Team gniopdjiakf = 4;
-	int32 ddhgpkeachc = 5;
-	float aodfkjiolia = 6;
-	int32 gmoibhkafaj = 7;
-	GymBadgeType jimpgeoopmn = 8;
-	repeated BALMODJHLLN hfddonlkdfo = 9;
-	int64 igecjknocec = 10;
-	bool ogifkcnmedn = 11;
-	int32 gajmeelegnp = 12;
-	float lfkhpklamcg = 13;
-	BEPEOKHDKBP pjelllclcbl = 14;
 }
 
 message KINGEGPKEID {
@@ -11182,7 +11143,7 @@ message KIPIBAOGKDD {
 	}
 
 	Result result = 1;
-	GKCPGGHJIKM cofmckifiap = 2;
+	LootProto rewards = 2;
 }
 
 message KJIDBPNFEML {
@@ -11259,7 +11220,7 @@ message KLABJPMLLAF {
 
 	Result result = 1;
 	CombatRewardStatus kabpndhhfbm = 2;
-	GKCPGGHJIKM cofmckifiap = 3;
+	LootProto rewards = 3;
 	int32 iiicfoaeefh = 4;
 }
 
@@ -11467,7 +11428,7 @@ message KPFCEHHINKA {
 message KPFGFBJBPEG {
 	HEBEFNGCPAC lkpmjlledgp = 1;
 	DCGGELCEJEE fdelajdcdni = 2;
-	KIBFGDMAIOM glfipcgagfe = 3;
+	PlayerPublicProfileProto glfipcgagfe = 3;
 }
 
 message KPGPPNDCGID {
@@ -11974,6 +11935,11 @@ message LevelUpRewardsSettingsProto {
 	repeated string npaicjembkh = 5;
 }
 
+message LeveledUpFriendsProto {
+	repeated PlayerPublicProfileProto friend_profiles = 1;
+	repeated FriendshipLevelDataProto friend_milestone_levels = 2;
+}
+
 message LimitedPurchaseSkuRecordProto {
 	enum MPECDCKBJME {
 		UNSET = 0;
@@ -12131,6 +12097,10 @@ message LootItemProto {
 	}
 
 	int32 akcjpbnnjoe = 12;
+}
+
+message LootProto {
+	repeated LootItemProto mjlaajbhiln = 1;
 }
 
 message LuckyPokemonSettingsProto {
@@ -12401,7 +12371,7 @@ message MHKGFAEEDEF {
 
 message MHKJHFPLDMN {
 	HADCFOIALEM hnjjngoeila = 1;
-	KIBFGDMAIOM glfipcgagfe = 2;
+	PlayerPublicProfileProto glfipcgagfe = 2;
 	repeated HADCFOIALEM jljbngampnd = 3;
 	repeated HADCFOIALEM dcpggbppfia = 4;
 	repeated JAJMAOGLIBE mifahbideoh = 5;
@@ -12507,7 +12477,7 @@ message MJDCHLCHNKL {
 	}
 
 	Result result = 1;
-	PEBGPDIDLDK ldjhogpccdg = 2;
+	CombatChallengeProto challenge = 2;
 	string gpkjfdmcbah = 3;
 }
 
@@ -12667,7 +12637,7 @@ message MNDNEFLEBKE {
 
 	Result result = 1;
 	int64 epicpfdhekc = 2;
-	repeated BALMODJHLLN hfddonlkdfo = 3;
+	repeated PlayerBadgeProto badges = 3;
 	DKAIOOELNME kfdlikeamka = 4;
 }
 
@@ -13129,7 +13099,7 @@ message NDDIHLLJCBO {
 
 	Status status = 1;
 	int32 nheaaagdjjf = 2;
-	GKCPGGHJIKM gfconeeaanh = 3;
+	LootProto gfconeeaanh = 3;
 	EFPIIHPAKOO omipoecmblc = 4;
 	int32 ndefonigeaa = 5;
 	map<int32, int32> nmbgohpkdfm = 6;
@@ -13215,7 +13185,7 @@ message NFHPLMALMPH {
 	}
 
 	Result result = 1;
-	PEBGPDIDLDK ldjhogpccdg = 2;
+	CombatChallengeProto challenge = 2;
 	string gpkjfdmcbah = 3;
 }
 
@@ -13267,7 +13237,7 @@ message NIBGHIDLPFC {
 
 message NIDLCGBIIJJ {
 	MJOIBDGONKJ apoehjjmaaf = 1;
-	GKCPGGHJIKM ckbfanpedlk = 2;
+	LootProto ckbfanpedlk = 2;
 }
 
 message NIGBBKGDHPI {
@@ -13287,7 +13257,7 @@ message NIHPANCNMIK {
 
 message NJCFMADCEEE {
 	InvasionStatus.Status status = 1;
-	GKCPGGHJIKM cofmckifiap = 2;
+	LootProto rewards = 2;
 	bool akjfoakfbbm = 3;
 }
 
@@ -13467,7 +13437,7 @@ message NamedMapSettings {
 }
 
 message NewQuestProto1 {
-	repeated QuestRewardProto cofmckifiap = 1;
+	repeated QuestRewardProto rewards = 1;
 }
 
 message NewsArticleProto {
@@ -13817,7 +13787,7 @@ message OPAKCMKBLCH {
 	}
 
 	Result result = 1;
-	PEBGPDIDLDK ldjhogpccdg = 2;
+	CombatChallengeProto challenge = 2;
 }
 
 message OPKJJFBEJPP {
@@ -13886,7 +13856,7 @@ message OpenCombatChallengeOutProto {
 	}
 
 	Result result = 1;
-	PEBGPDIDLDK ldjhogpccdg = 2;
+	CombatChallengeProto challenge = 2;
 }
 
 message OpenGiftLogEntry {
@@ -13897,7 +13867,7 @@ message OpenGiftLogEntry {
 
 	Result result = 1;
 	string iglhfcickci = 2;
-	GKCPGGHJIKM items = 3;
+	LootProto items = 3;
 	repeated PokemonProto gbmpmhcbefj = 4;
 }
 
@@ -13915,10 +13885,10 @@ message OpenGiftOutProto {
 	}
 
 	Result result = 1;
-	GKCPGGHJIKM items = 2;
+	LootProto items = 2;
 	PokemonProto cmlmidccdof = 3;
-	FIKFFDLFKAB aojpjlikngg = 4;
-	KIBFGDMAIOM immofggmdoa = 5;
+	FriendshipLevelDataProto aojpjlikngg = 4;
+	PlayerPublicProfileProto immofggmdoa = 5;
 }
 
 message OpenTradingOutProto {
@@ -14036,37 +14006,6 @@ message PDJGMEFJINM {
 message PDMFKGFDNHE {
 	uint64 nbhjllhpakn = 1;
 	repeated uint64 hjccmdkihen = 2;
-}
-
-message PEBGPDIDLDK {
-	enum FJJIDOFFBPA {
-		UNSET = 0;
-		CREATED = 1;
-		OPENED = 2;
-		CANCELLED = 3;
-		ACCEPTED = 4;
-		DECLINED = 5;
-		READY = 6;
-		TIMEOUT = 7;
-	}
-
-	message PCAPFKEMJLN {
-		string ihhoabbcaek = 1;
-		FKADKBIFECN mpfjbggoiea = 2;
-		int64 fgpojghbgfj = 3;
-		repeated uint64 fndobachigg = 4;
-		KIBFGDMAIOM mccdlfkngpd = 5;
-	}
-
-	string bdkigfmmdof = 1;
-	CombatType dofdaglmamd = 2;
-	string iilgeelplpm = 3;
-	PCAPFKEMJLN liffpaapfkf = 5;
-	PCAPFKEMJLN cmafcpelbmb = 6;
-	FJJIDOFFBPA ghmfjbmideb = 7;
-	int64 mggbdcdhifo = 8;
-	int64 eljklhchiio = 19;
-	string obfaehbilki = 20;
 }
 
 message PEHBNAHNLKO {
@@ -14276,7 +14215,7 @@ message PMABDCNJPON {
 	string nglliioidjj = 2;
 	int32 gniopdjiakf = 5;
 	repeated TutorialCompletion inofbkeklcc = 7;
-	FKADKBIFECN injihekejim = 8;
+	PlayerAvatarProto injihekejim = 8;
 	int32 kfnlcpmoiko = 9;
 	int32 dnnjoojaekk = 10;
 	AKFPOKOADBP llnenfemkfe = 11;
@@ -14286,7 +14225,7 @@ message PMABDCNJPON {
 	int32 aolanlomdfo = 15;
 	CFIDMJLDIFA ejppnhnaoag = 16;
 	int64 bddjpmcmiia = 17;
-	FKADKBIFECN eldlbhnmkbf = 18;
+	PlayerAvatarProto eldlbhnmkbf = 18;
 	bool nlaficodngl = 19;
 	KBEKLHHLKIJ chgkpcbbngm = 20;
 	POCHOKFADDC anjcdlnmhjc = 21;
@@ -14437,7 +14376,7 @@ message PasscodeRedemptionFlowResponse {
 
 	Status status = 1;
 	int32 jlfnegfhmnk = 2;
-	repeated OFHOAJBKJOA cofmckifiap = 3;
+	repeated OFHOAJBKJOA rewards = 3;
 	string ibiffpfnajc = 5;
 	bytes hmbdcobeibp = 6;
 }
@@ -14450,7 +14389,7 @@ message PasscodeRewardsLogEntry {
 
 	Result result = 1;
 	string kckcjhljfef = 2;
-	CJLNHNONAJL cofmckifiap = 3;
+	CJLNHNONAJL rewards = 3;
 }
 
 message PermissionsFlowTelemetry {
@@ -14477,6 +14416,41 @@ message PlatypusRolloutSettingsProto {
 	IDKNGOPKHNH nfldljlgmok = 4;
 }
 
+message PlayerAvatarProto {
+	int32 avatar = 8;
+	int32 ibngpakbmpb = 9;
+	int32 ongcnbfbpmd = 10;
+	int32 ljlkacfbolb = 11;
+	int32 djafknkalma = 12;
+	int32 idadfechpck = 13;
+	int32 ijadoejdcdf = 14;
+	int32 lgldpobjlmo = 15;
+	int32 lkabekecndk = 16;
+	string gbpkkebbcmk = 17;
+	string dcpigbgehgl = 18;
+	string oidgaheikcc = 19;
+	string mhhpbolhlbm = 20;
+	string nfjpgjlpioe = 21;
+	string dpknkfodmpl = 22;
+	string bpdjgplcjhj = 23;
+	string aalmilopfhb = 24;
+	string ghpdhnhddpj = 25;
+	string bphkjgklklk = 26;
+	string mdhpgnafjkf = 27;
+	string ighadlaifho = 28;
+	string ifijnkjngbc = 29;
+	string hdjmhnenknd = 30;
+	string hejcdbeemlc = 31;
+}
+
+message PlayerBadgeProto {
+	HoloBadgeType jhpadpfpnbk = 1;
+	int32 cfdpfokpleb = 2;
+	int32 emhpehgpjcl = 3;
+	int32 jlijhjiaccd = 4;
+	double menakldmnlm = 5;
+}
+
 message PlayerCameraProto {
 	bool jnloholfmgm = 1;
 }
@@ -14498,6 +14472,23 @@ message PlayerLevelSettingsProto {
 	int32 bplibkldmgb = 6;
 	int32 mlfkkdncnbh = 7;
 	int32 ccanacknhjj = 8;
+}
+
+message PlayerPublicProfileProto {
+	string nglliioidjj = 1;
+	int32 gpffnnkmlom = 2;
+	PlayerAvatarProto avatar = 3;
+	Team gniopdjiakf = 4;
+	int32 ddhgpkeachc = 5;
+	float aodfkjiolia = 6;
+	int32 gmoibhkafaj = 7;
+	GymBadgeType jimpgeoopmn = 8;
+	repeated PlayerBadgeProto badges = 9;
+	int64 igecjknocec = 10;
+	bool ogifkcnmedn = 11;
+	int32 gajmeelegnp = 12;
+	float lfkhpklamcg = 13;
+	TimedGroupChallengePlayerStatsProto timed_group_challenge_stats = 14;
 }
 
 message PlayerSettingsProto {
@@ -18514,7 +18505,7 @@ message SubmitCombatChallengePokemonsOutProto {
 	}
 
 	Result result = 1;
-	PEBGPDIDLDK ldjhogpccdg = 2;
+	CombatChallengeProto challenge = 2;
 }
 
 message SubmitNewPoiOutProto {
@@ -18639,6 +18630,15 @@ message TemporaryEvolutionSettingsProto {
 	repeated IDNCFDEGCAA cgllppbjjpd = 2;
 }
 
+message TimedGroupChallengePlayerStatsProto {
+	message FDCAKMMOBLB {
+		string bdkigfmmdof = 1;
+		int32 ljifbcoikii = 2;
+	}
+
+	repeated FDCAKMMOBLB nlneiaciaci = 1;
+}
+
 message TradePokemonQuestProto {
 	repeated string gjfilefglid = 1;
 }
@@ -18653,8 +18653,8 @@ message TradingLogEntry {
 	string iglhfcickci = 2;
 	PokemonProto ljnnhkmphgk = 3;
 	PokemonProto mlipgiloljj = 4;
-	GKCPGGHJIKM cofmckifiap = 5;
-	GKCPGGHJIKM kngbenkheca = 6;
+	LootProto rewards = 5;
+	LootProto kngbenkheca = 6;
 }
 
 message TradingProto {
@@ -18717,11 +18717,11 @@ message TradingProto {
 		}
 
 		string ihhoabbcaek = 1;
-		KIBFGDMAIOM mccdlfkngpd = 2;
+		PlayerPublicProfileProto mccdlfkngpd = 2;
 		repeated JCMIPENCAMH jjmeeidmemb = 3;
 		BHDEPFBJNKF melnadlidei = 4;
-		GKCPGGHJIKM amnmginicem = 5;
-		GKCPGGHJIKM kngbenkheca = 6;
+		LootProto amnmginicem = 5;
+		LootProto kngbenkheca = 6;
 		bool cbiekccnedm = 7;
 		bool lcfglnaeblm = 8;
 	}
@@ -18732,9 +18732,9 @@ message TradingProto {
 	MPHNKCAKIFO abfeaaekgme = 4;
 	int64 hbljdccleed = 5;
 	string dfdbfnajipc = 6;
-	FIKFFDLFKAB npjknmbmolk = 7;
+	FriendshipLevelDataProto npjknmbmolk = 7;
 	bool ledbbbhpajb = 8;
-	FIKFFDLFKAB nfcdanihlff = 9;
+	FriendshipLevelDataProto nfcdanihlff = 9;
 }
 
 message TransferPokemonToPokemonHomeOutProto {
@@ -19121,7 +19121,7 @@ message VsSeekerCompleteSeasonLogEntry {
 	}
 
 	Result result = 1;
-	GKCPGGHJIKM cofmckifiap = 2;
+	LootProto rewards = 2;
 	int32 cfdpfokpleb = 3;
 	float ehgaodldjhi = 4;
 }
@@ -19197,7 +19197,7 @@ message VsSeekerSetLogEntry {
 	}
 
 	Result result = 1;
-	GKCPGGHJIKM cofmckifiap = 2;
+	LootProto rewards = 2;
 	int32 aefojhjkgad = 3;
 	float cbibpmalmgc = 4;
 	int32 pkgccjhcjln = 5;
@@ -19213,7 +19213,7 @@ message VsSeekerWinRewardsLogEntry {
 	}
 
 	Result result = 1;
-	GKCPGGHJIKM cofmckifiap = 2;
+	LootProto rewards = 2;
 	int32 cfdpfokpleb = 3;
 	int32 oipopkkcbbc = 4;
 }
