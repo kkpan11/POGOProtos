@@ -4526,6 +4526,11 @@ message AddLoginActionProto {
 	string auth_provider_id = 3;
 }
 
+message AddressablePokemonSettings {
+	int32 iphnfdeaneh = 1;
+	repeated HoloPokemonId hmlggdfblkd = 2;
+}
+
 message AdventureSyncSettingsProto {
 	bool fitness_service_enabled = 1;
 	bool awareness_service_enabled = 2;
@@ -8828,7 +8833,7 @@ message GameMasterClientTemplateProto {
 	IncidentPrioritySettingsProto incident_priority_settings = 108;
 	ReferralSettingsProto referral_settings = 109;
 	AppraisalStarThresholdSettings appraisal_star_threshold_settings = 112;
-	UnnamedTemplate1 unnamed_template_1 = 116;
+	AddressablePokemonSettings addressable_pokemon_settings = 116;
 }
 
 message GameMasterLocalProto {
@@ -18784,11 +18789,6 @@ message TutorialCreateDetail {
 message TypeEffectiveSettingsProto {
 	HoloPokemonType hcljfpjkcbh = 2;
 	repeated float obppbcnabkh = 3;
-}
-
-message UnnamedTemplate1 {
-	int32 iphnfdeaneh = 1;
-	repeated HoloPokemonId hmlggdfblkd = 2;
 }
 
 message UpdateAdventureSyncFitnessResponseProto {
