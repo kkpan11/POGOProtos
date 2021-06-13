@@ -10,8 +10,8 @@ python:
   - "3.8"
 install:
   - pushd /tmp
-  - wget https://github.com/protocolbuffers/protobuf/releases/download/v3.17.2/protoc-3.17.2-linux-x86_64.zip
-  - unzip protoc-3.17.2-linux-x86_64.zip
+  - wget https://github.com/protocolbuffers/protobuf/releases/download/v3.17.3/protoc-3.17.3-linux-x86_64.zip
+  - unzip protoc-3.17.3-linux-x86_64.zip
   - popd
   - export PATH=/tmp/bin:$PATH
   - chmod +x ./compile_base.py
@@ -19,5 +19,5 @@ script:
   # Generates remaster_all(), base(), generate_new(), generate_files(), out_mode(cpp)...
   - ./compile_base.py -g -b -gf
   - clang-format-3.8 -i -style file $(find base -name "base.proto")
-  - clang-format-3.8 -i -style file $(find base -name "v0.209.0_p_obf.proto")
+  - clang-format-3.8 -i -style file $(find base -name "v0.211.0_p_obf.proto")
   # - git diff --exit-code
