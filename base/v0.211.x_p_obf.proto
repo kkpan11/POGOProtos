@@ -5293,6 +5293,12 @@ message BattleQuestProto {
 	repeated string naeldnmjllo = 1;
 }
 
+message BattleVisualSettings {
+	bool oipfhcibook = 1;
+	string mcbggihkonk = 2;
+	string pcalpilnomk = 4;
+}
+
 message BelugaDailyTransferLogEntry {
 	enum Result {
 		UNSET = 0;
@@ -7054,17 +7060,6 @@ message DJPDAAIKLLG {
 	string aohjlaifgbg = 8;
 	repeated string ndhmbaeamig = 9;
 	int64 bojjmeikdhn = 10;
-}
-
-message DKHEPHBHELD {
-	message FPALFNPMBJL {
-		PokemonCategory bolgjjidlgh = 1;
-		int32 ajgedipleeh = 2;
-		bool fdmpfpjgbia = 3;
-	}
-
-	bool oihdcfobhmd = 1;
-	repeated FPALFNPMBJL knjgmkkamjp = 2;
 }
 
 message DKKELIEKLHD {
@@ -9150,12 +9145,6 @@ message GJHAAKDBLJD {
 	uint64 opceehgelkl = 2;
 }
 
-message GKELCBMODAJ {
-	bool oipfhcibook = 1;
-	string mcbggihkonk = 2;
-	string pcalpilnomk = 4;
-}
-
 message GKEODCNFENB {
 	enum Status {
 		UNSET = 0;
@@ -9371,10 +9360,10 @@ message GameMasterClientTemplateProto {
 	IncidentPrioritySettingsProto incident_priority_settings = 108;
 	ReferralSettingsProto referral_settings = 109;
 	AppraisalStarThresholdSettings appraisal_star_threshold_settings = 112;
-	DKHEPHBHELD gcjmbmjjlog = 114;
-	GKELCBMODAJ bnjfndedmeg = 115;
+	PokedexCategoriesSettings pokedex_categories_settings = 114;
+	BattleVisualSettings battle_visual_settings = 115;
 	AddressablePokemonSettings addressable_pokemon_settings = 116;
-	HKLIMPNJDAK nhgldooikff = 117;
+	VerboseLogRaidSettings verbose_log_raid_settings = 117;
 	MJCFMANKFCD llckphemjoi = 118;
 	FMHHDBKCDJD lapnnbeaobh = 119;
 	EADHGDAIBEI ejheefjcpho = 120;
@@ -10458,25 +10447,6 @@ message HKLFJNALIOK {
 	double lpficocekkb = 6;
 	double felalagnhii = 7;
 	string dcglgefgfpm = 8;
-}
-
-message HKLIMPNJDAK {
-	bool kcdebpecmpg = 1;
-	bool ffjeojkpgpa = 2;
-	bool mebcaomeddm = 3;
-	bool kjbpcmjhfdb = 4;
-	bool ojoolddepmp = 5;
-	bool ffnebilonlg = 6;
-	bool ekmakmfgchc = 7;
-	bool ffdmnekgmai = 8;
-	bool knpbbdcamnk = 9;
-	bool jffhcilhlfj = 10;
-	bool pgeafkagnpl = 11;
-	bool mnombdgclfd = 12;
-	bool efnmpfjcpaj = 13;
-	bool bjcdfngdppp = 14;
-	bool ldacjjmkipj = 15;
-	int32 pmfcakapakp = 16;
 }
 
 message HLKLLLNEOHG {
@@ -15177,6 +15147,17 @@ message PokecoinPurchaseDisplayGmtProto {
 	bool oihdcfobhmd = 1;
 }
 
+message PokedexCategoriesSettings {
+	message FPALFNPMBJL {
+		PokemonCategory bolgjjidlgh = 1;
+		int32 ajgedipleeh = 2;
+		bool fdmpfpjgbia = 3;
+	}
+
+	bool oihdcfobhmd = 1;
+	repeated FPALFNPMBJL knjgmkkamjp = 2;
+}
+
 message PokedexCategorySelectedTelemetry {
 	PokemonCategory category = 1;
 }
@@ -19605,6 +19586,25 @@ message VasaClientAction {
 	}
 
 	ActionEnum action = 1;
+}
+
+message VerboseLogRaidSettings {
+	bool kcdebpecmpg = 1;
+	bool ffjeojkpgpa = 2;
+	bool mebcaomeddm = 3;
+	bool kjbpcmjhfdb = 4;
+	bool ojoolddepmp = 5;
+	bool ffnebilonlg = 6;
+	bool ekmakmfgchc = 7;
+	bool ffdmnekgmai = 8;
+	bool knpbbdcamnk = 9;
+	bool jffhcilhlfj = 10;
+	bool pgeafkagnpl = 11;
+	bool mnombdgclfd = 12;
+	bool efnmpfjcpaj = 13;
+	bool bjcdfngdppp = 14;
+	bool ldacjjmkipj = 15;
+	int32 pmfcakapakp = 16;
 }
 
 message ViewPointOfInterestImageTelemetry {
