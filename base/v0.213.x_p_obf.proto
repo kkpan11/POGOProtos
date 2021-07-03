@@ -4013,12 +4013,6 @@ enum WebTelemetryIds {
 	WEB_TELEMETRY_IDS_POINT_OF_INTEREST_DESCRIPTION_WEB_CLICK = 1;
 }
 
-message AAACADLGHFC {
-	bool mccdalkggbb = 1;
-	int32 ainbfdmobhf = 2;
-	bool jfcooojomlm = 3;
-}
-
 message AACODJHPKEI {
 	enum Result {
 		UNSET = 0;
@@ -4202,15 +4196,6 @@ message AHEMKEPEIJD {
 	string gfpgenlohgh = 1;
 }
 
-message AHOFPBOGDNH {
-	message BFJKCPMNIFJ {
-		int32 oknomccknkg = 1;
-		int32 okhjoglleba = 2;
-	}
-
-	repeated BFJKCPMNIFJ lidkcmaglkk = 3;
-}
-
 message AJKCIAABKPK {
 	enum Status {
 		UNSET = 0;
@@ -4310,15 +4295,6 @@ message APDKPENOCAC {
 	bool ecjdboljmff = 5;
 	RouteImageProto kgegolmdahd = 6;
 	int32 bhiikhplnne = 7;
-}
-
-message APENEDFCKPJ {
-	repeated string ganlmpgkokd = 1;
-	bool kdpjhcbgbkd = 2;
-	bool pbgbnmdpcag = 3;
-	string geckdgkjkhl = 4;
-	bool dibcmoifllj = 5;
-	string jpjcpidkkha = 6;
 }
 
 message ARBuddyMultiplayerSessionTelemetry {
@@ -4500,6 +4476,35 @@ message ArMappingSessionTelemetryProto {
 	bool fulfilled_geotargeted_quest = 1;
 }
 
+message ArMappingSettingsProto {
+	int32 khcofaofnbo = 1;
+	int32 ojcplepoobn = 2;
+	int32 jmfgjcjjgee = 3;
+	int32 fpnhidcdgcp = 4;
+	int32 kdaofnjhkhh = 5;
+	int32 fbobkkmcdgh = 6;
+	int32 olgopnpdfec = 7;
+	int32 ohajmpkpfep = 8;
+	int32 cpngfoinamj = 9;
+	int32 oeonaeneioo = 10;
+	int32 bafommgpkld = 11;
+	int32 lpbikmhmfpf = 12;
+	int32 pjhicnfeoae = 13;
+	bool dlohmcpndcd = 14;
+	int32 lkdcdlhddoi = 15;
+	bool mehomfcgech = 16;
+	float gakddibpobm = 17;
+	float ihpoclghiac = 18;
+	float aacgophgacd = 19;
+	float echibnifnop = 20;
+	float mdeeidcemah = 21;
+	float ephnfnoblgp = 22;
+	float hjpnecjodia = 23;
+	float kefpapfklae = 24;
+	float dohajjngnoi = 25;
+	bool lgaaknhehjp = 26;
+}
+
 message ArMappingTelemetryProto {
 	enum ArMappingEntryPoint {
 		UNKNOWN_ENTRY = 0;
@@ -4552,6 +4557,10 @@ message ArMappingTelemetryProto {
 	float percent_encoded = 5;
 	int64 data_size_bytes = 6;
 	ArMappingValidationFailureReason validation_failure_reason = 7;
+}
+
+message ArPhotoGlobalSettings {
+	int32 hlloekbjpnn = 1;
 }
 
 message ArPhotoSessionProto {
@@ -4641,6 +4650,24 @@ message ArTelemetrySettingsProto {
 	bool ongfkffalmo = 5;
 	int32 onlooklehgf = 6;
 	float jmflkcdolfo = 7;
+}
+
+message ArdkConfigSettingsProto {
+	enum HMLFIPLJHHO {
+		UNSET = 0;
+		AR_ENCOUNTER = 1;
+		AR_SNAPSHOT = 2;
+		SINGLEPLAYER_BUDDY = 3;
+		MULTIPLAYER_BUDDY = 4;
+	}
+
+	string jgjoakpigid = 1;
+	string klcfjdhdjil = 2;
+	repeated string iikcjbgkjmg = 3;
+	repeated HMLFIPLJHHO lliklnoedhp = 4;
+	string bghbciadahl = 5;
+	string hchbghjelbb = 6;
+	string dhncbcbghni = 7;
 }
 
 message AssetBundleDownloadTelemetry {
@@ -4795,6 +4822,10 @@ message AvatarCustomizationTelemetry {
 	bool has_enough_coins = 4;
 	string group_name = 5;
 	string color_choice_id = 6;
+}
+
+message AvatarGlobalSettingsProto {
+	bool filkgneipof = 1;
 }
 
 message AvatarGroupOrderSettingsProto {
@@ -5282,11 +5313,6 @@ message BMNCPOBADOP {
 	string mbfcdicahha = 1;
 }
 
-message BNCAGHFPFNN {
-	bool jadgfgidhbm = 1;
-	uint32 hlloekbjpnn = 2;
-}
-
 message BOAIGIEAAJO {
 	bool mpfinkoafhf = 1;
 	PINOBHOANAJ hegblaahehp = 2;
@@ -5320,11 +5346,6 @@ message BOGKNMLKIKL {
 	bytes ohokmbheocc = 3;
 }
 
-message BPKIDAIDJGC {
-	bool efmggdnaogc = 1;
-	int32 apmmilhiakl = 2;
-}
-
 message BPMLIJELJCA {
 }
 
@@ -5339,6 +5360,11 @@ message BPNOCPABDHB {
 	int32 gimlmmpmiof = 8;
 	bool jipmikeikdo = 9;
 	bool njncdnofebm = 10;
+}
+
+message BackgroundModeGlobalSettingsProto {
+	uint32 kehhmojmooh = 1;
+	int64 nnapfdpiafe = 2;
 }
 
 message BackgroundModeSettingsProto {
@@ -5482,6 +5508,11 @@ message BelugaDailyTransferLogEntry {
 	LootProto kaicaocodbg = 3;
 }
 
+message BelugaGlobalSettingsProto {
+	bool epmejnfdkhk = 1;
+	int32 dfcnccpofjc = 2;
+}
+
 message BelugaIncenseBoxProto {
 	bool lmffhkcicbp = 1;
 	int64 lmoiibonohe = 2;
@@ -5534,6 +5565,10 @@ message BoundingRect {
 	double south = 2;
 	double east = 3;
 	double west = 4;
+}
+
+message BranchingQuestProto {
+	repeated QuestRewardProto rewards = 1;
 }
 
 message BuddyActivityCategorySettings {
@@ -5595,6 +5630,25 @@ message BuddyFeedingOutProto {
 	Result result = 1;
 	BuddyObservedData pfncpjkmfnk = 3;
 	HFAFOMAIGDO.EIPFLCOMCIC llopjekkcpi = 4;
+}
+
+message BuddyGlobalSettingsProto {
+	int32 blafckahaae = 1;
+	int32 palaiflpeje = 2;
+	bool mghkijobfjj = 3;
+	repeated string iikcjbgkjmg = 4;
+	int32 nbpidokekjh = 5;
+	int32 ifahhbilabd = 6;
+	int32 plapbggmpef = 7;
+	int32 cemnmkpkjnd = 8;
+	int32 engpdncgddn = 9;
+	bool dogeopfcjog = 10;
+	int32 lpdglamfhhc = 11;
+	int32 koglbbajkhf = 12;
+	bool iihaimhical = 13;
+	int32 ifacpeodefj = 14;
+	string eahlppcmjgp = 15;
+	bool eageaiinbfg = 16;
 }
 
 message BuddyHungerSettings {
@@ -5791,17 +5845,6 @@ message CDECBLPBMNM {
 	int32 dkdjgbobnmf = 22;
 }
 
-message CDKGJHCOKDP {
-	float fkmgoedcgmo = 1;
-	float jkeklfnkoin = 2;
-	float nbonlnndbfm = 3;
-	int32 pblfjoihfla = 4;
-	float nmjcbhlmmcm = 5;
-	int32 aiioljdiegg = 6;
-	float lfcdagodfhn = 7;
-	int32 khhjiafnpgp = 8;
-}
-
 message CDMNHBAFMFE {
 	enum Result {
 		UNSET = 0;
@@ -5875,20 +5918,8 @@ message CGDBHJAFKGN {
 	Result result = 1;
 }
 
-message CGKOELCNOHO {
-	int64 iplggmfddom = 1;
-	int64 mabioklfimh = 2;
-}
-
 message CGOBFPFCBAN {
 	uint64 ejmmbjgoacn = 1;
-}
-
-message CHOFJFFPEBN {
-	bool nicmikkchbn = 1;
-	bool jiajomlfoin = 2;
-	bool pdkiicpcgdk = 3;
-	bool ncbkakhcadl = 4;
 }
 
 message CHPFAIKNPHE {
@@ -5920,22 +5951,6 @@ message CJAHMELFKEF {
 	string chnllogjggi = 10;
 }
 
-message CJHLADKODCA {
-	bool ncmnojglehc = 1;
-	int32 loanigolnbj = 2;
-	int32 eaifcjdhicn = 3;
-	int32 djcoanlecjb = 4;
-	bool fmehhomdooj = 5;
-	bool chnlfdaldic = 6;
-	bool abldongcnco = 7;
-	int32 iahdlphgmfc = 8;
-	bool lppkmmiigmm = 9;
-	bool iancbajkigk = 11;
-	bool mgllnigemhn = 12;
-	bool npdflnchmlm = 13;
-	FAGPPGBBLNM cross_game_social_settings = 14;
-}
-
 message CJJMEHJBMOO {
 	string gfpgenlohgh = 1;
 }
@@ -5956,22 +5971,6 @@ message CMAMLMKKANN {
 }
 
 message CMKMHDNKCPM {
-}
-
-message CNCJEACFPHC {
-	double jbombjhpike = 1;
-	int32 bifjchhbmgo = 2;
-	int32 alcpeagoafh = 3;
-	double gekepghpomp = 4;
-	double eiaojhaaajn = 5;
-	double pnpdffphkck = 6;
-	bool khobmnnnikg = 7;
-	int32 bllbgdkocbc = 8;
-	int32 dbgpmiiklhk = 9;
-	bool cbnhdlpmlom = 10;
-	bool ofibemlieal = 11;
-	bool napdbgjccho = 12;
-	double dpdgedfpphc = 13;
 }
 
 message CNHOKKFDLGD {
@@ -6011,11 +6010,6 @@ message CNJFGEIKHHK {
 	repeated int64 ldejgmecdga = 8;
 }
 
-message CNKEIOGOMHA {
-	bool nicmikkchbn = 1;
-	bool mehcnekhkcj = 2;
-}
-
 message COCMMCDOAIG {
 	bool oeiahklghgm = 1;
 	int32 ecohfhkmjkm = 2;
@@ -6032,12 +6026,6 @@ message CPEGOPOJHOK {
 	FFFNHPFDKFP aelhcfpjnbh = 3;
 	FFFNHPFDKFP jjapkkefmol = 4;
 	FriendshipLevelMilestone ppdeleodfoj = 5;
-}
-
-message CPFNMPLMKFI {
-	string ejnmnnghipg = 1;
-	bool biakipeajia = 2;
-	bool iaeiifpknba = 3;
 }
 
 message CPGOOJEPPMF {
@@ -6089,6 +6077,11 @@ message CancelMatchmakingOutProto {
 	}
 
 	Result result = 1;
+}
+
+message CatchPokemonGlobalSettingsProto {
+	bool kfnfglppiim = 1;
+	bool kdcjljgoben = 2;
 }
 
 message CatchPokemonLogEntry {
@@ -6290,6 +6283,13 @@ message ClientInvasionBattleStepProto {
 message ClientInvasionEncounterStepProto {
 }
 
+message ClientPerformanceSettingsProto {
+	bool mnamlpmbmbi = 1;
+	int32 cpmhebpnlgj = 2;
+	bool jmfhhfclomb = 3;
+	bool nokjnbedlek = 4;
+}
+
 message ClientPokestopNpcDialogueStepProto {
 	repeated ClientDialogueLineProto dialogue_line = 1;
 }
@@ -6419,6 +6419,13 @@ message CollectDailyDefenderBonusOutProto {
 	int32 nkfkgjipcgj = 4;
 }
 
+message CombatChallengeGlobalSettingsProto {
+	FriendshipLevelMilestone kjpjbnpoelm = 1;
+	int32 njlbplkidca = 2;
+	bool ekaejbilalf = 3;
+	bool odobikmpaib = 4;
+}
+
 message CombatChallengeProto {
 	enum CombatChallengeState {
 		UNSET = 0;
@@ -6454,6 +6461,33 @@ message CombatCompetitiveSeasonSettingsProto {
 	repeated uint64 mlngiibigea = 1;
 	float poebplhmbil = 2;
 	float iacpjncoapn = 3;
+}
+
+message CombatGlobalSettingsProto {
+	bool fkndfimniik = 1;
+	int32 bdefjpcmokp = 2;
+	bool bkpciaenjnk = 3;
+	uint32 epbjojikgcg = 4;
+	int32 dollncgdedl = 5;
+	int32 gckclonlbff = 6;
+	int32 komnngpbcpc = 7;
+	int32 dklkjlfefhn = 8;
+	int32 mhdfgamnckb = 9;
+	int32 ppchaobacfc = 10;
+	bool ehcpfinhmpi = 11;
+	bool kedgiebdlmi = 12;
+	bool eeefcgcalcm = 13;
+	bool klhlioplpcp = 14;
+	int32 ahlggodolap = 15;
+	int32 njjbbginnin = 16;
+	int32 dhkobmiildo = 17;
+	bool cjahoplcaaf = 18;
+	bool madmdgmcpal = 19;
+	bool akfejmjllck = 20;
+	bool bppgnljdjnk = 21;
+	int32 bljmoakgleb = 22;
+	int64 memepojmdlm = 23;
+	int32 dlkidnpalpd = 24;
 }
 
 message CombatHubEntranceTelemetry {
@@ -6963,6 +6997,11 @@ message ConfirmTradingOutProto {
 	TradingProto lmeeloljgnm = 2;
 }
 
+message CrashlyticsSettingsProto {
+	bool nicmikkchbn = 1;
+	float kcplmellmjn = 2;
+}
+
 message CreatePokemonTagOutProto {
 	enum Result {
 		UNSET = 0;
@@ -7096,15 +7135,6 @@ message DGPHJDMBPKB {
 	PokemonDisplayProto dahnkagchnd = 7;
 }
 
-message DHDNEJADMFA {
-	uint32 hlloekbjpnn = 1;
-	uint32 khfhfohjogm = 2;
-}
-
-message DHODFHNNIGM {
-	int32 hlloekbjpnn = 1;
-}
-
 message DIGCGHGHMLH {
 	enum Result {
 		UNSET = 0;
@@ -7116,10 +7146,6 @@ message DIGCGHGHMLH {
 	CombatRewardStatus lakoghjljeo = 2;
 	LootProto rewards = 3;
 	int32 ohaimgbacpg = 4;
-}
-
-message DIHDPAOGLCA {
-	bool oeiahklghgm = 1;
 }
 
 message DIHMHACPKDK {
@@ -7286,10 +7312,6 @@ message DJKPCDPAODG {
 	int32 enpiohgfman = 25;
 }
 
-message DKLLOPHPFCG {
-	bool filkgneipof = 1;
-}
-
 message DLALFFALEOH {
 	enum Result {
 		UNSET = 0;
@@ -7437,6 +7459,10 @@ message DailyCounterProto {
 	int64 jjngfpdnedm = 1;
 	int32 mbaoofhhcme = 2;
 	int32 abcefjjhfnp = 3;
+}
+
+message DailyEncounterGlobalSettingsProto {
+	bool nicmikkchbn = 1;
 }
 
 message DailyQuestProto {
@@ -7719,7 +7745,7 @@ message DownloadSettingsActionProto {
 message DownloadSettingsResponseProto {
 	string error = 1;
 	string sha1 = 2;
-	bytes values = 3;
+	GlobalSettingsProto values = 3;
 }
 
 message EACPGKANAOD {
@@ -7875,13 +7901,6 @@ message EDENLFGOMKB {
 }
 
 message EDHHFCOMFIM {
-}
-
-message EDLMCCMAMDN {
-	bool daljpjpkfgp = 1;
-	int32 ejokahcdpab = 2;
-	bool dcjfccajdod = 3;
-	int64 loompdglaem = 4;
 }
 
 message EEBHDOHBNAF {
@@ -8119,11 +8138,6 @@ message ENDGKEOGGFN {
 	Item dbfnganbcbj = 3;
 }
 
-message ENEBNPICHHC {
-	bool nicmikkchbn = 1;
-	float kcplmellmjn = 2;
-}
-
 message EPMAFPIDOEH {
 	string jmpfejbnopf = 1;
 	string hbncfdhcbgl = 2;
@@ -8159,6 +8173,15 @@ message EggIncubatorsProto {
 
 message EggTransparencySettingsProto {
 	bool jokiocececp = 1;
+}
+
+message EnabledPokemonSettingsProto {
+	message BFJKCPMNIFJ {
+		int32 oknomccknkg = 1;
+		int32 okhjoglleba = 2;
+	}
+
+	repeated BFJKCPMNIFJ lidkcmaglkk = 3;
 }
 
 message EncounterOutProto {
@@ -8381,6 +8404,19 @@ message EquippedBadgeSettingsProto {
 	repeated float nhemakmoebd = 3;
 }
 
+message EventSettingsProto {
+	repeated string ganlmpgkokd = 1;
+	bool kdpjhcbgbkd = 2;
+	bool pbgbnmdpcag = 3;
+	string geckdgkjkhl = 4;
+	bool dibcmoifllj = 5;
+	string jpjcpidkkha = 6;
+}
+
+message EvolutionV2SettingsProto {
+	bool oeiahklghgm = 1;
+}
+
 message EvolveIntoPokemonQuestProto {
 	repeated HoloPokemonId hbioocfbifi = 1;
 }
@@ -8503,18 +8539,9 @@ message FFGBPHGKMIN {
 	HoloPokemonMove gnhngkmkdon = 4;
 }
 
-message FFKELGMMAKN {
-	double jhdjhhgghbd = 2;
-	double pkgdgbnnhkg = 3;
-}
-
 message FFMMABLKBDB {
 	ICMIIEJBFPA.Result result = 1;
 	FriendshipLevelMilestone ppdeleodfoj = 8;
-}
-
-message FFNPINJAFHG {
-	repeated HEPBCIGBEJI igflaffhihe = 1;
 }
 
 message FFPPDBHIHBG {
@@ -8563,10 +8590,6 @@ message FHNJNEMBGHJ {
 	}
 
 	Result result = 1;
-}
-
-message FHNNBHOHMAK {
-	bool hcbljpdkpkp = 1;
 }
 
 message FILIBNMJOBH {
@@ -8654,10 +8677,6 @@ message FLCDHMLBPKE {
 	Item item = 1;
 	int32 nbbdackhljm = 2;
 	int32 fehdkndlhff = 3;
-}
-
-message FLDMANADCCJ {
-	int32 jkohcljghfl = 1;
 }
 
 message FLGEKHNFMMB {
@@ -8797,6 +8816,10 @@ message FitnessRewardsLogEntry {
 	double chiocikmkjn = 3;
 }
 
+message FormChangeSettingsProto {
+	bool nicmikkchbn = 1;
+}
+
 message FormSettingsProto {
 	HoloPokemonId pokemon = 1;
 	repeated CFIBALIHKNF padbdgepich = 2;
@@ -8873,6 +8896,22 @@ message FortSearchOutProto {
 	PNHHACNLCHN oaljgcemkod = 14;
 	JCPJCLKAJID mhgmfagieji = 15;
 	NLMOFNMDHNK jkgmfmbejbg = 16;
+}
+
+message FortSettingsProto {
+	double jbombjhpike = 1;
+	int32 bifjchhbmgo = 2;
+	int32 alcpeagoafh = 3;
+	double gekepghpomp = 4;
+	double eiaojhaaajn = 5;
+	double pnpdffphkck = 6;
+	bool khobmnnnikg = 7;
+	int32 bllbgdkocbc = 8;
+	int32 dbgpmiiklhk = 9;
+	bool cbnhdlpmlom = 10;
+	bool ofibemlieal = 11;
+	bool napdbgjccho = 12;
+	double dpdgedfpphc = 13;
 }
 
 message FortSponsor {
@@ -8973,13 +9012,6 @@ message GAGJNFKDJJM {
 	int32 hoikgffcebe = 2;
 }
 
-message GBGMJPAGNCH {
-	bool dddpdlppilj = 1;
-	repeated string aafpflmhkab = 2;
-	repeated string jfmofeagfem = 3;
-	bool hfckfhchhnm = 4;
-}
-
 message GBJBNLGEIIB {
 	string mijegmgekep = 1;
 	PokemonProto pokemon = 2;
@@ -9033,13 +9065,6 @@ message GCJPNHEODFO {
 	DDPDIMMOKKL nbfbdficjac = 1;
 }
 
-message GCKPBDAJNMJ {
-	FriendshipLevelMilestone kjpjbnpoelm = 1;
-	int32 njlbplkidca = 2;
-	bool ekaejbilalf = 3;
-	bool odobikmpaib = 4;
-}
-
 message GCKPDDIDCDF {
 	string necablielnj = 1;
 	bool gfljpgpohgl = 2;
@@ -9050,13 +9075,6 @@ message GCMCANABPND {
 	string gfpgenlohgh = 1;
 	repeated uint64 gkpdigbfcpp = 2;
 	int64 hbfigkaobhl = 3;
-}
-
-message GCOOJOAGCJC {
-	bool mnamlpmbmbi = 1;
-	int32 cpmhebpnlgj = 2;
-	bool jmfhhfclomb = 3;
-	bool nokjnbedlek = 4;
 }
 
 message GDGJPGOOPMJ {
@@ -9200,10 +9218,6 @@ message GIDOGICEJDE {
 	uint32 kjjoibpffdc = 9;
 }
 
-message GIFAJMOENKK {
-	bool nicmikkchbn = 1;
-}
-
 message GIJBCCADFCA {
 	int32 hnbbbneppcd = 1;
 	int32 eecehmmgdnb = 2;
@@ -9281,11 +9295,6 @@ message GPCCBGBFCFP {
 message GPFHIOKADLM {
 }
 
-message GPFPPENNPFI {
-	Store egnfhnbagfm = 1;
-	IapLibraryVersion kfgcnmnmolj = 2;
-}
-
 message GPHGDNCCGPF {
 	enum Result {
 		UNSET = 0;
@@ -9299,10 +9308,6 @@ message GPHGDNCCGPF {
 	IMALCKDPOGO omdaaipkmip = 3;
 	Item aenldjciked = 4;
 	int32 niggdmbcpnn = 5;
-}
-
-message GPHIGFEAPJL {
-	int32 hlloekbjpnn = 1;
 }
 
 message GPNEIIEAIAC {
@@ -10165,12 +10170,97 @@ message GiftBoxesProto {
 	repeated JCPJCLKAJID fmommmephmh = 1;
 }
 
+message GlobalSettingsProto {
+	FortSettingsProto fort_settings = 2;
+	MapSettingsProto map_settings = 3;
+	LevelSettingsProto level_settings = 4;
+	InventorySettingsProto inventory_settings = 5;
+	string minimum_client_version = 6;
+	GpsSettingsProto gps_settings = 7;
+	FestivalSettingsProto ocfchpiokln = 8;
+	EventSettingsProto event_settings = 9;
+	int32 max_pokemon_types = 10;
+	SfidaGlobalSettingsProto sfida_settings = 11;
+	NewsSettingProto news_settings = 12;
+	TranslationSettingsProto translation_settings = 13;
+	PasscodeSettingsProto passcode_settings = 14;
+	NotificationSettingsProto notification_settings = 15;
+	repeated string client_app_blacklist = 16;
+	ClientPerformanceSettingsProto client_perf_settings = 17;
+	NewsGlobalSettingsProto news_global_settings = 18;
+	QuestGlobalSettingsProto quest_global_settings = 19;
+	BelugaGlobalSettingsProto beluga_global_settings = 20;
+	TelemetryGlobalSettingsProto telemetry_global_settings = 21;
+	LoginSettingsProto login_settings = 22;
+	SocialClientSettingsProto social_settings = 23;
+	TradingGlobalSettingsProto trading_global_settings = 24;
+	repeated HoloPokemonId mbfadokokal = 25;
+	UpsightLoggingSettingsProto upsight_logging_settings = 26;
+	CombatGlobalSettingsProto combat_global_settings = 27;
+	ThirdMoveGlobalSettingsProto third_move_settings = 28;
+	CombatChallengeGlobalSettingsProto combat_challenge_global_settings = 29;
+	BackgroundModeGlobalSettingsProto bgmode_global_settings = 30;
+	ProbeSettingsProto probe_settings = 31;
+	PokecoinPurchaseDisplaySettingsProto purchased_settings = 32;
+	HelpshiftSettingsProto helpshift_settings = 33;
+	ArPhotoGlobalSettings ar_photo_settings = 34;
+	PoiGlobalSettingsProto poi_settings = 35;
+	PokemonGlobalSettingsProto pokemon_settings = 36;
+	AvatarGlobalSettingsProto avatar_settings = 37;
+	EvolutionV2SettingsProto evolution_v2_settings = 38;
+	IncidentGlobalSettingsProto incident_settings = 39;
+	KoalaSettingsProto koala_settings = 40;
+	KangarooSettingsProto kangaroo_settings = 41;
+	RouteGlobalSettingsProto route_settings = 42;
+	BuddyGlobalSettingsProto buddy_settings = 43;
+	InputSettingsProto input_settings = 44;
+	GmtSettingsProto gmt_settings = 45;
+	bool use_local_time_action = 47;
+	ArdkConfigSettingsProto ardk_config_settings = 48;
+	EnabledPokemonSettingsProto enabled_pokemon = 49;
+	PokemonBulkUpgradeSettingsProto pokemon_bulk_upgrade_settings = 50;
+	PlannedDowntimeSettingsProto planned_downtime_settings = 51;
+	ArMappingSettingsProto ar_mapping_settings = 52;
+	RaidInviteFriendsSettingsProto raid_invite_friends_settings = 53;
+	DailyEncounterGlobalSettingsProto daily_encounter_settings = 54;
+	RaidTicketSettingsProto raid_ticket_settings = 55;
+	RocketBalloonGlobalSettingsProto rocket_balloon_settings = 56;
+	TimedGroupChallengeSettingsProto timed_group_challenge_settings = 57;
+	MegaEvoGlobalSettingsProto mega_evo_settings = 58;
+	LobbyClientSettingsProto lobby_client_settings = 59;
+	QuestEvolutionGlobalSettingsProto quest_evolution_settings = 61;
+	SponsoredPoiFeedbackSettingsProto sponsored_poi_feedback_settings = 62;
+	CrashlyticsSettingsProto crashlytics_settings = 65;
+	CatchPokemonGlobalSettingsProto catch_pokemon_settings = 66;
+	IdfaSettingsProto idfa_settings = 67;
+	FormChangeSettingsProto form_change_settings = 68;
+	repeated StoreIapSettingsProto iap_settings = 69;
+	UploadManagementSettings upload_management_settings = 72;
+	RaidLoggingSettingsProto raid_logging_settings = 73;
+}
+
 message GmmSettings {
 	repeated LayerRule layer_rules = 1;
 }
 
+message GmtSettingsProto {
+	bool efmggdnaogc = 1;
+	int32 apmmilhiakl = 2;
+}
+
 message GoogleToken {
 	string id_token = 1;
+}
+
+message GpsSettingsProto {
+	float fkmgoedcgmo = 1;
+	float jkeklfnkoin = 2;
+	float nbonlnndbfm = 3;
+	int32 pblfjoihfla = 4;
+	float nmjcbhlmmcm = 5;
+	int32 aiioljdiegg = 6;
+	float lfcdagodfhn = 7;
+	int32 khhjiafnpgp = 8;
 }
 
 message GrapeshotAuthenticationDataProto {
@@ -10373,16 +10463,6 @@ message HCOABANAGHB {
 	int64 fekpdognomk = 4;
 }
 
-message HCPCCHCPIKA {
-	bool kmdnmeakbmk = 1;
-	bool phkejciccfk = 2;
-	int32 ghmnkadnpnb = 3;
-}
-
-message HDDNNNOLEHG {
-	bool dfghhlckiej = 1;
-}
-
 message HDKMIPBPLAF {
 	Item item = 1;
 	int32 nbbdackhljm = 2;
@@ -10422,14 +10502,6 @@ message HEBODBLHLBB {
 }
 
 message HEDILIDMPGJ {
-}
-
-message HEHLPCMBIJN {
-	int32 cboombhbfcb = 1;
-	int64 bkkliddjjpg = 2;
-	int32 eijdcneflja = 3;
-	int32 ofnfifdcefa = 4;
-	int32 ehdaimmknke = 5;
 }
 
 message HEMBHIDGCLM {
@@ -10661,6 +10733,11 @@ message HPNNBCEBHNM {
 
 message HashedKeyProto {
 	string mcknbekhchh = 1;
+}
+
+message HelpshiftSettingsProto {
+	uint32 hlloekbjpnn = 1;
+	uint32 khfhfohjogm = 2;
 }
 
 message HoloInventoryItemProto {
@@ -10898,10 +10975,6 @@ message IDFKNPCGAKN {
 message IDLMJDONMPH {
 }
 
-message IFENOFLGKOP {
-	bool jfpognjkknj = 1;
-}
-
 message IFIACCKIJED {
 	string jkkdjdplahk = 1;
 }
@@ -11035,24 +11108,6 @@ message IIJAKHOGFCI {
 	int32 ilpbeindlmj = 6;
 }
 
-message IIMCNNEIBNK {
-	enum HMLFIPLJHHO {
-		UNSET = 0;
-		AR_ENCOUNTER = 1;
-		AR_SNAPSHOT = 2;
-		SINGLEPLAYER_BUDDY = 3;
-		MULTIPLAYER_BUDDY = 4;
-	}
-
-	string jgjoakpigid = 1;
-	string klcfjdhdjil = 2;
-	repeated string iikcjbgkjmg = 3;
-	repeated HMLFIPLJHHO lliklnoedhp = 4;
-	string bghbciadahl = 5;
-	string hchbghjelbb = 6;
-	string dhncbcbghni = 7;
-}
-
 message IJCKOMOBCNG {
 	repeated GIDOGICEJDE pomnakhhkpo = 1;
 	GIDOGICEJDE biobeikhnpl = 2;
@@ -11170,10 +11225,6 @@ message IMNECJONLHG {
 	int32 bdcjniaagcb = 10;
 }
 
-message IMPKHNHJGMF {
-	bool pkobhdobdki = 1;
-}
-
 message IMPOGEJCDMM {
 	repeated string bnmkpjodfbc = 1;
 }
@@ -11190,10 +11241,6 @@ message IOLCDEEKKAG {
 
 message IOOKOCCCKHF {
 	string cfjddbpjhjb = 1;
-}
-
-message IOPBJCDFOCF {
-	bool iginncjfnkg = 1;
 }
 
 message IPGCAPOLMLK {
@@ -11240,6 +11287,10 @@ message IapSettingsProto {
 	bool bmckogdogak = 7;
 }
 
+message IdfaSettingsProto {
+	bool mijnaecdopf = 1;
+}
+
 message ImageGalleryTelemetry {
 	enum ImageGalleryEventId {
 		UNKNOWN = 0;
@@ -11259,6 +11310,11 @@ message InGamePurchaseDetails {
 	string ingame_type = 1;
 	int64 ingame_price = 2;
 	int64 remaining_ingame_balance = 3;
+}
+
+message IncidentGlobalSettingsProto {
+	int32 hlloekbjpnn = 1;
+	int32 ekchlkkooji = 2;
 }
 
 message IncidentPrioritySettingsProto {
@@ -11288,6 +11344,12 @@ message IncomingFriendInviteProto {
 	string player_id = 2;
 	int64 created_ms = 3;
 	string full_name = 5;
+}
+
+message InputSettingsProto {
+	bool oggglmmkebj = 1;
+	int32 ogbllfljecg = 2;
+	float chlmnkgfndm = 3;
 }
 
 message InvasionAvailabilitySettingsProto {
@@ -11572,33 +11634,6 @@ message JEGLKKBLCMA {
 	FDIGOGGJEMD ibbhooocbad = 3;
 }
 
-message JELPJHKGDLJ {
-	bool fkndfimniik = 1;
-	int32 bdefjpcmokp = 2;
-	bool bkpciaenjnk = 3;
-	uint32 epbjojikgcg = 4;
-	int32 dollncgdedl = 5;
-	int32 gckclonlbff = 6;
-	int32 komnngpbcpc = 7;
-	int32 dklkjlfefhn = 8;
-	int32 mhdfgamnckb = 9;
-	int32 ppchaobacfc = 10;
-	bool ehcpfinhmpi = 11;
-	bool kedgiebdlmi = 12;
-	bool eeefcgcalcm = 13;
-	bool klhlioplpcp = 14;
-	int32 ahlggodolap = 15;
-	int32 njjbbginnin = 16;
-	int32 dhkobmiildo = 17;
-	bool cjahoplcaaf = 18;
-	bool madmdgmcpal = 19;
-	bool akfejmjllck = 20;
-	bool bppgnljdjnk = 21;
-	int32 bljmoakgleb = 22;
-	int64 memepojmdlm = 23;
-	int32 dlkidnpalpd = 24;
-}
-
 message JFMGNGJOLHM {
 	repeated uint64 gkpdigbfcpp = 1;
 	string fknfenpklih = 2;
@@ -11808,10 +11843,6 @@ message JournalRemoveEntryProto {
 	HashedKeyProto jhhgpcfpicm = 1;
 }
 
-message KAGLKFMHFII {
-	bool nicmikkchbn = 1;
-}
-
 message KALDDCECJLO {
 	message JIAHFIMDKDK {
 		string jkkdjdplahk = 1;
@@ -11853,11 +11884,6 @@ message KDHLGDNBCOB {
 
 	Status status = 1;
 	DNDKAJGBJMK mhoaphgpjik = 2;
-}
-
-message KEADOELDPPH {
-	bool kfnfglppiim = 1;
-	bool kdcjljgoben = 2;
 }
 
 message KEJKDFBBAGK {
@@ -12019,12 +12045,6 @@ message KIGGIPDFPPP {
 	string iconjgijpho = 3;
 }
 
-message KIJMFLGIPFL {
-	bool oggglmmkebj = 1;
-	int32 ogbllfljecg = 2;
-	float chlmnkgfndm = 3;
-}
-
 message KIPPAIDHNGA {
 	Item oadimmbbcho = 1;
 }
@@ -12137,10 +12157,6 @@ message KMOMMGHBOBM {
 	repeated DLFHGOBBABF menpkljelml = 2;
 }
 
-message KMPEENOAMHA {
-	int64 hhiapmmpaop = 1;
-}
-
 message KNDNOMHFILL {
 	enum Result {
 		UNSET = 0;
@@ -12202,6 +12218,16 @@ message KPNKNELNIKK {
 message KPNMGOHONPI {
 	int64 dlidnmaiodf = 1;
 	repeated Item pdhpijkfbfi = 2;
+}
+
+message KangarooSettingsProto {
+	bool iginncjfnkg = 1;
+}
+
+message KoalaSettingsProto {
+	string ejnmnnghipg = 1;
+	bool biakipeajia = 2;
+	bool iaeiifpknba = 3;
 }
 
 message LAJJGILBGLO {
@@ -12283,11 +12309,6 @@ message LEBILAKGMGO {
 	string aoojdaeoibc = 3;
 }
 
-message LEMOOAPJECH {
-	bool ocmlocikhgf = 1;
-	bool lbkapbbleob = 2;
-}
-
 message LENODFNKGHO {
 	enum Result {
 		UNSET = 0;
@@ -12315,21 +12336,6 @@ message LENODFNKGHO {
 	repeated DAPLBDGDEJN maegkpeijmg = 4;
 }
 
-message LEOENBALPHL {
-	double oeignahlnng = 1;
-	double cfamaljehmm = 2;
-	double igledanajpk = 3;
-	float hlfakdoilib = 4;
-	float adeokljemna = 5;
-	float ngkfaofoajb = 6;
-	string himndnbleak = 7;
-	int32 gjhmemipifg = 8;
-	bool helfkfjgfnk = 9;
-	float cgifhlhfkoj = 10;
-	string apafchnjlel = 11;
-	bool fcmhpkodbki = 12;
-}
-
 message LFGALAALKNI {
 	bool fgbafcoboip = 1;
 }
@@ -12349,19 +12355,9 @@ message LGMCNAHMMGG {
 	int64 cpkbdghbago = 3;
 }
 
-message LHJBFBEOFAF {
-	bool aklinjahbgb = 1;
-	int32 mehghmpedke = 2;
-}
-
 message LIHGDFFCAJO {
 	bytes nfbokbeniak = 1;
 	string pplmgahapak = 2;
-}
-
-message LIMIMJKKHBL {
-	uint32 kehhmojmooh = 1;
-	int64 nnapfdpiafe = 2;
 }
 
 message LJAOAMPHKNA {
@@ -12573,6 +12569,11 @@ message LeavePointOfInterestTelemetry {
 	string campaign_id = 7;
 }
 
+message LevelSettingsProto {
+	double jhdjhhgghbd = 2;
+	double pkgdgbnnhkg = 3;
+}
+
 message LevelUpRewardsOutProto {
 	enum Result {
 		UNSET = 0;
@@ -12707,6 +12708,10 @@ message LoadingScreenProto {
 	map<string, string> hpadaeccgil = 3;
 }
 
+message LobbyClientSettingsProto {
+	int64 hhiapmmpaop = 1;
+}
+
 message LocationE6Proto {
 	int32 latitude_e6 = 1;
 	int32 longitude_e6 = 2;
@@ -12739,6 +12744,10 @@ message LoginDetail {
 	IdentityProvider identity_provider = 1;
 	string email = 2;
 	string auth_provider_id = 3;
+}
+
+message LoginSettingsProto {
+	bool dakgemahpkl = 1;
 }
 
 message LootItemProto {
@@ -12843,10 +12852,6 @@ message MCLKCNJAGOF {
 	int64 nklhfhnooek = 3;
 	int32 chdodbgjbhf = 4;
 	Result result = 5;
-}
-
-message MDAEBCGIGHG {
-	bool nicmikkchbn = 1;
 }
 
 message MDNOEHDCEOF {
@@ -12978,39 +12983,6 @@ message MMLPLDLLEAK {
 	ECFHENOADHD gjaigofjomg = 4;
 }
 
-message MOGMBBGMFFJ {
-	int32 khcofaofnbo = 1;
-	int32 ojcplepoobn = 2;
-	int32 jmfgjcjjgee = 3;
-	int32 fpnhidcdgcp = 4;
-	int32 kdaofnjhkhh = 5;
-	int32 fbobkkmcdgh = 6;
-	int32 olgopnpdfec = 7;
-	int32 ohajmpkpfep = 8;
-	int32 cpngfoinamj = 9;
-	int32 oeonaeneioo = 10;
-	int32 bafommgpkld = 11;
-	int32 lpbikmhmfpf = 12;
-	int32 pjhicnfeoae = 13;
-	bool dlohmcpndcd = 14;
-	int32 lkdcdlhddoi = 15;
-	bool mehomfcgech = 16;
-	float gakddibpobm = 17;
-	float ihpoclghiac = 18;
-	float aacgophgacd = 19;
-	float echibnifnop = 20;
-	float mdeeidcemah = 21;
-	float ephnfnoblgp = 22;
-	float hjpnecjodia = 23;
-	float kefpapfklae = 24;
-	float dohajjngnoi = 25;
-	bool lgaaknhehjp = 26;
-}
-
-message MPHPNNNEOJK {
-	bool mijnaecdopf = 1;
-}
-
 message MapArea {
 	string description = 1;
 	int32 epoch = 2;
@@ -13116,6 +13088,21 @@ message MapProvider {
 	repeated BundleZoomRange bundle_zoom_range = 10;
 }
 
+message MapSettingsProto {
+	double oeignahlnng = 1;
+	double cfamaljehmm = 2;
+	double igledanajpk = 3;
+	float hlfakdoilib = 4;
+	float adeokljemna = 5;
+	float ngkfaofoajb = 6;
+	string himndnbleak = 7;
+	int32 gjhmemipifg = 8;
+	bool helfkfjgfnk = 9;
+	float cgifhlhfkoj = 10;
+	string apafchnjlel = 11;
+	bool fcmhpkodbki = 12;
+}
+
 message MapTileBundle {
 	repeated MapTileDataProto map_tile = 1;
 }
@@ -13164,6 +13151,11 @@ message MapTileProto {
 message MaskedColor {
 	uint32 color_argb = 1;
 	uint32 color_mask_argb = 2;
+}
+
+message MegaEvoGlobalSettingsProto {
+	bool nicmikkchbn = 1;
+	bool mehcnekhkcj = 2;
 }
 
 message MegaEvoSettingsProto {
@@ -13287,11 +13279,6 @@ message NAFKHJPEHPP {
 	ShareExRaidPassResult result = 1;
 }
 
-message NAGKJLGAMLK {
-	bool oeiahklghgm = 1;
-	repeated string nokjocnjakh = 2;
-}
-
 message NAIIBLHKAOD {
 	float cdooijkgmml = 1;
 }
@@ -13398,25 +13385,6 @@ message NDEMBLDAJDL {
 	int32 lndennhbngl = 86;
 }
 
-message NDHNBDCEEAD {
-	bool nicmikkchbn = 1;
-	double kcplmellmjn = 2;
-	int32 mieclmbllen = 3;
-	int32 apohconieic = 4;
-	int64 bejcemhinnd = 5;
-	int64 dipboipdfch = 6;
-	int64 abiokjkfnol = 7;
-	bool odigmjnfdnk = 8;
-}
-
-message NEMLKJLDOAH {
-	bool dakgemahpkl = 1;
-}
-
-message NFGFIHLGCCG {
-	float hdhebcmjlim = 1;
-}
-
 message NFJCJALOPFL {
 	int32 bgjchkkfkla = 1;
 }
@@ -13520,16 +13488,6 @@ message NJNKAGHNAAG {
 	INGGIGFPJJD kbjkeddecpa = 1;
 }
 
-message NKBJDOHMJPH {
-	bool dmmgfdpecoh = 1;
-	bool pnhcnaniaog = 2;
-}
-
-message NKDDGJHMJEL {
-	bool epmejnfdkhk = 1;
-	int32 dfcnccpofjc = 2;
-}
-
 message NKEEAHMODNN {
 	bool mpfinkoafhf = 1;
 }
@@ -13569,11 +13527,6 @@ message NLBKJNDPLEP {
 message NLMOFNMDHNK {
 	OEJNLCMGMBE cpbcmglahca = 1;
 	bytes ekbicgnmlhm = 2;
-}
-
-message NMMBFCKAIGL {
-	int32 hlloekbjpnn = 1;
-	int32 ekchlkkooji = 2;
 }
 
 message NNIKCDDJNPN {
@@ -13625,86 +13578,12 @@ message NOHCNEFAEDM {
 	RoutePlayStatus.Status status = 7;
 }
 
-message NPFAKGLBAMI {
-	bool ndbbehojbfb = 1;
-	bool plodbhoafnk = 2;
-}
-
 message NPHHFMONJGC {
 	repeated PHHAOIGAAFM lnjlomnfoak = 1;
 	int32 ofingadjehm = 2;
 	int32 obngbggabne = 3;
 	string bhkaekicfib = 4;
 	string mjhigafpgcj = 5;
-}
-
-message NPKLHAMKJDP {
-	CNCJEACFPHC jbibnldogbc = 2;
-	LEOENBALPHL mcdafgihkih = 3;
-	FFKELGMMAKN kfdhdccfndb = 4;
-	InventorySettingsProto inventory_settings = 5;
-	string joomclglfcc = 6;
-	CDKGJHCOKDP jemlgainbgd = 7;
-	FestivalSettingsProto ocfchpiokln = 8;
-	APENEDFCKPJ ngokbhkkamh = 9;
-	int32 laldgekkbjb = 10;
-	NFGFIHLGCCG pgjeifnjgmh = 11;
-	FFNPINJAFHG bpfjdpeigdk = 12;
-	ONHIEAHONLH bbnmlhfilga = 13;
-	LEMOOAPJECH hiegealahif = 14;
-	NPFAKGLBAMI flbcoacpgbi = 15;
-	repeated string lecdehgpgni = 16;
-	GCOOJOAGCJC diknkiofmmg = 17;
-	FHNNBHOHMAK nmlejgalnnl = 18;
-	EDLMCCMAMDN dfoknfjciih = 19;
-	NKDDGJHMJEL iiffpbkelio = 20;
-	NDHNBDCEEAD nmandelnfgj = 21;
-	NEMLKJLDOAH adggeahbmae = 22;
-	CJHLADKODCA dghdmbhlkpi = 23;
-	BNCAGHFPFNN dplgoaenlgc = 24;
-	repeated HoloPokemonId mbfadokokal = 25;
-	AAACADLGHFC meepckamjfk = 26;
-	JELPJHKGDLJ bmhledegllh = 27;
-	HDDNNNOLEHG agndifdejpo = 28;
-	GCKPBDAJNMJ gggomjpfecc = 29;
-	LIMIMJKKHBL dacmimhcbgi = 30;
-	HCPCCHCPIKA habdanigpca = 31;
-	GBGMJPAGNCH eihjpmafacl = 32;
-	DHDNEJADMFA oebefaljibi = 33;
-	GPHIGFEAPJL jnofdhhjihk = 34;
-	NAGKJLGAMLK clbklepgkkn = 35;
-	NKBJDOHMJPH kmoclmgphag = 36;
-	DKLLOPHPFCG pdfbagbnged = 37;
-	DIHDPAOGLCA gcacnponhmm = 38;
-	NMMBFCKAIGL kooahfnlfpg = 39;
-	CPFNMPLMKFI jkcpleflgpn = 40;
-	IOPBJCDFOCF kligcgebfdb = 41;
-	PAIILALAGPO oooepcbacbf = 42;
-	PKLOFJAPMDO ajcijcoecfj = 43;
-	KIJMFLGIPFL imgjmcpdhdk = 44;
-	BPKIDAIDJGC mmjcjifkopo = 45;
-	bool alhdlolkogg = 47;
-	IIMCNNEIBNK okcomeifphe = 48;
-	AHOFPBOGDNH njaiphhdgak = 49;
-	IFENOFLGKOP bhblmiidapf = 50;
-	CGKOELCNOHO cdmhpgcoeim = 51;
-	MOGMBBGMFFJ apjcbaondek = 52;
-	FLDMANADCCJ bockjhppgkj = 53;
-	MDAEBCGIGHG kaoobjojckk = 54;
-	IMPKHNHJGMF kbjhlijdcao = 55;
-	DHODFHNNIGM kaekhneeblf = 56;
-	HEHLPCMBIJN cgfbehkhijh = 57;
-	CNKEIOGOMHA mega_evo_settings = 58;
-	KMPEENOAMHA efbenbomhbn = 59;
-	ONLLBCHAFCN quest_evolution_settings = 61;
-	CHOFJFFPEBN jgmilliaecb = 62;
-	ENEBNPICHHC enpbogjadeh = 65;
-	KEADOELDPPH bjpjpliacoh = 66;
-	MPHPNNNEOJK ilpeiadghpp = 67;
-	KAGLKFMHFII pjclidkkmid = 68;
-	repeated GPFPPENNPFI iap_settings = 69;
-	LHJBFBEOFAF fmlinjkllgn = 72;
-	GIFAJMOENKK iokginapcol = 73;
 }
 
 message NPPADDICPGB {
@@ -13717,10 +13596,6 @@ message NPPADDICPGB {
 message NamedMapSettings {
 	string name = 1;
 	GmmSettings gmm_settings = 2;
-}
-
-message NewQuestProto1 {
-	repeated QuestRewardProto rewards = 1;
 }
 
 message NewsArticleProto {
@@ -13740,8 +13615,16 @@ message NewsArticleProto {
 	bool iljefhjfbjb = 9;
 }
 
+message NewsGlobalSettingsProto {
+	bool hcbljpdkpkp = 1;
+}
+
 message NewsPageTelemetry {
 	NewsPageTelemetryIds news_page_click_id = 1;
+}
+
+message NewsSettingProto {
+	repeated HEPBCIGBEJI igflaffhihe = 1;
 }
 
 message NianticProfileTelemetry {
@@ -13757,6 +13640,11 @@ message NianticProfileTelemetry {
 message NicknamePokemonTelemetry {
 	PokemonTelemetry pokemon = 1;
 	string nickname = 2;
+}
+
+message NotificationSettingsProto {
+	bool ndbbehojbfb = 1;
+	bool plodbhoafnk = 2;
 }
 
 message OABBADNMPGG {
@@ -14223,14 +14111,6 @@ message ONGJIHGOBED {
 	PNHHACNLCHN fnalbniming = 2;
 }
 
-message ONHIEAHONLH {
-	repeated string lohlembjkfe = 1;
-}
-
-message ONLLBCHAFCN {
-	bool nikfddpdilg = 1;
-}
-
 message OOGKPLDCCFE {
 	RoutePlayStatus.Status status = 1;
 	LootProto addckiafepn = 2;
@@ -14399,13 +14279,6 @@ message PAEIJJOFKNN {
 
 	Result result = 1;
 	TradingProto lmeeloljgnm = 2;
-}
-
-message PAIILALAGPO {
-	bool pgllkmjdfol = 1;
-	bool mfggioeamlg = 2;
-	bool fkopaoopbfb = 3;
-	bool cbapnpeicag = 4;
 }
 
 message PAIJJHGGOIB {
@@ -14713,25 +14586,6 @@ message PJKDBCCJDBG {
 	PINOBHOANAJ bhppefmnjlh = 2;
 }
 
-message PKLOFJAPMDO {
-	int32 blafckahaae = 1;
-	int32 palaiflpeje = 2;
-	bool mghkijobfjj = 3;
-	repeated string iikcjbgkjmg = 4;
-	int32 nbpidokekjh = 5;
-	int32 ifahhbilabd = 6;
-	int32 plapbggmpef = 7;
-	int32 cemnmkpkjnd = 8;
-	int32 engpdncgddn = 9;
-	bool dogeopfcjog = 10;
-	int32 lpdglamfhhc = 11;
-	int32 koglbbajkhf = 12;
-	bool iihaimhical = 13;
-	int32 ifacpeodefj = 14;
-	string eahlppcmjgp = 15;
-	bool eageaiinbfg = 16;
-}
-
 message PLCEADICNGG {
 	message IAHANKCPIHC {
 		string bhkaekicfib = 1;
@@ -14895,6 +14749,11 @@ message PasscodeRewardsLogEntry {
 	PPEAOLAEHFC rewards = 3;
 }
 
+message PasscodeSettingsProto {
+	bool ocmlocikhgf = 1;
+	bool lbkapbbleob = 2;
+}
+
 message PermissionsFlowTelemetry {
 	PermissionContextTelemetryIds permission_context_telemetry_ids = 1;
 	DeviceServiceTelemetryIds device_service_telemetry_ids = 2;
@@ -14910,6 +14769,11 @@ message PixelPointProto {
 	int32 pixel_x = 1;
 	int32 pixel_y = 2;
 	int32 zoom_level = 3;
+}
+
+message PlannedDowntimeSettingsProto {
+	int64 iplggmfddom = 1;
+	int64 mabioklfimh = 2;
 }
 
 message PlatypusRolloutSettingsProto {
@@ -15111,6 +14975,11 @@ message PlayerSummaryProto {
 	int64 experience = 7;
 }
 
+message PoiGlobalSettingsProto {
+	bool oeiahklghgm = 1;
+	repeated string nokjocnjakh = 2;
+}
+
 message PoiSubmissionPhotoUploadErrorTelemetry {
 	enum PoiSubmissionPhotoUploadErrorIds {
 		UNSET = 0;
@@ -15165,6 +15034,13 @@ message PokecoinPurchaseDisplayGmtProto {
 	bool dddpdlppilj = 1;
 }
 
+message PokecoinPurchaseDisplaySettingsProto {
+	bool dddpdlppilj = 1;
+	repeated string aafpflmhkab = 2;
+	repeated string jfmofeagfem = 3;
+	bool hfckfhchhnm = 4;
+}
+
 message PokedexCategoriesSettings {
 	message NFPKBJDNPJH {
 		PokemonCategory nfpepbpahoj = 1;
@@ -15213,6 +15089,10 @@ message PokedexEntryProto {
 	repeated ACBLJHDEKBF mbidmkljpmm = 16;
 	repeated PokemonDisplayProto.Form iodmclclbab = 17;
 	map<string, KOBICDMJHON> noecidglehm = 18;
+}
+
+message PokemonBulkUpgradeSettingsProto {
+	bool jfpognjkknj = 1;
 }
 
 message PokemonCompareChallenge {
@@ -17533,6 +17413,11 @@ message PokemonFamilySettingsProto {
 	HoloPokemonId icdaecmpmai = 3;
 }
 
+message PokemonGlobalSettingsProto {
+	bool dmmgfdpecoh = 1;
+	bool pnhcnaniaog = 2;
+}
+
 message PokemonGoPlusTelemetry {
 	PokemonGoPlusIds pgp_event_ids = 1;
 	int32 count = 2;
@@ -17799,6 +17684,12 @@ message PokestopReward {
 	int32 item_count = 2;
 }
 
+message ProbeSettingsProto {
+	bool kmdnmeakbmk = 1;
+	bool phkejciccfk = 2;
+	int32 ghmnkadnpnb = 3;
+}
+
 message ProfileDetailsProto {
 	string profile_name_app_key = 1;
 	string nickname = 2;
@@ -17974,9 +17865,20 @@ message QuestCreateDetail {
 	EncounterType nihbplgneaj = 1;
 }
 
+message QuestEvolutionGlobalSettingsProto {
+	bool nikfddpdilg = 1;
+}
+
 message QuestEvolutionSettingsProto {
 	bool nikfddpdilg = 1;
 	bool gjbjkfbhngi = 2;
+}
+
+message QuestGlobalSettingsProto {
+	bool daljpjpkfgp = 1;
+	int32 ejokahcdpab = 2;
+	bool dcjfccajdod = 3;
+	int64 loompdglaem = 4;
 }
 
 message QuestGoalProto {
@@ -18052,7 +17954,7 @@ message QuestProto {
 	int64 ipfdngcoajm = 119;
 	bool fnkccbjbkii = 120;
 	ReferralInfoProto cfhaahkacpf = 121;
-	repeated NewQuestProto1 new_quest_1 = 122;
+	repeated BranchingQuestProto branching_quest = 122;
 }
 
 message QuestRewardProto {
@@ -18143,6 +18045,14 @@ message RaidCreateDetail {
 	int64 nmiffaeecdi = 3;
 }
 
+message RaidInviteFriendsSettingsProto {
+	int32 jkohcljghfl = 1;
+}
+
+message RaidLoggingSettingsProto {
+	bool nicmikkchbn = 1;
+}
+
 message RaidRewardsLogEntry {
 	enum Result {
 		UNSET = 0;
@@ -18169,6 +18079,10 @@ message RaidTelemetry {
 	string ticket_item = 7;
 	int32 num_players_in_lobby = 8;
 	int32 battle_party_number = 9;
+}
+
+message RaidTicketSettingsProto {
+	bool pkobhdobdki = 1;
 }
 
 message RaidTicketsProto {
@@ -18424,9 +18338,20 @@ message RocketBalloonDisplayProto {
 	KMJPOGHCNHO obekaidnhjc = 2;
 }
 
+message RocketBalloonGlobalSettingsProto {
+	int32 hlloekbjpnn = 1;
+}
+
 message RouteDiscoverySettingsProto {
 	float lplnkbalklb = 1;
 	int32 hlloekbjpnn = 2;
+}
+
+message RouteGlobalSettingsProto {
+	bool pgllkmjdfol = 1;
+	bool mfggioeamlg = 2;
+	bool fkopaoopbfb = 3;
+	bool cbapnpeicag = 4;
 }
 
 message RouteImageProto {
@@ -18804,6 +18729,10 @@ message SfidaDowserResponse {
 	string bcaehfingim = 3;
 }
 
+message SfidaGlobalSettingsProto {
+	float hdhebcmjlim = 1;
+}
+
 message SfidaMetricsUpdate {
 	enum UpdateType {
 		UNSET = 0;
@@ -18889,6 +18818,22 @@ message SocialClientGlobalSettings {
 	}
 
 	CrossGameSocialSettingsProto cross_game_social_settings = 1;
+}
+
+message SocialClientSettingsProto {
+	bool ncmnojglehc = 1;
+	int32 loanigolnbj = 2;
+	int32 eaifcjdhicn = 3;
+	int32 djcoanlecjb = 4;
+	bool fmehhomdooj = 5;
+	bool chnlfdaldic = 6;
+	bool abldongcnco = 7;
+	int32 iahdlphgmfc = 8;
+	bool lppkmmiigmm = 9;
+	bool iancbajkigk = 11;
+	bool mgllnigemhn = 12;
+	bool npdflnchmlm = 13;
+	FAGPPGBBLNM cross_game_social_settings = 14;
 }
 
 message SocialGiftCountTelemetry {
@@ -18981,6 +18926,13 @@ message SponsoredGeofenceGiftSettingsProto {
 	IBGDPEHDIFA pljeamdkong = 10;
 }
 
+message SponsoredPoiFeedbackSettingsProto {
+	bool nicmikkchbn = 1;
+	bool jiajomlfoin = 2;
+	bool pdkiicpcgdk = 3;
+	bool ncbkakhcadl = 4;
+}
+
 message StartIncidentOutProto {
 	enum Status {
 		UNSET = 0;
@@ -19018,6 +18970,11 @@ message StickerProto {
 	string iimfnljhppc = 1;
 	int32 mbaoofhhcme = 2;
 	int32 cpakgoonkdj = 3;
+}
+
+message StoreIapSettingsProto {
+	Store egnfhnbagfm = 1;
+	IapLibraryVersion kfgcnmnmolj = 2;
 }
 
 message SubmitCombatChallengePokemonsOutProto {
@@ -19147,6 +19104,17 @@ message TelemetryCommon {
 	int64 client_timestamp_ms = 4;
 }
 
+message TelemetryGlobalSettingsProto {
+	bool nicmikkchbn = 1;
+	double kcplmellmjn = 2;
+	int32 mieclmbllen = 3;
+	int32 apohconieic = 4;
+	int64 bejcemhinnd = 5;
+	int64 dipboipdfch = 6;
+	int64 abiokjkfnol = 7;
+	bool odigmjnfdnk = 8;
+}
+
 message TemplateVariable {
 	string name = 1;
 	string literal = 2;
@@ -19160,6 +19128,10 @@ message TemporaryEvolutionSettingsProto {
 	repeated GEPCHPJNBPP nhdpcjphmim = 2;
 }
 
+message ThirdMoveGlobalSettingsProto {
+	bool dfghhlckiej = 1;
+}
+
 message TimedGroupChallengePlayerStatsProto {
 	message ADBEJDIDHDA {
 		string gfpgenlohgh = 1;
@@ -19169,8 +19141,21 @@ message TimedGroupChallengePlayerStatsProto {
 	repeated ADBEJDIDHDA dkodeocjdcl = 1;
 }
 
+message TimedGroupChallengeSettingsProto {
+	int32 cboombhbfcb = 1;
+	int64 bkkliddjjpg = 2;
+	int32 eijdcneflja = 3;
+	int32 ofnfifdcefa = 4;
+	int32 ehdaimmknke = 5;
+}
+
 message TradePokemonQuestProto {
 	repeated string mfmogpaedch = 1;
+}
+
+message TradingGlobalSettingsProto {
+	bool jadgfgidhbm = 1;
+	uint32 hlloekbjpnn = 2;
 }
 
 message TradingLogEntry {
@@ -19305,6 +19290,10 @@ message TransferPokemonToPokemonHomeOutProto {
 	int32 kfalgbpcdjh = 2;
 	int32 bkclhjhdipg = 3;
 	map<int32, int32> paegcolnaic = 4;
+}
+
+message TranslationSettingsProto {
+	repeated string lohlembjkfe = 1;
 }
 
 message TutorialCreateDetail {
@@ -19442,6 +19431,11 @@ message UpdateProfileResponse {
 	Result result = 1;
 }
 
+message UploadManagementSettings {
+	bool aklinjahbgb = 1;
+	int32 mehghmpedke = 2;
+}
+
 message UploadManagementTelemetry {
 	enum UploadManagementEventId {
 		UNKNOWN = 0;
@@ -19456,6 +19450,12 @@ message UploadManagementTelemetry {
 	}
 
 	UploadManagementEventId upload_management_telemetry_id = 1;
+}
+
+message UpsightLoggingSettingsProto {
+	bool mccdalkggbb = 1;
+	int32 ainbfdmobhf = 2;
+	bool jfcooojomlm = 3;
 }
 
 message UseIncenseActionOutProto {
