@@ -990,11 +990,11 @@ digest {
   size: 174634
 }
 digest {
-  asset_id: "09c70755-6d65-4d10-ac29-dd71023a37c0/1616630867715328"
+  asset_id: "09c70755-6d65-4d10-ac29-dd71023a37c0/1626199383883290"
   bundle_name: "quest_dialogue"
-  version: 1616630867715328
-  checksum: 856075248
-  size: 200642
+  version: 1626199383883290
+  checksum: 3741981193
+  size: 301935
 }
 digest {
   asset_id: "09f0ae71-3927-4947-ad87-0834000fdf01/1583464971217559"
@@ -10180,11 +10180,11 @@ digest {
   size: 14606
 }
 digest {
-  asset_id: "6d60788e-c36a-4b51-86e7-b6fd39e53693/1616641548531568"
+  asset_id: "6d60788e-c36a-4b51-86e7-b6fd39e53693/1626209070359091"
   bundle_name: "move_sounds.bundle"
-  version: 1616641548531568
-  checksum: 2673339214
-  size: 3245685
+  version: 1626209070359091
+  checksum: 819980033
+  size: 3318739
 }
 digest {
   asset_id: "6d90b8c8-f753-4bcd-af90-064da3f646d0/1616622682624657"
@@ -24176,4 +24176,4 @@ digest {
   checksum: 2527820101
   size: 1240971
 }
-timestamp: 1625800170770054
+timestamp: 1626209070359091
