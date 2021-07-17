@@ -7159,14 +7159,6 @@ message DJCKNFCEKLN {
 	int64 pkpfblcjkcm = 3;
 }
 
-message DJEGGHGDJPF {
-	string inmiknhiknf = 1;
-	string jeggaigdmkc = 2;
-	string gpokbgbbled = 3;
-	string cblmceaelgp = 4;
-	string iolgidhmaai = 5;
-}
-
 message DJLMINMGDLF {
 	string gnjgkebdfce = 1;
 	string dminfiboncl = 2;
@@ -9366,7 +9358,7 @@ message GameMasterClientTemplateProto {
 	BGLGNFJGGJE kiajcepnnai = 118;
 	EBALECFHAFD oihpkpcicfm = 119;
 	NKBNFGMFBAB idkjmdjmfhb = 120;
-	DJEGGHGDJPF mgbgbllehfc = 121;
+	MusicSettings music_settings = 121;
 	AEBKANBMIHK bdfjibpbllc = 122;
 }
 
@@ -13421,6 +13413,14 @@ message MoveSettingsProto {
 
 message MultiPartQuestProto {
 	repeated QuestProto aemcnjgknko = 1;
+}
+
+message MusicSettings {
+	string inmiknhiknf = 1;
+	string jeggaigdmkc = 2;
+	string gpokbgbbled = 3;
+	string cblmceaelgp = 4;
+	string iolgidhmaai = 5;
 }
 
 message NABOMFJFCGE {
