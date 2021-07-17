@@ -13,7 +13,7 @@ global_version = '0.213.x_p_obf'
 protoc_executable = "protoc"
 package_name = 'POGOProtos.Rpc'
 input_file = "POGOProtos.Rpc.proto"
-base_file = os.path.abspath("base/base.proto")
+base_file = os.path.abspath("base/vbase.proto")
 protos_path = os.path.abspath("base")
 gen_last_files = os.path.abspath("base/last_files")
 
@@ -61,6 +61,7 @@ if gen_asset_digest is not None:
         exit(0)
     commands = []
     print("Try to decode " + gen_asset_digest + ".txt....")
+    call(""""{0}" --version""".format(protoc_executable), shell=True)
     pogo_protos_path = './base'
     pogo_protos_target = 'POGOProtos.Rpc.AssetDigestOutProto'
     pogo_protos_template = './base/' + raw_name
@@ -86,6 +87,7 @@ if gen_game_master is not None:
         exit(0)
     commands = []
     print("Try to decode " + gen_game_master + ".txt....")
+    call(""""{0}" --version""".format(protoc_executable), shell=True)
     pogo_protos_path = './base'
     pogo_protos_target = 'POGOProtos.Rpc.DownloadGmTemplatesResponseProto'
     pogo_protos_template = './base/' + raw_name
