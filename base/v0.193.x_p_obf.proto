@@ -14,7 +14,7 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: 0.193.x_p_obf
+* Version: Base Version Compatible 0.193.x Partial Obfuscated.
 *
 */
 
@@ -4651,11 +4651,6 @@ message BEKFKAMBLLM {
 	ServerData glflalepfhk = 1001;
 }
 
-message BIHLLKLGEGP {
-	NOADOIGFHIJ nfpecdphkdk = 1;
-	int64 ohkmeghggjj = 2;
-}
-
 message BLEIICIGDIF {
 	double hbflenanjhm = 1;
 	double ccnaoompogh = 2;
@@ -6043,7 +6038,7 @@ message CombatChallengeGlobalSettingsProto {
 }
 
 message CombatChallengeProto {
-	enum AIMPPPPEOAL {
+	enum CombatChallengeState {
 		UNSET = 0;
 		CREATED = 1;
 		OPENED = 2;
@@ -6054,7 +6049,7 @@ message CombatChallengeProto {
 		TIMEOUT = 7;
 	}
 
-	message GEJGOMLBJJK {
+	message ChallengePlayer {
 		string player_id = 1;
 		PlayerAvatarProto player_avatar = 2;
 		int64 combat_player_s2_cell_id = 3;
@@ -6065,9 +6060,9 @@ message CombatChallengeProto {
 	string challenge_id = 1;
 	CombatType type = 2;
 	string combat_league_template_id = 3;
-	GEJGOMLBJJK challenger = 5;
-	GEJGOMLBJJK opponent = 6;
-	AIMPPPPEOAL state = 7;
+	ChallengePlayer challenger = 5;
+	ChallengePlayer opponent = 6;
+	CombatChallengeState state = 7;
 	int64 created_timestamp_ms = 8;
 	string combat_id = 10;
 	int64 expiration_timestamp_ms = 19;
@@ -6545,7 +6540,7 @@ message CompleteCompetitiveSeasonProto {
 }
 
 message CompleteInvasionDialogueOutProto {
-	InvasionStatus.GFGAHPGJNLC status = 1;
+	InvasionStatus.Status status = 1;
 }
 
 message CompleteInvasionDialogueProto {
@@ -8202,10 +8197,6 @@ message GGFFOADNGAN {
 	double nkeemndimej = 7;
 }
 
-message GIDEJEEGMMO {
-	NOADOIGFHIJ nfpecdphkdk = 1;
-}
-
 message GNIPOANKNJP {
 	int32 abifapdlkdg = 1;
 }
@@ -8567,7 +8558,7 @@ message GetCombatResultsOutProto {
 		ERROR_PLAYER_QUIT = 4;
 	}
 
-	message BLPBGJBJLFN {
+	message CombatRematchProto {
 		string combat_rematch_id = 1;
 		string combat_league_template_id = 2;
 	}
@@ -8578,7 +8569,7 @@ message GetCombatResultsOutProto {
 	LeveledUpFriendsProto friend_level_up = 4;
 	int32 number_rewarded_battles_today = 5;
 	CombatPlayerFinishState combat_player_finish_state = 6;
-	BLPBGJBJLFN combat_rematch = 7;
+	CombatRematchProto combat_rematch = 7;
 }
 
 message GetCombatResultsProto {
@@ -10046,6 +10037,10 @@ message HJAIMGODBGJ {
 	bytes jlfeeihahea = 4;
 }
 
+message HashedKeyProto {
+	string mlnjaleddbp = 1;
+}
+
 message HelpshiftSettingsProto {
 	uint32 min_player_level = 1;
 	uint32 default_player_level = 2;
@@ -10346,7 +10341,7 @@ message InvasionEncounterOutProto {
 		int32 pokemon_remaining_num_balls = 4;
 	}
 
-	InvasionStatus.GFGAHPGJNLC status = 1;
+	InvasionStatus.Status status = 1;
 	PokemonProto encounter_pokemon = 2;
 	CaptureProbabilityProto capture_probability = 3;
 	Item active_item = 4;
@@ -10378,7 +10373,7 @@ message InvasionNpcDisplaySettingsProto {
 }
 
 message InvasionStatus {
-	enum GFGAHPGJNLC {
+	enum Status {
 		UNSET = 0;
 		SUCCESS = 1;
 		ERROR = 2;
@@ -10637,16 +10632,25 @@ message JoinLobbyProto {
 	string inviter_id = 10;
 }
 
+message JournalAddEntryProto {
+	HashedKeyProto nfpecdphkdk = 1;
+	int64 ohkmeghggjj = 2;
+}
+
 message JournalEntryProto {
 	oneof Subentry {
-		BIHLLKLGEGP add_entry = 1;
-		GIDEJEEGMMO read_entry = 2;
+		JournalAddEntryProto add_entry = 1;
+		JournalReadEntryProto read_entry = 2;
 		JournalRemoveEntryProto remove_entry = 3;
 	}
 }
 
+message JournalReadEntryProto {
+	HashedKeyProto nfpecdphkdk = 1;
+}
+
 message JournalRemoveEntryProto {
-	NOADOIGFHIJ nfpecdphkdk = 1;
+	HashedKeyProto nfpecdphkdk = 1;
 }
 
 message KMMIIKNHNIB {
@@ -10995,7 +10999,7 @@ message LoginSettingsProto {
 }
 
 message LootItemProto {
-	oneof FKCIFAJKCHI {
+	oneof Type {
 		Item item = 1;
 		bool stardust = 2;
 		bool pokecoin = 3;
@@ -11388,10 +11392,6 @@ message MultiPartQuestProto {
 	repeated QuestProto sub_quests = 1;
 }
 
-message NOADOIGFHIJ {
-	string mlnjaleddbp = 1;
-}
-
 message NamedMapSettings {
 	string name = 1;
 	GmmSettings gmm_settings = 2;
@@ -11635,7 +11635,7 @@ message OpenGiftProto {
 }
 
 message OpenInvasionCombatSessionOutProto {
-	InvasionStatus.GFGAHPGJNLC status = 1;
+	InvasionStatus.Status status = 1;
 	CombatProto combat = 2;
 }
 
@@ -15073,7 +15073,7 @@ message PushNotificationTelemetry {
 }
 
 message QuestConditionProto {
-	oneof KDKDJBMFPFF {
+	oneof Condition {
 		WithPokemonTypeProto with_pokemon_type = 2;
 		WithPokemonCategoryProto with_pokemon_category = 3;
 		WithWeatherBoostProto with_weather_boost = 4;
@@ -15107,7 +15107,7 @@ message QuestConditionProto {
 		WithCombatTypeProto with_combat_type = 32;
 	}
 
-	enum KOPNDJGINMN {
+	enum ConditionType {
 		UNSET = 0;
 		WITH_POKEMON_TYPE = 1;
 		WITH_POKEMON_CATEGORY = 2;
@@ -15153,7 +15153,7 @@ message QuestConditionProto {
 		WITH_GEOTARGETED_POI = 42;
 	}
 
-	KOPNDJGINMN type = 1;
+	ConditionType type = 1;
 }
 
 message QuestCreateDetail {
@@ -17281,7 +17281,7 @@ message UpdateFriendshipResponse {
 }
 
 message UpdateInvasionBattleOutProto {
-	InvasionStatus.GFGAHPGJNLC status = 1;
+	InvasionStatus.Status status = 1;
 	LootProto rewards = 2;
 	bool map_fragment_upgraded = 3;
 }
@@ -17738,8 +17738,8 @@ message VsSeekerCreateDetail {
 }
 
 message VsSeekerLootProto {
-	message PBNEDLFLDCE {
-		oneof MCIEGGPJDGP {
+	message RewardProto {
+		oneof RewardType {
 			LootItemProto item = 1;
 			bool pokemon_reward = 2;
 			bool item_loot_table = 3;
@@ -17749,7 +17749,7 @@ message VsSeekerLootProto {
 	}
 
 	int32 rank_level = 1;
-	repeated PBNEDLFLDCE reward = 2;
+	repeated RewardProto reward = 2;
 	VsSeekerRewardTrack reward_track = 3;
 }
 

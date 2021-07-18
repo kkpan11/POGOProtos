@@ -14,7 +14,7 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: 0.185.x_obf
+* Version: Base Version Compatible 0.185.x Partial Obfuscated.
 *
 */
 
@@ -8455,7 +8455,7 @@ message GetCombatResultsOutProto {
 		ERROR_PLAYER_QUIT remove_entry 4;
 	}
 
-	message CHPIGIAOHOC {
+	message CombatRematchProto {
 		string djnncalienb remove_entry 1;
 		string combat_league_template_id remove_entry 2;
 	}
@@ -8466,7 +8466,7 @@ message GetCombatResultsOutProto {
 	OKODKEACAJI anlaeeaeebk remove_entry 4;
 	int32 cidcjklelie remove_entry 5;
 	CombatPlayerFinishState jbmamhkohnc remove_entry 6;
-	CHPIGIAOHOC kcfokoifpfe remove_entry 7;
+	CombatRematchProto kcfokoifpfe remove_entry 7;
 }
 
 message GetDailyEncounterOutProto {

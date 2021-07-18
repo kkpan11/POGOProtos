@@ -14,7 +14,7 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: 0.187.x_obf
+* Version: Base Version Compatible 0.187.x Partial Obfuscated.
 *
 */
 
@@ -5191,7 +5191,7 @@ message CKPCDEEENMB {
 		int32 ehbbekafbka = 4;
 	}
 
-	DFJBGELCPOL.HBIHKKBLENC status = 1;
+	InvasionStatus.Status status = 1;
 	PokemonProto canhcgjedke = 2;
 	CaptureProbabilityProto dbianmbmnch = 3;
 	Item iiadjbboilm = 4;
@@ -6370,25 +6370,6 @@ message DEMMAEMBFEI {
 		CIDIKBCILCA event_banner = 7;
 		LKPHMBPACNE timed_group_challenge = 8;
 		ADFGEDKANOB mini_collection = 9;
-	}
-}
-
-message DFJBGELCPOL {
-	enum HBIHKKBLENC {
-		UNSET = 0;
-		SUCCESS = 1;
-		ERROR = 2;
-		ERROR_FORT_NOT_FOUND = 3;
-		ERROR_INCIDENT_NOT_FOUND = 4;
-		ERROR_STEP_ALREADY_COMPLETED = 5;
-		ERROR_WRONG_STEP = 6;
-		ERROR_PLAYER_BELOW_MIN_LEVEL = 7;
-		ERROR_INCIDENT_EXPIRED = 8;
-		ERROR_MISSING_INCIDENT_TICKET = 9;
-		ERROR_ENCOUNTER_POKEMON_INVENTORY_FULL = 10;
-		ERROR_PLAYER_BELOW_V2_MIN_LEVEL = 11;
-		ERROR_INVALID_HEALTH_UPDATES = 20;
-		ERROR_ATTACKING_POKEMON_INVALID = 30;
 	}
 }
 
@@ -9119,7 +9100,7 @@ message HDGNEMLCJJO {
 }
 
 message HDLBNDCGLGH {
-	DFJBGELCPOL.HBIHKKBLENC status = 1;
+	InvasionStatus.Status status = 1;
 	CombatProto bpfkfgidjcc = 2;
 }
 
@@ -9725,6 +9706,27 @@ message InvasionNpcDisplaySettingsProto {
 	string model_name = 7;
 	string tutorial_on_loss_string = 8;
 	bool is_male = 9;
+}
+
+message InvasionStatus {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR = 2;
+		ERROR_FORT_NOT_FOUND = 3;
+		ERROR_INCIDENT_NOT_FOUND = 4;
+		ERROR_STEP_ALREADY_COMPLETED = 5;
+		ERROR_WRONG_STEP = 6;
+		ERROR_PLAYER_BELOW_MIN_LEVEL = 7;
+		ERROR_INCIDENT_EXPIRED = 8;
+		ERROR_MISSING_INCIDENT_TICKET = 9;
+		ERROR_ENCOUNTER_POKEMON_INVENTORY_FULL = 10;
+		ERROR_PLAYER_BELOW_V2_MIN_LEVEL = 11;
+		ERROR_INVALID_HEALTH_UPDATES = 20;
+		ERROR_ATTACKING_POKEMON_INVALID = 30;
+	}
+
+	Status status = 1;
 }
 
 message InvasionTelemetry {
@@ -10767,7 +10769,7 @@ message MGGOBDFAEKK {
 }
 
 message MHNEIDDBNGC {
-	DFJBGELCPOL.HBIHKKBLENC status = 1;
+	InvasionStatus.Status status = 1;
 	LootProto nldndpcfdmh = 2;
 	bool endlkcenbpd = 3;
 }
@@ -11671,7 +11673,7 @@ message OPGFAKMGJEI {
 }
 
 message OPJDIJGJLLE {
-	DFJBGELCPOL.HBIHKKBLENC status = 1;
+	InvasionStatus.Status status = 1;
 }
 
 message OnboardingSettingsProto {
@@ -15065,7 +15067,7 @@ message PushNotificationTelemetry {
 }
 
 message QuestConditionProto {
-	enum GPKEHAKMEHA {
+	enum ConditionType {
 		UNSET = 0;
 		WITH_POKEMON_TYPE = 1;
 		WITH_POKEMON_CATEGORY = 2;
@@ -15129,7 +15131,7 @@ message QuestConditionProto {
 		WithTempEvoIdProto with_temp_evo_id = 29;
 	}
 
-	GPKEHAKMEHA gnkgaimjkch = 1;
+	ConditionType gnkgaimjkch = 1;
 }
 
 message QuestCreateDetail {
