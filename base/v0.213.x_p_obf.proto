@@ -17903,7 +17903,7 @@ message QuestProto {
 		BattleQuestProto battle = 14;
 	}
 
-	enum FGJEONAPKJF {
+	enum Status {
 		STATUS_UNDEFINED = 0;
 		STATUS_ACTIVE = 1;
 		STATUS_COMPLETED = 2;
@@ -17938,7 +17938,7 @@ message QuestProto {
 	string template_id = 103;
 	int32 lnmclnhkgkl = 104;
 	QuestGoalProto goal = 105;
-	FGJEONAPKJF status = 106;
+	Status status = 106;
 	repeated QuestRewardProto quest_rewards = 107;
 	int64 ajogiohcaai = 108;
 	int64 dooabdpllig = 109;
