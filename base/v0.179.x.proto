@@ -14,7 +14,7 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: 0.179.x
+* Version: Base Version Compatible 0.179.x Full Cleaned.
 *
 */
 
@@ -4866,7 +4866,7 @@ message ClientFortModifierProto {
 
 message ClientGameMasterTemplateProto {
 	string template_id = 1;
-	//bytes data = 2;
+	//GameMasterClientTemplateProto data = 2;
 	GameMasterClientTemplateProto data = 2;
 }
 
@@ -9031,8 +9031,8 @@ message InventoryDeltaProto {
 
 message InventoryItemProto {
 	int64 modified_timestamp = 1;
-	bytes deleted_item_key = 2;
-	bytes item = 3;
+	HoloInventoryKeyProto deleted_item_key = 2;
+	HoloInventoryItemProto inventory_item_data = 3;
 }
 
 message InventorySettingsProto {
