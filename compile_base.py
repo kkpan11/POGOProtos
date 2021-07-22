@@ -4,7 +4,7 @@
 import argparse
 import operator
 import os
-import re
+#import re
 import shutil
 from subprocess import call
 
@@ -728,7 +728,7 @@ def open_proto_file(main_file, head):
                     if os.path.exists(gen_last_files + "/" + v2):
                         if v2 not in includes:
                             includes.append(v2)
-                elif message.startswith('\trepeated'):
+                elif message.startswith('\trepeated') or message.startswith('\t\trepeated') or message.startswith('\t\t\trepeated'):
                     file_for_includes = message.split(" ")[1].strip() + '.proto'
                     if os.path.exists(gen_last_files + "/" + file_for_includes) and file_for_includes not in includes:
                         includes.append(file_for_includes)
