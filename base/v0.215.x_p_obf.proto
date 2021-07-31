@@ -9213,12 +9213,6 @@ message GIMBIPLNHBH {
 	int64 jekjefoogpc = 5;
 }
 
-message GJBOMBCILAB {
-	double babpnfjefgf = 1;
-	double jlopdapdihp = 2;
-	double fojmkdjahof = 3;
-}
-
 message GJGKMAIFBAJ {
 	string hpecbblmffn = 1;
 	EggSlotType abnhhlokboa = 2;
@@ -9442,7 +9436,7 @@ message GameMasterClientTemplateProto {
 	AddressBookImportSettings address_book_import_settings = 120;
 	MusicSettings music_settings = 121;
 	JNNIJOKNABI jodnnfmfdhj = 122;
-	GJBOMBCILAB eiabcghggak = 123;
+	MapObjectsInteractionRangeSettings map_objects_interaction_range_settings = 123;
 	BAFKLGCFNFK kmiijjilcoh = 124;
 }
 
@@ -13436,6 +13430,12 @@ message MapEventsTelemetry {
 	repeated int32 guard_pokemon_level = 3;
 	Team team = 4;
 	bool is_player_in_range = 5;
+}
+
+message MapObjectsInteractionRangeSettings {
+	double babpnfjefgf = 1;
+	double jlopdapdihp = 2;
+	double fojmkdjahof = 3;
 }
 
 message MapProvider {

@@ -3168,6 +3168,8 @@ enum NotificationCategory {
   NOTIFICATION_CATEGORY_TIMED_GROUP_CHALLENGE_STARTED = 51;
   NOTIFICATION_CATEGORY_TIMED_GROUP_CHALLENGE_GOAL_MET = 52;
   NOTIFICATION_CATEGORY_DEEP_LINKING = 53;
+  NOTIFICATION_CATEGORY_POKEDEX_UNLOCKED_CATEGORY_LIST = 55;
+  NOTIFICATION_CATEGORY_CONTACT_SIGNED_UP = 56;
 }
 
 enum NotificationState {
@@ -4350,9 +4352,9 @@ message AddReferrerProto {
 }
 
 message AddressBookImportSettings {
-  bool ob_enabled_setting = 1;
-  int32 ob_address_book_import_int = 2;
-  bool ob_address_book_import_bool = 3;
+  bool ob_is_enabled = 1;
+  int32 ob_onboarding_screen_level = 2;
+  bool ob_show_opt_out_checkbox = 3;
 }
 
 message AddressBookImportTelemetry {
@@ -5784,12 +5786,6 @@ message CMFHAFEENOK {
   float gmiojlfmhfo = 2;
   float gobldkgogca = 3;
   float fhmkalieaoe = 4;
-}
-
-message CMMANDIPBIG {
-  double eajeapofpgn = 1;
-  double bbfobieibge = 2;
-  double iiccccmhdij = 3;
 }
 
 message CameraSettingsProto {
@@ -8923,7 +8919,7 @@ message GameMasterClientTemplateProto {
   AddressBookImportSettings address_book_import_settings = 120;
   MusicSettings music_settings = 121;
   AGJELDGLDLM dfijlnhhajf = 122;
-  CMMANDIPBIG elhmbgpchid = 123;
+  MapObjectsInteractionRangeSettings map_objects_interaction_range_settings  = 123;
   DCPJECHIGOH ehbghmkmlbf = 124;
 }
 
@@ -12014,6 +12010,12 @@ message MapEventsTelemetry {
   repeated int32 guard_pokemon_level = 3;
   Team team = 4;
   bool is_player_in_range = 5;
+}
+
+message MapObjectsInteractionRangeSettings {
+  double ob_interaction_range_meters = 1;
+  double ob_far_interaction_range_meters = 2;
+  double ob_remote_interaction_range_meters = 3;
 }
 
 message MapPokemonProto {
