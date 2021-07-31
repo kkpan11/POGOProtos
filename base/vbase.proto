@@ -8919,7 +8919,7 @@ message GameMasterClientTemplateProto {
   AddressBookImportSettings address_book_import_settings = 120;
   MusicSettings music_settings = 121;
   AGJELDGLDLM dfijlnhhajf = 122;
-  MapObjectsInteractionRangeSettings map_objects_interaction_range_settings  = 123;
+  MapObjectsInteractionRangeSettings map_objects_interaction_range_settings = 123;
   DCPJECHIGOH ehbghmkmlbf = 124;
 }
 
