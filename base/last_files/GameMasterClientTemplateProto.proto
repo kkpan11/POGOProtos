@@ -121,6 +121,17 @@ import "EggTransparencySettingsProto.proto";
 import "IncidentPrioritySettingsProto.proto";
 import "ReferralSettingsProto.proto";
 import "AppraisalStarThresholdSettings.proto";
+import "PokedexCategoriesSettings.proto";
+import "BattleVisualSettings.proto";
+import "AddressablePokemonSettings.proto";
+import "VerboseLogRaidSettings.proto";
+import "DKJLGDDPKMH.proto";
+import "CMFHAFEENOK.proto";
+import "AddressBookImportSettings.proto";
+import "MusicSettings.proto";
+import "AGJELDGLDLM.proto";
+import "MapObjectsInteractionRangeSettings.proto";
+import "DCPJECHIGOH.proto";
 
 message GameMasterClientTemplateProto {
 	string template_id = 1;
@@ -224,4 +235,15 @@ message GameMasterClientTemplateProto {
 	IncidentPrioritySettingsProto incident_priority_settings = 108;
 	ReferralSettingsProto referral_settings = 109;
 	AppraisalStarThresholdSettings appraisal_star_threshold_settings = 112;
+	PokedexCategoriesSettings pokedex_categories_settings = 114;
+	BattleVisualSettings battle_visual_settings = 115;
+	AddressablePokemonSettings addressable_pokemon_settings = 116;
+	VerboseLogRaidSettings verbose_log_raid_settings = 117;
+	DKJLGDDPKMH gbchhlaknlm = 118;
+	CMFHAFEENOK mcfoaegjppl = 119;
+	AddressBookImportSettings address_book_import_settings = 120;
+	MusicSettings music_settings = 121;
+	AGJELDGLDLM dfijlnhhajf = 122;
+	MapObjectsInteractionRangeSettings map_objects_interaction_range_settings = 123;
+	DCPJECHIGOH ehbghmkmlbf = 124;
 }

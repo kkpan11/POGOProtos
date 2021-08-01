@@ -97,6 +97,7 @@ import "ReferralTelemetry.proto";
 import "UploadManagementTelemetry.proto";
 import "WayspotEditTelemetry.proto";
 import "ClientSettingsTelemetry.proto";
+import "PokedexCategorySelectedTelemetry.proto";
 import "ServerData.proto";
 import "CommonFilterProto.proto";
 
@@ -178,6 +179,7 @@ message HoloholoClientTelemetryOmniProto {
 		UploadManagementTelemetry upload_management_telemetry = 74;
 		WayspotEditTelemetry wayspot_edit_telemetry = 75;
 		ClientSettingsTelemetry client_settings_telemetry = 76;
+		PokedexCategorySelectedTelemetry pokedex_category_selected_telemetry = 77;
 	}
 
 	ServerData server_data = 1001;

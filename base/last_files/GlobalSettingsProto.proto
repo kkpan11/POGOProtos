@@ -82,6 +82,7 @@ import "IdfaSettingsProto.proto";
 import "FormChangeSettingsProto.proto";
 import "StoreIapSettingsProto.proto";
 import "UploadManagementSettings.proto";
+import "RaidLoggingSettingsProto.proto";
 
 message GlobalSettingsProto {
 	FortSettingsProto fort_settings = 2;
@@ -149,4 +150,5 @@ message GlobalSettingsProto {
 	FormChangeSettingsProto form_change_settings = 68;
 	repeated StoreIapSettingsProto iap_settings = 69;
 	UploadManagementSettings upload_management_settings = 72;
+	RaidLoggingSettingsProto raid_logging_settings = 73;
 }

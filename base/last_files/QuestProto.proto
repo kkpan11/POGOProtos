@@ -40,6 +40,7 @@ import "DaysWithARowQuestProto.proto";
 import "QuestGoalProto.proto";
 import "QuestRewardProto.proto";
 import "DailyCounterProto.proto";
+import "QuestBranchRewardProto.proto";
 
 message QuestProto {
 	enum Context {
@@ -54,6 +55,7 @@ message QuestProto {
 		EVOLUTION_QUEST = 8;
 		TIMED_MINI_COLLECTION_QUEST = 9;
 		REFERRAL_QUEST = 10;
+		BRANCHING_QUEST = 11;
 	}
 
 	oneof Quest {
@@ -108,4 +110,5 @@ message QuestProto {
 	int64 end_timestamp_ms = 119;
 	bool is_bonus_challenge = 120;
 	ReferralInfoProto referral_info = 121;
+	repeated QuestBranchRewardProto branch_rewards = 122;
 }
