@@ -8786,9 +8786,34 @@ message FortDeployOutProto {
 	}
 
 	Result result = 1;
-	JHJFOKHFOKL menahniiffi = 2;
+	FortDetailsOutProto fort_details_out_proto = 2;
 	PokemonProto pgfgbifngih = 3;
 	GymStateProto gdneheloemc = 4;
+}
+
+message FortDetailsOutProto {
+	string maibbdnimkb = 1;
+	int32 okjfenbnooa = 2;
+	repeated PokemonProto pokemon = 3;
+	string bdodncnbceb = 4;
+	repeated string kcpgpgbacho = 5;
+	int32 cpbdlgkbdjg = 6;
+	int32 pefnflgegko = 7;
+	int32 hainmoigdmg = 8;
+	FortType fhadgchjdnf = 9;
+	double dajhaodmbhc = 10;
+	double heeellnbegb = 11;
+	string gnepieoighj = 12;
+	repeated GEEBOFBIHPJ gdinhcjhcjg = 13;
+	bool ljpecjniflb = 14;
+	string fncjoidapci = 15;
+	ODHDMGANJLE cpehmadkeoc = 16;
+	repeated string jenkmdiljce = 17;
+	string agkeghdpbjb = 18;
+	KIMNGEKFMPK aolfdcnghll = 19;
+	string khhbnakojnm = 20;
+	string opfhjonmdkj = 21;
+	int32 jadkfekabji = 22;
 }
 
 message FortSearchLogEntry {
@@ -9274,7 +9299,7 @@ message GLIKCKMEEKD {
 	}
 
 	Result result = 1;
-	JHJFOKHFOKL menahniiffi = 2;
+	FortDetailsOutProto fort_details_out_proto = 2;
 }
 
 message GNHPMLHMGND {
@@ -11720,31 +11745,6 @@ message JHHEEDFCLDN {
 	GPHIFDMLIEL ocejjgikeem = 4;
 }
 
-message JHJFOKHFOKL {
-	string maibbdnimkb = 1;
-	int32 okjfenbnooa = 2;
-	repeated PokemonProto pokemon = 3;
-	string bdodncnbceb = 4;
-	repeated string kcpgpgbacho = 5;
-	int32 cpbdlgkbdjg = 6;
-	int32 pefnflgegko = 7;
-	int32 hainmoigdmg = 8;
-	FortType fhadgchjdnf = 9;
-	double dajhaodmbhc = 10;
-	double heeellnbegb = 11;
-	string gnepieoighj = 12;
-	repeated GEEBOFBIHPJ gdinhcjhcjg = 13;
-	bool ljpecjniflb = 14;
-	string fncjoidapci = 15;
-	ODHDMGANJLE cpehmadkeoc = 16;
-	repeated string jenkmdiljce = 17;
-	string agkeghdpbjb = 18;
-	KIMNGEKFMPK aolfdcnghll = 19;
-	string khhbnakojnm = 20;
-	string opfhjonmdkj = 21;
-	int32 jadkfekabji = 22;
-}
-
 message JIOHBFJLEOB {
 	VsSeekerRewardTrack fnmbmgkakci = 1;
 }
@@ -14184,7 +14184,7 @@ message OIPDNBAEKFF {
 	}
 
 	Result result = 1;
-	JHJFOKHFOKL menahniiffi = 2;
+	FortDetailsOutProto fort_details_out_proto = 2;
 }
 
 message OJJDOIHPKNB {
