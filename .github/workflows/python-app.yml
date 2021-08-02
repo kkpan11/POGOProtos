@@ -24,7 +24,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
-    - name: Install dependencies and run build of versions ${{ matrix.versions }}
+    - name: Install dependencies and run build of version ${{ matrix.versions }}
       run: |      
         sudo apt-get install clang-format
         pushd /tmp
