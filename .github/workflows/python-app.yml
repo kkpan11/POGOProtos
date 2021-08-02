@@ -34,7 +34,7 @@ jobs:
         export PATH=/tmp/bin:$PATH
         chmod +x ./compile_base.py
         ./compile_base.py -l cpp -v ${{ matrix.versions }}
-        clang-format -i -style file $(find base -name "v0.205.x.proto")        
-        clang-format -i -style file $(find base -name "v0.215.x_p_obf.proto")
-        clang-format -i -style file $(find base -name "vbase.proto")
+        clang-format -i -style file $(find base -name "v${{ matrix.versions }}.proto")        
+        # clang-format -i -style file $(find base -name "v0.215.x_p_obf.proto")
+        # clang-format -i -style file $(find base -name "vbase.proto")
         # git diff --exit-code
