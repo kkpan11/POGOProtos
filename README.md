@@ -17,7 +17,8 @@ We are following [semantic versioning](http://semver.org/) for POGOProtos.  Ever
 
 | Version      | Base                                                                                                      | Notes                  | Extra                           |
 |--------------|-----------------------------------------------------------------------------------------------------------|------------------------|---------------------------------|
-| [x](https://github.com/Furtif/POGOProtos/raw/master/.current-version)       |  [v0.21x.x](https://github.com/Furtif/POGOProtos/blob/master/base/vbase.proto)                         | **Speculation** (_[/base/vbase.proto](https://github.com/Furtif/POGOProtos/blob/master/base/vbase.proto)_)  |  Protocol Buffers v3.17.3     |
+| [2.54.8](https://github.com/Furtif/POGOProtos/raw/master/.current-version)       |  [v0.215.x](https://github.com/Furtif/POGOProtos/blob/master/base/v0.215
+x_p_obf.proto)                         | **Speculation** (_[/base/vbase.proto](https://github.com/Furtif/POGOProtos/blob/master/base/vbase.proto)_)  |  Protocol Buffers v3.17.3     |
 | Obfuscated (partial)       |  [v0.215.x](https://github.com/Furtif/POGOProtos/blob/master/base/v0.215.x_p_obf.proto)                         | Compilable  |  Protocol Buffers v3.17.3     |
 | [2.54.1](https://github.com/Furtif/POGOProtos/raw/master/.current-version)       |  [v0.205.x](https://github.com/Furtif/POGOProtos/blob/master/base/v0.205.x.proto)                         | **Updated** (_[/base/vbase.proto](https://github.com/Furtif/POGOProtos/blob/master/base/vbase.proto)_)  |  Protocol Buffers v3.15.8     |
 
@@ -93,8 +94,8 @@ This is an example of how the generated code will be organized:
  * _Note: the *.desc file is auto created in this function_
 
 ```
-python compile_base.py -l cpp -k -v 0.205.x:
- - v0.205.x.proto -> out/single_file/cpp/POGOProtos.Rpc.desc
+python compile_base.py -l cpp -k -v base:
+ - vbase.proto -> out/single_file/cpp/POGOProtos.Rpc.desc
  -                -> out/single_file/cpp/POGOProtos.Rpc.pb.cc
  -                -> out/single_file/cpp/POGOProtos.Rpc.pb.h
  -                -> out/single_file/cpp/POGOProtos.Rpc.proto
