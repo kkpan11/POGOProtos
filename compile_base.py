@@ -79,7 +79,7 @@ if gen_asset_digest is not None:
     for command in commands:
         call(command, shell=True)
 
-    exit(0);
+    exit(0)
 
 if gen_game_master is not None:
     if not os.path.exists(gen_game_master):
@@ -105,7 +105,7 @@ if gen_game_master is not None:
     for command in commands:
         call(command, shell=True)
 
-    exit(0);
+    exit(0)
 
 # Add licenses
 head = '/*\n'
