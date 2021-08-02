@@ -35,4 +35,4 @@ jobs:
         chmod +x ./compile_base.py
         ./compile_base.py -l cpp -v ${{ matrix.versions }}
         clang-format -i -style file $(find base -name "v${{ matrix.versions }}.proto")
-        git diff --exit-code
+        # git diff --exit-code
