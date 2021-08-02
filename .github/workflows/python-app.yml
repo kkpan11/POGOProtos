@@ -31,5 +31,5 @@ jobs:
         chmod +x ./compile_base.py
         ./compile_base.py -l cpp
         clang-format -i -style file $(find base -name "vbase.proto")
-        clang-format -i -style file $(find base -name "vmixed.proto")
+        clang-format -i -style file $(find base -name "v0.215.x_p_obf.proto")
         # git diff --exit-code
