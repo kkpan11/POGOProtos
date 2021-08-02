@@ -5018,19 +5018,6 @@ message BBBIACFDKAL {
 	int32 bjdaiadhcag = 3;
 }
 
-message BBEHOOGALOC {
-	enum LHMHOPDJKLB {
-		TYPE_UNSET = 0;
-	}
-
-	enum NKGDANLGMPP {
-		COLOR_UNSET = 0;
-	}
-
-	LHMHOPDJKLB cpjidojlphe = 1;
-	NKGDANLGMPP boknjnbinkd = 2;
-}
-
 message BBFCBGAEDBC {
 	enum Result {
 		CREATE_SUCCESS = 0;
@@ -7114,6 +7101,13 @@ message CreatePokemonTagOutProto {
 	PokemonTagProto created_tag = 2;
 }
 
+message CrossGameSocialGlobalSettingsProto {
+	int32 oeandaddfdb = 1;
+	int32 jpjnfpchcpa = 2;
+	int32 olmadeajdid = 3;
+	int32 hdlfecgjfoh = 4;
+}
+
 message CrossGameSocialSettingsProto {
 	bool hjnllhjoaoi = 1;
 	bool mfpbhohadcj = 2;
@@ -7706,22 +7700,6 @@ message EAHBDECGKEM {
 
 	Result result = 1;
 	TradingProto cjeokcemplo = 2;
-}
-
-message EAJBCCEJMEN {
-	repeated int32 hpkkoibbaal = 1;
-	repeated BattleParticipantProto jbmdpbedhea = 2;
-	int64 jalcnoikkok = 3;
-	int64 ogeekaofejd = 4;
-	int64 dahokkfjlpm = 5;
-	int64 ihnpdkobfmm = 6;
-	string amcmmheifim = 8;
-	string nkpcndgkmhd = 9;
-	bool jeiopilkbde = 10;
-	int64 jjfijlijnhp = 11;
-	int32 okonehjiklb = 12;
-	GameplayWeatherProto.WeatherCondition jjnhhkbohii = 13;
-	repeated string fmemmoahfnm = 14;
 }
 
 message EANOCMKICHC {
@@ -10052,7 +10030,7 @@ message GetRaidDetailsOutProto {
 		ERROR_POI_INACCESSIBLE = 6;
 	}
 
-	EAJBCCEJMEN mpmcjpmpcfi = 1;
+	LobbyProto lobby = 1;
 	FEODDGNBPKO fmccgpbhdlf = 2;
 	bool lgofckklbpc = 3;
 	Result result = 4;
@@ -11802,13 +11780,6 @@ message JMKECDNNCHE {
 	int32 bdjhhemnnbo = 8;
 }
 
-message JNHODLNDJEN {
-	double dbmidncjpcf = 1;
-	int32 beampmnlcge = 2;
-	double medhddgppkp = 3;
-	int64 ebpdcnfmhgk = 4;
-}
-
 message JNNIJOKNABI {
 	bool fkhablpplgo = 1;
 	int32 icliinffhgj = 2;
@@ -11827,13 +11798,6 @@ message JNNNGIELLLH {
 message JNOBNCBAGMH {
 	double dajhaodmbhc = 2;
 	double heeellnbegb = 3;
-}
-
-message JNPFEBOMCCF {
-	int32 oeandaddfdb = 1;
-	int32 jpjnfpchcpa = 2;
-	int32 olmadeajdid = 3;
-	int32 hdlfecgjfoh = 4;
 }
 
 message JOGHELEMHHF {
@@ -11875,7 +11839,7 @@ message JoinLobbyOutProto {
 	}
 
 	Result result = 1;
-	EAJBCCEJMEN mpmcjpmpcfi = 2;
+	LobbyProto lobby = 2;
 }
 
 message JournalAddEntryProto {
@@ -11980,7 +11944,7 @@ message KFDLOBLJDOE {
 
 	JNNNGIELLLH.HAGLFEDEGKN iipcopkfgfa = 1;
 	MNGCPPMIKGA dialog = 5;
-	BBEHOOGALOC npmllggkpic = 6;
+	RouteStamp route_stamp = 6;
 	RoutePlayStatus.Status status = 7;
 }
 
@@ -12838,6 +12802,22 @@ message LobbyPokemonProto {
 	HoloPokemonId dmbidbaodda = 2;
 	int32 bidkdggplkk = 3;
 	float dgkbamdkdon = 4;
+}
+
+message LobbyProto {
+	repeated int32 hpkkoibbaal = 1;
+	repeated BattleParticipantProto jbmdpbedhea = 2;
+	int64 jalcnoikkok = 3;
+	int64 ogeekaofejd = 4;
+	int64 dahokkfjlpm = 5;
+	int64 ihnpdkobfmm = 6;
+	string amcmmheifim = 8;
+	string nkpcndgkmhd = 9;
+	bool jeiopilkbde = 10;
+	int64 jjfijlijnhp = 11;
+	int32 okonehjiklb = 12;
+	GameplayWeatherProto.WeatherCondition jjnhhkbohii = 13;
+	repeated string fmemmoahfnm = 14;
 }
 
 message LocationE6Proto {
@@ -13811,7 +13791,7 @@ message NMIJHFIAOOD {
 	}
 
 	Result result = 1;
-	EAJBCCEJMEN mpmcjpmpcfi = 2;
+	LobbyProto lobby = 2;
 }
 
 message NMJFPPPLIAL {
@@ -14358,14 +14338,14 @@ message PDIABLJCJGE {
 	message EMJDKHCNPIA {
 		string blkfhbenhmf = 1;
 		string kcpgpgbacho = 2;
-		BBEHOOGALOC ldolhlefpgc = 3;
+		RouteStamp ldolhlefpgc = 3;
 	}
 
 	string jiaeplopdnn = 1;
 	RouteType aapjooddohm = 2;
 	int32 gdpkbnfobpc = 3;
 	int64 nghbgpblcbe = 4;
-	repeated BBEHOOGALOC jjfklopmlef = 5;
+	repeated RouteStamp jjfklopmlef = 5;
 	string gdmeipgkpia = 6;
 	string iljhlkfhjdm = 7;
 	string ohnkcgflfpi = 8;
@@ -14500,7 +14480,7 @@ message PIIAIEIIGBF {
 	string maibbdnimkb = 1;
 	string bdodncnbceb = 2;
 	string gnepieoighj = 3;
-	repeated BLKLMLILBAD klkjefdkngl = 4;
+	repeated BLKLMLILBAD waypoints = 4;
 	EFPIENJDFBB maegaghiamf = 5;
 	bool pacaklammhc = 6;
 	int64 liaecabinef = 7;
@@ -18581,7 +18561,7 @@ message RouteMakerProto {
 }
 
 message RoutePlayProto {
-	message LJAOCKPEHIM {
+	message RoutePlayWaypointProto {
 		string ppeokojebkk = 1;
 		string blkfhbenhmf = 2;
 		string kcpgpgbacho = 3;
@@ -18590,12 +18570,12 @@ message RoutePlayProto {
 		bool ifchpmchjbm = 6;
 		int32 eljbbikkabg = 7;
 		int32 ajogcoddbbb = 8;
-		BBEHOOGALOC npmllggkpic = 9;
+		RouteStamp route_stamp = 9;
 		string dndlfaleaoc = 10;
 	}
 
 	string jiaeplopdnn = 1;
-	repeated LJAOCKPEHIM klkjefdkngl = 2;
+	repeated RoutePlayWaypointProto waypoints = 2;
 	int32 hjnoibknkae = 3;
 	string gdmeipgkpia = 4;
 	string iljhlkfhjdm = 5;
@@ -18629,6 +18609,19 @@ message RoutePlayStatus {
 		ERROR_PLAYER_LEVEL_TOO_LOW = 10;
 		ERROR_U13_NO_PERMISSION = 11;
 	}
+}
+
+message RouteStamp {
+	enum LHMHOPDJKLB {
+		TYPE_UNSET = 0;
+	}
+
+	enum NKGDANLGMPP {
+		COLOR_UNSET = 0;
+	}
+
+	LHMHOPDJKLB cpjidojlphe = 1;
+	NKGDANLGMPP boknjnbinkd = 2;
 }
 
 message RouteValidation {
@@ -18930,7 +18923,7 @@ message SetLobbyPokemonOutProto {
 	}
 
 	Result result = 1;
-	EAJBCCEJMEN mpmcjpmpcfi = 2;
+	LobbyProto lobby = 2;
 }
 
 message SetLobbyVisibilityOutProto {
@@ -18943,7 +18936,7 @@ message SetLobbyVisibilityOutProto {
 	}
 
 	Result result = 1;
-	EAJBCCEJMEN mpmcjpmpcfi = 2;
+	LobbyProto lobby = 2;
 }
 
 message SetPlayerTeamOutProto {
@@ -18977,6 +18970,13 @@ message SfidaGlobalSettingsProto {
 	float pdnipinlfgc = 1;
 }
 
+message SfidaMetrics {
+	double dbmidncjpcf = 1;
+	int32 beampmnlcge = 2;
+	double medhddgppkp = 3;
+	int64 ebpdcnfmhgk = 4;
+}
+
 message SfidaMetricsUpdate {
 	enum UpdateType {
 		UNSET = 0;
@@ -18986,7 +18986,7 @@ message SfidaMetricsUpdate {
 
 	UpdateType apmdhgdadib = 1;
 	int64 timestamp_ms = 2;
-	JNHODLNDJEN kiogkddaikc = 3;
+	SfidaMetrics metrics = 3;
 }
 
 message ShareExRaidPassLogEntry {
@@ -19082,7 +19082,7 @@ message SocialClientSettingsProto {
 	bool pkjgfmgblff = 11;
 	bool jpophjhjimm = 12;
 	bool gddpbnojcji = 13;
-	JNPFEBOMCCF cross_game_social_settings = 14;
+	CrossGameSocialGlobalSettingsProto cross_game_social_settings = 14;
 }
 
 message SocialGiftCountTelemetry {
@@ -19149,14 +19149,14 @@ message SocialV2Enum {
 }
 
 message SouvenirProto {
-	message MMGDFMDNIML {
+	message SouvenirDetails {
 		int64 bppjodicnoh = 1;
 		double dajhaodmbhc = 3;
 		double heeellnbegb = 4;
 	}
 
 	SouvenirTypeId djahlkjfocl = 1;
-	repeated MMGDFMDNIML pofkdhinlhe = 2;
+	repeated SouvenirDetails souvenirs_details = 2;
 }
 
 message SpinPokestopTelemetry {
