@@ -81,6 +81,7 @@ import "CatchPokemonGlobalSettingsProto.proto";
 import "IdfaSettingsProto.proto";
 import "FormChangeSettingsProto.proto";
 import "StoreIapSettingsProto.proto";
+import "ObNewGlobalSetting.proto";
 import "UploadManagementSettings.proto";
 import "RaidLoggingSettingsProto.proto";
 
@@ -149,6 +150,7 @@ message GlobalSettingsProto {
 	IdfaSettingsProto idfa_settings = 67;
 	FormChangeSettingsProto form_change_settings = 68;
 	repeated StoreIapSettingsProto iap_settings = 69;
+	ObNewGlobalSetting ob_new_global_setting = 70;
 	UploadManagementSettings upload_management_settings = 72;
 	RaidLoggingSettingsProto raid_logging_settings = 73;
 }

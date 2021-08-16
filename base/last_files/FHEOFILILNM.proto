@@ -21,15 +21,6 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message AvailableSubmissionsPerSubmissionType {
-	int32 submissions_left = 1;
-	int32 min_player_level = 2;
-	bool is_feature_enabled = 3;
-	int64 time_window_for_submissions_limit_ms = 4;
-	int32 max_poi_distance_in_meters = 5;
-	repeated string blacklisted_os = 6;
-	repeated string blacklisted_device_id = 7;
-	bool is_whitelisted_user = 8;
-	bool is_upload_later_enabled = 9;
-	float daily_new_submissions = 10;
+message FHEOFILILNM {
+	repeated string hbjbaeccaic = 1;
 }

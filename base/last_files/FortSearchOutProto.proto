@@ -56,4 +56,5 @@ message FortSearchOutProto {
 	ClientQuestProto challenge_quest = 14;
 	GiftBoxProto gift_box = 15;
 	AdDetails sponsored_gift = 16;
+	LootProto ob_loot = 17;
 }

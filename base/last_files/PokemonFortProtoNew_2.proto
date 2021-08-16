@@ -21,15 +21,14 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message AvailableSubmissionsPerSubmissionType {
-	int32 submissions_left = 1;
-	int32 min_player_level = 2;
-	bool is_feature_enabled = 3;
-	int64 time_window_for_submissions_limit_ms = 4;
-	int32 max_poi_distance_in_meters = 5;
-	repeated string blacklisted_os = 6;
-	repeated string blacklisted_device_id = 7;
-	bool is_whitelisted_user = 8;
-	bool is_upload_later_enabled = 9;
-	float daily_new_submissions = 10;
+import "PokemonDisplayProto.proto";
+
+message PokemonFortProtoNew_2 {
+	string ob_pokemon_fort_proto_new = 1;
+	uint64 ob_pokemon_fort_proto_new_uint64 = 2;
+	int32 ob_pokemon_fort_proto_new_int32 = 3;
+	int64 ob_pokemon_fort_proto_new_int64 = 4;
+	double ob_pokemon_fort_proto_new_double_1 = 5;
+	double ob_pokemon_fort_proto_new_double_2 = 6;
+	PokemonDisplayProto ob_pokemon_display = 7;
 }

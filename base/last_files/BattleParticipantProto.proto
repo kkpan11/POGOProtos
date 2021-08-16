@@ -51,4 +51,6 @@ message BattleParticipantProto {
 	int64 last_player_quit_time_ms = 21;
 	string player_id = 22;
 	repeated PokemonInfo referenced_pokemon = 23;
+	uint64 ob_battle_participant_int64 = 24;
+	uint64 ob_battle_participant_int64_1 = 25;
 }

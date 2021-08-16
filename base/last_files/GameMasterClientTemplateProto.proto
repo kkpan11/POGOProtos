@@ -118,8 +118,12 @@ import "RecommendedSearchProto.proto";
 import "InventorySettingsProto.proto";
 import "RouteDiscoverySettingsProto.proto";
 import "EggTransparencySettingsProto.proto";
+import "KGCLIDCJDFK.proto";
+import "DALCNAGHNLB.proto";
 import "IncidentPrioritySettingsProto.proto";
 import "ReferralSettingsProto.proto";
+import "EOLAIBDNKGG.proto";
+import "FCOGCOPNCOE.proto";
 import "AppraisalStarThresholdSettings.proto";
 import "PokedexCategoriesSettings.proto";
 import "BattleVisualSettings.proto";
@@ -132,6 +136,7 @@ import "MusicSettings.proto";
 import "AGJELDGLDLM.proto";
 import "MapObjectsInteractionRangeSettings.proto";
 import "DCPJECHIGOH.proto";
+import "FHEOFILILNM.proto";
 
 message GameMasterClientTemplateProto {
 	string template_id = 1;
@@ -232,8 +237,12 @@ message GameMasterClientTemplateProto {
 	InventorySettingsProto inventory_settings = 103;
 	RouteDiscoverySettingsProto route_discovery_settings = 104;
 	EggTransparencySettingsProto egg_transparency_settings = 105;
+	KGCLIDCJDFK jdhoakdpaga = 106;
+	DALCNAGHNLB piknbjjpncn = 107;
 	IncidentPrioritySettingsProto incident_priority_settings = 108;
 	ReferralSettingsProto referral_settings = 109;
+	EOLAIBDNKGG jafhblcnkjc = 110;
+	FCOGCOPNCOE jnjbbiegnhl = 111;
 	AppraisalStarThresholdSettings appraisal_star_threshold_settings = 112;
 	PokedexCategoriesSettings pokedex_categories_settings = 114;
 	BattleVisualSettings battle_visual_settings = 115;
@@ -246,4 +255,5 @@ message GameMasterClientTemplateProto {
 	AGJELDGLDLM dfijlnhhajf = 122;
 	MapObjectsInteractionRangeSettings map_objects_interaction_range_settings = 123;
 	DCPJECHIGOH ehbghmkmlbf = 124;
+	FHEOFILILNM fdonldfcjkj = 126;
 }
