@@ -253,6 +253,13 @@
       "size": 8378
     },
     {
+      "assetId": "028574de-b366-4019-8d5c-0d2ddaa4497b/1629392952263835",
+      "bundleName": "m_pants_swshuniformdefault_bundle",
+      "version": "1629392952263835",
+      "checksum": 1946517075,
+      "size": 162431
+    },
+    {
       "assetId": "02952048-94b3-4a12-b50b-987b72fab6d4/1622845097343615",
       "bundleName": "pm0080_00_pgo_2021",
       "version": "1622845097343615",
@@ -422,11 +429,11 @@
       "size": 10358
     },
     {
-      "assetId": "03e00aa2-4009-411c-9892-16180a97d0d1/1616622139998574",
+      "assetId": "03e00aa2-4009-411c-9892-16180a97d0d1/1629392545897395",
       "bundleName": "m_shirt_pkmnhoodie007_bundle",
-      "version": "1616622139998574",
-      "checksum": 4232517989,
-      "size": 304076
+      "version": "1629392545897395",
+      "checksum": 1864954891,
+      "size": 303694
     },
     {
       "assetId": "03eff521-143c-4974-8deb-2379e7996a7a/1616623967431317",
@@ -595,6 +602,13 @@
       "version": "1616639608153363",
       "checksum": 2303462151,
       "size": 18210
+    },
+    {
+      "assetId": "06185ff5-95a5-42d3-a491-60694f913650/1629392982277507",
+      "bundleName": "m_shirt_swshuniformdark_bundle",
+      "version": "1629392982277507",
+      "checksum": 3478266471,
+      "size": 223252
     },
     {
       "assetId": "065fd8dd-ebae-4654-820a-fe12117db36c/1616623866717120",
@@ -842,6 +856,13 @@
       "version": "1616644554735160",
       "checksum": 3419610747,
       "size": 493407
+    },
+    {
+      "assetId": "08d84187-bcd6-4049-9bc5-4e17aa668dd5/1629392955841442",
+      "bundleName": "f_socks_swshuniformdefault_bundle",
+      "version": "1629392955841442",
+      "checksum": 1183118946,
+      "size": 60223
     },
     {
       "assetId": "08f2c00c-b73d-47f1-a038-07d65ba72a65/1616624002884407",
@@ -1819,11 +1840,11 @@
       "size": 9499
     },
     {
-      "assetId": "115dc97f-358a-4c45-8ac1-e20e4821f609/1628875018498166",
+      "assetId": "115dc97f-358a-4c45-8ac1-e20e4821f609/1629392442517289",
       "bundleName": "json_patch_i18n_russian",
-      "version": "1628875018498166",
-      "checksum": 2996343051,
-      "size": 28499
+      "version": "1629392442517289",
+      "checksum": 2890613438,
+      "size": 29580
     },
     {
       "assetId": "11616b6c-6439-4fab-868d-d6795c6e9162/1616639682677249",
@@ -2100,6 +2121,13 @@
       "version": "1616621872019206",
       "checksum": 1724677054,
       "size": 232577
+    },
+    {
+      "assetId": "14f29cfe-b920-44cf-b44c-34f10c7716fb/1629392924612434",
+      "bundleName": "f_shoes_swshuniformdefault_bundle",
+      "version": "1629392924612434",
+      "checksum": 2162835753,
+      "size": 134434
     },
     {
       "assetId": "14f4f10b-becf-4cab-b9e6-05fa22a32267/1622156580580471",
@@ -2640,11 +2668,11 @@
       "size": 5310
     },
     {
-      "assetId": "1bb14249-cfa4-44d4-a0d6-1c58e8261650/1628875006587241",
+      "assetId": "1bb14249-cfa4-44d4-a0d6-1c58e8261650/1629392429389288",
       "bundleName": "json_patch_i18n_italian",
-      "version": "1628875006587241",
-      "checksum": 2446649516,
-      "size": 20200
+      "version": "1629392429389288",
+      "checksum": 3031812812,
+      "size": 21072
     },
     {
       "assetId": "1bbc5eec-7ce1-4649-8e00-dce0ed5864fc/1616622439114263",
@@ -3953,6 +3981,13 @@
       "size": 29546
     },
     {
+      "assetId": "295611f9-6039-4cde-9152-f6263e57bb42/1629392979269765",
+      "bundleName": "m_pants_swshuniformdark_00_bundle_icon",
+      "version": "1629392979269765",
+      "checksum": 809112991,
+      "size": 9363
+    },
+    {
       "assetId": "298031e6-0033-48cc-9a2e-53368ea8d29f/1616632615170503",
       "bundleName": "pokemon_icon_630",
       "version": "1616632615170503",
@@ -4029,6 +4064,13 @@
       "version": "1616644345094271",
       "checksum": 874932357,
       "size": 195738
+    },
+    {
+      "assetId": "2a3c079b-b5e5-43cd-875f-87b00fef68a2/1629392899375371",
+      "bundleName": "m_pants_swshuniformdragon_bundle",
+      "version": "1629392899375371",
+      "checksum": 1302463700,
+      "size": 159767
     },
     {
       "assetId": "2a425062-af56-43a7-a408-2c5804b3c93e/1616623768538937",
@@ -4151,11 +4193,11 @@
       "key": "/FEF7hUM85mDw2hD67WdSQ=="
     },
     {
-      "assetId": "2b58a4ea-6704-4b59-baa3-93d3322eb74d/1628875002624178",
+      "assetId": "2b58a4ea-6704-4b59-baa3-93d3322eb74d/1629392424655597",
       "bundleName": "json_patch_i18n_german",
-      "version": "1628875002624178",
-      "checksum": 2257534630,
-      "size": 21577
+      "version": "1629392424655597",
+      "checksum": 257562968,
+      "size": 22496
     },
     {
       "assetId": "2b62593e-546c-4844-ab6d-d5b8c0f5fbea/1616644561055323",
@@ -4416,6 +4458,13 @@
       "version": "1616694904926622",
       "checksum": 2379799627,
       "size": 775212
+    },
+    {
+      "assetId": "2f1c8ec1-99f4-4359-b04c-273767d3a0b8/1629392919219726",
+      "bundleName": "f_gloves_swshuniformdefault_00_bundle_icon",
+      "version": "1629392919219726",
+      "checksum": 940147992,
+      "size": 7452
     },
     {
       "assetId": "2f27a6da-fdf1-48a2-bf10-de7863a6634d/1616697429387485",
@@ -4898,6 +4947,13 @@
       "version": "1616623056521440",
       "checksum": 264683382,
       "size": 367331
+    },
+    {
+      "assetId": "3546d5ed-f8a6-446d-b6bc-a1172ac33e6e/1629392944312870",
+      "bundleName": "m_shoes_swshuniformdefault_00_bundle_icon",
+      "version": "1629392944312870",
+      "checksum": 3653981857,
+      "size": 11693
     },
     {
       "assetId": "3553b4bb-79ff-40dc-9b64-56b4e1c4afc2/1616632491730206",
@@ -5700,11 +5756,11 @@
       "size": 10300
     },
     {
-      "assetId": "3d93143b-a6da-43a5-95c4-153d6045925e/1628874985865665",
+      "assetId": "3d93143b-a6da-43a5-95c4-153d6045925e/1629392407792329",
       "bundleName": "json_patch_i18n_brazilianportuguese",
-      "version": "1628874985865665",
-      "checksum": 1780003905,
-      "size": 22237
+      "version": "1629392407792329",
+      "checksum": 3231304085,
+      "size": 23137
     },
     {
       "assetId": "3da83d1a-267a-4f63-9854-420c6f75b881/1616639619237986",
@@ -5938,6 +5994,13 @@
       "size": 468066
     },
     {
+      "assetId": "4035feff-55de-4002-83c8-1825c2180ac3/1629392909073924",
+      "bundleName": "m_socks_swshuniformdragon_00_bundle_icon",
+      "version": "1629392909073924",
+      "checksum": 159943438,
+      "size": 9235
+    },
+    {
       "assetId": "4040d14f-8506-419c-9052-ea5fb783ad2f/1616642287308083",
       "bundleName": "raid_egg_1",
       "version": "1616642287308083",
@@ -6100,6 +6163,13 @@
       "size": 12028
     },
     {
+      "assetId": "41efedb1-70fb-470c-96e0-606643423ed3/1629392965029814",
+      "bundleName": "m_gloves_swshuniformdefault_00_bundle_icon",
+      "version": "1629392965029814",
+      "checksum": 1731178732,
+      "size": 7956
+    },
+    {
       "assetId": "41f9bd0d-6205-4489-adf8-a790ad664f65/1616694722099199",
       "bundleName": "pm0493_21",
       "version": "1616694722099199",
@@ -6238,6 +6308,13 @@
       "version": "1616632317700628",
       "checksum": 4231048757,
       "size": 9281
+    },
+    {
+      "assetId": "4387513a-ef29-4680-9293-a7addeb11685/1629392897433610",
+      "bundleName": "f_shoes_swshuniformdefault_00_bundle_icon",
+      "version": "1629392897433610",
+      "checksum": 1553001474,
+      "size": 11300
     },
     {
       "assetId": "4391b65e-be19-4898-83fe-411c7ff06809/1619807908763662",
@@ -6640,11 +6717,11 @@
       "size": 10233
     },
     {
-      "assetId": "4894c86c-9a45-4814-9215-0a92968690f7/1628875010876849",
+      "assetId": "4894c86c-9a45-4814-9215-0a92968690f7/1629392433807774",
       "bundleName": "json_patch_i18n_japanese",
-      "version": "1628875010876849",
-      "checksum": 2753755305,
-      "size": 13694
+      "version": "1629392433807774",
+      "checksum": 2898119446,
+      "size": 14714
     },
     {
       "assetId": "489e8bc1-e751-473f-8ff8-7729dd807d8c/1616623103984061",
@@ -7005,6 +7082,13 @@
       "size": 558282
     },
     {
+      "assetId": "4cda3f35-c36d-45c5-b03d-aa56820b746f/1629392917798938",
+      "bundleName": "f_shoes_swshuniformdragon_00_bundle_icon",
+      "version": "1629392917798938",
+      "checksum": 2899119456,
+      "size": 10804
+    },
+    {
       "assetId": "4ce91bac-441a-4fdd-88ec-9ffcace8c7ac/1616697360469797",
       "bundleName": "pm0668_00",
       "version": "1616697360469797",
@@ -7210,6 +7294,13 @@
       "size": 14410
     },
     {
+      "assetId": "4f5ca750-2689-4921-84e5-8313ff70d698/1629392957434894",
+      "bundleName": "m_shoes_swshuniformdark_00_bundle_icon",
+      "version": "1629392957434894",
+      "checksum": 418204096,
+      "size": 11448
+    },
+    {
       "assetId": "4f5e6685-408c-48a3-86fa-fa55eaa14a58/1616623767130687",
       "bundleName": "f_shirt_jirachi_bundle",
       "version": "1616623767130687",
@@ -7222,6 +7313,13 @@
       "version": "1616632316142598",
       "checksum": 566161813,
       "size": 15503
+    },
+    {
+      "assetId": "4f85c55c-833a-4646-9cc9-4e94c9738cf6/1629392926047487",
+      "bundleName": "f_shoes_swshuniformdark_00_bundle_icon",
+      "version": "1629392926047487",
+      "checksum": 889244424,
+      "size": 10853
     },
     {
       "assetId": "4f8958da-4729-4d0b-bd40-ccedf3e37302/1616694665340273",
@@ -7265,6 +7363,13 @@
       "version": "1616623253622989",
       "checksum": 2584836791,
       "size": 7920
+    },
+    {
+      "assetId": "4fd14ada-dc61-40b9-9447-9fd021ef31be/1629392941092305",
+      "bundleName": "f_gloves_swshuniformdragon_bundle",
+      "version": "1629392941092305",
+      "checksum": 753224397,
+      "size": 165141
     },
     {
       "assetId": "501452d9-17a1-4733-89b0-76e2a3771c7b/1616622769483740",
@@ -7641,6 +7746,13 @@
       "size": 21575
     },
     {
+      "assetId": "52d2bdaa-cc0d-4f9c-89eb-04ab43dcb9b4/1629392912305243",
+      "bundleName": "f_gloves_swshuniformdefault_bundle",
+      "version": "1629392912305243",
+      "checksum": 2825361057,
+      "size": 165927
+    },
+    {
       "assetId": "52ddd13f-4c47-4bfd-b927-558fd18a3d79/1616692760709104",
       "bundleName": "pm0351_11",
       "version": "1616692760709104",
@@ -7972,6 +8084,13 @@
       "size": 716263
     },
     {
+      "assetId": "55fd69d5-7715-4e56-b9b3-e0ca668d4eb1/1629392948498372",
+      "bundleName": "f_shirt_swshuniformdark_00_bundle_icon",
+      "version": "1629392948498372",
+      "checksum": 4074416473,
+      "size": 7424
+    },
+    {
       "assetId": "56133df7-dc35-43ee-b760-1e61a2a901e3/1616632563792215",
       "bundleName": "pokemon_icon_259",
       "version": "1616632563792215",
@@ -8225,6 +8344,13 @@
       "size": 1279370
     },
     {
+      "assetId": "593f9417-a457-4033-a9ae-016860a344ed/1629392958891080",
+      "bundleName": "m_shirt_swshuniformdragon_00_bundle_icon",
+      "version": "1629392958891080",
+      "checksum": 736906728,
+      "size": 10406
+    },
+    {
       "assetId": "59605052-d753-4e5f-a9b3-812cb31f0376/1621628101235276",
       "bundleName": "m_shirt_sylveonitems_bundle",
       "version": "1621628101235276",
@@ -8331,6 +8457,13 @@
       "size": 534743
     },
     {
+      "assetId": "5a2f064c-d24d-409d-b680-5e68e9a1b487/1629392895706017",
+      "bundleName": "m_gloves_swshuniformdragon_00_bundle_icon",
+      "version": "1629392895706017",
+      "checksum": 1274231456,
+      "size": 7238
+    },
+    {
       "assetId": "5aabddf2-cfad-49fe-9322-8b3b931cb42d/1616694731809556",
       "bundleName": "pm0564_00",
       "version": "1616694731809556",
@@ -8434,6 +8567,13 @@
       "version": "1616694729240480",
       "checksum": 1594457116,
       "size": 581646
+    },
+    {
+      "assetId": "5b95eb9f-4bce-4d16-9d74-bc99150a6c67/1629392976107696",
+      "bundleName": "m_gloves_swshuniformdefault_bundle",
+      "version": "1629392976107696",
+      "checksum": 3928609556,
+      "size": 164928
     },
     {
       "assetId": "5b96d8b4-df41-4556-b8ff-770ce2bc4010/1616697434807899",
@@ -8933,6 +9073,13 @@
       "size": 10447
     },
     {
+      "assetId": "6177acc6-f8ed-4007-93fa-5dc12f3a7d43/1629392937495056",
+      "bundleName": "f_shirt_swshuniformdragon_00_bundle_icon",
+      "version": "1629392937495056",
+      "checksum": 2925605735,
+      "size": 10758
+    },
+    {
       "assetId": "619fb7f6-055b-4600-a39d-19337d6ee3d5/1616690986615246",
       "bundleName": "pm0239_00",
       "version": "1616690986615246",
@@ -9136,11 +9283,11 @@
       "size": 42069
     },
     {
-      "assetId": "636575d6-7213-4ffc-88e8-5f125e7112d6/1628874990230790",
+      "assetId": "636575d6-7213-4ffc-88e8-5f125e7112d6/1629392412212209",
       "bundleName": "json_patch_i18n_chinesetraditional",
-      "version": "1628874990230790",
-      "checksum": 3606962587,
-      "size": 18423
+      "version": "1629392412212209",
+      "checksum": 3091772426,
+      "size": 19421
     },
     {
       "assetId": "636a2145-97ff-494c-96ba-1e1f839a5173/1622156537281446",
@@ -9331,6 +9478,13 @@
       "version": "1616632722817588",
       "checksum": 633107232,
       "size": 6715
+    },
+    {
+      "assetId": "655a3030-ee0a-4813-b1fa-58dc999ced15/1629392961963983",
+      "bundleName": "f_pants_swshuniformdefault_00_bundle_icon",
+      "version": "1629392961963983",
+      "checksum": 27670357,
+      "size": 7518
     },
     {
       "assetId": "656e67b5-45c5-4a97-bf61-ccd460fd0711/1512759679420871",
@@ -9871,11 +10025,11 @@
       "size": 158124
     },
     {
-      "assetId": "6a2327ce-6b3d-4741-b65f-4bab20742de8/1616622784148019",
+      "assetId": "6a2327ce-6b3d-4741-b65f-4bab20742de8/1629392555305973",
       "bundleName": "m_shirt_pkmnhoodie004_bundle",
-      "version": "1616622784148019",
-      "checksum": 3274509523,
-      "size": 302705
+      "version": "1629392555305973",
+      "checksum": 2098359312,
+      "size": 302330
     },
     {
       "assetId": "6a30858b-c6a8-4e4c-a353-4cfc8f4433d4/1512759880224081",
@@ -9964,6 +10118,13 @@
       "size": 9721
     },
     {
+      "assetId": "6b3b6029-f319-4037-bcba-4067feeea267/1629392971193134",
+      "bundleName": "f_socks_swshuniformdragon_00_bundle_icon",
+      "version": "1629392971193134",
+      "checksum": 3103778074,
+      "size": 8307
+    },
+    {
       "assetId": "6b3fc445-c3c0-453a-98f4-6e40240ac366/1616644547508690",
       "bundleName": "pm0003_00_pgo_copy2019",
       "version": "1616644547508690",
@@ -10006,11 +10167,11 @@
       "size": 814561
     },
     {
-      "assetId": "6b8f3fef-4233-45f7-9395-39f56e0912e1/1628875026511479",
+      "assetId": "6b8f3fef-4233-45f7-9395-39f56e0912e1/1629392450822899",
       "bundleName": "json_patch_i18n_thai",
-      "version": "1628875026511479",
-      "checksum": 3940121027,
-      "size": 17666
+      "version": "1629392450822899",
+      "checksum": 4054848141,
+      "size": 18663
     },
     {
       "assetId": "6bab0511-7fd0-4e48-851c-1ba9a8c0e2f9/1616623917520435",
@@ -10046,6 +10207,13 @@
       "version": "1616623315410207",
       "checksum": 3528993383,
       "size": 527228
+    },
+    {
+      "assetId": "6c25a54f-49b2-4d0f-bbe8-b50d574442d5/1629392927789699",
+      "bundleName": "f_shirt_swshuniformdark_bundle",
+      "version": "1629392927789699",
+      "checksum": 2225860999,
+      "size": 228030
     },
     {
       "assetId": "6c3cc5fe-eb61-47b0-b4be-6a83117ba999/1616689915114469",
@@ -10714,6 +10882,13 @@
       "size": 338921
     },
     {
+      "assetId": "73aafd22-0edf-43ec-824f-1c5b4a366c31/1629392922717515",
+      "bundleName": "m_shoes_swshuniformdragon_bundle",
+      "version": "1629392922717515",
+      "checksum": 2458399927,
+      "size": 132234
+    },
+    {
       "assetId": "73c1cfc4-7be9-46bb-aa1f-de04b5e60b68/1616694763054445",
       "bundleName": "pm0413_12",
       "version": "1616694763054445",
@@ -10966,6 +11141,13 @@
       "version": "1616622214258514",
       "checksum": 189191573,
       "size": 151483
+    },
+    {
+      "assetId": "76776b42-b193-4d24-a783-c13e68c1951c/1629392945690185",
+      "bundleName": "m_socks_swshuniformdragon_bundle",
+      "version": "1629392945690185",
+      "checksum": 1098480494,
+      "size": 54711
     },
     {
       "assetId": "76935625-0495-49ea-a39b-53093b2ff667/1616694847549167",
@@ -11344,6 +11526,13 @@
       "version": "1616623821711662",
       "checksum": 100773622,
       "size": 5413
+    },
+    {
+      "assetId": "7a4e10ee-5362-4c01-a121-a91a6bcb5d1e/1629392986095436",
+      "bundleName": "m_shoes_swshuniformdragon_00_bundle_icon",
+      "version": "1629392986095436",
+      "checksum": 2281355768,
+      "size": 11290
     },
     {
       "assetId": "7a955dab-43a1-4f5a-92d3-10548fdc326e/1616632666239195",
@@ -11889,6 +12078,13 @@
       "size": 12222
     },
     {
+      "assetId": "7f94a630-9a6a-4bda-bacf-f80cbddeadc9/1629392914167810",
+      "bundleName": "m_shirt_swshuniformdefault_bundle",
+      "version": "1629392914167810",
+      "checksum": 2126508515,
+      "size": 250665
+    },
+    {
       "assetId": "7fa9a1b7-f997-45f6-9417-11ea2fb089d5/1622156545749862",
       "bundleName": "f_pants_regiicejersies_00_bundle_icon",
       "version": "1622156545749862",
@@ -12014,6 +12210,13 @@
       "version": "1616644351863125",
       "checksum": 3362391059,
       "size": 544183
+    },
+    {
+      "assetId": "81202434-f311-4547-b252-4b002aa2b14b/1629392980719997",
+      "bundleName": "m_socks_swshuniformdefault_00_bundle_icon",
+      "version": "1629392980719997",
+      "checksum": 2389876948,
+      "size": 9504
     },
     {
       "assetId": "814724f3-7130-4441-afc0-48e5d84b3afc/1616622733923853",
@@ -12418,6 +12621,13 @@
       "version": "1616694797527298",
       "checksum": 1520134687,
       "size": 350621
+    },
+    {
+      "assetId": "85356ccb-4cdb-40f1-b4f0-075890b6ffc4/1629392984186988",
+      "bundleName": "m_shirt_swshuniformdragon_bundle",
+      "version": "1629392984186988",
+      "checksum": 1870790569,
+      "size": 244238
     },
     {
       "assetId": "853d9109-8e48-4b67-a3b1-434affc1f8a0/1616622092704224",
@@ -13304,6 +13514,13 @@
       "size": 8013
     },
     {
+      "assetId": "8e4c1485-7441-489a-b50d-ae96551a4b6a/1629392936091006",
+      "bundleName": "f_gloves_swshuniformdragon_00_bundle_icon",
+      "version": "1629392936091006",
+      "checksum": 3328851565,
+      "size": 6958
+    },
+    {
       "assetId": "8e54a316-cbfe-4216-bcbc-4a51d8c6f688/1618421439601021",
       "bundleName": "pm0113_00",
       "version": "1618421439601021",
@@ -13365,6 +13582,13 @@
       "version": "1616622318775032",
       "checksum": 3133098037,
       "size": 141480
+    },
+    {
+      "assetId": "8eccf3fd-7157-4bf5-993f-14bc2361dbb7/1629392966579797",
+      "bundleName": "m_socks_swshuniformdefault_bundle",
+      "version": "1629392966579797",
+      "checksum": 2144305842,
+      "size": 55117
     },
     {
       "assetId": "8ed42cc9-befb-46bf-bb69-61a00ad5618a/1622156544584361",
@@ -13568,6 +13792,13 @@
       "version": "1616622987933808",
       "checksum": 2854468322,
       "size": 351988
+    },
+    {
+      "assetId": "90b517c6-c243-4dce-a0d0-63d21d7e135e/1629392950175959",
+      "bundleName": "m_pants_swshuniformdark_bundle",
+      "version": "1629392950175959",
+      "checksum": 3501298499,
+      "size": 231112
     },
     {
       "assetId": "90bd559c-23cf-4d2d-bd6a-cfdf3e7c9e8c/1616689807343623",
@@ -13790,11 +14021,11 @@
       "size": 432591
     },
     {
-      "assetId": "932b6c00-f87f-486a-a354-25825ad9e1b1/1616622531349406",
+      "assetId": "932b6c00-f87f-486a-a354-25825ad9e1b1/1629394547517870",
       "bundleName": "f_socks_thighhighs_bundle",
-      "version": "1616622531349406",
-      "checksum": 293970851,
-      "size": 35077
+      "version": "1629394547517870",
+      "checksum": 1405998158,
+      "size": 189926
     },
     {
       "assetId": "9342db3b-3681-4d76-8a8b-72fdba12ce50/1616622838472358",
@@ -13937,11 +14168,25 @@
       "size": 191158
     },
     {
+      "assetId": "9575e004-ea66-4667-920b-c1ab124ae8d2/1629392902616276",
+      "bundleName": "m_shoes_swshuniformdefault_bundle",
+      "version": "1629392902616276",
+      "checksum": 3067865563,
+      "size": 133048
+    },
+    {
       "assetId": "9591f3b1-030c-446f-8345-316da60b1d67/1616632634083815",
       "bundleName": "pokemon_icon_420",
       "version": "1616632634083815",
       "checksum": 1365238730,
       "size": 8399
+    },
+    {
+      "assetId": "95ad8bf5-456a-40aa-bdc7-bc8a8c1d97b1/1629392932547492",
+      "bundleName": "f_pants_swshuniformdragon_bundle",
+      "version": "1629392932547492",
+      "checksum": 1745381217,
+      "size": 173023
     },
     {
       "assetId": "95b7238c-4856-4ff3-97bc-3eeb82186d35/1616632753284086",
@@ -14050,6 +14295,13 @@
       "checksum": 1624079015,
       "size": 142667,
       "key": "IHdXUPUqu+xuT+TFoTwWfQ=="
+    },
+    {
+      "assetId": "96751922-3c74-413e-8faa-23939684f056/1629392906000330",
+      "bundleName": "f_pants_swshuniformdark_bundle",
+      "version": "1629392906000330",
+      "checksum": 2807733394,
+      "size": 258660
     },
     {
       "assetId": "968dae6d-9b34-478f-a5c1-221b0c11cd35/1616632695264936",
@@ -15244,6 +15496,13 @@
       "size": 29335
     },
     {
+      "assetId": "a28b2f89-9864-4f38-8b17-05ae57e0fc01/1629392934643498",
+      "bundleName": "m_shirt_swshuniformdark_00_bundle_icon",
+      "version": "1629392934643498",
+      "checksum": 1245508229,
+      "size": 9170
+    },
+    {
       "assetId": "a2930655-9343-46f2-a662-ab097ff02731/1616622003135684",
       "bundleName": "f_shirt_melmetalvest_bundle",
       "version": "1616622003135684",
@@ -15335,11 +15594,11 @@
       "size": 8821
     },
     {
-      "assetId": "a381995c-f9ca-4de5-93db-38159a7d032c/1628875022504858",
+      "assetId": "a381995c-f9ca-4de5-93db-38159a7d032c/1629392446880179",
       "bundleName": "json_patch_i18n_spanish",
-      "version": "1628875022504858",
-      "checksum": 1891549046,
-      "size": 21341
+      "version": "1629392446880179",
+      "checksum": 869992195,
+      "size": 22264
     },
     {
       "assetId": "a3880a65-ed02-4d13-a333-cb71a7226cb0/1616622633691673",
@@ -16120,6 +16379,13 @@
       "size": 173968
     },
     {
+      "assetId": "abe993c8-01ad-403a-be69-f2b21f707d37/1629392930956968",
+      "bundleName": "m_shirt_swshuniformdefault_00_bundle_icon",
+      "version": "1629392930956968",
+      "checksum": 2567962627,
+      "size": 12455
+    },
+    {
       "assetId": "ac058d04-f98b-4005-be6c-dbe45a22838b/1617397889274047",
       "bundleName": "pokemon_icon_113",
       "version": "1617397889274047",
@@ -16160,6 +16426,13 @@
       "version": "1616630862687377",
       "checksum": 3814054044,
       "size": 913108
+    },
+    {
+      "assetId": "ac43dc16-0af9-4e9c-8549-bdcfab2d98dd/1629392960394338",
+      "bundleName": "m_shoes_swshuniformdark_bundle",
+      "version": "1629392960394338",
+      "checksum": 113733815,
+      "size": 131799
     },
     {
       "assetId": "ac4fa6f9-767d-4f43-8445-adae46c59f19/1512606707531916",
@@ -16329,6 +16602,13 @@
       "version": "1616632763288844",
       "checksum": 1809948522,
       "size": 24020
+    },
+    {
+      "assetId": "ae197206-91a0-4f6f-b37b-6e3ad8cd5a65/1629392916119352",
+      "bundleName": "m_gloves_swshuniformdragon_bundle",
+      "version": "1629392916119352",
+      "checksum": 2878556017,
+      "size": 163883
     },
     {
       "assetId": "ae242ae8-9070-47b2-a3eb-06f4fb2424c8/1616632601536746",
@@ -17250,6 +17530,13 @@
       "size": 12191
     },
     {
+      "assetId": "b748bde8-df3c-4f87-98b9-9c5090e7955b/1629392904331642",
+      "bundleName": "f_pants_swshuniformdark_00_bundle_icon",
+      "version": "1629392904331642",
+      "checksum": 2908017472,
+      "size": 8665
+    },
+    {
       "assetId": "b7527b61-0237-406d-959a-6baed34ff85c/1616623955662531",
       "bundleName": "m_shirt_gymleader_bundle_icon",
       "version": "1616623955662531",
@@ -17551,6 +17838,13 @@
       "version": "1616622655235033",
       "checksum": 391707413,
       "size": 249404
+    },
+    {
+      "assetId": "bb5d3d4b-09ad-4275-a279-7ec6f7ee6d10/1629392967979244",
+      "bundleName": "m_pants_swshuniformdefault_00_bundle_icon",
+      "version": "1629392967979244",
+      "checksum": 2188858823,
+      "size": 8795
     },
     {
       "assetId": "bb73a1f7-07cb-4ddd-98cc-07b067a7e6ea/1616621919908595",
@@ -18308,6 +18602,13 @@
       "size": 63489
     },
     {
+      "assetId": "c360cac6-ec7f-4851-bce8-26918500bad0/1629392954144839",
+      "bundleName": "f_shirt_swshuniformdragon_bundle",
+      "version": "1629392954144839",
+      "checksum": 2231895780,
+      "size": 247535
+    },
+    {
       "assetId": "c3644fe3-f94c-47b0-b7b3-c4592f30f36b/1616622118910109",
       "bundleName": "f_shoes_ss_bundle",
       "version": "1616622118910109",
@@ -18772,6 +19073,13 @@
       "size": 9616
     },
     {
+      "assetId": "c85df1ef-658c-4498-8a39-b6705cbe7294/1629392977731712",
+      "bundleName": "f_socks_swshuniformdragon_bundle",
+      "version": "1629392977731712",
+      "checksum": 1556404523,
+      "size": 62606
+    },
+    {
       "assetId": "c85ee059-2b6c-4d1b-9fda-e71f7f1af409/1616697369086011",
       "bundleName": "pm0673_00",
       "version": "1616697369086011",
@@ -19142,6 +19450,13 @@
       "size": 72132
     },
     {
+      "assetId": "cbfe0f38-3b6a-4244-86d4-131156987a0f/1629392921027121",
+      "bundleName": "f_shoes_swshuniformdark_bundle",
+      "version": "1629392921027121",
+      "checksum": 2893250993,
+      "size": 133964
+    },
+    {
       "assetId": "cbfffbc3-5299-441a-ab3c-76b6ba5d14b6/1616622732499053",
       "bundleName": "f_shoes_battlegirl_bundle",
       "version": "1616622732499053",
@@ -19297,11 +19612,11 @@
       "size": 441419
     },
     {
-      "assetId": "cd53a84f-5c55-4563-84b3-edda474e01f1/1628874994569634",
+      "assetId": "cd53a84f-5c55-4563-84b3-edda474e01f1/1629392416319877",
       "bundleName": "json_patch_i18n_english",
-      "version": "1628874994569634",
-      "checksum": 1233682946,
-      "size": 12784
+      "version": "1629392416319877",
+      "checksum": 533184590,
+      "size": 13572
     },
     {
       "assetId": "cd6505ba-8c14-49d2-9bb8-2b8840b60f6a/1616632654516245",
@@ -19461,11 +19776,11 @@
       "size": 17284
     },
     {
-      "assetId": "cf25dd3f-55dc-4272-8393-3ecd46279115/1616622671220671",
+      "assetId": "cf25dd3f-55dc-4272-8393-3ecd46279115/1629392550501870",
       "bundleName": "f_shirt_pkmnhoodie004_bundle",
-      "version": "1616622671220671",
-      "checksum": 2671137594,
-      "size": 353879
+      "version": "1629392550501870",
+      "checksum": 2802430324,
+      "size": 352479
     },
     {
       "assetId": "cf2bc0f0-af86-4cf2-a70d-102cca020a51/1616694625411382",
@@ -19748,6 +20063,13 @@
       "size": 935748
     },
     {
+      "assetId": "d213622b-6c1d-49c5-9390-b5a9eb8972d1/1629392963606146",
+      "bundleName": "m_gloves_swshuniformdark_00_bundle_icon",
+      "version": "1629392963606146",
+      "checksum": 3965094989,
+      "size": 7365
+    },
+    {
       "assetId": "d21dbc86-e2e5-4e26-8a7e-f57a58fea299/1616632702590880",
       "bundleName": "pokemon_icon_535",
       "version": "1616632702590880",
@@ -19760,6 +20082,13 @@
       "version": "1616694618067691",
       "checksum": 3259142499,
       "size": 291943
+    },
+    {
+      "assetId": "d24429d5-139f-4480-9deb-458079e2f491/1629392901083052",
+      "bundleName": "f_shirt_swshuniformdefault_00_bundle_icon",
+      "version": "1629392901083052",
+      "checksum": 2324204527,
+      "size": 12759
     },
     {
       "assetId": "d24cfb83-9902-49a3-afbb-037e2f49bc45/1616622414214783",
@@ -19837,6 +20166,13 @@
       "version": "1616692826782227",
       "checksum": 2858816590,
       "size": 390612
+    },
+    {
+      "assetId": "d2e42192-f8c0-4444-a6a1-fb24eba43c63/1629392972708214",
+      "bundleName": "m_gloves_swshuniformdark_bundle",
+      "version": "1629392972708214",
+      "checksum": 2149534367,
+      "size": 163015
     },
     {
       "assetId": "d2f807c5-3360-43bb-a020-42b3b781a270/1616632604490833",
@@ -20410,6 +20746,13 @@
       "size": 801815
     },
     {
+      "assetId": "d8e9bbe6-f2e0-4fa6-9288-043edad81ba5/1629392910693268",
+      "bundleName": "f_shoes_swshuniformdragon_bundle",
+      "version": "1629392910693268",
+      "checksum": 3557284482,
+      "size": 133915
+    },
+    {
       "assetId": "d8f98c04-042d-4557-b51a-e1b2cc9674fd/1616631881784078",
       "bundleName": "pokemon_icon_444",
       "version": "1616631881784078",
@@ -20515,6 +20858,13 @@
       "version": "1616623252197121",
       "checksum": 1906748920,
       "size": 226287
+    },
+    {
+      "assetId": "da02beea-a8b1-45af-b93c-e1dea7f00a7d/1629392974420683",
+      "bundleName": "f_pants_swshuniformdragon_00_bundle_icon",
+      "version": "1629392974420683",
+      "checksum": 3811596636,
+      "size": 7557
     },
     {
       "assetId": "da04c737-dddd-4648-8a6c-7e920f8444af/1616697403168196",
@@ -20729,11 +21079,11 @@
       "size": 7664
     },
     {
-      "assetId": "dccbb419-951a-4bf9-8448-8a32e5bae6d1/1628875014696916",
+      "assetId": "dccbb419-951a-4bf9-8448-8a32e5bae6d1/1629392438303608",
       "bundleName": "json_patch_i18n_korean",
-      "version": "1628875014696916",
-      "checksum": 1930098900,
-      "size": 14464
+      "version": "1629392438303608",
+      "checksum": 3022547400,
+      "size": 15415
     },
     {
       "assetId": "dcd89218-66fa-4ea3-a549-7d49df98b5d1/1512759924956220",
@@ -20835,11 +21185,11 @@
       "size": 26836
     },
     {
-      "assetId": "ddb0ee8c-a76d-4de3-b38c-255048cbf979/1616623750896534",
+      "assetId": "ddb0ee8c-a76d-4de3-b38c-255048cbf979/1629392557555323",
       "bundleName": "f_shirt_pkmnhoodie007_bundle",
-      "version": "1616623750896534",
-      "checksum": 3751198724,
-      "size": 361919
+      "version": "1629392557555323",
+      "checksum": 2651249025,
+      "size": 361208
     },
     {
       "assetId": "ddd8ad5c-fff2-437f-b664-6d4b86ecd59c/1616623910437752",
@@ -20889,6 +21239,13 @@
       "version": "1616622703123507",
       "checksum": 820224135,
       "size": 5029
+    },
+    {
+      "assetId": "de717ce3-8be9-4052-b777-929093f3fd6f/1629392939267433",
+      "bundleName": "f_shirt_swshuniformdefault_bundle",
+      "version": "1629392939267433",
+      "checksum": 680736110,
+      "size": 265275
     },
     {
       "assetId": "de8855c5-be55-4ced-b935-4e707b091b7f/1616622595697283",
@@ -21151,6 +21508,13 @@
       "size": 521272
     },
     {
+      "assetId": "e0c151b2-779e-4838-89d5-37efa0d2ff2e/1629392947164730",
+      "bundleName": "f_socks_swshuniformdefault_00_bundle_icon",
+      "version": "1629392947164730",
+      "checksum": 690296409,
+      "size": 9123
+    },
+    {
       "assetId": "e0c9aad9-a4aa-4356-8081-af1d2f804016/1616632728529519",
       "bundleName": "pokemon_icon_549",
       "version": "1616632728529519",
@@ -21261,6 +21625,13 @@
       "version": "1616623931425389",
       "checksum": 1369219824,
       "size": 8250
+    },
+    {
+      "assetId": "e1b2de73-2e9f-4265-9279-5fc95f81cdb9/1629392969475739",
+      "bundleName": "f_pants_swshuniformdefault_bundle",
+      "version": "1629392969475739",
+      "checksum": 3241422657,
+      "size": 173860
     },
     {
       "assetId": "e1bf65c6-01a8-4710-9f48-3fb282614315/1616632490282394",
@@ -22109,6 +22480,13 @@
       "key": "dOAkkexEnDA3gdHyXFlkyQ=="
     },
     {
+      "assetId": "ea70a402-ae79-4b74-a961-8580beb40ade/1629392942824641",
+      "bundleName": "f_gloves_swshuniformdark_bundle",
+      "version": "1629392942824641",
+      "checksum": 818365628,
+      "size": 164793
+    },
+    {
       "assetId": "eaa25837-92d3-475f-8371-6b42548da81f/1616691079814313",
       "bundleName": "pm0213_00",
       "version": "1616691079814313",
@@ -22417,6 +22795,13 @@
       "size": 11830
     },
     {
+      "assetId": "edf80523-78de-47e8-bcfc-c62d83f76363/1629392907710858",
+      "bundleName": "f_gloves_swshuniformdark_00_bundle_icon",
+      "version": "1629392907710858",
+      "checksum": 3833721138,
+      "size": 7128
+    },
+    {
       "assetId": "ee371ac5-83e6-44b1-a36f-17f8198b3e2d/1625800166280969",
       "bundleName": "f_shirt_meloettatshirt_bundle",
       "version": "1625800166280969",
@@ -22508,11 +22893,11 @@
       "size": 12541
     },
     {
-      "assetId": "eee99ab3-4c9f-4d46-b8a3-55e4204f82ff/1616622759275006",
+      "assetId": "eee99ab3-4c9f-4d46-b8a3-55e4204f82ff/1629392552979390",
       "bundleName": "f_shirt_pkmnhoodie001_bundle",
-      "version": "1616622759275006",
-      "checksum": 4258409517,
-      "size": 371455
+      "version": "1629392552979390",
+      "checksum": 3667521371,
+      "size": 370275
     },
     {
       "assetId": "eef8a2e2-61d4-44e8-a970-4b9a87710bfe/1622845095085148",
@@ -23031,6 +23416,13 @@
       "size": 437570
     },
     {
+      "assetId": "f42ccc19-4560-433d-9b7b-6985f2e0d53f/1629392894268501",
+      "bundleName": "m_pants_swshuniformdragon_00_bundle_icon",
+      "version": "1629392894268501",
+      "checksum": 1128452087,
+      "size": 8597
+    },
+    {
       "assetId": "f42dff19-40c9-478f-a72f-e03d70065f47/1622156566033593",
       "bundleName": "m_shirt_regiicejersies_00_bundle_icon",
       "version": "1622156566033593",
@@ -23418,11 +23810,11 @@
       "size": 9629
     },
     {
-      "assetId": "f81c317b-b38c-454e-ac41-b716acec654f/1628874998694104",
+      "assetId": "f81c317b-b38c-454e-ac41-b716acec654f/1629392420350057",
       "bundleName": "json_patch_i18n_french",
-      "version": "1628874998694104",
-      "checksum": 3578822139,
-      "size": 21411
+      "version": "1629392420350057",
+      "checksum": 879375508,
+      "size": 22314
     },
     {
       "assetId": "f826a71a-90f8-46c9-a731-f05a07d215ef/1616623200692894",
@@ -23885,11 +24277,11 @@
       "key": "ooj3VCcDS2cNdHHgON0Atg=="
     },
     {
-      "assetId": "fcae1b92-abae-488f-9d3a-7bf56f7bb115/1616622620803620",
+      "assetId": "fcae1b92-abae-488f-9d3a-7bf56f7bb115/1629392548136209",
       "bundleName": "m_shirt_pkmnhoodie001_bundle",
-      "version": "1616622620803620",
-      "checksum": 3138105644,
-      "size": 320748
+      "version": "1629392548136209",
+      "checksum": 4165663720,
+      "size": 320248
     },
     {
       "assetId": "fcc10d7f-8db3-4d40-98b5-456e519d69ca/1619807947643176",
@@ -24179,6 +24571,6 @@
       "size": 1240971
     }
   ],
-  "timestamp": "1628875026511479",
+  "timestamp": "1629394547517870",
   "result": "SUCCESS"
 }
