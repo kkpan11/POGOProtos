@@ -4638,9 +4638,9 @@ message AddReferrerProto {
 }
 
 message AddressBookImportSettings {
-    optional bool ob_is_enabled = 1;
-    optional int32 ob_onboarding_screen_level = 2;
-    optional bool ob_show_opt_out_checkbox = 3;
+    optional bool is_enabled = 1;
+    optional int32 onboarding_screen_level = 2;
+    optional bool show_opt_out_checkbox = 3;
 }
 
 message AddressBookImportTelemetry {
@@ -5310,7 +5310,7 @@ message BadgeData {
 
 message BadgeSettingsProto {
     optional HoloBadgeType badge_type = 1;
-    optional int32 badge_ranks = 2;
+    optional int32 badge_rank = 2;
     repeated int32 targets = 3;
     repeated BadgeCaptureReward capture_reward = 4;
     optional bool event_badge = 5;
@@ -5493,9 +5493,9 @@ message BattleUpdateProto {
 }
 
 message BattleVisualSettings {
-    optional bool enabled = 1;
-    optional string tx_stadium_1 = 2;
-    optional string tx_stadium_2 = 4;
+    optional bool battle_visual_stadium_enabled = 1;
+    optional string stadium_crowd_asset = 2;
+    optional string stadium_banner_asset = 4;
 }
 
 message BelugaBleCompleteTransferRequestProto {
@@ -6122,15 +6122,15 @@ message CameraSettingsProto {
     repeated CameraTarget target_type = 3;
     repeated float ease_in_speed = 4;
     repeated float ease_out_speed = 5;
-    repeated float duration_s = 6;
-    repeated float wait_s = 7;
-    repeated float transition_s = 8;
-    repeated float angle_deg = 9;
-    repeated float angle_offset_deg = 10;
-    repeated float pitch_deg = 11;
-    repeated float pitch_offset_deg = 12;
-    repeated float roll_deg = 13;
-    repeated float distance_m = 14;
+    repeated float duration_seconds = 6;
+    repeated float wait_seconds = 7;
+    repeated float transition_seconds = 8;
+    repeated float angle_degree = 9;
+    repeated float angle_offset_degree = 10;
+    repeated float pitch_degree = 11;
+    repeated float pitch_offset_degree = 12;
+    repeated float roll_degree = 13;
+    repeated float distance_meters = 14;
     repeated float height_percent = 15;
     repeated float vert_ctr_ratio = 16;
 }
@@ -6971,8 +6971,8 @@ message CombatLeagueProto {
         optional WithPokemonCpLimitProto with_pokemon_cp_limit = 2;
         optional WithPokemonTypeProto with_pokemon_type = 3;
         optional WithPokemonCategoryProto with_pokemon_category = 4;
-        optional PokemonWhitelist pokemon_whitelist = 5;
-        optional PokemonBanlist pokemon_banlist = 6;
+        optional PokemonWhitelist pokemon_white_list = 5;
+        optional PokemonBanlist pokemon_ban_list = 6;
         optional PokemonCaughtTimestamp pokemon_caught_timestamp = 7;
         optional PokemonLevelRange pokemon_level_range = 8;
 
@@ -7000,8 +7000,8 @@ message CombatLeagueProto {
         optional WithPokemonCpLimitProto with_pokemon_cp_limit = 4;
         optional WithPokemonTypeProto with_pokemon_type = 5;
         optional WithPokemonCategoryProto with_pokemon_category = 6;
-        optional PokemonWhitelist pokemon_whitelist = 7;
-        optional PokemonBanlist pokemon_banlist = 8;
+        optional PokemonWhitelist pokemon_white_list = 7;
+        optional PokemonBanlist pokemon_ban_list = 8;
         optional PokemonCaughtTimestamp pokemon_caught_timestamp = 9;
         optional PokemonLevelRange pokemon_level_range = 10;
 
@@ -7214,7 +7214,7 @@ message CombatRankingSettingsProto {
     repeated RankLevelProto rank_level = 1;
     optional RankLevelProto required_for_rewards = 2;
     optional int32 min_rank_to_display_rating = 3;
-    optional int32 season_number = 4;
+    optional int32 min_rating_required = 4;
 }
 
 message CombatSeasonResult {
@@ -7253,7 +7253,7 @@ message CombatSettingsProto {
     optional int32 swap_animation_duration_turns = 22;
     optional int32 super_effective_flyout_duration_turns = 23;
     optional int32 not_very_effective_flyout_duration_turns = 24;
-    optional int32 blocked_flyout_duration_turns = 25;
+    optional int32 blocked_effective_flyout_duration_turns = 25;
     optional int32 normal_effective_flyout_duration_turns = 26;
     optional int32 faint_animation_duration_turns = 27;
     optional int32 npc_swap_delay_turns = 28;
@@ -8684,6 +8684,7 @@ message EvolvePokemonTelemetry {
 
 message ExRaidSettingsProto {
     optional FriendshipLevelMilestone minimum_ex_raid_share_level = 1;
+    optional int32 ob_ex_raid_setting = 2;
 }
 
 message ExceptionCaugthDataProto {
@@ -9162,12 +9163,12 @@ message GameItemContentProto {
 
 message GameMasterClientTemplateProto {
     optional string template_id = 1;
-    optional PokemonSettingsProto pokemon = 2;
-    optional ItemSettingsProto item = 3;
-    optional MoveSettingsProto move = 4;
-    optional MoveSequenceSettingsProto move_sequence = 5;
+    optional PokemonSettingsProto pokemon_settings = 2;
+    optional ItemSettingsProto item_settings = 3;
+    optional MoveSettingsProto move_settings = 4;
+    optional MoveSequenceSettingsProto move_sequence_settings = 5;
     optional TypeEffectiveSettingsProto type_effective = 8;
-    optional BadgeSettingsProto badge = 10;
+    optional BadgeSettingsProto badge_settings = 10;
     optional CameraSettingsProto camera = 11;
     optional PlayerLevelSettingsProto player_level = 12;
     optional GymLevelSettingsProto gym_level = 13;
@@ -9220,7 +9221,7 @@ message GameMasterClientTemplateProto {
     optional BuddyEmotionLevelSettings buddy_emotion_level_settings = 61;
     optional InvasionAvailabilitySettingsProto pokestop_invasion_availability_settings = 62;
     optional BuddyInteractionSettings buddy_interaction_settings = 63;
-    optional VsSeekerLootProto vs_seeker_loot_proto = 64;
+    optional VsSeekerLootProto vs_seeker_loot = 64;
     optional VsSeekerPokemonRewardsProto vs_seeker_pokemon_rewards = 65;
     optional BattleHubOrderSettings battle_hub_order_settings = 66;
     optional BattleHubBadgeSettings battle_hub_badge_settings = 67;
@@ -9234,8 +9235,8 @@ message GameMasterClientTemplateProto {
     optional AvatarGroupOrderSettingsProto avatar_group_order_settings = 76;
     optional PokemonFamilySettingsProto pokemon_family = 77;
     optional MonodepthSettingsProto monodepth_settings = 78;
-    optional LevelUpRewardsSettingsProto level_up_rewards = 79;
-    optional RaidClientSettingsProto raid_settings_proto = 81;
+    optional LevelUpRewardsSettingsProto level_up_reward_settings = 79;
+    optional RaidClientSettingsProto raid_settings = 81;
     optional TappableSettingsProto tappable_settings = 82;
     optional RoutePlaySettingsProto route_play_settings = 83;
     optional SponsoredGeofenceGiftSettingsProto sponsored_geofence_gift_settings = 84;
@@ -9247,7 +9248,7 @@ message GameMasterClientTemplateProto {
     optional ArTelemetrySettingsProto ar_telemetry_settings = 90;
     optional BattlePartySettingsProto battle_party_settings = 91;
     optional QuestEvolutionSettingsProto quest_evolution_settings = 93;
-    optional PokemonHomeFormReversionProto pokemon_home_form_reversion = 94;
+    optional PokemonHomeFormReversionProto pokemon_home_form_reversions = 94;
     optional DeepLinkingSettingsProto deep_linking_settings = 95;
     optional GuiSearchSettingsProto gui_search_settings = 96;
     optional ClientEvolutionQuestTemplateProto evolution_quest_template = 97;
@@ -9255,7 +9256,7 @@ message GameMasterClientTemplateProto {
     optional FriendProfileSettingsProto friend_profile_settings = 99;
     optional GeotargetedQuestSettingsProto geotargeted_quest_settings = 100;
     optional PokemonTagSettingsProto pokemon_tag_settings = 101;
-    optional RecommendedSearchProto recommended_search_proto = 102;
+    optional RecommendedSearchProto recommended_search_settings = 102;
     optional InventorySettingsProto inventory_settings = 103;
     optional RouteDiscoverySettingsProto route_discovery_settings = 104;
     optional EggTransparencySettingsProto egg_transparency_settings = 105;
@@ -11120,7 +11121,7 @@ message GymGetInfoProto {
 }
 
 message GymLevelSettingsProto {
-    repeated int32 required_exp = 1;
+    repeated int32 required_experience = 1;
     repeated int32 leader_slots = 2;
     repeated int32 trainer_slots = 3;
     repeated int32 search_roll_bonus = 4;
@@ -11748,7 +11749,7 @@ message ItemRewardProto {
 }
 
 message ItemSettingsProto {
-    optional Item unique_id = 1;
+    optional Item item_id = 1;
     optional HoloItemType item_type = 2;
     optional HoloItemCategory category = 3;
     optional float drop_freq = 4;
@@ -12385,9 +12386,9 @@ message MapEventsTelemetry {
 }
 
 message MapObjectsInteractionRangeSettings {
-    optional double ob_interaction_range_meters = 1;
-    optional double ob_far_interaction_range_meters = 2;
-    optional double ob_remote_interaction_range_meters = 3;
+    optional double interaction_range_meters = 1;
+    optional double far_interaction_range_meters = 2;
+    optional double remote_interaction_range_meters = 3;
 }
 
 message MapPokemonProto {
@@ -12668,9 +12669,9 @@ message MoveSequenceSettingsProto {
 }
 
 message MoveSettingsProto {
-    optional HoloPokemonMove unique_id = 1;
+    optional HoloPokemonMove movement_id = 1;
     optional int32 animation_id = 2;
-    optional HoloPokemonType type = 3;
+    optional HoloPokemonType pokemon_type = 3;
     optional float power = 4;
     optional float accuracy_chance = 5;
     optional float critical_chance = 6;
@@ -12730,8 +12731,8 @@ message NewsArticleProto {
 }
 
 message NewsFeedClientSettings {
-    optional bool ob_enabled = 1;
-    optional int32 ob_news_feed_client_settings_int32 = 2;
+    optional bool is_news_feed_polling_enabled = 1;
+    optional int32 get_news_feed_polling_rate_minutes = 2;
 }
 
 message NewsGlobalSettingsProto {
@@ -13271,7 +13272,7 @@ message PlayerHudNotificationClickTelemetry {
 
 message PlayerLevelSettingsProto {
     repeated int32 rank_num = 1;
-    repeated int32 required_exp = 2;
+    repeated int32 required_experience = 2;
     repeated float cp_multiplier = 3;
     optional int32 max_egg_player_level = 4;
     optional int32 max_encounter_player_level = 5;
@@ -13616,9 +13617,9 @@ message PokemonBulkUpgradeSettingsProto {
 
 message PokemonCameraAttributesProto {
     optional float disk_radius_m = 1;
-    optional float cyl_radius_m = 2;
-    optional float cyl_height_m = 3;
-    optional float cyl_ground_m = 4;
+    optional float cylinder_radius_m = 2;
+    optional float cylinder_height_m = 3;
+    optional float cylinder_ground_m = 4;
     optional float shoulder_mode_scale = 5;
 }
 
@@ -16010,6 +16011,9 @@ message PokemonEncounterAttributesProto {
     optional float min_pokemon_action_frequency_s = 17;
     optional float max_pokemon_action_frequency_s = 18;
     optional int32 bonus_xl_candy_capture_reward = 19;
+    optional float ob_encounter_attribute_float_1 = 20;
+    optional float ob_encounter_attribute_float_2 = 21;
+    optional float ob_encounter_attribute_float_3 = 22;
 }
 
 message PokemonEncounterRewardProto {
@@ -16119,9 +16123,9 @@ message PokemonHomeEnergyCostsProto {
     optional HoloPokemonClass pokemon_class = 1;
     optional int32 base = 2;
     optional int32 shiny = 3;
-    optional int32 cp0_to1000 = 4;
-    optional int32 cp1001_to2000 = 5;
-    optional int32 cp2001_to_inf = 6;
+    optional int32 cp_0_to1000 = 4;
+    optional int32 cp_1001_to_2000 = 5;
+    optional int32 cp_2001_to_inf = 6;
 }
 
 message PokemonHomeFormReversionProto {
@@ -16272,22 +16276,22 @@ message PokemonSettingsProto {
         BUDDY_BABY = 4;
     }
 
-    optional HoloPokemonId unique_id = 1;
+    optional HoloPokemonId pokemon_id = 1;
     optional float model_scale = 3;
-    optional HoloPokemonType type1 = 4;
-    optional HoloPokemonType type2 = 5;
+    optional HoloPokemonType type = 4;
+    optional HoloPokemonType type_2 = 5;
     optional PokemonCameraAttributesProto camera = 6;
     optional PokemonEncounterAttributesProto encounter = 7;
     optional PokemonStatsAttributesProto stats = 8;
     repeated HoloPokemonMove quick_moves = 9;
     repeated HoloPokemonMove cinematic_moves = 10;
-    repeated float anim_time = 11;
-    repeated HoloPokemonId evolution = 12;
+    repeated float animation_time = 11;
+    repeated HoloPokemonId evolution_ids = 12;
     optional int32 evolution_pips = 13;
     optional HoloPokemonClass pokemon_class = 14;
     optional float pokedex_height_m = 15;
     optional float pokedex_weight_kg = 16;
-    optional HoloPokemonId parent_id = 17;
+    optional HoloPokemonId parent_pokemon_id = 17;
     optional float height_std_dev = 18;
     optional float weight_std_dev = 19;
     optional float km_distance_to_hatch = 20;
@@ -19402,8 +19406,8 @@ message TempEvoOverrideProto {
     optional PokemonStatsAttributesProto stats = 2;
     optional float average_height_m = 3;
     optional float average_weight_kg = 4;
-    optional HoloPokemonType type_override1 = 5;
-    optional HoloPokemonType type_override2 = 6;
+    optional HoloPokemonType type_override = 5;
+    optional HoloPokemonType type_override_2 = 6;
     optional float cp_multiplier_override = 7;
     optional PokemonCameraAttributesProto camera = 8;
     optional PokemonEncounterAttributesProto encounter = 9;
@@ -19436,7 +19440,7 @@ message TemporaryEvolutionResourceProto {
 }
 
 message TemporaryEvolutionSettingsProto {
-    optional HoloPokemonId pokemon = 1;
+    optional HoloPokemonId pokemon_id = 1;
     repeated TemporaryEvolutionProto temporary_evolutions = 2;
 }
 
