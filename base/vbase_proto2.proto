@@ -4385,11 +4385,6 @@ enum WebTelemetryIds {
     WEB_TELEMETRY_IDS_POINT_OF_INTEREST_DESCRIPTION_WEB_CLICK = 1;
 }
 
-message AGJELDGLDLM {
-    optional bool hcfgdffdkbd = 1;
-    optional int32 mmdmnfgogcd = 2;
-}
-
 message ARBuddyMultiplayerSessionTelemetry {
     optional bool camera_permission_granted = 1;
     optional int64 host_time_to_publish_first_map = 2;
@@ -9279,7 +9274,7 @@ message GameMasterClientTemplateProto {
     optional CMFHAFEENOK mcfoaegjppl = 119;
     optional AddressBookImportSettings address_book_import_settings = 120;
     optional MusicSettings music_settings = 121;
-    optional AGJELDGLDLM dfijlnhhajf = 122;
+    optional NewsFeedClientSettings news_feed_client_settings = 122;
     optional MapObjectsInteractionRangeSettings map_objects_interaction_range_settings = 123;
     optional DCPJECHIGOH ehbghmkmlbf = 124;
     optional FHEOFILILNM fdonldfcjkj = 126;
@@ -12732,6 +12727,11 @@ message NewsArticleProto {
     optional NewsTemplate template = 7;
     optional bool enabled = 8;
     optional bool article_read = 9;
+}
+
+message NewsFeedClientSettings {
+    optional bool ob_enabled = 1;
+    optional int32 ob_news_feed_client_settings_int32 = 2;
 }
 
 message NewsGlobalSettingsProto {

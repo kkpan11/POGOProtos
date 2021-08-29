@@ -14,7 +14,7 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: base
+* Version: Mixed Versions Compatible 0.205.x to 0.217.x.
 *
 */
 
@@ -4383,11 +4383,6 @@ enum WarnedPlayerReason {
 enum WebTelemetryIds {
 	WEB_TELEMETRY_IDS_UNDEFINED_WEB_EVENT = 0;
 	WEB_TELEMETRY_IDS_POINT_OF_INTEREST_DESCRIPTION_WEB_CLICK = 1;
-}
-
-message AGJELDGLDLM {
-	bool hcfgdffdkbd = 1;
-	int32 mmdmnfgogcd = 2;
 }
 
 message ARBuddyMultiplayerSessionTelemetry {
@@ -9250,7 +9245,7 @@ message GameMasterClientTemplateProto {
 	CMFHAFEENOK mcfoaegjppl = 119;
 	AddressBookImportSettings address_book_import_settings = 120;
 	MusicSettings music_settings = 121;
-	AGJELDGLDLM dfijlnhhajf = 122;
+	NewsFeedClientSettings news_feed_client_settings = 122;
 	MapObjectsInteractionRangeSettings map_objects_interaction_range_settings = 123;
 	DCPJECHIGOH ehbghmkmlbf = 124;
 	FHEOFILILNM fdonldfcjkj = 126;
@@ -12701,6 +12696,11 @@ message NewsArticleProto {
 	NewsTemplate template = 7;
 	bool enabled = 8;
 	bool article_read = 9;
+}
+
+message NewsFeedClientSettings {
+	bool ob_enabled = 1;
+	int32 ob_news_feed_client_settings_int32 = 2;
 }
 
 message NewsGlobalSettingsProto {
