@@ -22,7 +22,7 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 message BattleVisualSettings {
-	bool enabled = 1;
-	string tx_stadium_1 = 2;
-	string tx_stadium_2 = 4;
+	bool battle_visual_stadium_enabled = 1;
+	string stadium_crowd_asset = 2;
+	string stadium_banner_asset = 4;
 }

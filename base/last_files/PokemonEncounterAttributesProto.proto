@@ -43,4 +43,7 @@ message PokemonEncounterAttributesProto {
 	float min_pokemon_action_frequency_s = 17;
 	float max_pokemon_action_frequency_s = 18;
 	int32 bonus_xl_candy_capture_reward = 19;
+	float ob_encounter_attribute_float_1 = 20;
+	float ob_encounter_attribute_float_2 = 21;
+	float ob_encounter_attribute_float_3 = 22;
 }

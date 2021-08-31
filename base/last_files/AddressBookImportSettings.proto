@@ -22,7 +22,7 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 message AddressBookImportSettings {
-	bool ob_is_enabled = 1;
-	int32 ob_onboarding_screen_level = 2;
-	bool ob_show_opt_out_checkbox = 3;
+	bool is_enabled = 1;
+	int32 onboarding_screen_level = 2;
+	bool show_opt_out_checkbox = 3;
 }

@@ -22,7 +22,7 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 message MapObjectsInteractionRangeSettings {
-	double ob_interaction_range_meters = 1;
-	double ob_far_interaction_range_meters = 2;
-	double ob_remote_interaction_range_meters = 3;
+	double interaction_range_meters = 1;
+	double far_interaction_range_meters = 2;
+	double remote_interaction_range_meters = 3;
 }

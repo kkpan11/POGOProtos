@@ -21,7 +21,7 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message AGJELDGLDLM {
-	bool hcfgdffdkbd = 1;
-	int32 mmdmnfgogcd = 2;
+message NewsFeedClientSettings {
+	bool is_news_feed_polling_enabled = 1;
+	int32 get_news_feed_polling_rate_minutes = 2;
 }

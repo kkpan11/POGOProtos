@@ -133,19 +133,19 @@ import "DKJLGDDPKMH.proto";
 import "CMFHAFEENOK.proto";
 import "AddressBookImportSettings.proto";
 import "MusicSettings.proto";
-import "AGJELDGLDLM.proto";
+import "NewsFeedClientSettings.proto";
 import "MapObjectsInteractionRangeSettings.proto";
 import "DCPJECHIGOH.proto";
 import "FHEOFILILNM.proto";
 
 message GameMasterClientTemplateProto {
 	string template_id = 1;
-	PokemonSettingsProto pokemon = 2;
-	ItemSettingsProto item = 3;
-	MoveSettingsProto move = 4;
-	MoveSequenceSettingsProto move_sequence = 5;
+	PokemonSettingsProto pokemon_settings = 2;
+	ItemSettingsProto item_settings = 3;
+	MoveSettingsProto move_settings = 4;
+	MoveSequenceSettingsProto move_sequence_settings = 5;
 	TypeEffectiveSettingsProto type_effective = 8;
-	BadgeSettingsProto badge = 10;
+	BadgeSettingsProto badge_settings = 10;
 	CameraSettingsProto camera = 11;
 	PlayerLevelSettingsProto player_level = 12;
 	GymLevelSettingsProto gym_level = 13;
@@ -198,7 +198,7 @@ message GameMasterClientTemplateProto {
 	BuddyEmotionLevelSettings buddy_emotion_level_settings = 61;
 	InvasionAvailabilitySettingsProto pokestop_invasion_availability_settings = 62;
 	BuddyInteractionSettings buddy_interaction_settings = 63;
-	VsSeekerLootProto vs_seeker_loot_proto = 64;
+	VsSeekerLootProto vs_seeker_loot = 64;
 	VsSeekerPokemonRewardsProto vs_seeker_pokemon_rewards = 65;
 	BattleHubOrderSettings battle_hub_order_settings = 66;
 	BattleHubBadgeSettings battle_hub_badge_settings = 67;
@@ -212,8 +212,8 @@ message GameMasterClientTemplateProto {
 	AvatarGroupOrderSettingsProto avatar_group_order_settings = 76;
 	PokemonFamilySettingsProto pokemon_family = 77;
 	MonodepthSettingsProto monodepth_settings = 78;
-	LevelUpRewardsSettingsProto level_up_rewards = 79;
-	RaidClientSettingsProto raid_settings_proto = 81;
+	LevelUpRewardsSettingsProto level_up_reward_settings = 79;
+	RaidClientSettingsProto raid_settings = 81;
 	TappableSettingsProto tappable_settings = 82;
 	RoutePlaySettingsProto route_play_settings = 83;
 	SponsoredGeofenceGiftSettingsProto sponsored_geofence_gift_settings = 84;
@@ -225,7 +225,7 @@ message GameMasterClientTemplateProto {
 	ArTelemetrySettingsProto ar_telemetry_settings = 90;
 	BattlePartySettingsProto battle_party_settings = 91;
 	QuestEvolutionSettingsProto quest_evolution_settings = 93;
-	PokemonHomeFormReversionProto pokemon_home_form_reversion = 94;
+	PokemonHomeFormReversionProto pokemon_home_form_reversions = 94;
 	DeepLinkingSettingsProto deep_linking_settings = 95;
 	GuiSearchSettingsProto gui_search_settings = 96;
 	ClientEvolutionQuestTemplateProto evolution_quest_template = 97;
@@ -233,7 +233,7 @@ message GameMasterClientTemplateProto {
 	FriendProfileSettingsProto friend_profile_settings = 99;
 	GeotargetedQuestSettingsProto geotargeted_quest_settings = 100;
 	PokemonTagSettingsProto pokemon_tag_settings = 101;
-	RecommendedSearchProto recommended_search_proto = 102;
+	RecommendedSearchProto recommended_search_settings = 102;
 	InventorySettingsProto inventory_settings = 103;
 	RouteDiscoverySettingsProto route_discovery_settings = 104;
 	EggTransparencySettingsProto egg_transparency_settings = 105;
@@ -252,7 +252,7 @@ message GameMasterClientTemplateProto {
 	CMFHAFEENOK mcfoaegjppl = 119;
 	AddressBookImportSettings address_book_import_settings = 120;
 	MusicSettings music_settings = 121;
-	AGJELDGLDLM dfijlnhhajf = 122;
+	NewsFeedClientSettings news_feed_client_settings = 122;
 	MapObjectsInteractionRangeSettings map_objects_interaction_range_settings = 123;
 	DCPJECHIGOH ehbghmkmlbf = 124;
 	FHEOFILILNM fdonldfcjkj = 126;
