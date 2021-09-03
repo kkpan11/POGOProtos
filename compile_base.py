@@ -9,6 +9,7 @@ import shutil
 from subprocess import call
 
 # Variables
+#global_version = '0.219.x_p_obf'
 global_version = 'base'
 protoc_executable = "protoc"
 package_name = 'POGOProtos.Rpc'
