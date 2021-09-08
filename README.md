@@ -37,6 +37,7 @@ We are following [semantic versioning](http://semver.org/) for POGOProtos-Privat
 | Additional resources as *.xml files | Source                                                                               | Status
 |------------------------|--------------------------------------------------------------------------------------|--------
 | [v2_GAME_MASTER.xml](https://raw.githubusercontent.com/Furtif/POGOProtos/master/GM/v2_GAME_MASTER.xml) | [Root](https://github.com/Furtif/POGOProtos/tree/master/GM)                                   |  OK
+| [ASSET_DIGEST.xml](https://raw.githubusercontent.com/Furtif/POGOProtos/master/GM/ASSET_DIGEST.xml) | [Root](https://github.com/Furtif/POGOProtos/tree/master/GM)                                   |  OK
 
 ### Usage
 If you want to figure out the current version in an automated system, use this file.
