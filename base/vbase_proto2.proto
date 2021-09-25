@@ -14,7 +14,7 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: Mixed Versions Compatible 0.205.x to 0.217.x.
+* Version: Mixed Versions Compatible 0.205.x to 0.219.x.
 *
 */
 
@@ -54,6 +54,14 @@ enum AA_NEW_ENUM_3 {
 enum AA_NEW_ENUM_4 {
     AA_NEW_ENUM_4_DEFAULT = 0;
     AA_NEW_ENUM_4_CLICKED_AR_PHOTO = 1;
+}
+
+enum AA_NEW_ENUM_5 {
+    AA_NEW_ENUM_5_UNKNOWN = 0;
+    AA_NEW_ENUM_5_READY_TO_UPLOAD = 1;
+    AA_NEW_ENUM_5_UPLOADING = 2;
+    AA_NEW_ENUM_5_UPLOADED = 3;
+    AA_NEW_ENUM_5_UPLOAD_ERROR_RETRY = 4;
 }
 
 enum AdFeedbackComplaintReason {
@@ -3394,6 +3402,7 @@ enum Method {
     METHOD_GET_GEOFENCED_AD = 1820;
     METHOD_POWER_UP_POKESTOP_ENCOUNTER = 1900;
     METHOD_UPLOAD_RAID_CLIENT_LOG = 1914;
+    METHOD_SKIP_ENTER_REFERRAL_CODE = 1915;
 }
 
 enum NewsPageTelemetryIds {
@@ -3693,6 +3702,31 @@ enum PoiInvalidReason {
     POI_INVALID_REASON_SCHOOL = 4;
     POI_INVALID_REASON_PERMANENTLY_REMOVED = 5;
     POI_INVALID_REASON_DUPLICATE = 6;
+}
+
+enum PoiSubmissionGuiSubmissionEvent {
+    POI_SUBMISSION_GUI_SUBMISSION_EVENT_UNKNOWN = 0;
+    POI_SUBMISSION_GUI_SUBMISSION_EVENT_POI_NOMINATION_ENTER = 1;
+    POI_SUBMISSION_GUI_SUBMISSION_EVENT_POI_TUTORIAL_COMPLETE = 2;
+    POI_SUBMISSION_GUI_SUBMISSION_EVENT_POI_MAP_CHANGEDVIEW_MAP = 3;
+    POI_SUBMISSION_GUI_SUBMISSION_EVENT_POI_MAP_CHANGEDVIEW_SATELLITE = 4;
+    POI_SUBMISSION_GUI_SUBMISSION_EVENT_POI_MAP_CENTER_LOCATION = 5;
+    POI_SUBMISSION_GUI_SUBMISSION_EVENT_POI_LOCATION_SET = 6;
+    POI_SUBMISSION_GUI_SUBMISSION_EVENT_POI_PHOTO_CAMERA_ENTER = 7;
+    POI_SUBMISSION_GUI_SUBMISSION_EVENT_POI_PHOTO_CAMERA_EXIT = 8;
+    POI_SUBMISSION_GUI_SUBMISSION_EVENT_POI_TITLE_ENTERED = 9;
+    POI_SUBMISSION_GUI_SUBMISSION_EVENT_POI_DESCRIPTION_ENTER = 10;
+    POI_SUBMISSION_GUI_SUBMISSION_EVENT_POI_DETAILS_CONFIRM = 11;
+    POI_SUBMISSION_GUI_SUBMISSION_EVENT_POI_SUPPORTINGINFO_ENTER = 12;
+    POI_SUBMISSION_GUI_SUBMISSION_EVENT_POI_SUBMIT_BUTTON_HIT = 13;
+    POI_SUBMISSION_GUI_SUBMISSION_EVENT_POI_EXIT_BUTTON_HIT = 14;
+    POI_SUBMISSION_GUI_SUBMISSION_EVENT_POI_NOMINATION_GUIDELINES_HIT = 15;
+}
+
+enum PoiSubmissionPhotoUploadErrorIds {
+    POI_SUBMISSION_PHOTO_UPLOAD_ERROR_IDS_UNSET = 0;
+    POI_SUBMISSION_PHOTO_UPLOAD_ERROR_IDS_POI_PHOTO_UPLOAD_ERROR = 1;
+    POI_SUBMISSION_PHOTO_UPLOAD_ERROR_IDS_POI_PHOTO_UPLOAD_TIMEOUT = 2;
 }
 
 enum PoiSubmissionTutorialPage {
@@ -4187,6 +4221,12 @@ enum Team {
     TEAM_YELLOW = 3;
 }
 
+enum ToastType {
+    TOAST_TYPE_UNKNOWN = 0;
+    TOAST_TYPE_ERROR = 1;
+    TOAST_TYPE_INFO = 2;
+}
+
 enum TutorialCompletion {
     LEGAL_SCREEN = 0;
     AVATAR_SELECTION = 1;
@@ -4239,6 +4279,11 @@ enum TutorialCompletion {
     APP_TRACKING_OPTIN_DIALOG = 49;
     ADDRESS_BOOK_IMPORT_PROMPT = 50;
     POKEMON_TAGS_INTRODUCTION = 51;
+    GYM_TUTORIAL_BUTTON_PROMPT_SHOWN = 52;
+    RAID_TUTORIAL_BUTTON_PROMPT_SHOWN = 53;
+    POTION_AND_REVIVE_TUTORIAL_INTRODUCED = 54;
+    POTION_AND_REVIVE_TUTORIAL_VIEWED = 55;
+    SHOULD_SHOW_POTION_AND_REVIVE_TUTORIAL = 57;
 }
 
 enum TweenAction {
@@ -4724,9 +4769,11 @@ message ApprovedCommonTelemetryProto {
     optional PoiSubmissionTelemetry poi_submission_telemetry = 4;
     optional PoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 5;
     optional CommonTelemetryLogIn log_in = 6;
+    optional CommonTelemetryOmniPushReceived omni_push_received = 7;
+    optional CommonTelemetryOmniPushOpened omni_push_opened = 8;
 
-    optional ServerRecordMetadata server_data = 7;
-    optional ClientTelemetryCommonFilterProto common_filters = 8;
+    optional ServerRecordMetadata server_data = 9;
+    optional ClientTelemetryCommonFilterProto common_filters = 10;
 }
 
 message ArMappingSessionTelemetryProto {
@@ -5133,6 +5180,7 @@ message AvailableSubmissionsPerSubmissionType {
     optional bool is_whitelisted_user = 8;
     optional bool is_upload_later_enabled = 9;
     optional float daily_new_submissions = 10;
+    optional int32 max_submissions = 11;
 }
 
 message AvatarCustomizationProto {
@@ -6109,13 +6157,6 @@ message BuddyWalkSettings {
     optional float km_required_per_affection_point = 1;
 }
 
-message CMFHAFEENOK {
-    optional float dolafmddpln = 1;
-    optional float gmiojlfmhfo = 2;
-    optional float gobldkgogca = 3;
-    optional float fhmkalieaoe = 4;
-}
-
 message CameraSettingsProto {
     optional string next_camera = 1;
     repeated CameraInterpolation interpolation = 2;
@@ -6667,7 +6708,7 @@ message ClientSpawnPointProto {
 message ClientTelemetryBatchProto {
     enum TelemetryScopeId {
         UNSET = 0;
-        DITTO = 1;
+        CORE = 1;
         GAME = 2;
         TITAN = 3;
         COMMON = 4;
@@ -6707,6 +6748,9 @@ message ClientTelemetryCommonFilterProto {
     optional string locale_country_code = 4;
     optional string locale_language_code = 5;
     optional double sampling_probability = 6;
+    optional string quality_level = 7;
+    optional string network_connectivity_type = 8;
+    optional string game_context = 9;
 }
 
 message ClientTelemetryRecordProto {
@@ -7295,6 +7339,16 @@ message CommonTelemetryLogIn {
     optional int64 timestamp_ms = 1;
 }
 
+message CommonTelemetryOmniPushOpened {
+    optional string push_id = 1;
+    optional int64 opened_timestamp_ms = 2;
+}
+
+message CommonTelemetryOmniPushReceived {
+    optional string push_id = 1;
+    optional int64 received_timestamp_ms = 2;
+}
+
 message CommonTelemetryShopClick {
     enum AccessType {
         UNSPECIFIED = 0;
@@ -7695,12 +7749,13 @@ message DALCNAGHNLB {
     optional int32 kcflekfimjm = 2;
 }
 
-message DCPJECHIGOH {
-    optional int32 lincbogmklm = 1;
+message DBJGEPNEJDN {
+    optional int32 fonnjghiphc = 1;
+    optional int32 kmaecfljkpc = 2;
 }
 
-message DKJLGDDPKMH {
-    optional bool lnddajhgaha = 1;
+message DCPJECHIGOH {
+    optional int32 lincbogmklm = 1;
 }
 
 message DailyBonusProto {
@@ -8618,6 +8673,11 @@ message EventTicketActiveTimeProto {
     optional int64 event_end_ms = 3;
 }
 
+message EvolePreviewSettings {
+    optional bool enable_evolution_preview = 1;
+    optional bool enable_mega_evolution_preview = 2;
+}
+
 message EvolutionBranchProto {
     optional HoloPokemonId evolution = 1;
     optional Item evolution_item_requirement = 2;
@@ -8855,6 +8915,12 @@ message FormProto {
 message FormSettingsProto {
     optional HoloPokemonId pokemon = 1;
     repeated FormProto forms = 2;
+}
+
+message FormsRefactorSettings {
+    optional bool ob_forms_refactor_settings_bool_1 = 1;
+    optional bool ob_forms_refactor_settings_bool_2 = 2;
+    optional bool ob_forms_refactor_settings_bool_3 = 3;
 }
 
 message FortDeployOutProto {
@@ -9138,6 +9204,21 @@ message FriendshipMilestoneRewardProto {
     optional FriendshipLevelMilestone friendship_milestone = 2;
 }
 
+message GAAICDPBJIA {
+    optional bool fnafhnkenoh = 1;
+    optional bool iifaimgknnd = 2;
+    optional bool fcbjkjkkagh = 3;
+    optional bool fnncnidneok = 4;
+    optional bool kknkmjahhia = 5;
+    optional bool hjhplhlfhfk = 6;
+    optional bool ioodkmafhpc = 7;
+    optional bool nojecbgblln = 8;
+    optional bool lfajfpomdpp = 9;
+    optional bool ncjnpjofnik = 10;
+    optional bool dlgehaijdmg = 11;
+    repeated ONGGKMFMLHI dkihcoheamj = 12;
+}
+
 message GameClientPhotoGalleryPoiImageProto {
     optional string image_id = 1;
     optional string poi_id = 2;
@@ -9271,14 +9352,17 @@ message GameMasterClientTemplateProto {
     optional BattleVisualSettings battle_visual_settings = 115;
     optional AddressablePokemonSettings addressable_pokemon_settings = 116;
     optional VerboseLogRaidSettings verbose_log_raid_settings = 117;
-    optional DKJLGDDPKMH gbchhlaknlm = 118;
-    optional CMFHAFEENOK mcfoaegjppl = 119;
+    optional FormsRefactorSettings forms_refactor_settings = 118;
+    optional SharedMoveSettings shared_move_settings = 119;
     optional AddressBookImportSettings address_book_import_settings = 120;
     optional MusicSettings music_settings = 121;
     optional NewsFeedClientSettings news_feed_client_settings = 122;
     optional MapObjectsInteractionRangeSettings map_objects_interaction_range_settings = 123;
     optional DCPJECHIGOH ehbghmkmlbf = 124;
+    optional EvolePreviewSettings evolve_preview_settings = 125;
     optional FHEOFILILNM fdonldfcjkj = 126;
+    optional DBJGEPNEJDN napgadlpmpj = 127;
+    optional GAAICDPBJIA fomijnooaig = 129;
 }
 
 message GameMasterLocalProto {
@@ -10833,6 +10917,8 @@ message GlobalSettingsProto {
     optional ObNewGlobalSetting ob_new_global_setting = 70;
     optional UploadManagementSettings upload_management_settings = 72;
     optional RaidLoggingSettingsProto raid_logging_settings = 73;
+    optional ObNewGlobalSetting1 ob_new_global_setting_1 = 75;
+    optional ObNewGlobalSetting2 ob_new_global_setting_2 = 76;
 }
 
 message GmmSettings {
@@ -11343,6 +11429,8 @@ message HoloholoClientTelemetryOmniProto {
     optional WayspotEditTelemetry wayspot_edit_telemetry = 75;
     optional ClientSettingsTelemetry client_settings_telemetry = 76;
     optional PokedexCategorySelectedTelemetry pokedex_category_selected_telemetry = 77;
+    optional PercentScrolledTelemetry percent_scrolled_telemetry = 78;
+    optional AddressBookImportTelemetry address_book_import_telemetry = 79;
 
     optional ServerData server_data = 1001;
     optional CommonFilterProto common_filters = 1002;
@@ -11572,8 +11660,8 @@ message InvasionNpcDisplaySettingsProto {
     optional string model_name = 7;
     optional string tutorial_on_loss_string = 8;
     optional bool is_male = 9;
-    optional string npc_display_settings_string_1 = 10;
-    optional string npc_display_settings_string_2 = 11;
+    optional string party_selection_music = 10;
+    optional string combat_music = 11;
 }
 
 message InvasionStatus {
@@ -12575,6 +12663,7 @@ message MegaEvolvePokemonOutProto {
     optional Result result = 1;
     optional PokemonProto evolved_pokemon = 2;
     optional int32 exp_awarded = 3;
+    optional ObMegaEvolvePokemonOutProtoField ob_field = 4;
 }
 
 message MegaEvolvePokemonProto {
@@ -12815,9 +12904,54 @@ message NpcPokemonProto {
     optional PokemonDisplayProto pokemon_display = 2;
 }
 
+message ONGGKMFMLHI {
+    message NKGGPELMEOA {
+        optional Item mkdphfjpkbh = 1;
+        optional int32 chbchdjbjjg = 2;
+    }
+
+    optional TutorialCompletion flhcnbhpnfk = 1;
+    repeated NKGGPELMEOA mhgjnfceolb = 2;
+}
+
+message ObMegaEvolvePokemonOutProtoField {
+    message ObField {
+        optional int32 ob_field_int32_1 = 1;
+        optional int32 ob_field_int32_2 = 2;
+    }
+
+    optional ObField ob_field_1 = 1;
+    optional ObField ob_field_2 = 2;
+    optional int32 ob_field_int32_1 = 3;
+    optional int32 ob_field_int32_2 = 4;
+}
+
 message ObNewGlobalSetting {
     optional bool ob_bool = 1;
     optional int32 ob_int32 = 2;
+}
+
+message ObNewGlobalSetting1 {
+    optional bool ob_new_global_setting_bool_1 = 1;
+    optional bool ob_new_global_setting_bool_2 = 2;
+    optional string ob_new_global_setting_string = 3;
+}
+
+message ObNewGlobalSetting2 {
+    optional bool enabled = 1;
+}
+
+message ObPokemonSetting {
+    optional float ob_pokemon_setting_float_1 = 1;
+    optional float ob_pokemon_setting_float_2 = 2;
+    optional float ob_pokemon_setting_float_3 = 3;
+    optional float ob_pokemon_setting_float_4 = 4;
+    optional float ob_pokemon_setting_float_5 = 5;
+    optional float ob_pokemon_setting_float_6 = 6;
+    optional float ob_pokemon_setting_float_7 = 7;
+    optional float ob_pokemon_setting_float_8 = 8;
+    optional float ob_pokemon_setting_float_9 = 9;
+    optional float ob_pokemon_setting_float_10 = 10;
 }
 
 message OnApplicationFocusDataProto {
@@ -13169,6 +13303,11 @@ message PasscodeSettingsProto {
     optional bool use_passcode_v2 = 2;
 }
 
+message PercentScrolledTelemetry {
+    optional double percent_scrolled_telemetry_double = 1;
+    optional string percent_scrolled_telemetry_string = 2;
+}
+
 message PermissionsFlowTelemetry {
     optional PermissionContextTelemetryIds permission_context_telemetry_ids = 1;
     optional DeviceServiceTelemetryIds device_service_telemetry_ids = 2;
@@ -13335,6 +13474,7 @@ message PlayerRaidInfoProto {
     optional int32 total_completed_raids = 3;
     optional int32 total_completed_legendary_raids = 4;
     repeated RaidProto raids = 5;
+    optional int32 ob_int32 = 6;
 }
 
 message PlayerSettingsProto {
@@ -13604,6 +13744,7 @@ message PokedexEntryProto {
     repeated TempEvoData temp_evo_data = 16;
     repeated PokemonDisplayProto.Form captured_shiny_forms = 17;
     optional PokedexCategoryStatuS pokedex_category_status = 18;
+    repeated PokemonDisplayProto.Alignment ob_alignment = 19;
 
     message PokedexCategoryStatuS {
         optional string key = 1;
@@ -13721,6 +13862,10 @@ message PokemonDisplayProto {
         COSTUME_9_NOEVOLVE = 45;
         COSTUME_10_NOEVOLVE = 46;
         GOFEST_2021_NOEVOLVE = 47;
+        FASHION_2021_NOEVOLVE = 48;
+        HALLOWEEN_2021_NOEVOLVE = 49;
+        GEMS_2021_NOEVOLVE = 50;
+        HOLIDAY_2021_NOEVOLVE = 51;
     }
 
     enum Form {
@@ -16011,9 +16156,9 @@ message PokemonEncounterAttributesProto {
     optional float min_pokemon_action_frequency_s = 17;
     optional float max_pokemon_action_frequency_s = 18;
     optional int32 bonus_xl_candy_capture_reward = 19;
-    optional float ob_encounter_attribute_float_1 = 20;
-    optional float ob_encounter_attribute_float_2 = 21;
-    optional float ob_encounter_attribute_float_3 = 22;
+    optional float shadow_form_base_capture_rate = 20;
+    optional float shadow_form_attack_probability = 21;
+    optional float shadow_form_dodge_probability = 22;
 }
 
 message PokemonEncounterRewardProto {
@@ -16123,7 +16268,7 @@ message PokemonHomeEnergyCostsProto {
     optional HoloPokemonClass pokemon_class = 1;
     optional int32 base = 2;
     optional int32 shiny = 3;
-    optional int32 cp_0_to1000 = 4;
+    optional int32 cp_0_to_1000 = 4;
     optional int32 cp_1001_to_2000 = 5;
     optional int32 cp_2001_to_inf = 6;
 }
@@ -16332,6 +16477,7 @@ message PokemonSettingsProto {
     repeated FormChangeProto form_change = 63;
     repeated float buddy_encounter_cameo_local_position = 64;
     repeated float buddy_encounter_cameo_local_rotation = 65;
+    optional ObPokemonSetting ob_pokemon_setting = 66;
 }
 
 message PokemonStaminaUpdateProto {
@@ -18803,6 +18949,13 @@ message ShareExRaidPassProto {
 message SharedExclusiveTicketTrainerInfo {
     optional string codename = 1;
     optional string player_id = 2;
+}
+
+message SharedMoveSettings {
+    optional float sta_percent = 1;
+    optional float atk_percent = 2;
+    optional float def_percent = 3;
+    optional float duration_s = 4;
 }
 
 message ShoppingPageClickTelemetry {
