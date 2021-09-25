@@ -129,14 +129,17 @@ import "PokedexCategoriesSettings.proto";
 import "BattleVisualSettings.proto";
 import "AddressablePokemonSettings.proto";
 import "VerboseLogRaidSettings.proto";
-import "DKJLGDDPKMH.proto";
-import "CMFHAFEENOK.proto";
+import "FormsRefactorSettings.proto";
+import "SharedMoveSettings.proto";
 import "AddressBookImportSettings.proto";
 import "MusicSettings.proto";
 import "NewsFeedClientSettings.proto";
 import "MapObjectsInteractionRangeSettings.proto";
 import "DCPJECHIGOH.proto";
+import "EvolePreviewSettings.proto";
 import "FHEOFILILNM.proto";
+import "DBJGEPNEJDN.proto";
+import "GAAICDPBJIA.proto";
 
 message GameMasterClientTemplateProto {
 	string template_id = 1;
@@ -248,12 +251,15 @@ message GameMasterClientTemplateProto {
 	BattleVisualSettings battle_visual_settings = 115;
 	AddressablePokemonSettings addressable_pokemon_settings = 116;
 	VerboseLogRaidSettings verbose_log_raid_settings = 117;
-	DKJLGDDPKMH gbchhlaknlm = 118;
-	CMFHAFEENOK mcfoaegjppl = 119;
+	FormsRefactorSettings forms_refactor_settings = 118;
+	SharedMoveSettings shared_move_settings = 119;
 	AddressBookImportSettings address_book_import_settings = 120;
 	MusicSettings music_settings = 121;
 	NewsFeedClientSettings news_feed_client_settings = 122;
 	MapObjectsInteractionRangeSettings map_objects_interaction_range_settings = 123;
 	DCPJECHIGOH ehbghmkmlbf = 124;
+	EvolePreviewSettings evolve_preview_settings = 125;
 	FHEOFILILNM fdonldfcjkj = 126;
+	DBJGEPNEJDN napgadlpmpj = 127;
+	GAAICDPBJIA fomijnooaig = 129;
 }

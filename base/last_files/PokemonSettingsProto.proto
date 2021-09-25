@@ -35,6 +35,7 @@ import "AnimationOverrideProto.proto";
 import "ShadowAttributesProto.proto";
 import "TempEvoOverrideProto.proto";
 import "FormChangeProto.proto";
+import "ObPokemonSetting.proto";
 
 message PokemonSettingsProto {
 	enum BuddySize {
@@ -101,4 +102,5 @@ message PokemonSettingsProto {
 	repeated FormChangeProto form_change = 63;
 	repeated float buddy_encounter_cameo_local_position = 64;
 	repeated float buddy_encounter_cameo_local_rotation = 65;
+	ObPokemonSetting ob_pokemon_setting = 66;
 }

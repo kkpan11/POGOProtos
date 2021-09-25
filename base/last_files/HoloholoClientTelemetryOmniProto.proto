@@ -98,6 +98,8 @@ import "UploadManagementTelemetry.proto";
 import "WayspotEditTelemetry.proto";
 import "ClientSettingsTelemetry.proto";
 import "PokedexCategorySelectedTelemetry.proto";
+import "PercentScrolledTelemetry.proto";
+import "AddressBookImportTelemetry.proto";
 import "ServerData.proto";
 import "CommonFilterProto.proto";
 
@@ -180,6 +182,8 @@ message HoloholoClientTelemetryOmniProto {
 		WayspotEditTelemetry wayspot_edit_telemetry = 75;
 		ClientSettingsTelemetry client_settings_telemetry = 76;
 		PokedexCategorySelectedTelemetry pokedex_category_selected_telemetry = 77;
+		PercentScrolledTelemetry percent_scrolled_telemetry = 78;
+		AddressBookImportTelemetry address_book_import_telemetry = 79;
 	}
 
 	ServerData server_data = 1001;

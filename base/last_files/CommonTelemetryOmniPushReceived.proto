@@ -21,6 +21,7 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message DKJLGDDPKMH {
-	bool lnddajhgaha = 1;
+message CommonTelemetryOmniPushReceived {
+	string push_id = 1;
+	int64 received_timestamp_ms = 2;
 }

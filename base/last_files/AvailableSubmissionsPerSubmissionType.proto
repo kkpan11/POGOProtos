@@ -32,4 +32,5 @@ message AvailableSubmissionsPerSubmissionType {
 	bool is_whitelisted_user = 8;
 	bool is_upload_later_enabled = 9;
 	float daily_new_submissions = 10;
+	int32 max_submissions = 11;
 }

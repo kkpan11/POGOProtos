@@ -21,9 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message CMFHAFEENOK {
-	float dolafmddpln = 1;
-	float gmiojlfmhfo = 2;
-	float gobldkgogca = 3;
-	float fhmkalieaoe = 4;
+enum AA_NEW_ENUM_5 {
+	AA_NEW_ENUM_5_UNKNOWN = 0;
+	AA_NEW_ENUM_5_READY_TO_UPLOAD = 1;
+	AA_NEW_ENUM_5_UPLOADING = 2;
+	AA_NEW_ENUM_5_UPLOADED = 3;
+	AA_NEW_ENUM_5_UPLOAD_ERROR_RETRY = 4;
 }

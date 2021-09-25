@@ -27,6 +27,8 @@ import "CommonTelemetryShopView.proto";
 import "PoiSubmissionTelemetry.proto";
 import "PoiSubmissionPhotoUploadErrorTelemetry.proto";
 import "CommonTelemetryLogIn.proto";
+import "CommonTelemetryOmniPushReceived.proto";
+import "CommonTelemetryOmniPushOpened.proto";
 import "ServerRecordMetadata.proto";
 import "ClientTelemetryCommonFilterProto.proto";
 
@@ -38,8 +40,10 @@ message ApprovedCommonTelemetryProto {
 		PoiSubmissionTelemetry poi_submission_telemetry = 4;
 		PoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 5;
 		CommonTelemetryLogIn log_in = 6;
+		CommonTelemetryOmniPushReceived omni_push_received = 7;
+		CommonTelemetryOmniPushOpened omni_push_opened = 8;
 	}
 
-	ServerRecordMetadata server_data = 7;
-	ClientTelemetryCommonFilterProto common_filters = 8;
+	ServerRecordMetadata server_data = 9;
+	ClientTelemetryCommonFilterProto common_filters = 10;
 }

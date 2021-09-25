@@ -84,6 +84,8 @@ import "StoreIapSettingsProto.proto";
 import "ObNewGlobalSetting.proto";
 import "UploadManagementSettings.proto";
 import "RaidLoggingSettingsProto.proto";
+import "ObNewGlobalSetting1.proto";
+import "ObNewGlobalSetting2.proto";
 
 message GlobalSettingsProto {
 	FortSettingsProto fort_settings = 2;
@@ -153,4 +155,6 @@ message GlobalSettingsProto {
 	ObNewGlobalSetting ob_new_global_setting = 70;
 	UploadManagementSettings upload_management_settings = 72;
 	RaidLoggingSettingsProto raid_logging_settings = 73;
+	ObNewGlobalSetting1 ob_new_global_setting_1 = 75;
+	ObNewGlobalSetting2 ob_new_global_setting_2 = 76;
 }
