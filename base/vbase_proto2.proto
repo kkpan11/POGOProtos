@@ -8696,6 +8696,7 @@ message EvolutionBranchProto {
     optional int32 temporary_evolution_energy_cost_subsequent = 16;
     repeated EvolutionQuestInfoProto quest_display = 17;
     optional bool only_upside_down = 18;
+    optional int32 purification_evolution_candy_cost = 19;
 }
 
 message EvolutionQuestInfoProto {
