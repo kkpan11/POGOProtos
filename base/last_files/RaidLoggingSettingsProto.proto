@@ -23,4 +23,6 @@ package POGOProtos.Rpc;
 
 message RaidLoggingSettingsProto {
 	bool enabled = 1;
+	bool enabled_pokemon = 2;
+	bool ob_bool = 3;
 }

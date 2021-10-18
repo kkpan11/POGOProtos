@@ -100,6 +100,11 @@ import "ClientSettingsTelemetry.proto";
 import "PokedexCategorySelectedTelemetry.proto";
 import "PercentScrolledTelemetry.proto";
 import "AddressBookImportTelemetry.proto";
+import "MissingTranslationTelemetry.proto";
+import "EggHatchTelemetry.proto";
+import "PushGatewayTelemetry.proto";
+import "PushGatewayUpstreamErrorTelemetry.proto";
+import "UsernameSuggestionTelemetry.proto";
 import "ServerData.proto";
 import "CommonFilterProto.proto";
 
@@ -184,6 +189,11 @@ message HoloholoClientTelemetryOmniProto {
 		PokedexCategorySelectedTelemetry pokedex_category_selected_telemetry = 77;
 		PercentScrolledTelemetry percent_scrolled_telemetry = 78;
 		AddressBookImportTelemetry address_book_import_telemetry = 79;
+		MissingTranslationTelemetry missing_translation_telemetry = 80;
+		EggHatchTelemetry egg_hatch_telemetry = 81;
+		PushGatewayTelemetry push_gateway_telemetry = 82;
+		PushGatewayUpstreamErrorTelemetry push_gateway_upstream_error_telemetry = 83;
+		UsernameSuggestionTelemetry username_suggestion_telemetry = 84;
 	}
 
 	ServerData server_data = 1001;

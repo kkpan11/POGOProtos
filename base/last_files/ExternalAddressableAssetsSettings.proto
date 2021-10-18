@@ -21,7 +21,6 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message DALCNAGHNLB {
-	bool fphiniooddb = 1;
-	int32 kcflekfimjm = 2;
+message ExternalAddressableAssetsSettings {
+	int32 ob_int32 = 1;
 }

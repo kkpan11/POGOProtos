@@ -21,12 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "FortPowerUpLevel.proto";
-import "FortPowerUpLevelReward.proto";
+import "SuggestionsEvents.proto";
+import "ObSuggestionsEntry.proto";
 
-message KGCLIDCJDFK {
-	FortPowerUpLevel nhnbdkfmkaj = 1;
-	int32 gclnadhecif = 2;
-	repeated FortPowerUpLevelReward lkhjpphombh = 3;
-	int32 eoieocckjkc = 4;
+message UsernameSuggestionTelemetry {
+	SuggestionsEvents ob_suggest_1 = 1;
+	ObSuggestionsEntry ob_suggest_2 = 2;
 }

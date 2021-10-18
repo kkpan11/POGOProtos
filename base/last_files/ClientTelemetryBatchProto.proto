@@ -30,6 +30,8 @@ message ClientTelemetryBatchProto {
 		GAME = 2;
 		TITAN = 3;
 		COMMON = 4;
+		PRE_AGE_GATE = 5;
+		PRE_LOGIN = 6;
 	}
 
 	TelemetryScopeId telemetry_scope_id = 1;

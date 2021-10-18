@@ -118,8 +118,8 @@ import "RecommendedSearchProto.proto";
 import "InventorySettingsProto.proto";
 import "RouteDiscoverySettingsProto.proto";
 import "EggTransparencySettingsProto.proto";
-import "KGCLIDCJDFK.proto";
-import "DALCNAGHNLB.proto";
+import "FortPowerUpSettings.proto";
+import "PowerUpPokestopSharedSettings.proto";
 import "IncidentPrioritySettingsProto.proto";
 import "ReferralSettingsProto.proto";
 import "EOLAIBDNKGG.proto";
@@ -135,11 +135,12 @@ import "AddressBookImportSettings.proto";
 import "MusicSettings.proto";
 import "NewsFeedClientSettings.proto";
 import "MapObjectsInteractionRangeSettings.proto";
-import "DCPJECHIGOH.proto";
+import "ExternalAddressableAssetsSettings.proto";
 import "EvolePreviewSettings.proto";
 import "FHEOFILILNM.proto";
-import "DBJGEPNEJDN.proto";
+import "PushGatewaySettings.proto";
 import "GAAICDPBJIA.proto";
+import "BAOAHFFGIDN.proto";
 
 message GameMasterClientTemplateProto {
 	string template_id = 1;
@@ -240,8 +241,8 @@ message GameMasterClientTemplateProto {
 	InventorySettingsProto inventory_settings = 103;
 	RouteDiscoverySettingsProto route_discovery_settings = 104;
 	EggTransparencySettingsProto egg_transparency_settings = 105;
-	KGCLIDCJDFK jdhoakdpaga = 106;
-	DALCNAGHNLB piknbjjpncn = 107;
+	FortPowerUpSettings fort_power_up_settings = 106;
+	PowerUpPokestopSharedSettings power_up_pokestop_shared_settings = 107;
 	IncidentPrioritySettingsProto incident_priority_settings = 108;
 	ReferralSettingsProto referral_settings = 109;
 	EOLAIBDNKGG jafhblcnkjc = 110;
@@ -257,9 +258,10 @@ message GameMasterClientTemplateProto {
 	MusicSettings music_settings = 121;
 	NewsFeedClientSettings news_feed_client_settings = 122;
 	MapObjectsInteractionRangeSettings map_objects_interaction_range_settings = 123;
-	DCPJECHIGOH ehbghmkmlbf = 124;
+	ExternalAddressableAssetsSettings external_addressable_assets_settings = 124;
 	EvolePreviewSettings evolve_preview_settings = 125;
 	FHEOFILILNM fdonldfcjkj = 126;
-	DBJGEPNEJDN napgadlpmpj = 127;
+	PushGatewaySettings push_gateway_settings = 127;
 	GAAICDPBJIA fomijnooaig = 129;
+	BAOAHFFGIDN hggpbflinha = 130;
 }

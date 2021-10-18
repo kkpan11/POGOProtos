@@ -21,6 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message DCPJECHIGOH {
-	int32 lincbogmklm = 1;
+message BAOAHFFGIDN {
+	bool gonpfjjpjen = 1;
+	int32 leihjkahiel = 2;
+	int32 dkfghenhgna = 3;
 }

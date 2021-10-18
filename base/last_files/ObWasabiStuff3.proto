@@ -21,7 +21,11 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message DBJGEPNEJDN {
-	int32 fonnjghiphc = 1;
-	int32 kmaecfljkpc = 2;
+message ObWasabiStuff3 {
+	string ob_wasabi_string_1 = 1;
+	string ob_wasabi_string_2 = 2;
+	string ob_wasabi_string_3 = 3;
+	string ob_wasabi_string_4 = 4;
+	string ob_wasabi_string_5 = 5;
+	string ob_wasabi_string_6 = 6;
 }

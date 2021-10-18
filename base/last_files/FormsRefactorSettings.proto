@@ -25,4 +25,5 @@ message FormsRefactorSettings {
 	 bool ob_forms_refactor_settings_bool_1 = 1;
 	 bool ob_forms_refactor_settings_bool_2 = 2;
 	 bool ob_forms_refactor_settings_bool_3 = 3;
+	 bool enable_singular_shadow_form = 4;
 }
