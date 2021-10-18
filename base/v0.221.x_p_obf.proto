@@ -4833,13 +4833,6 @@ message AOCBMLGMHFL {
 	string ekflacfcfgc = 1;
 }
 
-message APBPGNJMJJF {
-	FortPowerUpLevel cbcfobmadkl = 1;
-	int32 eohhkdlimbj = 2;
-	repeated KAPBAEPCPJA dfjbaggacnp = 3;
-	int32 ejlnkoghfjj = 4;
-}
-
 message APFLJONKFOM {
 	Item cnikmokmnbl = 1;
 }
@@ -5574,10 +5567,6 @@ message BHBFFNFLBGL {
 message BHBKDCOPDHF {
 	bytes jfngcnhdbjl = 1;
 	string cafelicodnb = 2;
-}
-
-message BHNMOPNHOGG {
-	bool hbmnnlbbafh = 1;
 }
 
 message BIONPLKLJBJ {
@@ -7857,10 +7846,6 @@ message DFDHOIEGJOO {
 	TradingProto bkihganepln = 2;
 }
 
-message DGGGFKKJLJL {
-	int32 ihgmnlahaek = 1;
-}
-
 message DGNNOOLDDBA {
 	enum Result {
 		UNSET = 0;
@@ -8122,11 +8107,6 @@ message DOMHCNNKELB {
 
 	Result result = 1;
 	PokemonProto fjdckffgbkl = 2;
-}
-
-message DPEBNLLFAPE {
-	int32 banbgcdejam = 1;
-	int32 nlgceniclhk = 2;
 }
 
 message DPLCBMLPCLJ {
@@ -9167,6 +9147,10 @@ message ExRaidSettingsProto {
 	FriendshipLevelMilestone gcibocchpae = 1;
 }
 
+message ExternalAddressableAssetsSettings {
+	int32 ihgmnlahaek = 1;
+}
+
 message FABEAJCBLKF {
 	string hphoflbgola = 1;
 	string hpbkdfamnde = 2;
@@ -9585,6 +9569,13 @@ message FortDetailsOutProto {
 	int32 imiofnbeddl = 23;
 	int64 gmpejmmhamc = 24;
 	int64 laompaogjdl = 25;
+}
+
+message FortPowerUpSettings {
+	FortPowerUpLevel cbcfobmadkl = 1;
+	int32 eohhkdlimbj = 2;
+	repeated KAPBAEPCPJA dfjbaggacnp = 3;
+	int32 ejlnkoghfjj = 4;
 }
 
 message FortSearchLogEntry {
@@ -10198,8 +10189,8 @@ message GameMasterClientTemplateProto {
 	InventorySettingsProto inventory_settings = 103;
 	RouteDiscoverySettingsProto route_discovery_settings = 104;
 	EggTransparencySettingsProto egg_transparency_settings = 105;
-	APBPGNJMJJF pdhdpmigmjl = 106;
-	OGMNLLLMMBF olkpnfhgfbp = 107;
+	FortPowerUpSettings fort_power_up_settings = 106;
+	PowerUpPokestopSharedSettings power_up_pokestop_shared_settings = 107;
 	IncidentPrioritySettingsProto incident_priority_settings = 108;
 	ReferralSettingsProto referral_settings = 109;
 	NGFKLJCOFJB ngbonkiglfh = 110;
@@ -10215,10 +10206,10 @@ message GameMasterClientTemplateProto {
 	MusicSettings music_settings = 121;
 	NewsFeedClientSettings news_feed_client_settings = 122;
 	MapObjectsInteractionRangeSettings map_objects_interaction_range_settings = 123;
-	DGGGFKKJLJL nfbaoiaamod = 124;
+	ExternalAddressableAssetsSettings external_addressable_assets_settings = 124;
 	EvolePreviewSettings evolve_preview_settings = 125;
 	GDFNBNKDLCD jjjacpljhhd = 126;
-	DPEBNLLFAPE blajdecllfg = 127;
+	PushGatewaySettings push_gateway_settings = 127;
 	LOMMPEDBKJP ghfjkcpbcgf = 128;
 	IENKJDJDOPL nkcbdlipipk = 129;
 	BAOAHFFGIDN hggpbflinha = 130;
@@ -11071,10 +11062,10 @@ message GlobalSettingsProto {
 	CCICMGFEMEF lpjghmbmbbd = 70;
 	UploadManagementSettings upload_management_settings = 72;
 	RaidLoggingSettingsProto raid_logging_settings = 73;
-	BHNMOPNHOGG mgfakkhijgf = 74;
+	ObNewGlobalSetting3 ob_new_global_setting_3 = 74;
 	ObNewGlobalSetting1 ob_new_global_setting_1 = 75;
 	ObNewGlobalSetting2 ob_new_global_setting_2 = 76;
-	OEGOPPIEMDG ngkmanckiek = 77;
+	ObNewGlobalSetting4 ob_new_global_setting_4 = 77;
 }
 
 message GmmSettings {
@@ -14901,10 +14892,6 @@ message OCOKAGGBLPC {
 	double appndpgihcp = 6;
 }
 
-message OEGOPPIEMDG {
-	bool aiaklefbmaa = 1;
-}
-
 message OEIMLNALAJK {
 	enum Status {
 		UNSET = 0;
@@ -15008,12 +14995,6 @@ message OFOCCODAGLH {
 }
 
 message OGKDGBHFJAL {
-}
-
-message OGMNLLLMMBF {
-	bool ggbgfimipfg = 1;
-	int32 aodnkndbnke = 2;
-	float fknkcolmhnc = 3;
 }
 
 message OHAGHEMDEKG {
@@ -15231,6 +15212,14 @@ message ObNewGlobalSetting1 {
 
 message ObNewGlobalSetting2 {
 	bool gacfjlbabcd = 1;
+}
+
+message ObNewGlobalSetting3 {
+	bool hbmnnlbbafh = 1;
+}
+
+message ObNewGlobalSetting4 {
+	bool aiaklefbmaa = 1;
 }
 
 message OnboardingSettingsProto {
@@ -18909,6 +18898,12 @@ message PolylineList {
 	repeated Polyline polylines = 1;
 }
 
+message PowerUpPokestopSharedSettings {
+	bool ggbgfimipfg = 1;
+	int32 aodnkndbnke = 2;
+	float fknkcolmhnc = 3;
+}
+
 message ProbeSettingsProto {
 	bool jfncjdbcagd = 1;
 	bool afijihkiajm = 2;
@@ -18976,6 +18971,11 @@ message PurifyPokemonLogEntry {
 	HoloPokemonId kbnaaalmfli = 1;
 	PokemonDisplayProto hedoilmjjgb = 2;
 	uint64 pkfjkhmaaee = 3;
+}
+
+message PushGatewaySettings {
+	int32 banbgcdejam = 1;
+	int32 nlgceniclhk = 2;
 }
 
 message PushGatewayTelemetry {

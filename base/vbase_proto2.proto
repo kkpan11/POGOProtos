@@ -7845,11 +7845,6 @@ message CurrentNewsProto {
     optional int64 last_updated_timestamp = 3;
 }
 
-message DALCNAGHNLB {
-    optional bool fphiniooddb = 1;
-    optional int32 kcflekfimjm = 2;
-}
-
 message DailyBonusProto {
     optional int64 next_collect_timestamp_ms = 1;
     optional int64 next_defender_bonus_collect_timestamp_ms = 2;
@@ -9092,6 +9087,7 @@ message FormsRefactorSettings {
     optional bool ob_forms_refactor_settings_bool_1 = 1;
     optional bool ob_forms_refactor_settings_bool_2 = 2;
     optional bool ob_forms_refactor_settings_bool_3 = 3;
+    optional bool enable_singular_shadow_form = 4;
 }
 
 message FortDeployOutProto {
@@ -9163,6 +9159,13 @@ message FortDetailsProto {
 message FortModifierAttributesProto {
     optional int32 modifier_lifetime_seconds = 1;
     optional int32 troy_disk_num_pokemon_spawned = 2;
+}
+
+message FortPowerUpSettings {
+    optional FortPowerUpLevel level = 1;
+    optional int32 points_needed_for_level_up = 2;
+    repeated FortPowerUpLevelReward power_up_reward = 3;
+    optional int32 duration_of_power_up_ms = 4;
 }
 
 message FortRecallOutProto {
@@ -9513,8 +9516,8 @@ message GameMasterClientTemplateProto {
     optional InventorySettingsProto inventory_settings = 103;
     optional RouteDiscoverySettingsProto route_discovery_settings = 104;
     optional EggTransparencySettingsProto egg_transparency_settings = 105;
-    optional KGCLIDCJDFK jdhoakdpaga = 106;
-    optional DALCNAGHNLB piknbjjpncn = 107;
+    optional FortPowerUpSettings fort_power_up_settings = 106;
+    optional PowerUpPokestopSharedSettings power_up_pokestop_shared_settings = 107;
     optional IncidentPrioritySettingsProto incident_priority_settings = 108;
     optional ReferralSettingsProto referral_settings = 109;
     optional EOLAIBDNKGG jafhblcnkjc = 110;
@@ -12230,13 +12233,6 @@ message JournalRemoveEntryProto {
 
 message JournalVersionProto {
     optional int32 version = 1;
-}
-
-message KGCLIDCJDFK {
-    optional FortPowerUpLevel nhnbdkfmkaj = 1;
-    optional int32 gclnadhecif = 2;
-    repeated FortPowerUpLevelReward lkhjpphombh = 3;
-    optional int32 eoieocckjkc = 4;
 }
 
 message KangarooSettingsProto {
@@ -16898,6 +16894,12 @@ message PolylineList {
 message PotionAttributesProto {
     optional float sta_percent = 1;
     optional int32 sta_amount = 2;
+}
+
+message PowerUpPokestopSharedSettings {
+    optional bool ob_enabled = 1;
+    optional int32 ob_int32 = 2;
+    optional float points_multiplier = 3;
 }
 
 message ProbeProto {

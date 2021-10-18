@@ -7810,11 +7810,6 @@ message CurrentNewsProto {
 	int64 last_updated_timestamp = 3;
 }
 
-message DALCNAGHNLB {
-	bool fphiniooddb = 1;
-	int32 kcflekfimjm = 2;
-}
-
 message DailyBonusProto {
 	int64 next_collect_timestamp_ms = 1;
 	int64 next_defender_bonus_collect_timestamp_ms = 2;
@@ -9067,6 +9062,7 @@ message FormsRefactorSettings {
 	 bool ob_forms_refactor_settings_bool_1 = 1;
 	 bool ob_forms_refactor_settings_bool_2 = 2;
 	 bool ob_forms_refactor_settings_bool_3 = 3;
+	 bool enable_singular_shadow_form = 4;
 }
 
 message FortDeployOutProto {
@@ -9138,6 +9134,13 @@ message FortDetailsProto {
 message FortModifierAttributesProto {
 	int32 modifier_lifetime_seconds = 1;
 	int32 troy_disk_num_pokemon_spawned = 2;
+}
+
+message FortPowerUpSettings {
+	FortPowerUpLevel level = 1;
+	int32 points_needed_for_level_up = 2;
+	repeated FortPowerUpLevelReward power_up_reward = 3;
+	int32 duration_of_power_up_ms = 4;
 }
 
 message FortRecallOutProto {
@@ -9490,8 +9493,8 @@ message GameMasterClientTemplateProto {
 	InventorySettingsProto inventory_settings = 103;
 	RouteDiscoverySettingsProto route_discovery_settings = 104;
 	EggTransparencySettingsProto egg_transparency_settings = 105;
-	KGCLIDCJDFK jdhoakdpaga = 106;
-	DALCNAGHNLB piknbjjpncn = 107;
+	FortPowerUpSettings fort_power_up_settings = 106;
+	PowerUpPokestopSharedSettings power_up_pokestop_shared_settings = 107;
 	IncidentPrioritySettingsProto incident_priority_settings = 108;
 	ReferralSettingsProto referral_settings = 109;
 	EOLAIBDNKGG jafhblcnkjc = 110;
@@ -12209,13 +12212,6 @@ message JournalRemoveEntryProto {
 
 message JournalVersionProto {
 	int32 version = 1;
-}
-
-message KGCLIDCJDFK {
-	FortPowerUpLevel nhnbdkfmkaj = 1;
-	int32 gclnadhecif = 2;
-	repeated FortPowerUpLevelReward lkhjpphombh = 3;
-	int32 eoieocckjkc = 4;
 }
 
 message KangarooSettingsProto {
@@ -16871,6 +16867,12 @@ message PolylineList {
 message PotionAttributesProto {
 	float sta_percent = 1;
 	int32 sta_amount = 2;
+}
+
+message PowerUpPokestopSharedSettings {
+	bool ob_enabled = 1;
+	int32 ob_int32 = 2;
+	float points_multiplier = 3;
 }
 
 message ProbeProto {
