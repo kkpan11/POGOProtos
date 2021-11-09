@@ -23,4 +23,6 @@ package POGOProtos.Rpc;
 
 message ObNewGlobalSetting3 {
 	bool ob_enable = 1;
+	int32 ob_int32 = 2;
+	bool ob_bool = 3;
 }

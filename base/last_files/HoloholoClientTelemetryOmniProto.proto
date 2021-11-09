@@ -105,6 +105,7 @@ import "EggHatchTelemetry.proto";
 import "PushGatewayTelemetry.proto";
 import "PushGatewayUpstreamErrorTelemetry.proto";
 import "UsernameSuggestionTelemetry.proto";
+import "TutorialTelemetry.proto";
 import "ServerData.proto";
 import "CommonFilterProto.proto";
 
@@ -194,6 +195,7 @@ message HoloholoClientTelemetryOmniProto {
 		PushGatewayTelemetry push_gateway_telemetry = 82;
 		PushGatewayUpstreamErrorTelemetry push_gateway_upstream_error_telemetry = 83;
 		UsernameSuggestionTelemetry username_suggestion_telemetry = 84;
+		TutorialTelemetry tutorial_telemetry = 85;
 	}
 
 	ServerData server_data = 1001;

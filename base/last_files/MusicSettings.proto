@@ -23,8 +23,8 @@ package POGOProtos.Rpc;
 
 message MusicSettings {
 	string special_event_music_1 = 1;
-	string special_event_music_2 = 2;
+	string map_music_override = 2;
 	string event_music_3 = 3;
 	string event_music_4 = 4;
-	string map_music_settings = 5;
+	string second_special_event_music_choice = 5;
 }
