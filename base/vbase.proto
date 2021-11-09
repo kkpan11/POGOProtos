@@ -14,7 +14,7 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: Mixed Versions Compatible 0.205.x to 0.221.x.
+* Version: Mixed Versions Compatible 0.205.x to 0.223.x.
 *
 */
 
@@ -2828,6 +2828,9 @@ enum HoloPokemonMove {
 	FAIRY_WIND_FAST = 350;
 	RELIC_SONG = 351;
 	WEATHER_BALL_NORMAL = 352;
+	PSYCHIC_FANGS = 353;
+	HYPERSPACE_FURY = 354;
+	HYPERSPACE_HOLE = 355;
 }
 
 enum HoloPokemonMovementType {
@@ -4371,6 +4374,11 @@ enum TutorialCompletion {
 	SHOULD_SHOW_GIFT_TUTORIAL = 60;
 	GIFT_TUTORIAL_INTRODUCED = 61;
 	GIFT_TUTORIAL_COMPLETE = 62;
+	CHALLENGE_CATCH_RAZZBERRY = 63;
+	SHOULD_SHOW_LURE_TUTORIAL = 64;
+	LURE_TUTORIAL_INTRODUCED = 65;
+	LURE_BUTTON_PROMPT_SHOWN = 66;
+	LURE_BUTTON_DIALOG_SHOWN = 67;
 }
 
 enum TweenAction {
@@ -5346,7 +5354,7 @@ message AvatarGroupOrderSettingsProto {
 	message AvatarGroupOrderProto {
 		string name = 1;
 		int32 order = 2;
-		bool ob_bool = 3;
+		bool show_new_tag = 3;
 	}
 
 	repeated AvatarGroupOrderProto group = 1;
@@ -6612,6 +6620,7 @@ message ClientGenderProto {
 message ClientGenderSettingsProto {
 	HoloPokemonId pokemon = 1;
 	ClientGenderProto gender = 2;
+	PokemonDisplayProto.Form form = 3;
 }
 
 message ClientInbox {
@@ -7989,8 +7998,8 @@ message DeepLinkingEnumWrapperProto {
 message DeepLinkingSettingsProto {
 	int32 min_player_level_for_external_link = 1;
 	int32 min_player_level_for_notification_link = 2;
-	repeated DeepLinkingEnumWrapperProto.DeepLinkingActionName deep_linking_action_name_1 = 3;
-	repeated DeepLinkingEnumWrapperProto.DeepLinkingActionName deep_linking_action_name_2 = 4;
+	repeated DeepLinkingEnumWrapperProto.DeepLinkingActionName external_action = 3;
+	repeated DeepLinkingEnumWrapperProto.DeepLinkingActionName notification_action = 4;
 }
 
 message DeepLinkingTelemetry {
@@ -9516,6 +9525,7 @@ message GameMasterClientTemplateProto {
 	PushGatewaySettings push_gateway_settings = 127;
 	GAAICDPBJIA fomijnooaig = 129;
 	BAOAHFFGIDN hggpbflinha = 130;
+	INPCCMJIOIL pabonknmdlk = 131;
 }
 
 message GameMasterLocalProto {
@@ -11629,10 +11639,15 @@ message HoloholoClientTelemetryOmniProto {
 		PushGatewayTelemetry push_gateway_telemetry = 82;
 		PushGatewayUpstreamErrorTelemetry push_gateway_upstream_error_telemetry = 83;
 		UsernameSuggestionTelemetry username_suggestion_telemetry = 84;
+		TutorialTelemetry tutorial_telemetry = 85;
 	}
 
 	ServerData server_data = 1001;
 	CommonFilterProto common_filters = 1002;
+}
+
+message INPCCMJIOIL {
+	int32 fodlnilbjai = 1;
 }
 
 message IapItemCategoryDisplayProto {
@@ -12780,7 +12795,13 @@ message MapTile {
 }
 
 message MapTileBundle {
-	repeated MapTileDataProto map_tile = 1;
+	int32 format_version = 1;
+	int32 tile_zoom = 2;
+	int32 bundle_zoom = 3;
+	int32 bundle_x = 4;
+	int32 bundle_y = 5;
+	int32 epoch = 6;
+	repeated MapTile tiles = 7;
 }
 
 message MapTileDataProto {
@@ -13036,10 +13057,10 @@ message MultiPartQuestProto {
 
 message MusicSettings {
 	string special_event_music_1 = 1;
-	string special_event_music_2 = 2;
+	string map_music_override = 2;
 	string event_music_3 = 3;
 	string event_music_4 = 4;
-	string map_music_settings = 5;
+	string second_special_event_music_choice = 5;
 }
 
 message NamedMapSettings {
@@ -13200,6 +13221,8 @@ message ObNewGlobalSetting2 {
 
 message ObNewGlobalSetting3 {
 	bool ob_enable = 1;
+	int32 ob_int32 = 2;
+	bool ob_bool = 3;
 }
 
 message ObNewGlobalSetting4 {
@@ -13706,9 +13729,16 @@ message PlayerLocaleProto {
 }
 
 message PlayerPreferencesProto {
+	enum ShareState {
+		UNSET = 0;
+		SHARE_WITH_FRIENDS = 1;
+		DO_NOT_SHARE = 2;
+	}
+
 	bool opt_out_of_sponsored_gifts = 1;
 	BattlePartiesProto battle_parties = 2;
 	string search_filter_preference_base64 = 3;
+	ShareState share_state = 4;
 }
 
 message PlayerProfileOutProto {
@@ -19735,6 +19765,7 @@ message SubmitNewPoiProto {
 	int32 lng_e6 = 5;
 	string supporting_statement = 14;
 	bool async_file_upload = 18;
+	string category_suggestion = 19;
 }
 
 message SubmitPlayerImageVoteForPoiOutProto {
@@ -20012,6 +20043,11 @@ message Topic {
 	string namespace = 2;
 }
 
+message TopicProto {
+	string topic_id = 1;
+	string namespace = 2;
+}
+
 message TradePokemonQuestProto {
 	repeated string friend_id = 1;
 }
@@ -20177,6 +20213,46 @@ message TriangleList {
 
 message TutorialCreateDetail {
 	bool caught_in_wild = 1;
+}
+
+message TutorialTelemetry {
+	enum TutorialTelemetryId {
+		UNDEFINED = 0;
+		TAG_LEARN_MORE_BUTTON_CLICKED = 1;
+		TAG_POPUP_TUTORIAL_SHOWN = 2;
+		FRIEND_LIST_LEARN_MORE_BUTTON_CLICKED = 3;
+		FRIEND_DETAIL_HELP_BUTTON_CLICKED = 4;
+		TASK_TUTORIAL_CURVE_BALL_VIEWED = 5;
+		TASK_TUTORIAL_THROW_TYPE_VIEWED = 6;
+		TASK_TUTORIAL_GIFT_VIEWED = 7;
+		TASK_TUTORIAL_TRADING_VIEWED = 8;
+		TASK_TUTORIAL_SNAPSHOT_WILD_VIEWED = 9;
+		TASK_TUTORIAL_SNAPSHOT_INVENTORY_VIEWED = 10;
+		TASK_TUTORIAL_SNAPSHOT_BUDDY_VIEWED = 11;
+		GIFT_TUTORIAL_INTRODUCTION_SHOWN = 12;
+		PLAYER_VIEWED_GIFT_TUTORIAL = 13;
+		PLAYER_SKIPPED_GIFT_TUTORIAL = 14;
+		PLAYER_COMPLETED_GIFT_TUTORIAL = 15;
+		LURE_TUTORIAL_INTRODUCTION_SHOWN = 16;
+		PLAYER_VIEWED_LURE_TUTORIAL = 17;
+		PLAYER_SKIPPED_LURE_TUTORIAL = 18;
+		PLAYER_COMPLETED_LURE_TUTORIAL = 19;
+		GYM_TUTORIAL_BUTTON_CLICKED = 20;
+		RAID_TUTORIAL_BUTTON_CLICKED = 21;
+		POTION_AND_REVIVE_TUTORIAL_INTRODUCTION_SHOWN = 22;
+		PLAYER_COMPLETED_REVIVE_TUTORIAL = 23;
+		PLAYER_COMPLETED_POTION_TUTORIAL = 24;
+		BERRY_CATCH_TUTORIAL_SHOWN = 25;
+		TRADE_TUTORIAL_INTRODUCTION_SHOWN = 26;
+		PLAYER_VIEWED_TRADING_TUTORIAL = 27;
+		PLAYER_SKIPPED_TRADING_TUTORIAL = 28;
+		PLAYER_COMPLETED_TRADING_TUTORIAL = 29;
+		LUCKY_TRADE_TUTORIAL_SHOWN = 30;
+		LUCKY_FRIENDS_UNLOCKED_TUTORIAL_SHOWN = 31;
+		LUCKY_FRIENDS_TUTORIAL_BUTTON_CLICKED = 32;
+	}
+
+	TutorialTelemetryId telemetry_id = 1;
 }
 
 message TwoWaySharedFriendshipDataProto {
