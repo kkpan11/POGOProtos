@@ -9546,6 +9546,7 @@ message GameMasterClientTemplateProto {
     optional EvolePreviewSettings evolve_preview_settings = 125;
     optional FHEOFILILNM fdonldfcjkj = 126;
     optional PushGatewaySettings push_gateway_settings = 127;
+    optional UsernameSuggestionSettings username_suggestion_settings = 128;
     optional GAAICDPBJIA fomijnooaig = 129;
     optional BAOAHFFGIDN hggpbflinha = 130;
     optional INPCCMJIOIL pabonknmdlk = 131;
@@ -20886,6 +20887,12 @@ message UserIssueWeatherReport {
     optional bool alert_active = 2;
     optional WeatherAlertProto.Severity severity = 3;
     optional int32 user_report = 4;
+}
+
+message UsernameSuggestionSettings {
+    optional bool ob_enabled = 1;
+    optional int32 ob_username_suggestion_int32_1 = 2;
+    optional int32 ob_username_suggestion_int32_2 = 3;
 }
 
 message UsernameSuggestionTelemetry {
