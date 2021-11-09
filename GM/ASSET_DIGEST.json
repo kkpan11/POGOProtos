@@ -618,6 +618,13 @@
       "size": 16090
     },
     {
+      "assetId": "0671616f-579a-455d-be2f-bd966f695d72/1635979619006129",
+      "bundleName": "f_shirt_diwali2021_0_bundle_icon",
+      "version": "1635979619006129",
+      "checksum": 2607701171,
+      "size": 11475
+    },
+    {
       "assetId": "06747207-096a-494a-9fff-1c5c409d6e8f/1616632003722440",
       "bundleName": "pokemon_icon_343",
       "version": "1616632003722440",
@@ -802,11 +809,11 @@
       "size": 15376
     },
     {
-      "assetId": "0861fd39-eb65-4b98-828b-0f54f5d443c3/1633993253589610",
+      "assetId": "0861fd39-eb65-4b98-828b-0f54f5d443c3/1635979633356490",
       "bundleName": "m_avatar_poses_bundle",
-      "version": "1633993253589610",
-      "checksum": 3818160808,
-      "size": 368370
+      "version": "1635979633356490",
+      "checksum": 3162314430,
+      "size": 370439
     },
     {
       "assetId": "086ac75b-11be-449a-9f87-0193c30f2d72/1616622035301236",
@@ -1854,11 +1861,11 @@
       "size": 9499
     },
     {
-      "assetId": "115dc97f-358a-4c45-8ac1-e20e4821f609/1634348014391629",
+      "assetId": "115dc97f-358a-4c45-8ac1-e20e4821f609/1636048826458679",
       "bundleName": "json_patch_i18n_russian",
-      "version": "1634348014391629",
-      "checksum": 2189149516,
-      "size": 33348
+      "version": "1636048826458679",
+      "checksum": 3641738322,
+      "size": 40074
     },
     {
       "assetId": "11616b6c-6439-4fab-868d-d6795c6e9162/1616639682677249",
@@ -2696,11 +2703,11 @@
       "size": 5310
     },
     {
-      "assetId": "1bb14249-cfa4-44d4-a0d6-1c58e8261650/1634348003188770",
+      "assetId": "1bb14249-cfa4-44d4-a0d6-1c58e8261650/1636048814512036",
       "bundleName": "json_patch_i18n_italian",
-      "version": "1634348003188770",
-      "checksum": 2041863895,
-      "size": 22813
+      "version": "1636048814512036",
+      "checksum": 2889576556,
+      "size": 29576
     },
     {
       "assetId": "1bbc5eec-7ce1-4649-8e00-dce0ed5864fc/1616622439114263",
@@ -3565,6 +3572,13 @@
       "size": 556496
     },
     {
+      "assetId": "241bf9ec-7b7b-47bb-bf36-8f86dff334c9/1635532698670163",
+      "bundleName": "f_shirt_dayofdead_00_bundle_icon",
+      "version": "1635532698670163",
+      "checksum": 1626587228,
+      "size": 10836
+    },
+    {
       "assetId": "243fdba4-63db-4827-a71f-53e33e7016f7/1616622962646734",
       "bundleName": "m_pants_skinnyjeans_bundle",
       "version": "1616622962646734",
@@ -3895,6 +3909,13 @@
       "version": "1616632411166066",
       "checksum": 198411819,
       "size": 18104
+    },
+    {
+      "assetId": "282ff56a-a01a-4f41-a7f5-f0bc8c575f30/1635979631729961",
+      "bundleName": "f_shirt_diwali2021_bundle",
+      "version": "1635979631729961",
+      "checksum": 2850158860,
+      "size": 282329
     },
     {
       "assetId": "2830406e-7215-459a-8510-20d81fb8ff0a/1616622535669201",
@@ -4228,11 +4249,11 @@
       "key": "/FEF7hUM85mDw2hD67WdSQ=="
     },
     {
-      "assetId": "2b58a4ea-6704-4b59-baa3-93d3322eb74d/1634347949994523",
+      "assetId": "2b58a4ea-6704-4b59-baa3-93d3322eb74d/1636048810680818",
       "bundleName": "json_patch_i18n_german",
-      "version": "1634347949994523",
-      "checksum": 3913019211,
-      "size": 23231
+      "version": "1636048810680818",
+      "checksum": 3974537303,
+      "size": 30313
     },
     {
       "assetId": "2b62593e-546c-4844-ab6d-d5b8c0f5fbea/1616644561055323",
@@ -4415,6 +4436,13 @@
       "version": "1619812212475131",
       "checksum": 4116833159,
       "size": 631032
+    },
+    {
+      "assetId": "2e0ee25a-67f9-488a-8cae-83720cbd956f/1635979619798439",
+      "bundleName": "f_backpack_dedenneitems_00_bundle_icon",
+      "version": "1635979619798439",
+      "checksum": 1673990350,
+      "size": 10536
     },
     {
       "assetId": "2e3d0341-cbab-4dfb-8aa5-13903a561cc1/1617657791695704",
@@ -5711,11 +5739,11 @@
       "size": 34441
     },
     {
-      "assetId": "3c758edc-341c-40e6-8205-0cc9f6548e48/1634148359672669",
+      "assetId": "3c758edc-341c-40e6-8205-0cc9f6548e48/1634769219014115",
       "bundleName": "m_hat_pikachupumpkinhead_bundle",
-      "version": "1634148359672669",
-      "checksum": 3960109102,
-      "size": 263160
+      "version": "1634769219014115",
+      "checksum": 3898751912,
+      "size": 257031
     },
     {
       "assetId": "3c75b9ce-d9c0-4646-b175-fe25f1dc9d9d/1512759936375981",
@@ -5833,11 +5861,11 @@
       "size": 10300
     },
     {
-      "assetId": "3d93143b-a6da-43a5-95c4-153d6045925e/1634347934987790",
+      "assetId": "3d93143b-a6da-43a5-95c4-153d6045925e/1636048794471054",
       "bundleName": "json_patch_i18n_brazilianportuguese",
-      "version": "1634347934987790",
-      "checksum": 4063195519,
-      "size": 23749
+      "version": "1636048794471054",
+      "checksum": 4282272898,
+      "size": 30582
     },
     {
       "assetId": "3da83d1a-267a-4f63-9854-420c6f75b881/1616639619237986",
@@ -5999,6 +6027,13 @@
       "version": "1617657776706264",
       "checksum": 3440719502,
       "size": 373608
+    },
+    {
+      "assetId": "3f8dab6f-6585-417f-a5ad-f1481ce5bf76/1635532699459370",
+      "bundleName": "m_shirt_dayofdead_00_bundle_icon",
+      "version": "1635532699459370",
+      "checksum": 2414509280,
+      "size": 11016
     },
     {
       "assetId": "3f9293fc-9f18-4a4a-9a9e-633d34c24cd5/1616644408885810",
@@ -6661,11 +6696,11 @@
       "size": 236232
     },
     {
-      "assetId": "4687df58-b15d-4a83-b3dd-37534a55e0b5/1616623232493974",
+      "assetId": "4687df58-b15d-4a83-b3dd-37534a55e0b5/1636048765927971",
       "bundleName": "m_face_verizon2020mask_bundle",
-      "version": "1616623232493974",
-      "checksum": 4224834446,
-      "size": 42523
+      "version": "1636048765927971",
+      "checksum": 3006744757,
+      "size": 68840
     },
     {
       "assetId": "46b27677-4d85-43be-aec5-45fa8a5a8a2b/1616632336320099",
@@ -6801,11 +6836,11 @@
       "size": 10233
     },
     {
-      "assetId": "4894c86c-9a45-4814-9215-0a92968690f7/1634348006828949",
+      "assetId": "4894c86c-9a45-4814-9215-0a92968690f7/1636048818369980",
       "bundleName": "json_patch_i18n_japanese",
-      "version": "1634348006828949",
-      "checksum": 1153211290,
-      "size": 19239
+      "version": "1636048818369980",
+      "checksum": 3519112497,
+      "size": 28155
     },
     {
       "assetId": "489e8bc1-e751-473f-8ff8-7729dd807d8c/1616623103984061",
@@ -7830,11 +7865,11 @@
       "size": 7065
     },
     {
-      "assetId": "527b764b-f677-4849-8a43-02d574590068/1634148372780254",
+      "assetId": "527b764b-f677-4849-8a43-02d574590068/1634769220646453",
       "bundleName": "f_hat_pikachupumpkinhead_bundle",
-      "version": "1634148372780254",
-      "checksum": 506603658,
-      "size": 229488
+      "version": "1634769220646453",
+      "checksum": 2858233072,
+      "size": 225534
     },
     {
       "assetId": "529960c6-f1de-4799-91d2-cc71604429da/1616622532759836",
@@ -9416,11 +9451,11 @@
       "size": 42069
     },
     {
-      "assetId": "636575d6-7213-4ffc-88e8-5f125e7112d6/1634347938975388",
+      "assetId": "636575d6-7213-4ffc-88e8-5f125e7112d6/1636048798554903",
       "bundleName": "json_patch_i18n_chinesetraditional",
-      "version": "1634347938975388",
-      "checksum": 2698737328,
-      "size": 20784
+      "version": "1636048798554903",
+      "checksum": 3577514899,
+      "size": 30224
     },
     {
       "assetId": "636a2145-97ff-494c-96ba-1e1f839a5173/1622156537281446",
@@ -10088,6 +10123,13 @@
       "size": 251385
     },
     {
+      "assetId": "68fa8331-93df-46e3-b475-bb297e79f105/1635979622901053",
+      "bundleName": "m_shirt_diwali2021_0_bundle_icon",
+      "version": "1635979622901053",
+      "checksum": 1492908344,
+      "size": 11485
+    },
+    {
       "assetId": "691a4d96-d6d0-477e-b49c-f6602e54829b/1616622665281111",
       "bundleName": "f_shirt_detectivepikachu_0_bundle_icon",
       "version": "1616622665281111",
@@ -10328,11 +10370,11 @@
       "size": 814561
     },
     {
-      "assetId": "6b8f3fef-4233-45f7-9395-39f56e0912e1/1634348021687272",
+      "assetId": "6b8f3fef-4233-45f7-9395-39f56e0912e1/1636048834121803",
       "bundleName": "json_patch_i18n_thai",
-      "version": "1634348021687272",
-      "checksum": 3969279256,
-      "size": 24702
+      "version": "1636048834121803",
+      "checksum": 3988362347,
+      "size": 34541
     },
     {
       "assetId": "6bab0511-7fd0-4e48-851c-1ba9a8c0e2f9/1616623917520435",
@@ -10410,6 +10452,13 @@
       "version": "1616623945148741",
       "checksum": 3625555294,
       "size": 251842
+    },
+    {
+      "assetId": "6ca53c68-66ba-4b17-a19f-9ffd6f508472/1635979624741422",
+      "bundleName": "f_hat_dedenneitems_bundle",
+      "version": "1635979624741422",
+      "checksum": 3615140928,
+      "size": 173863
     },
     {
       "assetId": "6ca80fca-89d1-404b-9915-0053897267fd/1616623184912323",
@@ -10553,6 +10602,13 @@
       "size": 548125
     },
     {
+      "assetId": "6e1947fc-3306-4c70-932b-fa5da406224f/1634835737703066",
+      "bundleName": "m_shoes_nike2021_00_bundle_icon",
+      "version": "1634835737703066",
+      "checksum": 1408671467,
+      "size": 15028
+    },
+    {
       "assetId": "6e2d2d9f-08fd-4846-b273-170661975f22/1616632029551684",
       "bundleName": "pokemon_icon_498",
       "version": "1616632029551684",
@@ -10594,6 +10650,13 @@
       "checksum": 3763276897,
       "size": 358202,
       "key": "Nz9nYECi24u3yXyAO6QFtQ=="
+    },
+    {
+      "assetId": "6e724d5d-4635-436b-9c8f-937c8dced2c8/1635979618161040",
+      "bundleName": "m_shoes_dedenneitems_00_bundle_icon",
+      "version": "1635979618161040",
+      "checksum": 3215260855,
+      "size": 12184
     },
     {
       "assetId": "6e765aa0-8b13-48f1-8a09-aec3afd71899/1616623002389029",
@@ -10959,6 +11022,13 @@
       "size": 436422
     },
     {
+      "assetId": "72a0e733-9a03-4ca8-8e82-1799757931b7/1635532695933374",
+      "bundleName": "f_shirt_dayofdead_bundle",
+      "version": "1635532695933374",
+      "checksum": 986221015,
+      "size": 241438
+    },
+    {
       "assetId": "72a67189-8db4-4d1b-9410-4cddf69e00fb/1616623030521124",
       "bundleName": "f_shirt_gymleader_bundle_icon",
       "version": "1616623030521124",
@@ -11216,6 +11286,13 @@
       "version": "1634148365458839",
       "checksum": 1618109256,
       "size": 11470
+    },
+    {
+      "assetId": "75d65e5a-b74e-4c28-af63-4de895da9518/1634835739455398",
+      "bundleName": "m_backpack_nike2021_00_bundle_icon",
+      "version": "1634835739455398",
+      "checksum": 2255913825,
+      "size": 13247
     },
     {
       "assetId": "75df1f6d-ab62-4ef7-bb6a-afac4b1211f6/1616622198434026",
@@ -12712,6 +12789,13 @@
       "size": 11738
     },
     {
+      "assetId": "84282809-13d8-4469-8f9b-e2315945f1ab/1634835732022073",
+      "bundleName": "m_shoes_nike2021_bundle",
+      "version": "1634835732022073",
+      "checksum": 936810850,
+      "size": 146820
+    },
+    {
       "assetId": "84289987-a055-4166-8fa5-8a555d8a63c1/1630094565923423",
       "bundleName": "m_pants_swshuniformchampion_00_bundle_icon",
       "version": "1630094565923423",
@@ -12838,6 +12922,13 @@
       "version": "1616694797527298",
       "checksum": 1520134687,
       "size": 350621
+    },
+    {
+      "assetId": "8531c109-2c32-41f1-b38f-543977c8c000/1635979620618954",
+      "bundleName": "f_shoes_dedenneitems_00_bundle_icon",
+      "version": "1635979620618954",
+      "checksum": 3906419028,
+      "size": 11661
     },
     {
       "assetId": "85356ccb-4cdb-40f1-b4f0-075890b6ffc4/1629392984186988",
@@ -13518,6 +13609,13 @@
       "version": "1616622282911899",
       "checksum": 334086416,
       "size": 5168
+    },
+    {
+      "assetId": "8c39c85e-c3b0-411a-86db-83d9bc4f4dfc/1635979628054113",
+      "bundleName": "m_shirt_diwali2021_00_bundle_icon",
+      "version": "1635979628054113",
+      "checksum": 1848113692,
+      "size": 11494
     },
     {
       "assetId": "8c68ce53-3420-4ce0-a648-ac4f0c0f5f1c/1616694811896521",
@@ -14542,6 +14640,13 @@
       "size": 258660
     },
     {
+      "assetId": "968ab828-ee7d-45d7-8a6c-9d702799fc82/1634835733036822",
+      "bundleName": "f_backpack_nike2021_00_bundle_icon",
+      "version": "1634835733036822",
+      "checksum": 1415206409,
+      "size": 12646
+    },
+    {
       "assetId": "968dae6d-9b34-478f-a5c1-221b0c11cd35/1616632695264936",
       "bundleName": "pokemon_icon_294",
       "version": "1616632695264936",
@@ -14666,6 +14771,13 @@
       "version": "1618619502820122",
       "checksum": 851783403,
       "size": 686597
+    },
+    {
+      "assetId": "97458dde-26e8-4143-a832-8e7b19f4e9ac/1635979615931910",
+      "bundleName": "f_hat_dedenneitems_00_bundle_icon",
+      "version": "1635979615931910",
+      "checksum": 1248877178,
+      "size": 10949
     },
     {
       "assetId": "974b008a-05f0-466f-8707-b93b2cca0c87/1616692884531680",
@@ -15184,6 +15296,13 @@
       "size": 8241
     },
     {
+      "assetId": "9ceadb48-29f9-4b00-8b8e-ab9a872c76e7/1634835729947209",
+      "bundleName": "m_backpack_nike2021_bundle",
+      "version": "1634835729947209",
+      "checksum": 2303532638,
+      "size": 148569
+    },
+    {
       "assetId": "9cfcf944-585d-4549-9985-c1eeedd1870f/1616622909123559",
       "bundleName": "f_gloves_swshdlccostume_00_bundle_icon",
       "version": "1616622909123559",
@@ -15620,6 +15739,13 @@
       "size": 491640
     },
     {
+      "assetId": "a0eb5e10-30aa-45a7-9ee1-446bc89bff1a/1635979626077363",
+      "bundleName": "m_shirt_diwali2021_bundle",
+      "version": "1635979626077363",
+      "checksum": 160968053,
+      "size": 284549
+    },
+    {
       "assetId": "a1417709-afba-4dd5-bffa-2f6a32d8ede5/1616632356250079",
       "bundleName": "pokemon_icon_507",
       "version": "1616632356250079",
@@ -15818,6 +15944,13 @@
       "size": 154422
     },
     {
+      "assetId": "a32973f8-80a9-4c41-ada3-2970a588bb2a/1634835728002728",
+      "bundleName": "f_shirt_nike2021_bundle",
+      "version": "1634835728002728",
+      "checksum": 844993917,
+      "size": 228597
+    },
+    {
       "assetId": "a32fe6de-f41d-45be-9f55-45ccdf050dfe/1616622415678205",
       "bundleName": "m_shirt_gofest_2019_bundle",
       "version": "1616622415678205",
@@ -15839,11 +15972,11 @@
       "size": 8821
     },
     {
-      "assetId": "a381995c-f9ca-4de5-93db-38159a7d032c/1634348018112816",
+      "assetId": "a381995c-f9ca-4de5-93db-38159a7d032c/1636048830325098",
       "bundleName": "json_patch_i18n_spanish",
-      "version": "1634348018112816",
-      "checksum": 170996739,
-      "size": 22152
+      "version": "1636048830325098",
+      "checksum": 3355972528,
+      "size": 28671
     },
     {
       "assetId": "a3880a65-ed02-4d13-a333-cb71a7226cb0/1616622633691673",
@@ -15909,6 +16042,13 @@
       "version": "1616632466113374",
       "checksum": 3006057514,
       "size": 25898
+    },
+    {
+      "assetId": "a43504a8-5524-41b6-852e-202ec2b176aa/1635979629046154",
+      "bundleName": "f_shoes_dedenneitems_bundle",
+      "version": "1635979629046154",
+      "checksum": 3003632295,
+      "size": 187382
     },
     {
       "assetId": "a439fc2c-9fb0-4325-8614-1104a101a2bb/1616623937194617",
@@ -16800,6 +16940,13 @@
       "size": 33223
     },
     {
+      "assetId": "ad3838ca-d783-41e8-8c70-db3aba61070a/1634835738564078",
+      "bundleName": "f_shirt_nike2021_00_bundle_icon",
+      "version": "1634835738564078",
+      "checksum": 3342491453,
+      "size": 10670
+    },
+    {
       "assetId": "ad3cb40a-c6c8-4564-8dba-8bd7aba0e47b/1616623090972377",
       "bundleName": "f_backpack_pkmnhoodie001_bundle",
       "version": "1616623090972377",
@@ -17419,6 +17566,13 @@
       "size": 164595
     },
     {
+      "assetId": "b36319de-44f5-49f8-99fc-7245bdbefe46/1635979630332076",
+      "bundleName": "m_shoes_dedenneitems_bundle",
+      "version": "1635979630332076",
+      "checksum": 1882939125,
+      "size": 186262
+    },
+    {
       "assetId": "b36acedd-fb89-488e-8aeb-5b72c15bfc1b/1616692859184270",
       "bundleName": "pm0336_00",
       "version": "1616692859184270",
@@ -17878,6 +18032,13 @@
       "version": "1616639587610091",
       "checksum": 1479396569,
       "size": 19232
+    },
+    {
+      "assetId": "b8345106-0322-4c41-999a-b7879c49b8a6/1634835740435088",
+      "bundleName": "f_backpack_nike2021_bundle",
+      "version": "1634835740435088",
+      "checksum": 2742905458,
+      "size": 147420
     },
     {
       "assetId": "b835fe95-db5a-4bcb-a909-d511598d2655/1616694835899035",
@@ -18543,6 +18704,13 @@
       "size": 299305
     },
     {
+      "assetId": "bf5f605b-6454-4ec8-9e65-97d0ed0bdf6e/1634835734392674",
+      "bundleName": "m_shirt_nike2021_bundle",
+      "version": "1634835734392674",
+      "checksum": 778595668,
+      "size": 277602
+    },
+    {
       "assetId": "bf6248c9-74a0-4c78-b3b4-56bd265494f1/1616632278198607",
       "bundleName": "pokemon_icon_151",
       "version": "1616632278198607",
@@ -18604,6 +18772,13 @@
       "version": "1616644511624296",
       "checksum": 1703236228,
       "size": 729468
+    },
+    {
+      "assetId": "c030a862-d163-4c25-b5b7-5dc0a7d6513b/1635979621687240",
+      "bundleName": "f_backpack_dedenneitems_bundle",
+      "version": "1635979621687240",
+      "checksum": 2024122857,
+      "size": 226566
     },
     {
       "assetId": "c03be915-26c6-45d8-8467-14bcd9f01a37/1616631985330857",
@@ -19467,6 +19642,13 @@
       "size": 522442
     },
     {
+      "assetId": "c8e0d2d4-6110-4555-81ac-5f1a35e57fd7/1635979623754298",
+      "bundleName": "m_hat_dedenneitems_00_bundle_icon",
+      "version": "1635979623754298",
+      "checksum": 3973482622,
+      "size": 11189
+    },
+    {
       "assetId": "c8e96216-f9cd-4982-94f9-c41f0e0494b2/1512759728396294",
       "bundleName": "pm0069",
       "version": "1512759728396294",
@@ -19885,6 +20067,13 @@
       "size": 478946
     },
     {
+      "assetId": "cc8e2a9e-6634-4f04-99b1-93c2c1a81826/1635979616998699",
+      "bundleName": "m_hat_dedenneitems_bundle",
+      "version": "1635979616998699",
+      "checksum": 3237105661,
+      "size": 185801
+    },
+    {
       "assetId": "ccb54ca4-d18c-4377-91f5-57b395d396cd/1616689888984972",
       "bundleName": "pm0103_61",
       "version": "1616689888984972",
@@ -19897,6 +20086,13 @@
       "version": "1616622329100721",
       "checksum": 2277162721,
       "size": 9677
+    },
+    {
+      "assetId": "ccd0046d-43ac-402e-b30d-ab9489956cda/1635532697534271",
+      "bundleName": "m_shirt_dayofdead_bundle",
+      "version": "1635532697534271",
+      "checksum": 741274429,
+      "size": 284654
     },
     {
       "assetId": "ccefde53-834b-4814-a41d-73181d8ddfb8/1616622640792682",
@@ -19927,11 +20123,11 @@
       "size": 441419
     },
     {
-      "assetId": "cd53a84f-5c55-4563-84b3-edda474e01f1/1634347942635046",
+      "assetId": "cd53a84f-5c55-4563-84b3-edda474e01f1/1636048803028934",
       "bundleName": "json_patch_i18n_english",
-      "version": "1634347942635046",
-      "checksum": 2192062806,
-      "size": 19501
+      "version": "1636048803028934",
+      "checksum": 1292305987,
+      "size": 25370
     },
     {
       "assetId": "cd6505ba-8c14-49d2-9bb8-2b8840b60f6a/1616632654516245",
@@ -20589,6 +20785,13 @@
       "size": 997501
     },
     {
+      "assetId": "d3a5d6a3-ebdf-42fc-ab10-35bfc511b9be/1635979635024561",
+      "bundleName": "m_backpack_dedenneitems_bundle",
+      "version": "1635979635024561",
+      "checksum": 4136990095,
+      "size": 224734
+    },
+    {
       "assetId": "d3aa9ece-30bd-4a81-aae0-072cad653ed9/1621628098183389",
       "bundleName": "f_shirt_sylveonitems_00_bundle_icon",
       "version": "1621628098183389",
@@ -20601,6 +20804,13 @@
       "version": "1616622166576614",
       "checksum": 3012423323,
       "size": 12066
+    },
+    {
+      "assetId": "d3f6cc85-44fc-4bd1-8763-3c6b7842775d/1634835730976441",
+      "bundleName": "f_shoes_nike2021_00_bundle_icon",
+      "version": "1634835730976441",
+      "checksum": 349517616,
+      "size": 11424
     },
     {
       "assetId": "d410baa4-05de-4e48-8d0a-8ebe60ff53df/1616622186852315",
@@ -20997,6 +21207,13 @@
       "size": 421637
     },
     {
+      "assetId": "d832460b-b3ad-40a8-8f6d-f547ada4fc29/1634835735699975",
+      "bundleName": "m_shirt_nike2021_00_bundle_icon",
+      "version": "1634835735699975",
+      "checksum": 4272645677,
+      "size": 10915
+    },
+    {
       "assetId": "d84cb8b4-4f72-43a7-b5ae-9901cd80609f/1616694695459438",
       "bundleName": "pm0403_00",
       "version": "1616694695459438",
@@ -21245,6 +21462,13 @@
       "size": 37282
     },
     {
+      "assetId": "daa6d650-8868-4c8d-9d88-0f3a4744ea7f/1635979627267497",
+      "bundleName": "m_backpack_dedenneitems_00_bundle_icon",
+      "version": "1635979627267497",
+      "checksum": 2079840751,
+      "size": 11393
+    },
+    {
       "assetId": "dac067eb-393f-4ea2-83cc-0ced64727758/1616644506124859",
       "bundleName": "pm0043_00",
       "version": "1616644506124859",
@@ -21429,11 +21653,11 @@
       "size": 7664
     },
     {
-      "assetId": "dccbb419-951a-4bf9-8448-8a32e5bae6d1/1634348010722560",
+      "assetId": "dccbb419-951a-4bf9-8448-8a32e5bae6d1/1636048822391068",
       "bundleName": "json_patch_i18n_korean",
-      "version": "1634348010722560",
-      "checksum": 2353851994,
-      "size": 18588
+      "version": "1636048822391068",
+      "checksum": 3919109765,
+      "size": 29570
     },
     {
       "assetId": "dcd89218-66fa-4ea3-a549-7d49df98b5d1/1512759924956220",
@@ -23808,6 +24032,13 @@
       "size": 175681
     },
     {
+      "assetId": "f3d7529d-b4bc-4c33-b510-8ed8adc9c96f/1635979636135289",
+      "bundleName": "f_shirt_diwali2021_00_bundle_icon",
+      "version": "1635979636135289",
+      "checksum": 415578641,
+      "size": 11529
+    },
+    {
       "assetId": "f3f2bed5-a214-478a-940b-de7bea57702b/1616632527748895",
       "bundleName": "pokemon_icon_032",
       "version": "1616632527748895",
@@ -24230,11 +24461,11 @@
       "size": 9629
     },
     {
-      "assetId": "f81c317b-b38c-454e-ac41-b716acec654f/1634347946286526",
+      "assetId": "f81c317b-b38c-454e-ac41-b716acec654f/1636048806886477",
       "bundleName": "json_patch_i18n_french",
-      "version": "1634347946286526",
-      "checksum": 430302821,
-      "size": 23521
+      "version": "1636048806886477",
+      "checksum": 3390119387,
+      "size": 29733
     },
     {
       "assetId": "f826a71a-90f8-46c9-a731-f05a07d215ef/1616623200692894",
@@ -24567,6 +24798,13 @@
       "version": "1616621837897542",
       "checksum": 1136322869,
       "size": 11632
+    },
+    {
+      "assetId": "fb15ed07-8950-4f33-94cd-62bcf5274bf0/1634835736691326",
+      "bundleName": "f_shoes_nike2021_bundle",
+      "version": "1634835736691326",
+      "checksum": 229886511,
+      "size": 150460
     },
     {
       "assetId": "fb172445-f6c1-4d23-b8ef-c3051a3c55b7/1616694913861007",
@@ -25019,6 +25257,6 @@
       "size": 1240971
     }
   ],
-  "timestamp": "1634348021687272",
+  "timestamp": "1636048834121803",
   "result": "SUCCESS"
 }
