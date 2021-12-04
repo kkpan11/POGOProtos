@@ -14,7 +14,7 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: Mixed Versions Compatible 0.205.x to 0.223.x.
+* Version: Mixed Versions Compatible 0.205.x to 0.225.x.
 *
 */
 
@@ -9388,21 +9388,6 @@ message FriendshipMilestoneRewardProto {
     optional FriendshipLevelMilestone friendship_milestone = 2;
 }
 
-message GAAICDPBJIA {
-    optional bool fnafhnkenoh = 1;
-    optional bool iifaimgknnd = 2;
-    optional bool fcbjkjkkagh = 3;
-    optional bool fnncnidneok = 4;
-    optional bool kknkmjahhia = 5;
-    optional bool hjhplhlfhfk = 6;
-    optional bool ioodkmafhpc = 7;
-    optional bool nojecbgblln = 8;
-    optional bool lfajfpomdpp = 9;
-    optional bool ncjnpjofnik = 10;
-    optional bool dlgehaijdmg = 11;
-    repeated ONGGKMFMLHI dkihcoheamj = 12;
-}
-
 message GameClientPhotoGalleryPoiImageProto {
     optional string image_id = 1;
     optional string poi_id = 2;
@@ -9547,7 +9532,7 @@ message GameMasterClientTemplateProto {
     optional FHEOFILILNM fdonldfcjkj = 126;
     optional PushGatewaySettings push_gateway_settings = 127;
     optional UsernameSuggestionSettings username_suggestion_settings = 128;
-    optional GAAICDPBJIA fomijnooaig = 129;
+    optional TutorialsSettings tutorials_settings = 129;
     optional BAOAHFFGIDN hggpbflinha = 130;
     optional INPCCMJIOIL pabonknmdlk = 131;
 }
@@ -13204,16 +13189,6 @@ message NpcDialogueProto {
 message NpcPokemonProto {
     optional HoloPokemonId pokemon_type = 1;
     optional PokemonDisplayProto pokemon_display = 2;
-}
-
-message ONGGKMFMLHI {
-    message NKGGPELMEOA {
-        optional Item mkdphfjpkbh = 1;
-        optional int32 chbchdjbjjg = 2;
-    }
-
-    optional TutorialCompletion flhcnbhpnfk = 1;
-    repeated NKGGPELMEOA mhgjnfceolb = 2;
 }
 
 message ObMegaEvolvePokemonOutProtoField {
@@ -20224,6 +20199,16 @@ message TriangleList {
     optional bytes exterior_edges = 2;
 }
 
+message TutorialCompletRewards {
+    message TutorialReward {
+        optional Item item_id = 1;
+        optional int32 amount = 2;
+    }
+
+    optional TutorialCompletion tutorial_completation = 1;
+    repeated TutorialReward item_reward = 2;
+}
+
 message TutorialCreateDetail {
     optional bool caught_in_wild = 1;
 }
@@ -20266,6 +20251,21 @@ message TutorialTelemetry {
     }
 
     optional TutorialTelemetryId telemetry_id = 1;
+}
+
+message TutorialsSettings {
+    optional bool tutorial_settings_bool_1 = 1;
+    optional bool tutorial_settings_bool_2 = 2;
+    optional bool tutorial_settings_bool_3 = 3;
+    optional bool tutorial_settings_bool_4 = 4;
+    optional bool tutorial_settings_bool_5 = 5;
+    optional bool tutorial_settings_bool_6 = 6;
+    optional bool tutorial_settings_bool_7 = 7;
+    optional bool tutorial_settings_bool_8 = 8;
+    optional bool tutorial_settings_bool_9 = 9;
+    optional bool tutorial_settings_bool_10 = 10;
+    optional bool tutorial_settings_bool_11 = 11;
+    repeated TutorialCompletRewards tutorial_complete_reward = 12;
 }
 
 message TwoWaySharedFriendshipDataProto {

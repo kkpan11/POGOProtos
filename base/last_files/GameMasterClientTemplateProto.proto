@@ -139,7 +139,8 @@ import "ExternalAddressableAssetsSettings.proto";
 import "EvolePreviewSettings.proto";
 import "FHEOFILILNM.proto";
 import "PushGatewaySettings.proto";
-import "GAAICDPBJIA.proto";
+import "UsernameSuggestionSettings.proto";
+import "TutorialsSettings.proto";
 import "BAOAHFFGIDN.proto";
 import "INPCCMJIOIL.proto";
 
@@ -263,7 +264,8 @@ message GameMasterClientTemplateProto {
 	EvolePreviewSettings evolve_preview_settings = 125;
 	FHEOFILILNM fdonldfcjkj = 126;
 	PushGatewaySettings push_gateway_settings = 127;
-	GAAICDPBJIA fomijnooaig = 129;
+	UsernameSuggestionSettings username_suggestion_settings = 128;
+	TutorialsSettings tutorials_settings = 129;
 	BAOAHFFGIDN hggpbflinha = 130;
 	INPCCMJIOIL pabonknmdlk = 131;
 }

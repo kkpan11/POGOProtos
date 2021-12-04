@@ -21,19 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "ONGGKMFMLHI.proto";
-
-message GAAICDPBJIA {
-	bool fnafhnkenoh = 1;
-	bool iifaimgknnd = 2;
-	bool fcbjkjkkagh = 3;
-	bool fnncnidneok = 4;
-	bool kknkmjahhia = 5;
-	bool hjhplhlfhfk = 6;
-	bool ioodkmafhpc = 7;
-	bool nojecbgblln = 8;
-	bool lfajfpomdpp = 9;
-	bool ncjnpjofnik = 10;
-	bool dlgehaijdmg = 11;
-	repeated ONGGKMFMLHI dkihcoheamj = 12;
+message UsernameSuggestionSettings {
+	bool ob_enabled = 1;
+	int32 ob_username_suggestion_int32_1 = 2;
+	int32 ob_username_suggestion_int32_2 = 3;
 }

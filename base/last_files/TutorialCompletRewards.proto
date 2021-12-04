@@ -24,12 +24,12 @@ package POGOProtos.Rpc;
 import "Item.proto";
 import "TutorialCompletion.proto";
 
-message ONGGKMFMLHI {
-	message NKGGPELMEOA {
-		Item mkdphfjpkbh = 1;
-		int32 chbchdjbjjg = 2;
+message TutorialCompletRewards {
+	message TutorialReward {
+		Item item_id = 1;
+		int32 amount = 2;
 	}
 
-	TutorialCompletion flhcnbhpnfk = 1;
-	repeated NKGGPELMEOA mhgjnfceolb = 2;
+	TutorialCompletion tutorial_completation = 1;
+	repeated TutorialReward item_reward = 2;
 }

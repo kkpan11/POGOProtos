@@ -14,7 +14,7 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: Mixed Versions Compatible 0.205.x to 0.223.x.
+* Version: base
 *
 */
 
@@ -9363,21 +9363,6 @@ message FriendshipMilestoneRewardProto {
 	FriendshipLevelMilestone friendship_milestone = 2;
 }
 
-message GAAICDPBJIA {
-	bool fnafhnkenoh = 1;
-	bool iifaimgknnd = 2;
-	bool fcbjkjkkagh = 3;
-	bool fnncnidneok = 4;
-	bool kknkmjahhia = 5;
-	bool hjhplhlfhfk = 6;
-	bool ioodkmafhpc = 7;
-	bool nojecbgblln = 8;
-	bool lfajfpomdpp = 9;
-	bool ncjnpjofnik = 10;
-	bool dlgehaijdmg = 11;
-	repeated ONGGKMFMLHI dkihcoheamj = 12;
-}
-
 message GameClientPhotoGalleryPoiImageProto {
 	string image_id = 1;
 	string poi_id = 2;
@@ -9524,7 +9509,7 @@ message GameMasterClientTemplateProto {
 	FHEOFILILNM fdonldfcjkj = 126;
 	PushGatewaySettings push_gateway_settings = 127;
 	UsernameSuggestionSettings username_suggestion_settings = 128;
-	GAAICDPBJIA fomijnooaig = 129;
+	TutorialsSettings tutorials_settings = 129;
 	BAOAHFFGIDN hggpbflinha = 130;
 	INPCCMJIOIL pabonknmdlk = 131;
 }
@@ -13181,16 +13166,6 @@ message NpcDialogueProto {
 message NpcPokemonProto {
 	HoloPokemonId pokemon_type = 1;
 	PokemonDisplayProto pokemon_display = 2;
-}
-
-message ONGGKMFMLHI {
-	message NKGGPELMEOA {
-		Item mkdphfjpkbh = 1;
-		int32 chbchdjbjjg = 2;
-	}
-
-	TutorialCompletion flhcnbhpnfk = 1;
-	repeated NKGGPELMEOA mhgjnfceolb = 2;
 }
 
 message ObMegaEvolvePokemonOutProtoField {
@@ -20212,6 +20187,16 @@ message TriangleList {
 	bytes exterior_edges = 2;
 }
 
+message TutorialCompletRewards {
+	message TutorialReward {
+		Item item_id = 1;
+		int32 amount = 2;
+	}
+
+	TutorialCompletion tutorial_completation = 1;
+	repeated TutorialReward item_reward = 2;
+}
+
 message TutorialCreateDetail {
 	bool caught_in_wild = 1;
 }
@@ -20254,6 +20239,21 @@ message TutorialTelemetry {
 	}
 
 	TutorialTelemetryId telemetry_id = 1;
+}
+
+message TutorialsSettings {
+	bool tutorial_settings_bool_1 = 1;
+	bool tutorial_settings_bool_2 = 2;
+	bool tutorial_settings_bool_3 = 3;
+	bool tutorial_settings_bool_4 = 4;
+	bool tutorial_settings_bool_5 = 5;
+	bool tutorial_settings_bool_6 = 6;
+	bool tutorial_settings_bool_7 = 7;
+	bool tutorial_settings_bool_8 = 8;
+	bool tutorial_settings_bool_9 = 9;
+	bool tutorial_settings_bool_10 = 10;
+	bool tutorial_settings_bool_11 = 11;
+	repeated TutorialCompletRewards tutorial_complete_reward = 12;
 }
 
 message TwoWaySharedFriendshipDataProto {
