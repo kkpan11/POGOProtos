@@ -27,4 +27,7 @@ message MusicSettings {
 	string event_music_3 = 3;
 	string event_music_4 = 4;
 	string second_special_event_music_choice = 5;
+	bool ob_bool = 6;
+	string ob_string_1 = 7;
+	string ob_string_2 = 8;
 }

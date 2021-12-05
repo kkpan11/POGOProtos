@@ -106,6 +106,8 @@ import "PushGatewayTelemetry.proto";
 import "PushGatewayUpstreamErrorTelemetry.proto";
 import "UsernameSuggestionTelemetry.proto";
 import "TutorialTelemetry.proto";
+import "PostcardBookTelemetry.proto";
+import "SocialInboxLatencyTelemetry.proto";
 import "ServerData.proto";
 import "CommonFilterProto.proto";
 
@@ -196,6 +198,8 @@ message HoloholoClientTelemetryOmniProto {
 		PushGatewayUpstreamErrorTelemetry push_gateway_upstream_error_telemetry = 83;
 		UsernameSuggestionTelemetry username_suggestion_telemetry = 84;
 		TutorialTelemetry tutorial_telemetry = 85;
+		PostcardBookTelemetry postcard_book_telemetry = 86;
+		SocialInboxLatencyTelemetry social_inbox_telemetry = 87;
 	}
 
 	ServerData server_data = 1001;

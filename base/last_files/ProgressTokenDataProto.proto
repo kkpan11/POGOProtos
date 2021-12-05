@@ -22,6 +22,17 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 message ProgressTokenDataProto {
+	enum RaidStateFunction {
+		NONE_RAID_STATE = 0;
+		EXIT_GYM_RAID_STATE = 1;
+	}
+
+	enum RaidResolveUicontrollerFunction {
+		NONE_RAID_RESOLVE_UI_CONTROLLER = 0;
+		INIT_RAID_RESOLVE_UI_CONTROLLER = 1;
+		CLOSE_RAID_RESOLVE_UI_CONTROLLER = 2;
+	}
+
 	enum RaidLobbyStateFunction {
 		NONE_RAID_LOBBY_STATE = 0;
 		ENTER_RAID_LOBBY_STATE = 1;
@@ -32,14 +43,33 @@ message ProgressTokenDataProto {
 		CANCEL_RAID_BATTLE_TRANSITION = 6;
 	}
 
-	enum RaidBattleStateFunction {
-		NONE_RAID_BATTLE_STATE = 0;
-		ENTER_RAID_BATTLE_STATE = 1;
-		EXIT_RAID_BATTLE_STATE = 2;
-		OBSERVE_BATTLE_FRAMES = 3;
-		START_RAID_BATTLE = 4;
-		START_RAID_BATTLE_WHEN_READY = 5;
-		END_BATTLE_WHEN_READY = 6;
+	oneof Function {
+		GymRootControllerFunction gym_root_controller_function = 2;
+		RaidStateFunction raid_state_function = 3;
+		RaidLobbyStateFunction raid_lobby_state_function = 4;
+		RaidLobbyGuiControllerFunction raid_lobby_gui_controller_function = 5;
+		RaidBattleStateFunction raid_battle_state_function = 6;
+		RaidResolveStateFunction raid_resolve_state_function = 7;
+		RaidResolveUicontrollerFunction raid_resolve_uicontroller_function = 8;
+		EncounterStateFunction encounter_state_function = 9;
+		MapExploreStateFunction map_explore_state_function = 10;
+	}
+
+	enum RaidResolveStateFunction {
+		NONE_RAID_RESOLVE_STATE = 0;
+		ENTER_RAID_RESOLVE_STATE = 1;
+		EXIT_RAID_RESOLVE_STATE = 2;
+		INIT_RAID_RESOLVE_STATE = 3;
+	}
+
+	enum MapExploreStateFunction {
+		NONE_MAP_EXPLORE_STATE = 0;
+		GYM_ROOT_COMPLETE = 1;
+	}
+
+	enum GymRootControllerFunction {
+		NONE_GYM_GYM_ROOT_CONTROLLER = 0;
+		EXIT_GYM_GYM_ROOT_CONTROLLER = 1;
 	}
 
 	enum RaidLobbyGuiControllerFunction {
@@ -63,27 +93,14 @@ message ProgressTokenDataProto {
 		HANDLE_RAID_BATTLE_COMPLETE = 17;
 	}
 
-	enum RaidResolveStateFunction {
-		NONE_RAID_RESOLVE_STATE = 0;
-		ENTER_RAID_RESOLVE_STATE = 1;
-		EXIT_RAID_RESOLVE_STATE = 2;
-		INIT_RAID_RESOLVE_STATE = 3;
-	}
-
-	oneof Function {
-		GymRootControllerFunction gym_root_controller_function = 2;
-		RaidStateFunction raid_state_function = 3;
-		RaidLobbyStateFunction raid_lobby_state_function = 4;
-		RaidLobbyGuiControllerFunction raid_lobby_gui_controller_function = 5;
-		RaidBattleStateFunction raid_battle_state_function = 6;
-		RaidResolveStateFunction raid_resolve_state_function = 7;
-		RaidResolveUicontrollerFunction raid_resolve_uicontroller_function = 8;
-		EncounterStateFunction encounter_state_function = 9;
-	}
-
-	enum GymRootControllerFunction {
-		NONE_GYM_GYM_ROOT_CONTROLLER = 0;
-		EXIT_GYM_GYM_ROOT_CONTROLLER = 1;
+	enum RaidBattleStateFunction {
+		NONE_RAID_BATTLE_STATE = 0;
+		ENTER_RAID_BATTLE_STATE = 1;
+		EXIT_RAID_BATTLE_STATE = 2;
+		OBSERVE_BATTLE_FRAMES = 3;
+		START_RAID_BATTLE = 4;
+		START_RAID_BATTLE_WHEN_READY = 5;
+		END_BATTLE_WHEN_READY = 6;
 	}
 
 	enum EncounterStateFunction {
@@ -92,17 +109,6 @@ message ProgressTokenDataProto {
 		BEGIN_ENCOUNTER_APPROACH = 2;
 		ENCOUNTER_STATE_COMPLETE = 3;
 		EXIT_ENCOUNTER_STATE = 4;
-	}
-
-	enum RaidStateFunction {
-		NONE_RAID_STATE = 0;
-		EXIT_GYM_RAID_STATE = 1;
-	}
-
-	enum RaidResolveUicontrollerFunction {
-		NONE_RAID_RESOLVE_UI_CONTROLLER = 0;
-		INIT_RAID_RESOLVE_UI_CONTROLLER = 1;
-		CLOSE_RAID_RESOLVE_UI_CONTROLLER = 2;
 	}
 
 	int32 ob_progress_token_int32 = 1;

@@ -143,6 +143,10 @@ import "UsernameSuggestionSettings.proto";
 import "TutorialsSettings.proto";
 import "BAOAHFFGIDN.proto";
 import "INPCCMJIOIL.proto";
+import "BHILFPNBKEH.proto";
+import "CLOGIAFCLLK.proto";
+import "PHHLLJPIKFF.proto";
+import "CBBODOBAAHL.proto";
 
 message GameMasterClientTemplateProto {
 	string template_id = 1;
@@ -268,4 +272,8 @@ message GameMasterClientTemplateProto {
 	TutorialsSettings tutorials_settings = 129;
 	BAOAHFFGIDN hggpbflinha = 130;
 	INPCCMJIOIL pabonknmdlk = 131;
+	BHILFPNBKEH ceeignamhnf = 132;
+	CLOGIAFCLLK dchlnpkoncg = 133;
+	PHHLLJPIKFF oduitnduitf = 134;
+	CBBODOBAAHL mjphmhnnbjd = 135;
 }

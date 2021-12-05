@@ -85,6 +85,8 @@ message PokemonDisplayProto {
 		GEMS_1_2021_NOEVOLVE = 50;
 		GEMS_2_2021_NOEVOLVE = 51;
 		HOLIDAY_2021_NOEVOLVE = 52;
+		TCG_2022_NOEVOLVE = 53;
+		JAN_2022_NOEVOLVE = 54;
 	}
 
 	enum Form {
@@ -2331,6 +2333,11 @@ message PokemonDisplayProto {
 		CALYREX_NORMAL = 2725;
 		CALYREX_ICE_RIDER = 2726;
 		CALYREX_SHADOW_RIDER = 2727;
+		LUGIA_S = 2729;
+		HO_OH_S = 2730;
+		RAIKOU_S = 2731;
+		ENTEI_S = 2732;
+		SUICUNE_S = 2733;
 	}
 
 	enum Gender {

@@ -312,10 +312,6 @@ enum EncounterType {
 	ENCOUNTER_TYPE_POWER_UP_POKESTOP = 14;
 }
 
-enum FEHCNBDAEPC {
-	FEHCNBDAEPC_MEMENTO_POSTCARD = 0;
-}
-
 enum FeatureKind {
 	FEATURE_KIND_UNDEFINED = 0;
 	FEATURE_KIND_BASIN = 1;
@@ -3123,13 +3119,6 @@ enum Method {
 	METHOD_SKIP_ENTER_REFERRAL_CODE = 1915;
 }
 
-enum NEOJODICMCP {
-	NEOJODICMCP_UNKNOWN = 0;
-	NEOJODICMCP_SELF = 1;
-	NEOJODICMCP_FRIEND = 2;
-	NEOJODICMCP_FRIEND_ANONYMIZED = 3;
-}
-
 enum NewsPageTelemetryIds {
 	NEWS_PAGE_TELEMETRY_IDS_UNDEFINED_NEWS_EVENT = 0;
 	NEWS_PAGE_TELEMETRY_IDS_NEWS_VIEWED = 1;
@@ -3141,6 +3130,17 @@ enum NewsPageTelemetryIds {
 enum NotificationState {
 	NOTIFICATION_STATE_UNSET_STATE = 0;
 	NOTIFICATION_STATE_VIEWED = 1;
+}
+
+enum ObPostcardMemento {
+	MEMENTO_POSTCARD = 0;
+}
+
+enum ObPostcardTypes {
+	OB_POSTCARD_TYPES_UNKNOWN = 0;
+	OB_POSTCARD_TYPES_SELF = 1;
+	OB_POSTCARD_TYPES_FRIEND = 2;
+	OB_POSTCARD_TYPES_FRIEND_ANONYMIZED = 3;
 }
 
 enum OnboardingArStatus {
@@ -7067,7 +7067,7 @@ message DDOJBEDODIN {
 }
 
 message DEAJHFFOBEH {
-	repeated FEHCNBDAEPC damhnmmmpap = 1;
+	repeated ObPostcardMemento damhnmmmpap = 1;
 	repeated int64 jcimegdpnba = 2;
 	int64 eaaobpkfkob = 3;
 	int64 cbgjemojnpk = 4;
@@ -11628,7 +11628,7 @@ message JCCOOLOLKBO {
 	repeated string eabaomhokia = 10;
 	string hjhalglhloo = 11;
 	string mnidelgjohj = 12;
-	NEOJODICMCP kghcgafilcc = 13;
+	ObPostcardTypes kghcgafilcc = 13;
 	uint64 gpppmlkmjbb = 14;
 	string fpgkfjkhloj = 15;
 	uint64 jfhoecaepfj = 16;
@@ -12300,19 +12300,6 @@ message LIFGNCNKPAL {
 }
 
 message LKDCDDKIIDJ {
-}
-
-message LMFACDFAFJA {
-	enum Result {
-		UNSET = 0;
-		SUCCESS = 1;
-		ERROR_POSTCARD_DOES_NOT_EXIST = 2;
-		ERROR_NOT_ENABLED = 4;
-		ERROR_RATE_LIMITED = 5;
-	}
-
-	Result result = 1;
-	JCCOOLOLKBO enpcjflfcko = 2;
 }
 
 message LMIAKPFKOAP {
@@ -13709,7 +13696,7 @@ message OBDGPIIDGAK {
 		JCCOOLOLKBO postcard_display = 5;
 	}
 
-	FEHCNBDAEPC jpmahepjkid = 1;
+	ObPostcardMemento jpmahepjkid = 1;
 	double bnpahbgccne = 2;
 	double mckjkaaniil = 3;
 	int64 lelcmfcdhoc = 4;
@@ -13982,6 +13969,32 @@ message ObEggStatus {
 	float impbklgobad = 3;
 	Type cifnlhajobo = 4;
 	float pbodjjphncb = 5;
+}
+
+message ObMethodUpdatePostcardOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_POSTCARD_DOES_NOT_EXIST = 2;
+		ERROR_NOT_ENABLED = 4;
+		ERROR_RATE_LIMITED = 5;
+	}
+
+	Result result = 1;
+	JCCOOLOLKBO enpcjflfcko = 2;
+}
+
+message ObMethodUpdatePostcardOutProto1 {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_POSTCARD_DOES_NOT_EXIST = 2;
+		ERROR_POSTCARD_FAVORITED = 3;
+		ERROR_NOT_ENABLED = 4;
+	}
+
+	Result result = 1;
+	JCCOOLOLKBO enpcjflfcko = 2;
 }
 
 message ObNewGlobalSetting1 {
@@ -14285,19 +14298,6 @@ message PHCCCGJJGCN {
 	int64 dlacfbbcmnf = 1;
 	int32 fmlkdeejagk = 2;
 	string ponalmipafl = 3;
-}
-
-message PHEDFKACBNO {
-	enum Result {
-		UNSET = 0;
-		SUCCESS = 1;
-		ERROR_POSTCARD_DOES_NOT_EXIST = 2;
-		ERROR_POSTCARD_FAVORITED = 3;
-		ERROR_NOT_ENABLED = 4;
-	}
-
-	Result result = 1;
-	JCCOOLOLKBO enpcjflfcko = 2;
 }
 
 message PHHLLJPIKFF {
