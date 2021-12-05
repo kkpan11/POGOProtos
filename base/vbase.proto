@@ -13320,7 +13320,7 @@ message ObAttackRaidBattle2 {
 }
 
 message ObEggIncubatorsInfos {
-	oneof EggIncubators {
+	oneof EggIncubatorsState {
 		ObEggIncubatorsStatus egg_incubators = 1;
 	}
 }
