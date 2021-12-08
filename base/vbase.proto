@@ -14,7 +14,7 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: base
+* Version: Mixed Versions Compatible 0.205.x to 0.225.x.
 *
 */
 
@@ -5515,12 +5515,6 @@ message AwardedRouteBadge {
 	repeated RouteBadgeWaypoint last_played_waypoints = 11;
 }
 
-message BAOAHFFGIDN {
-	bool gonpfjjpjen = 1;
-	int32 leihjkahiel = 2;
-	int32 dkfghenhgna = 3;
-}
-
 message BHILFPNBKEH {
 	bool kbmiacbanmi = 1;
 	int32 pinfkooalcg = 2;
@@ -8522,6 +8516,12 @@ message EggDistributionProto {
 	repeated EggDistributionEntryProto egg_distribution = 1;
 }
 
+message EggHatchImprovementSettings {
+	bool feature_enabled = 1;
+	int32 egg_hatch_animation_delay_ms = 2;
+	int32 egg_hatch_animation_interuption_delay_ms = 3;
+}
+
 message EggHatchTelemetry {
 	EggHatchTelemetryEventIds egg_hatch_event_id = 1;
 	int32 num_eggs_hatched = 2;
@@ -9629,7 +9629,7 @@ message GameMasterClientTemplateProto {
 	PushGatewaySettings push_gateway_settings = 127;
 	UsernameSuggestionSettings username_suggestion_settings = 128;
 	TutorialsSettings tutorials_settings = 129;
-	BAOAHFFGIDN hggpbflinha = 130;
+	EggHatchImprovementSettings egg_hatch_improvement_settings = 130;
 	INPCCMJIOIL pabonknmdlk = 131;
 	BHILFPNBKEH ceeignamhnf = 132;
 	CLOGIAFCLLK dchlnpkoncg = 133;

@@ -21,8 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message BAOAHFFGIDN {
-	bool gonpfjjpjen = 1;
-	int32 leihjkahiel = 2;
-	int32 dkfghenhgna = 3;
+message EggHatchImprovementSettings {
+	bool feature_enabled = 1;
+	int32 egg_hatch_animation_delay_ms = 2;
+	int32 egg_hatch_animation_interuption_delay_ms = 3;
 }

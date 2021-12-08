@@ -141,7 +141,7 @@ import "FHEOFILILNM.proto";
 import "PushGatewaySettings.proto";
 import "UsernameSuggestionSettings.proto";
 import "TutorialsSettings.proto";
-import "BAOAHFFGIDN.proto";
+import "EggHatchImprovementSettings.proto";
 import "INPCCMJIOIL.proto";
 import "BHILFPNBKEH.proto";
 import "CLOGIAFCLLK.proto";
@@ -270,7 +270,7 @@ message GameMasterClientTemplateProto {
 	PushGatewaySettings push_gateway_settings = 127;
 	UsernameSuggestionSettings username_suggestion_settings = 128;
 	TutorialsSettings tutorials_settings = 129;
-	BAOAHFFGIDN hggpbflinha = 130;
+	EggHatchImprovementSettings egg_hatch_improvement_settings = 130;
 	INPCCMJIOIL pabonknmdlk = 131;
 	BHILFPNBKEH ceeignamhnf = 132;
 	CLOGIAFCLLK dchlnpkoncg = 133;

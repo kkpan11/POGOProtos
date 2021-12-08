@@ -8041,6 +8041,12 @@ message EggCreateDetail {
 	int64 ipcjchhkfmp = 3;
 }
 
+message EggHatchImprovementSettings {
+	bool kbmiacbanmi = 1;
+	int32 ioknpjflonc = 2;
+	int32 djdkapjgcik = 3;
+}
+
 message EggHatchTelemetry {
 	int32 num_eggs_hatched = 1;
 	int32 num_animations_skipped = 2;
@@ -9251,7 +9257,7 @@ message GameMasterClientTemplateProto {
 	PushGatewaySettings push_gateway_settings = 127;
 	UsernameSuggestionSettings username_suggestion_settings = 128;
 	TutorialsSettings tutorials_settings = 129;
-	OPBCFKMGPPD kkgnmemmhkk = 130;
+	EggHatchImprovementSettings egg_hatch_improvement_settings = 130;
 	DNPIEJOOHGL nhlhjicbmpn = 131;
 	BHILFPNBKEH ceeignamhnf = 132;
 	CLOGIAFCLLK dchlnpkoncg = 133;
@@ -13920,12 +13926,6 @@ message OOBBNOBMHIC {
 	Status status = 1;
 	repeated OBDGPIIDGAK fjiiagjjihi = 2;
 	string niimjfbolcl = 3;
-}
-
-message OPBCFKMGPPD {
-	bool kbmiacbanmi = 1;
-	int32 ioknpjflonc = 2;
-	int32 djdkapjgcik = 3;
 }
 
 message OPBEMKHFAFB {
