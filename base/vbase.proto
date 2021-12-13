@@ -14,7 +14,7 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: Mixed Versions Compatible 0.205.x to 0.225.x.
+* Version: base
 *
 */
 
@@ -9187,10 +9187,10 @@ message FormSettingsProto {
 }
 
 message FormsRefactorSettings {
-	 bool ob_forms_refactor_settings_bool_1 = 1;
-	 bool ob_forms_refactor_settings_bool_2 = 2;
-	 bool ob_forms_refactor_settings_bool_3 = 3;
-	 bool enable_singular_shadow_form = 4;
+	bool ob_forms_refactor_settings_bool_1 = 1;
+	bool ob_forms_refactor_settings_bool_2 = 2;
+	bool ob_forms_refactor_settings_bool_3 = 3;
+	bool enable_singular_shadow_form = 4;
 }
 
 message FortDeployOutProto {

@@ -4696,29 +4696,29 @@ message AcknowledgePunishmentProto {
 }
 
 message ActionLogEntry {
-		optional CatchPokemonLogEntry catch_pokemon = 3;
-		optional FortSearchLogEntry fort_search = 4;
-		optional BuddyPokemonLogEntry buddy_pokemon = 5;
-		optional RaidRewardsLogEntry raid_rewards = 6;
-		optional PasscodeRewardsLogEntry passcode_rewards = 7;
-		optional CompleteQuestLogEntry complete_quest = 8;
-		optional CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;
-		optional CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;
-		optional BelugaDailyTransferLogEntry beluga_transfer = 11;
-		optional OpenGiftLogEntry open_gift = 12;
-		optional SendGiftLogEntry send_gift = 13;
-		optional TradingLogEntry trading = 14;
-		optional ShareExRaidPassLogEntry share_ex_raid_pass = 15;
-		optional DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;
-		optional FitnessRewardsLogEntry fitness_rewards = 17;
-		optional CombatLogEntry combat = 18;
-		optional PurifyPokemonLogEntry purify_pokemon = 19;
-		optional InvasionVictoryLogEntry invasion_victory = 20;
-		optional VsSeekerSetLogEntry vs_seeker_set = 21;
-		optional VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;
-		optional VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;
-		optional BuddyConsumablesLogEntry buddy_consumables = 24;
-		optional CompleteReferralMilestoneLogEntry complete_referral_milestone = 25;
+	optional CatchPokemonLogEntry catch_pokemon = 3;
+	optional FortSearchLogEntry fort_search = 4;
+	optional BuddyPokemonLogEntry buddy_pokemon = 5;
+	optional RaidRewardsLogEntry raid_rewards = 6;
+	optional PasscodeRewardsLogEntry passcode_rewards = 7;
+	optional CompleteQuestLogEntry complete_quest = 8;
+	optional CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;
+	optional CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;
+	optional BelugaDailyTransferLogEntry beluga_transfer = 11;
+	optional OpenGiftLogEntry open_gift = 12;
+	optional SendGiftLogEntry send_gift = 13;
+	optional TradingLogEntry trading = 14;
+	optional ShareExRaidPassLogEntry share_ex_raid_pass = 15;
+	optional DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;
+	optional FitnessRewardsLogEntry fitness_rewards = 17;
+	optional CombatLogEntry combat = 18;
+	optional PurifyPokemonLogEntry purify_pokemon = 19;
+	optional InvasionVictoryLogEntry invasion_victory = 20;
+	optional VsSeekerSetLogEntry vs_seeker_set = 21;
+	optional VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;
+	optional VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;
+	optional BuddyConsumablesLogEntry buddy_consumables = 24;
+	optional CompleteReferralMilestoneLogEntry complete_referral_milestone = 25;
 
 	optional int64 timestamp_ms = 1;
 	optional bool sfida = 2;
@@ -4936,19 +4936,19 @@ message AppraisalStarThresholdSettings {
 }
 
 message ApprovedCommonTelemetryProto {
-		optional CommonTelemetryBootTime boot_time = 1;
-		optional CommonTelemetryShopClick shop_click = 2;
-		optional CommonTelemetryShopView shop_view = 3;
-		optional PoiSubmissionTelemetry poi_submission_telemetry = 4;
-		optional PoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 5;
-		optional CommonTelemetryLogIn log_in = 6;
-		optional CommonTelemetryOmniPushReceived omni_push_received = 7;
-		optional CommonTelemetryOmniPushOpened omni_push_opened = 8;
-		optional PoiCategorizationEntryTelemetry poi_categorization_entry_telemetry = 9;
-		optional PoiCategorizationOperationTelemetry poi_categorization_operation_telemetry = 10;
-		optional PoiCategorySelectedTelemetry poi_categorization_selected_telemetry = 11;
-		optional PoiCategoryRemovedTelemetry poi_categorization_removed_telemetry = 12;
-		optional WayfarerOnboardingFlowTelemetry wayfarer_onboarding_flow_telemetry = 13;
+	optional CommonTelemetryBootTime boot_time = 1;
+	optional CommonTelemetryShopClick shop_click = 2;
+	optional CommonTelemetryShopView shop_view = 3;
+	optional PoiSubmissionTelemetry poi_submission_telemetry = 4;
+	optional PoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 5;
+	optional CommonTelemetryLogIn log_in = 6;
+	optional CommonTelemetryOmniPushReceived omni_push_received = 7;
+	optional CommonTelemetryOmniPushOpened omni_push_opened = 8;
+	optional PoiCategorizationEntryTelemetry poi_categorization_entry_telemetry = 9;
+	optional PoiCategorizationOperationTelemetry poi_categorization_operation_telemetry = 10;
+	optional PoiCategorySelectedTelemetry poi_categorization_selected_telemetry = 11;
+	optional PoiCategoryRemovedTelemetry poi_categorization_removed_telemetry = 12;
+	optional WayfarerOnboardingFlowTelemetry wayfarer_onboarding_flow_telemetry = 13;
 
 	optional ServerRecordMetadata server_data = 14;
 	optional ClientTelemetryCommonFilterProto common_filters = 15;
@@ -5540,7 +5540,7 @@ message BadgeCaptureReward {
 }
 
 message BadgeData {
-		optional MiniCollectionBadgeData mini_collection = 2;
+	optional MiniCollectionBadgeData mini_collection = 2;
 
 	optional HoloBadgeType badge = 1;
 }
@@ -6789,9 +6789,9 @@ message ClientIncidentProto {
 }
 
 message ClientIncidentStepProto {
-		optional ClientInvasionBattleStepProto invasion_battle = 1;
-		optional ClientInvasionEncounterStepProto invasion_encounter = 2;
-		optional ClientPokestopNpcDialogueStepProto pokestop_dialogue = 3;
+	optional ClientInvasionBattleStepProto invasion_battle = 1;
+	optional ClientInvasionEncounterStepProto invasion_encounter = 2;
+	optional ClientPokestopNpcDialogueStepProto pokestop_dialogue = 3;
 }
 
 message ClientInvasionBattleStepProto {
@@ -7230,13 +7230,13 @@ message CombatLeagueProto {
 	}
 
 	message PokemonConditionProto {
-			optional WithPokemonCpLimitProto with_pokemon_cp_limit = 2;
-			optional WithPokemonTypeProto with_pokemon_type = 3;
-			optional WithPokemonCategoryProto with_pokemon_category = 4;
-			optional PokemonWhitelist pokemon_white_list = 5;
-			optional PokemonBanlist pokemon_ban_list = 6;
-			optional PokemonCaughtTimestamp pokemon_caught_timestamp = 7;
-			optional PokemonLevelRange pokemon_level_range = 8;
+		optional WithPokemonCpLimitProto with_pokemon_cp_limit = 2;
+		optional WithPokemonTypeProto with_pokemon_type = 3;
+		optional WithPokemonCategoryProto with_pokemon_category = 4;
+		optional PokemonWhitelist pokemon_white_list = 5;
+		optional PokemonBanlist pokemon_ban_list = 6;
+		optional PokemonCaughtTimestamp pokemon_caught_timestamp = 7;
+		optional PokemonLevelRange pokemon_level_range = 8;
 
 		optional ConditionType type = 1;
 	}
@@ -7258,14 +7258,14 @@ message CombatLeagueProto {
 	}
 
 	message UnlockConditionProto {
-			optional WithPlayerLevelProto with_player_level = 3;
-			optional WithPokemonCpLimitProto with_pokemon_cp_limit = 4;
-			optional WithPokemonTypeProto with_pokemon_type = 5;
-			optional WithPokemonCategoryProto with_pokemon_category = 6;
-			optional PokemonWhitelist pokemon_white_list = 7;
-			optional PokemonBanlist pokemon_ban_list = 8;
-			optional PokemonCaughtTimestamp pokemon_caught_timestamp = 9;
-			optional PokemonLevelRange pokemon_level_range = 10;
+		optional WithPlayerLevelProto with_player_level = 3;
+		optional WithPokemonCpLimitProto with_pokemon_cp_limit = 4;
+		optional WithPokemonTypeProto with_pokemon_type = 5;
+		optional WithPokemonCategoryProto with_pokemon_category = 6;
+		optional PokemonWhitelist pokemon_white_list = 7;
+		optional PokemonBanlist pokemon_ban_list = 8;
+		optional PokemonCaughtTimestamp pokemon_caught_timestamp = 9;
+		optional PokemonLevelRange pokemon_level_range = 10;
 
 		optional ConditionType type = 1;
 		optional int32 min_pokemon_count = 2;
@@ -8344,9 +8344,9 @@ message DisplayWeatherProto {
 
 message Distribution {
 	message BucketOptions {
-			optional LinearBuckets linear_buckets = 1;
-			optional ExponentialBuckets exponential_buckets = 2;
-			optional ExplicitBuckets explicit_buckets = 3;
+		optional LinearBuckets linear_buckets = 1;
+		optional ExponentialBuckets exponential_buckets = 2;
+		optional ExplicitBuckets explicit_buckets = 3;
 
 		message ExplicitBuckets {
 			repeated int64 bounds = 1;
@@ -8431,11 +8431,11 @@ message DownloadUrlRequestProto {
 }
 
 message Downstream {
-		optional DownstreamActionMessages downstream = 1;
-		optional ResponseWithStatus response = 2;
-		optional ProbeRequest probe = 3;
-		optional Drain drain = 4;
-		optional Connected connected = 5;
+	optional DownstreamActionMessages downstream = 1;
+	optional ResponseWithStatus response = 2;
+	optional ProbeRequest probe = 3;
+	optional Drain drain = 4;
+	optional Connected connected = 5;
 
 	message Connected {
 		optional string debug_message = 1;
@@ -8450,7 +8450,7 @@ message Downstream {
 	}
 
 	message ResponseWithStatus {
-			optional SubscriptionResponse subscribe = 4;
+		optional SubscriptionResponse subscribe = 4;
 
 		enum Status {
 			UNSET = 0;
@@ -8545,7 +8545,7 @@ message EggDistributionProto {
 	repeated EggDistributionEntryProto egg_distribution = 1;
 }
 
-message EggHatchImprovementSettings {
+message EggHatchImprovementsSettings {
 	optional bool feature_enabled = 1;
 	optional int32 egg_hatch_animation_delay_ms = 2;
 	optional int32 egg_hatch_animation_interuption_delay_ms = 3;
@@ -9095,9 +9095,9 @@ message FbTokenProto {
 }
 
 message Feature {
-		optional BuildingMetadata building_metadata = 3;
-		optional RoadMetadata road_metadata = 4;
-		optional TransitMetadata transit_metadata = 5;
+	optional BuildingMetadata building_metadata = 3;
+	optional RoadMetadata road_metadata = 4;
+	optional TransitMetadata transit_metadata = 5;
 
 	optional Geometry geometry = 1;
 	optional Label label = 2;
@@ -9150,9 +9150,9 @@ message FitnessMetricsProto {
 }
 
 message FitnessReportProto {
-		optional int32 day_offset_from_now = 1;
-		optional int32 week_offset_from_now = 2;
-		optional int32 hour_offset_from_now = 3;
+	optional int32 day_offset_from_now = 1;
+	optional int32 week_offset_from_now = 2;
+	optional int32 hour_offset_from_now = 3;
 
 	optional FitnessMetricsProto metrics = 4;
 	optional bytes game_data = 5;
@@ -9518,9 +9518,9 @@ message GameClientPhotoGalleryPoiImageProto {
 }
 
 message GameClientTelemetryOmniProto {
-		optional PoiSubmissionTelemetry poi_submission_telemetry = 1;
-		optional PoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 2;
-		optional PoiPlayerMetadataTelemetry player_metadata_telemetry = 3;
+	optional PoiSubmissionTelemetry poi_submission_telemetry = 1;
+	optional PoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 2;
+	optional PoiPlayerMetadataTelemetry player_metadata_telemetry = 3;
 
 	optional ServerData server_data = 1001;
 }
@@ -9652,7 +9652,7 @@ message GameMasterClientTemplateProto {
 	optional PushGatewaySettings push_gateway_settings = 127;
 	optional UsernameSuggestionSettings username_suggestion_settings = 128;
 	optional TutorialsSettings tutorials_settings = 129;
-	optional EggHatchImprovementSettings egg_hatch_improvement_settings = 130;
+	optional EggHatchImprovementsSettings egg_hatch_improvements_settings = 130;
 	optional INPCCMJIOIL pabonknmdlk = 131;
 	optional BHILFPNBKEH ceeignamhnf = 132;
 	optional CLOGIAFCLLK dchlnpkoncg = 133;
@@ -9739,9 +9739,9 @@ message GeodataServiceGameClientPoiProto {
 }
 
 message Geometry {
-		optional PointList points = 1;
-		optional PolylineList polylines = 2;
-		optional TriangleList triangles = 3;
+	optional PointList points = 1;
+	optional PolylineList polylines = 2;
+	optional TriangleList triangles = 3;
 }
 
 message GeotargetedQuestProto {
@@ -11634,153 +11634,153 @@ message HoloFitnessReportProto {
 }
 
 message HoloInventoryItemProto {
-		optional PokemonProto pokemon = 1;
-		optional ItemProto item = 2;
-		optional PokedexEntryProto pokedex_entry = 3;
-		optional PlayerStatsProto player_stats = 4;
-		optional PlayerCurrencyProto player_currency = 5;
-		optional PlayerCameraProto player_camera = 6;
-		optional InventoryUpgradesProto inventory_upgrades = 7;
-		optional AppliedItemsProto applied_items = 8;
-		optional EggIncubatorsProto egg_incubators = 9;
-		optional PokemonFamilyProto pokemon_family = 10;
-		optional QuestProto quest = 11;
-		optional AvatarItemProto avatar_item = 12;
-		optional RaidTicketsProto raid_tickets = 13;
-		optional QuestsProto quests = 14;
-		optional GiftBoxesProto gift_boxes = 15;
-		optional BelugaIncenseBoxProto beluga_incense = 16;
-		optional RouteMakerProto route_maker = 18;
-		optional LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;
-		optional RoutePlayProto route_play = 20;
-		optional MegaEvolvePokemonSpeciesProto mega_evolve_species = 21;
-		optional StickerProto sticker = 22;
-		optional PokemonHomeProto pokemon_home = 23;
-		optional BadgeData badge_data = 24;
-		optional PlayerStatsSnapshotsProto player_stats_snapshots = 25;
-		optional FakeDataProto fake_data = 26;
-		optional PokedexCategoryMilestoneProto pokedex_category_milestone = 27;
+	optional PokemonProto pokemon = 1;
+	optional ItemProto item = 2;
+	optional PokedexEntryProto pokedex_entry = 3;
+	optional PlayerStatsProto player_stats = 4;
+	optional PlayerCurrencyProto player_currency = 5;
+	optional PlayerCameraProto player_camera = 6;
+	optional InventoryUpgradesProto inventory_upgrades = 7;
+	optional AppliedItemsProto applied_items = 8;
+	optional EggIncubatorsProto egg_incubators = 9;
+	optional PokemonFamilyProto pokemon_family = 10;
+	optional QuestProto quest = 11;
+	optional AvatarItemProto avatar_item = 12;
+	optional RaidTicketsProto raid_tickets = 13;
+	optional QuestsProto quests = 14;
+	optional GiftBoxesProto gift_boxes = 15;
+	optional BelugaIncenseBoxProto beluga_incense = 16;
+	optional RouteMakerProto route_maker = 18;
+	optional LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;
+	optional RoutePlayProto route_play = 20;
+	optional MegaEvolvePokemonSpeciesProto mega_evolve_species = 21;
+	optional StickerProto sticker = 22;
+	optional PokemonHomeProto pokemon_home = 23;
+	optional BadgeData badge_data = 24;
+	optional PlayerStatsSnapshotsProto player_stats_snapshots = 25;
+	optional FakeDataProto fake_data = 26;
+	optional PokedexCategoryMilestoneProto pokedex_category_milestone = 27;
 }
 
 message HoloInventoryKeyProto {
-		optional fixed64 pokemon_id = 1;
-		optional Item item = 2;
-		optional HoloPokemonId pokedex_entry_id = 3;
-		optional bool player_stats = 4;
-		optional bool player_currency = 5;
-		optional bool player_camera = 6;
-		optional bool inventory_upgrades = 7;
-		optional bool applied_items = 8;
-		optional bool egg_incubators = 9;
-		optional HoloPokemonFamilyId pokemon_family_id = 10;
-		optional QuestType quest_type = 11;
-		optional string avatar_template_id = 12;
-		optional bool raid_tickets = 13;
-		optional bool quests = 14;
-		optional bool gift_boxes = 15;
-		optional bool beluga_incense_box = 16;
-		optional bool vs_seeker_upgrades = 17;
-		optional bool route_maker = 18;
-		optional bool limited_purchase_sku_record = 19;
-		optional bool route_play = 20;
-		optional int32 mega_evo_pokemon_species_id = 21;
-		optional string sticker_id = 22;
-		optional bool pokemon_home = 23;
-		optional HoloBadgeType badge = 24;
-		optional bool player_stats_snapshot = 25;
-		optional int64 unknown_key = 26;
-		optional fixed64 fake_data = 27;
-		optional PokedexCategory pokedex_category = 28;
+	optional fixed64 pokemon_id = 1;
+	optional Item item = 2;
+	optional HoloPokemonId pokedex_entry_id = 3;
+	optional bool player_stats = 4;
+	optional bool player_currency = 5;
+	optional bool player_camera = 6;
+	optional bool inventory_upgrades = 7;
+	optional bool applied_items = 8;
+	optional bool egg_incubators = 9;
+	optional HoloPokemonFamilyId pokemon_family_id = 10;
+	optional QuestType quest_type = 11;
+	optional string avatar_template_id = 12;
+	optional bool raid_tickets = 13;
+	optional bool quests = 14;
+	optional bool gift_boxes = 15;
+	optional bool beluga_incense_box = 16;
+	optional bool vs_seeker_upgrades = 17;
+	optional bool route_maker = 18;
+	optional bool limited_purchase_sku_record = 19;
+	optional bool route_play = 20;
+	optional int32 mega_evo_pokemon_species_id = 21;
+	optional string sticker_id = 22;
+	optional bool pokemon_home = 23;
+	optional HoloBadgeType badge = 24;
+	optional bool player_stats_snapshot = 25;
+	optional int64 unknown_key = 26;
+	optional fixed64 fake_data = 27;
+	optional PokedexCategory pokedex_category = 28;
 }
 
 message HoloholoClientTelemetryOmniProto {
-		optional BootTime boot_time = 1;
-		optional FrameRate frame_rate = 2;
-		optional GenericClickTelemetry generic_click_telemetry = 3;
-		optional MapEventsTelemetry map_events_telemetry = 4;
-		optional SpinPokestopTelemetry spin_pokestop_telemetry = 5;
-		optional ProfilePageTelemetry profile_page_telemetry = 6;
-		optional ShoppingPageTelemetry shopping_page_telemetry = 7;
-		optional EncounterPokemonTelemetry encounter_pokemon_telemetry = 8;
-		optional CatchPokemonTelemetry catch_pokemon_telemetry = 9;
-		optional DeployPokemonTelemetry deploy_pokemon_telemetry = 10;
-		optional FeedPokemonTelemetry feed_pokemon_telemetry = 11;
-		optional EvolvePokemonTelemetry evolve_pokemon_telemetry = 12;
-		optional ReleasePokemonTelemetry release_pokemon_telemetry = 13;
-		optional NicknamePokemonTelemetry nickname_pokemon_telemetry = 14;
-		optional NewsPageTelemetry news_page_telemetry = 15;
-		optional ItemTelemetry item_telemetry = 16;
-		optional BattlePartyTelemetry battle_party_telemetry = 17;
-		optional PasscodeRedeemTelemetry passcode_redeem_telemetry = 18;
-		optional LinkLoginTelemetry link_login_telemetry = 19;
-		optional RaidTelemetry raid_telemetry = 20;
-		optional PushNotificationTelemetry push_notification_telemetry = 21;
-		optional AvatarCustomizationTelemetry avatar_customization_telemetry = 22;
-		optional ReadPointOfInterestDescriptionTelemetry read_point_of_interest_description_telemetry = 23;
-		optional WebTelemetry web_telemetry = 24;
-		optional ChangeArTelemetry change_ar_telemetry = 25;
-		optional WeatherDetailClickTelemetry weather_detail_click_telemetry = 26;
-		optional UserIssueWeatherReport user_issue_weather_report = 27;
-		optional PokemonInventoryTelemetry pokemon_inventory_telemetry = 28;
-		optional SocialTelemetry social_telemetry = 29;
-		optional CheckEncounterTrayInfoTelemetry check_encounter_info_telemetry = 30;
-		optional PokemonGoPlusTelemetry pokemon_go_plus_telemetry = 31;
-		optional RpcResponseTelemetry rpc_timing_telemetry = 32;
-		optional SocialGiftCountTelemetry social_gift_count_telemetry = 33;
-		optional AssetBundleDownloadTelemetry asset_bundle_telemetry = 34;
-		optional AssetPoiDownloadTelemetry asset_poi_download_telemetry = 35;
-		optional AssetStreamDownloadTelemetry asset_stream_download_telemetry = 36;
-		optional AssetStreamCacheCulledTelemetry asset_stream_cache_culled_telemetry = 37;
-		optional RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;
-		optional PermissionsFlowTelemetry permissions_flow = 39;
-		optional DeviceServiceToggleTelemetry device_service_toggle = 40;
-		optional BootTelemetry boot_telemetry = 41;
-		optional UserAttributesProto user_attributes = 42;
-		optional OnboardingTelemetry onboarding_telemetry = 43;
-		optional LoginActionTelemetry login_action_telemetry = 44;
-		optional ArPhotoSessionProto ar_photo_session_telemetry = 45;
-		optional InvasionTelemetry invasion_telemetry = 46;
-		optional CombatMinigameTelemetry combat_minigame_telemetry = 47;
-		optional LeavePointOfInterestTelemetry leave_point_of_interest_telemetry = 48;
-		optional ViewPointOfInterestImageTelemetry view_point_of_interest_image_telemetry = 49;
-		optional CombatHubEntranceTelemetry combat_hub_entrance_telemetry = 50;
-		optional LeaveInteractionRangeTelemetry leave_interaction_range_telemetry = 51;
-		optional ShoppingPageClickTelemetry shopping_page_click_telemetry = 52;
-		optional ShoppingPageScrollTelemetry shopping_page_scroll_telemetry = 53;
-		optional DeviceSpecificationsTelemetry device_specifications_telemetry = 54;
-		optional ScreenResolutionTelemetry screen_resolution_telemetry = 55;
-		optional ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;
-		optional BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;
-		optional BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;
-		optional BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;
-		optional PlayerHudNotificationClickTelemetry player_hud_notification_click_telemetry = 60;
-		optional MonodepthDownloadTelemetry monodepth_download_telemetry = 61;
-		optional ArMappingTelemetryProto ar_mapping_telemetry = 62;
-		optional RemoteRaidTelemetry remote_raid_telemetry = 63;
-		optional DeviceOSTelemetry device_os_telemetry = 64;
-		optional NianticProfileTelemetry niantic_profile_telemetry = 65;
-		optional ChangeOnlineStatusTelemetry change_online_status_telemetry = 66;
-		optional DeepLinkingTelemetry deep_linking_telemetry = 67;
-		optional ArMappingSessionTelemetryProto ar_mapping_session_telemetry = 68;
-		optional PokemonHomeTelemetry pokemon_home_telemetry = 69;
-		optional PokemonSearchTelemetry pokemon_search_telemetry = 70;
-		optional ImageGalleryTelemetry image_gallery_telemetry = 71;
-		optional PlayerShownLevelUpShareScreenTelemetry player_shown_level_up_share_screen_telemetry = 72;
-		optional ReferralTelemetry referral_telemetry = 73;
-		optional UploadManagementTelemetry upload_management_telemetry = 74;
-		optional WayspotEditTelemetry wayspot_edit_telemetry = 75;
-		optional ClientSettingsTelemetry client_settings_telemetry = 76;
-		optional PokedexCategorySelectedTelemetry pokedex_category_selected_telemetry = 77;
-		optional PercentScrolledTelemetry percent_scrolled_telemetry = 78;
-		optional AddressBookImportTelemetry address_book_import_telemetry = 79;
-		optional MissingTranslationTelemetry missing_translation_telemetry = 80;
-		optional EggHatchTelemetry egg_hatch_telemetry = 81;
-		optional PushGatewayTelemetry push_gateway_telemetry = 82;
-		optional PushGatewayUpstreamErrorTelemetry push_gateway_upstream_error_telemetry = 83;
-		optional UsernameSuggestionTelemetry username_suggestion_telemetry = 84;
-		optional TutorialTelemetry tutorial_telemetry = 85;
-		optional PostcardBookTelemetry postcard_book_telemetry = 86;
-		optional SocialInboxLatencyTelemetry social_inbox_telemetry = 87;
+	optional BootTime boot_time = 1;
+	optional FrameRate frame_rate = 2;
+	optional GenericClickTelemetry generic_click_telemetry = 3;
+	optional MapEventsTelemetry map_events_telemetry = 4;
+	optional SpinPokestopTelemetry spin_pokestop_telemetry = 5;
+	optional ProfilePageTelemetry profile_page_telemetry = 6;
+	optional ShoppingPageTelemetry shopping_page_telemetry = 7;
+	optional EncounterPokemonTelemetry encounter_pokemon_telemetry = 8;
+	optional CatchPokemonTelemetry catch_pokemon_telemetry = 9;
+	optional DeployPokemonTelemetry deploy_pokemon_telemetry = 10;
+	optional FeedPokemonTelemetry feed_pokemon_telemetry = 11;
+	optional EvolvePokemonTelemetry evolve_pokemon_telemetry = 12;
+	optional ReleasePokemonTelemetry release_pokemon_telemetry = 13;
+	optional NicknamePokemonTelemetry nickname_pokemon_telemetry = 14;
+	optional NewsPageTelemetry news_page_telemetry = 15;
+	optional ItemTelemetry item_telemetry = 16;
+	optional BattlePartyTelemetry battle_party_telemetry = 17;
+	optional PasscodeRedeemTelemetry passcode_redeem_telemetry = 18;
+	optional LinkLoginTelemetry link_login_telemetry = 19;
+	optional RaidTelemetry raid_telemetry = 20;
+	optional PushNotificationTelemetry push_notification_telemetry = 21;
+	optional AvatarCustomizationTelemetry avatar_customization_telemetry = 22;
+	optional ReadPointOfInterestDescriptionTelemetry read_point_of_interest_description_telemetry = 23;
+	optional WebTelemetry web_telemetry = 24;
+	optional ChangeArTelemetry change_ar_telemetry = 25;
+	optional WeatherDetailClickTelemetry weather_detail_click_telemetry = 26;
+	optional UserIssueWeatherReport user_issue_weather_report = 27;
+	optional PokemonInventoryTelemetry pokemon_inventory_telemetry = 28;
+	optional SocialTelemetry social_telemetry = 29;
+	optional CheckEncounterTrayInfoTelemetry check_encounter_info_telemetry = 30;
+	optional PokemonGoPlusTelemetry pokemon_go_plus_telemetry = 31;
+	optional RpcResponseTelemetry rpc_timing_telemetry = 32;
+	optional SocialGiftCountTelemetry social_gift_count_telemetry = 33;
+	optional AssetBundleDownloadTelemetry asset_bundle_telemetry = 34;
+	optional AssetPoiDownloadTelemetry asset_poi_download_telemetry = 35;
+	optional AssetStreamDownloadTelemetry asset_stream_download_telemetry = 36;
+	optional AssetStreamCacheCulledTelemetry asset_stream_cache_culled_telemetry = 37;
+	optional RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;
+	optional PermissionsFlowTelemetry permissions_flow = 39;
+	optional DeviceServiceToggleTelemetry device_service_toggle = 40;
+	optional BootTelemetry boot_telemetry = 41;
+	optional UserAttributesProto user_attributes = 42;
+	optional OnboardingTelemetry onboarding_telemetry = 43;
+	optional LoginActionTelemetry login_action_telemetry = 44;
+	optional ArPhotoSessionProto ar_photo_session_telemetry = 45;
+	optional InvasionTelemetry invasion_telemetry = 46;
+	optional CombatMinigameTelemetry combat_minigame_telemetry = 47;
+	optional LeavePointOfInterestTelemetry leave_point_of_interest_telemetry = 48;
+	optional ViewPointOfInterestImageTelemetry view_point_of_interest_image_telemetry = 49;
+	optional CombatHubEntranceTelemetry combat_hub_entrance_telemetry = 50;
+	optional LeaveInteractionRangeTelemetry leave_interaction_range_telemetry = 51;
+	optional ShoppingPageClickTelemetry shopping_page_click_telemetry = 52;
+	optional ShoppingPageScrollTelemetry shopping_page_scroll_telemetry = 53;
+	optional DeviceSpecificationsTelemetry device_specifications_telemetry = 54;
+	optional ScreenResolutionTelemetry screen_resolution_telemetry = 55;
+	optional ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;
+	optional BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;
+	optional BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;
+	optional BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;
+	optional PlayerHudNotificationClickTelemetry player_hud_notification_click_telemetry = 60;
+	optional MonodepthDownloadTelemetry monodepth_download_telemetry = 61;
+	optional ArMappingTelemetryProto ar_mapping_telemetry = 62;
+	optional RemoteRaidTelemetry remote_raid_telemetry = 63;
+	optional DeviceOSTelemetry device_os_telemetry = 64;
+	optional NianticProfileTelemetry niantic_profile_telemetry = 65;
+	optional ChangeOnlineStatusTelemetry change_online_status_telemetry = 66;
+	optional DeepLinkingTelemetry deep_linking_telemetry = 67;
+	optional ArMappingSessionTelemetryProto ar_mapping_session_telemetry = 68;
+	optional PokemonHomeTelemetry pokemon_home_telemetry = 69;
+	optional PokemonSearchTelemetry pokemon_search_telemetry = 70;
+	optional ImageGalleryTelemetry image_gallery_telemetry = 71;
+	optional PlayerShownLevelUpShareScreenTelemetry player_shown_level_up_share_screen_telemetry = 72;
+	optional ReferralTelemetry referral_telemetry = 73;
+	optional UploadManagementTelemetry upload_management_telemetry = 74;
+	optional WayspotEditTelemetry wayspot_edit_telemetry = 75;
+	optional ClientSettingsTelemetry client_settings_telemetry = 76;
+	optional PokedexCategorySelectedTelemetry pokedex_category_selected_telemetry = 77;
+	optional PercentScrolledTelemetry percent_scrolled_telemetry = 78;
+	optional AddressBookImportTelemetry address_book_import_telemetry = 79;
+	optional MissingTranslationTelemetry missing_translation_telemetry = 80;
+	optional EggHatchTelemetry egg_hatch_telemetry = 81;
+	optional PushGatewayTelemetry push_gateway_telemetry = 82;
+	optional PushGatewayUpstreamErrorTelemetry push_gateway_upstream_error_telemetry = 83;
+	optional UsernameSuggestionTelemetry username_suggestion_telemetry = 84;
+	optional TutorialTelemetry tutorial_telemetry = 85;
+	optional PostcardBookTelemetry postcard_book_telemetry = 86;
+	optional SocialInboxLatencyTelemetry social_inbox_telemetry = 87;
 
 	optional ServerData server_data = 1001;
 	optional CommonFilterProto common_filters = 1002;
@@ -12109,8 +12109,8 @@ message InventoryDeltaProto {
 }
 
 message InventoryItemProto {
-		optional HoloInventoryKeyProto deleted_item_key = 2;
-		optional HoloInventoryItemProto inventory_item_data = 3;
+	optional HoloInventoryKeyProto deleted_item_key = 2;
+	optional HoloInventoryItemProto inventory_item_data = 3;
 
 	optional int64 modified_timestamp = 1;
 }
@@ -12348,9 +12348,9 @@ message JournalAddEntryProto {
 }
 
 message JournalEntryProto {
-		optional JournalAddEntryProto add_entry = 1;
-		optional JournalReadEntryProto read_entry = 2;
-		optional JournalRemoveEntryProto remove_entry = 3;
+	optional JournalAddEntryProto add_entry = 1;
+	optional JournalReadEntryProto read_entry = 2;
+	optional JournalRemoveEntryProto remove_entry = 3;
 }
 
 message JournalReadEntryProto {
@@ -12527,8 +12527,8 @@ message LeveledUpFriendsProto {
 }
 
 message LimitedEditionPokemonEncounterRewardProto {
-		optional int32 lifetime_max_count = 3;
-		optional int32 per_competitive_combat_season_max_count = 4;
+	optional int32 lifetime_max_count = 3;
+	optional int32 per_competitive_combat_season_max_count = 4;
 
 	optional PokemonEncounterRewardProto pokemon = 1;
 	optional string identifier = 2;
@@ -12768,16 +12768,16 @@ message LoginSettingsProto {
 }
 
 message LootItemProto {
-		optional Item item = 1;
-		optional bool stardust = 2;
-		optional bool pokecoin = 3;
-		optional HoloPokemonId pokemon_candy = 4;
-		optional bool experience = 6;
-		optional PokemonProto pokemon_egg = 7;
-		optional string avatar_template_id = 8;
-		optional string sticker_id = 9;
-		optional HoloPokemonId mega_energy_pokemon_id = 10;
-		optional HoloPokemonId xl_candy = 11;
+	optional Item item = 1;
+	optional bool stardust = 2;
+	optional bool pokecoin = 3;
+	optional HoloPokemonId pokemon_candy = 4;
+	optional bool experience = 6;
+	optional PokemonProto pokemon_egg = 7;
+	optional string avatar_template_id = 8;
+	optional string sticker_id = 9;
+	optional HoloPokemonId mega_energy_pokemon_id = 10;
+	optional HoloPokemonId xl_candy = 11;
 
 	optional int32 count = 5;
 }
@@ -12893,8 +12893,8 @@ message MapProvider {
 		NIANTIC_BUNDLE = 5;
 	}
 
-		optional GmmSettings gmm_settings = 4;
-		optional string settings_name = 5;
+	optional GmmSettings gmm_settings = 4;
+	optional string settings_name = 5;
 
 	message BundleZoomRange {
 		optional int32 min_zoom = 1;
@@ -13085,10 +13085,10 @@ message MegaEvolvePokemonSpeciesProto {
 }
 
 message MetricData {
-		optional int64 long_value = 2;
-		optional double double_value = 3;
-		optional bool boolean_value = 4;
-		optional Distribution distribution = 5;
+	optional int64 long_value = 2;
+	optional double double_value = 3;
+	optional bool boolean_value = 4;
+	optional Distribution distribution = 5;
 
 	enum Kind {
 		UNSPECIFIED = 0;
@@ -13343,7 +13343,7 @@ message ObAttackRaidBattle2 {
 }
 
 message ObEggIncubatorsInfos {
-		optional ObEggIncubatorsStatus egg_incubators = 1;
+	optional ObEggIncubatorsStatus egg_incubators = 1;
 }
 
 message ObEggIncubatorsStatus {
@@ -13461,7 +13461,7 @@ message ObPokemonSetting {
 }
 
 message ObPostcardDetails {
-		optional PostcardDisplayProto postcard_display = 5;
+	optional PostcardDisplayProto postcard_display = 5;
 
 	optional ObPostcardMemento ob_postcard_memento = 1;
 	optional double ob_double_1 = 2;
@@ -14413,14 +14413,14 @@ message PokemonCompareChallenge {
 }
 
 message PokemonCreateDetail {
-		optional WildCreateDetail wild_detail = 1;
-		optional EggCreateDetail egg_detail = 2;
-		optional RaidCreateDetail raid_detail = 3;
-		optional QuestCreateDetail quest_detail = 4;
-		optional VsSeekerCreateDetail vs_seeker_detail = 5;
-		optional InvasionCreateDetail invasion_detail = 6;
-		optional PhotobombCreateDetail photobomb_detail = 7;
-		optional TutorialCreateDetail tutorial_detail = 8;
+	optional WildCreateDetail wild_detail = 1;
+	optional EggCreateDetail egg_detail = 2;
+	optional RaidCreateDetail raid_detail = 3;
+	optional QuestCreateDetail quest_detail = 4;
+	optional VsSeekerCreateDetail vs_seeker_detail = 5;
+	optional InvasionCreateDetail invasion_detail = 6;
+	optional PhotobombCreateDetail photobomb_detail = 7;
+	optional TutorialCreateDetail tutorial_detail = 8;
 }
 
 message PokemonDisplayProto {
@@ -16787,8 +16787,8 @@ message PokemonEncounterAttributesProto {
 }
 
 message PokemonEncounterRewardProto {
-		optional HoloPokemonId pokemon_id = 1;
-		optional bool use_quest_pokemon_encounter_distribuition = 2;
+	optional HoloPokemonId pokemon_id = 1;
+	optional bool use_quest_pokemon_encounter_distribuition = 2;
 
 	optional PokemonDisplayProto pokemon_display = 3;
 	optional bool is_hidden_ditto = 4;
@@ -16851,8 +16851,8 @@ message PokemonFortProto {
 	optional bool is_ar_scan_eligible = 34;
 	optional string geostore_tombstone_message_key = 35;
 	optional string geostore_suspension_message_key = 36;
-	optional int32 ob_pokemon_fort_int32 = 37;
-	optional int64 ob_pokemon_fort_int64 = 38;
+	optional int32 location_points = 37;
+	optional int64 power_up_remaining_until_ms = 38;
 	optional int64 ob_pokemon_fort_int64_1 = 39;
 	optional int64 ob_pokemon_fort_int64_2 = 40;
 	repeated PokemonFortProtoNew ob_pokemon_fort_proto_new = 41;
@@ -17178,8 +17178,8 @@ message PokemonUpgradeSettingsProto {
 }
 
 message PokestopIncidentDisplayProto {
-		optional CharacterDisplayProto character_display = 10;
-		optional InvasionFinishedDisplayProto invasion_finished = 11;
+	optional CharacterDisplayProto character_display = 10;
+	optional InvasionFinishedDisplayProto invasion_finished = 11;
 
 	optional string incident_id = 1;
 	optional int64 incident_start_ms = 2;
@@ -17237,8 +17237,8 @@ message PotionAttributesProto {
 }
 
 message PowerUpPokestopSharedSettings {
-	optional bool ob_enabled = 1;
-	optional int32 ob_int32 = 2;
+	optional bool feature_enabled = 1;
+	optional int32 min_player_level_for_scanning = 2;
 	optional float points_multiplier = 3;
 }
 
@@ -17264,9 +17264,9 @@ message ProcessRouteTappableProto {
 }
 
 message ProcessRouteWaypointInteractionOutProto {
-		optional PokemonTradeActivity pokemon_trade = 2;
-		optional PokemonCompareActivity pokemon_compare = 3;
-		optional GiftTradeActivity gift_trade = 4;
+	optional PokemonTradeActivity pokemon_trade = 2;
+	optional PokemonCompareActivity pokemon_compare = 3;
+	optional GiftTradeActivity gift_trade = 4;
 
 	message GiftTradeActivity {
 	}
@@ -17329,7 +17329,7 @@ message ProgressQuestOutProto {
 }
 
 message ProgressQuestProto {
-		optional GeotargetedQuestValidation geotargeted_quest_validation = 3;
+	optional GeotargetedQuestValidation geotargeted_quest_validation = 3;
 
 	optional string quest_id = 1;
 	optional int32 current_progress = 2;
@@ -17378,15 +17378,15 @@ message ProgressTokenDataProto {
 		CANCEL_RAID_BATTLE_TRANSITION = 6;
 	}
 
-		optional GymRootControllerFunction gym_root_controller_function = 2;
-		optional RaidStateFunction raid_state_function = 3;
-		optional RaidLobbyStateFunction raid_lobby_state_function = 4;
-		optional RaidLobbyGuiControllerFunction raid_lobby_gui_controller_function = 5;
-		optional RaidBattleStateFunction raid_battle_state_function = 6;
-		optional RaidResolveStateFunction raid_resolve_state_function = 7;
-		optional RaidResolveUicontrollerFunction raid_resolve_uicontroller_function = 8;
-		optional EncounterStateFunction encounter_state_function = 9;
-		optional MapExploreStateFunction map_explore_state_function = 10;
+	optional GymRootControllerFunction gym_root_controller_function = 2;
+	optional RaidStateFunction raid_state_function = 3;
+	optional RaidLobbyStateFunction raid_lobby_state_function = 4;
+	optional RaidLobbyGuiControllerFunction raid_lobby_gui_controller_function = 5;
+	optional RaidBattleStateFunction raid_battle_state_function = 6;
+	optional RaidResolveStateFunction raid_resolve_state_function = 7;
+	optional RaidResolveUicontrollerFunction raid_resolve_uicontroller_function = 8;
+	optional EncounterStateFunction encounter_state_function = 9;
+	optional MapExploreStateFunction map_explore_state_function = 10;
 
 	enum RaidResolveStateFunction {
 		NONE_RAID_RESOLVE_STATE = 0;
@@ -17572,44 +17572,44 @@ message QuestBranchRewardProto {
 }
 
 message QuestConditionProto {
-		optional WithPokemonTypeProto with_pokemon_type = 2;
-		optional WithPokemonCategoryProto with_pokemon_category = 3;
-		optional WithWeatherBoostProto with_weather_boost = 4;
-		optional WithDailyCaptureBonusProto with_daily_capture_bonus = 5;
-		optional WithDailySpinBonusProto with_daily_spin_bonus = 6;
-		optional WithWinRaidStatusProto with_win_raid_status = 7;
-		optional WithRaidLevelProto with_raid_level = 8;
-		optional WithThrowTypeProto with_throw_type = 9;
-		optional WithWinGymBattleStatusProto with_win_gym_battle_status = 10;
-		optional WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;
-		optional WithItemProto with_item = 12;
-		optional WithUniquePokestopProto with_unique_pokestop = 13;
-		optional WithQuestContextProto with_quest_context = 14;
-		optional WithBadgeTypeProto with_badge_type = 15;
-		optional WithPlayerLevelProto with_player_level = 16;
-		optional WithWinBattleStatusProto with_win_battle_status = 17;
-		optional WithUniquePokemonProto with_unique_pokemon = 18;
-		optional WithNpcCombatProto with_npc_combat = 19;
-		optional WithPvpCombatProto with_pvp_combat = 20;
-		optional WithLocationProto with_location = 21;
-		optional WithDistanceProto with_distance = 22;
-		optional WithInvasionCharacterProto with_invasion_character = 23;
-		optional WithPokemonAlignmentProto with_pokemon_alignment = 24;
-		optional WithBuddyProto with_buddy = 25;
-		optional WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;
-		optional WithPokemonLevelProto with_pokemon_level = 27;
-		optional WithMaxCpProto with_max_cp = 28;
-		optional WithTempEvoIdProto with_temp_evo_id = 29;
-		optional WithGblRankProto with_gbl_rank = 30;
-		optional WithEncounterTypeProto with_encounter_type = 31;
-		optional WithCombatTypeProto with_combat_type = 32;
-		optional WithItemTypeProto with_item_type = 33;
-		optional WithElapsedTimeProto with_elapsed_time = 34;
-		optional WithFriendLevelProto with_friend_level = 35;
-		optional WithPokemonCpProto with_pokemon_cp = 36;
-		optional WithRaidLocationProto with_raid_location = 37;
-		optional WithFriendsRaidProto with_friends_raid = 38;
-		optional WithPokemonCostumeProto with_pokemon_costume = 39;
+	optional WithPokemonTypeProto with_pokemon_type = 2;
+	optional WithPokemonCategoryProto with_pokemon_category = 3;
+	optional WithWeatherBoostProto with_weather_boost = 4;
+	optional WithDailyCaptureBonusProto with_daily_capture_bonus = 5;
+	optional WithDailySpinBonusProto with_daily_spin_bonus = 6;
+	optional WithWinRaidStatusProto with_win_raid_status = 7;
+	optional WithRaidLevelProto with_raid_level = 8;
+	optional WithThrowTypeProto with_throw_type = 9;
+	optional WithWinGymBattleStatusProto with_win_gym_battle_status = 10;
+	optional WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;
+	optional WithItemProto with_item = 12;
+	optional WithUniquePokestopProto with_unique_pokestop = 13;
+	optional WithQuestContextProto with_quest_context = 14;
+	optional WithBadgeTypeProto with_badge_type = 15;
+	optional WithPlayerLevelProto with_player_level = 16;
+	optional WithWinBattleStatusProto with_win_battle_status = 17;
+	optional WithUniquePokemonProto with_unique_pokemon = 18;
+	optional WithNpcCombatProto with_npc_combat = 19;
+	optional WithPvpCombatProto with_pvp_combat = 20;
+	optional WithLocationProto with_location = 21;
+	optional WithDistanceProto with_distance = 22;
+	optional WithInvasionCharacterProto with_invasion_character = 23;
+	optional WithPokemonAlignmentProto with_pokemon_alignment = 24;
+	optional WithBuddyProto with_buddy = 25;
+	optional WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;
+	optional WithPokemonLevelProto with_pokemon_level = 27;
+	optional WithMaxCpProto with_max_cp = 28;
+	optional WithTempEvoIdProto with_temp_evo_id = 29;
+	optional WithGblRankProto with_gbl_rank = 30;
+	optional WithEncounterTypeProto with_encounter_type = 31;
+	optional WithCombatTypeProto with_combat_type = 32;
+	optional WithItemTypeProto with_item_type = 33;
+	optional WithElapsedTimeProto with_elapsed_time = 34;
+	optional WithFriendLevelProto with_friend_level = 35;
+	optional WithPokemonCpProto with_pokemon_cp = 36;
+	optional WithRaidLocationProto with_raid_location = 37;
+	optional WithFriendsRaidProto with_friends_raid = 38;
+	optional WithPokemonCostumeProto with_pokemon_costume = 39;
 
 	enum ConditionType {
 		UNSET = 0;
@@ -17789,14 +17789,14 @@ message QuestPokemonEncounterProto {
 }
 
 message QuestPreconditionProto {
-		optional string quest_template_id = 2;
-		optional Level level = 3;
-		optional Medal medal = 4;
-		optional Quests quests = 5;
-		optional MonthYearBucket month_year_bucket = 6;
-		optional Group group = 7;
-		optional StorylineProgressConditionProto story_line = 8;
-		optional Team team = 9;
+	optional string quest_template_id = 2;
+	optional Level level = 3;
+	optional Medal medal = 4;
+	optional Quests quests = 5;
+	optional MonthYearBucket month_year_bucket = 6;
+	optional Group group = 7;
+	optional StorylineProgressConditionProto story_line = 8;
+	optional Team team = 9;
 
 	message Team {
 		optional Operator operator = 1;
@@ -17881,20 +17881,20 @@ message QuestProto {
 		BRANCHING_QUEST = 11;
 	}
 
-		optional DailyQuestProto daily_quest = 2;
-		optional MultiPartQuestProto multi_part = 3;
-		optional CatchPokemonQuestProto catch_pokemon = 4;
-		optional AddFriendQuestProto add_friend = 5;
-		optional TradePokemonQuestProto trade_pokemon = 6;
-		optional DailyBuddyAffectionQuestProto daily_buddy_affection = 7;
-		optional QuestWalkProto quest_walk = 8;
-		optional EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;
-		optional GetStardustQuestProto get_stardust = 10;
-		optional MiniCollectionProto mini_collection = 11;
-		optional GeotargetedQuestProto geotargeted_quest = 12;
-		optional BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;
-		optional BattleQuestProto battle = 14;
-		optional TakeSnapshotProto take_snapshot = 15;
+	optional DailyQuestProto daily_quest = 2;
+	optional MultiPartQuestProto multi_part = 3;
+	optional CatchPokemonQuestProto catch_pokemon = 4;
+	optional AddFriendQuestProto add_friend = 5;
+	optional TradePokemonQuestProto trade_pokemon = 6;
+	optional DailyBuddyAffectionQuestProto daily_buddy_affection = 7;
+	optional QuestWalkProto quest_walk = 8;
+	optional EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;
+	optional GetStardustQuestProto get_stardust = 10;
+	optional MiniCollectionProto mini_collection = 11;
+	optional GeotargetedQuestProto geotargeted_quest = 12;
+	optional BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;
+	optional BattleQuestProto battle = 14;
+	optional TakeSnapshotProto take_snapshot = 15;
 
 	enum Status {
 		STATUS_UNDEFINED = 0;
@@ -17936,19 +17936,19 @@ message QuestProto {
 }
 
 message QuestRewardProto {
-		optional int32 exp = 2;
-		optional ItemRewardProto item = 3;
-		optional int32 stardust = 4;
-		optional PokemonCandyRewardProto candy = 5;
-		optional string avatar_template_id = 6;
-		optional string quest_template_id = 7;
-		optional PokemonEncounterRewardProto pokemon_encounter = 8;
-		optional int32 pokecoin = 9;
-		optional PokemonCandyRewardProto xl_candy = 10;
-		optional int32 level_cap = 11;
-		optional StickerRewardProto sticker = 12;
-		optional PokemonCandyRewardProto mega_resource = 13;
-		optional ObQuestRewardIncident incident = 14;
+	optional int32 exp = 2;
+	optional ItemRewardProto item = 3;
+	optional int32 stardust = 4;
+	optional PokemonCandyRewardProto candy = 5;
+	optional string avatar_template_id = 6;
+	optional string quest_template_id = 7;
+	optional PokemonEncounterRewardProto pokemon_encounter = 8;
+	optional int32 pokecoin = 9;
+	optional PokemonCandyRewardProto xl_candy = 10;
+	optional int32 level_cap = 11;
+	optional StickerRewardProto sticker = 12;
+	optional PokemonCandyRewardProto mega_resource = 13;
+	optional ObQuestRewardIncident incident = 14;
 
 	enum Type {
 		UNSET = 0;
@@ -18027,28 +18027,28 @@ message RaidClientLogInfoProto {
 }
 
 message RaidClientLogsProto {
-		optional JoinLobbyDataProto join_lobby_data = 2;
-		optional JoinLobbyResponseDataProto join_lobby_response_data = 3;
-		optional LeaveLobbyDataProto leave_lobby_data = 4;
-		optional LeaveLobbyResponseDataProto leave_lobby_response_data = 5;
-		optional LobbyVisibilityDataProto lobby_visibility_data = 6;
-		optional LobbyVisibilityResponseDataProto lobby_visibility_response_data = 7;
-		optional GetRaidDetailsDataProto get_raid_details_data = 8;
-		optional GetRaidDetailsResponseDataProto get_raid_details_response_data = 9;
-		optional StartRaidBattleDataProto start_raid_battle_data = 10;
-		optional StartRaidBattleResponseDataProto start_raid_battle_response_data = 11;
-		optional AttackRaidDataProto attack_raid_data = 12;
-		optional AttackRaidResponseDataProto attack_raid_response_data = 13;
-		optional SendRaidInvitationDataProto send_raid_invitation_data = 14;
-		optional SendRaidInvitationResponseDataProto send_raid_invitation_response_data = 15;
-		optional OnApplicationFocusDataProto on_application_focus_data = 16;
-		optional OnApplicationPauseDataProto on_application_pause_data = 17;
-		optional OnApplicationQuitDataProto on_application_quit_data = 18;
-		optional ExceptionCaugthDataProto exception_caught_data = 19;
-		optional ProgressTokenDataProto progress_token_data = 20;
-		optional RpcErrorDataProto rpc_error_data = 21;
-		optional ClientPredictionInconsistencyDataProto client_prediction_inconsistency_data = 22;
-		optional RaidEndDataProto raid_end_data = 23;
+	optional JoinLobbyDataProto join_lobby_data = 2;
+	optional JoinLobbyResponseDataProto join_lobby_response_data = 3;
+	optional LeaveLobbyDataProto leave_lobby_data = 4;
+	optional LeaveLobbyResponseDataProto leave_lobby_response_data = 5;
+	optional LobbyVisibilityDataProto lobby_visibility_data = 6;
+	optional LobbyVisibilityResponseDataProto lobby_visibility_response_data = 7;
+	optional GetRaidDetailsDataProto get_raid_details_data = 8;
+	optional GetRaidDetailsResponseDataProto get_raid_details_response_data = 9;
+	optional StartRaidBattleDataProto start_raid_battle_data = 10;
+	optional StartRaidBattleResponseDataProto start_raid_battle_response_data = 11;
+	optional AttackRaidDataProto attack_raid_data = 12;
+	optional AttackRaidResponseDataProto attack_raid_response_data = 13;
+	optional SendRaidInvitationDataProto send_raid_invitation_data = 14;
+	optional SendRaidInvitationResponseDataProto send_raid_invitation_response_data = 15;
+	optional OnApplicationFocusDataProto on_application_focus_data = 16;
+	optional OnApplicationPauseDataProto on_application_pause_data = 17;
+	optional OnApplicationQuitDataProto on_application_quit_data = 18;
+	optional ExceptionCaugthDataProto exception_caught_data = 19;
+	optional ProgressTokenDataProto progress_token_data = 20;
+	optional RpcErrorDataProto rpc_error_data = 21;
+	optional ClientPredictionInconsistencyDataProto client_prediction_inconsistency_data = 22;
+	optional RaidEndDataProto raid_end_data = 23;
 
 	message RaidClientLogInfo {
 		enum LogType {
@@ -18459,8 +18459,8 @@ message ReferContactListFriendResponse {
 }
 
 message ReferralMilestonesProto {
-		optional string referrer_player_id = 3;
-		optional string referee_player_id = 4;
+	optional string referrer_player_id = 3;
+	optional string referee_player_id = 4;
 
 	message MilestoneProto {
 		enum Status {
@@ -18642,9 +18642,9 @@ message RemoveQuestProto {
 }
 
 message ReportAdFeedbackRequest {
-		optional AdFeedbackComplaintReason complaint_reason = 5;
-		optional AdFeedbackNotInterestedReason not_interested_reason = 6;
-		optional AdFeedbackLikeReason like_reason = 7;
+	optional AdFeedbackComplaintReason complaint_reason = 5;
+	optional AdFeedbackNotInterestedReason not_interested_reason = 6;
+	optional AdFeedbackLikeReason like_reason = 7;
 
 	optional string game_id = 1;
 	optional string user_id = 2;
@@ -18663,12 +18663,12 @@ message ReportAdFeedbackResponse {
 }
 
 message ReportAdInteractionProto {
-		optional ViewImpressionInteraction view_impression = 5;
-		optional ViewFullscreenInteraction view_fullscreen = 6;
-		optional FullScreenInteraction fullscreen_interaction = 7;
-		optional CTAClickInteraction cta_clicked = 8;
-		optional AdSpawendInteraction ad_spawned = 9;
-		optional AdDismissedInteraction ad_dismissed = 10;
+	optional ViewImpressionInteraction view_impression = 5;
+	optional ViewFullscreenInteraction view_fullscreen = 6;
+	optional FullScreenInteraction fullscreen_interaction = 7;
+	optional CTAClickInteraction cta_clicked = 8;
+	optional AdSpawendInteraction ad_spawned = 9;
+	optional AdDismissedInteraction ad_dismissed = 10;
 
 	enum AdType {
 		AD_TYPE_UNKNOWN = 0;
@@ -18770,9 +18770,9 @@ message RocketBalloonIncidentDisplayProto {
 }
 
 message RouteActivityRequestProto {
-		optional PokemonTradeRequest pokemon_trade_request = 1;
-		optional PokemonCompareRequest pokemon_compare_request = 2;
-		optional GiftTradeRequest gift_trade_request = 3;
+	optional PokemonTradeRequest pokemon_trade_request = 1;
+	optional PokemonCompareRequest pokemon_compare_request = 2;
+	optional GiftTradeRequest gift_trade_request = 3;
 
 	message GiftTradeRequest {
 	}
@@ -18786,9 +18786,9 @@ message RouteActivityRequestProto {
 }
 
 message RouteActivityResponseProto {
-		optional PokemonTradeResponse pokemon_trade_response = 1;
-		optional PokemonCompareResponse pokemon_compare_response = 2;
-		optional GiftTradeResponse gift_trade_response = 3;
+	optional PokemonTradeResponse pokemon_trade_response = 1;
+	optional PokemonCompareResponse pokemon_compare_response = 2;
+	optional GiftTradeResponse gift_trade_response = 3;
 
 	message GiftTradeResponse {
 	}
@@ -18879,8 +18879,8 @@ message RouteGlobalSettingsProto {
 }
 
 message RouteImageProto {
-		optional string image_id = 1;
-		optional string image_context = 2;
+	optional string image_id = 1;
+	optional string image_context = 2;
 }
 
 message RouteMakerProto {
@@ -20400,15 +20400,15 @@ message TodayViewProto {
 }
 
 message TodayViewSectionProto {
-		optional PokecoinSectionProto pokecoin = 1;
-		optional GymPokemonSectionProto gym_pokemon = 2;
-		optional DailyStreaksProto streaks = 3;
-		optional EventSectionProto event = 4;
-		optional UpNextSectionProto up_next = 5;
-		optional TimedQuestSectionProto timed_quest = 6;
-		optional EventBannerSectionProto event_banner = 7;
-		optional TimedGroupChallengeSectionProto timed_group_challenge = 8;
-		optional MiniCollectionSectionProto mini_collection = 9;
+	optional PokecoinSectionProto pokecoin = 1;
+	optional GymPokemonSectionProto gym_pokemon = 2;
+	optional DailyStreaksProto streaks = 3;
+	optional EventSectionProto event = 4;
+	optional UpNextSectionProto up_next = 5;
+	optional TimedQuestSectionProto timed_quest = 6;
+	optional EventBannerSectionProto event_banner = 7;
+	optional TimedGroupChallengeSectionProto timed_group_challenge = 8;
+	optional MiniCollectionSectionProto mini_collection = 9;
 }
 
 message Topic {
@@ -21009,8 +21009,8 @@ message UpsightLoggingSettingsProto {
 }
 
 message Upstream {
-		optional SubscriptionRequest subscribe = 3;
-		optional ProbeResponse probe = 4;
+	optional SubscriptionRequest subscribe = 3;
+	optional ProbeResponse probe = 4;
 
 	message ProbeResponse {
 		optional int64 probe_start_ms = 1;
@@ -21391,11 +21391,11 @@ message VsSeekerCreateDetail {
 
 message VsSeekerLootProto {
 	message RewardProto {
-			optional LootItemProto item = 1;
-			optional bool pokemon_reward = 2;
-			optional bool item_loot_table = 3;
-			optional int32 item_loot_table_count = 4;
-			optional int32 item_ranking_loot_table_count = 5;
+		optional LootItemProto item = 1;
+		optional bool pokemon_reward = 2;
+		optional bool item_loot_table = 3;
+		optional int32 item_loot_table_count = 4;
+		optional int32 item_ranking_loot_table_count = 5;
 	}
 
 	optional int32 rank_level = 1;
@@ -21405,14 +21405,14 @@ message VsSeekerLootProto {
 
 message VsSeekerPokemonRewardsProto {
 	message OverrideIvRangeProto {
-			optional RangeProto range = 1;
-			optional bool zero = 2;
+		optional RangeProto range = 1;
+		optional bool zero = 2;
 	}
 
 	message PokemonUnlockProto {
-			optional PokemonEncounterRewardProto pokemon = 1;
-			optional LimitedEditionPokemonEncounterRewardProto limited_pokemon_reward = 2;
-			optional LimitedEditionPokemonEncounterRewardProto guaranteed_limited_pokemon_reward = 3;
+		optional PokemonEncounterRewardProto pokemon = 1;
+		optional LimitedEditionPokemonEncounterRewardProto limited_pokemon_reward = 2;
+		optional LimitedEditionPokemonEncounterRewardProto guaranteed_limited_pokemon_reward = 3;
 
 		optional int32 unlocked_at_rank = 4;
 		optional float weight = 5;
@@ -21736,8 +21736,8 @@ message WithTempEvoIdProto {
 }
 
 message WithThrowTypeProto {
-		optional HoloActivityType throw_type = 1;
-		optional bool hit = 2;
+	optional HoloActivityType throw_type = 1;
+	optional bool hit = 2;
 }
 
 message WithUniquePokemonProto {
