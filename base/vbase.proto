@@ -8516,7 +8516,7 @@ message EggDistributionProto {
 	repeated EggDistributionEntryProto egg_distribution = 1;
 }
 
-message EggHatchImprovementSettings {
+message EggHatchImprovementsSettings {
 	bool feature_enabled = 1;
 	int32 egg_hatch_animation_delay_ms = 2;
 	int32 egg_hatch_animation_interuption_delay_ms = 3;
@@ -9629,7 +9629,7 @@ message GameMasterClientTemplateProto {
 	PushGatewaySettings push_gateway_settings = 127;
 	UsernameSuggestionSettings username_suggestion_settings = 128;
 	TutorialsSettings tutorials_settings = 129;
-	EggHatchImprovementSettings egg_hatch_improvement_settings = 130;
+	EggHatchImprovementsSettings egg_hatch_improvements_settings = 130;
 	INPCCMJIOIL pabonknmdlk = 131;
 	BHILFPNBKEH ceeignamhnf = 132;
 	CLOGIAFCLLK dchlnpkoncg = 133;
@@ -17214,8 +17214,8 @@ message PotionAttributesProto {
 }
 
 message PowerUpPokestopSharedSettings {
-	bool ob_enabled = 1;
-	int32 ob_int32 = 2;
+	bool feature_enabled = 1;
+	int32 min_player_level_for_scanning = 2;
 	float points_multiplier = 3;
 }
 

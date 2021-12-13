@@ -22,7 +22,7 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 message PowerUpPokestopSharedSettings {
-	bool ob_enabled = 1;
-	int32 ob_int32 = 2;
+	bool feature_enabled = 1;
+	int32 min_player_level_for_scanning = 2;
 	float points_multiplier = 3;
 }
