@@ -21,7 +21,6 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message BHILFPNBKEH {
-	bool kbmiacbanmi = 1;
-	int32 pinfkooalcg = 2;
+message PostcardCollectionSettings {
+	bool enabled = 1;
 }

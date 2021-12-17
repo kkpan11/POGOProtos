@@ -21,6 +21,7 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message PHHLLJPIKFF {
-	bool dbpgcjbelja = 1;
+message SurveySettings {
+	bool ob_survey_settings_bool = 1;
+	int32 ob_survey_settings_int32 = 2;
 }

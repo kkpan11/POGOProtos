@@ -644,6 +644,13 @@ digest {
   size: 10411
 }
 digest {
+  asset_id: "06c41604-d38c-43fd-8efc-32a15257f727/1639509597974864"
+  bundle_name: "f_hat_greencoat_00_bundle_icon"
+  version: 1639509597974864
+  checksum: 3064351556
+  size: 11038
+}
+digest {
   asset_id: "06d008d7-8374-4c86-bf86-c29fe2ccb095/1616692827969255"
   bundle_name: "pm0331_00"
   version: 1616692827969255
@@ -955,6 +962,13 @@ digest {
   size: 171613
 }
 digest {
+  asset_id: "0962e778-caae-4e71-9ba3-69110fac420c/1639100826445470"
+  bundle_name: "f_hat_verizon2021_bundle"
+  version: 1639100826445470
+  checksum: 843432089
+  size: 165847
+}
+digest {
   asset_id: "0970696c-8a12-497e-9e3d-f294e17ff59e/1616697409491839"
   bundle_name: "pm0701_00"
   version: 1616697409491839
@@ -1184,6 +1198,13 @@ digest {
   version: 1616689892420000
   checksum: 2985159264
   size: 342601
+}
+digest {
+  asset_id: "0b1c1fc2-dd31-4dbb-a7ec-47c868547106/1639509588983422"
+  bundle_name: "m_hat_greencoat_00_bundle_icon"
+  version: 1639509588983422
+  checksum: 1706926399
+  size: 10779
 }
 digest {
   asset_id: "0b250fb5-daf4-47a4-8452-e039bd16613b/1616631858744919"
@@ -1516,6 +1537,13 @@ digest {
   version: 1616689861805661
   checksum: 3216902437
   size: 430115
+}
+digest {
+  asset_id: "0e1daea3-d762-4491-afb8-ced5ab36ab6c/1639100825004234"
+  bundle_name: "m_hat_verizon2021_bundle"
+  version: 1639100825004234
+  checksum: 744432201
+  size: 157770
 }
 digest {
   asset_id: "0e285241-cdd9-4fea-92cc-d0701a278517/1622156594023879"
@@ -1866,11 +1894,11 @@ digest {
   size: 9499
 }
 digest {
-  asset_id: "115dc97f-358a-4c45-8ac1-e20e4821f609/1638861834805509"
+  asset_id: "115dc97f-358a-4c45-8ac1-e20e4821f609/1639728313384991"
   bundle_name: "json_patch_i18n_russian"
-  version: 1638861834805509
-  checksum: 2215012031
-  size: 27778
+  version: 1639728313384991
+  checksum: 2212752199
+  size: 24341
 }
 digest {
   asset_id: "11616b6c-6439-4fab-868d-d6795c6e9162/1616639682677249"
@@ -2736,11 +2764,11 @@ digest {
   size: 5310
 }
 digest {
-  asset_id: "1bb14249-cfa4-44d4-a0d6-1c58e8261650/1638861823364448"
+  asset_id: "1bb14249-cfa4-44d4-a0d6-1c58e8261650/1639728301821845"
   bundle_name: "json_patch_i18n_italian"
-  version: 1638861823364448
-  checksum: 925232905
-  size: 18364
+  version: 1639728301821845
+  checksum: 3156443213
+  size: 17424
 }
 digest {
   asset_id: "1bbc5eec-7ce1-4649-8e00-dce0ed5864fc/1616622439114263"
@@ -3231,6 +3259,13 @@ digest {
   version: 1616632693814306
   checksum: 1336653252
   size: 12220
+}
+digest {
+  asset_id: "1f85f246-012d-4a69-80d9-e9aea0bec5f0/1639509582342175"
+  bundle_name: "f_hat_greencoat_bundle"
+  version: 1639509582342175
+  checksum: 2325362868
+  size: 169048
 }
 digest {
   asset_id: "1f878f93-fcb7-4316-9a38-060076488aa2/1616694906581338"
@@ -3929,6 +3964,13 @@ digest {
   size: 107877
 }
 digest {
+  asset_id: "2743b4c2-a1d2-4497-a0bd-b2109757fcfe/1639509595839544"
+  bundle_name: "m_shirt_greencoat_bundle"
+  version: 1639509595839544
+  checksum: 365713984
+  size: 303277
+}
+digest {
   asset_id: "274674b8-c6e9-4211-9fae-11512cca7579/1535761542532460"
   bundle_name: "i18n_feature-quests"
   version: 1535761542532460
@@ -4310,11 +4352,11 @@ digest {
   key: "\374Q\005\356\025\014\363\231\203\303hC\353\265\235I"
 }
 digest {
-  asset_id: "2b58a4ea-6704-4b59-baa3-93d3322eb74d/1638861819775685"
+  asset_id: "2b58a4ea-6704-4b59-baa3-93d3322eb74d/1639728297964186"
   bundle_name: "json_patch_i18n_german"
-  version: 1638861819775685
-  checksum: 922638544
-  size: 19679
+  version: 1639728297964186
+  checksum: 2507427750
+  size: 18578
 }
 digest {
   asset_id: "2b62593e-546c-4844-ab6d-d5b8c0f5fbea/1616644561055323"
@@ -5694,6 +5736,13 @@ digest {
   size: 307841
 }
 digest {
+  asset_id: "3b6a05b6-446c-4a65-a971-eaa33de2cf4c/1639509587940164"
+  bundle_name: "m_pants_greencoat_00_bundle_icon"
+  version: 1639509587940164
+  checksum: 3790988449
+  size: 9534
+}
+digest {
   asset_id: "3b76f46c-c07e-4866-ae08-d3cf4ea9bbc8/1616632100262212"
   bundle_name: "pokemon_icon_014"
   version: 1616632100262212
@@ -5936,11 +5985,11 @@ digest {
   size: 10300
 }
 digest {
-  asset_id: "3d93143b-a6da-43a5-95c4-153d6045925e/1638861804921225"
+  asset_id: "3d93143b-a6da-43a5-95c4-153d6045925e/1639728280392168"
   bundle_name: "json_patch_i18n_brazilianportuguese"
-  version: 1638861804921225
-  checksum: 3989691884
-  size: 18690
+  version: 1639728280392168
+  checksum: 4234929304
+  size: 17371
 }
 digest {
   asset_id: "3da83d1a-267a-4f63-9854-420c6f75b881/1616639619237986"
@@ -6799,6 +6848,13 @@ digest {
   size: 517274
 }
 digest {
+  asset_id: "46baf2ef-6e25-4be9-8371-b36a2e3572cc/1639509591731840"
+  bundle_name: "f_shirt_greencoat_bundle"
+  version: 1639509591731840
+  checksum: 1093547930
+  size: 312623
+}
+digest {
   asset_id: "46cd0445-ae85-4881-8ccc-a5699978ade5/1616641240830466"
   bundle_name: "lure_item_troy_disk_mossy.bundle"
   version: 1616641240830466
@@ -6918,11 +6974,11 @@ digest {
   size: 10233
 }
 digest {
-  asset_id: "4894c86c-9a45-4814-9215-0a92968690f7/1638861826947100"
+  asset_id: "4894c86c-9a45-4814-9215-0a92968690f7/1639728305652151"
   bundle_name: "json_patch_i18n_japanese"
-  version: 1638861826947100
-  checksum: 34041839
-  size: 17782
+  version: 1639728305652151
+  checksum: 1377784660
+  size: 16528
 }
 digest {
   asset_id: "489e8bc1-e751-473f-8ff8-7729dd807d8c/1616623103984061"
@@ -7162,6 +7218,13 @@ digest {
   version: 1616622981998134
   checksum: 3261396630
   size: 11016
+}
+digest {
+  asset_id: "4b86ae84-ab0f-4359-9189-705dd89b54cb/1639509593731653"
+  bundle_name: "m_hat_greencoat_bundle"
+  version: 1639509593731653
+  checksum: 2268062280
+  size: 181881
 }
 digest {
   asset_id: "4bbe77e4-6fcd-494a-8b2d-15c20d7b4765/1616622742106316"
@@ -8159,6 +8222,13 @@ digest {
   size: 15998
 }
 digest {
+  asset_id: "54092348-7844-48d3-a463-63c3da820970/1639100831018765"
+  bundle_name: "f_hat_verizon2021_00_bundle_icon"
+  version: 1639100831018765
+  checksum: 2488481042
+  size: 7934
+}
+digest {
   asset_id: "5416a64b-86cc-4dd3-8aba-264fb0e52cbc/1616632703980737"
   bundle_name: "pokemon_icon_060"
   version: 1616632703980737
@@ -9012,6 +9082,13 @@ digest {
   size: 8867
 }
 digest {
+  asset_id: "5d740b77-5a1f-4b96-971b-9d5bf0a2ce44/1639100830057465"
+  bundle_name: "m_hat_verizon2021_00_bundle_icon"
+  version: 1639100830057465
+  checksum: 3456105322
+  size: 7810
+}
+digest {
   asset_id: "5d994212-6c93-428f-a6c3-270f8c0dee77/1616622275633013"
   bundle_name: "m_pants_bwn_00_bundle_icon"
   version: 1616622275633013
@@ -9561,6 +9638,13 @@ digest {
   size: 11292
 }
 digest {
+  asset_id: "6361dc39-a5e9-47ca-9094-9a017e21d763/1639100832299578"
+  bundle_name: "f_backpack_verizon2021_bundle"
+  version: 1639100832299578
+  checksum: 2170150082
+  size: 143506
+}
+digest {
   asset_id: "63623747-246b-4719-8f2c-66dbc255059e/1616622063499720"
   bundle_name: "m_hat_teamleadercap_0_bundle_icon"
   version: 1616622063499720
@@ -9575,11 +9659,11 @@ digest {
   size: 42069
 }
 digest {
-  asset_id: "636575d6-7213-4ffc-88e8-5f125e7112d6/1638861808666909"
+  asset_id: "636575d6-7213-4ffc-88e8-5f125e7112d6/1639728285216942"
   bundle_name: "json_patch_i18n_chinesetraditional"
-  version: 1638861808666909
-  checksum: 2377753313
-  size: 19295
+  version: 1639728285216942
+  checksum: 1656092774
+  size: 17277
 }
 digest {
   asset_id: "636a2145-97ff-494c-96ba-1e1f839a5173/1622156537281446"
@@ -10176,6 +10260,13 @@ digest {
   size: 7296
 }
 digest {
+  asset_id: "683ccaca-da12-4a1e-9671-84ac686fcf9c/1639509589953615"
+  bundle_name: "m_shirt_greencoat_00_bundle_icon"
+  version: 1639509589953615
+  checksum: 1789618120
+  size: 15466
+}
+digest {
   asset_id: "6858c3d3-eedb-4877-b01a-e585a467ec8e/1616622204149248"
   bundle_name: "m_hat_drifloon_bundle"
   version: 1616622204149248
@@ -10223,6 +10314,13 @@ digest {
   version: 1616622248191980
   checksum: 1789341519
   size: 12089
+}
+digest {
+  asset_id: "68aa4baf-4543-433e-b933-f9eb7798da34/1639100833357168"
+  bundle_name: "f_backpack_verizon2021_00_bundle_icon"
+  version: 1639100833357168
+  checksum: 3550897691
+  size: 13627
 }
 digest {
   asset_id: "68c41cad-ae0d-4409-b7dd-8f379c9ccb47/1616644462628485"
@@ -10508,11 +10606,11 @@ digest {
   size: 814561
 }
 digest {
-  asset_id: "6b8f3fef-4233-45f7-9395-39f56e0912e1/1638861842108310"
+  asset_id: "6b8f3fef-4233-45f7-9395-39f56e0912e1/1639728320822795"
   bundle_name: "json_patch_i18n_thai"
-  version: 1638861842108310
-  checksum: 2483683305
-  size: 22425
+  version: 1639728320822795
+  checksum: 2605146602
+  size: 20335
 }
 digest {
   asset_id: "6bab0511-7fd0-4e48-851c-1ba9a8c0e2f9/1616623917520435"
@@ -11073,6 +11171,13 @@ digest {
   version: 1616622869931627
   checksum: 511133411
   size: 223377
+}
+digest {
+  asset_id: "7104898d-c23a-49f9-b231-1bb6abd2f971/1639509597048416"
+  bundle_name: "f_shirt_greencoat_00_bundle_icon"
+  version: 1639509597048416
+  checksum: 894127048
+  size: 16152
 }
 digest {
   asset_id: "71107da4-13f1-46aa-8788-351f2390c7e2/1616623302196209"
@@ -14481,6 +14586,13 @@ digest {
   size: 16092
 }
 digest {
+  asset_id: "9212a866-e414-432a-bcc5-24a717458ca1/1639509586649519"
+  bundle_name: "m_pants_greencoat_bundle"
+  version: 1639509586649519
+  checksum: 3770470322
+  size: 210651
+}
+digest {
   asset_id: "921f99ee-ad24-41e6-8a43-7414baf7f568/1616631968194100"
   bundle_name: "pokemon_icon_081"
   version: 1616631968194100
@@ -16201,11 +16313,11 @@ digest {
   size: 8821
 }
 digest {
-  asset_id: "a381995c-f9ca-4de5-93db-38159a7d032c/1638861838430760"
+  asset_id: "a381995c-f9ca-4de5-93db-38159a7d032c/1639728317150073"
   bundle_name: "json_patch_i18n_spanish"
-  version: 1638861838430760
-  checksum: 1500578393
-  size: 18180
+  version: 1639728317150073
+  checksum: 3064845863
+  size: 18014
 }
 digest {
   asset_id: "a3880a65-ed02-4d13-a333-cb71a7226cb0/1616622633691673"
@@ -18347,6 +18459,13 @@ digest {
   size: 18271
 }
 digest {
+  asset_id: "b854c912-28fa-41f5-901b-d740c9df6cb4/1639100827546285"
+  bundle_name: "m_backpack_verizon2021_00_bundle_icon"
+  version: 1639100827546285
+  checksum: 2514382744
+  size: 12309
+}
+digest {
   asset_id: "b859a01b-2a3d-4cc6-b2d5-80c910b8d772/1616622367718860"
   bundle_name: "m_pants_casual_1_bundle"
   version: 1616622367718860
@@ -20457,11 +20576,11 @@ digest {
   size: 441419
 }
 digest {
-  asset_id: "cd53a84f-5c55-4563-84b3-edda474e01f1/1638861812300583"
+  asset_id: "cd53a84f-5c55-4563-84b3-edda474e01f1/1639728290303579"
   bundle_name: "json_patch_i18n_english"
-  version: 1638861812300583
-  checksum: 1164275792
-  size: 14922
+  version: 1639728290303579
+  checksum: 407329507
+  size: 15903
 }
 digest {
   asset_id: "cd6505ba-8c14-49d2-9bb8-2b8840b60f6a/1616632654516245"
@@ -22001,11 +22120,11 @@ digest {
   size: 7664
 }
 digest {
-  asset_id: "dccbb419-951a-4bf9-8448-8a32e5bae6d1/1638861830537520"
+  asset_id: "dccbb419-951a-4bf9-8448-8a32e5bae6d1/1639728309395413"
   bundle_name: "json_patch_i18n_korean"
-  version: 1638861830537520
-  checksum: 2285402483
-  size: 19054
+  version: 1639728309395413
+  checksum: 3776469207
+  size: 17604
 }
 digest {
   asset_id: "dcd89218-66fa-4ea3-a549-7d49df98b5d1/1512759924956220"
@@ -23219,6 +23338,13 @@ digest {
   size: 180330
 }
 digest {
+  asset_id: "e84f65df-e779-40eb-b8e5-73be421ad704/1639509583852213"
+  bundle_name: "f_pants_greencoat_00_bundle_icon"
+  version: 1639509583852213
+  checksum: 4046730416
+  size: 9016
+}
+digest {
   asset_id: "e8559c14-17d5-48ec-9efb-33234f0a02a7/1616623769972941"
   bundle_name: "m_shirt_latias_latios_bundle"
   version: 1616623769972941
@@ -24302,6 +24428,13 @@ digest {
   size: 19163
 }
 digest {
+  asset_id: "f2f8df00-124e-4595-a2d3-e3818baa5c38/1639509585104405"
+  bundle_name: "f_pants_greencoat_bundle"
+  version: 1639509585104405
+  checksum: 282835439
+  size: 215347
+}
+digest {
   asset_id: "f2fdb9c0-213c-486f-8295-5e54a65f64b4/1622156538400200"
   bundle_name: "f_hat_korrina_00_bundle_icon"
   version: 1622156538400200
@@ -24526,6 +24659,13 @@ digest {
   version: 1616623765260690
   checksum: 2294870310
   size: 257518
+}
+digest {
+  asset_id: "f54d325e-c76b-4663-a8a1-477815fc2efc/1639100828563222"
+  bundle_name: "m_backpack_verizon2021_bundle"
+  version: 1639100828563222
+  checksum: 2550395467
+  size: 147189
 }
 digest {
   asset_id: "f563871a-6e37-47e7-a7f5-777e3c0e6fc4/1616632406797278"
@@ -24844,11 +24984,11 @@ digest {
   size: 9629
 }
 digest {
-  asset_id: "f81c317b-b38c-454e-ac41-b716acec654f/1638861815980890"
+  asset_id: "f81c317b-b38c-454e-ac41-b716acec654f/1639728294058258"
   bundle_name: "json_patch_i18n_french"
-  version: 1638861815980890
-  checksum: 3286519524
-  size: 19128
+  version: 1639728294058258
+  checksum: 1557088885
+  size: 17905
 }
 digest {
   asset_id: "f826a71a-90f8-46c9-a731-f05a07d215ef/1616623200692894"
@@ -25660,4 +25800,4 @@ digest {
   checksum: 2527820101
   size: 1240971
 }
-timestamp: 1638861842108310
+timestamp: 1639728320822795

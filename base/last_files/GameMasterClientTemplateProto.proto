@@ -143,9 +143,9 @@ import "UsernameSuggestionSettings.proto";
 import "TutorialsSettings.proto";
 import "EggHatchImprovementsSettings.proto";
 import "INPCCMJIOIL.proto";
-import "BHILFPNBKEH.proto";
+import "SurveySettings.proto";
 import "CLOGIAFCLLK.proto";
-import "PHHLLJPIKFF.proto";
+import "PostcardCollectionSettings.proto";
 import "CBBODOBAAHL.proto";
 
 message GameMasterClientTemplateProto {
@@ -272,8 +272,8 @@ message GameMasterClientTemplateProto {
 	TutorialsSettings tutorials_settings = 129;
 	EggHatchImprovementsSettings egg_hatch_improvements_settings = 130;
 	INPCCMJIOIL pabonknmdlk = 131;
-	BHILFPNBKEH ceeignamhnf = 132;
+	SurveySettings survey_settings = 132;
 	CLOGIAFCLLK dchlnpkoncg = 133;
-	PHHLLJPIKFF oduitnduitf = 134;
+	PostcardCollectionSettings postcard_collection_settings = 134;
 	CBBODOBAAHL mjphmhnnbjd = 135;
 }

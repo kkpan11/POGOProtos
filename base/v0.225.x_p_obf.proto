@@ -4813,11 +4813,6 @@ message BGKKLOOPJCK {
 	repeated KNKEMDEFAGP faaccbfdmli = 1;
 }
 
-message BHILFPNBKEH {
-	bool kbmiacbanmi = 1;
-	int32 pinfkooalcg = 2;
-}
-
 message BHLGLHLONNN {
 	AttackRaidBattleOutProto.Result result = 1;
 	BattleLogProto.State kmpndococna = 2;
@@ -8041,7 +8036,7 @@ message EggCreateDetail {
 	int64 ipcjchhkfmp = 3;
 }
 
-message EggHatchImprovementSettings {
+message EggHatchImprovementsSettings {
 	bool kbmiacbanmi = 1;
 	int32 ioknpjflonc = 2;
 	int32 djdkapjgcik = 3;
@@ -9257,11 +9252,11 @@ message GameMasterClientTemplateProto {
 	PushGatewaySettings push_gateway_settings = 127;
 	UsernameSuggestionSettings username_suggestion_settings = 128;
 	TutorialsSettings tutorials_settings = 129;
-	EggHatchImprovementSettings egg_hatch_improvement_settings = 130;
+	EggHatchImprovementsSettings egg_hatch_improvements_settings = 130;
 	DNPIEJOOHGL nhlhjicbmpn = 131;
-	BHILFPNBKEH ceeignamhnf = 132;
+	SurveySettings survey_settings = 132;
 	CLOGIAFCLLK dchlnpkoncg = 133;
-	PHHLLJPIKFF ob_new_global_setting_3 = 134;
+	PostcardCollectionSettings postcard_collection_settings = 134;
 	CBBODOBAAHL mjphmhnnbjd = 135;
 }
 
@@ -14300,10 +14295,6 @@ message PHCCCGJJGCN {
 	string ponalmipafl = 3;
 }
 
-message PHHLLJPIKFF {
-	bool dbpgcjbelja = 1;
-}
-
 message PIAGNGNJBPF {
 	enum HGNHLFLEHEC {
 		NO_EXCEPTION = 0;
@@ -17724,6 +17715,10 @@ message PostcardBookTelemetry {
 	AANIALAHDCO ehghmllhjjh = 1;
 }
 
+message PostcardCollectionSettings {
+	bool dbpgcjbelja = 1;
+}
+
 message PowerUpPokestopSharedSettings {
 	bool eofmamdpfjn = 1;
 	int32 pmogobcemdi = 2;
@@ -19859,6 +19854,11 @@ message SubmitSponsorPoiReportProto {
 
 message SuperAwesomeTokenProto {
 	string token = 1;
+}
+
+message SurveySettings {
+	bool kbmiacbanmi = 1;
+	int32 pinfkooalcg = 2;
 }
 
 message SyncContactListRequest {

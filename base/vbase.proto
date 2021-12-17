@@ -5515,11 +5515,6 @@ message AwardedRouteBadge {
 	repeated RouteBadgeWaypoint last_played_waypoints = 11;
 }
 
-message BHILFPNBKEH {
-	bool kbmiacbanmi = 1;
-	int32 pinfkooalcg = 2;
-}
-
 message BackgroundModeGlobalSettingsProto {
 	uint32 min_player_level_fitness = 1;
 	int64 service_prompt_timestamp_ms = 2;
@@ -9631,9 +9626,9 @@ message GameMasterClientTemplateProto {
 	TutorialsSettings tutorials_settings = 129;
 	EggHatchImprovementsSettings egg_hatch_improvements_settings = 130;
 	INPCCMJIOIL pabonknmdlk = 131;
-	BHILFPNBKEH ceeignamhnf = 132;
+	SurveySettings survey_settings = 132;
 	CLOGIAFCLLK dchlnpkoncg = 133;
-	PHHLLJPIKFF oduitnduitf = 134;
+	PostcardCollectionSettings postcard_collection_settings = 134;
 	CBBODOBAAHL mjphmhnnbjd = 135;
 }
 
@@ -12106,8 +12101,8 @@ message InventorySettingsProto {
 	int32 special_egg_overflow_spots = 11;
 	bool enable_overflow_spot_sliding = 12;
 	bool enable_raid_pass_overflow = 13;
-	int32 ob_int32_1 = 14;
-	int32 ob_int32_2 = 15;
+	int32 base_postcard_storage = 14;
+	int32 max_postcard_storage = 15;
 }
 
 message InventoryUpgradeAttributesProto {
@@ -13744,10 +13739,6 @@ message OutgoingFriendInviteProto {
 	string player_id = 2;
 	int64 created_ms = 3;
 	string full_name = 4;
-}
-
-message PHHLLJPIKFF {
-	bool dbpgcjbelja = 1;
 }
 
 message ParticipationProto {
@@ -17189,6 +17180,10 @@ message PostcardBookTelemetry {
 	Status status = 1;
 }
 
+message PostcardCollectionSettings {
+	bool enabled = 1;
+}
+
 message PostcardDisplayProto {
 	string ob_string_1 = 1;
 	string ob_string_2 = 2;
@@ -20218,6 +20213,11 @@ message SubmitSponsorPoiReportProto {
 
 message SuperAwesomeTokenProto {
 	string token = 1;
+}
+
+message SurveySettings {
+	bool ob_survey_settings_bool = 1;
+	int32 ob_survey_settings_int32 = 2;
 }
 
 message SyncContactListRequest {
