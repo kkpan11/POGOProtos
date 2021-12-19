@@ -147,6 +147,7 @@ import "SurveySettings.proto";
 import "CLOGIAFCLLK.proto";
 import "PostcardCollectionSettings.proto";
 import "CBBODOBAAHL.proto";
+import "LALAOGOEBFM.proto";
 
 message GameMasterClientTemplateProto {
 	string template_id = 1;
@@ -276,4 +277,5 @@ message GameMasterClientTemplateProto {
 	CLOGIAFCLLK dchlnpkoncg = 133;
 	PostcardCollectionSettings postcard_collection_settings = 134;
 	CBBODOBAAHL mjphmhnnbjd = 135;
+	LALAOGOEBFM ddcpoohfmkh = 136;
 }

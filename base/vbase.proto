@@ -3491,6 +3491,7 @@ enum Method {
 	METHOD_GET_MEMENTO_LIST = 1913;
 	METHOD_UPLOAD_RAID_CLIENT_LOG = 1914;
 	METHOD_SKIP_ENTER_REFERRAL_CODE = 1915;
+	METHOD_UPLOAD_COMBAT_CLIENT_LOG = 1916;
 }
 
 enum NewsPageTelemetryIds {
@@ -8671,6 +8672,7 @@ message EnumWrapper {
 		GRUNTBF = 7;
 		GRUNTBM = 8;
 		EVENT_NPC = 9;
+		PLAYER_TEAM_LEADER = 10;
 	}
 
 	enum InvasionCharacter {
@@ -9630,6 +9632,7 @@ message GameMasterClientTemplateProto {
 	CLOGIAFCLLK dchlnpkoncg = 133;
 	PostcardCollectionSettings postcard_collection_settings = 134;
 	CBBODOBAAHL mjphmhnnbjd = 135;
+	LALAOGOEBFM ddcpoohfmkh = 136;
 }
 
 message GameMasterLocalProto {
@@ -12347,6 +12350,21 @@ message KoalaSettingsProto {
 	string app_id = 1;
 	bool use_sandbox = 2;
 	bool use_koala = 3;
+}
+
+message LALAOGOEBFM {
+	bool glklpmebiof = 1;
+	bool fbmlmgniaba = 2;
+	bool konjbbmccfd = 3;
+	bool dngemmbnnib = 4;
+	bool hgjmonehnpo = 5;
+	bool nlcaflfjeka = 6;
+	bool imkpniglgdd = 7;
+	bool igmebkjhiil = 8;
+	bool dfmklcbkeng = 9;
+	int32 jjcigmphfgo = 10;
+	bool labfhmhegdo = 11;
+	int32 gjnpmicjpmd = 12;
 }
 
 message Label {
@@ -17333,15 +17351,57 @@ message ProgressRouteProto {
 }
 
 message ProgressTokenDataProto {
+	enum MapExploreStateFunction {
+		NONE_MAP_EXPLORE_STATE = 0;
+		GYM_ROOT_COMPLETE = 1;
+	}
+
+	enum GymRootControllerFunction {
+		NONE_GYM_GYM_ROOT_CONTROLLER = 0;
+		EXIT_GYM_GYM_ROOT_CONTROLLER = 1;
+	}
+
+	enum RaidResolveStateFunction {
+		NONE_RAID_RESOLVE_STATE = 0;
+		ENTER_RAID_RESOLVE_STATE = 1;
+		EXIT_RAID_RESOLVE_STATE = 2;
+		INIT_RAID_RESOLVE_STATE = 3;
+	}
+
 	enum RaidStateFunction {
 		NONE_RAID_STATE = 0;
 		EXIT_GYM_RAID_STATE = 1;
 	}
 
-	enum RaidResolveUicontrollerFunction {
-		NONE_RAID_RESOLVE_UI_CONTROLLER = 0;
-		INIT_RAID_RESOLVE_UI_CONTROLLER = 1;
-		CLOSE_RAID_RESOLVE_UI_CONTROLLER = 2;
+	enum RaidBattleStateFunction {
+		NONE_RAID_BATTLE_STATE = 0;
+		ENTER_RAID_BATTLE_STATE = 1;
+		EXIT_RAID_BATTLE_STATE = 2;
+		OBSERVE_BATTLE_FRAMES = 3;
+		START_RAID_BATTLE = 4;
+		START_RAID_BATTLE_WHEN_READY = 5;
+		END_BATTLE_WHEN_READY = 6;
+	}
+
+	enum RaidLobbyGuiControllerFunction {
+		NONE_RAID_LOBBY_GUI_CONTROLLER = 0;
+		INIT_RAID_LOBBY_GUI_CONTROLLER = 1;
+		SET_DEPENDANT_VISUALS = 2;
+		START_LOBBY_INTRO = 3;
+		LOBBY_INTRO = 4;
+		ON_LOBBY_INTRO_COMPLETE = 5;
+		SHOW_BATTLE_PREP_GUI = 6;
+		HANDLE_DISMISS_COMPLETE = 7;
+		START_TIMEOUT_SCREEN = 8;
+		REJOIN_BATTLE = 9;
+		UPDATE_AVATARS = 10;
+		START_POLLING_GET_RAID_DETAILS = 11;
+		PLAY_BATTLE_INTRO = 12;
+		LEAVE_LOBBY = 13;
+		ON_POKEMON_INVENTORY_OPENED = 14;
+		ON_CLICK_INVENTORY = 15;
+		ON_TAP = 16;
+		HANDLE_RAID_BATTLE_COMPLETE = 17;
 	}
 
 	enum RaidLobbyStateFunction {
@@ -17366,60 +17426,18 @@ message ProgressTokenDataProto {
 		MapExploreStateFunction map_explore_state_function = 10;
 	}
 
-	enum RaidResolveStateFunction {
-		NONE_RAID_RESOLVE_STATE = 0;
-		ENTER_RAID_RESOLVE_STATE = 1;
-		EXIT_RAID_RESOLVE_STATE = 2;
-		INIT_RAID_RESOLVE_STATE = 3;
-	}
-
-	enum MapExploreStateFunction {
-		NONE_MAP_EXPLORE_STATE = 0;
-		GYM_ROOT_COMPLETE = 1;
-	}
-
-	enum GymRootControllerFunction {
-		NONE_GYM_GYM_ROOT_CONTROLLER = 0;
-		EXIT_GYM_GYM_ROOT_CONTROLLER = 1;
-	}
-
-	enum RaidLobbyGuiControllerFunction {
-		NONE_RAID_LOBBY_GUI_CONTROLLER = 0;
-		INIT_RAID_LOBBY_GUI_CONTROLLER = 1;
-		SET_DEPENDANT_VISUALS = 2;
-		START_LOBBY_INTRO = 3;
-		LOBBY_INTRO = 4;
-		ON_LOBBY_INTRO_COMPLETE = 5;
-		SHOW_BATTLE_PREP_GUI = 6;
-		HANDLE_DISMISS_COMPLETE = 7;
-		START_TIMEOUT_SCREEN = 8;
-		REJOIN_BATTLE = 9;
-		UPDATE_AVATARS = 10;
-		START_POLLING_GET_RAID_DETAILS = 11;
-		PLAY_BATTLE_INTRO = 12;
-		LEAVE_LOBBY = 13;
-		ON_POKEMON_INVENTORY_OPENED = 14;
-		ON_CLICK_INVENTORY = 15;
-		ON_TAP = 16;
-		HANDLE_RAID_BATTLE_COMPLETE = 17;
-	}
-
-	enum RaidBattleStateFunction {
-		NONE_RAID_BATTLE_STATE = 0;
-		ENTER_RAID_BATTLE_STATE = 1;
-		EXIT_RAID_BATTLE_STATE = 2;
-		OBSERVE_BATTLE_FRAMES = 3;
-		START_RAID_BATTLE = 4;
-		START_RAID_BATTLE_WHEN_READY = 5;
-		END_BATTLE_WHEN_READY = 6;
-	}
-
 	enum EncounterStateFunction {
 		NONE_ENCOUNTER_STATE = 0;
 		SETUP_ENCOUNTER = 1;
 		BEGIN_ENCOUNTER_APPROACH = 2;
 		ENCOUNTER_STATE_COMPLETE = 3;
 		EXIT_ENCOUNTER_STATE = 4;
+	}
+
+	enum RaidResolveUicontrollerFunction {
+		NONE_RAID_RESOLVE_UI_CONTROLLER = 0;
+		INIT_RAID_RESOLVE_UI_CONTROLLER = 1;
+		CLOSE_RAID_RESOLVE_UI_CONTROLLER = 2;
 	}
 
 	int32 ob_progress_token_int32 = 1;
@@ -17642,6 +17660,7 @@ message QuestConditionProto {
 		WITH_POKEMON_CP = 47;
 		WITH_RAID_LOCATION = 48;
 		WITH_FRIENDS_RAID = 49;
+		WITH_POKEMON_COSTUME = 50;
 	}
 
 	ConditionType type = 1;
@@ -19752,6 +19771,7 @@ message SocialClientSettingsProto {
 	bool enable_remote_gifting = 12;
 	bool enable_sticker = 13;
 	CrossGameSocialGlobalSettingsProto cross_game_social_settings = 14;
+	bool ob_bool = 15;
 }
 
 message SocialGiftCountTelemetry {

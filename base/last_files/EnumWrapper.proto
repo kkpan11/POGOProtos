@@ -33,6 +33,7 @@ message EnumWrapper {
 		GRUNTBF = 7;
 		GRUNTBM = 8;
 		EVENT_NPC = 9;
+		PLAYER_TEAM_LEADER = 10;
 	}
 
 	enum InvasionCharacter {

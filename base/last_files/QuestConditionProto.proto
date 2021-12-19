@@ -153,6 +153,7 @@ message QuestConditionProto {
 		WITH_POKEMON_CP = 47;
 		WITH_RAID_LOCATION = 48;
 		WITH_FRIENDS_RAID = 49;
+		WITH_POKEMON_COSTUME = 50;
 	}
 
 	ConditionType type = 1;
