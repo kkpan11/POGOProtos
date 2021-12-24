@@ -2338,6 +2338,7 @@ message PokemonDisplayProto {
 		RAIKOU_S = 2731;
 		ENTEI_S = 2732;
 		SUICUNE_S = 2733;
+		SLOWKING_2022 = 2734;
 	}
 
 	enum Gender {
