@@ -21,7 +21,7 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message ObNewGlobalSetting3 {
+message PostcardCollectionGlobalSettingsProto {
 	bool ob_enable = 1;
 	int32 ob_int32 = 2;
 	bool ob_bool = 3;

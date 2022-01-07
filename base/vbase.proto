@@ -2877,6 +2877,7 @@ enum HoloPokemonMove {
 	DOUBLE_KICK_FAST = 356;
 	MAGICAL_LEAF_FAST = 357;
 	SACRED_FIRE = 358;
+	ICICLE_SPEAR = 359;
 }
 
 enum HoloPokemonMovementType {
@@ -3582,6 +3583,7 @@ enum ObPostcardTypes {
 	OB_POSTCARD_TYPES_SELF = 1;
 	OB_POSTCARD_TYPES_FRIEND = 2;
 	OB_POSTCARD_TYPES_FRIEND_ANONYMIZED = 3;
+	OB_POSTCARD_TYPES_FRIEND_ANONYMIZED_FROM_DELETION_OR_UNFRIEND = 4;
 }
 
 enum ObSuggestionsEntry {
@@ -11224,7 +11226,7 @@ message GlobalSettingsProto {
 	ObNewGlobalSetting ob_new_global_setting = 70;
 	UploadManagementSettings upload_management_settings = 72;
 	RaidLoggingSettingsProto raid_logging_settings = 73;
-	ObNewGlobalSetting3 ob_new_global_setting_3 = 74;
+	PostcardCollectionGlobalSettingsProto postcard_collection_settings = 74;
 	ObNewGlobalSetting1 ob_new_global_setting_1 = 75;
 	ObNewGlobalSetting2 ob_new_global_setting_2 = 76;
 	ObNewGlobalSetting4 ob_new_global_setting_4 = 77;
@@ -13427,12 +13429,6 @@ message ObNewGlobalSetting1 {
 
 message ObNewGlobalSetting2 {
 	bool enabled = 1;
-}
-
-message ObNewGlobalSetting3 {
-	bool ob_enable = 1;
-	int32 ob_int32 = 2;
-	bool ob_bool = 3;
 }
 
 message ObNewGlobalSetting4 {
@@ -17197,6 +17193,12 @@ message PostcardBookTelemetry {
 	}
 
 	Status status = 1;
+}
+
+message PostcardCollectionGlobalSettingsProto {
+	bool ob_enable = 1;
+	int32 ob_int32 = 2;
+	bool ob_bool = 3;
 }
 
 message PostcardCollectionSettings {
@@ -21028,7 +21030,15 @@ message Upstream {
 	}
 
 	message ProbeResponse {
+		enum NetworkType {
+			UNSET = 0;
+			DATA = 1;
+			WIFI = 2;
+		}
+
 		int64 probe_start_ms = 1;
+		string game_context = 2;
+		NetworkType network_type = 3;
 	}
 
 	message SubscriptionRequest {
@@ -21036,7 +21046,6 @@ message Upstream {
 
 	int64 request_id = 1;
 	bytes token = 2;
-	ClientOperatingSystem client_os = 5;
 }
 
 message UseIncenseActionOutProto {
