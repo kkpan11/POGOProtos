@@ -21,9 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "ObAttackRaidBattle2.proto";
+import "AdRequestDeviceInfo.proto";
+import "ObPlayerOrFriendAvatarType.proto";
 
-message ObAttackRaidBattle1 {
-	ObAttackRaidBattle2 ob_attack_raid_battle_2 = 1;
-	bytes ob_payload = 2;
+message ADMHHMHFLOI {
+	AdRequestDeviceInfo ehpjjenagmc = 1;
+	ObPlayerOrFriendAvatarType nanhmnaloap = 2;
 }

@@ -21,14 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "PokemonFortProtoNew_2.proto";
-
-message PokemonFortProtoNew {
-	enum Mode {
-		LURE = 0;
-		POWER_UP = 1;
-	}
-
-	PokemonFortProtoNew_2 ob_pokemon_fort_proto_new = 1;
-	Mode ob_mode = 2;
+enum ObPlayerOrFriendAvatarType {
+	AVATAR_UNKNOWN = 0;
+	AVATAR_MALE = 1;
+	AVATAR_FEMALE = 2;
 }

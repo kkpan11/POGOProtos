@@ -3574,6 +3574,12 @@ enum NotificationType {
 	NOTIFICATION_TYPE_SYSTEM_NOTIFICATIONS = 4;
 }
 
+enum ObPlayerOrFriendAvatarType {
+	AVATAR_UNKNOWN = 0;
+	AVATAR_MALE = 1;
+	AVATAR_FEMALE = 2;
+}
+
 enum ObPostcardMemento {
 	MEMENTO_POSTCARD = 0;
 }
@@ -4602,6 +4608,11 @@ enum WarnedPlayerReason {
 enum WebTelemetryIds {
 	WEB_TELEMETRY_IDS_UNDEFINED_WEB_EVENT = 0;
 	WEB_TELEMETRY_IDS_POINT_OF_INTEREST_DESCRIPTION_WEB_CLICK = 1;
+}
+
+message ADMHHMHFLOI {
+	optional AdRequestDeviceInfo ehpjjenagmc = 1;
+	optional ObPlayerOrFriendAvatarType nanhmnaloap = 2;
 }
 
 message ARBuddyMultiplayerSessionTelemetry {
@@ -8550,8 +8561,8 @@ message EggHatchImprovementsSettings {
 }
 
 message EggHatchTelemetry {
-	optional EggHatchTelemetryEventIds egg_hatch_event_id = 1;
-	optional int32 num_eggs_hatched = 2;
+	optional int32 num_eggs_hatched = 1;
+	optional int32 num_animations_skipped = 2;
 }
 
 message EggIncubatorAttributesProto {
@@ -9372,7 +9383,7 @@ message FortSearchOutProto {
 	optional GiftBoxProto gift_box = 15;
 	optional AdDetails sponsored_gift = 16;
 	optional LootProto ob_loot = 17;
-	optional ObWasabiStuff ob_wasabi_stuff = 18;
+	optional ObAttackRaidBattle ob_attack_raid_battle = 18;
 }
 
 message FortSearchProto {
@@ -10226,7 +10237,7 @@ message GetGeofencedAdOutProto {
 
 	optional Result result = 1;
 	optional AdDetails ad_details = 2;
-	optional ObWasabiStuff ob_wasabi = 3;
+	optional ObAttackRaidBattle ob_attack_raid_battle = 3;
 }
 
 message GetGeofencedAdProto {
@@ -13339,22 +13350,8 @@ message NpcPokemonProto {
 }
 
 message ObAttackRaidBattle {
-	optional ObAttackRaidBattle1 ob_attack_raid_battle_1 = 1;
+	optional AdDetails ad_details = 1;
 	optional ObWasabiState ob_wasabi_state = 2;
-}
-
-message ObAttackRaidBattle1 {
-	optional ObAttackRaidBattle2 ob_attack_raid_battle_2 = 1;
-	optional bytes ob_payload = 2;
-}
-
-message ObAttackRaidBattle2 {
-	optional string ob_string_1 = 1;
-	optional string ob_string_2 = 2;
-	optional string ob_string_3 = 3;
-	optional string ob_string_4 = 4;
-	optional string ob_string_5 = 5;
-	optional string ob_string_6 = 6;
 }
 
 message ObEggIncubatorsInfos {
@@ -13500,25 +13497,6 @@ message ObSponsoredBalloon {
 	optional string ob_string_2 = 2;
 	optional string ob_string_3 = 3;
 	optional string ob_string_4 = 4;
-}
-
-message ObWasabiStuff {
-	optional ObWasabiStuff2 ob_wasabi_2 = 1;
-	optional ObWasabiState ob_wasabi_state = 2;
-}
-
-message ObWasabiStuff2 {
-	optional ObWasabiStuff3 ob_wasabi_3 = 1;
-	optional bytes payload = 2;
-}
-
-message ObWasabiStuff3 {
-	optional string ob_wasabi_string_1 = 1;
-	optional string ob_wasabi_string_2 = 2;
-	optional string ob_wasabi_string_3 = 3;
-	optional string ob_wasabi_string_4 = 4;
-	optional string ob_wasabi_string_5 = 5;
-	optional string ob_wasabi_string_6 = 6;
 }
 
 message OnApplicationFocusDataProto {
@@ -16861,27 +16839,7 @@ message PokemonFortProto {
 	optional int64 power_up_remaining_until_ms = 38;
 	optional int64 ob_pokemon_fort_int64_1 = 39;
 	optional int64 ob_pokemon_fort_int64_2 = 40;
-	repeated PokemonFortProtoNew ob_pokemon_fort_proto_new = 41;
-}
-
-message PokemonFortProtoNew {
-	enum Mode {
-		LURE = 0;
-		POWER_UP = 1;
-	}
-
-	optional PokemonFortProtoNew_2 ob_pokemon_fort_proto_new = 1;
-	optional Mode ob_mode = 2;
-}
-
-message PokemonFortProtoNew_2 {
-	optional string ob_pokemon_fort_proto_new = 1;
-	optional uint64 ob_pokemon_fort_proto_new_uint64 = 2;
-	optional int32 ob_pokemon_fort_proto_new_int32 = 3;
-	optional int64 ob_pokemon_fort_proto_new_int64 = 4;
-	optional double ob_pokemon_fort_proto_new_double_1 = 5;
-	optional double ob_pokemon_fort_proto_new_double_2 = 6;
-	optional PokemonDisplayProto ob_pokemon_display = 7;
+	repeated PowerUpPokestopShared power_up_pokestop_shared = 41;
 }
 
 message PokemonGlobalSettingsProto {
@@ -17250,6 +17208,16 @@ message PostcardDisplayProto {
 message PotionAttributesProto {
 	optional float sta_percent = 1;
 	optional int32 sta_amount = 2;
+}
+
+message PowerUpPokestopShared {
+	enum Mode {
+		LURE = 0;
+		POWER_UP = 1;
+	}
+
+	optional MapPokemonProto map_pokemon = 1;
+	optional Mode mode = 2;
 }
 
 message PowerUpPokestopSharedSettings {
@@ -20344,6 +20312,7 @@ message TempEvoOverrideProto {
 	repeated float buddy_offset_female = 13;
 	repeated float buddy_portrait_offset = 14;
 	optional float raid_boss_distance_offset = 15;
+	optional ObPokemonSetting ob_pokemon_setting = 16;
 }
 
 message TemplateVariable {
