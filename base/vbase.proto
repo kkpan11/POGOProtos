@@ -21,49 +21,6 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-enum AA_NEW_ENUM_0 {
-	AA_NEW_ENUM_0_POI = 0;
-	AA_NEW_ENUM_0_GIFT = 1;
-	AA_NEW_ENUM_0_NEARBY_POKEMON = 2;
-}
-
-enum AA_NEW_ENUM_1 {
-	AA_NEW_ENUM_1_NULL = 0;
-	AA_NEW_ENUM_1_UNSET = 1;
-	AA_NEW_ENUM_1_AR_SNAP_SHOT = 2;
-	AA_NEW_ENUM_1_LEVEL_UP_SCREEN_SHARE = 3;
-}
-
-enum AA_NEW_ENUM_2 {
-	AA_NEW_ENUM_2_UNSET = 0;
-	AA_NEW_ENUM_2_SET_AS_START = 1;
-	AA_NEW_ENUM_2_ADD_POINT = 2;
-	AA_NEW_ENUM_2_REMOVE_POINT = 3;
-	AA_NEW_ENUM_2_CANNOT_ADD_POINT = 4;
-}
-
-enum AA_NEW_ENUM_3 {
-	AA_NEW_ENUM_3_ROUTE_DATA_ERROR = 0;
-	AA_NEW_ENUM_3_UNSET = 1;
-	AA_NEW_ENUM_3_TOO_MANY_STOPS_IN_ROUTE = 2;
-	AA_NEW_ENUM_3_EXCEEDS_MAX_TOTAL_DISTANCE = 3;
-	AA_NEW_ENUM_3_TOO_CLOSE_TO_LAST_POI = 4;
-	AA_NEW_ENUM_3_TOO_FAR_AWAY_FROM_LAST_POI = 5;
-}
-
-enum AA_NEW_ENUM_4 {
-	AA_NEW_ENUM_4_DEFAULT = 0;
-	AA_NEW_ENUM_4_CLICKED_AR_PHOTO = 1;
-}
-
-enum AA_NEW_ENUM_5 {
-	AA_NEW_ENUM_5_UNKNOWN = 0;
-	AA_NEW_ENUM_5_READY_TO_UPLOAD = 1;
-	AA_NEW_ENUM_5_UPLOADING = 2;
-	AA_NEW_ENUM_5_UPLOADED = 3;
-	AA_NEW_ENUM_5_UPLOAD_ERROR_RETRY = 4;
-}
-
 enum AdFeedbackComplaintReason {
 	AD_FEEDBACK_COMPLAINT_REASON_INVALID = 0;
 	AD_FEEDBACK_COMPLAINT_REASON_OFFENSIVE = 1;
@@ -8988,7 +8945,7 @@ message EvolvePokemonOutProto {
 	PokemonProto evolved_pokemon = 2;
 	int32 exp_awarded = 3;
 	int32 candy_awarded = 4;
-	ObEvolePokemon1 ob_evole_pokemon_1 = 5;
+	ObMegaEvolvePokemonProtoField ob_mega_evole_pokemon = 5;
 }
 
 message EvolvePokemonProto {
@@ -11136,6 +11093,8 @@ message GiftBoxDetailsProto {
 	fixed64 delivery_pokemon_id = 13;
 	bool is_sponsored = 14;
 	repeated StickerSentProto stickers_sent = 15;
+	PlayerPreferencesProto.ShareState share_state = 16;
+	string ob_string = 17;
 }
 
 message GiftBoxProto {
@@ -13072,7 +13031,7 @@ message MegaEvolvePokemonOutProto {
 	Result result = 1;
 	PokemonProto evolved_pokemon = 2;
 	int32 exp_awarded = 3;
-	ObMegaEvolvePokemonOutProtoField ob_field = 4;
+	ObMegaEvolvePokemonProtoField ob_field = 4;
 }
 
 message MegaEvolvePokemonProto {
@@ -13363,19 +13322,7 @@ message ObEggStatus {
 	float ob_float_3 = 5;
 }
 
-message ObEvolePokemon1 {
-	message ObEvole {
-		int32 ob_int32_1 = 1;
-		int32 ob_int32_2 = 2;
-	}
-
-	ObEvole ob_evole_1 = 1;
-	ObEvole ob_evole_2 = 2;
-	int32 ob_int32_1 = 3;
-	int32 ob_int32_2 = 4;
-}
-
-message ObMegaEvolvePokemonOutProtoField {
+message ObMegaEvolvePokemonProtoField {
 	message ObField {
 		int32 ob_field_int32_1 = 1;
 		int32 ob_field_int32_2 = 2;
@@ -18204,6 +18151,7 @@ message RaidProto {
 	bool incremented_raid_friends = 9;
 	int64 completed_battle_ms = 10;
 	bool is_remote = 12;
+	PokemonProto pokemon = 14;
 }
 
 message RaidRewardsLogEntry {

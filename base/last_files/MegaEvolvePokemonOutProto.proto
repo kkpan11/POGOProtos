@@ -22,7 +22,7 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 import "PokemonProto.proto";
-import "ObMegaEvolvePokemonOutProtoField.proto";
+import "ObMegaEvolvePokemonProtoField.proto";
 
 message MegaEvolvePokemonOutProto {
 	enum Result {
@@ -39,5 +39,5 @@ message MegaEvolvePokemonOutProto {
 	Result result = 1;
 	PokemonProto evolved_pokemon = 2;
 	int32 exp_awarded = 3;
-	ObMegaEvolvePokemonOutProtoField ob_field = 4;
+	ObMegaEvolvePokemonProtoField ob_field = 4;
 }
