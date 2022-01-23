@@ -21,9 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message KoalaSettingsProto {
-	string app_id = 1;
-	bool use_sandbox = 2;
-	bool use_koala = 3;
-	bool ob_koala_bool = 4;
+message EHJBENOJEAK {
+	int32 nipghijkdlf = 1;
+	int32 apnicfhikfn = 2;
+	int32 bnibdlgfipj = 3;
 }

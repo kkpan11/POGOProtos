@@ -22,26 +22,12 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 message ProgressTokenDataProto {
-	enum MapExploreStateFunction {
-		NONE_MAP_EXPLORE_STATE = 0;
-		GYM_ROOT_COMPLETE = 1;
-	}
-
-	enum GymRootControllerFunction {
-		NONE_GYM_GYM_ROOT_CONTROLLER = 0;
-		EXIT_GYM_GYM_ROOT_CONTROLLER = 1;
-	}
-
-	enum RaidResolveStateFunction {
-		NONE_RAID_RESOLVE_STATE = 0;
-		ENTER_RAID_RESOLVE_STATE = 1;
-		EXIT_RAID_RESOLVE_STATE = 2;
-		INIT_RAID_RESOLVE_STATE = 3;
-	}
-
-	enum RaidStateFunction {
-		NONE_RAID_STATE = 0;
-		EXIT_GYM_RAID_STATE = 1;
+	enum EncounterStateFunction {
+		NONE_ENCOUNTER_STATE = 0;
+		SETUP_ENCOUNTER = 1;
+		BEGIN_ENCOUNTER_APPROACH = 2;
+		ENCOUNTER_STATE_COMPLETE = 3;
+		EXIT_ENCOUNTER_STATE = 4;
 	}
 
 	enum RaidBattleStateFunction {
@@ -52,6 +38,33 @@ message ProgressTokenDataProto {
 		START_RAID_BATTLE = 4;
 		START_RAID_BATTLE_WHEN_READY = 5;
 		END_BATTLE_WHEN_READY = 6;
+	}
+
+	enum RaidStateFunction {
+		NONE_RAID_STATE = 0;
+		EXIT_GYM_RAID_STATE = 1;
+	}
+
+	enum MapExploreStateFunction {
+		NONE_MAP_EXPLORE_STATE = 0;
+		GYM_ROOT_COMPLETE = 1;
+	}
+
+	enum RaidLobbyStateFunction {
+		NONE_RAID_LOBBY_STATE = 0;
+		ENTER_RAID_LOBBY_STATE = 1;
+		EXIT_RAID_LOBBY_STATE = 2;
+		CREATE_LOBBY = 3;
+		CREATE_LOBBY_FOR_REAL = 4;
+		START_RAID_BATTLE_STATE = 5;
+		CANCEL_RAID_BATTLE_TRANSITION = 6;
+	}
+
+	enum RaidResolveStateFunction {
+		NONE_RAID_RESOLVE_STATE = 0;
+		ENTER_RAID_RESOLVE_STATE = 1;
+		EXIT_RAID_RESOLVE_STATE = 2;
+		INIT_RAID_RESOLVE_STATE = 3;
 	}
 
 	enum RaidLobbyGuiControllerFunction {
@@ -75,14 +88,15 @@ message ProgressTokenDataProto {
 		HANDLE_RAID_BATTLE_COMPLETE = 17;
 	}
 
-	enum RaidLobbyStateFunction {
-		NONE_RAID_LOBBY_STATE = 0;
-		ENTER_RAID_LOBBY_STATE = 1;
-		EXIT_RAID_LOBBY_STATE = 2;
-		CREATE_LOBBY = 3;
-		CREATE_LOBBY_FOR_REAL = 4;
-		START_RAID_BATTLE_STATE = 5;
-		CANCEL_RAID_BATTLE_TRANSITION = 6;
+	enum GymRootControllerFunction {
+		NONE_GYM_GYM_ROOT_CONTROLLER = 0;
+		EXIT_GYM_GYM_ROOT_CONTROLLER = 1;
+	}
+
+	enum RaidResolveUicontrollerFunction {
+		NONE_RAID_RESOLVE_UI_CONTROLLER = 0;
+		INIT_RAID_RESOLVE_UI_CONTROLLER = 1;
+		CLOSE_RAID_RESOLVE_UI_CONTROLLER = 2;
 	}
 
 	oneof Function {
@@ -95,20 +109,6 @@ message ProgressTokenDataProto {
 		RaidResolveUicontrollerFunction raid_resolve_uicontroller_function = 8;
 		EncounterStateFunction encounter_state_function = 9;
 		MapExploreStateFunction map_explore_state_function = 10;
-	}
-
-	enum EncounterStateFunction {
-		NONE_ENCOUNTER_STATE = 0;
-		SETUP_ENCOUNTER = 1;
-		BEGIN_ENCOUNTER_APPROACH = 2;
-		ENCOUNTER_STATE_COMPLETE = 3;
-		EXIT_ENCOUNTER_STATE = 4;
-	}
-
-	enum RaidResolveUicontrollerFunction {
-		NONE_RAID_RESOLVE_UI_CONTROLLER = 0;
-		INIT_RAID_RESOLVE_UI_CONTROLLER = 1;
-		CLOSE_RAID_RESOLVE_UI_CONTROLLER = 2;
 	}
 
 	int32 ob_progress_token_int32 = 1;

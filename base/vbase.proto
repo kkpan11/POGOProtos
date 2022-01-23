@@ -2835,6 +2835,10 @@ enum HoloPokemonMove {
 	MAGICAL_LEAF_FAST = 357;
 	SACRED_FIRE = 358;
 	ICICLE_SPEAR = 359;
+	AEROBLAST_PLUS = 360;
+	AEROBLAST_PLUS_PLUS = 361;
+	SACRED_FIRE_PLUS = 362;
+	SACRED_FIRE_PLUS_PLUS = 363;
 }
 
 enum HoloPokemonMovementType {
@@ -3314,6 +3318,10 @@ enum Method {
 	METHOD_GET_PLAYER_DISPLAY_INFO = 818;
 	METHOD_BELUGA_TRANSACTION_START = 819;
 	METHOD_BELUGA_TRANSACTION_COMPLETE = 820;
+	METHOD_SFIDA_ASSOCIATE = 822;
+	METHOD_SFIDA_CHECK_PAIRING = 823;
+	METHOD_SFIDA_DISASSOCIATE = 824;
+	METHOD_WAINA_SUBMIT_SLEEP_DATA = 826;
 	METHOD_GET_NEW_QUESTS = 900;
 	METHOD_GET_QUEST_DETAILS = 901;
 	METHOD_COMPLETE_QUEST = 902;
@@ -8430,6 +8438,12 @@ message DownstreamActionMessages {
 message DumbBeaconProto {
 }
 
+message EHJBENOJEAK {
+	int32 nipghijkdlf = 1;
+	int32 apnicfhikfn = 2;
+	int32 bnibdlgfipj = 3;
+}
+
 message EOLAIBDNKGG {
 	enum Status {
 		UNSET = 0;
@@ -8631,20 +8645,6 @@ message EncounterTutorialCompleteProto {
 }
 
 message EnumWrapper {
-	enum CharacterCategory {
-		UNSET = 0;
-		TEAM_LEADER = 1;
-		GRUNT = 2;
-		ARLO = 3;
-		CLIFF = 4;
-		SIERRA = 5;
-		GIOVANNI = 6;
-		GRUNTBF = 7;
-		GRUNTBM = 8;
-		EVENT_NPC = 9;
-		PLAYER_TEAM_LEADER = 10;
-	}
-
 	enum InvasionCharacter {
 		CHARACTER_UNSET = 0;
 		CHARACTER_BLANCHE = 1;
@@ -8748,6 +8748,35 @@ message EnumWrapper {
 		CHARACTER_EVENT_NPC_8 = 508;
 		CHARACTER_EVENT_NPC_9 = 509;
 		CHARACTER_EVENT_NPC_10 = 510;
+		CHARACTER_EVENT_NPC_BLANCHE = 511;
+		CHARACTER_EVENT_NPC_CANDELA = 512;
+		CHARACTER_EVENT_NPC_SPARK = 513;
+	}
+
+	enum InvasionContext {
+		POKESTOP_INCIDENT = 0;
+		ROCKET_BALLOON = 1;
+		QUEST_REWARD_INCIDENT = 2;
+	}
+
+	enum CharacterCategory {
+		UNSET = 0;
+		TEAM_LEADER = 1;
+		GRUNT = 2;
+		ARLO = 3;
+		CLIFF = 4;
+		SIERRA = 5;
+		GIOVANNI = 6;
+		GRUNTBF = 7;
+		GRUNTBM = 8;
+		EVENT_NPC = 9;
+		PLAYER_TEAM_LEADER = 10;
+	}
+
+	enum PokestopStyle {
+		POKESTOP_NORMAL = 0;
+		POKESTOP_ROCKET_INVASION = 1;
+		POKESTOP_ROCKET_VICTORY = 2;
 	}
 
 	enum InvasionCharacterExpression {
@@ -8760,18 +8789,6 @@ message EnumWrapper {
 		CHALLENGE = 6;
 		VICTORY = 7;
 		DEFEAT = 8;
-	}
-
-	enum InvasionContext {
-		POKESTOP_INCIDENT = 0;
-		ROCKET_BALLOON = 1;
-		QUEST_REWARD_INCIDENT = 2;
-	}
-
-	enum PokestopStyle {
-		POKESTOP_NORMAL = 0;
-		POKESTOP_ROCKET_INVASION = 1;
-		POKESTOP_ROCKET_VICTORY = 2;
 	}
 }
 
@@ -9603,6 +9620,7 @@ message GameMasterClientTemplateProto {
 	PostcardCollectionSettings postcard_collection_settings = 134;
 	CBBODOBAAHL mjphmhnnbjd = 135;
 	LALAOGOEBFM ddcpoohfmkh = 136;
+	MHDCKLNDAHC jboofhliofa = 137;
 }
 
 message GameMasterLocalProto {
@@ -12208,6 +12226,13 @@ message ItemTelemetry {
 	string item_id_string = 5;
 }
 
+message JDGIPACJHFJ {
+	int64 oijofpflmli = 1;
+	int32 nmglfmmdmaj = 2;
+	int32 lhhkpnlicoh = 3;
+	int32 cdolplpgjdi = 4;
+}
+
 message JoinBuddyMultiplayerSessionOutProto {
 	enum Result {
 		JOIN_SUCCESS = 0;
@@ -12322,6 +12347,7 @@ message KoalaSettingsProto {
 	string app_id = 1;
 	bool use_sandbox = 2;
 	bool use_koala = 3;
+	bool ob_koala_bool = 4;
 }
 
 message LALAOGOEBFM {
@@ -12748,6 +12774,22 @@ message LuckyPokemonSettingsProto {
 	float power_up_stardust_discount_percent = 1;
 }
 
+message MHDCKLNDAHC {
+	int32 nmkeebcbfdn = 1;
+	HoloPokemonId dkgfheedgpg = 2;
+	EHJBENOJEAK iolpceapnlc = 3;
+	JDGIPACJHFJ dmchnemcgnj = 4;
+	MKDLLIHAEKJ kngdfokdlgf = 5;
+}
+
+message MKDLLIHAEKJ {
+	float eljlcjaidfc = 1;
+	float jgjcicbagcg = 2;
+	int32 hmhjgccbmgp = 3;
+	int32 ocidjbafgpi = 4;
+	float ffneigalcbm = 5;
+}
+
 message MapArea {
 	string description = 1;
 	int32 epoch = 2;
@@ -12999,6 +13041,8 @@ message MaskedColor {
 message MegaEvoGlobalSettingsProto {
 	bool enabled = 1;
 	bool enable_friends_list_mega_info = 2;
+	bool ob_mega_evo_bool_1 = 3;
+	bool ob_mega_evo_bool_2 = 4;
 }
 
 message MegaEvoInfoProto {
@@ -13014,6 +13058,9 @@ message MegaEvoSettingsProto {
 	int32 max_candy_hoard_size = 4;
 	bool enable_buddy_walking_mega_energy_award = 5;
 	int32 active_mega_bonus_catch_candy = 6;
+	bool ob_mega_evo_bool_1 = 7;
+	bool ob_mega_evo_bool_2 = 8;
+	int32 ob_mega_evo_int32 = 9;
 }
 
 message MegaEvolvePokemonOutProto {
@@ -16635,6 +16682,7 @@ message PokemonDisplayProto {
 		CALYREX_NORMAL = 2725;
 		CALYREX_ICE_RIDER = 2726;
 		CALYREX_SHADOW_RIDER = 2727;
+		VOLTORB_HISUIAN = 2728;
 		LUGIA_S = 2729;
 		HO_OH_S = 2730;
 		RAIKOU_S = 2731;
@@ -17269,26 +17317,12 @@ message ProgressRouteProto {
 }
 
 message ProgressTokenDataProto {
-	enum MapExploreStateFunction {
-		NONE_MAP_EXPLORE_STATE = 0;
-		GYM_ROOT_COMPLETE = 1;
-	}
-
-	enum GymRootControllerFunction {
-		NONE_GYM_GYM_ROOT_CONTROLLER = 0;
-		EXIT_GYM_GYM_ROOT_CONTROLLER = 1;
-	}
-
-	enum RaidResolveStateFunction {
-		NONE_RAID_RESOLVE_STATE = 0;
-		ENTER_RAID_RESOLVE_STATE = 1;
-		EXIT_RAID_RESOLVE_STATE = 2;
-		INIT_RAID_RESOLVE_STATE = 3;
-	}
-
-	enum RaidStateFunction {
-		NONE_RAID_STATE = 0;
-		EXIT_GYM_RAID_STATE = 1;
+	enum EncounterStateFunction {
+		NONE_ENCOUNTER_STATE = 0;
+		SETUP_ENCOUNTER = 1;
+		BEGIN_ENCOUNTER_APPROACH = 2;
+		ENCOUNTER_STATE_COMPLETE = 3;
+		EXIT_ENCOUNTER_STATE = 4;
 	}
 
 	enum RaidBattleStateFunction {
@@ -17299,6 +17333,33 @@ message ProgressTokenDataProto {
 		START_RAID_BATTLE = 4;
 		START_RAID_BATTLE_WHEN_READY = 5;
 		END_BATTLE_WHEN_READY = 6;
+	}
+
+	enum RaidStateFunction {
+		NONE_RAID_STATE = 0;
+		EXIT_GYM_RAID_STATE = 1;
+	}
+
+	enum MapExploreStateFunction {
+		NONE_MAP_EXPLORE_STATE = 0;
+		GYM_ROOT_COMPLETE = 1;
+	}
+
+	enum RaidLobbyStateFunction {
+		NONE_RAID_LOBBY_STATE = 0;
+		ENTER_RAID_LOBBY_STATE = 1;
+		EXIT_RAID_LOBBY_STATE = 2;
+		CREATE_LOBBY = 3;
+		CREATE_LOBBY_FOR_REAL = 4;
+		START_RAID_BATTLE_STATE = 5;
+		CANCEL_RAID_BATTLE_TRANSITION = 6;
+	}
+
+	enum RaidResolveStateFunction {
+		NONE_RAID_RESOLVE_STATE = 0;
+		ENTER_RAID_RESOLVE_STATE = 1;
+		EXIT_RAID_RESOLVE_STATE = 2;
+		INIT_RAID_RESOLVE_STATE = 3;
 	}
 
 	enum RaidLobbyGuiControllerFunction {
@@ -17322,14 +17383,15 @@ message ProgressTokenDataProto {
 		HANDLE_RAID_BATTLE_COMPLETE = 17;
 	}
 
-	enum RaidLobbyStateFunction {
-		NONE_RAID_LOBBY_STATE = 0;
-		ENTER_RAID_LOBBY_STATE = 1;
-		EXIT_RAID_LOBBY_STATE = 2;
-		CREATE_LOBBY = 3;
-		CREATE_LOBBY_FOR_REAL = 4;
-		START_RAID_BATTLE_STATE = 5;
-		CANCEL_RAID_BATTLE_TRANSITION = 6;
+	enum GymRootControllerFunction {
+		NONE_GYM_GYM_ROOT_CONTROLLER = 0;
+		EXIT_GYM_GYM_ROOT_CONTROLLER = 1;
+	}
+
+	enum RaidResolveUicontrollerFunction {
+		NONE_RAID_RESOLVE_UI_CONTROLLER = 0;
+		INIT_RAID_RESOLVE_UI_CONTROLLER = 1;
+		CLOSE_RAID_RESOLVE_UI_CONTROLLER = 2;
 	}
 
 	oneof Function {
@@ -17342,20 +17404,6 @@ message ProgressTokenDataProto {
 		RaidResolveUicontrollerFunction raid_resolve_uicontroller_function = 8;
 		EncounterStateFunction encounter_state_function = 9;
 		MapExploreStateFunction map_explore_state_function = 10;
-	}
-
-	enum EncounterStateFunction {
-		NONE_ENCOUNTER_STATE = 0;
-		SETUP_ENCOUNTER = 1;
-		BEGIN_ENCOUNTER_APPROACH = 2;
-		ENCOUNTER_STATE_COMPLETE = 3;
-		EXIT_ENCOUNTER_STATE = 4;
-	}
-
-	enum RaidResolveUicontrollerFunction {
-		NONE_RAID_RESOLVE_UI_CONTROLLER = 0;
-		INIT_RAID_RESOLVE_UI_CONTROLLER = 1;
-		CLOSE_RAID_RESOLVE_UI_CONTROLLER = 2;
 	}
 
 	int32 ob_progress_token_int32 = 1;
@@ -20105,7 +20153,6 @@ message SubmitPoiTextMetadataUpdateProto {
 	string poi_id = 1;
 	string title = 2;
 	string description = 3;
-	string category_suggestion = 4;
 }
 
 message SubmitRouteDraftOutProto {

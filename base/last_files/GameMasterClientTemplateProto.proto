@@ -148,6 +148,7 @@ import "CLOGIAFCLLK.proto";
 import "PostcardCollectionSettings.proto";
 import "CBBODOBAAHL.proto";
 import "LALAOGOEBFM.proto";
+import "MHDCKLNDAHC.proto";
 
 message GameMasterClientTemplateProto {
 	string template_id = 1;
@@ -278,4 +279,5 @@ message GameMasterClientTemplateProto {
 	PostcardCollectionSettings postcard_collection_settings = 134;
 	CBBODOBAAHL mjphmhnnbjd = 135;
 	LALAOGOEBFM ddcpoohfmkh = 136;
+	MHDCKLNDAHC jboofhliofa = 137;
 }
