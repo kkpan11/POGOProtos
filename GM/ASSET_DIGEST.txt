@@ -1894,11 +1894,11 @@ digest {
   size: 9499
 }
 digest {
-  asset_id: "115dc97f-358a-4c45-8ac1-e20e4821f609/1643091029379751"
+  asset_id: "115dc97f-358a-4c45-8ac1-e20e4821f609/1643262227474174"
   bundle_name: "json_patch_i18n_russian"
-  version: 1643091029379751
-  checksum: 676352684
-  size: 31437
+  version: 1643262227474174
+  checksum: 3514059631
+  size: 22684
 }
 digest {
   asset_id: "11616b6c-6439-4fab-868d-d6795c6e9162/1616639682677249"
@@ -2389,6 +2389,20 @@ digest {
   size: 159977
 }
 digest {
+  asset_id: "17893372-2310-47ee-9209-7354e12268fc/1643302495989257"
+  bundle_name: "m_shoes_legendofarceus_00_bundle_icon"
+  version: 1643302495989257
+  checksum: 158665801
+  size: 12212
+}
+digest {
+  asset_id: "178a3431-2932-4ecc-8ba0-d5a33b79521f/1643302481919163"
+  bundle_name: "f_shirt_legendofarceus_00_bundle_icon"
+  version: 1643302481919163
+  checksum: 3769050505
+  size: 10547
+}
+digest {
   asset_id: "178a8991-12a8-4910-a2db-37f14203d8ae/1616642285232925"
   bundle_name: "raid_won_default"
   version: 1616642285232925
@@ -2778,11 +2792,11 @@ digest {
   size: 5310
 }
 digest {
-  asset_id: "1bb14249-cfa4-44d4-a0d6-1c58e8261650/1643091017082676"
+  asset_id: "1bb14249-cfa4-44d4-a0d6-1c58e8261650/1643262216130881"
   bundle_name: "json_patch_i18n_italian"
-  version: 1643091017082676
-  checksum: 4003445316
-  size: 22645
+  version: 1643262216130881
+  checksum: 1079936773
+  size: 18261
 }
 digest {
   asset_id: "1bbc5eec-7ce1-4649-8e00-dce0ed5864fc/1616622439114263"
@@ -3521,6 +3535,13 @@ digest {
   key: "Bd\3636\246g\026u\301\235\013N\277\r<v"
 }
 digest {
+  asset_id: "2211ac2a-ffde-44eb-8898-41b1aa1cf0c6/1643302495141458"
+  bundle_name: "m_shirt_legendofarceus_00_bundle_icon"
+  version: 1643302495141458
+  checksum: 2918981859
+  size: 11102
+}
+digest {
   asset_id: "222ecb96-f839-4b00-a1db-2b543c14324d/1616622883076276"
   bundle_name: "m_pants_green_bundle"
   version: 1616622883076276
@@ -3764,6 +3785,13 @@ digest {
   version: 1616632712645036
   checksum: 4116937497
   size: 11909
+}
+digest {
+  asset_id: "2513b602-a9ba-45b5-868d-96f44e895aa4/1643302491092444"
+  bundle_name: "f_shoes_legendofarceus_00_bundle_icon"
+  version: 1643302491092444
+  checksum: 1821898425
+  size: 13990
 }
 digest {
   asset_id: "252c616d-aae1-409e-85ce-8e6b7b01a7dc/1616622878631233"
@@ -4387,11 +4415,11 @@ digest {
   key: "\374Q\005\356\025\014\363\231\203\303hC\353\265\235I"
 }
 digest {
-  asset_id: "2b58a4ea-6704-4b59-baa3-93d3322eb74d/1643091012871154"
+  asset_id: "2b58a4ea-6704-4b59-baa3-93d3322eb74d/1643262212296191"
   bundle_name: "json_patch_i18n_german"
-  version: 1643091012871154
-  checksum: 2164022476
-  size: 23914
+  version: 1643262212296191
+  checksum: 1592035703
+  size: 19026
 }
 digest {
   asset_id: "2b62593e-546c-4844-ab6d-d5b8c0f5fbea/1616644561055323"
@@ -4999,6 +5027,13 @@ digest {
   version: 1616644475874259
   checksum: 4028175598
   size: 476746
+}
+digest {
+  asset_id: "32b95ccf-3612-4cd6-b47c-cad847664c9a/1643302487207093"
+  bundle_name: "m_hat_legendofarceus_bundle"
+  version: 1643302487207093
+  checksum: 1561058179
+  size: 172541
 }
 digest {
   asset_id: "32d0dabf-03a5-4eb5-8a3b-d29e46a30472/1622156579128177"
@@ -6034,11 +6069,11 @@ digest {
   size: 10300
 }
 digest {
-  asset_id: "3d93143b-a6da-43a5-95c4-153d6045925e/1643090996089575"
+  asset_id: "3d93143b-a6da-43a5-95c4-153d6045925e/1643262196832179"
   bundle_name: "json_patch_i18n_brazilianportuguese"
-  version: 1643090996089575
-  checksum: 2070052965
-  size: 22592
+  version: 1643262196832179
+  checksum: 4072131878
+  size: 18008
 }
 digest {
   asset_id: "3da83d1a-267a-4f63-9854-420c6f75b881/1616639619237986"
@@ -7030,11 +7065,11 @@ digest {
   size: 10233
 }
 digest {
-  asset_id: "4894c86c-9a45-4814-9215-0a92968690f7/1643091021257112"
+  asset_id: "4894c86c-9a45-4814-9215-0a92968690f7/1643262219789572"
   bundle_name: "json_patch_i18n_japanese"
-  version: 1643091021257112
-  checksum: 1852818293
-  size: 20838
+  version: 1643262219789572
+  checksum: 1543011498
+  size: 16919
 }
 digest {
   asset_id: "489e8bc1-e751-473f-8ff8-7729dd807d8c/1616623103984061"
@@ -8889,6 +8924,13 @@ digest {
   size: 7508
 }
 digest {
+  asset_id: "5ac12716-c736-4819-bbd0-9b396bc0dfc4/1643302488681504"
+  bundle_name: "f_shirt_legendofarceus_bundle"
+  version: 1643302488681504
+  checksum: 2902113369
+  size: 348743
+}
+digest {
   asset_id: "5ac8fed3-c860-436d-8e79-89d45e526c84/1616623108349721"
   bundle_name: "f_hat_detectivepikachu_bundle"
   version: 1616623108349721
@@ -9412,6 +9454,13 @@ digest {
   size: 17914
 }
 digest {
+  asset_id: "5ff6211b-de48-43ea-82fd-cdbb1bd26afb/1643302490104988"
+  bundle_name: "f_shoes_legendofarceus_bundle"
+  version: 1643302490104988
+  checksum: 4167970892
+  size: 168670
+}
+digest {
   asset_id: "600db906-4159-4b4a-be05-c22aefcac1cd/1616694697792111"
   bundle_name: "pm0586_11"
   version: 1616694697792111
@@ -9743,11 +9792,11 @@ digest {
   size: 42069
 }
 digest {
-  asset_id: "636575d6-7213-4ffc-88e8-5f125e7112d6/1643091000875649"
+  asset_id: "636575d6-7213-4ffc-88e8-5f125e7112d6/1643262201205987"
   bundle_name: "json_patch_i18n_chinesetraditional"
-  version: 1643091000875649
-  checksum: 2392462499
-  size: 21363
+  version: 1643262201205987
+  checksum: 2776752224
+  size: 17308
 }
 digest {
   asset_id: "636a2145-97ff-494c-96ba-1e1f839a5173/1622156537281446"
@@ -9832,6 +9881,13 @@ digest {
   version: 1616622591386189
   checksum: 4231578244
   size: 13131
+}
+digest {
+  asset_id: "63ef68f7-d405-44bc-8676-eee889adddbc/1643302484027605"
+  bundle_name: "f_hat_legendofarceus_00_bundle_icon"
+  version: 1643302484027605
+  checksum: 2445288510
+  size: 8660
 }
 digest {
   asset_id: "640dcc64-4403-4172-89d6-ca3c07938ab0/1616621887021448"
@@ -10704,11 +10760,11 @@ digest {
   size: 814561
 }
 digest {
-  asset_id: "6b8f3fef-4233-45f7-9395-39f56e0912e1/1643091036198662"
+  asset_id: "6b8f3fef-4233-45f7-9395-39f56e0912e1/1643262234744889"
   bundle_name: "json_patch_i18n_thai"
-  version: 1643091036198662
-  checksum: 2014998886
-  size: 29492
+  version: 1643262234744889
+  checksum: 2725521067
+  size: 24469
 }
 digest {
   asset_id: "6ba414f0-ae2c-41d8-ad28-c99f0b623191/1639772191122571"
@@ -11106,6 +11162,13 @@ digest {
   size: 482276
 }
 digest {
+  asset_id: "6f4c57b4-62a7-484f-845b-5902976cae74/1643302493228462"
+  bundle_name: "m_shirt_legendofarceus_bundle"
+  version: 1643302493228462
+  checksum: 1148304903
+  size: 353734
+}
+digest {
   asset_id: "6f529b01-2a62-4407-bca5-53c87c216995/1630094559739836"
   bundle_name: "f_hat_swshuniformchampion_00_bundle_icon"
   version: 1630094559739836
@@ -11396,6 +11459,13 @@ digest {
   version: 1616692939620642
   checksum: 2106804349
   size: 436422
+}
+digest {
+  asset_id: "728a1948-4330-437b-8d8f-4844598dcdd5/1643302482991668"
+  bundle_name: "m_shoes_legendofarceus_bundle"
+  version: 1643302482991668
+  checksum: 3890177101
+  size: 153571
 }
 digest {
   asset_id: "72a0e733-9a03-4ca8-8e82-1799757931b7/1635532695933374"
@@ -15875,6 +15945,13 @@ digest {
   size: 298833
 }
 digest {
+  asset_id: "9e200c66-9898-4840-a1a9-45006e58c217/1643302485340143"
+  bundle_name: "f_hat_legendofarceus_bundle"
+  version: 1643302485340143
+  checksum: 1430336678
+  size: 176348
+}
+digest {
   asset_id: "9e2285f1-2d01-4911-a750-3b870e481786/1616632341992746"
   bundle_name: "pokemon_icon_089"
   version: 1616632341992746
@@ -16439,11 +16516,11 @@ digest {
   size: 8821
 }
 digest {
-  asset_id: "a381995c-f9ca-4de5-93db-38159a7d032c/1643091032854650"
+  asset_id: "a381995c-f9ca-4de5-93db-38159a7d032c/1643262231133935"
   bundle_name: "json_patch_i18n_spanish"
-  version: 1643091032854650
-  checksum: 3780171913
-  size: 23354
+  version: 1643262231133935
+  checksum: 156046789
+  size: 18327
 }
 digest {
   asset_id: "a3880a65-ed02-4d13-a333-cb71a7226cb0/1616622633691673"
@@ -19896,6 +19973,13 @@ digest {
   size: 134216
 }
 digest {
+  asset_id: "c5f41062-722d-4e4e-96a6-ae94425378a7/1643302491943697"
+  bundle_name: "m_hat_legendofarceus_00_bundle_icon"
+  version: 1643302491943697
+  checksum: 2893664759
+  size: 9111
+}
+digest {
   asset_id: "c6078db8-dee9-427d-91d2-15488fc88368/1616689779368520"
   bundle_name: "pm0125_00"
   version: 1616689779368520
@@ -20723,11 +20807,11 @@ digest {
   size: 441419
 }
 digest {
-  asset_id: "cd53a84f-5c55-4563-84b3-edda474e01f1/1643091004843599"
+  asset_id: "cd53a84f-5c55-4563-84b3-edda474e01f1/1643262204947332"
   bundle_name: "json_patch_i18n_english"
-  version: 1643091004843599
-  checksum: 4130961018
-  size: 20564
+  version: 1643262204947332
+  checksum: 772339179
+  size: 12701
 }
 digest {
   asset_id: "cd6505ba-8c14-49d2-9bb8-2b8840b60f6a/1616632654516245"
@@ -22274,11 +22358,11 @@ digest {
   size: 7664
 }
 digest {
-  asset_id: "dccbb419-951a-4bf9-8448-8a32e5bae6d1/1643091025149094"
+  asset_id: "dccbb419-951a-4bf9-8448-8a32e5bae6d1/1643262223665205"
   bundle_name: "json_patch_i18n_korean"
-  version: 1643091025149094
-  checksum: 2017819203
-  size: 21150
+  version: 1643262223665205
+  checksum: 378455668
+  size: 16830
 }
 digest {
   asset_id: "dcd89218-66fa-4ea3-a549-7d49df98b5d1/1512759924956220"
@@ -25152,11 +25236,11 @@ digest {
   size: 9629
 }
 digest {
-  asset_id: "f81c317b-b38c-454e-ac41-b716acec654f/1643091008547084"
+  asset_id: "f81c317b-b38c-454e-ac41-b716acec654f/1643262208553069"
   bundle_name: "json_patch_i18n_french"
-  version: 1643091008547084
-  checksum: 668268097
-  size: 22830
+  version: 1643262208553069
+  checksum: 3867051726
+  size: 18265
 }
 digest {
   asset_id: "f826a71a-90f8-46c9-a731-f05a07d215ef/1616623200692894"
@@ -25968,4 +26052,4 @@ digest {
   checksum: 2527820101
   size: 1240971
 }
-timestamp: 1643091036198662
+timestamp: 1643302495989257
