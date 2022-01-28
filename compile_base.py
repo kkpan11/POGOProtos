@@ -109,7 +109,7 @@ if gen_game_master is not None:
 
 # Add licenses
 head = '/*\n'
-head += '* Copyright 2016-2021 --=FurtiF=--.\n'
+head += '* Copyright 2016-2022 --=FurtiF=--.\n'
 head += '*\n'
 head += '* Licensed under the\n'
 head += '*	Educational Community License, Version 2.0 (the "License"); you may\n'

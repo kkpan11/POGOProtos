@@ -15,11 +15,11 @@ This repository contains the [ProtoBuf](https://github.com/google/protobuf) `.pr
 ### Versioning
 We are following [semantic versioning](http://semver.org/) for POGOProtos-Private.  Every version will be mapped to their current PokémonGo version.
 
-| Version                                                                    | Base                                                                                 | Notes                  | Extra                           |
-|----------------------------------------------------------------------------|--------------------------------------------------------------------------------------|------------------------|---------------------------------|
-| [2.55.7](https://github.com/Furtif/POGOProtos/raw/master/.current-version) | [v0.227.x](https://github.com/Furtif/POGOProtos/blob/master/base/vbase_proto2.proto) | **Proto2** Compilable (Mixed) |  Protocol Buffers v3.19.1     |
-| [2.55.7](https://github.com/Furtif/POGOProtos/raw/master/.current-version) | [v0.227.x](https://github.com/Furtif/POGOProtos/blob/master/base/vbase.proto)        | **Proto3** Compilable (Mixed) |  Protocol Buffers v3.19.1     |
-| [2.54.1](https://github.com/Furtif/POGOProtos/raw/master/.current-version) | [v0.205.x](https://github.com/Furtif/POGOProtos/blob/master/base/v0.205.x.proto)     | **Updated** (_[/base/v0.205.x.proto](https://github.com/Furtif/POGOProtos/blob/master/base/v0.205.x.proto)_)  |  Protocol Buffers v3.15.8     |
+| Version                                                                    | Base                                                                                 | Notes                  | Extra                    |
+|----------------------------------------------------------------------------|--------------------------------------------------------------------------------------|------------------------|--------------------------|
+| [2.55.8](https://github.com/Furtif/POGOProtos/raw/master/.current-version) | [v0.227.x](https://github.com/Furtif/POGOProtos/blob/master/base/vbase_proto2.proto) | **Proto2** Compilable (Mixed) | Protocol Buffers v3.19.3 |
+| [2.55.8](https://github.com/Furtif/POGOProtos/raw/master/.current-version) | [v0.227.x](https://github.com/Furtif/POGOProtos/blob/master/base/vbase.proto)        | **Proto3** Compilable (Mixed) | Protocol Buffers v3.19.3 |
+| [2.54.1](https://github.com/Furtif/POGOProtos/raw/master/.current-version) | [v0.205.x](https://github.com/Furtif/POGOProtos/blob/master/base/v0.205.x.proto)     | **Updated** (_[/base/v0.205.x.proto](https://github.com/Furtif/POGOProtos/blob/master/base/v0.205.x.proto)_)  | Protocol Buffers v3.15.8 |
 
 ### Addons
 
@@ -73,7 +73,7 @@ optional arguments:
 ```
 
 ### Preparation
-Current recommended protoc version: "Protocol Buffers v3.19.1".
+Current recommended protoc version: "Protocol Buffers v3.19.3".
 You can find download links [here](https://github.com/google/protobuf/releases).
 
 #### Windows

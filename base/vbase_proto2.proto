@@ -1,5 +1,5 @@
 /*
-* Copyright 2016-2021 --=FurtiF=--.
+* Copyright 2016-2022 --=FurtiF=--.
 *
 * Licensed under the
 *	Educational Community License, Version 2.0 (the "License"); you may
@@ -2839,6 +2839,7 @@ enum HoloPokemonMove {
 	AEROBLAST_PLUS_PLUS = 361;
 	SACRED_FIRE_PLUS = 362;
 	SACRED_FIRE_PLUS_PLUS = 363;
+	ACROBATICS = 364;
 }
 
 enum HoloPokemonMovementType {
@@ -13103,7 +13104,7 @@ message MegaEvolvePokemonOutProto {
 	optional Result result = 1;
 	optional PokemonProto evolved_pokemon = 2;
 	optional int32 exp_awarded = 3;
-	optional ObMegaEvolvePokemonProtoField ob_field = 4;
+	optional ObMegaEvolvePokemonProtoField ob_mega_evole_pokemon = 4;
 }
 
 message MegaEvolvePokemonProto {
@@ -13447,6 +13448,11 @@ message ObNewGlobalSetting4 {
 	optional bool ob_enable = 1;
 }
 
+message ObPokemonDisplayField {
+	optional int64 ob_int64 = 1;
+	optional int32 ob_int32 = 2;
+}
+
 message ObPokemonSetting {
 	optional float ob_pokemon_setting_float_1 = 1;
 	optional float ob_pokemon_setting_float_2 = 2;
@@ -13482,7 +13488,7 @@ message ObQuestsProto {
 	}
 
 	optional string ob_string = 1;
-	optional Type ob_type = 2;
+	optional Type context = 2;
 	optional IncidentLookupProto ob_incident_quest = 3;
 }
 
@@ -16716,6 +16722,7 @@ message PokemonDisplayProto {
 		ENTEI_S = 2732;
 		SUICUNE_S = 2733;
 		SLOWKING_2022 = 2734;
+		ELECTRODE_HISUIAN = 2735;
 	}
 
 	enum Gender {
@@ -16738,6 +16745,7 @@ message PokemonDisplayProto {
 	optional HoloTemporaryEvolutionId locked_temp_evolution = 11;
 	optional Costume original_costume = 12;
 	optional int64 display_id = 13;
+	optional ObPokemonDisplayField ob_pokemon_display = 14;
 }
 
 message PokemonEncounterAttributesProto {
@@ -16964,7 +16972,6 @@ message PokemonProto {
 	optional EggSlotType egg_slot_type = 69;
 	optional EggTelemetryProto egg_telemetry = 70;
 	optional EggDistributionProto egg_distribution = 71;
-	optional PokemonDisplayProto original_pokemon_display = 72;
 }
 
 message PokemonScaleSettingProto {
@@ -17792,7 +17799,7 @@ message QuestPreconditionProto {
 	}
 
 	enum QuestPreconditionType {
-		QUEST_PRECONDITION_UNSET_QUESTPRECONDITIONTYPE = 0;
+		QUEST_PRECONDITION_UNSET = 0;
 		QUEST_PRECONDITION_QUEST = 1;
 		QUEST_PRECONDITION_LEVEL = 2;
 		QUEST_PRECONDITION_MEDAL = 3;
@@ -20577,13 +20584,8 @@ message TriangleList {
 }
 
 message TutorialCompletRewards {
-	message TutorialReward {
-		optional Item item_id = 1;
-		optional int32 amount = 2;
-	}
-
 	optional TutorialCompletion tutorial_completation = 1;
-	repeated TutorialReward item_reward = 2;
+	repeated ItemProto item_reward = 2;
 }
 
 message TutorialCreateDetail {
