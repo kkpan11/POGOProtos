@@ -1896,11 +1896,11 @@
       <size type="number">9499</size>
     </item>
     <item type="object">
-      <assetId type="string">115dc97f-358a-4c45-8ac1-e20e4821f609/1643262227474174</assetId>
+      <assetId type="string">115dc97f-358a-4c45-8ac1-e20e4821f609/1643417777062931</assetId>
       <bundleName type="string">json_patch_i18n_russian</bundleName>
-      <version type="string">1643262227474174</version>
-      <checksum type="number">3514059631</checksum>
-      <size type="number">22684</size>
+      <version type="string">1643417777062931</version>
+      <checksum type="number">841357590</checksum>
+      <size type="number">26350</size>
     </item>
     <item type="object">
       <assetId type="string">11616b6c-6439-4fab-868d-d6795c6e9162/1616639682677249</assetId>
@@ -2794,11 +2794,11 @@
       <size type="number">5310</size>
     </item>
     <item type="object">
-      <assetId type="string">1bb14249-cfa4-44d4-a0d6-1c58e8261650/1643262216130881</assetId>
+      <assetId type="string">1bb14249-cfa4-44d4-a0d6-1c58e8261650/1643417768018231</assetId>
       <bundleName type="string">json_patch_i18n_italian</bundleName>
-      <version type="string">1643262216130881</version>
-      <checksum type="number">1079936773</checksum>
-      <size type="number">18261</size>
+      <version type="string">1643417768018231</version>
+      <checksum type="number">3122311979</checksum>
+      <size type="number">21290</size>
     </item>
     <item type="object">
       <assetId type="string">1bbc5eec-7ce1-4649-8e00-dce0ed5864fc/1616622439114263</assetId>
@@ -4417,11 +4417,11 @@
       <key type="string">/FEF7hUM85mDw2hD67WdSQ==</key>
     </item>
     <item type="object">
-      <assetId type="string">2b58a4ea-6704-4b59-baa3-93d3322eb74d/1643262212296191</assetId>
+      <assetId type="string">2b58a4ea-6704-4b59-baa3-93d3322eb74d/1643417764960067</assetId>
       <bundleName type="string">json_patch_i18n_german</bundleName>
-      <version type="string">1643262212296191</version>
-      <checksum type="number">1592035703</checksum>
-      <size type="number">19026</size>
+      <version type="string">1643417764960067</version>
+      <checksum type="number">91751645</checksum>
+      <size type="number">22276</size>
     </item>
     <item type="object">
       <assetId type="string">2b62593e-546c-4844-ab6d-d5b8c0f5fbea/1616644561055323</assetId>
@@ -6071,11 +6071,11 @@
       <size type="number">10300</size>
     </item>
     <item type="object">
-      <assetId type="string">3d93143b-a6da-43a5-95c4-153d6045925e/1643262196832179</assetId>
+      <assetId type="string">3d93143b-a6da-43a5-95c4-153d6045925e/1643417752747061</assetId>
       <bundleName type="string">json_patch_i18n_brazilianportuguese</bundleName>
-      <version type="string">1643262196832179</version>
-      <checksum type="number">4072131878</checksum>
-      <size type="number">18008</size>
+      <version type="string">1643417752747061</version>
+      <checksum type="number">3897998047</checksum>
+      <size type="number">21004</size>
     </item>
     <item type="object">
       <assetId type="string">3da83d1a-267a-4f63-9854-420c6f75b881/1616639619237986</assetId>
@@ -7067,11 +7067,11 @@
       <size type="number">10233</size>
     </item>
     <item type="object">
-      <assetId type="string">4894c86c-9a45-4814-9215-0a92968690f7/1643262219789572</assetId>
+      <assetId type="string">4894c86c-9a45-4814-9215-0a92968690f7/1643417771061798</assetId>
       <bundleName type="string">json_patch_i18n_japanese</bundleName>
-      <version type="string">1643262219789572</version>
-      <checksum type="number">1543011498</checksum>
-      <size type="number">16919</size>
+      <version type="string">1643417771061798</version>
+      <checksum type="number">2867572988</checksum>
+      <size type="number">20376</size>
     </item>
     <item type="object">
       <assetId type="string">489e8bc1-e751-473f-8ff8-7729dd807d8c/1616623103984061</assetId>
@@ -7381,6 +7381,13 @@
       <version type="string">1616631917782389</version>
       <checksum type="number">3983427916</checksum>
       <size type="number">85879</size>
+    </item>
+    <item type="object">
+      <assetId type="string">4c126bf5-bdff-4983-9514-e388aca9787c/1643410311932788</assetId>
+      <bundleName type="string">m_hat_noibat_bundle</bundleName>
+      <version type="string">1643410311932788</version>
+      <checksum type="number">1459346912</checksum>
+      <size type="number">267433</size>
     </item>
     <item type="object">
       <assetId type="string">4c17a3d3-c236-4cbb-acdf-05578b545a91/1616624073372851</assetId>
@@ -9794,11 +9801,11 @@
       <size type="number">42069</size>
     </item>
     <item type="object">
-      <assetId type="string">636575d6-7213-4ffc-88e8-5f125e7112d6/1643262201205987</assetId>
+      <assetId type="string">636575d6-7213-4ffc-88e8-5f125e7112d6/1643417755954894</assetId>
       <bundleName type="string">json_patch_i18n_chinesetraditional</bundleName>
-      <version type="string">1643262201205987</version>
-      <checksum type="number">2776752224</checksum>
-      <size type="number">17308</size>
+      <version type="string">1643417755954894</version>
+      <checksum type="number">2007799002</checksum>
+      <size type="number">20505</size>
     </item>
     <item type="object">
       <assetId type="string">636a2145-97ff-494c-96ba-1e1f839a5173/1622156537281446</assetId>
@@ -10762,11 +10769,11 @@
       <size type="number">814561</size>
     </item>
     <item type="object">
-      <assetId type="string">6b8f3fef-4233-45f7-9395-39f56e0912e1/1643262234744889</assetId>
+      <assetId type="string">6b8f3fef-4233-45f7-9395-39f56e0912e1/1643417782986513</assetId>
       <bundleName type="string">json_patch_i18n_thai</bundleName>
-      <version type="string">1643262234744889</version>
-      <checksum type="number">2725521067</checksum>
-      <size type="number">24469</size>
+      <version type="string">1643417782986513</version>
+      <checksum type="number">1681388310</checksum>
+      <size type="number">28866</size>
     </item>
     <item type="object">
       <assetId type="string">6ba414f0-ae2c-41d8-ad28-c99f0b623191/1639772191122571</assetId>
@@ -16518,11 +16525,11 @@
       <size type="number">8821</size>
     </item>
     <item type="object">
-      <assetId type="string">a381995c-f9ca-4de5-93db-38159a7d032c/1643262231133935</assetId>
+      <assetId type="string">a381995c-f9ca-4de5-93db-38159a7d032c/1643417779983740</assetId>
       <bundleName type="string">json_patch_i18n_spanish</bundleName>
-      <version type="string">1643262231133935</version>
-      <checksum type="number">156046789</checksum>
-      <size type="number">18327</size>
+      <version type="string">1643417779983740</version>
+      <checksum type="number">1701304650</checksum>
+      <size type="number">21422</size>
     </item>
     <item type="object">
       <assetId type="string">a3880a65-ed02-4d13-a333-cb71a7226cb0/1616622633691673</assetId>
@@ -17793,6 +17800,13 @@
       <version type="string">1616632022460778</version>
       <checksum type="number">2124442808</checksum>
       <size type="number">19671</size>
+    </item>
+    <item type="object">
+      <assetId type="string">afeb97a2-0644-4ef1-9e4d-18b4000f14f6/1643410315139379</assetId>
+      <bundleName type="string">f_hat_noibat_bundle</bundleName>
+      <version type="string">1643410315139379</version>
+      <checksum type="number">1841705988</checksum>
+      <size type="number">274869</size>
     </item>
     <item type="object">
       <assetId type="string">aff4d7f2-a8ff-4677-b91b-6cbde5493ed0/1616623008368474</assetId>
@@ -20102,6 +20116,13 @@
       <size type="number">5146</size>
     </item>
     <item type="object">
+      <assetId type="string">c7257e80-8186-428f-881c-e93551cbcd4a/1643410310062469</assetId>
+      <bundleName type="string">f_hat_noibat_00_bundle_icon</bundleName>
+      <version type="string">1643410310062469</version>
+      <checksum type="number">1382428450</checksum>
+      <size type="number">11827</size>
+    </item>
+    <item type="object">
       <assetId type="string">c7507723-0648-40f7-87c4-d73f539586cc/1616621903363615</assetId>
       <bundleName type="string">f_pants_loosepants_bundle</bundleName>
       <version type="string">1616621903363615</version>
@@ -20809,11 +20830,11 @@
       <size type="number">441419</size>
     </item>
     <item type="object">
-      <assetId type="string">cd53a84f-5c55-4563-84b3-edda474e01f1/1643262204947332</assetId>
+      <assetId type="string">cd53a84f-5c55-4563-84b3-edda474e01f1/1643417758919636</assetId>
       <bundleName type="string">json_patch_i18n_english</bundleName>
-      <version type="string">1643262204947332</version>
-      <checksum type="number">772339179</checksum>
-      <size type="number">12701</size>
+      <version type="string">1643417758919636</version>
+      <checksum type="number">4051524770</checksum>
+      <size type="number">15215</size>
     </item>
     <item type="object">
       <assetId type="string">cd6505ba-8c14-49d2-9bb8-2b8840b60f6a/1616632654516245</assetId>
@@ -22218,6 +22239,13 @@
       <size type="number">8001</size>
     </item>
     <item type="object">
+      <assetId type="string">dafd85f3-ce25-4293-86c5-e5cb5053faf5/1643410309031056</assetId>
+      <bundleName type="string">m_hat_noibat_00_bundle_icon</bundleName>
+      <version type="string">1643410309031056</version>
+      <checksum type="number">3723385055</checksum>
+      <size type="number">11937</size>
+    </item>
+    <item type="object">
       <assetId type="string">dafe59b4-9f85-490d-bd55-fe3214d422db/1616623210186231</assetId>
       <bundleName type="string">m_gloves_swshdlc2costume_00_bundle_icon</bundleName>
       <version type="string">1616623210186231</version>
@@ -22360,11 +22388,11 @@
       <size type="number">7664</size>
     </item>
     <item type="object">
-      <assetId type="string">dccbb419-951a-4bf9-8448-8a32e5bae6d1/1643262223665205</assetId>
+      <assetId type="string">dccbb419-951a-4bf9-8448-8a32e5bae6d1/1643417774007370</assetId>
       <bundleName type="string">json_patch_i18n_korean</bundleName>
-      <version type="string">1643262223665205</version>
-      <checksum type="number">378455668</checksum>
-      <size type="number">16830</size>
+      <version type="string">1643417774007370</version>
+      <checksum type="number">1928222052</checksum>
+      <size type="number">20053</size>
     </item>
     <item type="object">
       <assetId type="string">dcd89218-66fa-4ea3-a549-7d49df98b5d1/1512759924956220</assetId>
@@ -25238,11 +25266,11 @@
       <size type="number">9629</size>
     </item>
     <item type="object">
-      <assetId type="string">f81c317b-b38c-454e-ac41-b716acec654f/1643262208553069</assetId>
+      <assetId type="string">f81c317b-b38c-454e-ac41-b716acec654f/1643417761958108</assetId>
       <bundleName type="string">json_patch_i18n_french</bundleName>
-      <version type="string">1643262208553069</version>
-      <checksum type="number">3867051726</checksum>
-      <size type="number">18265</size>
+      <version type="string">1643417761958108</version>
+      <checksum type="number">3108927569</checksum>
+      <size type="number">21400</size>
     </item>
     <item type="object">
       <assetId type="string">f826a71a-90f8-46c9-a731-f05a07d215ef/1616623200692894</assetId>
@@ -26055,6 +26083,6 @@
       <size type="number">1240971</size>
     </item>
   </digest>
-  <timestamp type="string">1643302495989257</timestamp>
+  <timestamp type="string">1643417782986513</timestamp>
   <result type="string">SUCCESS</result>
 </root>
