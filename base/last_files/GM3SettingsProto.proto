@@ -21,7 +21,6 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message CBBODOBAAHL {
-	bool dbpgcjbelja = 1;
-	repeated string onjabhdgfmb = 2;
+message GM3SettingsProto {
+	repeated string ob_string = 1;
 }

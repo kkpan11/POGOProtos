@@ -21,17 +21,15 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message LALAOGOEBFM {
-	bool glklpmebiof = 1;
-	bool fbmlmgniaba = 2;
-	bool konjbbmccfd = 3;
-	bool dngemmbnnib = 4;
-	bool hgjmonehnpo = 5;
-	bool nlcaflfjeka = 6;
-	bool imkpniglgdd = 7;
-	bool igmebkjhiil = 8;
-	bool dfmklcbkeng = 9;
-	int32 jjcigmphfgo = 10;
-	bool labfhmhegdo = 11;
-	int32 gjnpmicjpmd = 12;
+import "HoloPokemonId.proto";
+import "ObGM8Settings1.proto";
+import "ObGM8Settings2.proto";
+import "ObGM8Settings3.proto";
+
+message GM8SettingsProto {
+	int32 ob_int32 = 1;
+	HoloPokemonId pokemon_type_id = 2;
+	ObGM8Settings1 ob_gm_8_settings_1 = 3;
+	ObGM8Settings2 ob_gm_8_settings_2 = 4;
+	ObGM8Settings3 ob_gm_8_settings_3 = 5;
 }

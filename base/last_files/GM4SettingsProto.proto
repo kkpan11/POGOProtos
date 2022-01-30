@@ -21,6 +21,7 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message INPCCMJIOIL {
-	int32 fodlnilbjai = 1;
+message GM4SettingsProto {
+	int32 ob_int32_1 = 1;
+	int32 ob_int32_2 = 2;
 }

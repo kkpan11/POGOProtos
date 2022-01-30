@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message FCOGCOPNCOE {
-	int32 becoocefpfi = 1;
+message ObGM8Settings2 {
+	int64 ob_int64 = 1;
+	int32 ob_int32_1 = 2;
+	int32 ob_int32_2 = 3;
+	int32 ob_int32_3 = 4;
 }

@@ -21,9 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message JDGIPACJHFJ {
-	int64 oijofpflmli = 1;
-	int32 nmglfmmdmaj = 2;
-	int32 lhhkpnlicoh = 3;
-	int32 cdolplpgjdi = 4;
+import "AdRequestDeviceInfo.proto";
+import "ObPlayerOrFriendAvatarType.proto";
+
+message ZZObfuscatedProto {
+	AdRequestDeviceInfo ob_ad_request_device_info = 1;
+	ObPlayerOrFriendAvatarType ob_player_or_friend_avatar = 2;
 }

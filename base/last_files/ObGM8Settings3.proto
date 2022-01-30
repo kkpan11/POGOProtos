@@ -21,6 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message CLOGIAFCLLK {
-	repeated EnumWrapper.InvasionCharacter ifgpceedenf = 1;
+message ObGM8Settings3 {
+	float ob_float_1 = 1;
+	float ob_float_2 = 2;
+	int32 ob_int32_1 = 3;
+	int32 ob_int32_2 = 4;
+	float ob_float_3 = 5;
 }

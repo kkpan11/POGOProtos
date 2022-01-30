@@ -21,6 +21,7 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message FHEOFILILNM {
-	repeated string hbjbaeccaic = 1;
+message DebugInfoProto {
+	double latitude = 1;
+	double longitude = 2;
 }

@@ -4895,17 +4895,6 @@ message BBEBAGJFDDA {
 	string pcphbipmplo = 1;
 }
 
-message BCKDKKDDDOI {
-	enum DCJADGAEPFD {
-		UNSET = 0;
-		FORT_POWER_UP_ACTIVITY_AR_SCAN = 1;
-	}
-
-	DCJADGAEPFD ojheniankek = 1;
-	int32 fdgphmjjhpm = 2;
-	int32 ibkgbbcjeea = 3;
-}
-
 message BDGCGFNLFCL {
 	message KDBPEILKFBM {
 		int64 lgbfcgkobej = 1;
@@ -5535,7 +5524,7 @@ message BuddyActivityCategorySettings {
 }
 
 message BuddyActivitySettings {
-	BuddyActivity ojheniankek = 1;
+	BuddyActivity activity = 1;
 	BuddyActivityCategory lijfaiocpkn = 2;
 	int32 oandifjioag = 3;
 	int32 bkjleigcglm = 4;
@@ -5768,10 +5757,6 @@ message CBMLFKKGCCJ {
 }
 
 message CCCMPCLFOGD {
-}
-
-message CDECNEOKJGA {
-	repeated string dfcfgmbcbin = 1;
 }
 
 message CDFGDLOJOOD {
@@ -7171,10 +7156,6 @@ message DALIIEOMINM {
 	repeated OMIMACIPECE hbidokkcapo = 1;
 }
 
-message DBLCBLIPDJN {
-	int32 jflhbkddill = 1;
-}
-
 message DBOJNPFAJPP {
 	bool ecjglenojhg = 1;
 }
@@ -7896,12 +7877,6 @@ message EMAIFNCCBIL {
 	int32 mkbbkaincbm = 2;
 }
 
-message EMANCKGKDPD {
-	int32 mkieoolbejf = 1;
-	int32 iomgollopll = 2;
-	int32 ooaebnabeip = 3;
-}
-
 message EMFCMIEDOAB {
 	string mdloclpiajb = 1;
 	uint64 lgbfcgkobej = 2;
@@ -8390,11 +8365,6 @@ message FDNNDNPBEJO {
 message FEHDDBGELMI {
 	bool joefipbmicp = 1;
 	bool egeiepkomhg = 2;
-}
-
-message FFCOEFGDECJ {
-	bool pnbgfffadab = 1;
-	repeated string kbkmjcemkbm = 2;
 }
 
 message FGJBBFMLCMN {
@@ -9097,6 +9067,62 @@ message GKNACDKDEDI {
 	int64 jdlgpnefcmf = 2;
 }
 
+message GM1SettingsProto {
+	enum Activity {
+		UNSET = 0;
+		FORT_POWER_UP_ACTIVITY_AR_SCAN = 1;
+	}
+
+	Activity activity = 1;
+	int32 fdgphmjjhpm = 2;
+	int32 ibkgbbcjeea = 3;
+}
+
+message GM2SettingsProto {
+	int32 jflhbkddill = 1;
+}
+
+message GM3SettingsProto {
+	repeated string dfcfgmbcbin = 1;
+}
+
+message GM4SettingsProto {
+	int32 mmlkegbdnbo = 1;
+	int32 hlflmfniian = 2;
+}
+
+message GM5SettingsProto {
+	repeated EnumWrapper.InvasionCharacter ipjcgngjmen = 1;
+}
+
+message GM6SettingsProto {
+	bool pnbgfffadab = 1;
+	repeated string kbkmjcemkbm = 2;
+}
+
+message GM7SettingsProto {
+	bool pnbgfffadab = 1;
+	bool phnnpmmepha = 2;
+	bool nbejkbaiopm = 3;
+	bool cjnjjkpjlhe = 4;
+	bool bchlkfabdif = 5;
+	bool foelckgoihk = 6;
+	bool ilnnjmfdkol = 7;
+	bool gmcngnfifal = 8;
+	bool cbgboongkeh = 9;
+	int32 bnhddpejcnh = 10;
+	bool hnklkkldeck = 11;
+	int32 lmiffeknakm = 12;
+}
+
+message GM8SettingsProto {
+	int32 febooebfefk = 1;
+	HoloPokemonId lgbfcgkobej = 2;
+	ObGM8Settings1 ob_gm_8_settings_1 = 3;
+	ObGM8Settings2 ob_gm_8_settings_2 = 4;
+	ObGM8Settings3 ob_gm_8_settings_3 = 5;
+}
+
 message GMHMDDDJIBO {
 	int32 nbflljbecin = 1;
 	uint32 colabojfknc = 2;
@@ -9251,8 +9277,8 @@ message GameMasterClientTemplateProto {
 	PowerUpPokestopSharedSettings power_up_pokestop_shared_settings = 107;
 	IncidentPrioritySettingsProto incident_priority_settings = 108;
 	ReferralSettingsProto referral_settings = 109;
-	BCKDKKDDDOI fjkllkcihma = 110;
-	DBLCBLIPDJN ciecbfoelfk = 111;
+	GM1SettingsProto ob_gm_1_settings = 110;
+	GM2SettingsProto ob_gm_2_settings = 111;
 	AppraisalStarThresholdSettings appraisal_star_threshold_settings = 112;
 	PokedexCategoriesSettings pokedex_categories_settings = 114;
 	BattleVisualSettings battle_visual_settings = 115;
@@ -9266,18 +9292,18 @@ message GameMasterClientTemplateProto {
 	MapObjectsInteractionRangeSettings map_objects_interaction_range_settings = 123;
 	ExternalAddressableAssetsSettings external_addressable_assets_settings = 124;
 	EvolePreviewSettings evolve_preview_settings = 125;
-	CDECNEOKJGA haiccgmmljm = 126;
+	GM3SettingsProto ob_gm_3_settings = 126;
 	PushGatewaySettings push_gateway_settings = 127;
 	UsernameSuggestionSettings username_suggestion_settings = 128;
 	TutorialsSettings tutorials_settings = 129;
 	EggHatchImprovementsSettings egg_hatch_improvements_settings = 130;
-	OKAIKJKFJMA nbmdbhloeij = 131;
+	GM4SettingsProto ob_gm_4_settings = 131;
 	SurveySettings survey_settings = 132;
-	NCLKHLMDIKF dhfdjkmkema = 133;
+	GM5SettingsProto ob_gm_5_settings = 133;
 	PostcardCollectionSettings postcard_collection_settings = 134;
-	FFCOEFGDECJ gbibjfakfag = 135;
-	LPKABEFAEGF noomfclmgoo = 136;
-	PCDPNMOPHFK gfegpolbocb = 137;
+	GM6SettingsProto ob_gm_6_settings = 135;
+	GM7SettingsProto ob_gm_7_settings = 136;
+	GM8SettingsProto ob_gm_8_settings = 137;
 }
 
 message GameMasterLocalProto {
@@ -12064,7 +12090,7 @@ message JoinLobbyOutProto {
 
 message JournalAddEntryProto {
 	HashedKeyProto hashed_key = 1;
-	int64 bkongdkhegp = 2;
+	int64 entry_size = 2;
 }
 
 message JournalEntryProto {
@@ -12334,13 +12360,6 @@ message LCCPCGBFPED {
 message LCFHMMNLIPC {
 	int64 ppkdhcdjkfn = 1;
 	string ddljjmckafn = 2;
-}
-
-message LCLKGBOHCAB {
-	int64 nnelpgdhcbo = 1;
-	int32 cedmljblboo = 2;
-	int32 pfpfbfphocn = 3;
-	int32 ocncmblggbk = 4;
 }
 
 message LDBPOHCFPAA {
@@ -12690,21 +12709,6 @@ message LOIHNAKIFCF {
 	}
 
 	Result result = 1;
-}
-
-message LPKABEFAEGF {
-	bool pnbgfffadab = 1;
-	bool phnnpmmepha = 2;
-	bool nbejkbaiopm = 3;
-	bool cjnjjkpjlhe = 4;
-	bool bchlkfabdif = 5;
-	bool foelckgoihk = 6;
-	bool ilnnjmfdkol = 7;
-	bool gmcngnfifal = 8;
-	bool cbgboongkeh = 9;
-	int32 bnhddpejcnh = 10;
-	bool hnklkkldeck = 11;
-	int32 lmiffeknakm = 12;
 }
 
 message Label {
@@ -13155,14 +13159,6 @@ message MIBFJMOJGOG {
 	uint64 lgbfcgkobej = 2;
 	double ajgpmfnebio = 3;
 	double hlhjdkdeclm = 4;
-}
-
-message MIFAMBNKAPO {
-	float kdjcaaacdmk = 1;
-	float dnegkiebkpd = 2;
-	int32 hpojjnpkkde = 3;
-	int32 hpgngihblog = 4;
-	float jjdkejhipef = 5;
 }
 
 message MJCMPFMPDLE {
@@ -13690,10 +13686,6 @@ message NBPFIJAAJCO {
 	Status status = 1;
 }
 
-message NCLKHLMDIKF {
-	repeated EnumWrapper.InvasionCharacter ipjcgngjmen = 1;
-}
-
 message NDGGEMLJCBP {
 	HoloPokemonFamilyId bcjmhemdmno = 1;
 	int32 gkdiieijcjh = 2;
@@ -14141,11 +14133,6 @@ message OJNFJBPLILP {
 	string paciecknodd = 3;
 }
 
-message OKAIKJKFJMA {
-	int32 mmlkegbdnbo = 1;
-	int32 hlflmfniian = 2;
-}
-
 message OMHNFNIBOBL {
 	string fmhclipkdan = 1;
 	string ljncbcicjjp = 2;
@@ -14250,6 +14237,27 @@ message ObEggStatus {
 	float ekmhnheilek = 3;
 	Type jcmldocacjj = 4;
 	float kcjeaciohhb = 5;
+}
+
+message ObGM8Settings1 {
+	int32 mkieoolbejf = 1;
+	int32 iomgollopll = 2;
+	int32 ooaebnabeip = 3;
+}
+
+message ObGM8Settings2 {
+	int64 nnelpgdhcbo = 1;
+	int32 cedmljblboo = 2;
+	int32 pfpfbfphocn = 3;
+	int32 ocncmblggbk = 4;
+}
+
+message ObGM8Settings3 {
+	float kdjcaaacdmk = 1;
+	float dnegkiebkpd = 2;
+	int32 hpojjnpkkde = 3;
+	int32 hpgngihblog = 4;
+	float jjdkejhipef = 5;
 }
 
 message ObMegaEvolvePokemonProtoField {
@@ -14582,14 +14590,6 @@ message PCBBCKJCANH {
 	int64 epdplaefokd = 3;
 	int64 onbkfincgfi = 4;
 	string mgkpanfljdg = 5;
-}
-
-message PCDPNMOPHFK {
-	int32 febooebfefk = 1;
-	HoloPokemonId lgbfcgkobej = 2;
-	EMANCKGKDPD kjecebkgkfj = 3;
-	LCLKGBOHCAB eicnhdhdocb = 4;
-	MIFAMBNKAPO llmkmkoimog = 5;
 }
 
 message PCHBGCCKDBN {

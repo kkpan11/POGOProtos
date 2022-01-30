@@ -21,15 +21,7 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "HoloPokemonId.proto";
-import "EHJBENOJEAK.proto";
-import "JDGIPACJHFJ.proto";
-import "MKDLLIHAEKJ.proto";
-
-message MHDCKLNDAHC {
-	int32 nmkeebcbfdn = 1;
-	HoloPokemonId dkgfheedgpg = 2;
-	EHJBENOJEAK iolpceapnlc = 3;
-	JDGIPACJHFJ dmchnemcgnj = 4;
-	MKDLLIHAEKJ kngdfokdlgf = 5;
+message GM6SettingsProto {
+	bool ob_bool = 1;
+	repeated string ob_string = 2;
 }

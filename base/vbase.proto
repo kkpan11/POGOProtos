@@ -4576,11 +4576,6 @@ enum WebTelemetryIds {
 	WEB_TELEMETRY_IDS_POINT_OF_INTEREST_DESCRIPTION_WEB_CLICK = 1;
 }
 
-message ADMHHMHFLOI {
-	AdRequestDeviceInfo ehpjjenagmc = 1;
-	ObPlayerOrFriendAvatarType nanhmnaloap = 2;
-}
-
 message ARBuddyMultiplayerSessionTelemetry {
 	bool camera_permission_granted = 1;
 	int64 host_time_to_publish_first_map = 2;
@@ -6291,15 +6286,6 @@ message BuildingMetadata {
 	int32 height_meters = 1;
 }
 
-message CBBODOBAAHL {
-	bool dbpgcjbelja = 1;
-	repeated string onjabhdgfmb = 2;
-}
-
-message CLOGIAFCLLK {
-	repeated EnumWrapper.InvasionCharacter ifgpceedenf = 1;
-}
-
 message CameraSettingsProto {
 	string next_camera = 1;
 	repeated CameraInterpolation interpolation = 2;
@@ -7977,6 +7963,11 @@ message DaysWithARowQuestProto {
 	int32 last_window = 1;
 }
 
+message DebugInfoProto {
+	double latitude = 1;
+	double longitude = 2;
+}
+
 message DeclineCombatChallengeOutProto {
 	enum Result {
 		UNSET = 0;
@@ -8437,23 +8428,6 @@ message DownstreamActionMessages {
 }
 
 message DumbBeaconProto {
-}
-
-message EHJBENOJEAK {
-	int32 nipghijkdlf = 1;
-	int32 apnicfhikfn = 2;
-	int32 bnibdlgfipj = 3;
-}
-
-message EOLAIBDNKGG {
-	enum Status {
-		UNSET = 0;
-		FORT_POWER_UP_ACTIVITY_AR_SCAN = 1;
-	}
-
-	Status status = 1;
-	int32 ccapeoefglb = 2;
-	int32 gijjijccodj = 3;
 }
 
 message EchoOutProto {
@@ -9029,14 +9003,6 @@ message ExternalAddressableAssetsSettings {
 	int32 ob_int32 = 1;
 }
 
-message FCOGCOPNCOE {
-	int32 becoocefpfi = 1;
-}
-
-message FHEOFILILNM {
-	repeated string hbjbaeccaic = 1;
-}
-
 message FakeDataProto {
 	PokemonProto fake_pokemon = 1;
 }
@@ -9467,6 +9433,62 @@ message FriendshipMilestoneRewardProto {
 	FriendshipLevelMilestone friendship_milestone = 2;
 }
 
+message GM1SettingsProto {
+	enum Activity {
+		UNSET = 0;
+		FORT_POWER_UP_ACTIVITY_AR_SCAN = 1;
+	}
+
+	Activity activity = 1;
+	int32 ob_int32_1 = 2;
+	int32 ob_int32_2 = 3;
+}
+
+message GM2SettingsProto {
+	int32 ob_int32 = 1;
+}
+
+message GM3SettingsProto {
+	repeated string ob_string = 1;
+}
+
+message GM4SettingsProto {
+	int32 ob_int32_1 = 1;
+	int32 ob_int32_2 = 2;
+}
+
+message GM5SettingsProto {
+	repeated EnumWrapper.InvasionCharacter ob_invasion = 1;
+}
+
+message GM6SettingsProto {
+	bool ob_bool = 1;
+	repeated string ob_string = 2;
+}
+
+message GM7SettingsProto {
+	bool ob_bool_1 = 1;
+	bool ob_bool_2 = 2;
+	bool ob_bool_3 = 3;
+	bool ob_bool_4 = 4;
+	bool ob_bool_5 = 5;
+	bool ob_bool_6 = 6;
+	bool ob_bool_7 = 7;
+	bool ob_bool_8 = 8;
+	bool ob_bool_9 = 9;
+	int32 ob_int32_1 = 10;
+	bool ob_bool_10 = 11;
+	int32 ob_int32_2 = 12;
+}
+
+message GM8SettingsProto {
+	int32 ob_int32 = 1;
+	HoloPokemonId pokemon_type_id = 2;
+	ObGM8Settings1 ob_gm_8_settings_1 = 3;
+	ObGM8Settings2 ob_gm_8_settings_2 = 4;
+	ObGM8Settings3 ob_gm_8_settings_3 = 5;
+}
+
 message GameClientPhotoGalleryPoiImageProto {
 	string image_id = 1;
 	string poi_id = 2;
@@ -9595,8 +9617,8 @@ message GameMasterClientTemplateProto {
 	PowerUpPokestopSharedSettings power_up_pokestop_shared_settings = 107;
 	IncidentPrioritySettingsProto incident_priority_settings = 108;
 	ReferralSettingsProto referral_settings = 109;
-	EOLAIBDNKGG jafhblcnkjc = 110;
-	FCOGCOPNCOE jnjbbiegnhl = 111;
+	GM1SettingsProto ob_gm_1_settings = 110;
+	GM2SettingsProto ob_gm_2_settings = 111;
 	AppraisalStarThresholdSettings appraisal_star_threshold_settings = 112;
 	PokedexCategoriesSettings pokedex_categories_settings = 114;
 	BattleVisualSettings battle_visual_settings = 115;
@@ -9610,18 +9632,18 @@ message GameMasterClientTemplateProto {
 	MapObjectsInteractionRangeSettings map_objects_interaction_range_settings = 123;
 	ExternalAddressableAssetsSettings external_addressable_assets_settings = 124;
 	EvolePreviewSettings evolve_preview_settings = 125;
-	FHEOFILILNM fdonldfcjkj = 126;
+	GM3SettingsProto ob_gm_3_settings = 126;
 	PushGatewaySettings push_gateway_settings = 127;
 	UsernameSuggestionSettings username_suggestion_settings = 128;
 	TutorialsSettings tutorials_settings = 129;
 	EggHatchImprovementsSettings egg_hatch_improvements_settings = 130;
-	INPCCMJIOIL pabonknmdlk = 131;
+	GM4SettingsProto ob_gm_4_settings = 131;
 	SurveySettings survey_settings = 132;
-	CLOGIAFCLLK dchlnpkoncg = 133;
+	GM5SettingsProto ob_gm_5_settings = 133;
 	PostcardCollectionSettings postcard_collection_settings = 134;
-	CBBODOBAAHL mjphmhnnbjd = 135;
-	LALAOGOEBFM ddcpoohfmkh = 136;
-	MHDCKLNDAHC jboofhliofa = 137;
+	GM6SettingsProto ob_gm_6_settings = 135;
+	GM7SettingsProto ob_gm_7_settings = 136;
+	GM8SettingsProto ob_gm_8_settings = 137;
 }
 
 message GameMasterLocalProto {
@@ -11750,10 +11772,6 @@ message HoloholoClientTelemetryOmniProto {
 	CommonFilterProto common_filters = 1002;
 }
 
-message INPCCMJIOIL {
-	int32 fodlnilbjai = 1;
-}
-
 message IapItemCategoryDisplayProto {
 	HoloIapItemCategory category = 1;
 	string name = 2;
@@ -12227,13 +12245,6 @@ message ItemTelemetry {
 	string item_id_string = 5;
 }
 
-message JDGIPACJHFJ {
-	int64 oijofpflmli = 1;
-	int32 nmglfmmdmaj = 2;
-	int32 lhhkpnlicoh = 3;
-	int32 cdolplpgjdi = 4;
-}
-
 message JoinBuddyMultiplayerSessionOutProto {
 	enum Result {
 		JOIN_SUCCESS = 0;
@@ -12349,21 +12360,6 @@ message KoalaSettingsProto {
 	bool use_sandbox = 2;
 	bool use_koala = 3;
 	bool ob_koala_bool = 4;
-}
-
-message LALAOGOEBFM {
-	bool glklpmebiof = 1;
-	bool fbmlmgniaba = 2;
-	bool konjbbmccfd = 3;
-	bool dngemmbnnib = 4;
-	bool hgjmonehnpo = 5;
-	bool nlcaflfjeka = 6;
-	bool imkpniglgdd = 7;
-	bool igmebkjhiil = 8;
-	bool dfmklcbkeng = 9;
-	int32 jjcigmphfgo = 10;
-	bool labfhmhegdo = 11;
-	int32 gjnpmicjpmd = 12;
 }
 
 message Label {
@@ -12773,22 +12769,6 @@ message LootProto {
 
 message LuckyPokemonSettingsProto {
 	float power_up_stardust_discount_percent = 1;
-}
-
-message MHDCKLNDAHC {
-	int32 nmkeebcbfdn = 1;
-	HoloPokemonId dkgfheedgpg = 2;
-	EHJBENOJEAK iolpceapnlc = 3;
-	JDGIPACJHFJ dmchnemcgnj = 4;
-	MKDLLIHAEKJ kngdfokdlgf = 5;
-}
-
-message MKDLLIHAEKJ {
-	float eljlcjaidfc = 1;
-	float jgjcicbagcg = 2;
-	int32 hmhjgccbmgp = 3;
-	int32 ocidjbafgpi = 4;
-	float ffneigalcbm = 5;
 }
 
 message MapArea {
@@ -13367,6 +13347,27 @@ message ObEggStatus {
 	float ob_float_1 = 2;
 	float ob_float_2 = 3;
 	Type ob_type = 4;
+	float ob_float_3 = 5;
+}
+
+message ObGM8Settings1 {
+	int32 ob_int32_1 = 1;
+	int32 ob_int32_2 = 2;
+	int32 ob_int32_3 = 3;
+}
+
+message ObGM8Settings2 {
+	int64 ob_int64 = 1;
+	int32 ob_int32_1 = 2;
+	int32 ob_int32_2 = 3;
+	int32 ob_int32_3 = 4;
+}
+
+message ObGM8Settings3 {
+	float ob_float_1 = 1;
+	float ob_float_2 = 2;
+	int32 ob_int32_1 = 3;
+	int32 ob_int32_2 = 4;
 	float ob_float_3 = 5;
 }
 
@@ -21754,4 +21755,9 @@ message WithWinGymBattleStatusProto {
 }
 
 message WithWinRaidStatusProto {
+}
+
+message ZZObfuscatedProto {
+	AdRequestDeviceInfo ob_ad_request_device_info = 1;
+	ObPlayerOrFriendAvatarType ob_player_or_friend_avatar = 2;
 }

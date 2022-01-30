@@ -21,10 +21,6 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message MKDLLIHAEKJ {
-	float eljlcjaidfc = 1;
-	float jgjcicbagcg = 2;
-	int32 hmhjgccbmgp = 3;
-	int32 ocidjbafgpi = 4;
-	float ffneigalcbm = 5;
+message GM5SettingsProto {
+	repeated EnumWrapper.InvasionCharacter ob_invasion = 1;
 }

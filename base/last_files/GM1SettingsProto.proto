@@ -21,8 +21,13 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message EHJBENOJEAK {
-	int32 nipghijkdlf = 1;
-	int32 apnicfhikfn = 2;
-	int32 bnibdlgfipj = 3;
+message GM1SettingsProto {
+	enum Activity {
+		UNSET = 0;
+		FORT_POWER_UP_ACTIVITY_AR_SCAN = 1;
+	}
+
+	Activity activity = 1;
+	int32 ob_int32_1 = 2;
+	int32 ob_int32_2 = 3;
 }
