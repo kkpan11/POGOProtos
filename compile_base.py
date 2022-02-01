@@ -3,7 +3,6 @@
 import argparse
 import operator
 import os
-#import re
 import shutil
 from subprocess import call
 
@@ -16,13 +15,6 @@ input_file = "POGOProtos.Rpc.proto"
 base_file = os.path.abspath("base/vbase.proto")
 protos_path = os.path.abspath("base")
 gen_last_files = os.path.abspath("base/last_files")
-
-
-def is_blank(my_string):
-    if my_string and my_string.strip():
-        return False
-    return True
-
 
 # args
 parser = argparse.ArgumentParser()
@@ -128,54 +120,6 @@ head += '*/\n\n'
 head += 'syntax = "proto3";\n'
 head += 'package %s;\n\n' % package_name
 
-## Load Base
-base_enums = {}
-base_messages = {}
-base_as_data = False
-base_is_enum = False
-base_proto_name = ''
-base_data = ''
-
-with open(base_file, 'r') as proto_file:
-    for proto_line in proto_file.readlines():
-        if proto_line.startswith("enum") or proto_line.startswith("message"):
-            base_as_data = True
-            base_proto_name = proto_line.split(" ")[1]
-        if proto_line.startswith("enum"):
-            base_is_enum = True
-        if proto_line.startswith("message"):
-            base_is_enum = False
-        if proto_line.startswith("}"):
-            base_data += proto_line
-            if base_is_enum:
-                base_enums.setdefault(base_proto_name, base_data)
-            else:
-                base_messages.setdefault(base_proto_name, base_data)
-            base_as_data = False
-            base_is_enum = False
-            base_proto_name = ''
-            base_data = ''
-        if base_as_data:
-            base_data += proto_line
-
-# not needed because last base.proto file is already by order alpha..
-# try:
-#     os.remove(base_file)
-# except OSError:
-#     pass
-#
-# open_for_new = open(base_file, 'a')
-# new_base_file = head
-#
-# # Re-order base
-# for p in sorted(base_enums):
-#     new_base_file += base_enums[p] + "\n"
-# for p in sorted(base_messages):
-#     new_base_file += base_messages[p] + "\n"
-#
-# open_for_new.writelines(new_base_file[:-1])
-# open_for_new.close()
-
 # Clean up previous out
 try:
     os.remove(out_path)
@@ -229,7 +173,6 @@ def open_proto_file(main_file, head):
         for proto_line in proto_file.readlines():
             messages += proto_line
 
-
     ## check in messages basic obfuscated names...
     proto_name = ''
     for proto_line in messages.split("\n"):
@@ -240,7 +183,6 @@ def open_proto_file(main_file, head):
                 print("Message: " + proto_name)
             else:
                 print("Enum: " + proto_name)
-
 
     ## Reorder all this...
     new_base_enums = {}
@@ -263,11 +205,6 @@ def open_proto_file(main_file, head):
             if new_base_is_enum:
                 new_base_enums.setdefault(new_base_proto_name, new_base_data)
             else:
-                # fix Weather stuff
-                if new_base_proto_name == "WeatherAlertProto" and not operator.contains(new_base_data, "Severity severity = 1;"):
-                    new_base_data = new_base_data.replace("bool warn_weather = 2;", "Severity severity = 1;\n\tbool warn_weather = 2;")
-                if new_base_proto_name == "GameplayWeatherProto" and not operator.contains(new_base_data, "WeatherCondition gameplay_condition = 1;"):
-                    new_base_data = new_base_data.replace("\t}", "\t}\n\n\tWeatherCondition gameplay_condition = 1;")
                 new_base_messages.setdefault(new_base_proto_name, new_base_data)
             new_base_as_data = False
             new_base_is_enum = False
@@ -315,7 +252,7 @@ def open_proto_file(main_file, head):
                 if message.startswith("message") or message.startswith("enum") or message.startswith("}"):
                     continue
                 elif message.startswith('\tmap<'):
-                    v = message.split("map<")[1].strip().split('>')[0].strip().replace(",","")
+                    v = message.split("map<")[1].strip().split('>')[0].strip().replace(",", "")
                     v1 = v.split(" ")[0].strip() + '.proto'
                     v2 = v.split(" ")[1].strip() + '.proto'
                     if os.path.exists(gen_last_files + "/" + v1):
@@ -324,7 +261,8 @@ def open_proto_file(main_file, head):
                     if os.path.exists(gen_last_files + "/" + v2):
                         if v2 not in includes:
                             includes.append(v2)
-                elif message.startswith('\trepeated') or message.startswith('\t\trepeated') or message.startswith('\t\t\trepeated'):
+                elif message.startswith('\trepeated') or message.startswith('\t\trepeated') or message.startswith(
+                        '\t\t\trepeated'):
                     file_for_includes = message.split(" ")[1].strip() + '.proto'
                     if os.path.exists(gen_last_files + "/" + file_for_includes) and file_for_includes not in includes:
                         includes.append(file_for_includes)
@@ -405,7 +343,6 @@ generated_file = raw_proto_file.replace(raw_name, input_file)
 descriptor_file = generated_file.replace(".proto", ".desc")
 descriptor_file_arguments = ['--include_source_info', '--include_imports']
 
-# small ???
 try:
     os.unlink(descriptor_file)
 except OSError:
