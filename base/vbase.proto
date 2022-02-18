@@ -9457,10 +9457,6 @@ message GM4SettingsProto {
 	int32 ob_int32_2 = 2;
 }
 
-message GM5SettingsProto {
-	repeated EnumWrapper.InvasionCharacter ob_invasion = 1;
-}
-
 message GM6SettingsProto {
 	bool ob_bool = 1;
 	repeated string ob_string = 2;
@@ -9639,7 +9635,7 @@ message GameMasterClientTemplateProto {
 	EggHatchImprovementsSettings egg_hatch_improvements_settings = 130;
 	GM4SettingsProto ob_gm_4_settings = 131;
 	SurveySettings survey_settings = 132;
-	GM5SettingsProto ob_gm_5_settings = 133;
+	IncidentVisibilitySettingsProto incident_visibility_settings = 133;
 	PostcardCollectionSettings postcard_collection_settings = 134;
 	GM6SettingsProto ob_gm_6_settings = 135;
 	GM7SettingsProto ob_gm_7_settings = 136;
@@ -11944,6 +11940,10 @@ message IncidentTicketAttributesProto {
 	bool ignore_full_inventory = 1;
 	int32 upgrade_requirement_count = 2;
 	Item upgraded_item = 3;
+}
+
+message IncidentVisibilitySettingsProto {
+	repeated EnumWrapper.InvasionCharacter visibility_character = 1;
 }
 
 message IncomingFriendInviteDisplayProto {
