@@ -21,10 +21,11 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "ObPokemonDisplayField1.proto";
+message ObNewGlobalSetting5 {
+	message ObMessage5 {
+		string ob_string_1 = 1;
+		string ob_string_2 = 2;
+	}
 
-message ObPokemonDisplayField {
-	int64 ob_int64 = 1;
-	int32 ob_int32 = 2;
-	ObPokemonDisplayField1 ob_pokemon_display_field_1 = 3;
+	repeated ObMessage5 ob_repeated_stuff = 1;
 }

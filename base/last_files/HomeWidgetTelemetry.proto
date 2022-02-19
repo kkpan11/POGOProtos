@@ -21,10 +21,16 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "ObPokemonDisplayField1.proto";
+import "Platform.proto";
 
-message ObPokemonDisplayField {
-	int64 ob_int64 = 1;
-	int32 ob_int32 = 2;
-	ObPokemonDisplayField1 ob_pokemon_display_field_1 = 3;
+message HomeWidgetTelemetry {
+	enum Status {
+		UNUSED = 0;
+		IN_USE = 1;
+		PAUSED = 2;
+	}
+
+	WidgetsProto.WidgetType widget_type = 1;
+	Status status = 2;
+	Platform platform = 3;
 }

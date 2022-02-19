@@ -21,10 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "ObPokemonDisplayField1.proto";
+import "DailyCounterProto.proto";
 
-message ObPokemonDisplayField {
-	int64 ob_int64 = 1;
-	int32 ob_int32 = 2;
-	ObPokemonDisplayField1 ob_pokemon_display_field_1 = 3;
+message ObPokemonDisplayField1 {
+	DailyCounterProto daily_counter = 1;
 }
