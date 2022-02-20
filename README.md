@@ -1,8 +1,10 @@
 <!-- define variables -->
 [1.1]: http://i.imgur.com/M4fJ65n.png (ATTENTION)
 
-POGOProtos [![Python script](https://github.com/Furtif/POGOProtos/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/Furtif/POGOProtos/actions) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/rocketbot) [![NuGet](https://img.shields.io/nuget/v/POGOProtos.Core.svg?maxAge=60)](https://www.nuget.org/packages/POGOProtos.Core) [![POGOProtos.Core on fuget.org](https://www.fuget.org/packages/POGOProtos.Core/badge.svg)](https://www.fuget.org/packages/POGOProtos.Core)
+POGOProtos [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/rocketbot) [![Python script](https://github.com/Furtif/POGOProtos/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/Furtif/POGOProtos/actions) [![NuGet](https://img.shields.io/nuget/v/POGOProtos.Core.svg?maxAge=60)](https://www.nuget.org/packages/POGOProtos.Core) [![POGOProtos.Core on fuget.org](https://www.fuget.org/packages/POGOProtos.Core/badge.svg)](https://www.fuget.org/packages/POGOProtos.Core) [![Discord](https://img.shields.io/badge/Discord-Online-blue.svg)](https://discord.gg/sYsAYT322x)
 =========
+
+[![Stories in Ready](https://discordapp.com/api/guilds/709943719863910461/widget.png?style=banner3&time-)](https://discord.gg/y6EU2qY)
 
 ![alt text][1.1] <strong><em>`The contents of this repo are a proof of concept and are for educational use only`</em></strong>![alt text][1.1]<br/>
 
