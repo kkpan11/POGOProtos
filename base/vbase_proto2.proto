@@ -9241,8 +9241,8 @@ message FortDetailsOutProto {
 	optional string geostore_tombstone_message_key = 20;
 	optional string geostore_suspension_message_key = 21;
 	optional int32 poi_images_count = 22;
-	optional int32 ob_fort_details_int32 = 23;
-	optional int64 ob_fort_details_int64 = 24;
+	optional int32 location_points = 23;
+	optional int64 power_up_remaining_until_ms = 24;
 	optional int64 ob_fort_details_int64_1 = 25;
 }
 
