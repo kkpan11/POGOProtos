@@ -506,6 +506,13 @@
       "size": 169270
     },
     {
+      "assetId": "04f42a85-3331-46c8-b3db-682fc2be7e0a/1646076301627942",
+      "bundleName": "m_hat_gladion_00_bundle_icon",
+      "version": "1646076301627942",
+      "checksum": 2333956030,
+      "size": 6177
+    },
+    {
       "assetId": "0500316a-04e5-4907-9011-577d7a0baa08/1616632689365157",
       "bundleName": "pokemon_icon_271",
       "version": "1616632689365157",
@@ -830,11 +837,11 @@
       "size": 15376
     },
     {
-      "assetId": "0861fd39-eb65-4b98-828b-0f54f5d443c3/1638217468831834",
+      "assetId": "0861fd39-eb65-4b98-828b-0f54f5d443c3/1646076320680815",
       "bundleName": "m_avatar_poses_bundle",
-      "version": "1638217468831834",
-      "checksum": 4273298687,
-      "size": 401197
+      "version": "1646076320680815",
+      "checksum": 1535713649,
+      "size": 491891
     },
     {
       "assetId": "086ac75b-11be-449a-9f87-0193c30f2d72/1616622035301236",
@@ -1802,6 +1809,13 @@
       "size": 389632
     },
     {
+      "assetId": "10bb5d8c-edc3-4f06-aa47-9187c4bd2428/1646076322361214",
+      "bundleName": "m_shoes_gladion_00_bundle_icon",
+      "version": "1646076322361214",
+      "checksum": 939389682,
+      "size": 11306
+    },
+    {
       "assetId": "10ce1ed5-1f75-4d8c-a592-8f1b10049dd3/1616623247331607",
       "bundleName": "f_hat_litwickhat_bundle",
       "version": "1616623247331607",
@@ -1917,11 +1931,11 @@
       "size": 9499
     },
     {
-      "assetId": "115dc97f-358a-4c45-8ac1-e20e4821f609/1645688818668842",
+      "assetId": "115dc97f-358a-4c45-8ac1-e20e4821f609/1646407535623219",
       "bundleName": "json_patch_i18n_russian",
-      "version": "1645688818668842",
-      "checksum": 1933595964,
-      "size": 27926
+      "version": "1646407535623219",
+      "checksum": 3882181495,
+      "size": 31673
     },
     {
       "assetId": "11616b6c-6439-4fab-868d-d6795c6e9162/1616639682677249",
@@ -2822,11 +2836,11 @@
       "size": 5310
     },
     {
-      "assetId": "1bb14249-cfa4-44d4-a0d6-1c58e8261650/1645688808371133",
+      "assetId": "1bb14249-cfa4-44d4-a0d6-1c58e8261650/1646407525573863",
       "bundleName": "json_patch_i18n_italian",
-      "version": "1645688808371133",
-      "checksum": 3637060509,
-      "size": 22285
+      "version": "1646407525573863",
+      "checksum": 147054386,
+      "size": 24384
     },
     {
       "assetId": "1bbc5eec-7ce1-4649-8e00-dce0ed5864fc/1616622439114263",
@@ -4445,11 +4459,11 @@
       "key": "/FEF7hUM85mDw2hD67WdSQ=="
     },
     {
-      "assetId": "2b58a4ea-6704-4b59-baa3-93d3322eb74d/1645688804844342",
+      "assetId": "2b58a4ea-6704-4b59-baa3-93d3322eb74d/1646407522334237",
       "bundleName": "json_patch_i18n_german",
-      "version": "1645688804844342",
-      "checksum": 1063949644,
-      "size": 23622
+      "version": "1646407522334237",
+      "checksum": 2260271914,
+      "size": 25639
     },
     {
       "assetId": "2b5c9b09-fd16-4b88-a7d6-dd56995a84dc/1645030760882056",
@@ -4583,6 +4597,13 @@
       "version": "1631828004486294",
       "checksum": 1637227426,
       "size": 220809
+    },
+    {
+      "assetId": "2d5a8561-c0d9-4b50-95ec-2d60a95d9547/1646076318032570",
+      "bundleName": "m_pants_gladion_00_bundle_icon",
+      "version": "1646076318032570",
+      "checksum": 1404249001,
+      "size": 9890
     },
     {
       "assetId": "2d6172dc-6c65-4bf8-aac0-677cf3d7e386/1616694833699724",
@@ -5362,6 +5383,13 @@
       "size": 15405
     },
     {
+      "assetId": "362d29cc-db08-46fb-a917-868f3df4aa77/1646076305141338",
+      "bundleName": "m_hat_gladion_bundle",
+      "version": "1646076305141338",
+      "checksum": 1937886909,
+      "size": 127763
+    },
+    {
       "assetId": "3630e21e-c617-426b-b25a-4c63f0d9c0bf/1616621954973925",
       "bundleName": "m_shirt_teamblanche_bundle",
       "version": "1616621954973925",
@@ -6134,11 +6162,11 @@
       "size": 10300
     },
     {
-      "assetId": "3d93143b-a6da-43a5-95c4-153d6045925e/1645688790218442",
+      "assetId": "3d93143b-a6da-43a5-95c4-153d6045925e/1646407508823036",
       "bundleName": "json_patch_i18n_brazilianportuguese",
-      "version": "1645688790218442",
-      "checksum": 935004969,
-      "size": 22218
+      "version": "1646407508823036",
+      "checksum": 2557237196,
+      "size": 24455
     },
     {
       "assetId": "3da83d1a-267a-4f63-9854-420c6f75b881/1616639619237986",
@@ -6653,6 +6681,13 @@
       "size": 803899
     },
     {
+      "assetId": "42d25a48-7330-47a7-92aa-8a69ccbbdd7f/1646076303702401",
+      "bundleName": "m_pants_gladion_bundle",
+      "version": "1646076303702401",
+      "checksum": 3690801862,
+      "size": 292424
+    },
+    {
       "assetId": "431048b5-df80-4cc1-8302-cde6fbbf9439/1616694919885233",
       "bundleName": "pm0586_13",
       "version": "1616694919885233",
@@ -7018,6 +7053,13 @@
       "size": 102004
     },
     {
+      "assetId": "46d2f50d-d7ae-42b6-bcb1-a0a6bd139a4e/1646076300520618",
+      "bundleName": "f_pants_gladion_00_bundle_icon",
+      "version": "1646076300520618",
+      "checksum": 488488395,
+      "size": 8923
+    },
+    {
       "assetId": "46eb9068-a093-4fba-8628-7ac480899a63/1616622794330386",
       "bundleName": "f_backpack_longchampbp_00_bundle_icon",
       "version": "1616622794330386",
@@ -7130,11 +7172,11 @@
       "size": 10233
     },
     {
-      "assetId": "4894c86c-9a45-4814-9215-0a92968690f7/1645688811812604",
+      "assetId": "4894c86c-9a45-4814-9215-0a92968690f7/1646407529154120",
       "bundleName": "json_patch_i18n_japanese",
-      "version": "1645688811812604",
-      "checksum": 2075202175,
-      "size": 31790
+      "version": "1646407529154120",
+      "checksum": 553495052,
+      "size": 33297
     },
     {
       "assetId": "489e8bc1-e751-473f-8ff8-7729dd807d8c/1616623103984061",
@@ -7495,11 +7537,11 @@
       "size": 754803
     },
     {
-      "assetId": "4c58c336-d2e6-4131-8c4e-b8a910488fa5/1645688829237148",
+      "assetId": "4c58c336-d2e6-4131-8c4e-b8a910488fa5/1646407545313068",
       "bundleName": "json_patch_i18n_turkish",
-      "version": "1645688829237148",
-      "checksum": 2312403145,
-      "size": 24478
+      "version": "1646407545313068",
+      "checksum": 522649600,
+      "size": 34353
     },
     {
       "assetId": "4c6bebe6-a138-4706-9aa9-b15c10a81e9f/1616694777347976",
@@ -7704,6 +7746,13 @@
       "version": "1625774641992221",
       "checksum": 347857449,
       "size": 12196
+    },
+    {
+      "assetId": "4e64f704-a33b-48e9-bff2-41dd0816b05a/1646076310899189",
+      "bundleName": "m_shirt_gladion_00_bundle_icon",
+      "version": "1646076310899189",
+      "checksum": 1266387949,
+      "size": 14118
     },
     {
       "assetId": "4e719698-d1e3-4049-b0cf-5ad6fbd9f871/1634148361234116",
@@ -8446,6 +8495,13 @@
       "version": "1616631868709490",
       "checksum": 2495666482,
       "size": 19279
+    },
+    {
+      "assetId": "542af175-06de-46e0-a8ac-df55dd8d07d9/1646076299674742",
+      "bundleName": "f_shirt_gladion_00_bundle_icon",
+      "version": "1646076299674742",
+      "checksum": 3283554267,
+      "size": 14409
     },
     {
       "assetId": "545283c3-2bb0-4a79-b5ab-51274aa7865a/1616632403891088",
@@ -9892,11 +9948,11 @@
       "size": 42069
     },
     {
-      "assetId": "636575d6-7213-4ffc-88e8-5f125e7112d6/1645688793890351",
+      "assetId": "636575d6-7213-4ffc-88e8-5f125e7112d6/1646407512425433",
       "bundleName": "json_patch_i18n_chinesetraditional",
-      "version": "1645688793890351",
-      "checksum": 1061242942,
-      "size": 20759
+      "version": "1646407512425433",
+      "checksum": 4107714186,
+      "size": 22701
     },
     {
       "assetId": "636a2145-97ff-494c-96ba-1e1f839a5173/1622156537281446",
@@ -10457,6 +10513,13 @@
       "size": 563229
     },
     {
+      "assetId": "67a3be22-270d-445a-b2ed-1f4355f351df/1646076298681203",
+      "bundleName": "f_shoes_gladion_bundle",
+      "version": "1646076298681203",
+      "checksum": 2230127572,
+      "size": 151461
+    },
+    {
       "assetId": "67b7ee94-ae08-45bd-ba6d-783db11ab7bf/1616694719324713",
       "bundleName": "pm0493_20",
       "version": "1616694719324713",
@@ -10526,6 +10589,13 @@
       "version": "1616631844108929",
       "checksum": 2756868070,
       "size": 7296
+    },
+    {
+      "assetId": "682daab3-92c1-4df8-a05e-5b21757e40d9/1646076297008675",
+      "bundleName": "f_shirt_gladion_bundle",
+      "version": "1646076297008675",
+      "checksum": 4281857856,
+      "size": 273395
     },
     {
       "assetId": "683ccaca-da12-4a1e-9671-84ac686fcf9c/1639509589953615",
@@ -10881,11 +10951,11 @@
       "size": 814561
     },
     {
-      "assetId": "6b8f3fef-4233-45f7-9395-39f56e0912e1/1645688825887638",
+      "assetId": "6b8f3fef-4233-45f7-9395-39f56e0912e1/1646407541946043",
       "bundleName": "json_patch_i18n_thai",
-      "version": "1645688825887638",
-      "checksum": 3049697343,
-      "size": 30861
+      "version": "1646407541946043",
+      "checksum": 3279683425,
+      "size": 38611
     },
     {
       "assetId": "6ba414f0-ae2c-41d8-ad28-c99f0b623191/1639772191122571",
@@ -16087,6 +16157,13 @@
       "size": 10237
     },
     {
+      "assetId": "9d7a9b7b-ca81-4d9f-a5e3-2bdf8bc636d4/1646076323329247",
+      "bundleName": "f_hat_gladion_bundle",
+      "version": "1646076323329247",
+      "checksum": 239039484,
+      "size": 128766
+    },
+    {
       "assetId": "9d7f7db9-042d-421b-9837-70b9caa9a9ba/1616631774352834",
       "bundleName": "pokemon_icon_634",
       "version": "1616631774352834",
@@ -16714,11 +16791,11 @@
       "size": 8821
     },
     {
-      "assetId": "a381995c-f9ca-4de5-93db-38159a7d032c/1645688822293034",
+      "assetId": "a381995c-f9ca-4de5-93db-38159a7d032c/1646407538850182",
       "bundleName": "json_patch_i18n_spanish",
-      "version": "1645688822293034",
-      "checksum": 242428913,
-      "size": 22491
+      "version": "1646407538850182",
+      "checksum": 3755609044,
+      "size": 24586
     },
     {
       "assetId": "a3880a65-ed02-4d13-a333-cb71a7226cb0/1616622633691673",
@@ -19170,6 +19247,13 @@
       "size": 143020
     },
     {
+      "assetId": "bb74a987-41f0-4f1f-800c-454b4206f1c7/1646076309647618",
+      "bundleName": "f_pants_gladion_bundle",
+      "version": "1646076309647618",
+      "checksum": 2646406319,
+      "size": 307034
+    },
+    {
       "assetId": "bba9ad41-68c7-435d-b9f3-a8f20c01961c/1616623837121412",
       "bundleName": "f_shirt_lvl50_01_bundle_icon",
       "version": "1616623837121412",
@@ -19612,6 +19696,13 @@
       "version": "1616622926707225",
       "checksum": 40664716,
       "size": 11918
+    },
+    {
+      "assetId": "bfdfc220-7bd7-4c3b-aa88-8ba2460f7a2d/1646076319045192",
+      "bundleName": "m_shoes_gladion_bundle",
+      "version": "1646076319045192",
+      "checksum": 331349537,
+      "size": 152941
     },
     {
       "assetId": "bff2c3f3-ce74-4cc9-9fbd-f66858c1b306/1616694930186325",
@@ -21061,11 +21152,11 @@
       "size": 441419
     },
     {
-      "assetId": "cd53a84f-5c55-4563-84b3-edda474e01f1/1645688797548588",
+      "assetId": "cd53a84f-5c55-4563-84b3-edda474e01f1/1646407515737427",
       "bundleName": "json_patch_i18n_english",
-      "version": "1645688797548588",
-      "checksum": 2567067505,
-      "size": 20830
+      "version": "1646407515737427",
+      "checksum": 30943838,
+      "size": 23138
     },
     {
       "assetId": "cd6505ba-8c14-49d2-9bb8-2b8840b60f6a/1616632654516245",
@@ -21265,6 +21356,13 @@
       "version": "1619807958662848",
       "checksum": 1410567821,
       "size": 607698
+    },
+    {
+      "assetId": "cf58fe88-7061-4f25-8cd1-29e644db5853/1646076316695433",
+      "bundleName": "m_shirt_gladion_bundle",
+      "version": "1646076316695433",
+      "checksum": 2353984471,
+      "size": 313621
     },
     {
       "assetId": "cf5e4911-24e2-49e7-8f9e-86e8df703638/1616631919223489",
@@ -21878,11 +21976,11 @@
       "size": 26845
     },
     {
-      "assetId": "d5722a9b-a9a3-4ca5-9f56-f825642bf311/1638217458830551",
+      "assetId": "d5722a9b-a9a3-4ca5-9f56-f825642bf311/1646076306803699",
       "bundleName": "f_avatar_poses_bundle",
-      "version": "1638217458830551",
-      "checksum": 3079595536,
-      "size": 368028
+      "version": "1646076306803699",
+      "checksum": 3955492605,
+      "size": 452023
     },
     {
       "assetId": "d574e934-a789-4912-9ad2-d5cd2cf8df6c/1616622986509724",
@@ -22640,11 +22738,11 @@
       "size": 7664
     },
     {
-      "assetId": "dccbb419-951a-4bf9-8448-8a32e5bae6d1/1645688815309490",
+      "assetId": "dccbb419-951a-4bf9-8448-8a32e5bae6d1/1646407532518987",
       "bundleName": "json_patch_i18n_korean",
-      "version": "1645688815309490",
-      "checksum": 3466510821,
-      "size": 22175
+      "version": "1646407532518987",
+      "checksum": 900965940,
+      "size": 24167
     },
     {
       "assetId": "dcd89218-66fa-4ea3-a549-7d49df98b5d1/1512759924956220",
@@ -23525,6 +23623,13 @@
       "version": "1616622404830738",
       "checksum": 998589435,
       "size": 11303
+    },
+    {
+      "assetId": "e52a46d7-ee77-449e-a886-7681c03ac74b/1646076308352135",
+      "bundleName": "f_hat_gladion_00_bundle_icon",
+      "version": "1646076308352135",
+      "checksum": 3054706803,
+      "size": 6204
     },
     {
       "assetId": "e530bd1e-0dd2-4224-8dd5-df86ff14f466/1616632298531247",
@@ -25567,11 +25672,11 @@
       "size": 9629
     },
     {
-      "assetId": "f81c317b-b38c-454e-ac41-b716acec654f/1645688800908007",
+      "assetId": "f81c317b-b38c-454e-ac41-b716acec654f/1646407518983046",
       "bundleName": "json_patch_i18n_french",
-      "version": "1645688800908007",
-      "checksum": 454761308,
-      "size": 22399
+      "version": "1646407518983046",
+      "checksum": 3364531530,
+      "size": 24304
     },
     {
       "assetId": "f826a71a-90f8-46c9-a731-f05a07d215ef/1616623200692894",
@@ -26342,6 +26447,13 @@
       "size": 15836
     },
     {
+      "assetId": "ff09f157-5be6-4842-ab06-0bc3060523b8/1646076302476169",
+      "bundleName": "f_shoes_gladion_00_bundle_icon",
+      "version": "1646076302476169",
+      "checksum": 3842856131,
+      "size": 10782
+    },
+    {
       "assetId": "ff5b5a72-80d3-4832-8241-0ba8b1ee065c/1616632623894493",
       "bundleName": "pokemon_icon_191",
       "version": "1616632623894493",
@@ -26398,6 +26510,6 @@
       "size": 1240971
     }
   ],
-  "timestamp": "1645812817897248",
+  "timestamp": "1646407545313068",
   "result": "SUCCESS"
 }

@@ -1538,6 +1538,7 @@ enum HoloPokemonFamilyId {
 	FAMILY_YUNGOOS = 734;
 	FAMILY_GRUBBIN = 736;
 	FAMILY_CRABRAWLER = 739;
+	FAMILY_ORICORIO = 741;
 	FAMILY_CUTIEFLY = 742;
 	FAMILY_ROCKRUFF = 744;
 	FAMILY_WISHIWASHI = 746;
@@ -3460,6 +3461,7 @@ enum Method {
 	METHOD_UPLOAD_RAID_CLIENT_LOG = 1914;
 	METHOD_SKIP_ENTER_REFERRAL_CODE = 1915;
 	METHOD_UPLOAD_COMBAT_CLIENT_LOG = 1916;
+	METHOD_COMBAT_SYNC_SERVER_OFFSET = 1917;
 }
 
 enum NewsPageTelemetryIds {
@@ -7390,7 +7392,6 @@ message CombatProto {
 	int64 change_pokemon_end_ms = 12;
 	int64 quick_swap_cooldown_duration_ms = 13;
 	int64 state_change_delay_until_turn = 14;
-	ObCombatProto ob_combat = 15;
 }
 
 message CombatQuestUpdateProto {
@@ -7456,6 +7457,7 @@ message CombatSettingsProto {
 	float shadow_pokemon_defense_bonus_multiplier = 31;
 	float purified_pokemon_attack_multiplier_vs_shadow = 32;
 	bool ob_bool = 36;
+	ObCombatSettings ob_combat_settings = 38;
 }
 
 message CombatStatStageSettingsProto {
@@ -11666,6 +11668,7 @@ message HoloInventoryItemProto {
 		PlayerStatsSnapshotsProto player_stats_snapshots = 25;
 		FakeDataProto fake_data = 26;
 		PokedexCategoryMilestoneProto pokedex_category_milestone = 27;
+		PlayerAttributesProto player_attributes = 29;
 	}
 }
 
@@ -11699,6 +11702,7 @@ message HoloInventoryKeyProto {
 		int64 unknown_key = 26;
 		fixed64 fake_data = 27;
 		PokedexCategory pokedex_category = 28;
+		bool player_attributes = 30;
 	}
 }
 
@@ -13377,6 +13381,11 @@ message ObCombatProto {
 	repeated string ob_repeated_list = 4;
 }
 
+message ObCombatSettings {
+	int32 ob_int32 = 1;
+	bool ob_bool = 2;
+}
+
 message ObEggIncubatorsInfos {
 	oneof EggIncubatorsState {
 		ObEggIncubatorsStatus egg_incubators = 1;
@@ -13937,6 +13946,16 @@ message PlatypusRolloutSettingsProto {
 	int32 buddy_multiplayer_min_player_level = 2;
 	bool enable_monodepth = 3;
 	WallabySettingsProto wallaby_settings = 4;
+}
+
+message PlayerAttributeProto {
+	string ob_string_1 = 1;
+	string ob_string_2 = 2;
+	bool ob_bool = 3;
+}
+
+message PlayerAttributesProto {
+	map<string, string> ob_player_attribute_dic = 1;
 }
 
 message PlayerAvatarProto {
@@ -18003,6 +18022,7 @@ message QuestRewardProto {
 		StickerRewardProto sticker = 12;
 		PokemonCandyRewardProto mega_resource = 13;
 		ObQuestRewardIncident incident = 14;
+		PlayerAttributeProto player_attribute = 15;
 	}
 
 	enum Type {
@@ -18020,6 +18040,7 @@ message QuestRewardProto {
 		STICKER = 11;
 		MEGA_RESOURCE = 12;
 		INCIDENT = 13;
+		PLAYER_ATTRIBUTE = 14;
 	}
 
 	Type type = 1;

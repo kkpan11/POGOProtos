@@ -11131,7 +11131,7 @@ message HoloInventoryItemProto {
 		PlayerStatsSnapshotsProto player_stats_snapshots = 25;
 		FakeDataProto fake_data = 26;
 		PokedexCategoryMilestoneProto pokedex_category_milestone = 27;
-		PIAGNFNLDDO player_attributes = 29;
+		PlayerAttributesProto player_attributes = 29;
 	}
 }
 
@@ -11307,10 +11307,6 @@ message IBCGEINIOOH {
 	int32 cgkeppbacmi = 1;
 	uint32 kjmdhjjcpjj = 2;
 	InvasionStatus.Status status = 3;
-}
-
-message ICHCNEMAPJB {
-	DailyCounterProto kcilkhepkag = 1;
 }
 
 message ICIIBACLGII {
@@ -13921,12 +13917,6 @@ message NNGPJPAKKMH {
 	bool cfhblmndaol = 1;
 }
 
-message NNIAALCHMIF {
-	string poplkhgkeeh = 1;
-	string nmlbagcjbjh = 2;
-	bool nmaolbhejpa = 3;
-}
-
 message NNINJDANOJD {
 	repeated int64 cmfbjaolimo = 1;
 	string accalidfbpi = 2;
@@ -14456,7 +14446,11 @@ message ObNewGlobalSetting5 {
 message ObPokemonDisplayField {
 	int64 ebmpnjjhlmc = 1;
 	int32 ffmccjompid = 2;
-	ICHCNEMAPJB fllkcgdonhd = 3;
+	ObPokemonDisplayField1 ob_pokemon_display_field_1 = 3;
+}
+
+message ObPokemonDisplayField1 {
+	DailyCounterProto kcilkhepkag = 1;
 }
 
 message ObPokemonSetting {
@@ -14776,10 +14770,6 @@ message PHMPMOJJJEK {
 	repeated int32 gmoldddlead = 3;
 }
 
-message PIAGNFNLDDO {
-	map<string, string> kknillmlloa = 1;
-}
-
 message PIELEKOFIDL {
 }
 
@@ -15027,6 +15017,16 @@ message PlatypusRolloutSettingsProto {
 	int32 jdmhelkkbkj = 2;
 	bool pfjoldfkmdi = 3;
 	WallabySettingsProto wallaby_settings = 4;
+}
+
+message PlayerAttributeProto {
+	string poplkhgkeeh = 1;
+	string nmlbagcjbjh = 2;
+	bool nmaolbhejpa = 3;
+}
+
+message PlayerAttributesProto {
+	map<string, string> kknillmlloa = 1;
 }
 
 message PlayerAvatarProto {
@@ -18947,7 +18947,7 @@ message QuestRewardProto {
 		StickerRewardProto sticker = 12;
 		PokemonCandyRewardProto mega_resource = 13;
 		ObQuestRewardIncident incident = 14;
-		NNIAALCHMIF player_attribute = 15;
+		PlayerAttributeProto player_attribute = 15;
 	}
 
 	enum Type {

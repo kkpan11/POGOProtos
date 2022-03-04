@@ -506,6 +506,13 @@
       <size type="number">169270</size>
     </item>
     <item type="object">
+      <assetId type="string">04f42a85-3331-46c8-b3db-682fc2be7e0a/1646076301627942</assetId>
+      <bundleName type="string">m_hat_gladion_00_bundle_icon</bundleName>
+      <version type="string">1646076301627942</version>
+      <checksum type="number">2333956030</checksum>
+      <size type="number">6177</size>
+    </item>
+    <item type="object">
       <assetId type="string">0500316a-04e5-4907-9011-577d7a0baa08/1616632689365157</assetId>
       <bundleName type="string">pokemon_icon_271</bundleName>
       <version type="string">1616632689365157</version>
@@ -830,11 +837,11 @@
       <size type="number">15376</size>
     </item>
     <item type="object">
-      <assetId type="string">0861fd39-eb65-4b98-828b-0f54f5d443c3/1638217468831834</assetId>
+      <assetId type="string">0861fd39-eb65-4b98-828b-0f54f5d443c3/1646076320680815</assetId>
       <bundleName type="string">m_avatar_poses_bundle</bundleName>
-      <version type="string">1638217468831834</version>
-      <checksum type="number">4273298687</checksum>
-      <size type="number">401197</size>
+      <version type="string">1646076320680815</version>
+      <checksum type="number">1535713649</checksum>
+      <size type="number">491891</size>
     </item>
     <item type="object">
       <assetId type="string">086ac75b-11be-449a-9f87-0193c30f2d72/1616622035301236</assetId>
@@ -1802,6 +1809,13 @@
       <size type="number">389632</size>
     </item>
     <item type="object">
+      <assetId type="string">10bb5d8c-edc3-4f06-aa47-9187c4bd2428/1646076322361214</assetId>
+      <bundleName type="string">m_shoes_gladion_00_bundle_icon</bundleName>
+      <version type="string">1646076322361214</version>
+      <checksum type="number">939389682</checksum>
+      <size type="number">11306</size>
+    </item>
+    <item type="object">
       <assetId type="string">10ce1ed5-1f75-4d8c-a592-8f1b10049dd3/1616623247331607</assetId>
       <bundleName type="string">f_hat_litwickhat_bundle</bundleName>
       <version type="string">1616623247331607</version>
@@ -1917,11 +1931,11 @@
       <size type="number">9499</size>
     </item>
     <item type="object">
-      <assetId type="string">115dc97f-358a-4c45-8ac1-e20e4821f609/1645688818668842</assetId>
+      <assetId type="string">115dc97f-358a-4c45-8ac1-e20e4821f609/1646407535623219</assetId>
       <bundleName type="string">json_patch_i18n_russian</bundleName>
-      <version type="string">1645688818668842</version>
-      <checksum type="number">1933595964</checksum>
-      <size type="number">27926</size>
+      <version type="string">1646407535623219</version>
+      <checksum type="number">3882181495</checksum>
+      <size type="number">31673</size>
     </item>
     <item type="object">
       <assetId type="string">11616b6c-6439-4fab-868d-d6795c6e9162/1616639682677249</assetId>
@@ -2822,11 +2836,11 @@
       <size type="number">5310</size>
     </item>
     <item type="object">
-      <assetId type="string">1bb14249-cfa4-44d4-a0d6-1c58e8261650/1645688808371133</assetId>
+      <assetId type="string">1bb14249-cfa4-44d4-a0d6-1c58e8261650/1646407525573863</assetId>
       <bundleName type="string">json_patch_i18n_italian</bundleName>
-      <version type="string">1645688808371133</version>
-      <checksum type="number">3637060509</checksum>
-      <size type="number">22285</size>
+      <version type="string">1646407525573863</version>
+      <checksum type="number">147054386</checksum>
+      <size type="number">24384</size>
     </item>
     <item type="object">
       <assetId type="string">1bbc5eec-7ce1-4649-8e00-dce0ed5864fc/1616622439114263</assetId>
@@ -4445,11 +4459,11 @@
       <key type="string">/FEF7hUM85mDw2hD67WdSQ==</key>
     </item>
     <item type="object">
-      <assetId type="string">2b58a4ea-6704-4b59-baa3-93d3322eb74d/1645688804844342</assetId>
+      <assetId type="string">2b58a4ea-6704-4b59-baa3-93d3322eb74d/1646407522334237</assetId>
       <bundleName type="string">json_patch_i18n_german</bundleName>
-      <version type="string">1645688804844342</version>
-      <checksum type="number">1063949644</checksum>
-      <size type="number">23622</size>
+      <version type="string">1646407522334237</version>
+      <checksum type="number">2260271914</checksum>
+      <size type="number">25639</size>
     </item>
     <item type="object">
       <assetId type="string">2b5c9b09-fd16-4b88-a7d6-dd56995a84dc/1645030760882056</assetId>
@@ -4583,6 +4597,13 @@
       <version type="string">1631828004486294</version>
       <checksum type="number">1637227426</checksum>
       <size type="number">220809</size>
+    </item>
+    <item type="object">
+      <assetId type="string">2d5a8561-c0d9-4b50-95ec-2d60a95d9547/1646076318032570</assetId>
+      <bundleName type="string">m_pants_gladion_00_bundle_icon</bundleName>
+      <version type="string">1646076318032570</version>
+      <checksum type="number">1404249001</checksum>
+      <size type="number">9890</size>
     </item>
     <item type="object">
       <assetId type="string">2d6172dc-6c65-4bf8-aac0-677cf3d7e386/1616694833699724</assetId>
@@ -5362,6 +5383,13 @@
       <size type="number">15405</size>
     </item>
     <item type="object">
+      <assetId type="string">362d29cc-db08-46fb-a917-868f3df4aa77/1646076305141338</assetId>
+      <bundleName type="string">m_hat_gladion_bundle</bundleName>
+      <version type="string">1646076305141338</version>
+      <checksum type="number">1937886909</checksum>
+      <size type="number">127763</size>
+    </item>
+    <item type="object">
       <assetId type="string">3630e21e-c617-426b-b25a-4c63f0d9c0bf/1616621954973925</assetId>
       <bundleName type="string">m_shirt_teamblanche_bundle</bundleName>
       <version type="string">1616621954973925</version>
@@ -6134,11 +6162,11 @@
       <size type="number">10300</size>
     </item>
     <item type="object">
-      <assetId type="string">3d93143b-a6da-43a5-95c4-153d6045925e/1645688790218442</assetId>
+      <assetId type="string">3d93143b-a6da-43a5-95c4-153d6045925e/1646407508823036</assetId>
       <bundleName type="string">json_patch_i18n_brazilianportuguese</bundleName>
-      <version type="string">1645688790218442</version>
-      <checksum type="number">935004969</checksum>
-      <size type="number">22218</size>
+      <version type="string">1646407508823036</version>
+      <checksum type="number">2557237196</checksum>
+      <size type="number">24455</size>
     </item>
     <item type="object">
       <assetId type="string">3da83d1a-267a-4f63-9854-420c6f75b881/1616639619237986</assetId>
@@ -6653,6 +6681,13 @@
       <size type="number">803899</size>
     </item>
     <item type="object">
+      <assetId type="string">42d25a48-7330-47a7-92aa-8a69ccbbdd7f/1646076303702401</assetId>
+      <bundleName type="string">m_pants_gladion_bundle</bundleName>
+      <version type="string">1646076303702401</version>
+      <checksum type="number">3690801862</checksum>
+      <size type="number">292424</size>
+    </item>
+    <item type="object">
       <assetId type="string">431048b5-df80-4cc1-8302-cde6fbbf9439/1616694919885233</assetId>
       <bundleName type="string">pm0586_13</bundleName>
       <version type="string">1616694919885233</version>
@@ -7018,6 +7053,13 @@
       <size type="number">102004</size>
     </item>
     <item type="object">
+      <assetId type="string">46d2f50d-d7ae-42b6-bcb1-a0a6bd139a4e/1646076300520618</assetId>
+      <bundleName type="string">f_pants_gladion_00_bundle_icon</bundleName>
+      <version type="string">1646076300520618</version>
+      <checksum type="number">488488395</checksum>
+      <size type="number">8923</size>
+    </item>
+    <item type="object">
       <assetId type="string">46eb9068-a093-4fba-8628-7ac480899a63/1616622794330386</assetId>
       <bundleName type="string">f_backpack_longchampbp_00_bundle_icon</bundleName>
       <version type="string">1616622794330386</version>
@@ -7130,11 +7172,11 @@
       <size type="number">10233</size>
     </item>
     <item type="object">
-      <assetId type="string">4894c86c-9a45-4814-9215-0a92968690f7/1645688811812604</assetId>
+      <assetId type="string">4894c86c-9a45-4814-9215-0a92968690f7/1646407529154120</assetId>
       <bundleName type="string">json_patch_i18n_japanese</bundleName>
-      <version type="string">1645688811812604</version>
-      <checksum type="number">2075202175</checksum>
-      <size type="number">31790</size>
+      <version type="string">1646407529154120</version>
+      <checksum type="number">553495052</checksum>
+      <size type="number">33297</size>
     </item>
     <item type="object">
       <assetId type="string">489e8bc1-e751-473f-8ff8-7729dd807d8c/1616623103984061</assetId>
@@ -7495,11 +7537,11 @@
       <size type="number">754803</size>
     </item>
     <item type="object">
-      <assetId type="string">4c58c336-d2e6-4131-8c4e-b8a910488fa5/1645688829237148</assetId>
+      <assetId type="string">4c58c336-d2e6-4131-8c4e-b8a910488fa5/1646407545313068</assetId>
       <bundleName type="string">json_patch_i18n_turkish</bundleName>
-      <version type="string">1645688829237148</version>
-      <checksum type="number">2312403145</checksum>
-      <size type="number">24478</size>
+      <version type="string">1646407545313068</version>
+      <checksum type="number">522649600</checksum>
+      <size type="number">34353</size>
     </item>
     <item type="object">
       <assetId type="string">4c6bebe6-a138-4706-9aa9-b15c10a81e9f/1616694777347976</assetId>
@@ -7704,6 +7746,13 @@
       <version type="string">1625774641992221</version>
       <checksum type="number">347857449</checksum>
       <size type="number">12196</size>
+    </item>
+    <item type="object">
+      <assetId type="string">4e64f704-a33b-48e9-bff2-41dd0816b05a/1646076310899189</assetId>
+      <bundleName type="string">m_shirt_gladion_00_bundle_icon</bundleName>
+      <version type="string">1646076310899189</version>
+      <checksum type="number">1266387949</checksum>
+      <size type="number">14118</size>
     </item>
     <item type="object">
       <assetId type="string">4e719698-d1e3-4049-b0cf-5ad6fbd9f871/1634148361234116</assetId>
@@ -8446,6 +8495,13 @@
       <version type="string">1616631868709490</version>
       <checksum type="number">2495666482</checksum>
       <size type="number">19279</size>
+    </item>
+    <item type="object">
+      <assetId type="string">542af175-06de-46e0-a8ac-df55dd8d07d9/1646076299674742</assetId>
+      <bundleName type="string">f_shirt_gladion_00_bundle_icon</bundleName>
+      <version type="string">1646076299674742</version>
+      <checksum type="number">3283554267</checksum>
+      <size type="number">14409</size>
     </item>
     <item type="object">
       <assetId type="string">545283c3-2bb0-4a79-b5ab-51274aa7865a/1616632403891088</assetId>
@@ -9892,11 +9948,11 @@
       <size type="number">42069</size>
     </item>
     <item type="object">
-      <assetId type="string">636575d6-7213-4ffc-88e8-5f125e7112d6/1645688793890351</assetId>
+      <assetId type="string">636575d6-7213-4ffc-88e8-5f125e7112d6/1646407512425433</assetId>
       <bundleName type="string">json_patch_i18n_chinesetraditional</bundleName>
-      <version type="string">1645688793890351</version>
-      <checksum type="number">1061242942</checksum>
-      <size type="number">20759</size>
+      <version type="string">1646407512425433</version>
+      <checksum type="number">4107714186</checksum>
+      <size type="number">22701</size>
     </item>
     <item type="object">
       <assetId type="string">636a2145-97ff-494c-96ba-1e1f839a5173/1622156537281446</assetId>
@@ -10457,6 +10513,13 @@
       <size type="number">563229</size>
     </item>
     <item type="object">
+      <assetId type="string">67a3be22-270d-445a-b2ed-1f4355f351df/1646076298681203</assetId>
+      <bundleName type="string">f_shoes_gladion_bundle</bundleName>
+      <version type="string">1646076298681203</version>
+      <checksum type="number">2230127572</checksum>
+      <size type="number">151461</size>
+    </item>
+    <item type="object">
       <assetId type="string">67b7ee94-ae08-45bd-ba6d-783db11ab7bf/1616694719324713</assetId>
       <bundleName type="string">pm0493_20</bundleName>
       <version type="string">1616694719324713</version>
@@ -10526,6 +10589,13 @@
       <version type="string">1616631844108929</version>
       <checksum type="number">2756868070</checksum>
       <size type="number">7296</size>
+    </item>
+    <item type="object">
+      <assetId type="string">682daab3-92c1-4df8-a05e-5b21757e40d9/1646076297008675</assetId>
+      <bundleName type="string">f_shirt_gladion_bundle</bundleName>
+      <version type="string">1646076297008675</version>
+      <checksum type="number">4281857856</checksum>
+      <size type="number">273395</size>
     </item>
     <item type="object">
       <assetId type="string">683ccaca-da12-4a1e-9671-84ac686fcf9c/1639509589953615</assetId>
@@ -10881,11 +10951,11 @@
       <size type="number">814561</size>
     </item>
     <item type="object">
-      <assetId type="string">6b8f3fef-4233-45f7-9395-39f56e0912e1/1645688825887638</assetId>
+      <assetId type="string">6b8f3fef-4233-45f7-9395-39f56e0912e1/1646407541946043</assetId>
       <bundleName type="string">json_patch_i18n_thai</bundleName>
-      <version type="string">1645688825887638</version>
-      <checksum type="number">3049697343</checksum>
-      <size type="number">30861</size>
+      <version type="string">1646407541946043</version>
+      <checksum type="number">3279683425</checksum>
+      <size type="number">38611</size>
     </item>
     <item type="object">
       <assetId type="string">6ba414f0-ae2c-41d8-ad28-c99f0b623191/1639772191122571</assetId>
@@ -16087,6 +16157,13 @@
       <size type="number">10237</size>
     </item>
     <item type="object">
+      <assetId type="string">9d7a9b7b-ca81-4d9f-a5e3-2bdf8bc636d4/1646076323329247</assetId>
+      <bundleName type="string">f_hat_gladion_bundle</bundleName>
+      <version type="string">1646076323329247</version>
+      <checksum type="number">239039484</checksum>
+      <size type="number">128766</size>
+    </item>
+    <item type="object">
       <assetId type="string">9d7f7db9-042d-421b-9837-70b9caa9a9ba/1616631774352834</assetId>
       <bundleName type="string">pokemon_icon_634</bundleName>
       <version type="string">1616631774352834</version>
@@ -16714,11 +16791,11 @@
       <size type="number">8821</size>
     </item>
     <item type="object">
-      <assetId type="string">a381995c-f9ca-4de5-93db-38159a7d032c/1645688822293034</assetId>
+      <assetId type="string">a381995c-f9ca-4de5-93db-38159a7d032c/1646407538850182</assetId>
       <bundleName type="string">json_patch_i18n_spanish</bundleName>
-      <version type="string">1645688822293034</version>
-      <checksum type="number">242428913</checksum>
-      <size type="number">22491</size>
+      <version type="string">1646407538850182</version>
+      <checksum type="number">3755609044</checksum>
+      <size type="number">24586</size>
     </item>
     <item type="object">
       <assetId type="string">a3880a65-ed02-4d13-a333-cb71a7226cb0/1616622633691673</assetId>
@@ -19170,6 +19247,13 @@
       <size type="number">143020</size>
     </item>
     <item type="object">
+      <assetId type="string">bb74a987-41f0-4f1f-800c-454b4206f1c7/1646076309647618</assetId>
+      <bundleName type="string">f_pants_gladion_bundle</bundleName>
+      <version type="string">1646076309647618</version>
+      <checksum type="number">2646406319</checksum>
+      <size type="number">307034</size>
+    </item>
+    <item type="object">
       <assetId type="string">bba9ad41-68c7-435d-b9f3-a8f20c01961c/1616623837121412</assetId>
       <bundleName type="string">f_shirt_lvl50_01_bundle_icon</bundleName>
       <version type="string">1616623837121412</version>
@@ -19612,6 +19696,13 @@
       <version type="string">1616622926707225</version>
       <checksum type="number">40664716</checksum>
       <size type="number">11918</size>
+    </item>
+    <item type="object">
+      <assetId type="string">bfdfc220-7bd7-4c3b-aa88-8ba2460f7a2d/1646076319045192</assetId>
+      <bundleName type="string">m_shoes_gladion_bundle</bundleName>
+      <version type="string">1646076319045192</version>
+      <checksum type="number">331349537</checksum>
+      <size type="number">152941</size>
     </item>
     <item type="object">
       <assetId type="string">bff2c3f3-ce74-4cc9-9fbd-f66858c1b306/1616694930186325</assetId>
@@ -21061,11 +21152,11 @@
       <size type="number">441419</size>
     </item>
     <item type="object">
-      <assetId type="string">cd53a84f-5c55-4563-84b3-edda474e01f1/1645688797548588</assetId>
+      <assetId type="string">cd53a84f-5c55-4563-84b3-edda474e01f1/1646407515737427</assetId>
       <bundleName type="string">json_patch_i18n_english</bundleName>
-      <version type="string">1645688797548588</version>
-      <checksum type="number">2567067505</checksum>
-      <size type="number">20830</size>
+      <version type="string">1646407515737427</version>
+      <checksum type="number">30943838</checksum>
+      <size type="number">23138</size>
     </item>
     <item type="object">
       <assetId type="string">cd6505ba-8c14-49d2-9bb8-2b8840b60f6a/1616632654516245</assetId>
@@ -21265,6 +21356,13 @@
       <version type="string">1619807958662848</version>
       <checksum type="number">1410567821</checksum>
       <size type="number">607698</size>
+    </item>
+    <item type="object">
+      <assetId type="string">cf58fe88-7061-4f25-8cd1-29e644db5853/1646076316695433</assetId>
+      <bundleName type="string">m_shirt_gladion_bundle</bundleName>
+      <version type="string">1646076316695433</version>
+      <checksum type="number">2353984471</checksum>
+      <size type="number">313621</size>
     </item>
     <item type="object">
       <assetId type="string">cf5e4911-24e2-49e7-8f9e-86e8df703638/1616631919223489</assetId>
@@ -21878,11 +21976,11 @@
       <size type="number">26845</size>
     </item>
     <item type="object">
-      <assetId type="string">d5722a9b-a9a3-4ca5-9f56-f825642bf311/1638217458830551</assetId>
+      <assetId type="string">d5722a9b-a9a3-4ca5-9f56-f825642bf311/1646076306803699</assetId>
       <bundleName type="string">f_avatar_poses_bundle</bundleName>
-      <version type="string">1638217458830551</version>
-      <checksum type="number">3079595536</checksum>
-      <size type="number">368028</size>
+      <version type="string">1646076306803699</version>
+      <checksum type="number">3955492605</checksum>
+      <size type="number">452023</size>
     </item>
     <item type="object">
       <assetId type="string">d574e934-a789-4912-9ad2-d5cd2cf8df6c/1616622986509724</assetId>
@@ -22640,11 +22738,11 @@
       <size type="number">7664</size>
     </item>
     <item type="object">
-      <assetId type="string">dccbb419-951a-4bf9-8448-8a32e5bae6d1/1645688815309490</assetId>
+      <assetId type="string">dccbb419-951a-4bf9-8448-8a32e5bae6d1/1646407532518987</assetId>
       <bundleName type="string">json_patch_i18n_korean</bundleName>
-      <version type="string">1645688815309490</version>
-      <checksum type="number">3466510821</checksum>
-      <size type="number">22175</size>
+      <version type="string">1646407532518987</version>
+      <checksum type="number">900965940</checksum>
+      <size type="number">24167</size>
     </item>
     <item type="object">
       <assetId type="string">dcd89218-66fa-4ea3-a549-7d49df98b5d1/1512759924956220</assetId>
@@ -23525,6 +23623,13 @@
       <version type="string">1616622404830738</version>
       <checksum type="number">998589435</checksum>
       <size type="number">11303</size>
+    </item>
+    <item type="object">
+      <assetId type="string">e52a46d7-ee77-449e-a886-7681c03ac74b/1646076308352135</assetId>
+      <bundleName type="string">f_hat_gladion_00_bundle_icon</bundleName>
+      <version type="string">1646076308352135</version>
+      <checksum type="number">3054706803</checksum>
+      <size type="number">6204</size>
     </item>
     <item type="object">
       <assetId type="string">e530bd1e-0dd2-4224-8dd5-df86ff14f466/1616632298531247</assetId>
@@ -25567,11 +25672,11 @@
       <size type="number">9629</size>
     </item>
     <item type="object">
-      <assetId type="string">f81c317b-b38c-454e-ac41-b716acec654f/1645688800908007</assetId>
+      <assetId type="string">f81c317b-b38c-454e-ac41-b716acec654f/1646407518983046</assetId>
       <bundleName type="string">json_patch_i18n_french</bundleName>
-      <version type="string">1645688800908007</version>
-      <checksum type="number">454761308</checksum>
-      <size type="number">22399</size>
+      <version type="string">1646407518983046</version>
+      <checksum type="number">3364531530</checksum>
+      <size type="number">24304</size>
     </item>
     <item type="object">
       <assetId type="string">f826a71a-90f8-46c9-a731-f05a07d215ef/1616623200692894</assetId>
@@ -26342,6 +26447,13 @@
       <size type="number">15836</size>
     </item>
     <item type="object">
+      <assetId type="string">ff09f157-5be6-4842-ab06-0bc3060523b8/1646076302476169</assetId>
+      <bundleName type="string">f_shoes_gladion_00_bundle_icon</bundleName>
+      <version type="string">1646076302476169</version>
+      <checksum type="number">3842856131</checksum>
+      <size type="number">10782</size>
+    </item>
+    <item type="object">
       <assetId type="string">ff5b5a72-80d3-4832-8241-0ba8b1ee065c/1616632623894493</assetId>
       <bundleName type="string">pokemon_icon_191</bundleName>
       <version type="string">1616632623894493</version>
@@ -26398,6 +26510,6 @@
       <size type="number">1240971</size>
     </item>
   </digest>
-  <timestamp type="string">1645812817897248</timestamp>
+  <timestamp type="string">1646407545313068</timestamp>
   <result type="string">SUCCESS</result>
 </root>
