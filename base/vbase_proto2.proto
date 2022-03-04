@@ -1538,6 +1538,7 @@ enum HoloPokemonFamilyId {
 	FAMILY_YUNGOOS = 734;
 	FAMILY_GRUBBIN = 736;
 	FAMILY_CRABRAWLER = 739;
+	FAMILY_ORICORIO = 741;
 	FAMILY_CUTIEFLY = 742;
 	FAMILY_ROCKRUFF = 744;
 	FAMILY_WISHIWASHI = 746;
@@ -3460,6 +3461,7 @@ enum Method {
 	METHOD_UPLOAD_RAID_CLIENT_LOG = 1914;
 	METHOD_SKIP_ENTER_REFERRAL_CODE = 1915;
 	METHOD_UPLOAD_COMBAT_CLIENT_LOG = 1916;
+	METHOD_COMBAT_SYNC_SERVER_OFFSET = 1917;
 }
 
 enum NewsPageTelemetryIds {
@@ -7425,7 +7427,6 @@ message CombatProto {
 	optional int64 change_pokemon_end_ms = 12;
 	optional int64 quick_swap_cooldown_duration_ms = 13;
 	optional int64 state_change_delay_until_turn = 14;
-	optional ObCombatProto ob_combat = 15;
 }
 
 message CombatQuestUpdateProto {
@@ -7491,6 +7492,7 @@ message CombatSettingsProto {
 	optional float shadow_pokemon_defense_bonus_multiplier = 31;
 	optional float purified_pokemon_attack_multiplier_vs_shadow = 32;
 	optional bool ob_bool = 36;
+	optional ObCombatSettings ob_combat_settings = 38;
 }
 
 message CombatStatStageSettingsProto {
@@ -11696,6 +11698,7 @@ message HoloInventoryItemProto {
 	optional PlayerStatsSnapshotsProto player_stats_snapshots = 25;
 	optional FakeDataProto fake_data = 26;
 	optional PokedexCategoryMilestoneProto pokedex_category_milestone = 27;
+	optional PlayerAttributesProto player_attributes = 29;
 }
 
 message HoloInventoryKeyProto {
@@ -11727,6 +11730,7 @@ message HoloInventoryKeyProto {
 	optional int64 unknown_key = 26;
 	optional fixed64 fake_data = 27;
 	optional PokedexCategory pokedex_category = 28;
+	optional bool player_attributes = 30;
 }
 
 message HoloholoClientTelemetryOmniProto {
@@ -13413,6 +13417,11 @@ message ObCombatProto {
 	repeated string ob_repeated_list = 4;
 }
 
+message ObCombatSettings {
+	optional int32 ob_int32 = 1;
+	optional bool ob_bool = 2;
+}
+
 message ObEggIncubatorsInfos {
 	optional ObEggIncubatorsStatus egg_incubators = 1;
 }
@@ -13969,6 +13978,21 @@ message PlatypusRolloutSettingsProto {
 	optional int32 buddy_multiplayer_min_player_level = 2;
 	optional bool enable_monodepth = 3;
 	optional WallabySettingsProto wallaby_settings = 4;
+}
+
+message PlayerAttributeProto {
+	optional string ob_string_1 = 1;
+	optional string ob_string_2 = 2;
+	optional bool ob_bool = 3;
+}
+
+message PlayerAttributesProto {
+	optional ObPlayerAttributeDic ob_player_attribute_dic = 1;
+
+	message ObPlayerAttributeDic {
+		optional string key = 1;
+		optional string value = 2;
+	}
 }
 
 message PlayerAvatarProto {
@@ -18026,6 +18050,7 @@ message QuestRewardProto {
 	optional StickerRewardProto sticker = 12;
 	optional PokemonCandyRewardProto mega_resource = 13;
 	optional ObQuestRewardIncident incident = 14;
+	optional PlayerAttributeProto player_attribute = 15;
 
 	enum Type {
 		UNSET = 0;
@@ -18042,6 +18067,7 @@ message QuestRewardProto {
 		STICKER = 11;
 		MEGA_RESOURCE = 12;
 		INCIDENT = 13;
+		PLAYER_ATTRIBUTE = 14;
 	}
 
 	optional Type type = 1;
