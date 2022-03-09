@@ -7,7 +7,7 @@ import shutil
 from subprocess import call
 
 # Variables
-#global_version = '0.229.x_p_obf'
+# global_version = '0.229.x_p_obf'
 global_version = 'base'
 protoc_executable = "protoc"
 package_name = 'POGOProtos.Rpc'
@@ -168,12 +168,12 @@ def open_proto_file(main_file, head):
 
     messages = ''
 
-    ## Delete demos
+    # Delete demos
     with open(main_file, 'r') as proto_file:
         for proto_line in proto_file.readlines():
             messages += proto_line
 
-    ## check in messages basic obfuscated names...
+    # check in messages basic obfuscated names...
     proto_name = ''
     for proto_line in messages.split("\n"):
         if operator.contains(proto_line, "{") and len(proto_name) == 11 and proto_name.isupper():
@@ -184,7 +184,7 @@ def open_proto_file(main_file, head):
             else:
                 print("Enum: " + proto_name)
 
-    ## Reorder all this...
+    # Reorder all this...
     new_base_enums = {}
     new_base_messages = {}
     new_base_as_data = False
@@ -216,7 +216,7 @@ def open_proto_file(main_file, head):
     new_base_file = ''
     head_file = None
 
-    if (gen_files):
+    if gen_files:
         if os.path.exists(gen_last_files):
             shutil.rmtree(gen_last_files)
         if not os.path.exists(gen_last_files):
@@ -238,7 +238,7 @@ def open_proto_file(main_file, head):
             open_for_new_message.writelines(new_base_messages[p])
             open_for_new_message.close()
 
-    ## find imports ..
+    # find imports ..
     if head_file is not None:
         for p in sorted(new_base_messages):
             if os.path.exists(gen_last_files + "/" + p + '.proto'):
