@@ -1929,11 +1929,11 @@ digest {
   size: 9499
 }
 digest {
-  asset_id: "115dc97f-358a-4c45-8ac1-e20e4821f609/1646407535623219"
+  asset_id: "115dc97f-358a-4c45-8ac1-e20e4821f609/1646673015580312"
   bundle_name: "json_patch_i18n_russian"
-  version: 1646407535623219
-  checksum: 3882181495
-  size: 31673
+  version: 1646673015580312
+  checksum: 2536804447
+  size: 31740
 }
 digest {
   asset_id: "11616b6c-6439-4fab-868d-d6795c6e9162/1616639682677249"
@@ -2834,11 +2834,11 @@ digest {
   size: 5310
 }
 digest {
-  asset_id: "1bb14249-cfa4-44d4-a0d6-1c58e8261650/1646407525573863"
+  asset_id: "1bb14249-cfa4-44d4-a0d6-1c58e8261650/1646673003806068"
   bundle_name: "json_patch_i18n_italian"
-  version: 1646407525573863
-  checksum: 147054386
-  size: 24384
+  version: 1646673003806068
+  checksum: 2936602523
+  size: 24428
 }
 digest {
   asset_id: "1bbc5eec-7ce1-4649-8e00-dce0ed5864fc/1616622439114263"
@@ -2959,6 +2959,13 @@ digest {
   version: 1616632419796076
   checksum: 2287776450
   size: 8141
+}
+digest {
+  asset_id: "1d101b3d-f7db-4ee2-8dcb-5cc6e6a57186/1646670570019167"
+  bundle_name: "m_shirt_alolacomfey_00_bundle_icon"
+  version: 1646670570019167
+  checksum: 186622026
+  size: 12101
 }
 digest {
   asset_id: "1d183883-0f43-4796-9a03-f5a52d0d5f37/1616622576290228"
@@ -3970,11 +3977,11 @@ digest {
   size: 172969
 }
 digest {
-  asset_id: "267b9ba3-7818-41e2-a6d0-3e8ed20ed849/1645812817897248"
+  asset_id: "267b9ba3-7818-41e2-a6d0-3e8ed20ed849/1646700202821535"
   bundle_name: "group_icons_bundle"
-  version: 1645812817897248
-  checksum: 3323794483
-  size: 57478
+  version: 1646700202821535
+  checksum: 2216349198
+  size: 29094
 }
 digest {
   asset_id: "2682d93f-cd68-4479-8b27-196cadbdc3d7/1616622839922736"
@@ -4457,11 +4464,11 @@ digest {
   key: "\374Q\005\356\025\014\363\231\203\303hC\353\265\235I"
 }
 digest {
-  asset_id: "2b58a4ea-6704-4b59-baa3-93d3322eb74d/1646407522334237"
+  asset_id: "2b58a4ea-6704-4b59-baa3-93d3322eb74d/1646672999201013"
   bundle_name: "json_patch_i18n_german"
-  version: 1646407522334237
-  checksum: 2260271914
-  size: 25639
+  version: 1646672999201013
+  checksum: 4204447467
+  size: 25690
 }
 digest {
   asset_id: "2b5c9b09-fd16-4b88-a7d6-dd56995a84dc/1645030760882056"
@@ -6160,11 +6167,11 @@ digest {
   size: 10300
 }
 digest {
-  asset_id: "3d93143b-a6da-43a5-95c4-153d6045925e/1646407508823036"
+  asset_id: "3d93143b-a6da-43a5-95c4-153d6045925e/1646672985085287"
   bundle_name: "json_patch_i18n_brazilianportuguese"
-  version: 1646407508823036
-  checksum: 2557237196
-  size: 24455
+  version: 1646672985085287
+  checksum: 1673424531
+  size: 24482
 }
 digest {
   asset_id: "3da83d1a-267a-4f63-9854-420c6f75b881/1616639619237986"
@@ -7170,11 +7177,11 @@ digest {
   size: 10233
 }
 digest {
-  asset_id: "4894c86c-9a45-4814-9215-0a92968690f7/1646407529154120"
+  asset_id: "4894c86c-9a45-4814-9215-0a92968690f7/1646673008770687"
   bundle_name: "json_patch_i18n_japanese"
-  version: 1646407529154120
-  checksum: 553495052
-  size: 33297
+  version: 1646673008770687
+  checksum: 2645156962
+  size: 33507
 }
 digest {
   asset_id: "489e8bc1-e751-473f-8ff8-7729dd807d8c/1616623103984061"
@@ -7535,11 +7542,11 @@ digest {
   size: 754803
 }
 digest {
-  asset_id: "4c58c336-d2e6-4131-8c4e-b8a910488fa5/1646407545313068"
+  asset_id: "4c58c336-d2e6-4131-8c4e-b8a910488fa5/1646673025859860"
   bundle_name: "json_patch_i18n_turkish"
-  version: 1646407545313068
-  checksum: 522649600
-  size: 34353
+  version: 1646673025859860
+  checksum: 483925735
+  size: 34462
 }
 digest {
   asset_id: "4c6bebe6-a138-4706-9aa9-b15c10a81e9f/1616694777347976"
@@ -9946,11 +9953,11 @@ digest {
   size: 42069
 }
 digest {
-  asset_id: "636575d6-7213-4ffc-88e8-5f125e7112d6/1646407512425433"
+  asset_id: "636575d6-7213-4ffc-88e8-5f125e7112d6/1646672988809118"
   bundle_name: "json_patch_i18n_chinesetraditional"
-  version: 1646407512425433
-  checksum: 4107714186
-  size: 22701
+  version: 1646672988809118
+  checksum: 310836858
+  size: 22760
 }
 digest {
   asset_id: "636a2145-97ff-494c-96ba-1e1f839a5173/1622156537281446"
@@ -10814,6 +10821,13 @@ digest {
   size: 302330
 }
 digest {
+  asset_id: "6a2ce720-f8da-47da-9654-720e751414e5/1646670572006369"
+  bundle_name: "m_shirt_alolacomfey_bundle"
+  version: 1646670572006369
+  checksum: 3467241898
+  size: 380791
+}
+digest {
   asset_id: "6a30858b-c6a8-4e4c-a353-4cfc8f4433d4/1512759880224081"
   bundle_name: "pm0109"
   version: 1512759880224081
@@ -10949,11 +10963,11 @@ digest {
   size: 814561
 }
 digest {
-  asset_id: "6b8f3fef-4233-45f7-9395-39f56e0912e1/1646407541946043"
+  asset_id: "6b8f3fef-4233-45f7-9395-39f56e0912e1/1646673022277166"
   bundle_name: "json_patch_i18n_thai"
-  version: 1646407541946043
-  checksum: 3279683425
-  size: 38611
+  version: 1646673022277166
+  checksum: 4088495137
+  size: 38655
 }
 digest {
   asset_id: "6ba414f0-ae2c-41d8-ad28-c99f0b623191/1639772191122571"
@@ -16064,6 +16078,13 @@ digest {
   size: 484680
 }
 digest {
+  asset_id: "9cc9bbc1-fc2e-465d-9252-a7d5aa0b37d3/1646670574750085"
+  bundle_name: "f_shirt_alolacomfey_bundle"
+  version: 1646670574750085
+  checksum: 1668549277
+  size: 387383
+}
+digest {
   asset_id: "9ce738de-52d0-4f24-99f9-2578b1099fa5/1616622744938418"
   bundle_name: "f_shirt_frlg_bundle_icon"
   version: 1616622744938418
@@ -16789,11 +16810,11 @@ digest {
   size: 8821
 }
 digest {
-  asset_id: "a381995c-f9ca-4de5-93db-38159a7d032c/1646407538850182"
+  asset_id: "a381995c-f9ca-4de5-93db-38159a7d032c/1646673018934711"
   bundle_name: "json_patch_i18n_spanish"
-  version: 1646407538850182
-  checksum: 3755609044
-  size: 24586
+  version: 1646673018934711
+  checksum: 4112765563
+  size: 24640
 }
 digest {
   asset_id: "a3880a65-ed02-4d13-a333-cb71a7226cb0/1616622633691673"
@@ -21150,11 +21171,11 @@ digest {
   size: 441419
 }
 digest {
-  asset_id: "cd53a84f-5c55-4563-84b3-edda474e01f1/1646407515737427"
+  asset_id: "cd53a84f-5c55-4563-84b3-edda474e01f1/1646672992307600"
   bundle_name: "json_patch_i18n_english"
-  version: 1646407515737427
-  checksum: 30943838
-  size: 23138
+  version: 1646672992307600
+  checksum: 479210209
+  size: 23193
 }
 digest {
   asset_id: "cd6505ba-8c14-49d2-9bb8-2b8840b60f6a/1616632654516245"
@@ -22637,6 +22658,13 @@ digest {
   size: 7994
 }
 digest {
+  asset_id: "db9df05d-d0cd-4e8e-8ec9-95b2ac54cbfe/1646670576097232"
+  bundle_name: "f_shirt_alolacomfey_00_bundle_icon"
+  version: 1646670576097232
+  checksum: 2091636659
+  size: 12264
+}
+digest {
   asset_id: "dbca29e3-7047-4663-a335-096fcb0cd7d3/1616697430564925"
   bundle_name: "pm0619_00"
   version: 1616697430564925
@@ -22736,11 +22764,11 @@ digest {
   size: 7664
 }
 digest {
-  asset_id: "dccbb419-951a-4bf9-8448-8a32e5bae6d1/1646407532518987"
+  asset_id: "dccbb419-951a-4bf9-8448-8a32e5bae6d1/1646673012064169"
   bundle_name: "json_patch_i18n_korean"
-  version: 1646407532518987
-  checksum: 900965940
-  size: 24167
+  version: 1646673012064169
+  checksum: 4130766927
+  size: 24217
 }
 digest {
   asset_id: "dcd89218-66fa-4ea3-a549-7d49df98b5d1/1512759924956220"
@@ -25670,11 +25698,11 @@ digest {
   size: 9629
 }
 digest {
-  asset_id: "f81c317b-b38c-454e-ac41-b716acec654f/1646407518983046"
+  asset_id: "f81c317b-b38c-454e-ac41-b716acec654f/1646672995596721"
   bundle_name: "json_patch_i18n_french"
-  version: 1646407518983046
-  checksum: 3364531530
-  size: 24304
+  version: 1646672995596721
+  checksum: 2946273755
+  size: 24360
 }
 digest {
   asset_id: "f826a71a-90f8-46c9-a731-f05a07d215ef/1616623200692894"
@@ -26507,4 +26535,4 @@ digest {
   checksum: 2527820101
   size: 1240971
 }
-timestamp: 1646407545313068
+timestamp: 1646700202821535
