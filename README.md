@@ -18,8 +18,8 @@ We are following [semantic versioning](http://semver.org/) for POGOProtos-Privat
 
 | Version                                                                    | Base                                                                                 | Notes                  | Extra                    |
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------|------------------------|--------------------------|
-| [2.56.0](https://github.com/Furtif/POGOProtos/raw/master/.current-version) | [v0.231.0](https://github.com/Furtif/POGOProtos/blob/master/base/vbase_proto2.proto) | **Proto2** Compilable (Mixed) | Protocol Buffers v3.19.4 |
-| [2.56.0](https://github.com/Furtif/POGOProtos/raw/master/.current-version) | [v0.231.0](https://github.com/Furtif/POGOProtos/blob/master/base/vbase.proto)        | **Proto3** Compilable (Mixed) | Protocol Buffers v3.19.4 |
+| [2.56.1](https://github.com/Furtif/POGOProtos/raw/master/.current-version) | [v0.233.0](https://github.com/Furtif/POGOProtos/blob/master/base/vbase_proto2.proto) | **Proto2** Compilable (Mixed) | Protocol Buffers v3.19.4 |
+| [2.56.1](https://github.com/Furtif/POGOProtos/raw/master/.current-version) | [v0.233.0](https://github.com/Furtif/POGOProtos/blob/master/base/vbase.proto)        | **Proto3** Compilable (Mixed) | Protocol Buffers v3.19.4 |
 | [2.54.1](https://github.com/Furtif/POGOProtos/raw/master/.current-version) | [v0.205.x](https://github.com/Furtif/POGOProtos/blob/master/base/v0.205.x.proto)     | **Updated** (_[/base/v0.205.x.proto](https://github.com/Furtif/POGOProtos/blob/master/base/v0.205.x.proto)_)  | Protocol Buffers v3.15.8 |
 
 ### Addons

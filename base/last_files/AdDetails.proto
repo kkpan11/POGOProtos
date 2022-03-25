@@ -23,9 +23,11 @@ package POGOProtos.Rpc;
 
 import "ImageTextCreativeProto.proto";
 import "ObAdDetailsProto.proto";
+import "ObAdDetailsProto2.proto";
 
 message AdDetails {
 	ImageTextCreativeProto image_text_creative = 1;
 	bytes encrypted_ad_token = 2;
 	repeated ObAdDetailsProto ob_ad_details = 3;
+	ObAdDetailsProto2 ob_ad_details_2 = 4;
 }

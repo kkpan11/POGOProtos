@@ -21,24 +21,7 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "ObPostcardTypes.proto";
-
-message PostcardDisplayProto {
-	string ob_string_1 = 1;
-	string ob_string_2 = 2;
-	double ob_double_1 = 3;
-	double ob_double_2 = 4;
-	int64 ob_int64_1 = 5;
-	string ob_string_3 = 6;
-	bool ob_bool_1 = 7;
-	string ob_string_4 = 8;
-	string ob_string_5 = 9;
-	repeated string ob_string_repeated = 10;
-	string ob_string_6 = 11;
-	string ob_string_7 = 12;
-	ObPostcardTypes ob_postcard_types = 13;
-	uint64 ob_uint64_1 = 14;
-	string ob_string_8 = 15;
-	uint64 ob_uint64_2 = 16;
-	bool ob_bool_2 = 17;
+message SkuStorePrice {
+	string currency_code = 1;
+	int64 price_paid_e6 = 2;
 }

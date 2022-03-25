@@ -32,4 +32,7 @@ message RouteStamp {
 
 	Type type = 1;
 	Color color = 2;
+	string ob_string_1 = 3;
+	string ob_string_2 = 4;
+	string ob_string_3 = 5;
 }

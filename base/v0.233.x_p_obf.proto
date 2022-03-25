@@ -6894,7 +6894,7 @@ message CombatSettingsProto {
 	float imcmdgcdfeb = 31;
 	float pamajejpana = 32;
 	bool njbfcnibiil = 36;
-	PPKBINNHEMM ajiafnkaklo = 38;
+	ObCombatSettings ob_combat_settings = 38;
 }
 
 message CombatStatStageSettingsProto {
@@ -7274,14 +7274,6 @@ message DFGMAFCENOE {
 	ACGFNMPIIAD bimjjcepafo = 8;
 }
 
-message DGBLEMPFKDI {
-	int32 gbdcffccioe = 1;
-	int32 bdelgcgmogn = 2;
-	int32 cikjgjkebmp = 3;
-	int32 ilmnjcdcidb = 4;
-	float bklkmbnpnnn = 5;
-}
-
 message DHIPKKHFIKL {
 	FriendshipLevelDataProto bofepggmcpi = 1;
 	repeated GiftBoxDetailsProto kgiojkefpam = 2;
@@ -7331,13 +7323,6 @@ message DLKAAILNDLI {
 	uint64 negjggoolcc = 6;
 	string kijgamedgbf = 7;
 	GHNHGHNJBHO lnjpdicfbhh = 8;
-}
-
-message DMIPMNOKOLD {
-	double ocngfmpdcee = 1;
-	double ppjgjddnlei = 2;
-	string jkaeodjjpoc = 3;
-	bool ildccdolhem = 4;
 }
 
 message DNDDKGBFGNK {
@@ -8050,15 +8035,6 @@ message ELFBGNAPBHL {
 message ELHPFOJHOOF {
 	GBPKPBNOCDN fmcdgnajefa = 1;
 	repeated ACJDPLDBLBK obnoopjlbbe = 2;
-}
-
-message ELNNFGKKGKI {
-	bool pldppnagpak = 1;
-	bool nnfkfjonbig = 2;
-	bool kglanbmkddh = 3;
-	bool hggfedjmknf = 4;
-	bool inahpndkfpa = 5;
-	bool benedjmhhcb = 6;
 }
 
 message EMEMODGBEON {
@@ -9313,6 +9289,23 @@ message GLPAHPOIJPG {
 	KJMPIHPIKEH phajiinooga = 2;
 }
 
+message GM10SettingsProto {
+	bool pldppnagpak = 1;
+	bool nnfkfjonbig = 2;
+	bool kglanbmkddh = 3;
+	bool hggfedjmknf = 4;
+	bool inahpndkfpa = 5;
+	bool benedjmhhcb = 6;
+}
+
+message GM11SettingsProto {
+	int32 gbdcffccioe = 1;
+	int32 bdelgcgmogn = 2;
+	int32 cikjgjkebmp = 3;
+	int32 ilmnjcdcidb = 4;
+	float bklkmbnpnnn = 5;
+}
+
 message GM1SettingsProto {
 	enum Activity {
 		UNSET = 0;
@@ -9569,8 +9562,8 @@ message GameMasterClientTemplateProto {
 	GM8SettingsProto ob_gm_8_settings = 137;
 	GM5SettingsProto ob_gm_5_settings = 138;
 	GM9SettingsProto ob_gm_9_settings = 139;
-	ELNNFGKKGKI mofhnkmddpa = 140;
-	DGBLEMPFKDI dicdnhmlmgk = 141;
+	GM10SettingsProto ob_gm_10_settings = 140;
+	GM11SettingsProto ob_gm_11_settings = 141;
 }
 
 message GameMasterLocalProto {
@@ -11090,7 +11083,7 @@ message HLGBGPJFCFJ {
 message HLHGDGCBMMN {
 	int64 cdfcdocmemd = 1;
 	int64 lpcolkmgafc = 2;
-	JLAJCJFPMOL hgknmckeafo = 3;
+	RouteDraftProto hgknmckeafo = 3;
 }
 
 message HLIAHFIEPIB {
@@ -12033,16 +12026,6 @@ message JJMCLEOEBMK {
 
 message JKPFCLPLICH {
 	ELHPFOJHOOF kjkkbhmkhcl = 1;
-}
-
-message JLAJCJFPMOL {
-	string eipogacnndj = 1;
-	string fcblhpmgdap = 2;
-	repeated DMIPMNOKOLD hjbhcknipcm = 3;
-	bool nnleoghopof = 4;
-	bool gincgmihahp = 5;
-	RouteImageProto bkcndialdcn = 6;
-	int32 ojfpfoffjbo = 7;
 }
 
 message JLGGCAEJJLG {
@@ -14381,7 +14364,12 @@ message ObAttackRaidBattle {
 	ObWasabiState hdmglppkolo = 2;
 }
 
-message ObEggIncubatorsInfos {
+message ObCombatSettings {
+	int32 ligadokpapl = 1;
+	bool jedoagelefn = 2;
+}
+
+message ObEggIcubators1 {
 	oneof EggIncubatorsState {
 		ObEggIncubatorsStatus egg_incubators = 1;
 	}
@@ -14949,11 +14937,6 @@ message PPJKJNGEEEA {
 	PokemonDisplayProto lenmkbhgmni = 3;
 	uint64 negjggoolcc = 4;
 	string mamgdpenojf = 5;
-}
-
-message PPKBINNHEMM {
-	int32 ligadokpapl = 1;
-	bool jedoagelefn = 2;
 }
 
 message PPNCDOHIFEM {
@@ -19700,7 +19683,7 @@ message RouteCreationProto {
 	int64 cfpgfcdpjpk = 2;
 	int64 pbkncnaajnj = 3;
 	int64 blfjnodempo = 4;
-	JLAJCJFPMOL bjjnpjaeelj = 5;
+	RouteDraftProto bjjnpjaeelj = 5;
 	Status status = 6;
 	repeated GDAHBOGLOFL pnhfcanhbmd = 7;
 	repeated int64 bkeimbibpfo = 8;
@@ -19709,6 +19692,16 @@ message RouteCreationProto {
 message RouteDiscoverySettingsProto {
 	float apmnmjajacf = 1;
 	int32 jifeboiakdd = 2;
+}
+
+message RouteDraftProto {
+	string eipogacnndj = 1;
+	string fcblhpmgdap = 2;
+	repeated WaypointDraftProto waypoint = 3;
+	bool nnleoghopof = 4;
+	bool gincgmihahp = 5;
+	RouteImageProto bkcndialdcn = 6;
+	int32 ojfpfoffjbo = 7;
 }
 
 message RouteGlobalSettingsProto {
@@ -21826,6 +21819,13 @@ message WayfarerOnboardingFlowTelemetry {
 	}
 
 	EventType event_type = 1;
+}
+
+message WaypointDraftProto {
+	double ocngfmpdcee = 1;
+	double ppjgjddnlei = 2;
+	string jkaeodjjpoc = 3;
+	bool ildccdolhem = 4;
 }
 
 message WayspotEditTelemetry {

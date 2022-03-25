@@ -14,7 +14,7 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: Base compatible 0.231.x.
+* Version: Base compatible 0.233.x.
 *
 */
 
@@ -2842,6 +2842,7 @@ enum HoloPokemonMove {
 	SACRED_FIRE_PLUS_PLUS = 363;
 	ACROBATICS = 364;
 	LUSTER_PURGE = 365;
+	MIST_BALL = 366;
 }
 
 enum HoloPokemonMovementType {
@@ -3419,6 +3420,7 @@ enum Method {
 	METHOD_PROCESS_ROUTE_TAPPABLE = 1408;
 	METHOD_LIST_ROUTE_BADGES = 1409;
 	METHOD_CANCEL_ROUTE = 1410;
+	METHOD_LIST_ROUTE_STAMPS = 1411;
 	METHOD_CREATE_BUDDY_MUTLIPLAYER_SESSION = 1456;
 	METHOD_JOIN_BUDDY_MULTIPLAYER_SESSION = 1457;
 	METHOD_LEAVE_BUDDY_MULTIPLAYER_SESSION = 1458;
@@ -3684,6 +3686,8 @@ enum PermissionContextTelemetryIds {
 	PERMISSION_CONTEXT_TELEMETRY_IDS_SFIDA_SESSION_STARTED = 5;
 	PERMISSION_CONTEXT_TELEMETRY_IDS_SETTINGS_TOGGLE = 6;
 	PERMISSION_CONTEXT_TELEMETRY_IDS_NEARBY_PANEL_OPENED = 7;
+	PERMISSION_CONTEXT_TELEMETRY_IDS_FTUE_PROMPT = 8;
+	PERMISSION_CONTEXT_TELEMETRY_IDS_LEVEL_UP_PROMPT = 9;
 }
 
 enum PermissionFlowStepTelemetryIds {
@@ -4433,6 +4437,7 @@ enum TutorialCompletion {
 	TRADE_TUTORIAL_COMPLETE = 70;
 	LUCKY_FRIEND_TUTORIAL = 71;
 	LUCKY_TRADE_TUTORIAL = 72;
+	MEGA_LEVELS_TUTORIAL = 73;
 }
 
 enum TweenAction {
@@ -4749,6 +4754,7 @@ message AdDetails {
 	ImageTextCreativeProto image_text_creative = 1;
 	bytes encrypted_ad_token = 2;
 	repeated ObAdDetailsProto ob_ad_details = 3;
+	ObAdDetailsProto2 ob_ad_details_2 = 4;
 }
 
 message AdFeedbackSettingsProto {
@@ -9452,6 +9458,23 @@ message FriendshipMilestoneRewardProto {
 	FriendshipLevelMilestone friendship_milestone = 2;
 }
 
+message GM10SettingsProto {
+	bool ob_bool_1 = 1;
+	bool ob_bool_2 = 2;
+	bool ob_bool_3 = 3;
+	bool ob_bool_4 = 4;
+	bool ob_bool_5 = 5;
+	bool ob_bool_6 = 6;
+}
+
+message GM11SettingsProto {
+	int32 ob_int32_1 = 1;
+	int32 ob_int32_2 = 2;
+	int32 ob_int32_3 = 3;
+	int32 ob_int32_4 = 4;
+	float ob_float = 5;
+}
+
 message GM1SettingsProto {
 	enum Activity {
 		UNSET = 0;
@@ -9670,6 +9693,8 @@ message GameMasterClientTemplateProto {
 	GM8SettingsProto ob_gm_8_settings = 137;
 	GM5SettingsProto ob_gm_5_settings = 138;
 	GM9SettingsProto ob_gm_9_settings = 139;
+	GM10SettingsProto ob_gm_10_settings = 140;
+	GM11SettingsProto ob_gm_11_settings = 141;
 }
 
 message GameMasterLocalProto {
@@ -11912,6 +11937,8 @@ message InAppPurchaseSubscriptionInfo {
 		int64 subscription_end_time_ms = 1;
 		int64 receipt_timestamp_ms = 2;
 		string receipt = 3;
+		SkuStorePrice store_price = 4;
+		string country_code = 5;
 	}
 
 	string subscription_id = 1;
@@ -13369,6 +13396,11 @@ message ObAdDetailsProto {
 	map<string, string> ob_map_string_string_3 = 5;
 }
 
+message ObAdDetailsProto2 {
+	repeated string ob_string = 1;
+	map<string, string> ob_dict = 2;
+}
+
 message ObAttackRaidBattle {
 	AdDetails ad_details = 1;
 	ObWasabiState ob_wasabi_state = 2;
@@ -13386,10 +13418,23 @@ message ObCombatSettings {
 	bool ob_bool = 2;
 }
 
+message ObEggIcubators1 {
+	float ob_float_1 = 1;
+	float ob_float_2 = 2;
+	repeated BuddyStatsShownHearts.BuddyShownHeartType ob_buddy_show_heart_type = 3;
+	BuddyEmotionLevel ob_buddy_emotion_leve = 4;
+	int64 ob_int64_1 = 5;
+	int64 ob_int64_2 = 6;
+	bool ob_bool = 7;
+}
+
 message ObEggIncubatorsInfos {
 	oneof EggIncubatorsState {
 		ObEggIncubatorsStatus egg_incubators = 1;
 	}
+
+	ObEggIncubatorsStatus ob_egg_incubator_status = 2;
+	ObEggIcubators1 ob_egg_incubators_1 = 3;
 }
 
 message ObEggIncubatorsStatus {
@@ -16763,7 +16808,7 @@ message PokemonDisplayProto {
 		SILVALLY_ROCK = 2704;
 		SILVALLY_STEEL = 2705;
 		SILVALLY_WATER = 2706;
-		MINIOR_METEOR = 2707;
+		MINIOR_METEOR_BLUE = 2707;
 		MINIOR_BLUE = 2708;
 		MINIOR_GREEN = 2709;
 		MINIOR_INDIGO = 2710;
@@ -16792,6 +16837,54 @@ message PokemonDisplayProto {
 		SUICUNE_S = 2733;
 		SLOWKING_2022 = 2734;
 		ELECTRODE_HISUIAN = 2735;
+		PIKACHU_FLYING_OKINAWA = 2736;
+		ROCKRUFF_DUSK = 2737;
+		MINIOR_METEOR_GREEN = 2739;
+		MINIOR_METEOR_INDIGO = 2740;
+		MINIOR_METEOR_ORANGE = 2741;
+		MINIOR_METEOR_RED = 2742;
+		MINIOR_METEOR_VIOLET = 2743;
+		MINIOR_METEOR_YELLOW = 2744;
+		SCATTERBUG_ARCHIPELAGO = 2745;
+		SCATTERBUG_CONTINENTAL = 2746;
+		SCATTERBUG_ELEGANT = 2747;
+		SCATTERBUG_FANCY = 2748;
+		SCATTERBUG_GARDEN = 2749;
+		SCATTERBUG_HIGH_PLAINS = 2750;
+		SCATTERBUG_ICY_SNOW = 2751;
+		SCATTERBUG_JUNGLE = 2752;
+		SCATTERBUG_MARINE = 2753;
+		SCATTERBUG_MEADOW = 2754;
+		SCATTERBUG_MODERN = 2755;
+		SCATTERBUG_MONSOON = 2756;
+		SCATTERBUG_OCEAN = 2757;
+		SCATTERBUG_POKEBALL = 2758;
+		SCATTERBUG_POLAR = 2759;
+		SCATTERBUG_RIVER = 2760;
+		SCATTERBUG_SANDSTORM = 2761;
+		SCATTERBUG_SAVANNA = 2762;
+		SCATTERBUG_SUN = 2763;
+		SCATTERBUG_TUNDRA = 2764;
+		SPEWPA_ARCHIPELAGO = 2765;
+		SPEWPA_CONTINENTAL = 2766;
+		SPEWPA_ELEGANT = 2767;
+		SPEWPA_FANCY = 2768;
+		SPEWPA_GARDEN = 2769;
+		SPEWPA_HIGH_PLAINS = 2770;
+		SPEWPA_ICY_SNOW = 2771;
+		SPEWPA_JUNGLE = 2772;
+		SPEWPA_MARINE = 2773;
+		SPEWPA_MEADOW = 2774;
+		SPEWPA_MODERN = 2775;
+		SPEWPA_MONSOON = 2776;
+		SPEWPA_OCEAN = 2777;
+		SPEWPA_POKEBALL = 2778;
+		SPEWPA_POLAR = 2779;
+		SPEWPA_RIVER = 2780;
+		SPEWPA_SANDSTORM = 2781;
+		SPEWPA_SAVANNA = 2782;
+		SPEWPA_SUN = 2783;
+		SPEWPA_TUNDRA = 2784;
 	}
 
 	enum Gender {
@@ -17140,6 +17233,7 @@ message PokemonSettingsProto {
 	repeated float buddy_encounter_cameo_local_position = 64;
 	repeated float buddy_encounter_cameo_local_rotation = 65;
 	ObPokemonSetting ob_pokemon_setting = 66;
+	repeated PokemonDisplayProto.Costume ob_pokemon_costume = 67;
 }
 
 message PokemonStaminaUpdateProto {
@@ -17268,7 +17362,7 @@ message PostcardDisplayProto {
 	double ob_double_2 = 4;
 	int64 ob_int64_1 = 5;
 	string ob_string_3 = 6;
-	bool ob_bool = 7;
+	bool ob_bool_1 = 7;
 	string ob_string_4 = 8;
 	string ob_string_5 = 9;
 	repeated string ob_string_repeated = 10;
@@ -17278,6 +17372,7 @@ message PostcardDisplayProto {
 	uint64 ob_uint64_1 = 14;
 	string ob_string_8 = 15;
 	uint64 ob_uint64_2 = 16;
+	bool ob_bool_2 = 17;
 }
 
 message PotionAttributesProto {
@@ -17599,6 +17694,9 @@ message PushGatewayTelemetry {
 
 message PushGatewayUpstreamErrorTelemetry {
 	int32 upstream_response_status = 1;
+	int64 token_expire_timestamp = 2;
+	int64 client_timestamp = 3;
+	int64 server_timestamp = 4;
 }
 
 message PushNotificationRegistryOutProto {
@@ -18435,6 +18533,7 @@ message RedeemGoogleReceiptProto {
 	string purchase_currency = 3;
 	int32 price_paid_e6 = 4;
 	int64 price_paid_e6_long = 5;
+	string country_code = 6;
 }
 
 message RedeemPasscodeRequestProto {
@@ -19030,6 +19129,9 @@ message RouteStamp {
 
 	Type type = 1;
 	Color color = 2;
+	string ob_string_1 = 3;
+	string ob_string_2 = 4;
+	string ob_string_3 = 5;
 }
 
 message RouteValidation {
@@ -19784,6 +19886,11 @@ message SkuPresentationProto {
 	string value = 2;
 }
 
+message SkuStorePrice {
+	string currency_code = 1;
+	int64 price_paid_e6 = 2;
+}
+
 message SmeargleMovesSettingsProto {
 	repeated HoloPokemonMove quick_moves = 1;
 	repeated HoloPokemonMove cinematic_moves = 2;
@@ -19953,8 +20060,6 @@ message SponsoredDetailsProto {
 	string call_to_action_link = 3;
 	PromoButtonMessageType promo_button_message_type = 4;
 	string campaign_id = 5;
-	ImageTextCreativeProto promo_image_creative = 6;
-	repeated ObAdDetailsProto ob_ad_details = 7;
 }
 
 message SponsoredGeofenceGiftSettingsProto {
@@ -20501,11 +20606,6 @@ message TodayViewSectionProto {
 		TimedGroupChallengeSectionProto timed_group_challenge = 8;
 		MiniCollectionSectionProto mini_collection = 9;
 	}
-}
-
-message Topic {
-	string topic_id = 1;
-	string namespace = 2;
 }
 
 message TopicProto {
@@ -21109,6 +21209,7 @@ message Upstream {
 	}
 
 	message SubscriptionRequest {
+		repeated TopicProto topics = 1;
 	}
 
 	int64 request_id = 1;
@@ -21678,9 +21779,11 @@ message WidgetsProto {
 	enum WidgetType {
 		UNSET = 0;
 		EGG_INCUBATORS = 1;
+		BUDDY_STATS = 2;
 	}
 
 	WidgetType widget_type = 1;
+	repeated WidgetType widgets = 2;
 }
 
 message WildCreateDetail {

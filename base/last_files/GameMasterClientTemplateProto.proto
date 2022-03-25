@@ -151,6 +151,8 @@ import "GM7SettingsProto.proto";
 import "GM8SettingsProto.proto";
 import "GM5SettingsProto.proto";
 import "GM9SettingsProto.proto";
+import "GM10SettingsProto.proto";
+import "GM11SettingsProto.proto";
 
 message GameMasterClientTemplateProto {
 	string template_id = 1;
@@ -284,4 +286,6 @@ message GameMasterClientTemplateProto {
 	GM8SettingsProto ob_gm_8_settings = 137;
 	GM5SettingsProto ob_gm_5_settings = 138;
 	GM9SettingsProto ob_gm_9_settings = 139;
+	GM10SettingsProto ob_gm_10_settings = 140;
+	GM11SettingsProto ob_gm_11_settings = 141;
 }

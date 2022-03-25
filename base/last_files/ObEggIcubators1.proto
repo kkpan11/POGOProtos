@@ -21,7 +21,14 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message Topic {
-	string topic_id = 1;
-	string namespace = 2;
+import "BuddyEmotionLevel.proto";
+
+message ObEggIcubators1 {
+	float ob_float_1 = 1;
+	float ob_float_2 = 2;
+	repeated BuddyStatsShownHearts.BuddyShownHeartType ob_buddy_show_heart_type = 3;
+	BuddyEmotionLevel ob_buddy_emotion_leve = 4;
+	int64 ob_int64_1 = 5;
+	int64 ob_int64_2 = 6;
+	bool ob_bool = 7;
 }
