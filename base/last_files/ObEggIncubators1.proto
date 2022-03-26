@@ -23,7 +23,7 @@ package POGOProtos.Rpc;
 
 import "BuddyEmotionLevel.proto";
 
-message ObEggIcubators1 {
+message ObEggIncubators1 {
 	float ob_float_1 = 1;
 	float ob_float_2 = 2;
 	repeated BuddyStatsShownHearts.BuddyShownHeartType ob_buddy_show_heart_type = 3;

@@ -7676,6 +7676,7 @@ message CompleteQuestPokemonEncounterLogEntry {
 message CompleteQuestProto {
 	optional string quest_id = 1;
 	optional string sub_quest_id = 2;
+	optional int32 ob_int32 = 3;
 }
 
 message CompleteQuestStampCardLogEntry {
@@ -9756,6 +9757,7 @@ message GenerateCombatChallengeIdOutProto {
 }
 
 message GenerateCombatChallengeIdProto {
+	optional string ob_string = 1;
 }
 
 message GenerateGmapSignedUrlOutProto {
@@ -10128,7 +10130,7 @@ message GetFriendDetailsOutProto {
 
 	message DebugProto {
 		message Callee {
-			optional string player_id = 2;
+			optional string player_id = 1;
 		}
 
 		optional int32 fetched_from_db = 1;
@@ -10136,7 +10138,7 @@ message GetFriendDetailsOutProto {
 		optional int32 fetched_from_player_mapper = 3;
 		optional int32 fetched_from_status_cache = 4;
 		optional int32 failed_to_fetch = 5;
-		optional int32 fetched_from_same_server_as_player = 7;
+		optional int32 fetched_from_same_server_as_player = 6;
 	}
 
 	optional Result result = 1;
@@ -13459,7 +13461,7 @@ message ObCombatSettings {
 	optional bool ob_bool = 2;
 }
 
-message ObEggIcubators1 {
+message ObEggIncubators1 {
 	optional float ob_float_1 = 1;
 	optional float ob_float_2 = 2;
 	repeated BuddyStatsShownHearts.BuddyShownHeartType ob_buddy_show_heart_type = 3;
@@ -13473,7 +13475,7 @@ message ObEggIncubatorsInfos {
 	optional ObEggIncubatorsStatus egg_incubators = 1;
 
 	optional ObEggIncubatorsStatus ob_egg_incubator_status = 2;
-	optional ObEggIcubators1 ob_egg_incubators_1 = 3;
+	optional ObEggIncubators1 ob_egg_incubators_1 = 3;
 }
 
 message ObEggIncubatorsStatus {

@@ -22,7 +22,7 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 import "ObEggIncubatorsStatus.proto";
-import "ObEggIcubators1.proto";
+import "ObEggIncubators1.proto";
 
 message ObEggIncubatorsInfos {
 	oneof EggIncubatorsState {
@@ -30,5 +30,5 @@ message ObEggIncubatorsInfos {
 	}
 
 	ObEggIncubatorsStatus ob_egg_incubator_status = 2;
-	ObEggIcubators1 ob_egg_incubators_1 = 3;
+	ObEggIncubators1 ob_egg_incubators_1 = 3;
 }

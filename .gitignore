@@ -9,6 +9,7 @@ out/
 
 *.pyc
 *.DS_Store
+temp.*
 
 # Backup files
 *~
