@@ -21,8 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-enum ObPlayerOrFriendAvatarType {
-	AVATAR_UNKNOWN = 0;
-	AVATAR_MALE = 1;
-	AVATAR_FEMALE = 2;
+message IosDevice {
+	string name = 8;
+	string manufacturer = 9;
+	string model = 10;
+	string hardware = 11;
+	string software = 12;
 }

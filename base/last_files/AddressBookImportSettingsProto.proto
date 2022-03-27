@@ -21,10 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdDetails.proto";
-import "AdResponseStatus.proto";
-
-message AdProto {
-	AdDetails ad_details = 1;
-	AdResponseStatus ad_response_status = 2;
+message AddressBookImportSettingsProto {
+	bool is_enabled = 1;
+	int32 onboarding_screen_level = 2;
+	bool show_opt_out_checkbox = 3;
 }

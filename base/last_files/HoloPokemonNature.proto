@@ -21,10 +21,13 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdDetails.proto";
-import "AdResponseStatus.proto";
-
-message AdProto {
-	AdDetails ad_details = 1;
-	AdResponseStatus ad_response_status = 2;
+enum HoloPokemonNature {
+	NATURE_UNKNOWN = 0;
+	POKEMON_NATURE_STOIC = 1;
+	POKEMON_NATURE_ASSASSIN = 2;
+	POKEMON_NATURE_GUARDIAN = 3;
+	POKEMON_NATURE_RAIDER = 4;
+	POKEMON_NATURE_PROTECTOR = 5;
+	POKEMON_NATURE_SENTRY = 6;
+	POKEMON_NATURE_CHAMPION = 7;
 }

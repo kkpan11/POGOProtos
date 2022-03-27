@@ -21,10 +21,13 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdDetails.proto";
-import "AdResponseStatus.proto";
+message SfidaCheckPairingResponse {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_PAIRING = 2;
+		ERROR_UNKNOWN = 3;
+	}
 
-message AdProto {
-	AdDetails ad_details = 1;
-	AdResponseStatus ad_response_status = 2;
+	Status status = 1;
 }

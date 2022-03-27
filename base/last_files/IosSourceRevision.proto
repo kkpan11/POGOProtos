@@ -21,10 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdDetails.proto";
-import "AdResponseStatus.proto";
-
-message AdProto {
-	AdDetails ad_details = 1;
-	AdResponseStatus ad_response_status = 2;
+message IosSourceRevision {
+	string name = 1;
+	string bundle = 2;
+	string version = 3;
+	string product = 4;
+	string os = 5;
 }

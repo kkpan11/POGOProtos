@@ -21,10 +21,19 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdDetails.proto";
-import "AdResponseStatus.proto";
+import "PostcardDisplayProto.proto";
 
-message AdProto {
-	AdDetails ad_details = 1;
-	AdResponseStatus ad_response_status = 2;
+message CreatePostcardOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_SENDER_DOES_NOT_EXIST = 2;
+		ERROR_GIFT_DOES_NOT_EXIST = 3;
+		ERROR_POSTCARD_ALREADY_CREATED = 4;
+		ERROR_POSTCARD_INVENTORY_FULL = 5;
+		ERROR_NOT_ENABLED = 6;
+	}
+
+	Result result = 1;
+	PostcardDisplayProto postcard = 2;
 }

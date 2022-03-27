@@ -21,10 +21,13 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdDetails.proto";
-import "AdResponseStatus.proto";
+import "AndroidDevice.proto";
 
-message AdProto {
-	AdDetails ad_details = 1;
-	AdResponseStatus ad_response_status = 2;
+message AndroidDataSource {
+	bool is_raw = 1;
+	string app_package_name = 2;
+	string stream_identifier = 3;
+	string stream_name = 4;
+	AndroidDevice device = 5;
+	string data_type = 6;
 }

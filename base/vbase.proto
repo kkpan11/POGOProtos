@@ -45,6 +45,12 @@ enum AdFeedbackNotInterestedReason {
 	AD_FEEDBACK_NOT_INTERESTED_REASON_SEEN_TOO_OFTEN = 2;
 }
 
+enum AdResponseStatus {
+	WASABI_AD_FOUND = 0;
+	NO_CAMPAIGNS_FOUND = 1;
+	USER_NOT_ELIGIBLE = 2;
+}
+
 enum AssetTelemetryIds {
 	ASSET_TELEMETRY_IDS_UNDEFINED_ASSET_EVENT = 0;
 	ASSET_TELEMETRY_IDS_DOWNLOAD_START = 1;
@@ -426,6 +432,25 @@ enum FriendshipLevelMilestone {
 	FRIENDSHIP_LEVEL_2 = 3;
 	FRIENDSHIP_LEVEL_3 = 4;
 	FRIENDSHIP_LEVEL_4 = 5;
+}
+
+enum GameAdventureSyncAction {
+	UNKNOWN_GAME_LOCATION_AWARENESS_ACTION = 0;
+	REQUEST_GEOFENCE_UPDATES_1 = 360000;
+	UPDATE_PLAYER_LOCATION_1 = 360001;
+	UPDATE_BREADCRUMB_HISTORY = 361000;
+	REFRESH_PROXIMITY_TOKENS = 362000;
+	REPORT_PROXIMITY_CONTACTS = 362001;
+}
+
+enum GameFitnessAction {
+	UNKNOWN_GAME_FITNESS_ACTION = 0;
+	UPDATE_FITNESS_METRICS_1 = 640000;
+	GET_FITNESS_REPORT_1 = 640001;
+	GET_ADVENTURE_SYNC_SETTINGS_1 = 640002;
+	UPDATE_ADVENTURE_SYNC_SETTINGS_1 = 640003;
+	UPDATE_ADVENTURE_SYNC_FITNESS = 640004 [deprecated = true];
+	GET_ADVENTURE_SYNC_FITNESS_REPORT = 640005 [deprecated = true];
 }
 
 enum GenericClickTelemetryIds {
@@ -2641,6 +2666,17 @@ enum HoloPokemonMovementType {
 	MOVEMENT_HOVERING = 6;
 }
 
+enum HoloPokemonNature {
+	NATURE_UNKNOWN = 0;
+	POKEMON_NATURE_STOIC = 1;
+	POKEMON_NATURE_ASSASSIN = 2;
+	POKEMON_NATURE_GUARDIAN = 3;
+	POKEMON_NATURE_RAIDER = 4;
+	POKEMON_NATURE_PROTECTOR = 5;
+	POKEMON_NATURE_SENTRY = 6;
+	POKEMON_NATURE_CHAMPION = 7;
+}
+
 enum HoloPokemonType {
 	POKEMON_TYPE_NONE = 0;
 	POKEMON_TYPE_NORMAL = 1;
@@ -2873,6 +2909,10 @@ enum MapLayer {
 	MAP_LAYER_TRANSIT = 8;
 	MAP_LAYER_WATER = 9;
 	MAP_LAYER_DEBUG_TILE_BOUNDARIES = 10;
+}
+
+enum MementoType {
+	MEMENTO_POSTCARD = 0;
 }
 
 enum Method {
@@ -3128,27 +3168,11 @@ enum NotificationState {
 	NOTIFICATION_STATE_VIEWED = 1;
 }
 
-enum ObPlayerOrFriendAvatarType {
-	AVATAR_UNKNOWN = 0;
-	AVATAR_MALE = 1;
-	AVATAR_FEMALE = 2;
-}
-
-enum ObPostcardMemento {
-	MEMENTO_POSTCARD = 0;
-}
-
 enum ObSuggestionsEntry {
 	SUGGESTION_ENTRY_UNDEFINED_USERNAME_ENTRY_MODE = 0;
 	SUGGESTION_ENTRY_NEW_USER = 1;
 	SUGGESTION_ENTRY_CHANGE_BANNED_NAME = 2;
 	SUGGESTION_ENTRY_EXISTING_USER_CHANGE_NAME = 3;
-}
-
-enum ObWasabiState {
-	WASABI_AD_FOUND = 0;
-	NO_CAMPAIGNS_FOUND = 1;
-	USER_NOT_ELIGIBLE = 2;
 }
 
 enum OnboardingArStatus {
@@ -4051,7 +4075,7 @@ message AdFeedbackSettingsProto {
 
 message AdProto {
 	AdDetails ad_details = 1;
-	ObWasabiState ob_wasabi_state = 2;
+	AdResponseStatus ad_response_status = 2;
 }
 
 message AdRequestDeviceInfo {
@@ -4132,7 +4156,7 @@ message AddReferrerProto {
 	string referrer_code = 1;
 }
 
-message AddressBookImportSettings {
+message AddressBookImportSettingsProto {
 	bool is_enabled = 1;
 	int32 onboarding_screen_level = 2;
 	bool show_opt_out_checkbox = 3;
@@ -4155,6 +4179,12 @@ message AddressablePokemonSettings {
 	repeated HoloPokemonId pokemon_id = 2;
 }
 
+message AdventureSyncProgress {
+	int32 notification_selector = 1;
+	repeated string parameters = 2;
+	bytes serialized_data = 3;
+}
+
 message AdventureSyncSettingsProto {
 	bool fitness_service_enabled = 1;
 	bool awareness_service_enabled = 2;
@@ -4164,6 +4194,32 @@ message AdventureSyncSettingsProto {
 
 message AdventureSyncV2GmtProto {
 	bool feature_enabled = 1;
+}
+
+message AndroidDataSource {
+	bool is_raw = 1;
+	string app_package_name = 2;
+	string stream_identifier = 3;
+	string stream_name = 4;
+	AndroidDevice device = 5;
+	string data_type = 6;
+}
+
+message AndroidDevice {
+	enum DeviceType {
+		UNKNOWN = 0;
+		PHONE = 1;
+		TABLET = 2;
+		WATCH = 3;
+		CHEST_STRAP = 4;
+		SCALE = 5;
+		HEAD_MOUNTED = 6;
+	}
+
+	string manufacturer = 1;
+	string model = 2;
+	DeviceType type = 3;
+	string uid = 4;
 }
 
 message AnimationOverrideProto {
@@ -4790,6 +4846,23 @@ message AwardedRouteBadge {
 	string route_image_url = 9;
 	int64 route_duration_seconds = 10;
 	repeated RouteBadgeWaypoint last_played_waypoints = 11;
+}
+
+message BackgroundModeClientSettingsProto {
+	int64 maximum_sample_age_ms = 1;
+	bool accept_manual_fitness_samples = 2;
+	double minimum_location_accuracy_meters = 3;
+	int32 background_wake_up_interval_minutes = 4;
+	int32 max_upload_size_in_bytes = 5;
+	double min_enclosing_geofence_radius_m = 6;
+	int64 background_token_refresh_interval_s = 7;
+	int32 max_session_duration_m = 8;
+	int32 min_distance_delta_m = 9;
+	int32 min_update_interval_s = 10;
+	int32 min_session_reporting_interval_s = 11;
+	int32 min_persistent_reporting_interval_s = 12;
+	bool enable_progress_request = 13;
+	bool enable_foreground_notification = 14;
 }
 
 message BackgroundModeGlobalSettingsProto {
@@ -6135,6 +6208,11 @@ message ClientSettingsTelemetry {
 	float sound_volume = 2;
 }
 
+message ClientSleepRecord {
+	uint32 start_time_sec = 1;
+	uint32 duration_sec = 2;
+}
+
 message ClientSpawnPointProto {
 	double latitude = 2;
 	double longitude = 3;
@@ -7166,6 +7244,26 @@ message CreatePokemonTagProto {
 	PokemonTagColor color = 2;
 }
 
+message CreatePostcardOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_SENDER_DOES_NOT_EXIST = 2;
+		ERROR_GIFT_DOES_NOT_EXIST = 3;
+		ERROR_POSTCARD_ALREADY_CREATED = 4;
+		ERROR_POSTCARD_INVENTORY_FULL = 5;
+		ERROR_NOT_ENABLED = 6;
+	}
+
+	Result result = 1;
+	PostcardDisplayProto postcard = 2;
+}
+
+message CreatePostcardProto {
+	uint64 giftbox_id = 1;
+	string sender_id = 2;
+}
+
 message CrossGameSocialGlobalSettingsProto {
 	int32 online_status_min_level = 1;
 	int32 niantic_profile_min_level = 2;
@@ -7446,6 +7544,23 @@ message DeletePokemonTagOutProto {
 
 message DeletePokemonTagProto {
 	uint64 tag_id = 1;
+}
+
+message DeletePostcardOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_POSTCARD_DOES_NOT_EXIST = 2;
+		ERROR_POSTCARD_FAVORITED = 3;
+		ERROR_NOT_ENABLED = 4;
+	}
+
+	Result result = 1;
+	PostcardDisplayProto postcard = 2;
+}
+
+message DeletePostcardProto {
+	string postcard_id = 1;
 }
 
 message DeployPokemonTelemetry {
@@ -8392,6 +8507,25 @@ message FitnessMetricsProto {
 	double wheelchair_push_count = 6;
 }
 
+message FitnessMetricsReportHistory {
+	message MetricsHistory {
+		int64 bucket = 1;
+		FitnessMetricsProto metrics = 2;
+	}
+
+	repeated MetricsHistory weekly_history = 1;
+	repeated MetricsHistory daily_history = 2;
+	repeated MetricsHistory hourly_history = 3;
+}
+
+message FitnessRecordProto {
+	map<int64, FitnessMetricsProto> hourly_reports = 1;
+	repeated FitnessSample raw_samples = 2;
+	int64 last_aggregation_timestamp_ms = 3;
+	FitnessStatsProto fitness_stats = 4;
+	FitnessMetricsReportHistory report_history = 5;
+}
+
 message FitnessReportProto {
 	oneof Window {
 		int32 day_offset_from_now = 1;
@@ -8412,6 +8546,65 @@ message FitnessRewardsLogEntry {
 	Result result = 1;
 	LootProto rewards = 2;
 	double distance_walked_km = 3;
+}
+
+message FitnessSample {
+	enum FitnessSampleType {
+		SAMPLE_UNSET = 0;
+		STEPS = 1;
+		WALKING_DISTANCE_METERS = 2;
+		WHEELCHAIR_DISTANCE_METERS = 3;
+		CALORIES_KCALS = 4;
+		WHEELCHAIR_PUSH_COUNT = 5;
+		EXERCISE_TIME_MI = 6;
+	}
+
+	enum FitnessSourceType {
+		SOURCE_UNSET = 0;
+		HEALTHKIT = 1;
+		GOOGLE_FIT = 2;
+		APPLE_WATCH = 3;
+		GPS = 4;
+		ANDROID_SENSOR_HUB = 5;
+	}
+
+	FitnessSampleType sample_type = 1;
+	int64 sample_start_timestamp_ms = 2;
+	int64 sample_end_timestamp_ms = 3;
+	double value = 4;
+	FitnessSourceType source_type = 5;
+	FitnessSampleMetadata metadata = 6;
+}
+
+message FitnessSampleMetadata {
+	AndroidDataSource original_data_source = 1;
+	AndroidDataSource data_source = 2;
+	IosSourceRevision source_revision = 3;
+	IosDevice device = 4;
+	bool user_entered = 5;
+}
+
+message FitnessStatsProto {
+	int64 last_accumulated_timestamp_ms = 1;
+	FitnessMetricsProto accumulated = 2;
+	FitnessMetricsProto pending = 3;
+	double player_initial_walk_km = 4;
+	double player_total_walk_km = 5;
+	int64 player_total_steps = 6;
+}
+
+message FitnessUpdateOutProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_UNKNOWN = 2;
+	}
+
+	Status status = 1;
+}
+
+message FitnessUpdateProto {
+	repeated FitnessSample fitness_samples = 1;
 }
 
 message FoodAttributesProto {
@@ -8982,7 +9175,7 @@ message GameMasterClientTemplateProto {
 	VerboseLogRaidSettings verbose_log_raid_settings = 117;
 	FormsRefactorSettings forms_refactor_settings = 118;
 	SharedMoveSettings shared_move_settings = 119;
-	AddressBookImportSettings address_book_import_settings = 120;
+	AddressBookImportSettingsProto address_book_import_settings = 120;
 	MusicSettings music_settings = 121;
 	NewsFeedClientSettings news_feed_client_settings = 122;
 	MapObjectsInteractionRangeSettings map_objects_interaction_range_settings = 123;
@@ -9085,6 +9278,26 @@ message GeodataServiceGameClientPoiProto {
 	bool is_in_game = 6;
 }
 
+message GeofenceMetadata {
+	double latitude_deg = 1;
+	double longitude_deg = 2;
+	double radius = 3;
+	string identifier = 4;
+	int64 expiration_ms = 5;
+	int64 dwell_time_ms = 6;
+	bool fire_on_entrance = 7;
+	bool fire_on_exit = 8;
+}
+
+message GeofenceUpdateOutProto {
+	repeated GeofenceMetadata geofence = 1;
+}
+
+message GeofenceUpdateProto {
+	int32 number_of_points = 1;
+	double minimum_point_radius_m = 2;
+}
+
 message Geometry {
 	oneof Geometry {
 		PointList points = 1;
@@ -9153,6 +9366,45 @@ message GetActiveSubscriptionsResponseProto {
 	repeated InAppPurchaseSubscriptionInfo subscription = 1;
 }
 
+message GetAdventureSyncFitnessReportRequestProto {
+	option deprecated = true;
+	int32 num_of_days = 1;
+	int32 num_of_weeks = 2;
+}
+
+message GetAdventureSyncFitnessReportResponseProto {
+	option deprecated = true;
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_PLAYER_NOT_FOUND = 2;
+		ERROR_RECORDS_NOT_FOUND = 3;
+		ERROR_INVALID_WINDOW = 4;
+		ERROR_UNKNOWN = 5;
+	}
+
+	Status status = 1;
+	repeated FitnessReportProto daily_reports = 2;
+	repeated FitnessReportProto weekly_reports = 3;
+	int64 week_reset_timestamp_since_monday_ms = 4;
+}
+
+message GetAdventureSyncProgressOutProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		DISABLED = 2;
+		ERROR_UNKNOWN = 3;
+	}
+
+	Status status = 1;
+	AdventureSyncProgress progress = 2;
+}
+
+message GetAdventureSyncProgressProto {
+	bytes request = 1;
+}
+
 message GetAdventureSyncSettingsRequestProto {
 }
 
@@ -9202,6 +9454,20 @@ message GetAvailableSubmissionsOutProto {
 
 message GetAvailableSubmissionsProto {
 	repeated PlayerSubmissionTypeProto submission_types = 1;
+}
+
+message GetBackgroundModeSettingsOutProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_UNKNOWN = 2;
+	}
+
+	Status status = 1;
+	BackgroundModeClientSettingsProto settings = 2;
+}
+
+message GetBackgroundModeSettingsProto {
 }
 
 message GetBuddyHistoryOutProto {
@@ -9818,6 +10084,15 @@ message GetIncomingGameInvitesResponse {
 	Result result = 2;
 }
 
+message GetInventoryProto {
+	int64 timestamp_millis = 1;
+}
+
+message GetInventoryResponseProto {
+	bool success = 1;
+	InventoryDeltaProto inventoryDelta = 2;
+}
+
 message GetLocalTimeOutProto {
 	enum Status {
 		UNSET = 0;
@@ -9919,6 +10194,28 @@ message GetMatchmakingStatusOutProto {
 
 message GetMatchmakingStatusProto {
 	string queue_id = 1;
+}
+
+message GetMementoListOutProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_MEMENTO_TYPE_NOT_ENABLED = 2;
+		ERROR_INVALID_REQUEST = 3;
+		NOT_MODIFIED = 4;
+	}
+
+	Status status = 1;
+	repeated MementoAttributesProto mementos = 2;
+	string memento_list_hash = 3;
+}
+
+message GetMementoListProto {
+	repeated MementoType memento_types = 1;
+	repeated int64 s2_cell_location_bounds = 2;
+	int64 time_bound_start_ms = 3;
+	int64 time_bound_end_ms = 4;
+	string memento_list_hash = 5;
 }
 
 message GetMilestonesOutProto {
@@ -11497,6 +11794,10 @@ message InventoryItemProto {
 	int64 modified_timestamp = 1;
 }
 
+message InventoryProto {
+	repeated InventoryItemProto inventory_item = 1;
+}
+
 message InventorySettingsProto {
 	int32 max_pokemon = 1;
 	int32 max_bag_items = 2;
@@ -11574,6 +11875,22 @@ message InviteGameResponse {
 	}
 
 	Status status = 1;
+}
+
+message IosDevice {
+	string name = 8;
+	string manufacturer = 9;
+	string model = 10;
+	string hardware = 11;
+	string software = 12;
+}
+
+message IosSourceRevision {
+	string name = 1;
+	string bundle = 2;
+	string version = 3;
+	string product = 4;
+	string os = 5;
 }
 
 message IsMyFriendOutProto {
@@ -12111,6 +12428,9 @@ message LocationE6Proto {
 	int32 longitude_e6 = 2;
 }
 
+message LocationPingOutProto {
+}
+
 message LocationPingProto {
 	enum PingReason {
 		UNSET = 0;
@@ -12471,6 +12791,18 @@ message MegaEvolvePokemonProto {
 message MegaEvolvePokemonSpeciesProto {
 	int32 energy_count = 1;
 	int32 pokemon_species_id = 2;
+}
+
+message MementoAttributesProto {
+	oneof Type {
+		PostcardDisplayProto postcard_display = 5;
+	}
+
+	MementoType memento_type = 1;
+	double latitude = 2;
+	double longitude = 3;
+	int64 added_timestamp_ms = 4;
+	string memento_hash = 6;
 }
 
 message MetricData {
@@ -12875,18 +13207,6 @@ message ObPokemonSetting {
 	float ob_pokemon_setting_float_10 = 10;
 }
 
-message ObPostcardDetails {
-	oneof Display {
-		PostcardDisplayProto postcard_display = 5;
-	}
-
-	ObPostcardMemento ob_postcard_memento = 1;
-	double ob_double_1 = 2;
-	double ob_double_2 = 3;
-	int64 ob_int64 = 4;
-	string ob_string = 6;
-}
-
 message ObSponsoredBalloon {
 	string ob_string_1 = 1;
 	string ob_string_2 = 2;
@@ -13257,8 +13577,29 @@ message PermissionsFlowTelemetry {
 	bool success = 4;
 }
 
+message PgoAsyncFileUploadCompleteProto {
+	int32 power_up_points_added = 1;
+	int32 power_up_progress_points = 2;
+	int64 power_up_level_expiration_ms = 3;
+	int64 next_fort_close_ms = 4;
+}
+
 message PhotobombCreateDetail {
 	bool caught_in_photobomb = 1;
+}
+
+message PingRequestProto {
+	int32 response_size_bytes = 1;
+	string random_request_bytes = 2;
+	bool use_cache_for_random_request_bytes = 3;
+	string return_value = 4;
+}
+
+message PingResponseProto {
+	string user_info = 1;
+	string server_info = 2;
+	string random_response_bytes = 3;
+	string return_value = 4;
 }
 
 message PixelPointProto {
@@ -16360,6 +16701,10 @@ message PokemonMegaEvolutionLevelProto {
 	ObPokemonDisplayField1 ob_pokemon_display_field_1 = 3;
 }
 
+message PokemonMegaEvolutionPointDailyCountersProto {
+	DailyCounterProto mega_evo = 1;
+}
+
 message PokemonProto {
 	fixed64 id = 1;
 	HoloPokemonId pokemon_id = 2;
@@ -19011,6 +19356,21 @@ message SetPokemonTagsForPokemonProto {
 	repeated PokemonTagChangeProto tag_changes = 1;
 }
 
+message SfidaAssociateRequest {
+	bytes bt_address = 1;
+	uint32 pairing_code = 2;
+}
+
+message SfidaAssociateResponse {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR = 2;
+	}
+
+	Status status = 1;
+}
+
 message SfidaAuthToken {
 	bytes response_token = 1;
 	string sfida_id = 2;
@@ -19056,6 +19416,22 @@ message SfidaCertificationRequest {
 
 message SfidaCertificationResponse {
 	bytes payload = 1;
+}
+
+message SfidaCheckPairingRequest {
+	bytes bt_address = 1;
+	uint32 pairing_code = 2;
+}
+
+message SfidaCheckPairingResponse {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_PAIRING = 2;
+		ERROR_UNKNOWN = 3;
+	}
+
+	Status status = 1;
 }
 
 message SfidaDowserRequest {
@@ -19773,6 +20149,10 @@ message TakeSnapshotProto {
 	repeated HoloPokemonId pokemon = 1;
 }
 
+message TakeSnapshotQuestProto {
+	repeated HoloPokemonId unique_pokemon_id = 1;
+}
+
 message TappableSettingsProto {
 	float visible_radius_meters = 1;
 	float spawn_angle_degrees = 2;
@@ -20206,6 +20586,11 @@ message UpNextSectionProto {
 	repeated string event_id = 1;
 }
 
+message UpdateAdventureSyncFitnessRequestProto {
+	option deprecated = true;
+	repeated FitnessSample fitness_samples = 1;
+}
+
 message UpdateAdventureSyncFitnessResponseProto {
 	option deprecated = true;
 	enum Status {
@@ -20219,6 +20604,17 @@ message UpdateAdventureSyncFitnessResponseProto {
 
 message UpdateAdventureSyncSettingsRequestProto {
 	AdventureSyncSettingsProto adventure_sync_settings = 1;
+}
+
+message UpdateAdventureSyncSettingsResponseProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_UNKNOWN = 2;
+		ERROR_PLAYER_NOT_FOUND = 3;
+	}
+
+	Status status = 1;
 }
 
 message UpdateBreadcrumbHistoryRequestProto {
@@ -20365,6 +20761,24 @@ message UpdateNotificationProto {
 	repeated string notification_ids = 1;
 	repeated int64 create_timestamp_ms = 2;
 	NotificationState state = 3;
+}
+
+message UpdatePostcardOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_POSTCARD_DOES_NOT_EXIST = 2;
+		ERROR_NOT_ENABLED = 4;
+		ERROR_RATE_LIMITED = 5;
+	}
+
+	Result result = 1;
+	PostcardDisplayProto postcard = 2;
+}
+
+message UpdatePostcardProto {
+	string postcard_id = 1;
+	bool favorite = 2;
 }
 
 message UpdateProfileRequest {
@@ -21009,6 +21423,24 @@ message VsSeekerWinRewardsLogEntry {
 	int32 win_number = 4;
 }
 
+message WainaGetRewardsRequest {
+	uint32 sleep_day = 1;
+}
+
+message WainaSubmitSleepDataRequest {
+	repeated ClientSleepRecord sleep_record = 1;
+}
+
+message WainaSubmitSleepDataResponse {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR = 2;
+	}
+
+	Status status = 1;
+}
+
 message WallabySettingsProto {
 	bool enable = 1;
 	float activity_length_s = 2;
@@ -21277,9 +21709,4 @@ message WithWinGymBattleStatusProto {
 }
 
 message WithWinRaidStatusProto {
-}
-
-message ZZObfuscatedProto {
-	AdRequestDeviceInfo ob_ad_request_device_info = 1;
-	ObPlayerOrFriendAvatarType ob_player_or_friend_avatar = 2;
 }

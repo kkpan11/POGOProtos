@@ -21,10 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdDetails.proto";
-import "AdResponseStatus.proto";
+import "GeofenceMetadata.proto";
 
-message AdProto {
-	AdDetails ad_details = 1;
-	AdResponseStatus ad_response_status = 2;
+message GeofenceUpdateOutProto {
+	repeated GeofenceMetadata geofence = 1;
 }

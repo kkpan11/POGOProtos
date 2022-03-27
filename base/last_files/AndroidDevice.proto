@@ -21,10 +21,19 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdDetails.proto";
-import "AdResponseStatus.proto";
+message AndroidDevice {
+	enum DeviceType {
+		UNKNOWN = 0;
+		PHONE = 1;
+		TABLET = 2;
+		WATCH = 3;
+		CHEST_STRAP = 4;
+		SCALE = 5;
+		HEAD_MOUNTED = 6;
+	}
 
-message AdProto {
-	AdDetails ad_details = 1;
-	AdResponseStatus ad_response_status = 2;
+	string manufacturer = 1;
+	string model = 2;
+	DeviceType type = 3;
+	string uid = 4;
 }

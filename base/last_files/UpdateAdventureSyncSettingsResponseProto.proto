@@ -21,10 +21,13 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdRequestDeviceInfo.proto";
-import "ObPlayerOrFriendAvatarType.proto";
+message UpdateAdventureSyncSettingsResponseProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_UNKNOWN = 2;
+		ERROR_PLAYER_NOT_FOUND = 3;
+	}
 
-message ZZObfuscatedProto {
-	AdRequestDeviceInfo ob_ad_request_device_info = 1;
-	ObPlayerOrFriendAvatarType ob_player_or_friend_avatar = 2;
+	Status status = 1;
 }

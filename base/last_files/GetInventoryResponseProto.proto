@@ -21,10 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdDetails.proto";
-import "AdResponseStatus.proto";
+import "InventoryDeltaProto.proto";
 
-message AdProto {
-	AdDetails ad_details = 1;
-	AdResponseStatus ad_response_status = 2;
+message GetInventoryResponseProto {
+	bool success = 1;
+	InventoryDeltaProto inventoryDelta = 2;
 }

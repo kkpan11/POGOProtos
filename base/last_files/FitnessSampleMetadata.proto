@@ -21,10 +21,14 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdDetails.proto";
-import "AdResponseStatus.proto";
+import "AndroidDataSource.proto";
+import "IosSourceRevision.proto";
+import "IosDevice.proto";
 
-message AdProto {
-	AdDetails ad_details = 1;
-	AdResponseStatus ad_response_status = 2;
+message FitnessSampleMetadata {
+	AndroidDataSource original_data_source = 1;
+	AndroidDataSource data_source = 2;
+	IosSourceRevision source_revision = 3;
+	IosDevice device = 4;
+	bool user_entered = 5;
 }

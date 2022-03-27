@@ -21,10 +21,17 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdDetails.proto";
-import "AdResponseStatus.proto";
+import "PostcardDisplayProto.proto";
+import "MementoType.proto";
 
-message AdProto {
-	AdDetails ad_details = 1;
-	AdResponseStatus ad_response_status = 2;
+message MementoAttributesProto {
+	oneof Type {
+		PostcardDisplayProto postcard_display = 5;
+	}
+
+	MementoType memento_type = 1;
+	double latitude = 2;
+	double longitude = 3;
+	int64 added_timestamp_ms = 4;
+	string memento_hash = 6;
 }

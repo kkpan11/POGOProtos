@@ -21,10 +21,6 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdDetails.proto";
-import "AdResponseStatus.proto";
-
-message AdProto {
-	AdDetails ad_details = 1;
-	AdResponseStatus ad_response_status = 2;
+message WainaGetRewardsRequest {
+	uint32 sleep_day = 1;
 }

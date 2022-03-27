@@ -21,6 +21,13 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-enum ObPostcardMemento {
-	MEMENTO_POSTCARD = 0;
+import "FitnessMetricsProto.proto";
+
+message FitnessStatsProto {
+	int64 last_accumulated_timestamp_ms = 1;
+	FitnessMetricsProto accumulated = 2;
+	FitnessMetricsProto pending = 3;
+	double player_initial_walk_km = 4;
+	double player_total_walk_km = 5;
+	int64 player_total_steps = 6;
 }

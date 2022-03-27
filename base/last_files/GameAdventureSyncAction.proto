@@ -21,10 +21,11 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdDetails.proto";
-import "AdResponseStatus.proto";
-
-message AdProto {
-	AdDetails ad_details = 1;
-	AdResponseStatus ad_response_status = 2;
+enum GameAdventureSyncAction {
+	UNKNOWN_GAME_LOCATION_AWARENESS_ACTION = 0;
+	REQUEST_GEOFENCE_UPDATES_1 = 360000;
+	UPDATE_PLAYER_LOCATION_1 = 360001;
+	UPDATE_BREADCRUMB_HISTORY = 361000;
+	REFRESH_PROXIMITY_TOKENS = 362000;
+	REPORT_PROXIMITY_CONTACTS = 362001;
 }

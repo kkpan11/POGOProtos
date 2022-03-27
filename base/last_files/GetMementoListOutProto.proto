@@ -21,10 +21,18 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdDetails.proto";
-import "AdResponseStatus.proto";
+import "MementoAttributesProto.proto";
 
-message AdProto {
-	AdDetails ad_details = 1;
-	AdResponseStatus ad_response_status = 2;
+message GetMementoListOutProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_MEMENTO_TYPE_NOT_ENABLED = 2;
+		ERROR_INVALID_REQUEST = 3;
+		NOT_MODIFIED = 4;
+	}
+
+	Status status = 1;
+	repeated MementoAttributesProto mementos = 2;
+	string memento_list_hash = 3;
 }

@@ -131,7 +131,7 @@ import "AddressablePokemonSettings.proto";
 import "VerboseLogRaidSettings.proto";
 import "FormsRefactorSettings.proto";
 import "SharedMoveSettings.proto";
-import "AddressBookImportSettings.proto";
+import "AddressBookImportSettingsProto.proto";
 import "MusicSettings.proto";
 import "NewsFeedClientSettings.proto";
 import "MapObjectsInteractionRangeSettings.proto";
@@ -266,7 +266,7 @@ message GameMasterClientTemplateProto {
 	VerboseLogRaidSettings verbose_log_raid_settings = 117;
 	FormsRefactorSettings forms_refactor_settings = 118;
 	SharedMoveSettings shared_move_settings = 119;
-	AddressBookImportSettings address_book_import_settings = 120;
+	AddressBookImportSettingsProto address_book_import_settings = 120;
 	MusicSettings music_settings = 121;
 	NewsFeedClientSettings news_feed_client_settings = 122;
 	MapObjectsInteractionRangeSettings map_objects_interaction_range_settings = 123;

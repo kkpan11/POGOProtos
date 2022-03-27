@@ -21,10 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdDetails.proto";
-import "AdResponseStatus.proto";
-
-message AdProto {
-	AdDetails ad_details = 1;
-	AdResponseStatus ad_response_status = 2;
+message GetAdventureSyncFitnessReportRequestProto {
+	option deprecated = true;
+	int32 num_of_days = 1;
+	int32 num_of_weeks = 2;
 }

@@ -21,17 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "PostcardDisplayProto.proto";
-import "ObPostcardMemento.proto";
-
-message ObPostcardDetails {
-	oneof Display {
-		PostcardDisplayProto postcard_display = 5;
-	}
-
-	ObPostcardMemento ob_postcard_memento = 1;
-	double ob_double_1 = 2;
-	double ob_double_2 = 3;
-	int64 ob_int64 = 4;
-	string ob_string = 6;
+enum AdResponseStatus {
+	WASABI_AD_FOUND = 0;
+	NO_CAMPAIGNS_FOUND = 1;
+	USER_NOT_ELIGIBLE = 2;
 }

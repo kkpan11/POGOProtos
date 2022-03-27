@@ -21,10 +21,15 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdDetails.proto";
-import "AdResponseStatus.proto";
+import "FitnessMetricsProto.proto";
 
-message AdProto {
-	AdDetails ad_details = 1;
-	AdResponseStatus ad_response_status = 2;
+message FitnessMetricsReportHistory {
+	message MetricsHistory {
+		int64 bucket = 1;
+		FitnessMetricsProto metrics = 2;
+	}
+
+	repeated MetricsHistory weekly_history = 1;
+	repeated MetricsHistory daily_history = 2;
+	repeated MetricsHistory hourly_history = 3;
 }
