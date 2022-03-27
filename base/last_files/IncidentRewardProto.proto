@@ -21,14 +21,6 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "MapPokemonProto.proto";
-
-message PowerUpPokestopShared {
-	enum Mode {
-		LURE = 0;
-		POWER_UP = 1;
-	}
-
-	MapPokemonProto map_pokemon = 1;
-	Mode mode = 2;
+message IncidentRewardProto {
+	string ob_string = 1;
 }

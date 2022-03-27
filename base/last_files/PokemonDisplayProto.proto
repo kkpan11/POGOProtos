@@ -23,7 +23,7 @@ package POGOProtos.Rpc;
 
 import "PokemonBadge.proto";
 import "HoloTemporaryEvolutionId.proto";
-import "ObPokemonDisplayField.proto";
+import "PokemonMegaEvolutionLevelProto.proto";
 
 message PokemonDisplayProto {
 	enum Alignment {
@@ -2412,5 +2412,5 @@ message PokemonDisplayProto {
 	HoloTemporaryEvolutionId locked_temp_evolution = 11;
 	Costume original_costume = 12;
 	int64 display_id = 13;
-	ObPokemonDisplayField ob_pokemon_display = 14;
+	PokemonMegaEvolutionLevelProto mega_evolution_level = 14;
 }

@@ -21,7 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message ObAdDetailsProto2 {
-	repeated string ob_string = 1;
-	map<string, string> ob_dict = 2;
+import "AdDetails.proto";
+import "ObWasabiState.proto";
+
+message AdProto {
+	AdDetails ad_details = 1;
+	ObWasabiState ob_wasabi_state = 2;
 }

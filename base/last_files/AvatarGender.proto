@@ -21,10 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "AdDetails.proto";
-import "ObWasabiState.proto";
-
-message ObAttackRaidBattle {
-	AdDetails ad_details = 1;
-	ObWasabiState ob_wasabi_state = 2;
+enum AvatarGender {
+	AVATAR_GENDER_UNKNOWN = 0;
+	AVATAR_GENDER_MALE = 1;
+	AVATAR_GENDER_FEMALE = 2;
 }

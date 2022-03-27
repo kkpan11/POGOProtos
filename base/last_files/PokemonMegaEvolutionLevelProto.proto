@@ -21,10 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message ObAdDetailsProto {
-	string ob_string_1 = 1;
-	string ob_string_2 = 2;
-	map<string, string> ob_map_string_string_1 = 3;
-	map<string, string> ob_map_string_string_2 = 4;
-	map<string, string> ob_map_string_string_3 = 5;
+import "ObPokemonDisplayField1.proto";
+
+message PokemonMegaEvolutionLevelProto {
+	int64 ob_int64 = 1;
+	int32 ob_int32 = 2;
+	ObPokemonDisplayField1 ob_pokemon_display_field_1 = 3;
 }

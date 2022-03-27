@@ -21,8 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message PlayerAttributeProto {
+message ImpressionTrackingTag {
 	string ob_string_1 = 1;
 	string ob_string_2 = 2;
-	bool ob_bool = 3;
+	map<string, string> ob_map_string_string_1 = 3;
+	map<string, string> ob_map_string_string_2 = 4;
+	map<string, string> ob_map_string_string_3 = 5;
 }

@@ -21,10 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "ObPokemonDisplayField1.proto";
-
-message ObPokemonDisplayField {
-	int64 ob_int64 = 1;
-	int32 ob_int32 = 2;
-	ObPokemonDisplayField1 ob_pokemon_display_field_1 = 3;
+enum RaidLocationRequirement {
+	RAID_ACCESS_TYPE_BOTH = 0;
+	RAID_ACCESS_TYPE_IN_PERSON = 1;
+	RAID_ACCESS_TYPE_REMOTE = 2;
 }

@@ -21,16 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "IncidentLookupProto.proto";
-
-message ObQuestsProto {
-	enum Type {
-		UNSET = 0;
-		STORY_QUEST_BATTLE = 1;
-		TIMED_QUEST_BATTLE = 2;
-	}
-
-	string ob_string = 1;
-	Type context = 2;
-	IncidentLookupProto ob_incident_quest = 3;
+message PlayerAttributeRewardProto {
+	string ob_string_1 = 1;
+	string ob_string_2 = 2;
+	bool ob_bool = 3;
 }

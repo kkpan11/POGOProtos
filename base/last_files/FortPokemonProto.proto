@@ -21,10 +21,14 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-enum ObPostcardTypes {
-	OB_POSTCARD_TYPES_UNKNOWN = 0;
-	OB_POSTCARD_TYPES_SELF = 1;
-	OB_POSTCARD_TYPES_FRIEND = 2;
-	OB_POSTCARD_TYPES_FRIEND_ANONYMIZED = 3;
-	OB_POSTCARD_TYPES_FRIEND_ANONYMIZED_FROM_DELETION_OR_UNFRIEND = 4;
+import "MapPokemonProto.proto";
+
+message FortPokemonProto {
+	enum Mode {
+		LURE = 0;
+		POWER_UP = 1;
+	}
+
+	MapPokemonProto map_pokemon = 1;
+	Mode mode = 2;
 }

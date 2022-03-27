@@ -21,8 +21,7 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-enum RaidAccessType {
-	RAID_ACCESS_TYPE_BOTH = 0;
-	RAID_ACCESS_TYPE_IN_PERSON = 1;
-	RAID_ACCESS_TYPE_REMOTE = 2;
+message GamDetails {
+	repeated string ob_string = 1;
+	map<string, string> ob_dict = 2;
 }
