@@ -6737,6 +6737,20 @@ message CombatPlayerPreferencesProto {
 	bool obpeipfngbp = 2;
 }
 
+message CombatPlayerProfileProto {
+	message OIPAGAHKBII {
+		double okpbjcaemmg = 1;
+		double bgaecjamicf = 2;
+	}
+
+	string epijomdbema = 1;
+	PlayerPublicProfileProto idaofcpaben = 2;
+	repeated string boocnbjodhp = 3;
+	uint64 hmkdanipjdl = 4;
+	OIPAGAHKBII lpoocajhdbi = 5;
+	CombatPlayerPreferencesProto combat_player_preferences = 6;
+}
+
 message CombatProto {
 	enum CombatState {
 		UNSET = 0;
@@ -9708,7 +9722,7 @@ message GetCombatPlayerProfileOutProto {
 	}
 
 	Result result = 1;
-	KAKANBFNJJN lhakclgkfkc = 2;
+	CombatPlayerProfileProto profile = 2;
 }
 
 message GetCombatResultsOutProto {
@@ -12102,20 +12116,6 @@ message JournalReadEntryProto {
 
 message JournalRemoveEntryProto {
 	HashedKeyProto hashed_key = 1;
-}
-
-message KAKANBFNJJN {
-	message OIPAGAHKBII {
-		double okpbjcaemmg = 1;
-		double bgaecjamicf = 2;
-	}
-
-	string epijomdbema = 1;
-	PlayerPublicProfileProto idaofcpaben = 2;
-	repeated string boocnbjodhp = 3;
-	uint64 hmkdanipjdl = 4;
-	OIPAGAHKBII lpoocajhdbi = 5;
-	CombatPlayerPreferencesProto combat_player_preferences = 6;
 }
 
 message KAOKGNEIGCC {
