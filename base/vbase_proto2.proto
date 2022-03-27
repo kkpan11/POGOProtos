@@ -9398,13 +9398,13 @@ message GetActiveSubscriptionsResponseProto {
 }
 
 message GetAdventureSyncFitnessReportRequestProto {
-	optional option deprecated = true;
+	option deprecated = true;
 	optional int32 num_of_days = 1;
 	optional int32 num_of_weeks = 2;
 }
 
 message GetAdventureSyncFitnessReportResponseProto {
-	optional option deprecated = true;
+	option deprecated = true;
 	enum Status {
 		UNSET = 0;
 		SUCCESS = 1;
@@ -19493,7 +19493,7 @@ message SfidaGlobalSettingsProto {
 }
 
 message SfidaMetrics {
-	optional option deprecated = true;
+	option deprecated = true;
 	optional double distance_walked_km = 1 [deprecated = true];
 	optional int32 step_count = 2 [deprecated = true];
 	optional double calories_burned = 3 [deprecated = true];
@@ -19501,7 +19501,7 @@ message SfidaMetrics {
 }
 
 message SfidaMetricsUpdate {
-	optional option deprecated = true;
+	option deprecated = true;
 	enum UpdateType {
 		UNSET = 0;
 		INITIALIZATION = 1;
@@ -20623,12 +20623,12 @@ message UpNextSectionProto {
 }
 
 message UpdateAdventureSyncFitnessRequestProto {
-	optional option deprecated = true;
+	option deprecated = true;
 	repeated FitnessSample fitness_samples = 1;
 }
 
 message UpdateAdventureSyncFitnessResponseProto {
-	optional option deprecated = true;
+	option deprecated = true;
 	enum Status {
 		UNSET = 0;
 		SUCCESS = 1;
