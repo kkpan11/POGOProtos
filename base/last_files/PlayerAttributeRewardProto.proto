@@ -22,7 +22,7 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 message PlayerAttributeRewardProto {
-	string ob_string_1 = 1;
-	string ob_string_2 = 2;
-	bool ob_bool = 3;
+	string key = 1;
+	string value = 2;
+	bool overwrite_existing_attribute = 3;
 }

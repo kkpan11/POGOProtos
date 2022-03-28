@@ -24,13 +24,13 @@ package POGOProtos.Rpc;
 import "IncidentLookupProto.proto";
 
 message QuestIncidentProto {
-	enum Type {
+	enum Context {
 		UNSET = 0;
 		STORY_QUEST_BATTLE = 1;
 		TIMED_QUEST_BATTLE = 2;
 	}
 
-	string ob_string = 1;
-	Type context = 2;
-	IncidentLookupProto ob_incident_quest = 3;
+	string quest_id = 1;
+	Context context = 2;
+	IncidentLookupProto incident_lookup = 3;
 }

@@ -3396,11 +3396,11 @@ enum PokemonTagColor {
 }
 
 enum PostcardSource {
-	OB_POSTCARD_TYPES_UNKNOWN = 0;
-	OB_POSTCARD_TYPES_SELF = 1;
-	OB_POSTCARD_TYPES_FRIEND = 2;
-	OB_POSTCARD_TYPES_FRIEND_ANONYMIZED = 3;
-	OB_POSTCARD_TYPES_FRIEND_ANONYMIZED_FROM_DELETION_OR_UNFRIEND = 4;
+	POSTCARD_SOURCE_UNKNOWN = 0;
+	POSTCARD_SOURCE_SELF = 1;
+	POSTCARD_SOURCE_FRIEND = 2;
+	POSTCARD_SOURCE_FRIEND_ANONYMIZED = 3;
+	POSTCARD_SOURCE_FRIEND_ANONYMIZED_FROM_DELETION_OR_UNFRIEND = 4;
 }
 
 enum ProfilePageTelemetryIds {
@@ -8533,8 +8533,8 @@ message FitnessReportProto {
 		int32 hour_offset_from_now = 3;
 	}
 
-	FitnessMetricsProto metrics = 4;
-	bytes game_data = 5;
+	FitnessMetricsProto metrics = 10;
+	bytes game_data = 11;
 }
 
 message FitnessRewardsLogEntry {
@@ -8728,13 +8728,13 @@ message FortModifierAttributesProto {
 }
 
 message FortPokemonProto {
-	enum Mode {
+	enum SpawnType {
 		LURE = 0;
 		POWER_UP = 1;
 	}
 
-	MapPokemonProto map_pokemon = 1;
-	Mode mode = 2;
+	MapPokemonProto pokemon_proto = 1;
+	SpawnType spawn_type = 2;
 }
 
 message FortPowerUpSettings {
@@ -9034,8 +9034,8 @@ message GM9SettingsProto {
 }
 
 message GamDetails {
-	repeated string ob_string = 1;
-	map<string, string> ob_dict = 2;
+	repeated string gam_request_keywords = 1;
+	map<string, string> gam_request_extras = 2;
 }
 
 message GameClientPhotoGalleryPoiImageProto {
@@ -9842,7 +9842,7 @@ message GetGeofencedAdOutProto {
 	}
 
 	Result result = 1;
-	AdDetails ad_details = 2 [deprecated = true];
+	AdDetails sponsored_gift = 2 [deprecated = true];
 	AdProto ad = 3;
 }
 
@@ -11518,11 +11518,11 @@ message ImageTextCreativeProto {
 }
 
 message ImpressionTrackingTag {
-	string ob_string_1 = 1;
-	string ob_string_2 = 2;
-	map<string, string> ob_map_string_string_1 = 3;
-	map<string, string> ob_map_string_string_2 = 4;
-	map<string, string> ob_map_string_string_3 = 5;
+	string tag_id = 1;
+	string base_url = 2;
+	map<string, string> static_tags = 3;
+	map<string, string> server_tags = 4;
+	map<string, string> client_tags = 5;
 }
 
 message InAppPurchaseSubscriptionInfo {
@@ -11628,7 +11628,7 @@ message IncidentPrioritySettingsProto {
 }
 
 message IncidentRewardProto {
-	string ob_string = 1;
+	string invasion_spawn_group_template_id = 1;
 }
 
 message IncidentTicketAttributesProto {
@@ -13190,10 +13190,6 @@ message ObNewGlobalSetting5 {
 	repeated ObMessage5 ob_repeated_stuff = 1;
 }
 
-message ObPokemonDisplayField1 {
-	DailyCounterProto daily_counter = 1;
-}
-
 message ObPokemonSetting {
 	float ob_pokemon_setting_float_1 = 1;
 	float ob_pokemon_setting_float_2 = 2;
@@ -13621,9 +13617,9 @@ message PlatypusRolloutSettingsProto {
 }
 
 message PlayerAttributeRewardProto {
-	string ob_string_1 = 1;
-	string ob_string_2 = 2;
-	bool ob_bool = 3;
+	string key = 1;
+	string value = 2;
+	bool overwrite_existing_attribute = 3;
 }
 
 message PlayerAttributesProto {
@@ -16696,9 +16692,9 @@ message PokemonInventoryTelemetry {
 }
 
 message PokemonMegaEvolutionLevelProto {
-	int64 ob_int64 = 1;
-	int32 ob_int32 = 2;
-	ObPokemonDisplayField1 ob_pokemon_display_field_1 = 3;
+	int64 points = 1;
+	int32 level = 2;
+	PokemonMegaEvolutionPointDailyCountersProto mega_point_daily_counters = 3;
 }
 
 message PokemonMegaEvolutionPointDailyCountersProto {
@@ -17574,15 +17570,15 @@ message QuestGoalProto {
 }
 
 message QuestIncidentProto {
-	enum Type {
+	enum Context {
 		UNSET = 0;
 		STORY_QUEST_BATTLE = 1;
 		TIMED_QUEST_BATTLE = 2;
 	}
 
-	string ob_string = 1;
-	Type context = 2;
-	IncidentLookupProto ob_incident_quest = 3;
+	string quest_id = 1;
+	Context context = 2;
+	IncidentLookupProto incident_lookup = 3;
 }
 
 message QuestPokemonEncounterProto {
@@ -17702,7 +17698,7 @@ message QuestProto {
 		GeotargetedQuestProto geotargeted_quest = 12;
 		BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;
 		BattleQuestProto battle = 14;
-		TakeSnapshotProto take_snapshot = 15;
+		TakeSnapshotQuestProto take_snapshot = 15;
 	}
 
 	enum Status {
@@ -20143,10 +20139,6 @@ message SyncContactListResponse {
 
 	Result result = 1;
 	repeated ContactPlayerProto contact_player = 2;
-}
-
-message TakeSnapshotProto {
-	repeated HoloPokemonId pokemon = 1;
 }
 
 message TakeSnapshotQuestProto {

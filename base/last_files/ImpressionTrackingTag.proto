@@ -22,9 +22,9 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 message ImpressionTrackingTag {
-	string ob_string_1 = 1;
-	string ob_string_2 = 2;
-	map<string, string> ob_map_string_string_1 = 3;
-	map<string, string> ob_map_string_string_2 = 4;
-	map<string, string> ob_map_string_string_3 = 5;
+	string tag_id = 1;
+	string base_url = 2;
+	map<string, string> static_tags = 3;
+	map<string, string> server_tags = 4;
+	map<string, string> client_tags = 5;
 }

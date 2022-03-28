@@ -24,11 +24,11 @@ package POGOProtos.Rpc;
 import "MapPokemonProto.proto";
 
 message FortPokemonProto {
-	enum Mode {
+	enum SpawnType {
 		LURE = 0;
 		POWER_UP = 1;
 	}
 
-	MapPokemonProto map_pokemon = 1;
-	Mode mode = 2;
+	MapPokemonProto pokemon_proto = 1;
+	SpawnType spawn_type = 2;
 }

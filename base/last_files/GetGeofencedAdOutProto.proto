@@ -34,6 +34,6 @@ message GetGeofencedAdOutProto {
 	}
 
 	Result result = 1;
-	AdDetails ad_details = 2 [deprecated = true];
+	AdDetails sponsored_gift = 2 [deprecated = true];
 	AdProto ad = 3;
 }

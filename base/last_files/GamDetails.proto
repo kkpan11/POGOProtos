@@ -22,6 +22,6 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 message GamDetails {
-	repeated string ob_string = 1;
-	map<string, string> ob_dict = 2;
+	repeated string gam_request_keywords = 1;
+	map<string, string> gam_request_extras = 2;
 }

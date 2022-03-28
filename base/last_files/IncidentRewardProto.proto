@@ -22,5 +22,5 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 message IncidentRewardProto {
-	string ob_string = 1;
+	string invasion_spawn_group_template_id = 1;
 }

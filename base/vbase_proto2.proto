@@ -3396,11 +3396,11 @@ enum PokemonTagColor {
 }
 
 enum PostcardSource {
-	OB_POSTCARD_TYPES_UNKNOWN = 0;
-	OB_POSTCARD_TYPES_SELF = 1;
-	OB_POSTCARD_TYPES_FRIEND = 2;
-	OB_POSTCARD_TYPES_FRIEND_ANONYMIZED = 3;
-	OB_POSTCARD_TYPES_FRIEND_ANONYMIZED_FROM_DELETION_OR_UNFRIEND = 4;
+	POSTCARD_SOURCE_UNKNOWN = 0;
+	POSTCARD_SOURCE_SELF = 1;
+	POSTCARD_SOURCE_FRIEND = 2;
+	POSTCARD_SOURCE_FRIEND_ANONYMIZED = 3;
+	POSTCARD_SOURCE_FRIEND_ANONYMIZED_FROM_DELETION_OR_UNFRIEND = 4;
 }
 
 enum ProfilePageTelemetryIds {
@@ -8563,8 +8563,8 @@ message FitnessReportProto {
 	optional int32 week_offset_from_now = 2;
 	optional int32 hour_offset_from_now = 3;
 
-	optional FitnessMetricsProto metrics = 4;
-	optional bytes game_data = 5;
+	optional FitnessMetricsProto metrics = 10;
+	optional bytes game_data = 11;
 }
 
 message FitnessRewardsLogEntry {
@@ -8758,13 +8758,13 @@ message FortModifierAttributesProto {
 }
 
 message FortPokemonProto {
-	enum Mode {
+	enum SpawnType {
 		LURE = 0;
 		POWER_UP = 1;
 	}
 
-	optional MapPokemonProto map_pokemon = 1;
-	optional Mode mode = 2;
+	optional MapPokemonProto pokemon_proto = 1;
+	optional SpawnType spawn_type = 2;
 }
 
 message FortPowerUpSettings {
@@ -9064,10 +9064,10 @@ message GM9SettingsProto {
 }
 
 message GamDetails {
-	repeated string ob_string = 1;
-	optional ObDict ob_dict = 2;
+	repeated string gam_request_keywords = 1;
+	optional GamRequestExtras gam_request_extras = 2;
 
-	message ObDict {
+	message GamRequestExtras {
 		optional string key = 1;
 		optional string value = 2;
 	}
@@ -9873,7 +9873,7 @@ message GetGeofencedAdOutProto {
 	}
 
 	optional Result result = 1;
-	optional AdDetails ad_details = 2 [deprecated = true];
+	optional AdDetails sponsored_gift = 2 [deprecated = true];
 	optional AdProto ad = 3;
 }
 
@@ -11553,21 +11553,21 @@ message ImageTextCreativeProto {
 }
 
 message ImpressionTrackingTag {
-	optional string ob_string_1 = 1;
-	optional string ob_string_2 = 2;
-	optional ObMapStringString1 ob_map_string_string_1 = 3;
-	optional ObMapStringString2 ob_map_string_string_2 = 4;
-	optional ObMapStringString3 ob_map_string_string_3 = 5;
+	optional string tag_id = 1;
+	optional string base_url = 2;
+	optional StaticTags static_tags = 3;
+	optional ServerTags server_tags = 4;
+	optional ClientTags client_tags = 5;
 
-	message ObMapStringString1 {
+	message StaticTags {
 		optional string key = 1;
 		optional string value = 2;
 	}
-	message ObMapStringString2 {
+	message ServerTags {
 		optional string key = 1;
 		optional string value = 2;
 	}
-	message ObMapStringString3 {
+	message ClientTags {
 		optional string key = 1;
 		optional string value = 2;
 	}
@@ -11676,7 +11676,7 @@ message IncidentPrioritySettingsProto {
 }
 
 message IncidentRewardProto {
-	optional string ob_string = 1;
+	optional string invasion_spawn_group_template_id = 1;
 }
 
 message IncidentTicketAttributesProto {
@@ -13232,10 +13232,6 @@ message ObNewGlobalSetting5 {
 	repeated ObMessage5 ob_repeated_stuff = 1;
 }
 
-message ObPokemonDisplayField1 {
-	optional DailyCounterProto daily_counter = 1;
-}
-
 message ObPokemonSetting {
 	optional float ob_pokemon_setting_float_1 = 1;
 	optional float ob_pokemon_setting_float_2 = 2;
@@ -13663,9 +13659,9 @@ message PlatypusRolloutSettingsProto {
 }
 
 message PlayerAttributeRewardProto {
-	optional string ob_string_1 = 1;
-	optional string ob_string_2 = 2;
-	optional bool ob_bool = 3;
+	optional string key = 1;
+	optional string value = 2;
+	optional bool overwrite_existing_attribute = 3;
 }
 
 message PlayerAttributesProto {
@@ -16749,9 +16745,9 @@ message PokemonInventoryTelemetry {
 }
 
 message PokemonMegaEvolutionLevelProto {
-	optional int64 ob_int64 = 1;
-	optional int32 ob_int32 = 2;
-	optional ObPokemonDisplayField1 ob_pokemon_display_field_1 = 3;
+	optional int64 points = 1;
+	optional int32 level = 2;
+	optional PokemonMegaEvolutionPointDailyCountersProto mega_point_daily_counters = 3;
 }
 
 message PokemonMegaEvolutionPointDailyCountersProto {
@@ -17617,15 +17613,15 @@ message QuestGoalProto {
 }
 
 message QuestIncidentProto {
-	enum Type {
+	enum Context {
 		UNSET = 0;
 		STORY_QUEST_BATTLE = 1;
 		TIMED_QUEST_BATTLE = 2;
 	}
 
-	optional string ob_string = 1;
-	optional Type context = 2;
-	optional IncidentLookupProto ob_incident_quest = 3;
+	optional string quest_id = 1;
+	optional Context context = 2;
+	optional IncidentLookupProto incident_lookup = 3;
 }
 
 message QuestPokemonEncounterProto {
@@ -17742,7 +17738,7 @@ message QuestProto {
 	optional GeotargetedQuestProto geotargeted_quest = 12;
 	optional BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;
 	optional BattleQuestProto battle = 14;
-	optional TakeSnapshotProto take_snapshot = 15;
+	optional TakeSnapshotQuestProto take_snapshot = 15;
 
 	enum Status {
 		STATUS_UNDEFINED = 0;
@@ -20176,10 +20172,6 @@ message SyncContactListResponse {
 
 	optional Result result = 1;
 	repeated ContactPlayerProto contact_player = 2;
-}
-
-message TakeSnapshotProto {
-	repeated HoloPokemonId pokemon = 1;
 }
 
 message TakeSnapshotQuestProto {

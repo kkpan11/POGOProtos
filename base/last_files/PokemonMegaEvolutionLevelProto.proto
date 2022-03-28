@@ -21,10 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "ObPokemonDisplayField1.proto";
+import "PokemonMegaEvolutionPointDailyCountersProto.proto";
 
 message PokemonMegaEvolutionLevelProto {
-	int64 ob_int64 = 1;
-	int32 ob_int32 = 2;
-	ObPokemonDisplayField1 ob_pokemon_display_field_1 = 3;
+	int64 points = 1;
+	int32 level = 2;
+	PokemonMegaEvolutionPointDailyCountersProto mega_point_daily_counters = 3;
 }
