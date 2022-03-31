@@ -6626,6 +6626,7 @@ message CombatLeagueProto {
 	optional LeagueType league_type = 11;
 	optional string border_color_hex = 12;
 	optional bool allow_temp_evos = 13;
+	optional bool combat_league_not_pushed = 14;
 }
 
 message CombatLeagueSettingsProto {
@@ -9035,7 +9036,7 @@ message GM6SettingsProto {
 	repeated string ob_string = 2;
 }
 
-message GM7SettingsProto {
+message VerboseLogCombatSettingsProto {
 	optional bool ob_bool_1 = 1;
 	optional bool ob_bool_2 = 2;
 	optional bool ob_bool_3 = 3;
@@ -9224,7 +9225,7 @@ message GameMasterClientTemplateProto {
 	optional IncidentVisibilitySettingsProto incident_visibility_settings = 133;
 	optional PostcardCollectionSettings postcard_collection_settings = 134;
 	optional GM6SettingsProto ob_gm_6_settings = 135;
-	optional GM7SettingsProto ob_gm_7_settings = 136;
+	optional VerboseLogCombatSettingsProto verbose_log_combat_settings = 136;
 	optional GM8SettingsProto ob_gm_8_settings = 137;
 	optional GM5SettingsProto ob_gm_5_settings = 138;
 	optional GM9SettingsProto ob_gm_9_settings = 139;
