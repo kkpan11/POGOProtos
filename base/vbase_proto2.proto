@@ -3495,9 +3495,9 @@ enum RaidLevel {
 }
 
 enum RaidLocationRequirement {
-	RAID_ACCESS_TYPE_BOTH = 0;
-	RAID_ACCESS_TYPE_IN_PERSON = 1;
-	RAID_ACCESS_TYPE_REMOTE = 2;
+	RAID_LOCATION_REQUERIMENT_BOTH = 0;
+	RAID_LOCATION_REQUERIMENT_IN_PERSON = 1;
+	RAID_LOCATION_REQUERIMENT_REMOTE = 2;
 }
 
 enum RaidTelemetryIds {
@@ -9036,21 +9036,6 @@ message GM6SettingsProto {
 	repeated string ob_string = 2;
 }
 
-message VerboseLogCombatSettingsProto {
-	optional bool ob_bool_1 = 1;
-	optional bool ob_bool_2 = 2;
-	optional bool ob_bool_3 = 3;
-	optional bool ob_bool_4 = 4;
-	optional bool ob_bool_5 = 5;
-	optional bool ob_bool_6 = 6;
-	optional bool ob_bool_7 = 7;
-	optional bool ob_bool_8 = 8;
-	optional bool ob_bool_9 = 9;
-	optional int32 ob_int32_1 = 10;
-	optional bool ob_bool_10 = 11;
-	optional int32 ob_int32_2 = 12;
-}
-
 message GM8SettingsProto {
 	optional int32 ob_int32 = 1;
 	optional HoloPokemonId pokemon_type_id = 2;
@@ -13773,7 +13758,7 @@ message PlayerPreferencesProto {
 
 	optional bool opt_out_of_sponsored_gifts = 1;
 	optional BattlePartiesProto battle_parties = 2;
-	optional string search_filter_preference_base64 = 3;
+	optional string search_filter_preference_base_64 = 3;
 	optional PostcardTrainerInfoSharingPreference postcard_trainer_info_sharing_preference = 4;
 }
 
@@ -21247,6 +21232,21 @@ message VasaClientAction {
 	}
 
 	optional ActionEnum action = 1;
+}
+
+message VerboseLogCombatSettingsProto {
+	optional bool ob_bool_1 = 1;
+	optional bool ob_bool_2 = 2;
+	optional bool ob_bool_3 = 3;
+	optional bool ob_bool_4 = 4;
+	optional bool ob_bool_5 = 5;
+	optional bool ob_bool_6 = 6;
+	optional bool ob_bool_7 = 7;
+	optional bool ob_bool_8 = 8;
+	optional bool ob_bool_9 = 9;
+	optional int32 ob_int32_1 = 10;
+	optional bool ob_bool_10 = 11;
+	optional int32 ob_int32_2 = 12;
 }
 
 message VerboseLogRaidSettings {

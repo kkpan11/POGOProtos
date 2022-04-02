@@ -21,7 +21,7 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message GM7SettingsProto {
+message VerboseLogCombatSettingsProto {
 	bool ob_bool_1 = 1;
 	bool ob_bool_2 = 2;
 	bool ob_bool_3 = 3;
