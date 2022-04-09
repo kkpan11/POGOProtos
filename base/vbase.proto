@@ -4637,7 +4637,7 @@ message AttackRaidBattleOutProto {
 	Result result = 1;
 	BattleUpdateProto battle_update = 2;
 	AdDetails sponsored_gift = 3;
-	AdProto ob_attack_raid_battle = 4;
+	AdProto ad = 4;
 }
 
 message AttackRaidBattleProto {
