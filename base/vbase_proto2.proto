@@ -4633,7 +4633,7 @@ message AttackRaidBattleOutProto {
 	optional Result result = 1;
 	optional BattleUpdateProto battle_update = 2;
 	optional AdDetails sponsored_gift = 3;
-	optional AdProto ob_attack_raid_battle = 4;
+	optional AdProto ad = 4;
 }
 
 message AttackRaidBattleProto {
@@ -6626,7 +6626,7 @@ message CombatLeagueProto {
 	optional LeagueType league_type = 11;
 	optional string border_color_hex = 12;
 	optional bool allow_temp_evos = 13;
-	optional bool combat_league_not_pushed = 14;
+	repeated int32 ob_combat_league = 14;
 }
 
 message CombatLeagueSettingsProto {
@@ -16905,7 +16905,7 @@ message PokemonSettingsProto {
 	repeated float buddy_encounter_cameo_local_position = 64;
 	repeated float buddy_encounter_cameo_local_rotation = 65;
 	optional ObPokemonSetting ob_pokemon_setting = 66;
-	repeated PokemonDisplayProto.Costume ob_pokemon_costume = 67;
+	repeated PokemonDisplayProto.Costume pokemon_costume = 67;
 }
 
 message PokemonStaminaUpdateProto {

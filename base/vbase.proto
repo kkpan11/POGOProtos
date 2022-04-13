@@ -6591,7 +6591,7 @@ message CombatLeagueProto {
 	LeagueType league_type = 11;
 	string border_color_hex = 12;
 	bool allow_temp_evos = 13;
-	bool combat_league_not_pushed = 14;
+	repeated int32 ob_combat_league = 14;
 }
 
 message CombatLeagueSettingsProto {
@@ -16852,7 +16852,7 @@ message PokemonSettingsProto {
 	repeated float buddy_encounter_cameo_local_position = 64;
 	repeated float buddy_encounter_cameo_local_rotation = 65;
 	ObPokemonSetting ob_pokemon_setting = 66;
-	repeated PokemonDisplayProto.Costume ob_pokemon_costume = 67;
+	repeated PokemonDisplayProto.Costume pokemon_costume = 67;
 }
 
 message PokemonStaminaUpdateProto {
