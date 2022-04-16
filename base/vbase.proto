@@ -19491,7 +19491,7 @@ message SfidaDisassociateResponse {
 		ERROR = 2;
 	}
 
-		Status status = 1;
+	Status status = 1;
 }
 
 message SfidaDowserRequest {
