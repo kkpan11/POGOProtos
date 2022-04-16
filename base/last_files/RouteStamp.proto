@@ -35,4 +35,5 @@ message RouteStamp {
 	string stamp_id = 3;
 	string asset_id = 4;
 	string category = 5;
+	int32 stamp_index = 6;
 }

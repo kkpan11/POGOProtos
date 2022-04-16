@@ -24,4 +24,5 @@ package POGOProtos.Rpc;
 message CreatePostcardProto {
 	uint64 giftbox_id = 1;
 	string sender_id = 2;
+	repeated string sticker_id = 3;
 }

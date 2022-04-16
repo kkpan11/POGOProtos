@@ -14,7 +14,7 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: Base compatible 0.233.x.
+* Version: Base compatible 0.235.x.
 *
 */
 
@@ -604,6 +604,8 @@ enum HoloBadgeType {
 	BADGE_TRAINERS_REFERRED = 73;
 	BADGE_POKESTOPS_SCANNED = 74;
 	BADGE_RAID_BATTLE_STAT = 76;
+	BADGE_TOTAL_ROUTE_PLAY = 77;
+	BADGE_UNIQUE_ROUTE_PLAY = 78;
 	BADGE_DYNAMIC_MIN = 1000;
 	BADGE_MINI_COLLECTION = 1002;
 	BADGE_EVENT_MIN = 2000;
@@ -2654,6 +2656,8 @@ enum HoloPokemonMove {
 	ACROBATICS = 364;
 	LUSTER_PURGE = 365;
 	MIST_BALL = 366;
+	BRUTAL_SWING = 367;
+	ROLLOUT_FAST = 368;
 }
 
 enum HoloPokemonMovementType {
@@ -3492,6 +3496,7 @@ enum RaidLevel {
 	RAID_LEVEL_4 = 4;
 	RAID_LEVEL_5 = 5;
 	RAID_LEVEL_MEGA = 6;
+	RAID_LEVEL_MEGA_5 = 7;
 }
 
 enum RaidLocationRequirement {
@@ -4842,6 +4847,13 @@ message AwardedRouteBadge {
 	optional string route_image_url = 9;
 	optional int64 route_duration_seconds = 10;
 	repeated RouteBadgeWaypoint last_played_waypoints = 11;
+}
+
+message AwardedRouteStamp {
+	optional RouteStamp route_stamp = 1;
+	optional int64 acquire_time_ms = 2;
+	optional string route_id = 3;
+	optional string fort_id = 4;
 }
 
 message BackgroundModeClientSettingsProto {
@@ -6789,6 +6801,13 @@ message CombatProto {
 		optional Item pokeball = 20;
 	}
 
+	message ObCombatField {
+		optional int64 ob_int64_1 = 1;
+		optional int64 ob_int64_2 = 2;
+		optional int32 ob_int32_1 = 3;
+		optional int32 ob_int32_2 = 4;
+	}
+
 	optional CombatState combat_state = 1;
 	optional string combat_id = 2;
 	optional CombatPlayerProto player = 3;
@@ -6803,6 +6822,7 @@ message CombatProto {
 	optional int64 change_pokemon_end_ms = 12;
 	optional int64 quick_swap_cooldown_duration_ms = 13;
 	optional int64 state_change_delay_until_turn = 14;
+	optional ObCombatField ob_field = 15;
 }
 
 message CombatQuestUpdateProto {
@@ -6869,6 +6889,8 @@ message CombatSettingsProto {
 	optional float purified_pokemon_attack_multiplier_vs_shadow = 32;
 	optional bool ob_bool = 36;
 	optional ObCombatSettings ob_combat_settings = 38;
+	optional ObCombatSettings1 ob_combat_settings_1 = 39;
+	optional int32 ob_int32 = 40;
 }
 
 message CombatStatStageSettingsProto {
@@ -7289,6 +7311,8 @@ message CreatePostcardOutProto {
 		ERROR_POSTCARD_ALREADY_CREATED = 4;
 		ERROR_POSTCARD_INVENTORY_FULL = 5;
 		ERROR_NOT_ENABLED = 6;
+		ERROR_RATE_LIMITED = 7;
+		ERROR_PLAYER_HAS_NO_STICKERS = 8;
 	}
 
 	optional Result result = 1;
@@ -7298,6 +7322,7 @@ message CreatePostcardOutProto {
 message CreatePostcardProto {
 	optional uint64 giftbox_id = 1;
 	optional string sender_id = 2;
+	repeated string sticker_id = 3;
 }
 
 message CrossGameSocialGlobalSettingsProto {
@@ -7495,6 +7520,7 @@ message DeepLinkingEnumWrapperProto {
 	enum NearbyPokemonTab {
 		NEARBY_POKEMON = 0;
 		RAIDS = 1;
+		ROUTES = 2;
 	}
 
 	enum PlayerProfileTab {
@@ -8349,6 +8375,7 @@ message EventTicketActiveTimeProto {
 message EvolePreviewSettings {
 	optional bool enable_evolution_preview = 1;
 	optional bool enable_mega_evolution_preview = 2;
+	optional bool ob_bool = 3;
 }
 
 message EvolutionBranchProto {
@@ -8410,6 +8437,8 @@ message EvolvePokemonProto {
 	optional HoloPokemonId target_pokemon_id = 3;
 	optional PokemonDisplayProto.Form target_pokemon_form = 4;
 	optional bool use_special = 5;
+	optional bool ob_mega_evole_pokemon = 6;
+	optional ObEvoleField ob_evole_field = 7;
 }
 
 message EvolvePokemonTelemetry {
@@ -9003,6 +9032,14 @@ message GM11SettingsProto {
 	optional float ob_float = 5;
 }
 
+message GM12SettingsProto {
+	repeated string ob_list_string = 1;
+}
+
+message GM13SettingsProto {
+	optional bool ob_bool = 1;
+}
+
 message GM1SettingsProto {
 	enum Activity {
 		UNSET = 0;
@@ -9034,6 +9071,12 @@ message GM5SettingsProto {
 message GM6SettingsProto {
 	optional bool ob_bool = 1;
 	repeated string ob_string = 2;
+}
+
+message GM7SettingsProto {
+	optional string ob_string_1 = 1;
+	optional string ob_string_2 = 2;
+	optional int32 ob_int32 = 3;
 }
 
 message GM8SettingsProto {
@@ -9216,6 +9259,9 @@ message GameMasterClientTemplateProto {
 	optional GM9SettingsProto ob_gm_9_settings = 139;
 	optional GM10SettingsProto ob_gm_10_settings = 140;
 	optional GM11SettingsProto ob_gm_11_settings = 141;
+	optional GM7SettingsProto ob_gm_7_settings = 143;
+	optional GM12SettingsProto ob_gm_12_settings = 144;
+	optional GM13SettingsProto ob_gm_13_settings = 145;
 }
 
 message GameMasterLocalProto {
@@ -10824,6 +10870,7 @@ message GiftBoxDetailsProto {
 	repeated StickerSentProto stickers_sent = 15;
 	optional PlayerPreferencesProto.PostcardTrainerInfoSharingPreference share_trainer_info_with_postcard = 16;
 	optional string pinned_postcard_id = 17;
+	optional int64 pin_update_timestamp_ms = 18;
 }
 
 message GiftBoxProto {
@@ -13088,6 +13135,13 @@ message ObCombatSettings {
 	optional bool ob_bool = 2;
 }
 
+message ObCombatSettings1 {
+	optional bool ob_bool_1 = 1;
+	optional bool ob_bool_2 = 2;
+	optional bool ob_bool_3 = 3;
+	optional bool ob_bool_4 = 4;
+}
+
 message ObEggIncubators1 {
 	optional float ob_float_1 = 1;
 	optional float ob_float_2 = 2;
@@ -13129,6 +13183,11 @@ message ObEggStatus {
 	optional float ob_float_2 = 3;
 	optional Type ob_type = 4;
 	optional float ob_float_3 = 5;
+}
+
+message ObEvoleField {
+	optional float ob_float_1 = 1;
+	optional float ob_float_2 = 2;
 }
 
 message ObGM8Settings1 {
@@ -13741,6 +13800,7 @@ message PlayerLevelSettingsProto {
 	optional int32 max_raid_encounter_player_level = 6;
 	optional int32 max_quest_encounter_player_level = 7;
 	optional int32 max_vs_seeker_encounter_player_level = 8;
+	optional int32 ob_bool = 9;
 }
 
 message PlayerLocaleProto {
@@ -13882,6 +13942,8 @@ message PlayerStatsProto {
 	optional int32 num_players_referred = 65;
 	optional int32 num_pokestops_ar_video_scanned = 67;
 	optional int32 num_on_raid_achievements_screen = 68;
+	optional int32 num_total_route_play = 69;
+	optional int32 num_unique_route_play = 70;
 }
 
 message PlayerStatsSnapshotsProto {
@@ -16905,7 +16967,7 @@ message PokemonSettingsProto {
 	repeated float buddy_encounter_cameo_local_position = 64;
 	repeated float buddy_encounter_cameo_local_rotation = 65;
 	optional ObPokemonSetting ob_pokemon_setting = 66;
-	repeated PokemonDisplayProto.Costume pokemon_costume = 67;
+	repeated PokemonDisplayProto.Costume costume_evolution = 67;
 }
 
 message PokemonStaminaUpdateProto {
@@ -16978,6 +17040,7 @@ message PokemonUpgradeSettingsProto {
 	optional int32 default_cp_boost_additional_level = 10;
 	optional int32 xl_candy_min_player_level = 11;
 	repeated int32 xl_candy_cost = 12;
+	optional int32 ob_int32 = 13;
 }
 
 message PokestopIncidentDisplayProto {
@@ -18795,6 +18858,7 @@ message RouteStamp {
 	optional string stamp_id = 3;
 	optional string asset_id = 4;
 	optional string category = 5;
+	optional int32 stamp_index = 6;
 }
 
 message RouteValidation {
@@ -19074,17 +19138,17 @@ message SendGiftOutProto {
 	enum Result {
 		UNSET = 0;
 		SUCCESS = 1;
-		ERROR_UNKNOWN = 2;
-		ERROR_PLAYER_DOES_NOT_EXIST = 3;
-		ERROR_GIFT_DOES_NOT_EXIST = 4;
-		ERROR_GIFT_ALREADY_SENT_TODAY = 5;
-		ERROR_PLAYER_HAS_UNOPENED_GIFT = 6;
-		ERROR_FRIEND_UPDATE = 7;
+		ERROR_SENDER_DOES_NOT_EXIST = 2;
+		ERROR_GIFT_DOES_NOT_EXIST = 3;
+		ERROR_POSTCARD_ALREADY_CREATED = 4;
+		ERROR_POSTCARD_INVENTORY_FULL = 5;
+		ERROR_NOT_ENABLED = 6;
+		ERROR_RATE_LIMITED = 7;
 		ERROR_PLAYER_HAS_NO_STICKERS = 8;
 	}
 
 	optional Result result = 1;
-	optional int32 awarded_xp = 2;
+	optional PostcardDisplayProto postcard = 2;
 }
 
 message SendGiftProto {
@@ -19449,6 +19513,20 @@ message SfidaCheckPairingResponse {
 	optional Status status = 1;
 }
 
+message SfidaDisassociateRequest {
+	optional string bt_address = 1;
+}
+
+message SfidaDisassociateResponse {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR = 2;
+	}
+
+	optional Status status = 1;
+}
+
 message SfidaDowserRequest {
 	optional int64 encounter_id = 1;
 }
@@ -19758,6 +19836,8 @@ message SponsoredDetailsProto {
 	optional string call_to_action_link = 3;
 	optional PromoButtonMessageType promo_button_message_type = 4;
 	optional string campaign_id = 5;
+	optional ImageTextCreativeProto promo_image_creative = 6;
+	repeated ImpressionTrackingTag impression_tracking_tag = 7;
 }
 
 message SponsoredGeofenceGiftSettingsProto {
@@ -20896,6 +20976,7 @@ message UpgradePokemonProto {
 message UploadManagementSettings {
 	optional bool upload_management_enabled = 1;
 	optional int32 upload_management_texture_size = 2;
+	optional bool ob_bool = 3;
 }
 
 message UploadManagementTelemetry {

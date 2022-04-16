@@ -21,6 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
+import "ImageTextCreativeProto.proto";
+import "ImpressionTrackingTag.proto";
+
 message SponsoredDetailsProto {
 	enum PromoButtonMessageType {
 		UNSET = 0;
@@ -33,4 +36,6 @@ message SponsoredDetailsProto {
 	string call_to_action_link = 3;
 	PromoButtonMessageType promo_button_message_type = 4;
 	string campaign_id = 5;
+	ImageTextCreativeProto promo_image_creative = 6;
+	repeated ImpressionTrackingTag impression_tracking_tag = 7;
 }
