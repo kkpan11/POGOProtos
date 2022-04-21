@@ -21785,7 +21785,7 @@ message WithWinGymBattleStatusProto {
 message WithWinRaidStatusProto {
 }
 
-message Z_TEST_AllMessagesResponsesProto {
+message AllTypesAndMessagesResponsesProto {
 	enum AllResquestTypesProto {
 		REQUEST_TYPE_UNSET = 0;
 		REQUEST_TYPE_METHOD_GET_PLAYER = 2;
