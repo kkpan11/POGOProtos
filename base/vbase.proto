@@ -8985,15 +8985,6 @@ message FriendshipMilestoneRewardProto {
 	FriendshipLevelMilestone friendship_milestone = 2;
 }
 
-message GM10SettingsProto {
-	bool ob_bool_1 = 1;
-	bool ob_bool_2 = 2;
-	bool ob_bool_3 = 3;
-	bool ob_bool_4 = 4;
-	bool ob_bool_5 = 5;
-	bool ob_bool_6 = 6;
-}
-
 message GM11SettingsProto {
 	int32 ob_int32_1 = 1;
 	int32 ob_int32_2 = 2;
@@ -9224,7 +9215,7 @@ message GameMasterClientTemplateProto {
 	GM8SettingsProto ob_gm_8_settings = 137;
 	GM5SettingsProto ob_gm_5_settings = 138;
 	GM9SettingsProto ob_gm_9_settings = 139;
-	GM10SettingsProto ob_gm_10_settings = 140;
+	ImpressionTrackingSettingsProto impression_tracking_setting = 140;
 	GM11SettingsProto ob_gm_11_settings = 141;
 	GM7SettingsProto ob_gm_7_settings = 143;
 	GM12SettingsProto ob_gm_12_settings = 144;
@@ -11548,6 +11539,15 @@ message ImageTextCreativeProto {
 	string preview_image_url = 4;
 	string fullscreen_image_url = 5;
 	string cta_link = 6;
+}
+
+message ImpressionTrackingSettingsProto {
+	bool ob_bool_1 = 1;
+	bool ob_bool_2 = 2;
+	bool ob_bool_3 = 3;
+	bool ob_bool_4 = 4;
+	bool ob_bool_5 = 5;
+	bool ob_bool_6 = 6;
 }
 
 message ImpressionTrackingTag {
