@@ -9679,7 +9679,7 @@ message FortPokemonProto {
 	SpawnType spawn_type = 2;
 }
 
-message FortPowerUpSettings {
+message FortPowerUpLevelSettings {
 	FortPowerUpLevel level = 1;
 	int32 points_needed_for_level_up = 2;
 	repeated FortPowerUpLevelReward power_up_reward = 3;
@@ -10086,7 +10086,7 @@ message GameMasterClientTemplateProto {
 	InventorySettingsProto inventory_settings = 103;
 	RouteDiscoverySettingsProto route_discovery_settings = 104;
 	EggTransparencySettingsProto egg_transparency_settings = 105;
-	FortPowerUpSettings fort_power_up_settings = 106;
+	FortPowerUpLevelSettings fort_power_up_level_settings = 106;
 	PowerUpPokestopSharedSettings power_up_pokestop_shared_settings = 107;
 	IncidentPrioritySettingsProto incident_priority_settings = 108;
 	ReferralSettingsProto referral_settings = 109;
@@ -13747,14 +13747,14 @@ message MegaLevelPerksProto {
 
 message MegaLevelSettingsProto {
 	int32 level = 1;
-	HoloPokemonId pokemon_type_id = 2;
+	HoloPokemonId pokemon_id = 2;
 	MegaLevelUnlockSettingsProto mega_level_unlock_settings = 3;
 	MegaLevelCooldownSettingsProto mega_level_cooldown_settings = 4;
 	MegaLevelPerksProto mega_level_perks = 5;
 }
 
 message MegaLevelUnlockSettingsProto {
-	int32 ob_int32_1 = 1;
+	int32 mega_evolutions_required_to_unlock = 1;
 	int32 ob_int32_2 = 2;
 	int32 ob_int32_3 = 3;
 }

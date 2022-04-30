@@ -8923,7 +8923,7 @@ message FortPokemonProto {
 	BEJDOLOILOB aofklpbgbgd = 2;
 }
 
-message FortPowerUpSettings {
+message FortPowerUpLevelSettings {
 	FortPowerUpLevel dpdieecokhf = 1;
 	int32 hbgojhklded = 2;
 	repeated FortPowerUpLevelReward labmmmmmnki = 3;
@@ -9525,7 +9525,7 @@ message GameMasterClientTemplateProto {
 	InventorySettingsProto inventory_settings = 103;
 	RouteDiscoverySettingsProto route_discovery_settings = 104;
 	EggTransparencySettingsProto egg_transparency_settings = 105;
-	FortPowerUpSettings fort_power_up_settings = 106;
+	FortPowerUpLevelSettings fort_power_up_level_settings = 106;
 	PowerUpPokestopSharedSettings power_up_pokestop_shared_settings = 107;
 	IncidentPrioritySettingsProto incident_priority_settings = 108;
 	ReferralSettingsProto referral_settings = 109;
