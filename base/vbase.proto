@@ -4844,7 +4844,8 @@ message AllTypesAndMessagesResponsesProto {
 		GetFriendCodeProto get_friend_code_proto_10013 = 10013;
 		GetFacebookFriendListProto get_facebook_friend_list_proto_10014 = 10014;
 		UpdateFacebookStatusProto update_facebook_status_proto_10015 = 10015;
-		SavePlayerSettingsProto save_playersettings_proto_10016 = 10016;
+		SaveSocialPlayerSettingsProto savesocial_playersettings_proto_10016 = 10016;
+		GetPlayerSettingsProto get_player_settings_proto_10017 = 10017;
 		LocationPingProto location_ping_proto_360001 = 360001;
 	}
 
@@ -5106,7 +5107,8 @@ message AllTypesAndMessagesResponsesProto {
 		GetFriendCodeOutProto get_friend_code_out_proto_10013 = 10013;
 		GetFacebookFriendListOutProto get_facebook_friend_list_out_proto_10014 = 10014;
 		UpdateFacebookStatusOutProto update_facebook_status_out_proto_10015 = 10015;
-		SavePlayerSettingsOutProto save_playersettings_out_proto_10016 = 10016;
+		SaveSocialPlayerSettingsOutProto savesocial_playersettings_out_proto_10016 = 10016;
+		GetPlayerSettingsOutProto get_player_settings_out_proto_10017 = 10017;
 		LocationPingOutProto location_ping_out_proto_360001 = 360001;
 	}
 }
@@ -9950,14 +9952,6 @@ message GM7SettingsProto {
 	int32 ob_int32 = 3;
 }
 
-message GM8SettingsProto {
-	int32 ob_int32 = 1;
-	HoloPokemonId pokemon_type_id = 2;
-	ObGM8Settings1 ob_gm_8_settings_1 = 3;
-	ObGM8Settings2 ob_gm_8_settings_2 = 4;
-	ObGM8Settings3 ob_gm_8_settings_3 = 5;
-}
-
 message GM9SettingsProto {
 	int32 ob_int32_1 = 1;
 	int32 ob_int32_2 = 2;
@@ -10122,7 +10116,7 @@ message GameMasterClientTemplateProto {
 	PostcardCollectionSettings postcard_collection_settings = 134;
 	GM6SettingsProto ob_gm_6_settings = 135;
 	VerboseLogCombatSettingsProto verbose_log_combat_settings = 136;
-	GM8SettingsProto ob_gm_8_settings = 137;
+	MegaLevelSettingsProto mega_level_settings = 137;
 	GM5SettingsProto ob_gm_5_settings = 138;
 	GM9SettingsProto ob_gm_9_settings = 139;
 	ImpressionTrackingSettingsProto impression_tracking_setting = 140;
@@ -13703,7 +13697,7 @@ message MegaEvoSettingsProto {
 	int32 active_mega_bonus_catch_candy = 6;
 	bool ob_mega_evo_bool_1 = 7;
 	bool ob_mega_evo_bool_2 = 8;
-	int32 ob_mega_evo_int32_1 = 9;
+	int32 max_mega_levels = 9;
 	int32 ob_mega_evo_int32_2 = 10;
 	bool ob_mega_evo_bool_3 = 11;
 }
@@ -13734,6 +13728,35 @@ message MegaEvolvePokemonProto {
 message MegaEvolvePokemonSpeciesProto {
 	int32 energy_count = 1;
 	int32 pokemon_species_id = 2;
+}
+
+message MegaLevelCooldownSettingsProto {
+	int64 duration_ms = 1;
+	int32 max_mega_candy_required = 2;
+	int32 ob_int32_2 = 3;
+	int32 ob_int32_3 = 4;
+}
+
+message MegaLevelPerksProto {
+	float mega_perk_attack_boost_from_mega_different_type = 1;
+	float mega_perk_attack_boost_from_mega_same_type = 2;
+	int32 mega_perk_active_mega_bonus_catch_candy = 3;
+	int32 mega_perk_xp_catch_bonus= 4;
+	float mega_perk_xl_candy_bonus_chance = 5;
+}
+
+message MegaLevelSettingsProto {
+	int32 level = 1;
+	HoloPokemonId pokemon_type_id = 2;
+	MegaLevelUnlockSettingsProto mega_level_unlock_settings = 3;
+	MegaLevelCooldownSettingsProto mega_level_cooldown_settings = 4;
+	MegaLevelPerksProto mega_level_perks = 5;
+}
+
+message MegaLevelUnlockSettingsProto {
+	int32 ob_int32_1 = 1;
+	int32 ob_int32_2 = 2;
+	int32 ob_int32_3 = 3;
 }
 
 message MementoAttributesProto {
@@ -14056,27 +14079,6 @@ message ObEggStatus {
 message ObEvoleField {
 	float ob_float_1 = 1;
 	float ob_float_2 = 2;
-}
-
-message ObGM8Settings1 {
-	int32 ob_int32_1 = 1;
-	int32 ob_int32_2 = 2;
-	int32 ob_int32_3 = 3;
-}
-
-message ObGM8Settings2 {
-	int64 ob_int64 = 1;
-	int32 ob_int32_1 = 2;
-	int32 ob_int32_2 = 3;
-	int32 ob_int32_3 = 4;
-}
-
-message ObGM8Settings3 {
-	float ob_float_1 = 1;
-	float ob_float_2 = 2;
-	int32 ob_int32_1 = 3;
-	int32 ob_int32_2 = 4;
-	float ob_float_3 = 5;
 }
 
 message ObMegaEvolvePokemonProtoField {
