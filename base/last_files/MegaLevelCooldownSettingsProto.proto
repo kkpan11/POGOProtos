@@ -21,12 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "FortPowerUpLevel.proto";
-import "FortPowerUpLevelReward.proto";
-
-message FortPowerUpSettings {
-	FortPowerUpLevel level = 1;
-	int32 points_needed_for_level_up = 2;
-	repeated FortPowerUpLevelReward power_up_reward = 3;
-	int32 duration_of_power_up_ms = 4;
+message MegaLevelCooldownSettingsProto {
+	int64 duration_ms = 1;
+	int32 max_mega_candy_required = 2;
+	int32 ob_int32_2 = 3;
+	int32 ob_int32_3 = 4;
 }

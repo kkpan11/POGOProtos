@@ -21,9 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message ObGM8Settings2 {
-	int64 ob_int64 = 1;
-	int32 ob_int32_1 = 2;
-	int32 ob_int32_2 = 3;
-	int32 ob_int32_3 = 4;
+message MegaLevelUnlockSettingsProto {
+	int32 mega_evolutions_required_to_unlock = 1;
+	int32 ob_int32_2 = 2;
+	int32 ob_int32_3 = 3;
 }

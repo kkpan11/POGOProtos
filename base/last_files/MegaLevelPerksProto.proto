@@ -21,10 +21,10 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message ObGM8Settings3 {
-	float ob_float_1 = 1;
-	float ob_float_2 = 2;
-	int32 ob_int32_1 = 3;
-	int32 ob_int32_2 = 4;
-	float ob_float_3 = 5;
+message MegaLevelPerksProto {
+	float mega_perk_attack_boost_from_mega_different_type = 1;
+	float mega_perk_attack_boost_from_mega_same_type = 2;
+	int32 mega_perk_active_mega_bonus_catch_candy = 3;
+	int32 mega_perk_xp_catch_bonus= 4;
+	float mega_perk_xl_candy_bonus_chance = 5;
 }

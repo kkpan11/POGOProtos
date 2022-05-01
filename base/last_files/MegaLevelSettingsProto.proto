@@ -22,14 +22,14 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 import "HoloPokemonId.proto";
-import "ObGM8Settings1.proto";
-import "ObGM8Settings2.proto";
-import "ObGM8Settings3.proto";
+import "MegaLevelUnlockSettingsProto.proto";
+import "MegaLevelCooldownSettingsProto.proto";
+import "MegaLevelPerksProto.proto";
 
-message GM8SettingsProto {
-	int32 ob_int32 = 1;
-	HoloPokemonId pokemon_type_id = 2;
-	ObGM8Settings1 ob_gm_8_settings_1 = 3;
-	ObGM8Settings2 ob_gm_8_settings_2 = 4;
-	ObGM8Settings3 ob_gm_8_settings_3 = 5;
+message MegaLevelSettingsProto {
+	int32 level = 1;
+	HoloPokemonId pokemon_id = 2;
+	MegaLevelUnlockSettingsProto mega_level_unlock_settings = 3;
+	MegaLevelCooldownSettingsProto mega_level_cooldown_settings = 4;
+	MegaLevelPerksProto mega_level_perks = 5;
 }
