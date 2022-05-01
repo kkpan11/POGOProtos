@@ -4844,7 +4844,54 @@ message AllTypesAndMessagesResponsesProto {
 		optional UpdateFacebookStatusProto update_facebook_status_proto_10015 = 10015;
 		optional SaveSocialPlayerSettingsProto savesocial_playersettings_proto_10016 = 10016;
 		optional GetPlayerSettingsProto get_player_settings_proto_10017 = 10017;
+		optional SetAccountSettingsProto set_accountsettings_proto_10021 = 10021;
+		optional GetAccountSettingsProto get_account_settings_proto_10022 = 10022;
+		optional PushNotificationRegistryProto push_notification_registryproto_10101 = 10101;
+		optional UpdateNotificationProto update_notification_proto_10103 = 10103;
+		optional GetInboxV2Proto get_inbox_v2_proto_10105 = 10105;
+		optional UpdateProfileRequest update_profile_request_20001 = 20001;
+		optional UpdateFriendshipRequest update_friendship_request_20002 = 20002;
+		optional GetProfileRequest get_profile_request_20003 = 20003;
+		optional InviteGameRequest invite_game_request_20004 = 20004;
+		optional ListFriendsRequest list_friends_request_20006 = 20006;
+		optional GetFriendDetailsProto get_friend_details_proto_20007 = 20007;
+		optional GetClientFeatureFlagsRequest get_client_feature_flags_request_20008 = 20008;
+		optional GetIncomingGameInvitesRequest get_incominggame_invites_request_20010 = 20010;
+		optional UpdateIncomingGameInviteRequest update_incoming_game_invite_request_20011 = 20011;
+		optional DismissOutgoingGameInvitesRequest dismiss_outgoing_game_invites_request_20012 = 20012;
+		optional SyncContactListRequest sync_contact_list_request_20013 = 20013;
+		optional SendContactListFriendInviteRequest send_contact_list_friend_invite_request_20014 = 20014;
+		optional ReferContactListFriendRequest refer_contact_list_friendrequest_20015 = 20015;
+		optional GetContactListInfoRequest get_contact_list_info_request_20016 = 20016;
+		optional DismissContactListUpdateRequest dismiss_contact_list_update_request_20017 = 20017;
+		optional NotifyContactListFriendsRequest notify_contact_list_friends_request_20018 = 20018;
+		optional GeofenceUpdateProto geofence_update_proto_360000 = 360000;
 		optional LocationPingProto location_ping_proto_360001 = 360001;
+		optional UpdateBreadcrumbHistoryRequestProto update_breadcrumb_history_request_proto_361000 = 361000;
+		optional SubmitNewPoiProto submit_new_poi_proto_620000 = 620000;
+		optional GetAvailableSubmissionsProto get_available_submissions_proto_620001 = 620001;
+		optional GetPlayerSubmissionValidationSettingsProto get_player_submission_validation_settings_proto_620003 = 620003;
+		optional SubmitPoiImageProto submit_poi_image_proto_620100 = 620100;
+		optional SubmitPoiTextMetadataUpdateProto submit_poi_text_metadata_update_proto_620101 = 620101;
+		optional SubmitPoiLocationUpdateProto submit_poi_location_update_proto_620102 = 620102;
+		optional SubmitPoiTakedownRequestProto submit_poi_takedown_request_proto_620103 = 620103;
+		optional SubmitSponsorPoiReportProto submitsponsor_poi_report_proto_620104 = 620104;
+		optional SubmitSponsorPoiLocationUpdateProto submitsponsor_poi_location_update_proto_620105 = 620105;
+		optional SubmitPoiCategoryVoteRecordProto submit_poi_category_vote_record_proto_620106 = 620106;
+		optional GenerateGmapSignedUrlProto generategmap_signed_url_proto_620300 = 620300;
+		optional GetGmapSettingsProto getgmap_settings_proto_620301 = 620301;
+		optional PoiVideoSubmissionMetadataProto poi_video_submission_metadataproto_620400 = 620400;
+		optional AsyncFileUploadCompleteProto async_file_upload_complete_proto_620402 = 620402;
+		optional GetARMappingSettingsProto get_a_r_mapping_settings_proto_620403 = 620403;
+		optional GetImagesForPoiProto get_images_for_poi_proto_620500 = 620500;
+		optional SubmitPlayerImageVoteForPoiProto submit_player_image_vote_for_poi_proto_620501 = 620501;
+		optional GetImageGallerySettingsProto get_imagegallery_settings_proto_620502 = 620502;
+		optional GetPoisInRadiusProto get_pois_in_radius_proto_620601 = 620601;
+		optional GetFitnessReportProto get_fitness_report_proto_640001 = 640001;
+		optional GetAdventureSyncSettingsRequestProto get_adventure_sync_settings_request_proto_640002 = 640002;
+		optional UpdateAdventureSyncSettingsRequestProto update_adventure_sync_settings_request_proto_640003 = 640003;
+		optional UpdateAdventureSyncFitnessRequestProto update_adventure_sync_fitness_request_proto_640004 = 640004;
+		optional GetAdventureSyncFitnessReportRequestProto get_adventure_sync_fitness_report_request_proto_640005 = 640005;
 	}
 
 	message AllResponsesProto {
@@ -5107,7 +5154,47 @@ message AllTypesAndMessagesResponsesProto {
 		optional UpdateFacebookStatusOutProto update_facebook_status_out_proto_10015 = 10015;
 		optional SaveSocialPlayerSettingsOutProto savesocial_playersettings_out_proto_10016 = 10016;
 		optional GetPlayerSettingsOutProto get_player_settings_out_proto_10017 = 10017;
+		optional SetAccountSettingsOutProto set_accountsettings_out_proto_10021 = 10021;
+		optional GetAccountSettingsOutProto get_account_settings_out_proto_10022 = 10022;
+		optional PushNotificationRegistryOutProto push_notification_registry_outproto_10101 = 10101;
+		optional UpdateNotificationOutProto update_notification_out_proto_10103 = 10103;
+		optional OptOutProto optout_proto_10104 = 10104;
+		optional GetInboxOutProto get_inbox_out_proto_10105 = 10105;
+		optional UpdateProfileResponse update_profile_response_20001 = 20001;
+		optional UpdateFriendshipResponse update_friendship_response_20002 = 20002;
+		optional GetProfileResponse get_profile_response_20003 = 20003;
+		optional InviteGameResponse invite_game_response_20004 = 20004;
+		optional ListFriendsResponse list_friends_response_20006 = 20006;
+		optional GetFriendDetailsOutProto get_friend_details_out_proto_20007 = 20007;
+		optional GetClientFeatureFlagsResponse get_client_feature_flags_response_20008 = 20008;
+		optional GetIncomingGameInvitesResponse get_incominggame_invites_response_20010 = 20010;
+		optional UpdateIncomingGameInviteResponse update_incoming_game_invite_response_20011 = 20011;
+		optional DismissOutgoingGameInvitesResponse dismiss_outgoing_game_invites_response_20012 = 20012;
+		optional SyncContactListResponse sync_contact_list_response_20013 = 20013;
+		optional SendContactListFriendInviteResponse send_contact_list_friend_invite_response_20014 = 20014;
+		optional ReferContactListFriendResponse refer_contact_list_friendresponse_20015 = 20015;
+		optional GetContactListInfoResponse get_contact_list_info_response_20016 = 20016;
+		optional DismissContactListUpdateResponse dismiss_contact_list_update_response_20017 = 20017;
+		optional NotifyContactListFriendsResponse notify_contact_list_friends_response_20018 = 20018;
+		optional GeofenceUpdateOutProto geofence_update_out_proto_360000 = 360000;
 		optional LocationPingOutProto location_ping_out_proto_360001 = 360001;
+		optional UpdateBreadcrumbHistoryResponseProto update_breadcrumb_history_response_proto_361000 = 361000;
+		optional SubmitNewPoiOutProto submit_new_poi_out_proto_620000 = 620000;
+		optional GetAvailableSubmissionsOutProto get_available_submissions_out_proto_620001 = 620001;
+		optional GetPlayerSubmissionValidationSettingsOutProto get_player_submission_validation_settings_out_proto_620003 = 620003;
+		optional GenerateGmapSignedUrlOutProto generategmap_signed_url_out_proto_620300 = 620300;
+		optional GetGmapSettingsOutProto getgmap_settings_out_proto_620301 = 620301;
+		optional AsyncFileUploadCompleteOutProto async_file_upload_complete_out_proto_620402 = 620402;
+		optional GetARMappingSettingsOutProto get_a_r_mapping_settings_out_proto_620403 = 620403;
+		optional GetImagesForPoiOutProto get_images_for_poi_out_proto_620500 = 620500;
+		optional SubmitPlayerImageVoteForPoiOutProto submit_player_image_vote_for_poi_out_proto_620501 = 620501;
+		optional GetImageGallerySettingsOutProto get_imagegallery_settings_out_proto_620502 = 620502;
+		optional GetPoisInRadiusOutProto get_pois_in_radius_out_proto_620601 = 620601;
+		optional GetFitnessReportOutProto get_fitness_report_out_proto_640001 = 640001;
+		optional GetAdventureSyncSettingsResponseProto get_adventure_sync_settings_response_proto_640002 = 640002;
+		optional UpdateAdventureSyncSettingsResponseProto update_adventure_sync_settings_response_proto_640003 = 640003;
+		optional UpdateAdventureSyncFitnessResponseProto update_adventure_sync_fitness_response_proto_640004 = 640004;
+		optional GetAdventureSyncFitnessReportResponseProto get_adventure_sync_fitness_report_response_proto_640005 = 640005;
 	}
 }
 
@@ -9709,7 +9796,7 @@ message FortPokemonProto {
 	optional SpawnType spawn_type = 2;
 }
 
-message FortPowerUpSettings {
+message FortPowerUpLevelSettings {
 	optional FortPowerUpLevel level = 1;
 	optional int32 points_needed_for_level_up = 2;
 	repeated FortPowerUpLevelReward power_up_reward = 3;
@@ -10119,7 +10206,7 @@ message GameMasterClientTemplateProto {
 	optional InventorySettingsProto inventory_settings = 103;
 	optional RouteDiscoverySettingsProto route_discovery_settings = 104;
 	optional EggTransparencySettingsProto egg_transparency_settings = 105;
-	optional FortPowerUpSettings fort_power_up_settings = 106;
+	optional FortPowerUpLevelSettings fort_power_up_level_settings = 106;
 	optional PowerUpPokestopSharedSettings power_up_pokestop_shared_settings = 107;
 	optional IncidentPrioritySettingsProto incident_priority_settings = 108;
 	optional ReferralSettingsProto referral_settings = 109;
@@ -13795,14 +13882,14 @@ message MegaLevelPerksProto {
 
 message MegaLevelSettingsProto {
 	optional int32 level = 1;
-	optional HoloPokemonId pokemon_type_id = 2;
+	optional HoloPokemonId pokemon_id = 2;
 	optional MegaLevelUnlockSettingsProto mega_level_unlock_settings = 3;
 	optional MegaLevelCooldownSettingsProto mega_level_cooldown_settings = 4;
 	optional MegaLevelPerksProto mega_level_perks = 5;
 }
 
 message MegaLevelUnlockSettingsProto {
-	optional int32 ob_int32_1 = 1;
+	optional int32 mega_evolutions_required_to_unlock = 1;
 	optional int32 ob_int32_2 = 2;
 	optional int32 ob_int32_3 = 3;
 }
