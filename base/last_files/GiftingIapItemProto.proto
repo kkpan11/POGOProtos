@@ -21,7 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message RemoveFriendProto {
-	string player_id = 1;
-	string nia_account_id = 2;
+import "Item.proto";
+
+message GiftingIapItemProto {
+	string sku_id = 1;
+	Item item = 2;
 }

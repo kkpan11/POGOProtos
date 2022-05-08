@@ -21,7 +21,21 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message RemoveFriendProto {
-	string player_id = 1;
-	string nia_account_id = 2;
+message GiftingEligibilityStatusProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS_ELIGIBLE = 1;
+		ERROR_UNKNOWN = 2;
+		FAILURE_SKU_NOT_GIFTABLE = 3;
+		FAILURE_SENDER_LEVEL = 4;
+		FAILURE_SENDER_LIMIT_REACHED = 5;
+		FAILURE_SENDER_CHILD_ACCOUNT = 6;
+		FAILURE_FRIEND_DOES_NOT_EXIST = 7;
+		FAILURE_FRIEND_LEVEL = 8;
+		FAILURE_FRIEND_HAS_TICKET = 9;
+	}
+
+	repeated Status sender_check_status = 1;
+	repeated Status item_check_status = 2;
+	repeated Status recipient_check_status = 3;
 }

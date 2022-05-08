@@ -702,6 +702,8 @@ enum HoloBadgeType {
 	BADGE_CITY_EXPLORER_PASS_38 = 2091;
 	BADGE_CITY_EXPLORER_PASS_39 = 2092;
 	BADGE_CITY_EXPLORER_PASS_40 = 2093;
+	BADGE_AIR_ADVENTURES_OKINAWA_00 = 2094;
+	BADGE_AIR_ADVENTURES_OKINAWA_RELEASE = 2095;
 	BADGE_DYNAMIC_EVENT_MIN = 5000;
 	BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH_GENERAL = 5001;
 	BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH_EARLYACCESS = 5002;
@@ -863,6 +865,16 @@ enum HoloBadgeType {
 	BADGE_EVENT_0058 = 5281;
 	BADGE_EVENT_0059 = 5282;
 	BADGE_EVENT_0060 = 5283;
+	BADGE_EVENT_0061 = 5284;
+	BADGE_EVENT_0062 = 5285;
+	BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_GENERAL = 5286;
+	BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_EARLYACCESS = 5287;
+	BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_GENERAL = 5288;
+	BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_EARLYACCESS = 5289;
+	BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_GENERAL = 5290;
+	BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_EARLYACCESS = 5291;
+	BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_GENERAL = 5292;
+	BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_EARLYACCESS = 5293;
 	DEPRECATED_1 = 5300;
 	DEPRECATED_2 = 5301;
 }
@@ -912,6 +924,7 @@ enum HoloItemCategory {
 	ITEM_CATEGORY_BUDDY_EXCLUSIVE_FOOD = 23;
 	ITEM_CATEGORY_STICKER = 24;
 	ITEM_CATEGORY_POSTCARD_INVENTORY = 25;
+	ITEM_CATEGORY_EVENT_TICKET_GIFT = 26;
 }
 
 enum HoloItemEffect {
@@ -961,6 +974,7 @@ enum HoloItemType {
 	ITEM_TYPE_GLOBAL_EVENT_TICKET = 23;
 	ITEM_TYPE_STICKER_INVENTORY = 24;
 	ITEM_TYPE_POSTCARD_INVENTORY = 25;
+	ITEM_TYPE_EVENT_TICKET_GIFT = 26;
 }
 
 enum HoloPokemonClass {
@@ -2658,6 +2672,7 @@ enum HoloPokemonMove {
 	MIST_BALL = 366;
 	BRUTAL_SWING = 367;
 	ROLLOUT_FAST = 368;
+	SEED_FLARE = 369;
 }
 
 enum HoloPokemonMovementType {
@@ -2845,6 +2860,9 @@ enum Item {
 	ITEM_GLOBAL_EVENT_TICKET = 1600;
 	ITEM_EVENT_TICKET_PINK = 1601;
 	ITEM_EVENT_TICKET_GRAY = 1602;
+	ITEM_GLOBAL_EVENT_TICKET_TO_GIFT = 1603;
+	ITEM_EVENT_TICKET_PINK_TO_GIFT = 1604;
+	ITEM_EVENT_TICKET_GRAY_TO_GIFT = 1605;
 }
 
 enum ItemUseTelemetryIds {
@@ -3027,6 +3045,7 @@ enum Method {
 	METHOD_COMPLETE_QUEST_STAMP_CARD = 905;
 	METHOD_PROGRESS_QUEST = 906;
 	METHOD_START_QUEST_INCIDENT = 907;
+	METHOD_READ_QUEST_DIALOG = 908;
 	METHOD_SEND_GIFT = 950;
 	METHOD_OPEN_GIFT = 951;
 	METHOD_GIFT_DETAILS = 952;
@@ -3157,6 +3176,8 @@ enum Method {
 	METHOD_SKIP_ENTER_REFERRAL_CODE = 1915;
 	METHOD_UPLOAD_COMBAT_CLIENT_LOG = 1916;
 	METHOD_COMBAT_SYNC_SERVER_OFFSET = 1917;
+	METHOD_CHECK_GIFTING_ELIGIBILITY = 2000;
+	METHOD_REDEEM_TICKET_GIFT_FOR_FRIEND = 2001;
 }
 
 enum NewsPageTelemetryIds {
@@ -3426,6 +3447,12 @@ enum PushGatewayTelemetryIds {
 enum PushNotificationTelemetryIds {
 	PUSH_NOTIFICATION_TELEMETRY_IDS_UNDEFINED_PUSH_NOTIFICATION_EVENT = 0;
 	PUSH_NOTIFICATION_TELEMETRY_IDS_OPEN_APP = 1;
+}
+
+enum PvpFixProto {
+	BASELINE = 0;
+	FAST_MOVE_ALWAYS_LEAK = 1;
+	MINIGAME_FAST_MOVE_CLEAR = 2;
 }
 
 enum QuestType {
@@ -3966,6 +3993,7 @@ message AcceptFriendInviteOutProto {
 
 message AcceptFriendInviteProto {
 	string player_id = 1;
+	string nia_account_id = 2;
 }
 
 message AccountSettingsProto {
@@ -4310,6 +4338,7 @@ message AllTypesAndMessagesResponsesProto {
 		REQUEST_TYPE_METHOD_COMPLETE_QUEST_STAMP_CARD = 905;
 		REQUEST_TYPE_METHOD_PROGRESS_QUEST = 906;
 		REQUEST_TYPE_METHOD_START_QUEST_INCIDENT = 907;
+		REQUEST_TYPE_METHOD_READ_QUEST_DIALOG = 908;
 		REQUEST_TYPE_METHOD_SEND_GIFT = 950;
 		REQUEST_TYPE_METHOD_OPEN_GIFT = 951;
 		REQUEST_TYPE_METHOD_GIFT_DETAILS = 952;
@@ -4440,6 +4469,8 @@ message AllTypesAndMessagesResponsesProto {
 		REQUEST_TYPE_METHOD_SKIP_ENTER_REFERRAL_CODE = 1915;
 		REQUEST_TYPE_METHOD_UPLOAD_COMBAT_CLIENT_LOG = 1916;
 		REQUEST_TYPE_METHOD_COMBAT_SYNC_SERVER_OFFSET = 1917;
+		REQUEST_TYPE_METHOD_CHECK_GIFTING_ELIGIBILITY = 2000;
+		REQUEST_TYPE_METHOD_REDEEM_TICKET_GIFT_FOR_FRIEND = 2001;
 		REQUEST_TYPE_CLIENT_ACTION_REGISTER_PUSH_NOTIFICATION = 5000;
 		REQUEST_TYPE_CLIENT_ACTION_UNREGISTER_PUSH_NOTIFICATION = 5001;
 		REQUEST_TYPE_CLIENT_ACTION_UPDATE_NOTIFICATION_STATUS = 5002;
@@ -4798,6 +4829,8 @@ message AllTypesAndMessagesResponsesProto {
 		DeletePostcardProto delete_postcard_proto_1912 = 1912;
 		GetMementoListProto get_memento_list_proto_1913 = 1913;
 		UploadRaidClientLogProto upload_raid_client_log_proto_1914 = 1914;
+		CheckGiftingEligibilityProto check_gifting_eligibility_proto_2000 = 2000;
+		RedeemTicketGiftForFriendProto redeem_ticket_gift_for_friend_proto_2001 = 2001;
 		PushNotificationRegistryProto push_notification_registryproto_5000 = 5000;
 		UpdateNotificationProto update_notification_proto_5002 = 5002;
 		DownloadGmTemplatesRequestProto download_gm_templates_request_proto_5004 = 5004;
@@ -5111,6 +5144,8 @@ message AllTypesAndMessagesResponsesProto {
 		DeletePostcardOutProto delete_postcard_out_proto_1912 = 1912;
 		GetMementoListOutProto get_memento_list_out_proto_1913 = 1913;
 		UploadRaidClientLogOutProto upload_raid_client_log_out_proto_1914 = 1914;
+		CheckGiftingEligibilityOutProto check_gifting_eligibility_out_proto_2000 = 2000;
+		RedeemTicketGiftForFriendOutProto redeem_ticket_gift_for_friend_out_proto_2001 = 2001;
 		PushNotificationRegistryOutProto push_notification_registry_outproto_5000 = 5000;
 		UpdateNotificationOutProto update_notification_out_proto_5002 = 5002;
 		OptOutProto optout_proto_5003 = 5003;
@@ -6724,6 +6759,7 @@ message CancelFriendInviteOutProto {
 
 message CancelFriendInviteProto {
 	string player_id = 1;
+	string nia_account_id = 2;
 }
 
 message CancelMatchmakingOutProto {
@@ -6934,6 +6970,15 @@ message CheckChallengeProto {
 message CheckEncounterTrayInfoTelemetry {
 	bool berry_tray_info = 1;
 	bool ball_tray_info = 2;
+}
+
+message CheckGiftingEligibilityOutProto {
+	GiftingEligibilityStatusProto gifting_eligibility = 1;
+}
+
+message CheckGiftingEligibilityProto {
+	GiftingIapItemProto gifting_iap_item = 1;
+	string recipient_friend_id = 2;
 }
 
 message CheckPhotobombOutProto {
@@ -7602,7 +7647,7 @@ message CombatLeagueProto {
 	LeagueType league_type = 11;
 	string border_color_hex = 12;
 	bool allow_temp_evos = 13;
-	repeated int32 ob_combat_league = 14;
+	repeated PvpFixProto pvp_fix = 14;
 }
 
 message CombatLeagueSettingsProto {
@@ -7851,6 +7896,7 @@ message CombatSettingsProto {
 	float shadow_pokemon_attack_bonus_multiplier = 30;
 	float shadow_pokemon_defense_bonus_multiplier = 31;
 	float purified_pokemon_attack_multiplier_vs_shadow = 32;
+	repeated PvpFixProto pvp_fix = 35;
 	bool ob_bool = 36;
 	ObCombatSettings ob_combat_settings = 38;
 	ObCombatSettings1 ob_combat_settings_1 = 39;
@@ -8457,6 +8503,7 @@ message DeclineFriendInviteOutProto {
 
 message DeclineFriendInviteProto {
 	string player_id = 1;
+	string nia_account_id = 2;
 }
 
 message DeepLinkingEnumWrapperProto {
@@ -8695,6 +8742,7 @@ message DismissContactListUpdateResponse {
 message DismissOutgoingGameInvitesRequest {
 	string friend_id = 1;
 	repeated string app_key = 2;
+	string friend_nia_account_id = 3;
 }
 
 message DismissOutgoingGameInvitesResponse {
@@ -9463,7 +9511,8 @@ message ExperienceBoostAttributesProto {
 }
 
 message ExternalAddressableAssetsSettings {
-	int32 ob_int32 = 1;
+	int32 ob_int32_1 = 1;
+	int32 ob_int32_2 = 2;
 }
 
 message FakeDataProto {
@@ -9927,6 +9976,10 @@ message FriendDetailsProto {
 	int32 score = 3;
 	bytes data_with_me = 4;
 	OnlineStatus online_status = 5;
+	int64 created_ms = 6;
+	bytes shared_data = 7;
+	bytes data_from_me = 8;
+	bytes data_to_me = 9;
 }
 
 message FriendProfileSettingsProto {
@@ -10000,6 +10053,12 @@ message GM13SettingsProto {
 	bool ob_bool = 1;
 }
 
+message GM14SettingsProto {
+	int32 ob_int32_1 = 1;
+	int32 ob_int32_2 = 2;
+	string ob_string = 3;
+}
+
 message GM1SettingsProto {
 	enum Activity {
 		UNSET = 0;
@@ -10026,6 +10085,10 @@ message GM4SettingsProto {
 
 message GM5SettingsProto {
 	int32 ob_int32 = 1;
+	repeated int32 ob_int32_1 = 2;
+	repeated int32 ob_int32_2 = 3;
+	repeated int32 ob_int32_3 = 4;
+	repeated int32 ob_int32_4 = 5;
 }
 
 message GM6SettingsProto {
@@ -10037,6 +10100,8 @@ message GM7SettingsProto {
 	string ob_string_1 = 1;
 	string ob_string_2 = 2;
 	int32 ob_int32 = 3;
+	int32 ob_int32_1 = 4;
+	bool ob_bool = 5;
 }
 
 message GM9SettingsProto {
@@ -10211,6 +10276,7 @@ message GameMasterClientTemplateProto {
 	GM7SettingsProto ob_gm_7_settings = 143;
 	GM12SettingsProto ob_gm_12_settings = 144;
 	GM13SettingsProto ob_gm_13_settings = 145;
+	GM14SettingsProto ob_gm_14_settings = 146;
 }
 
 message GameMasterLocalProto {
@@ -10700,6 +10766,7 @@ message GetFriendDetailsOutProto {
 	message DebugProto {
 		message Callee {
 			string player_id = 1;
+			string nia_account_id = 2;
 		}
 
 		int32 fetched_from_db = 1;
@@ -10745,6 +10812,7 @@ message GetFriendDetailsResponse {
 		FriendDetailsProto calling_game_data = 4;
 		repeated OutgoingGameInviteStatus outgoing_game_invite_status = 5;
 		repeated string dismissed_outgoing_game_invite_app_keys = 6;
+		string nia_account_id = 7;
 	}
 
 	message PlayerStatusDetailsProto {
@@ -10791,6 +10859,7 @@ message GetFriendsListOutProto {
 		bool is_facebook_friendship = 9;
 		SharedFriendshipProto shared_data = 10;
 		OnlineStatus online_status = 11;
+		string nia_account_id = 12;
 	}
 
 	message SharedFriendshipProto {
@@ -11104,7 +11173,7 @@ message GetInventoryProto {
 
 message GetInventoryResponseProto {
 	bool success = 1;
-	InventoryDeltaProto inventoryDelta = 2;
+	InventoryDeltaProto inventory_delta = 2;
 }
 
 message GetLocalTimeOutProto {
@@ -11465,6 +11534,7 @@ message GetPokemonTagsProto {
 
 message GetProfileRequest {
 	string player_id = 1;
+	string nia_account_id = 2;
 }
 
 message GetProfileResponse {
@@ -11830,6 +11900,30 @@ message GiftBoxesProto {
 	repeated GiftBoxProto gifts = 1;
 }
 
+message GiftingEligibilityStatusProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS_ELIGIBLE = 1;
+		ERROR_UNKNOWN = 2;
+		FAILURE_SKU_NOT_GIFTABLE = 3;
+		FAILURE_SENDER_LEVEL = 4;
+		FAILURE_SENDER_LIMIT_REACHED = 5;
+		FAILURE_SENDER_CHILD_ACCOUNT = 6;
+		FAILURE_FRIEND_DOES_NOT_EXIST = 7;
+		FAILURE_FRIEND_LEVEL = 8;
+		FAILURE_FRIEND_HAS_TICKET = 9;
+	}
+
+	repeated Status sender_check_status = 1;
+	repeated Status item_check_status = 2;
+	repeated Status recipient_check_status = 3;
+}
+
+message GiftingIapItemProto {
+	string sku_id = 1;
+	Item item = 2;
+}
+
 message GlobalEventTicketAttributesProto {
 	HoloBadgeType event_badge = 1;
 	int64 grant_badge_before_event_start_ms = 2;
@@ -11841,6 +11935,11 @@ message GlobalEventTicketAttributesProto {
 	repeated string event_variant_description_string_keys = 9;
 	string item_bag_description_variant_selected = 10;
 	repeated string event_variant_button_string_keys = 11;
+	bool ob_bool_event = 12;
+	Item ob_item_event_1 = 13;
+	Item ob_item_event_2 = 14;
+	string ob_string_event_1 = 15;
+	string ob_string_event_2 = 16;
 	int64 client_event_start_time_utc_ms = 100;
 	int64 client_event_end_time_utc_ms = 101;
 }
@@ -12682,6 +12781,7 @@ message IncomingFriendInviteProto {
 	string player_id = 2;
 	int64 created_ms = 3;
 	string full_name = 5;
+	string nia_account_id = 7;
 }
 
 message InputSettingsProto {
@@ -12884,7 +12984,8 @@ message InviteFacebookFriendProto {
 
 message InviteGameRequest {
 	string friend_id = 1;
-	string app_key = 2;
+	string friend_nia_account_id = 2;
+	string app_key = 3;
 }
 
 message InviteGameResponse {
@@ -12931,6 +13032,7 @@ message IsMyFriendOutProto {
 
 message IsMyFriendProto {
 	string player_id = 1;
+	string nia_account_id = 2;
 }
 
 message IsSkuAvailableOutProto {
@@ -13364,6 +13466,7 @@ message ListFriendsResponse {
 		ProfileSummaryProto profile = 4;
 		PlayerStatusSummaryProto player_status = 5;
 		SocialV2Enum.InvitationStatus invitation_status = 6;
+		string nia_account_id = 7;
 	}
 
 	message PlayerStatusSummaryProto {
@@ -14507,6 +14610,7 @@ message OutgoingFriendInviteProto {
 	string player_id = 2;
 	int64 created_ms = 3;
 	string full_name = 4;
+	string nia_account_id = 5;
 }
 
 message ParticipationProto {
@@ -14747,7 +14851,7 @@ message PlayerLevelSettingsProto {
 	int32 max_raid_encounter_player_level = 6;
 	int32 max_quest_encounter_player_level = 7;
 	int32 max_vs_seeker_encounter_player_level = 8;
-	int32 ob_bool = 9;
+	int32 max_mega_level = 9;
 }
 
 message PlayerLocaleProto {
@@ -14933,6 +15037,7 @@ message PlayerSummaryProto {
 	string fb_user_id = 5;
 	int32 level = 6;
 	int64 experience = 7;
+	string nia_account_id = 8;
 }
 
 message PoiCategorizationEntryTelemetry {
@@ -17677,6 +17782,7 @@ message PokemonFortProto {
 	int64 next_fort_open_ms = 39;
 	int64 next_fort_close_ms = 40;
 	repeated FortPokemonProto active_fort_pokemon = 41;
+	bool is_route_eligible = 42;
 }
 
 message PokemonGlobalSettingsProto {
@@ -17986,7 +18092,7 @@ message PokemonUpgradeSettingsProto {
 	int32 default_cp_boost_additional_level = 10;
 	int32 xl_candy_min_player_level = 11;
 	repeated int32 xl_candy_cost = 12;
-	int32 ob_int32 = 13;
+	int32 max_mega_level = 13;
 }
 
 message PokestopIncidentDisplayProto {
@@ -18574,6 +18680,8 @@ message QuestDisplayProto {
 	string quest_branch_choice_view_background_image_url = 21;
 	string quest_branch_choice_view_background_color = 22;
 	string prop_name = 23;
+	string quest_branch_choice_view_header_background_color = 24;
+	string quest_branch_choice_view_bottom_gradient_color = 25;
 }
 
 message QuestEncounterOutProto {
@@ -18786,6 +18894,7 @@ message QuestProto {
 	bool is_bonus_challenge = 120;
 	ReferralInfoProto referral_info = 121;
 	repeated QuestBranchRewardProto branch_rewards = 122;
+	bool dialog_read = 123;
 }
 
 message QuestRewardProto {
@@ -19274,6 +19383,24 @@ message RedeemSamsungReceiptProto {
 	int64 price_paid_e6_long = 4;
 }
 
+message RedeemTicketGiftForFriendOutProto {
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_UNKNOWN = 2;
+		FAILURE_ELIGIBILITY = 3;
+		FAILURE_GIFT_NOT_FOUND = 4;
+	}
+
+	Status status = 1;
+	GiftingEligibilityStatusProto gifting_eligibility = 2;
+}
+
+message RedeemTicketGiftForFriendProto {
+	GiftingIapItemProto gifting_iap_item = 1;
+	string recipient_friend_id = 2;
+}
+
 message RedeemedAvatarItemProto {
 	string avatar_template_id = 1;
 	int32 item_count = 2;
@@ -19394,7 +19521,15 @@ message RegisterBackgroundDeviceResponseProto {
 }
 
 message RegisterSfidaRequest {
+	enum DeviceType {
+		UNSET = 0;
+		SFIDA = 1;
+		PALMA = 2;
+		WAINA = 3;
+	}
+
 	string sfida_id = 1;
+	DeviceType device_type = 2;
 }
 
 message RegisterSfidaResponse {
@@ -19461,6 +19596,7 @@ message RemoveFriendOutProto {
 
 message RemoveFriendProto {
 	string player_id = 1;
+	string nia_account_id = 2;
 }
 
 message RemoveLoginActionOutProto {
@@ -19784,6 +19920,7 @@ message RoutePlayProto {
 	bool has_received_completion_rewards = 9;
 	int32 play_version = 10;
 	int64 expiration_time_ms = 11;
+	int64 start_time_ms = 12;
 }
 
 message RoutePlaySettingsProto {
@@ -20021,9 +20158,8 @@ message SearchPlayerProto {
 }
 
 message SendContactListFriendInviteRequest {
-	string recipient_player_id = 1;
-	repeated string emails = 2;
-	repeated string phone_numbers = 3;
+	repeated string emails = 1;
+	repeated string phone_numbers = 2;
 }
 
 message SendContactListFriendInviteResponse {
@@ -20070,6 +20206,7 @@ message SendFriendInviteProto {
 	string player_id = 1;
 	string friend_code = 2;
 	bool read_only = 3;
+	string nia_account_id = 4;
 }
 
 message SendFriendInviteViaReferralCodeOutProto {
@@ -20104,17 +20241,17 @@ message SendGiftOutProto {
 	enum Result {
 		UNSET = 0;
 		SUCCESS = 1;
-		ERROR_SENDER_DOES_NOT_EXIST = 2;
-		ERROR_GIFT_DOES_NOT_EXIST = 3;
-		ERROR_POSTCARD_ALREADY_CREATED = 4;
-		ERROR_POSTCARD_INVENTORY_FULL = 5;
-		ERROR_NOT_ENABLED = 6;
-		ERROR_RATE_LIMITED = 7;
+		ERROR_UNKNOWN = 2;
+		ERROR_PLAYER_DOES_NOT_EXIST = 3;
+		ERROR_GIFT_DOES_NOT_EXIST = 4;
+		ERROR_GIFT_ALREADY_SENT_TODAY = 5;
+		ERROR_PLAYER_HAS_UNOPENED_GIFT = 6;
+		ERROR_FRIEND_UPDATE = 7;
 		ERROR_PLAYER_HAS_NO_STICKERS = 8;
 	}
 
 	Result result = 1;
-	PostcardDisplayProto postcard = 2;
+	int32 awarded_xp = 2;
 }
 
 message SendGiftProto {
@@ -20324,6 +20461,13 @@ message SetInGameCurrencyExchangeRateProto {
 	int64 fiat_currency_cost_e6_per_in_game_unit = 3;
 }
 
+message SetInGameCurrencyExchangeRateTrackingProto {
+	string in_game_currency = 1;
+	string fiat_currency = 2;
+	int64 fiat_currency_cost_e6_per_in_game_unit = 3;
+	string status = 4;
+}
+
 message SetLobbyPokemonOutProto {
 	enum Result {
 		UNSET = 0;
@@ -20404,6 +20548,7 @@ message SetPokemonTagsForPokemonProto {
 message SfidaAssociateRequest {
 	bytes bt_address = 1;
 	uint32 pairing_code = 2;
+	bytes bt_signature = 3;
 }
 
 message SfidaAssociateResponse {
@@ -20466,6 +20611,7 @@ message SfidaCertificationResponse {
 message SfidaCheckPairingRequest {
 	bytes bt_address = 1;
 	uint32 pairing_code = 2;
+	bytes bt_signature = 3;
 }
 
 message SfidaCheckPairingResponse {
@@ -21190,11 +21336,10 @@ message SyncContactListResponse {
 		}
 
 		message PlayerProto {
-			string player_id = 1;
-			bool is_calling_game_player = 2;
-			bool is_newly_signed_up_player = 3;
-			bool is_self = 4;
-			bool is_friend = 5;
+			bool is_calling_game_player = 1;
+			bool is_newly_signed_up_player = 2;
+			bool is_self = 3;
+			bool is_friend = 4;
 		}
 
 		string contact_id = 1;
@@ -21752,7 +21897,8 @@ message UpdateFriendshipRequest {
 	}
 
 	string friend_id = 1;
-	FriendProfileProto friend_profile = 2;
+	string friend_nia_account_id = 2;
+	FriendProfileProto friend_profile = 3;
 }
 
 message UpdateFriendshipResponse {
