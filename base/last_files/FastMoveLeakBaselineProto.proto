@@ -21,7 +21,7 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-enum PvpFixProto {
+enum FastMoveLeakBaselineProto {
 	BASELINE = 0;
 	FAST_MOVE_ALWAYS_LEAK = 1;
 	MINIGAME_FAST_MOVE_CLEAR = 2;

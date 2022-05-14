@@ -14,7 +14,7 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: Base compatible 0.235.x.
+* Version: Base compatible 0.237.x.
 *
 */
 
@@ -307,6 +307,12 @@ enum EncounterType {
 	ENCOUNTER_TYPE_REFERRAL_QUEST = 12;
 	ENCOUNTER_TYPE_TIMED_MINI_COLLECTION_QUEST = 13;
 	ENCOUNTER_TYPE_POWER_UP_POKESTOP = 14;
+}
+
+enum FastMoveLeakBaselineProto {
+	BASELINE = 0;
+	FAST_MOVE_ALWAYS_LEAK = 1;
+	MINIGAME_FAST_MOVE_CLEAR = 2;
 }
 
 enum FeatureKind {
@@ -3447,12 +3453,6 @@ enum PushGatewayTelemetryIds {
 enum PushNotificationTelemetryIds {
 	PUSH_NOTIFICATION_TELEMETRY_IDS_UNDEFINED_PUSH_NOTIFICATION_EVENT = 0;
 	PUSH_NOTIFICATION_TELEMETRY_IDS_OPEN_APP = 1;
-}
-
-enum PvpFixProto {
-	BASELINE = 0;
-	FAST_MOVE_ALWAYS_LEAK = 1;
-	MINIGAME_FAST_MOVE_CLEAR = 2;
 }
 
 enum QuestType {
@@ -7682,7 +7682,7 @@ message CombatLeagueProto {
 	optional LeagueType league_type = 11;
 	optional string border_color_hex = 12;
 	optional bool allow_temp_evos = 13;
-	repeated PvpFixProto pvp_fix = 14;
+	repeated FastMoveLeakBaselineProto fast_move_leak_baseline = 14;
 }
 
 message CombatLeagueSettingsProto {
@@ -7931,7 +7931,7 @@ message CombatSettingsProto {
 	optional float shadow_pokemon_attack_bonus_multiplier = 30;
 	optional float shadow_pokemon_defense_bonus_multiplier = 31;
 	optional float purified_pokemon_attack_multiplier_vs_shadow = 32;
-	repeated PvpFixProto pvp_fix = 35;
+	repeated FastMoveLeakBaselineProto fast_move_leak_baseline = 35;
 	optional bool ob_bool = 36;
 	optional ObCombatSettings ob_combat_settings = 38;
 	optional ObCombatSettings1 ob_combat_settings_1 = 39;
@@ -10083,12 +10083,6 @@ message GM13SettingsProto {
 	optional bool ob_bool = 1;
 }
 
-message GM14SettingsProto {
-	optional int32 ob_int32_1 = 1;
-	optional int32 ob_int32_2 = 2;
-	optional string ob_string = 3;
-}
-
 message GM1SettingsProto {
 	enum Activity {
 		UNSET = 0;
@@ -10309,7 +10303,7 @@ message GameMasterClientTemplateProto {
 	optional GM7SettingsProto ob_gm_7_settings = 143;
 	optional GM12SettingsProto ob_gm_12_settings = 144;
 	optional GM13SettingsProto ob_gm_13_settings = 145;
-	optional GM14SettingsProto ob_gm_14_settings = 146;
+	optional TicketGiftingSettingsProto ticket_gifting_settings = 146;
 }
 
 message GameMasterLocalProto {
@@ -14255,7 +14249,7 @@ message ObCombatProto {
 
 message ObCombatSettings {
 	optional int32 ob_int32 = 1;
-	optional bool ob_bool = 2;
+	optional bool enabled = 2;
 }
 
 message ObCombatSettings1 {
@@ -21004,14 +20998,14 @@ message SponsoredGeofenceGiftSettingsProto {
 		optional SponsoredBalloonMovementSettingsProto balloon_movement_settings = 6;
 	}
 
-	message ObSponsoredBalloon1 {
-		optional string ob_string_1 = 1;
-		optional string ob_string_2 = 2;
-		optional string ob_string_3 = 3;
-		optional string ob_string_4 = 4;
-		optional string ob_string_5 = 5;
-		optional string ob_string_6 = 6;
-		optional string ob_string_7 = 7;
+	message SponsoredGeofenceGiftDetailsProto {
+		optional string ads_logo = 1;
+		optional string partner_name = 2;
+		optional string full_screen_static_image = 3;
+		optional string title = 4;
+		optional string description = 5;
+		optional string cta_url = 6;
+		optional string campaign_identifier = 7;
 	}
 
 	optional bool gift_persistence_enabled = 1;
@@ -21026,7 +21020,7 @@ message SponsoredGeofenceGiftSettingsProto {
 	optional SponsoredBalloonGiftSettingsProto balloon_gift_settings = 10;
 	optional bool ob_bool = 11;
 	optional ObSponsoredBalloon ob_sponsored_balloon = 12;
-	optional ObSponsoredBalloon1 ob_sponsored_balloon_1 = 13;
+	optional SponsoredGeofenceGiftDetailsProto sponsored_geofence_gift_details = 13;
 }
 
 message SponsoredPoiFeedbackSettingsProto {
@@ -21467,6 +21461,12 @@ message TemporaryEvolutionSettingsProto {
 
 message ThirdMoveGlobalSettingsProto {
 	optional bool unlock_enabled = 1;
+}
+
+message TicketGiftingSettingsProto {
+	optional int32 min_player_level = 1;
+	optional int32 max_number_of_gifts_per_day = 2;
+	optional string friend_ship_level = 3;
 }
 
 message TiledBlob {

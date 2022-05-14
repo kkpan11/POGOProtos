@@ -156,7 +156,7 @@ import "GM11SettingsProto.proto";
 import "GM7SettingsProto.proto";
 import "GM12SettingsProto.proto";
 import "GM13SettingsProto.proto";
-import "GM14SettingsProto.proto";
+import "TicketGiftingSettingsProto.proto";
 
 message GameMasterClientTemplateProto {
 	string template_id = 1;
@@ -295,5 +295,5 @@ message GameMasterClientTemplateProto {
 	GM7SettingsProto ob_gm_7_settings = 143;
 	GM12SettingsProto ob_gm_12_settings = 144;
 	GM13SettingsProto ob_gm_13_settings = 145;
-	GM14SettingsProto ob_gm_14_settings = 146;
+	TicketGiftingSettingsProto ticket_gifting_settings = 146;
 }

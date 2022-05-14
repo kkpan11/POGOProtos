@@ -21,8 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message GM14SettingsProto {
-	int32 ob_int32_1 = 1;
-	int32 ob_int32_2 = 2;
-	string ob_string = 3;
+message TicketGiftingSettingsProto {
+	int32 min_player_level = 1;
+	int32 max_number_of_gifts_per_day = 2;
+	string friend_ship_level = 3;
 }
