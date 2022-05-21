@@ -11970,9 +11970,9 @@ message GlobalEventTicketAttributesProto {
 	repeated string event_variant_description_string_keys = 9;
 	optional string item_bag_description_variant_selected = 10;
 	repeated string event_variant_button_string_keys = 11;
-	optional bool ob_bool_event = 12;
+	optional bool is_ticket_eligible_for_gifting = 12;
 	optional Item ob_item_event_1 = 13;
-	optional Item ob_item_event_2 = 14;
+	optional Item ticket_to_gift = 14;
 	optional string ob_string_event_1 = 15;
 	optional string ob_string_event_2 = 16;
 	optional int64 client_event_start_time_utc_ms = 100;
