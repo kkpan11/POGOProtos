@@ -14,7 +14,7 @@
 *	or implied. See the License for the specific language governing
 *	permissions and limitations under the License.
 *
-* Version: Base compatible 0.237.x.
+* Version: Base compatible 0.239.x.
 *
 */
 
@@ -313,6 +313,11 @@ enum FastMoveLeakBaselineProto {
 	BASELINE = 0;
 	FAST_MOVE_ALWAYS_LEAK = 1;
 	MINIGAME_FAST_MOVE_CLEAR = 2;
+	SWAP_FAST_MOVE_CLEAR = 3;
+	DOWNSTREAM_REDUNDANCY = 4;
+	DEFENSIVE_ACK_CHECK = 5;
+	SERVER_FLY_IN_FLY_OUT = 6;
+	CLIENT_REOBSERVER_COMBAT_STATE = 7;
 }
 
 enum FeatureKind {
@@ -464,6 +469,7 @@ enum GenericClickTelemetryIds {
 	GENERIC_CLICK_TELEMETRY_IDS_SPEED_WARNING_SHOW = 1;
 	GENERIC_CLICK_TELEMETRY_IDS_SPEED_WARNING_PASSENGER = 2;
 	GENERIC_CLICK_TELEMETRY_IDS_CACHE_RESET_CLICKED = 3;
+	GENERIC_CLICK_TELEMETRY_IDS_REFUND_PAGE_OPENED = 4;
 }
 
 enum GymBadgeType {
@@ -883,6 +889,58 @@ enum HoloBadgeType {
 	BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_EARLYACCESS = 5293;
 	DEPRECATED_1 = 5300;
 	DEPRECATED_2 = 5301;
+	BADGE_GOFEST_2022_BERLIN_TEST_GENERAL = 5302;
+	BADGE_GOFEST_2022_BERLIN_TEST_EARLYACCESS = 5303;
+	BADGE_GOFEST_2022_BERLIN_DAY_01_GENERAL = 5304;
+	BADGE_GOFEST_2022_BERLIN_DAY_01_EARLYACCESS = 5305;
+	BADGE_GOFEST_2022_BERLIN_DAY_02_GENERAL = 5306;
+	BADGE_GOFEST_2022_BERLIN_DAY_02_EARLYACCESS = 5307;
+	BADGE_GOFEST_2022_BERLIN_DAY_03_GENERAL = 5308;
+	BADGE_GOFEST_2022_BERLIN_DAY_03_EARLYACCESS = 5309;
+	BADGE_GOFEST_2022_SEATTLE_TEST_PARK_MORNING = 5310;
+	BADGE_GOFEST_2022_SEATTLE_TEST_PARK_AFTERNOON = 5311;
+	BADGE_GOFEST_2022_SEATTLE_TEST_CITY_MORNING = 5312;
+	BADGE_GOFEST_2022_SEATTLE_TEST_CITY_AFTERNOON = 5313;
+	BADGE_GOFEST_2022_SEATTLE_DAY_01_PARK_MORNING = 5314;
+	BADGE_GOFEST_2022_SEATTLE_DAY_01_PARK_AFTERNOON = 5315;
+	BADGE_GOFEST_2022_SEATTLE_DAY_01_CITY_MORNING = 5316;
+	BADGE_GOFEST_2022_SEATTLE_DAY_01_CITY_AFTERNOON = 5317;
+	BADGE_GOFEST_2022_SEATTLE_DAY_02_PARK_MORNING = 5318;
+	BADGE_GOFEST_2022_SEATTLE_DAY_02_PARK_AFTERNOON = 5319;
+	BADGE_GOFEST_2022_SEATTLE_DAY_02_CITY_MORNING = 5320;
+	BADGE_GOFEST_2022_SEATTLE_DAY_02_CITY_AFTERNOON = 5321;
+	BADGE_GOFEST_2022_SEATTLE_DAY_03_PARK_MORNING = 5322;
+	BADGE_GOFEST_2022_SEATTLE_DAY_03_PARK_AFTERNOON = 5323;
+	BADGE_GOFEST_2022_SEATTLE_DAY_03_CITY_MORNING = 5324;
+	BADGE_GOFEST_2022_SEATTLE_DAY_03_CITY_AFTERNOON = 5325;
+	BADGE_GOFEST_2022_SAPPORO_TEST_PARK_MORNING = 5326;
+	BADGE_GOFEST_2022_SAPPORO_TEST_PARK_AFTERNOON = 5327;
+	BADGE_GOFEST_2022_SAPPORO_TEST_CITY_MORNING = 5328;
+	BADGE_GOFEST_2022_SAPPORO_TEST_CITY_AFTERNOON = 5329;
+	BADGE_GOFEST_2022_SAPPORO_DAY_01_PARK_MORNING = 5330;
+	BADGE_GOFEST_2022_SAPPORO_DAY_01_PARK_AFTERNOON = 5331;
+	BADGE_GOFEST_2022_SAPPORO_DAY_01_CITY_MORNING = 5332;
+	BADGE_GOFEST_2022_SAPPORO_DAY_01_CITY_AFTERNOON = 5333;
+	BADGE_GOFEST_2022_SAPPORO_DAY_02_PARK_MORNING = 5334;
+	BADGE_GOFEST_2022_SAPPORO_DAY_02_PARK_AFTERNOON = 5335;
+	BADGE_GOFEST_2022_SAPPORO_DAY_02_CITY_MORNING = 5336;
+	BADGE_GOFEST_2022_SAPPORO_DAY_02_CITY_AFTERNOON = 5337;
+	BADGE_GOFEST_2022_SAPPORO_DAY_03_PARK_MORNING = 5338;
+	BADGE_GOFEST_2022_SAPPORO_DAY_03_PARK_AFTERNOON = 5339;
+	BADGE_GOFEST_2022_SAPPORO_DAY_03_CITY_MORNING = 5340;
+	BADGE_GOFEST_2022_SAPPORO_DAY_03_CITY_AFTERNOON = 5341;
+	BADGE_GOFEST_2022_BERLIN_ADDON_HATCH_TEST = 5342;
+	BADGE_GOFEST_2022_BERLIN_ADDON_HATCH = 5343;
+	BADGE_GOFEST_2022_BERLIN_ADDON_RAID_TEST = 5344;
+	BADGE_GOFEST_2022_BERLIN_ADDON_RAID = 5345;
+	BADGE_GOFEST_2022_SEATTLE_ADDON_HATCH_TEST = 5346;
+	BADGE_GOFEST_2022_SEATTLE_ADDON_HATCH = 5347;
+	BADGE_GOFEST_2022_SEATTLE_ADDON_RAID_TEST = 5348;
+	BADGE_GOFEST_2022_SEATTLE_ADDON_RAID = 5349;
+	BADGE_GOFEST_2022_SAPPORO_ADDON_HATCH_TEST = 5350;
+	BADGE_GOFEST_2022_SAPPORO_ADDON_HATCH = 5351;
+	BADGE_GOFEST_2022_SAPPORO_ADDON_RAID_TEST = 5352;
+	BADGE_GOFEST_2022_SAPPORO_ADDON_RAID = 5353;
 }
 
 enum HoloIapItemCategory {
@@ -987,6 +1045,7 @@ enum HoloPokemonClass {
 	POKEMON_CLASS_NORMAL = 0;
 	POKEMON_CLASS_LEGENDARY = 1;
 	POKEMON_CLASS_MYTHIC = 2;
+	POKEMON_CLASS_ULTRA_BEAST = 3;
 }
 
 enum HoloPokemonEggType {
@@ -1466,6 +1525,7 @@ enum HoloPokemonFamilyId {
 	FAMILY_GLASTRIER = 896;
 	FAMILY_SPECTRIER = 897;
 	FAMILY_CALYREX = 898;
+	FAMILY_ENAMORUS = 905;
 }
 
 enum HoloPokemonId {
@@ -2368,6 +2428,13 @@ enum HoloPokemonId {
 	GLASTRIER = 896;
 	SPECTRIER = 897;
 	CALYREX = 898;
+	WYRDEER = 899;
+	KLEAVOR = 900;
+	URSALUNA = 901;
+	BASCULEGION = 902;
+	SNEASLER = 903;
+	OVERQWIL = 904;
+	ENAMORUS = 905;
 }
 
 enum HoloPokemonMove {
@@ -3524,6 +3591,7 @@ enum RaidLevel {
 	RAID_LEVEL_5 = 5;
 	RAID_LEVEL_MEGA = 6;
 	RAID_LEVEL_MEGA_5 = 7;
+	RAID_LEVEL_ULTRA_BEAST = 8;
 }
 
 enum RaidLocationRequirement {
@@ -6865,6 +6933,7 @@ message CatchPokemonOutProto {
 	HoloPokemonId display_pokedex_id = 6;
 	int32 throws_remaining = 7;
 	PokemonDisplayProto pokemon_display = 8;
+	PokemonDisplayProto ob_pokemon_display = 9;
 }
 
 message CatchPokemonProto {
@@ -7832,6 +7901,9 @@ message CombatProto {
 	int64 quick_swap_cooldown_duration_ms = 13;
 	int64 state_change_delay_until_turn = 14;
 	ObCombatField ob_field = 15;
+	int32 ob_int32_1 = 16;
+	bool ob_bool = 17;
+	int32 ob_int32_2 = 18;
 }
 
 message CombatQuestUpdateProto {
@@ -9959,6 +10031,12 @@ message FortSponsor {
 	Sponsor sponsor = 1;
 }
 
+message FortUpdateLatencyTelemetry {
+	int32 latency_ms = 1;
+	int32 fort_type = 2;
+	float distance = 3;
+}
+
 message FrameRate {
 	MetricData sampled_frame_rate = 1;
 }
@@ -10037,6 +10115,11 @@ message FriendshipMilestoneRewardProto {
 	FriendshipLevelMilestone friendship_milestone = 2;
 }
 
+message GM10SettingsProto {
+	bool ob_bool = 1;
+	int32 ob_int32 = 2;
+}
+
 message GM11SettingsProto {
 	int32 ob_int32_1 = 1;
 	int32 ob_int32_2 = 2;
@@ -10051,6 +10134,10 @@ message GM12SettingsProto {
 
 message GM13SettingsProto {
 	bool ob_bool = 1;
+}
+
+message GM14SettingsProto {
+	float ob_float = 1;
 }
 
 message GM1SettingsProto {
@@ -10096,6 +10183,10 @@ message GM7SettingsProto {
 	int32 ob_int32 = 3;
 	int32 ob_int32_1 = 4;
 	bool ob_bool = 5;
+}
+
+message GM8SettingsProto {
+	bool ob_bool = 1;
 }
 
 message GM9SettingsProto {
@@ -10271,6 +10362,9 @@ message GameMasterClientTemplateProto {
 	GM12SettingsProto ob_gm_12_settings = 144;
 	GM13SettingsProto ob_gm_13_settings = 145;
 	TicketGiftingSettingsProto ticket_gifting_settings = 146;
+	GM8SettingsProto ob_gm_8_settings = 147;
+	GM10SettingsProto ob_gm_10_settings = 148;
+	GM14SettingsProto ob_gm_14_settings = 150;
 }
 
 message GameMasterLocalProto {
@@ -11251,6 +11345,16 @@ message GetMapObjectsProto {
 	repeated int64 since_time_ms = 2;
 	double player_lat = 3;
 	double player_lng = 4;
+}
+
+message GetMapObjectsTriggerTelemetry {
+	enum TriggerType {
+		UNSET = 0;
+		TIME = 1;
+		SPACE = 2;
+	}
+
+	TriggerType trigger_type = 1;
 }
 
 message GetMatchmakingStatusOutProto {
@@ -12539,6 +12643,7 @@ message HoloholoClientTelemetryOmniProto {
 		PostcardBookTelemetry postcard_book_telemetry = 86;
 		SocialInboxLatencyTelemetry social_inbox_telemetry = 87;
 		HomeWidgetTelemetry home_widget_telemetry = 93;
+		PokemonLoadDelay pokemon_load_delay = 94;
 	}
 
 	ServerData server_data = 1001;
@@ -12623,6 +12728,7 @@ message ImageTextCreativeProto {
 	string preview_image_url = 4;
 	string fullscreen_image_url = 5;
 	string cta_link = 6;
+	string web_ar_url = 7;
 }
 
 message ImpressionTrackingSettingsProto {
@@ -13651,6 +13757,10 @@ message MapDisplaySettingsProto {
 		EFFECT_CONFETTI_ROCKET = 7;
 		EFFECT_FIREWORKS_PLAIN = 8;
 		EFFECT_CONFETTI_FLOWER = 9;
+		EFFECT_CONFETTI_PLAINS = 10;
+		EFFECT_CONFETTI_CITY = 11;
+		EFFECT_CONFETTI_TUNDRA = 12;
+		EFFECT_CONFETTI_RAINFOREST = 13;
 	}
 
 	enum MusicType {
@@ -14344,6 +14454,11 @@ message ObPokemonSetting {
 	float ob_pokemon_setting_float_10 = 10;
 }
 
+message ObRaidClientSetting {
+	RaidLevel raid_level = 1;
+	string ob_string = 2;
+}
+
 message ObSponsoredBalloon {
 	string ob_string_1 = 1;
 	string ob_string_2 = 2;
@@ -14459,6 +14574,7 @@ message OpenCombatSessionOutProto {
 	Result result = 1;
 	CombatProto combat = 2;
 	bool should_debug_log = 3;
+	repeated FastMoveLeakBaselineProto fast_move_leak_baseline = 4;
 }
 
 message OpenCombatSessionProto {
@@ -14504,6 +14620,7 @@ message OpenGiftOutProto {
 message OpenGiftProto {
 	string player_id = 1;
 	uint64 giftbox_id = 2;
+	bool convert_to_stardust = 3;
 }
 
 message OpenInvasionCombatSessionOutProto {
@@ -15210,6 +15327,8 @@ message PokedexEntryProto {
 		int32 times_obtained = 3;
 		repeated PokemonDisplayProto.Gender genders_encountered = 4;
 		repeated PokemonDisplayProto.Gender genders_obtained = 5;
+		int32 times_encountered_shiny = 6;
+		int32 times_obtained_shiny = 7;
 	}
 
 	int32 pokedex_entry_number = 1;
@@ -15352,6 +15471,8 @@ message PokemonDisplayProto {
 		HOLIDAY_2021_NOEVOLVE = 52;
 		TCG_2022_NOEVOLVE = 53;
 		JAN_2022_NOEVOLVE = 54;
+		GOFEST_2022_NOEVOLVE = 55;
+		ANNIVERSARY_2022_NOEVOLVE = 56;
 	}
 
 	enum Form {
@@ -17654,6 +17775,27 @@ message PokemonDisplayProto {
 		SPEWPA_SAVANNA = 2782;
 		SPEWPA_SUN = 2783;
 		SPEWPA_TUNDRA = 2784;
+		DECIDUEYE_HISUIAN = 2785;
+		TYPHLOSION_HISUIAN = 2786;
+		SAMUROTT_HISUIAN = 2787;
+		QWILFISH_HISUIAN = 2788;
+		LILLIGANT_HISUIAN = 2789;
+		SLIGGOO_HISUIAN = 2790;
+		GOODRA_HISUIAN = 2791;
+		GROWLITHE_HISUIAN = 2792;
+		ARCANINE_HISUIAN = 2793;
+		SNEASEL_HISUIAN = 2794;
+		AVALUGG_HISUIAN = 2795;
+		ZORUA_HISUIAN = 2796;
+		ZOROARK_HISUIAN = 2797;
+		BRAVIARY_HISUIAN = 2798;
+		MOLTRES_GALARIAN = 2799;
+		ZAPDOS_GALARIAN = 2800;
+		ARTICUNO_GALARIAN = 2801;
+		ENAMORUS_INCARNATE = 2802;
+		ENAMORUS_THERIAN = 2803;
+		BASCULIN_WHITE_STRIPED = 2804;
+		PIKACHU_GOFEST_2022 = 2805;
 	}
 
 	enum Gender {
@@ -17713,6 +17855,7 @@ message PokemonEncounterRewardProto {
 	PokemonDisplayProto pokemon_display = 3;
 	bool is_hidden_ditto = 4;
 	PokemonDisplayProto ditto_display = 5;
+	Item poke_ball_override = 6;
 }
 
 message PokemonEvolutionQuestProto {
@@ -17836,6 +17979,21 @@ message PokemonInfo {
 message PokemonInventoryTelemetry {
 	PokemonInventoryTelemetryIds pokemon_inventory_click_ids = 1;
 	string sort_id = 2;
+}
+
+message PokemonLoadDelay {
+	PokemonLoadTelemetry pokemon = 1;
+	float load_delay = 2;
+}
+
+message PokemonLoadTelemetry {
+	HoloPokemonId pokemon_id = 1;
+	PokemonDisplayProto.Costume costume = 2;
+	PokemonDisplayProto.Gender gender = 3;
+	bool shiny = 4;
+	PokemonDisplayProto.Form form = 5;
+	PokemonDisplayProto.Alignment alignment = 6;
+	HoloTemporaryEvolutionId temporary_evolution_id = 7;
 }
 
 message PokemonMegaEvolutionLevelProto {
@@ -18617,6 +18775,7 @@ message QuestDialogProto {
 		SPECIAL_GUEST_3 = 4;
 		SPECIAL_GUEST_4 = 5;
 		SPECIAL_GUEST_5 = 6;
+		SPECIAL_GUEST_RHI = 7;
 	}
 
 	enum CharacterExpression {
@@ -18648,6 +18807,7 @@ message QuestDialogProto {
 	repeated float character_offset = 5;
 	string text_background_color = 6;
 	string character_tint = 7;
+	string quest_music_override_key = 124;
 }
 
 message QuestDisplayProto {
@@ -18676,6 +18836,7 @@ message QuestDisplayProto {
 	string prop_name = 23;
 	string quest_branch_choice_view_header_background_color = 24;
 	string quest_branch_choice_view_bottom_gradient_color = 25;
+	int32 sort_order = 26;
 }
 
 message QuestEncounterOutProto {
@@ -18737,6 +18898,7 @@ message QuestPokemonEncounterProto {
 	EncounterType encounter_type = 3;
 	bool is_hidden_ditto = 4;
 	PokemonProto ditto = 5;
+	Item poke_ball_override = 6;
 }
 
 message QuestPreconditionProto {
@@ -19065,6 +19227,8 @@ message RaidClientSettingsProto {
 	repeated RaidLevel unsupported_raid_levels_for_friend_invites = 13;
 	repeated RaidLevel unsupported_remote_raid_levels = 14;
 	bool is_nearby_raid_notification_disabled = 15;
+	repeated string ob_repeated_string = 16;
+	repeated ObRaidClientSetting ob_raid_client_setting = 17;
 }
 
 message RaidCreateDetail {
@@ -20025,14 +20189,29 @@ message RpcErrorDataProto {
 }
 
 message RpcResponseTelemetry {
+	enum ConnectionType {
+		UNKNOWN = 0;
+		WIFI = 1;
+		CELL_DEFAULT = 2;
+		CELL_1G = 3;
+		CELL_2G = 4;
+		CELL_3G = 5;
+		CELL_4G = 6;
+		CELL_5G = 7;
+		CELL_6G = 8;
+		CELL_7G = 9;
+	}
+
 	float window_duration = 1;
 	repeated RpcResponseTime response_timings = 2;
+	ConnectionType connection_type = 3;
 }
 
 message RpcResponseTime {
 	Method rpc_id = 1;
 	int32 count_call = 2;
 	float average_response_time = 3;
+	int32 timeout_count = 4;
 }
 
 message RpcSocketResponseTelemetry {
@@ -20963,6 +21142,7 @@ message SponsoredGeofenceGiftSettingsProto {
 		bool incident_balloon_dismisses_sponsored_balloon = 4;
 		int32 get_wasabi_ad_rpc_interval_ms = 5;
 		SponsoredBalloonMovementSettingsProto balloon_movement_settings = 6;
+		bool ob_bool = 7;
 	}
 
 	message SponsoredGeofenceGiftDetailsProto {
@@ -21380,6 +21560,7 @@ message TelemetryGlobalSettingsProto {
 	int64 frame_rate_sample_interval_ms = 6;
 	int64 frame_rate_sample_period_ms = 7;
 	bool enable_omni_wrapper_sending = 8;
+	float ob_float = 9;
 }
 
 message TempEvoOverrideProto {
@@ -22151,10 +22332,12 @@ message UseIncenseActionOutProto {
 		INCENSE_ALREADY_ACTIVE = 2;
 		NONE_IN_INVENTORY = 3;
 		LOCATION_UNSET = 4;
+		INCENSE_DISABLED = 5;
 	}
 
 	Result result = 1;
 	AppliedItemProto applied_incense = 2;
+	LootProto ob_loot = 3;
 }
 
 message UseIncenseActionProto {
