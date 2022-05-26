@@ -22,6 +22,13 @@
       <size type="number">562774</size>
     </item>
     <item type="object">
+      <assetId type="string">00357d16-9004-4d40-bc28-3b5599ea2b67/1653336441354418</assetId>
+      <bundleName type="string">m_backpack_alolaitemspoppliobp_00_bundle_icon</bundleName>
+      <version type="string">1653336441354418</version>
+      <checksum type="number">3396403933</checksum>
+      <size type="number">12967</size>
+    </item>
+    <item type="object">
       <assetId type="string">004a2ae5-394a-4af0-8367-8efe8d63cd4b/1616622547216553</assetId>
       <bundleName type="string">f_hat_galarfarfetchditems_00_bundle_icon</bundleName>
       <version type="string">1616622547216553</version>
@@ -394,6 +401,13 @@
       <size type="number">11172</size>
     </item>
     <item type="object">
+      <assetId type="string">038f9df3-8993-4945-82a3-db8b97167385/1653584941126359</assetId>
+      <bundleName type="string">f_face_gracidea_bundle</bundleName>
+      <version type="string">1653584941126359</version>
+      <checksum type="number">3409091761</checksum>
+      <size type="number">29795</size>
+    </item>
+    <item type="object">
       <assetId type="string">039bfc03-118d-419c-9893-6fec06172ca9/1616623112592359</assetId>
       <bundleName type="string">m_pants_teamblanche_0_bundle_icon</bundleName>
       <version type="string">1616623112592359</version>
@@ -709,6 +723,13 @@
       <size type="number">6937</size>
     </item>
     <item type="object">
+      <assetId type="string">072db381-9e77-4b7f-a680-5566154f0bce/1653336448640264</assetId>
+      <bundleName type="string">f_hat_oricorioyellow_00_bundle_icon</bundleName>
+      <version type="string">1653336448640264</version>
+      <checksum type="number">1694327741</checksum>
+      <size type="number">17628</size>
+    </item>
+    <item type="object">
       <assetId type="string">0749beb8-0c2f-45eb-9528-26feea161d09/1616623972350891</assetId>
       <bundleName type="string">m_shoes_loosepants_bundle</bundleName>
       <version type="string">1616623972350891</version>
@@ -863,6 +884,13 @@
       <version type="string">1616692841006782</version>
       <checksum type="number">777712525</checksum>
       <size type="number">405727</size>
+    </item>
+    <item type="object">
+      <assetId type="string">08a6c9f3-f3b4-4b98-9859-c216e271b462/1653584939636329</assetId>
+      <bundleName type="string">f_shirt_shayminlandtshirt_bundle</bundleName>
+      <version type="string">1653584939636329</version>
+      <checksum type="number">4221262887</checksum>
+      <size type="number">222642</size>
     </item>
     <item type="object">
       <assetId type="string">08aac66f-5cfc-458a-aaa9-19dccf9c1392/1616641246702213</assetId>
@@ -1945,11 +1973,11 @@
       <size type="number">9499</size>
     </item>
     <item type="object">
-      <assetId type="string">115dc97f-358a-4c45-8ac1-e20e4821f609/1653027812377580</assetId>
+      <assetId type="string">115dc97f-358a-4c45-8ac1-e20e4821f609/1653588129814569</assetId>
       <bundleName type="string">json_patch_i18n_russian</bundleName>
-      <version type="string">1653027812377580</version>
-      <checksum type="number">3325063188</checksum>
-      <size type="number">26338</size>
+      <version type="string">1653588129814569</version>
+      <checksum type="number">1244668625</checksum>
+      <size type="number">30520</size>
     </item>
     <item type="object">
       <assetId type="string">11616b6c-6439-4fab-868d-d6795c6e9162/1616639682677249</assetId>
@@ -2013,6 +2041,13 @@
       <version type="string">1616631771416545</version>
       <checksum type="number">1055857091</checksum>
       <size type="number">10792</size>
+    </item>
+    <item type="object">
+      <assetId type="string">11f86e04-2dac-49af-8714-2d4f1b8bf59a/1653336450628592</assetId>
+      <bundleName type="string">m_backpack_alolaitemsrowletbp_00_bundle_icon</bundleName>
+      <version type="string">1653336450628592</version>
+      <checksum type="number">303172299</checksum>
+      <size type="number">12717</size>
     </item>
     <item type="object">
       <assetId type="string">11f9c511-4f88-4bd7-98bb-920c4aaa3e61/1481074757174000</assetId>
@@ -2681,6 +2716,13 @@
       <size type="number">16523</size>
     </item>
     <item type="object">
+      <assetId type="string">1991cf3a-97fd-4835-bb6e-968343963708/1653336437575662</assetId>
+      <bundleName type="string">m_hat_oricorioyellow_00_bundle_icon</bundleName>
+      <version type="string">1653336437575662</version>
+      <checksum type="number">3613746742</checksum>
+      <size type="number">17645</size>
+    </item>
+    <item type="object">
       <assetId type="string">19ac6c6e-6735-4344-a978-29f9aec19903/1616632321953448</assetId>
       <bundleName type="string">pokemon_icon_249</bundleName>
       <version type="string">1616632321953448</version>
@@ -2871,11 +2913,11 @@
       <size type="number">5310</size>
     </item>
     <item type="object">
-      <assetId type="string">1bb14249-cfa4-44d4-a0d6-1c58e8261650/1653027801377338</assetId>
+      <assetId type="string">1bb14249-cfa4-44d4-a0d6-1c58e8261650/1653588120156387</assetId>
       <bundleName type="string">json_patch_i18n_italian</bundleName>
-      <version type="string">1653027801377338</version>
-      <checksum type="number">2738667433</checksum>
-      <size type="number">21863</size>
+      <version type="string">1653588120156387</version>
+      <checksum type="number">2934172923</checksum>
+      <size type="number">25852</size>
     </item>
     <item type="object">
       <assetId type="string">1bbc5eec-7ce1-4649-8e00-dce0ed5864fc/1616622439114263</assetId>
@@ -3019,6 +3061,13 @@
       <size type="number">173661</size>
     </item>
     <item type="object">
+      <assetId type="string">1d1dfd0a-1bf6-4927-81c1-a37c35304904/1653336457521528</assetId>
+      <bundleName type="string">f_backpack_alolaitemsrowletbp_bundle</bundleName>
+      <version type="string">1653336457521528</version>
+      <checksum type="number">3946028313</checksum>
+      <size type="number">180472</size>
+    </item>
+    <item type="object">
       <assetId type="string">1d258625-ddbc-41c8-882d-ec30447edcb0/1616624004268919</assetId>
       <bundleName type="string">m_backpack_hgss_bundle</bundleName>
       <version type="string">1616624004268919</version>
@@ -3088,6 +3137,13 @@
       <version type="string">1616632644414168</version>
       <checksum type="number">560591073</checksum>
       <size type="number">12821</size>
+    </item>
+    <item type="object">
+      <assetId type="string">1da3ecd3-300b-4e58-9913-74794b4b552f/1653336439372945</assetId>
+      <bundleName type="string">m_hat_oricoriored_bundle</bundleName>
+      <version type="string">1653336439372945</version>
+      <checksum type="number">4168081341</checksum>
+      <size type="number">260670</size>
     </item>
     <item type="object">
       <assetId type="string">1dab4459-ab4d-4798-a639-99997dbddd73/1616623877225715</assetId>
@@ -3534,6 +3590,13 @@
       <version type="string">1616632049573631</version>
       <checksum type="number">443502945</checksum>
       <size type="number">25586</size>
+    </item>
+    <item type="object">
+      <assetId type="string">20cda9fa-99b3-4846-860c-7577f39a6b7c/1653584922803412</assetId>
+      <bundleName type="string">f_hat_shayminhat_00_bundle_icon</bundleName>
+      <version type="string">1653584922803412</version>
+      <checksum type="number">3759296186</checksum>
+      <size type="number">11999</size>
     </item>
     <item type="object">
       <assetId type="string">20e49f46-a421-4be2-a084-4571ad80ea46/1616632510734160</assetId>
@@ -4324,6 +4387,13 @@
       <size type="number">296609</size>
     </item>
     <item type="object">
+      <assetId type="string">29533da5-df6b-47db-b3b6-181f1d17c378/1653336454906694</assetId>
+      <bundleName type="string">f_hat_oricoriopink_00_bundle_icon</bundleName>
+      <version type="string">1653336454906694</version>
+      <checksum type="number">2967920663</checksum>
+      <size type="number">15339</size>
+    </item>
+    <item type="object">
       <assetId type="string">295611f9-6039-4cde-9152-f6263e57bb42/1629392979269765</assetId>
       <bundleName type="string">m_pants_swshuniformdark_00_bundle_icon</bundleName>
       <version type="string">1629392979269765</version>
@@ -4394,6 +4464,13 @@
       <size type="number">845550</size>
     </item>
     <item type="object">
+      <assetId type="string">29ed0352-98c6-4001-9ddd-36c56f773f51/1653584933899040</assetId>
+      <bundleName type="string">f_shirt_gofest2022_bundle</bundleName>
+      <version type="string">1653584933899040</version>
+      <checksum type="number">3132897403</checksum>
+      <size type="number">218962</size>
+    </item>
+    <item type="object">
       <assetId type="string">2a17e985-e3be-4e32-bebd-3d9c21a080bc/1512759931697965</assetId>
       <bundleName type="string">pm0124</bundleName>
       <version type="string">1512759931697965</version>
@@ -4407,6 +4484,13 @@
       <version type="string">1616644345094271</version>
       <checksum type="number">874932357</checksum>
       <size type="number">195738</size>
+    </item>
+    <item type="object">
+      <assetId type="string">2a3ae6c7-4059-4f46-8678-b8e68ffdc0b8/1653336452278528</assetId>
+      <bundleName type="string">m_backpack_alolaitemslittenbp_bundle</bundleName>
+      <version type="string">1653336452278528</version>
+      <checksum type="number">4238848736</checksum>
+      <size type="number">191938</size>
     </item>
     <item type="object">
       <assetId type="string">2a3c079b-b5e5-43cd-875f-87b00fef68a2/1629392899375371</assetId>
@@ -4536,11 +4620,11 @@
       <key type="string">/FEF7hUM85mDw2hD67WdSQ==</key>
     </item>
     <item type="object">
-      <assetId type="string">2b58a4ea-6704-4b59-baa3-93d3322eb74d/1653027797162291</assetId>
+      <assetId type="string">2b58a4ea-6704-4b59-baa3-93d3322eb74d/1653588116966897</assetId>
       <bundleName type="string">json_patch_i18n_german</bundleName>
-      <version type="string">1653027797162291</version>
-      <checksum type="number">333242261</checksum>
-      <size type="number">47866</size>
+      <version type="string">1653588116966897</version>
+      <checksum type="number">2215832511</checksum>
+      <size type="number">51849</size>
     </item>
     <item type="object">
       <assetId type="string">2b5c9b09-fd16-4b88-a7d6-dd56995a84dc/1645030760882056</assetId>
@@ -4569,6 +4653,13 @@
       <version type="string">1622845080070991</version>
       <checksum type="number">347195212</checksum>
       <size type="number">27009</size>
+    </item>
+    <item type="object">
+      <assetId type="string">2bb32b3c-f97d-45b6-9a29-5835b39e8d0d/1653584935939204</assetId>
+      <bundleName type="string">m_gloves_bea_bundle</bundleName>
+      <version type="string">1653584935939204</version>
+      <checksum type="number">87655385</checksum>
+      <size type="number">156273</size>
     </item>
     <item type="object">
       <assetId type="string">2bd06a3e-4687-4133-82d2-941aebcdead5/1616691093925978</assetId>
@@ -4611,6 +4702,13 @@
       <version type="string">1616622566006164</version>
       <checksum type="number">2332429881</checksum>
       <size type="number">296417</size>
+    </item>
+    <item type="object">
+      <assetId type="string">2c1bbf6a-dcd4-4320-bd2d-6f5a62a9a0c9/1653584933123511</assetId>
+      <bundleName type="string">f_shirt_bea_00_bundle_icon</bundleName>
+      <version type="string">1653584933123511</version>
+      <checksum type="number">805727844</checksum>
+      <size type="number">9931</size>
     </item>
     <item type="object">
       <assetId type="string">2c1e5712-5938-41fc-8b1e-691ea4d2b818/1616694770300029</assetId>
@@ -4746,6 +4844,13 @@
       <size type="number">10536</size>
     </item>
     <item type="object">
+      <assetId type="string">2e232bda-f6fd-426c-a7da-cacacfb1e1d6/1653336456623487</assetId>
+      <bundleName type="string">f_hat_oricoriored_00_bundle_icon</bundleName>
+      <version type="string">1653336456623487</version>
+      <checksum type="number">2796556068</checksum>
+      <size type="number">16549</size>
+    </item>
+    <item type="object">
       <assetId type="string">2e3d0341-cbab-4dfb-8aa5-13903a561cc1/1617657791695704</assetId>
       <bundleName type="string">m_shoes_megalopunnyitems_bundle</bundleName>
       <version type="string">1617657791695704</version>
@@ -4829,6 +4934,13 @@
       <checksum type="number">2789380496</checksum>
       <size type="number">418895</size>
       <key type="string">EYatwx+w/hclct35Pofi4Q==</key>
+    </item>
+    <item type="object">
+      <assetId type="string">2f0a5cd0-c42d-4dad-835a-fc396355665d/1653336445755451</assetId>
+      <bundleName type="string">f_backpack_alolaitemspoppliobp_bundle</bundleName>
+      <version type="string">1653336445755451</version>
+      <checksum type="number">3315659569</checksum>
+      <size type="number">197336</size>
     </item>
     <item type="object">
       <assetId type="string">2f14a2df-7b4f-47da-a628-e5e5434b1d98/1616694904926622</assetId>
@@ -5920,6 +6032,13 @@
       <size type="number">10906</size>
     </item>
     <item type="object">
+      <assetId type="string">3ac29d49-7258-4b6b-b8ef-47d68ec1ccac/1653584938203285</assetId>
+      <bundleName type="string">m_shirt_shayminlandtshirt_bundle</bundleName>
+      <version type="string">1653584938203285</version>
+      <checksum type="number">796966409</checksum>
+      <size type="number">236706</size>
+    </item>
+    <item type="object">
       <assetId type="string">3acb1507-d463-40a6-a076-4fe2c253480a/1622156607709881</assetId>
       <bundleName type="string">m_pants_regiicejersies_bundle</bundleName>
       <version type="string">1622156607709881</version>
@@ -6260,11 +6379,11 @@
       <size type="number">10300</size>
     </item>
     <item type="object">
-      <assetId type="string">3d93143b-a6da-43a5-95c4-153d6045925e/1653027781995591</assetId>
+      <assetId type="string">3d93143b-a6da-43a5-95c4-153d6045925e/1653588103294523</assetId>
       <bundleName type="string">json_patch_i18n_brazilianportuguese</bundleName>
-      <version type="string">1653027781995591</version>
-      <checksum type="number">1075467852</checksum>
-      <size type="number">22857</size>
+      <version type="string">1653588103294523</version>
+      <checksum type="number">2527156849</checksum>
+      <size type="number">26409</size>
     </item>
     <item type="object">
       <assetId type="string">3da83d1a-267a-4f63-9854-420c6f75b881/1616639619237986</assetId>
@@ -6884,6 +7003,13 @@
       <size type="number">427346</size>
     </item>
     <item type="object">
+      <assetId type="string">43cfdd9b-48ab-41ac-9c76-31298b88f7ac/1653584934563663</assetId>
+      <bundleName type="string">m_face_gracidea_00_bundle_icon</bundleName>
+      <version type="string">1653584934563663</version>
+      <checksum type="number">2132823491</checksum>
+      <size type="number">8265</size>
+    </item>
+    <item type="object">
       <assetId type="string">43d64aa5-bfd0-49f2-8558-2306746482a7/1616622477871798</assetId>
       <bundleName type="string">m_shirt_casual_1_bundle_icon</bundleName>
       <version type="string">1616622477871798</version>
@@ -7235,6 +7361,13 @@
       <size type="number">435663</size>
     </item>
     <item type="object">
+      <assetId type="string">482928f9-de26-4948-812e-50106f118265/1653336451434163</assetId>
+      <bundleName type="string">f_backpack_alolaitemslittenbp_00_bundle_icon</bundleName>
+      <version type="string">1653336451434163</version>
+      <checksum type="number">2663098264</checksum>
+      <size type="number">12744</size>
+    </item>
+    <item type="object">
       <assetId type="string">48345a0f-fa8f-401e-9ac2-fab2547d3a56/1617657771715044</assetId>
       <bundleName type="string">f_hat_megalopunnyitems_bundle</bundleName>
       <version type="string">1617657771715044</version>
@@ -7247,6 +7380,13 @@
       <version type="string">1616694879943765</version>
       <checksum type="number">3126605556</checksum>
       <size type="number">348164</size>
+    </item>
+    <item type="object">
+      <assetId type="string">483a984b-583f-42fc-bf3d-759f808ac69f/1653336436614290</assetId>
+      <bundleName type="string">m_hat_oricoriopink_bundle</bundleName>
+      <version type="string">1653336436614290</version>
+      <checksum type="number">565433309</checksum>
+      <size type="number">280734</size>
     </item>
     <item type="object">
       <assetId type="string">483b8104-9ac1-42d0-a838-9b7cda20eeae/1616623118622990</assetId>
@@ -7291,11 +7431,11 @@
       <size type="number">10233</size>
     </item>
     <item type="object">
-      <assetId type="string">4894c86c-9a45-4814-9215-0a92968690f7/1653027804909031</assetId>
+      <assetId type="string">4894c86c-9a45-4814-9215-0a92968690f7/1653588123459720</assetId>
       <bundleName type="string">json_patch_i18n_japanese</bundleName>
-      <version type="string">1653027804909031</version>
-      <checksum type="number">586404280</checksum>
-      <size type="number">23077</size>
+      <version type="string">1653588123459720</version>
+      <checksum type="number">2029927019</checksum>
+      <size type="number">26402</size>
     </item>
     <item type="object">
       <assetId type="string">489e8bc1-e751-473f-8ff8-7729dd807d8c/1616623103984061</assetId>
@@ -7473,6 +7613,13 @@
       <size type="number">13071</size>
     </item>
     <item type="object">
+      <assetId type="string">4add28e6-258a-4f9d-9bdd-c9aed3a87914/1653336442276690</assetId>
+      <bundleName type="string">m_backpack_alolaitemsrowletbp_bundle</bundleName>
+      <version type="string">1653336442276690</version>
+      <checksum type="number">914833969</checksum>
+      <size type="number">179005</size>
+    </item>
+    <item type="object">
       <assetId type="string">4adf052a-2419-4509-ade7-95d38acbc605/1645030753861796</assetId>
       <bundleName type="string">m_shirt_sukajanhouou_00_bundle_icon</bundleName>
       <version type="string">1645030753861796</version>
@@ -7600,6 +7747,13 @@
       <size type="number">10304</size>
     </item>
     <item type="object">
+      <assetId type="string">4be6272e-5e51-42ee-bbf0-d7150a7a0e23/1653336461915001</assetId>
+      <bundleName type="string">m_backpack_alolaitemspoppliobp_bundle</bundleName>
+      <version type="string">1653336461915001</version>
+      <checksum type="number">3856914750</checksum>
+      <size type="number">198925</size>
+    </item>
+    <item type="object">
       <assetId type="string">4be9227c-59ed-4973-a2c4-6f3bc8c87f3f/1616632573918098</assetId>
       <bundleName type="string">pokemon_icon_604</bundleName>
       <version type="string">1616632573918098</version>
@@ -7663,11 +7817,11 @@
       <size type="number">754803</size>
     </item>
     <item type="object">
-      <assetId type="string">4c58c336-d2e6-4131-8c4e-b8a910488fa5/1653027823513607</assetId>
+      <assetId type="string">4c58c336-d2e6-4131-8c4e-b8a910488fa5/1653588139570261</assetId>
       <bundleName type="string">json_patch_i18n_turkish</bundleName>
-      <version type="string">1653027823513607</version>
-      <checksum type="number">1475359813</checksum>
-      <size type="number">24272</size>
+      <version type="string">1653588139570261</version>
+      <checksum type="number">1450575024</checksum>
+      <size type="number">27761</size>
     </item>
     <item type="object">
       <assetId type="string">4c6bebe6-a138-4706-9aa9-b15c10a81e9f/1616694777347976</assetId>
@@ -7773,6 +7927,13 @@
       <version type="string">1639772166761078</version>
       <checksum type="number">4232848350</checksum>
       <size type="number">285697</size>
+    </item>
+    <item type="object">
+      <assetId type="string">4d81d3ad-4915-4cce-9f9b-500c7cd4b8ec/1653584938936426</assetId>
+      <bundleName type="string">m_shirt_gofest2022_bundle</bundleName>
+      <version type="string">1653584938936426</version>
+      <checksum type="number">3898547383</checksum>
+      <size type="number">242025</size>
     </item>
     <item type="object">
       <assetId type="string">4d88db95-1d60-4f52-bde2-d581a092d5c2/1616642613263668</assetId>
@@ -8092,6 +8253,13 @@
       <version type="string">1616697416944605</version>
       <checksum type="number">791324022</checksum>
       <size type="number">706173</size>
+    </item>
+    <item type="object">
+      <assetId type="string">507408e6-35bd-492a-8d23-9976def2a6fb/1653584937519254</assetId>
+      <bundleName type="string">m_hat_shayminhat_00_bundle_icon</bundleName>
+      <version type="string">1653584937519254</version>
+      <checksum type="number">3679937119</checksum>
+      <size type="number">11964</size>
     </item>
     <item type="object">
       <assetId type="string">50760293-ea3f-43e4-a2cf-da19553df653/1616632680630613</assetId>
@@ -8679,6 +8847,13 @@
       <size type="number">72892</size>
     </item>
     <item type="object">
+      <assetId type="string">54dd18fd-0e61-4189-ba8a-783340402749/1653584931816000</assetId>
+      <bundleName type="string">f_gloves_bea_00_bundle_icon</bundleName>
+      <version type="string">1653584931816000</version>
+      <checksum type="number">2246934139</checksum>
+      <size type="number">7195</size>
+    </item>
+    <item type="object">
       <assetId type="string">54efbf4a-9006-4ca3-84b8-afe971f20e7d/1622156609628526</assetId>
       <bundleName type="string">f_shirt_regirockjersies_bundle</bundleName>
       <version type="string">1622156609628526</version>
@@ -9035,6 +9210,13 @@
       <version type="string">1616621834831837</version>
       <checksum type="number">3173880381</checksum>
       <size type="number">8422</size>
+    </item>
+    <item type="object">
+      <assetId type="string">58c9b4c1-91e9-4405-a323-1ea1b1002db5/1653584928974931</assetId>
+      <bundleName type="string">m_shirt_gofest2022_00_bundle_icon</bundleName>
+      <version type="string">1653584928974931</version>
+      <checksum type="number">1599580491</checksum>
+      <size type="number">10720</size>
     </item>
     <item type="object">
       <assetId type="string">58e69475-106e-4634-bb1c-1dd5ef24f400/1616694725501429</assetId>
@@ -9721,6 +9903,13 @@
       <size type="number">21920</size>
     </item>
     <item type="object">
+      <assetId type="string">5f94c6c6-d16f-4edb-ad3f-3c58c779380b/1653584925088448</assetId>
+      <bundleName type="string">f_shirt_gofest2022_00_bundle_icon</bundleName>
+      <version type="string">1653584925088448</version>
+      <checksum type="number">1019588567</checksum>
+      <size type="number">10659</size>
+    </item>
+    <item type="object">
       <assetId type="string">5f96120d-3c3d-49f0-9e37-a32ea310c90f/1512759897902772</assetId>
       <bundleName type="string">pm0114</bundleName>
       <version type="string">1512759897902772</version>
@@ -10088,11 +10277,11 @@
       <size type="number">42069</size>
     </item>
     <item type="object">
-      <assetId type="string">636575d6-7213-4ffc-88e8-5f125e7112d6/1653027785970357</assetId>
+      <assetId type="string">636575d6-7213-4ffc-88e8-5f125e7112d6/1653588106975868</assetId>
       <bundleName type="string">json_patch_i18n_chinesetraditional</bundleName>
-      <version type="string">1653027785970357</version>
-      <checksum type="number">1143103175</checksum>
-      <size type="number">20348</size>
+      <version type="string">1653588106975868</version>
+      <checksum type="number">1560591973</checksum>
+      <size type="number">25852</size>
     </item>
     <item type="object">
       <assetId type="string">636a2145-97ff-494c-96ba-1e1f839a5173/1622156537281446</assetId>
@@ -10368,6 +10557,13 @@
       <version type="string">1616621853481374</version>
       <checksum type="number">1468346043</checksum>
       <size type="number">144660</size>
+    </item>
+    <item type="object">
+      <assetId type="string">65bc0826-4c2b-4766-a5df-cd14ce7e357a/1653336443423572</assetId>
+      <bundleName type="string">f_hat_oricoriopurple_bundle</bundleName>
+      <version type="string">1653336443423572</version>
+      <checksum type="number">346125764</checksum>
+      <size type="number">289798</size>
     </item>
     <item type="object">
       <assetId type="string">65c79d4f-ce78-492f-9f44-39a387e8e06d/1512759563563311</assetId>
@@ -11105,11 +11301,11 @@
       <size type="number">814561</size>
     </item>
     <item type="object">
-      <assetId type="string">6b8f3fef-4233-45f7-9395-39f56e0912e1/1653027819818256</assetId>
+      <assetId type="string">6b8f3fef-4233-45f7-9395-39f56e0912e1/1653588136337175</assetId>
       <bundleName type="string">json_patch_i18n_thai</bundleName>
-      <version type="string">1653027819818256</version>
-      <checksum type="number">3321054787</checksum>
-      <size type="number">46939</size>
+      <version type="string">1653588136337175</version>
+      <checksum type="number">4194436981</checksum>
+      <size type="number">51322</size>
     </item>
     <item type="object">
       <assetId type="string">6ba414f0-ae2c-41d8-ad28-c99f0b623191/1639772191122571</assetId>
@@ -12473,6 +12669,13 @@
       <size type="number">10224</size>
     </item>
     <item type="object">
+      <assetId type="string">78719f80-df30-4d81-9c8c-4624426c8733/1653336438462612</assetId>
+      <bundleName type="string">m_hat_oricoriopurple_00_bundle_icon</bundleName>
+      <version type="string">1653336438462612</version>
+      <checksum type="number">299955801</checksum>
+      <size type="number">19810</size>
+    </item>
+    <item type="object">
       <assetId type="string">787a13ac-32be-4a28-a0b4-9572217c860c/1616631878938875</assetId>
       <bundleName type="string">pokemon_icon_623</bundleName>
       <version type="string">1616631878938875</version>
@@ -12548,6 +12751,13 @@
       <version type="string">1619809696280201</version>
       <checksum type="number">3543395578</checksum>
       <size type="number">928817</size>
+    </item>
+    <item type="object">
+      <assetId type="string">790705dd-2973-4d8d-b07c-4b1dfe456520/1653336458574368</assetId>
+      <bundleName type="string">m_hat_oricoriored_00_bundle_icon</bundleName>
+      <version type="string">1653336458574368</version>
+      <checksum type="number">2183625068</checksum>
+      <size type="number">16545</size>
     </item>
     <item type="object">
       <assetId type="string">7931aed8-8dbc-4171-a5b6-a63bf955ccd9/1634148382399563</assetId>
@@ -12653,6 +12863,13 @@
       <version type="string">1616632444464461</version>
       <checksum type="number">4038079733</checksum>
       <size type="number">5780</size>
+    </item>
+    <item type="object">
+      <assetId type="string">7abf141c-0066-4e2c-8725-974eb905482e/1653336446707340</assetId>
+      <bundleName type="string">f_hat_oricoriopurple_00_bundle_icon</bundleName>
+      <version type="string">1653336446707340</version>
+      <checksum type="number">12926528</checksum>
+      <size type="number">19809</size>
     </item>
     <item type="object">
       <assetId type="string">7ad33fad-a49c-44db-863a-f751d08c6955/1616632361927398</assetId>
@@ -13098,6 +13315,13 @@
       <version type="string">1616694591590350</version>
       <checksum type="number">1515497522</checksum>
       <size type="number">337273</size>
+    </item>
+    <item type="object">
+      <assetId type="string">7ec605fe-6e46-4c23-8369-2cd3ea49cd69/1653584930420306</assetId>
+      <bundleName type="string">m_hat_bea_00_bundle_icon</bundleName>
+      <version type="string">1653584930420306</version>
+      <checksum type="number">1771362887</checksum>
+      <size type="number">7085</size>
     </item>
     <item type="object">
       <assetId type="string">7ec72e2d-ebe1-4f8b-8037-f9d24196745d/1616694873784417</assetId>
@@ -13747,6 +13971,13 @@
       <checksum type="number">3818890965</checksum>
       <size type="number">551353</size>
       <key type="string">jY3MsTVb8Dp1m5e6zx3pGA==</key>
+    </item>
+    <item type="object">
+      <assetId type="string">849e500d-7589-49ac-aed7-f1789535ee4a/1653336455739111</assetId>
+      <bundleName type="string">f_backpack_alolaitemspoppliobp_00_bundle_icon</bundleName>
+      <version type="string">1653336455739111</version>
+      <checksum type="number">2813197484</checksum>
+      <size type="number">12602</size>
     </item>
     <item type="object">
       <assetId type="string">84a5f393-e6a4-4073-acef-5f2a3bc34615/1616694764511140</assetId>
@@ -16698,6 +16929,13 @@
       <size type="number">10599</size>
     </item>
     <item type="object">
+      <assetId type="string">a05b289b-31e5-453a-a5e0-d82f9698ce55/1653584936721160</assetId>
+      <bundleName type="string">f_gloves_bea_bundle</bundleName>
+      <version type="string">1653584936721160</version>
+      <checksum type="number">953707362</checksum>
+      <size type="number">158097</size>
+    </item>
+    <item type="object">
       <assetId type="string">a05cff5f-a2c8-451c-858f-aa52e545fb50/1616697343970345</assetId>
       <bundleName type="string">pm0648_12</bundleName>
       <version type="string">1616697343970345</version>
@@ -17015,11 +17253,18 @@
       <size type="number">8821</size>
     </item>
     <item type="object">
-      <assetId type="string">a381995c-f9ca-4de5-93db-38159a7d032c/1653027816203735</assetId>
+      <assetId type="string">a381995c-f9ca-4de5-93db-38159a7d032c/1653588133175069</assetId>
       <bundleName type="string">json_patch_i18n_spanish</bundleName>
-      <version type="string">1653027816203735</version>
-      <checksum type="number">1158588280</checksum>
-      <size type="number">22352</size>
+      <version type="string">1653588133175069</version>
+      <checksum type="number">3416897281</checksum>
+      <size type="number">26052</size>
+    </item>
+    <item type="object">
+      <assetId type="string">a3872abf-c72d-40cb-a5ff-c673bdf12060/1653584927597731</assetId>
+      <bundleName type="string">f_face_gracidea_00_bundle_icon</bundleName>
+      <version type="string">1653584927597731</version>
+      <checksum type="number">1043584267</checksum>
+      <size type="number">8237</size>
     </item>
     <item type="object">
       <assetId type="string">a3880a65-ed02-4d13-a333-cb71a7226cb0/1616622633691673</assetId>
@@ -17427,6 +17672,13 @@
       <size type="number">22748</size>
     </item>
     <item type="object">
+      <assetId type="string">a75b2ad5-4dda-43aa-af06-b5e57f20a35d/1653584942610941</assetId>
+      <bundleName type="string">f_shirt_shayminlandtshirt_00_bundle_icon</bundleName>
+      <version type="string">1653584942610941</version>
+      <checksum type="number">3107789060</checksum>
+      <size type="number">9937</size>
+    </item>
+    <item type="object">
       <assetId type="string">a76d9e52-ea9f-403b-a093-ee9563e33266/1638217457551219</assetId>
       <bundleName type="string">f_hat_deino_00_bundle_icon</bundleName>
       <version type="string">1638217457551219</version>
@@ -17502,6 +17754,13 @@
       <version type="string">1616622148587143</version>
       <checksum type="number">4139334978</checksum>
       <size type="number">3996</size>
+    </item>
+    <item type="object">
+      <assetId type="string">a7c89135-afbc-4393-a755-b5dca695d84e/1653584932484217</assetId>
+      <bundleName type="string">m_gloves_bea_00_bundle_icon</bundleName>
+      <version type="string">1653584932484217</version>
+      <checksum type="number">504040328</checksum>
+      <size type="number">7519</size>
     </item>
     <item type="object">
       <assetId type="string">a7db7117-f51e-437d-a1cf-507c8bd6fb26/1616694678755159</assetId>
@@ -17842,6 +18101,13 @@
       <size type="number">354578</size>
     </item>
     <item type="object">
+      <assetId type="string">ab52e5c9-222d-44d5-84ad-a2844d2ae42d/1653584935279611</assetId>
+      <bundleName type="string">m_shirt_bea_00_bundle_icon</bundleName>
+      <version type="string">1653584935279611</version>
+      <checksum type="number">890295308</checksum>
+      <size type="number">10737</size>
+    </item>
+    <item type="object">
       <assetId type="string">ab857857-c4b4-4349-8e19-224e31c226c8/1616623122941230</assetId>
       <bundleName type="string">m_shoes_luvdiscpack_0_bundle_icon</bundleName>
       <version type="string">1616623122941230</version>
@@ -18164,6 +18430,13 @@
       <version type="string">1616644445801764</version>
       <checksum type="number">1721353893</checksum>
       <size type="number">276074</size>
+    </item>
+    <item type="object">
+      <assetId type="string">ae8f66d2-0b1d-4744-9a5f-5bae1a6e35e6/1653336440503062</assetId>
+      <bundleName type="string">m_hat_oricoriopink_00_bundle_icon</bundleName>
+      <version type="string">1653336440503062</version>
+      <checksum type="number">3646304167</checksum>
+      <size type="number">15366</size>
     </item>
     <item type="object">
       <assetId type="string">ae977571-afa3-452e-870b-54b4a1b86a7e/1630094566955356</assetId>
@@ -18560,6 +18833,13 @@
       <size type="number">14600</size>
     </item>
     <item type="object">
+      <assetId type="string">b240c9ac-0c54-42a9-ac9a-b5eac2e208d7/1653587903385521</assetId>
+      <bundleName type="string">npc_rhi</bundleName>
+      <version type="string">1653587903385521</version>
+      <checksum type="number">3311713031</checksum>
+      <size type="number">363106</size>
+    </item>
+    <item type="object">
       <assetId type="string">b27afe1d-7f35-45e3-b18f-16fd5087aa9b/1616639693863133</assetId>
       <bundleName type="string">badge_51</bundleName>
       <version type="string">1616639693863133</version>
@@ -18628,6 +18908,13 @@
       <version type="string">1616697367793626</version>
       <checksum type="number">716752929</checksum>
       <size type="number">651420</size>
+    </item>
+    <item type="object">
+      <assetId type="string">b2fc8dbb-9c63-4d60-916d-c006c09f56cb/1653584929711821</assetId>
+      <bundleName type="string">f_shirt_bea_bundle</bundleName>
+      <version type="string">1653584929711821</version>
+      <checksum type="number">1325205777</checksum>
+      <size type="number">303908</size>
     </item>
     <item type="object">
       <assetId type="string">b3037512-53ba-47a8-887d-b18f1017862e/1616689790272781</assetId>
@@ -19604,6 +19891,13 @@
       <size type="number">9091</size>
     </item>
     <item type="object">
+      <assetId type="string">bc86c904-0e9a-4241-9411-17fd6470bca3/1653584924359543</assetId>
+      <bundleName type="string">f_hat_shayminhat_bundle</bundleName>
+      <version type="string">1653584924359543</version>
+      <checksum type="number">528268609</checksum>
+      <size type="number">195833</size>
+    </item>
+    <item type="object">
       <assetId type="string">bc99a265-d04f-4d30-ac90-90c60a6eabb3/1616632307413569</assetId>
       <bundleName type="string">pokemon_icon_067</bundleName>
       <version type="string">1616632307413569</version>
@@ -20118,6 +20412,13 @@
       <size type="number">273498</size>
     </item>
     <item type="object">
+      <assetId type="string">c15e5af0-bea2-4b3c-a153-4c37370cbbf8/1653336453209900</assetId>
+      <bundleName type="string">m_backpack_alolaitemslittenbp_00_bundle_icon</bundleName>
+      <version type="string">1653336453209900</version>
+      <checksum type="number">396812678</checksum>
+      <size type="number">13264</size>
+    </item>
+    <item type="object">
       <assetId type="string">c171909d-1ec6-4410-b437-7e422b7e159c/1616623948242948</assetId>
       <bundleName type="string">f_shirt_tanktop_charizard_bundle_icon</bundleName>
       <version type="string">1616623948242948</version>
@@ -20266,6 +20567,13 @@
       <checksum type="number">3109879880</checksum>
       <size type="number">319014</size>
       <key type="string">nEst+b6necPfWPms5tjVRA==</key>
+    </item>
+    <item type="object">
+      <assetId type="string">c30c1211-fb61-4e9b-9f40-e4e89b2d0ef8/1653336460744885</assetId>
+      <bundleName type="string">f_hat_oricorioyellow_bundle</bundleName>
+      <version type="string">1653336460744885</version>
+      <checksum type="number">2763848996</checksum>
+      <size type="number">284115</size>
     </item>
     <item type="object">
       <assetId type="string">c30d5c63-e8c4-4121-bb16-5d6071e838dc/1616631916352290</assetId>
@@ -21411,11 +21719,11 @@
       <size type="number">441419</size>
     </item>
     <item type="object">
-      <assetId type="string">cd53a84f-5c55-4563-84b3-edda474e01f1/1653027789793215</assetId>
+      <assetId type="string">cd53a84f-5c55-4563-84b3-edda474e01f1/1653588110425497</assetId>
       <bundleName type="string">json_patch_i18n_english</bundleName>
-      <version type="string">1653027789793215</version>
-      <checksum type="number">2333378887</checksum>
-      <size type="number">21163</size>
+      <version type="string">1653588110425497</version>
+      <checksum type="number">3382059441</checksum>
+      <size type="number">24320</size>
     </item>
     <item type="object">
       <assetId type="string">cd6505ba-8c14-49d2-9bb8-2b8840b60f6a/1616632654516245</assetId>
@@ -22179,6 +22487,13 @@
       <size type="number">531459</size>
     </item>
     <item type="object">
+      <assetId type="string">d49a44de-6164-41a1-a797-0c124718f849/1653336454061546</assetId>
+      <bundleName type="string">f_backpack_alolaitemsrowletbp_00_bundle_icon</bundleName>
+      <version type="string">1653336454061546</version>
+      <checksum type="number">3186846400</checksum>
+      <size type="number">12334</size>
+    </item>
+    <item type="object">
       <assetId type="string">d4a37db3-41ed-496b-b4a9-9f51668786c5/1616697449708302</assetId>
       <bundleName type="string">pm0660_00</bundleName>
       <version type="string">1616697449708302</version>
@@ -22376,6 +22691,13 @@
       <size type="number">12385</size>
     </item>
     <item type="object">
+      <assetId type="string">d6a9420c-26d6-456d-9cbe-430f5d4c0a15/1653336449690175</assetId>
+      <bundleName type="string">f_hat_oricoriored_bundle</bundleName>
+      <version type="string">1653336449690175</version>
+      <checksum type="number">4158507947</checksum>
+      <size type="number">263763</size>
+    </item>
+    <item type="object">
       <assetId type="string">d6b5b1ad-29d2-4a12-b3d6-369b925c9838/1616632359050780</assetId>
       <bundleName type="string">pokemon_icon_235</bundleName>
       <version type="string">1616632359050780</version>
@@ -22402,6 +22724,13 @@
       <version type="string">1616622537118008</version>
       <checksum type="number">1401896752</checksum>
       <size type="number">16104</size>
+    </item>
+    <item type="object">
+      <assetId type="string">d6f25e3c-a1cd-4a68-b4c8-8e0c70a0e32b/1653584941925687</assetId>
+      <bundleName type="string">m_shirt_bea_bundle</bundleName>
+      <version type="string">1653584941925687</version>
+      <checksum type="number">416333422</checksum>
+      <size type="number">296978</size>
     </item>
     <item type="object">
       <assetId type="string">d6fb4cb7-5fad-4ee6-838d-49251d2ba9c3/1616694780557737</assetId>
@@ -22446,6 +22775,13 @@
       <size type="number">167889</size>
     </item>
     <item type="object">
+      <assetId type="string">d77cc910-3f02-4652-82ae-dfecb1b6ad20/1653336447667080</assetId>
+      <bundleName type="string">f_hat_oricoriopink_bundle</bundleName>
+      <version type="string">1653336447667080</version>
+      <checksum type="number">2977594182</checksum>
+      <size type="number">284765</size>
+    </item>
+    <item type="object">
       <assetId type="string">d79c6129-1e3c-4ffa-b828-5c440d026886/1616623853355565</assetId>
       <bundleName type="string">m_hat_gofest_pikachuvisor_bundle</bundleName>
       <version type="string">1616623853355565</version>
@@ -22479,6 +22815,13 @@
       <version type="string">1616692894540306</version>
       <checksum type="number">420275923</checksum>
       <size type="number">315895</size>
+    </item>
+    <item type="object">
+      <assetId type="string">d7d60cbe-5d24-4a67-a58e-ebea86358eb3/1653584925787791</assetId>
+      <bundleName type="string">f_hat_bea_00_bundle_icon</bundleName>
+      <version type="string">1653584925787791</version>
+      <checksum type="number">1439570432</checksum>
+      <size type="number">8079</size>
     </item>
     <item type="object">
       <assetId type="string">d7d9ad84-546e-48ee-943a-6ebd10ca8ae3/1616692777492290</assetId>
@@ -23025,11 +23368,11 @@
       <size type="number">7664</size>
     </item>
     <item type="object">
-      <assetId type="string">dccbb419-951a-4bf9-8448-8a32e5bae6d1/1653027808710091</assetId>
+      <assetId type="string">dccbb419-951a-4bf9-8448-8a32e5bae6d1/1653588126681196</assetId>
       <bundleName type="string">json_patch_i18n_korean</bundleName>
-      <version type="string">1653027808710091</version>
-      <checksum type="number">3084142227</checksum>
-      <size type="number">19905</size>
+      <version type="string">1653588126681196</version>
+      <checksum type="number">3378742475</checksum>
+      <size type="number">23794</size>
     </item>
     <item type="object">
       <assetId type="string">dcd89218-66fa-4ea3-a549-7d49df98b5d1/1512759924956220</assetId>
@@ -23080,6 +23423,13 @@
       <version type="string">1616623073842126</version>
       <checksum type="number">3407160647</checksum>
       <size type="number">402777</size>
+    </item>
+    <item type="object">
+      <assetId type="string">dd33f26f-e69b-4b4c-bc69-79715e5adcdd/1653336463099939</assetId>
+      <bundleName type="string">f_backpack_alolaitemslittenbp_bundle</bundleName>
+      <version type="string">1653336463099939</version>
+      <checksum type="number">2196715345</checksum>
+      <size type="number">187920</size>
     </item>
     <item type="object">
       <assetId type="string">dd3866d4-f0ae-44cd-8679-9d80ca3c493b/1619807929024176</assetId>
@@ -23241,6 +23591,13 @@
       <version type="string">1616631819249334</version>
       <checksum type="number">727176475</checksum>
       <size type="number">8711</size>
+    </item>
+    <item type="object">
+      <assetId type="string">dedccead-3c5a-4849-90d9-83454507df32/1653336459512019</assetId>
+      <bundleName type="string">m_hat_oricorioyellow_bundle</bundleName>
+      <version type="string">1653336459512019</version>
+      <checksum type="number">2800267846</checksum>
+      <size type="number">279189</size>
     </item>
     <item type="object">
       <assetId type="string">dedcd409-dde7-45f3-a545-bcee008b1683/1616624047076010</assetId>
@@ -23842,6 +24199,13 @@
       <key type="string">2dIO49+GtqQ0neNFK8gjXQ==</key>
     </item>
     <item type="object">
+      <assetId type="string">e45c79e0-1128-4d32-a8d5-6fd42e117686/1653336444709141</assetId>
+      <bundleName type="string">m_hat_oricoriopurple_bundle</bundleName>
+      <version type="string">1653336444709141</version>
+      <checksum type="number">2032703439</checksum>
+      <size type="number">279834</size>
+    </item>
+    <item type="object">
       <assetId type="string">e4892128-4063-406a-a45d-fca282af4952/1616691009508887</assetId>
       <bundleName type="string">pm0264_00</bundleName>
       <version type="string">1616691009508887</version>
@@ -24374,6 +24738,13 @@
       <version type="string">1616631963918817</version>
       <checksum type="number">732830114</checksum>
       <size type="number">11427</size>
+    </item>
+    <item type="object">
+      <assetId type="string">e9835d97-04bb-4350-af96-13196f407772/1653584923629475</assetId>
+      <bundleName type="string">m_face_gracidea_bundle</bundleName>
+      <version type="string">1653584923629475</version>
+      <checksum type="number">23183402</checksum>
+      <size type="number">27784</size>
     </item>
     <item type="object">
       <assetId type="string">e98eb6bb-7dae-45e2-8da4-aaa722bd57c1/1616689872007770</assetId>
@@ -24930,6 +25301,13 @@
       <size type="number">4691</size>
     </item>
     <item type="object">
+      <assetId type="string">eea5a67d-97c1-46b6-9d6c-3e9bdbc957c1/1653584943271174</assetId>
+      <bundleName type="string">f_hat_bea_bundle</bundleName>
+      <version type="string">1653584943271174</version>
+      <checksum type="number">211295456</checksum>
+      <size type="number">176217</size>
+    </item>
+    <item type="object">
       <assetId type="string">eead8a8b-c80a-4122-add0-3c72171a905a/1616644369632889</assetId>
       <bundleName type="string">pm0005_00</bundleName>
       <version type="string">1616644369632889</version>
@@ -25175,6 +25553,13 @@
       <version type="string">1616631889107163</version>
       <checksum type="number">411227928</checksum>
       <size type="number">34762</size>
+    </item>
+    <item type="object">
+      <assetId type="string">f1620a3e-841b-4738-9385-dd0e6feca082/1653584940411355</assetId>
+      <bundleName type="string">m_hat_bea_bundle</bundleName>
+      <version type="string">1653584940411355</version>
+      <checksum type="number">2284656523</checksum>
+      <size type="number">177972</size>
     </item>
     <item type="object">
       <assetId type="string">f17525c7-f87b-4e1e-ba45-d7716ab7956a/1616622462379141</assetId>
@@ -25966,11 +26351,11 @@
       <size type="number">9629</size>
     </item>
     <item type="object">
-      <assetId type="string">f81c317b-b38c-454e-ac41-b716acec654f/1653027793589736</assetId>
+      <assetId type="string">f81c317b-b38c-454e-ac41-b716acec654f/1653588113679305</assetId>
       <bundleName type="string">json_patch_i18n_french</bundleName>
-      <version type="string">1653027793589736</version>
-      <checksum type="number">2423608134</checksum>
-      <size type="number">22486</size>
+      <version type="string">1653588113679305</version>
+      <checksum type="number">2785448044</checksum>
+      <size type="number">26114</size>
     </item>
     <item type="object">
       <assetId type="string">f826a71a-90f8-46c9-a731-f05a07d215ef/1616623200692894</assetId>
@@ -26155,6 +26540,13 @@
       <version type="string">1616623206489854</version>
       <checksum type="number">4240914847</checksum>
       <size type="number">15731</size>
+    </item>
+    <item type="object">
+      <assetId type="string">f9e35422-1a97-42fc-b379-007cba56fac1/1653584928282329</assetId>
+      <bundleName type="string">m_shirt_shayminlandtshirt_00_bundle_icon</bundleName>
+      <version type="string">1653584928282329</version>
+      <checksum type="number">1603865408</checksum>
+      <size type="number">10082</size>
     </item>
     <item type="object">
       <assetId type="string">f9e72322-72a9-4358-b8c7-b08dab004286/1616692938380666</assetId>
@@ -26790,6 +27182,13 @@
       <size type="number">14169</size>
     </item>
     <item type="object">
+      <assetId type="string">ffa344a8-e94a-4ecb-9157-dfdd14209b09/1653584931141149</assetId>
+      <bundleName type="string">m_hat_shayminhat_bundle</bundleName>
+      <version type="string">1653584931141149</version>
+      <checksum type="number">3690457943</checksum>
+      <size type="number">214903</size>
+    </item>
+    <item type="object">
       <assetId type="string">ffaf1b0d-8487-4579-a595-1fab242f9f12/1616644439752116</assetId>
       <bundleName type="string">pm0025_00_pgo_winter2020</bundleName>
       <version type="string">1616644439752116</version>
@@ -26818,6 +27217,6 @@
       <size type="number">1240971</size>
     </item>
   </digest>
-  <timestamp type="string">1653027823513607</timestamp>
+  <timestamp type="string">1653588139570261</timestamp>
   <result type="string">SUCCESS</result>
 </root>
