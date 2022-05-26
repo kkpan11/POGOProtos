@@ -21,11 +21,8 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "Method.proto";
-
-message RpcResponseTime {
-	Method rpc_id = 1;
-	int32 count_call = 2;
-	float average_response_time = 3;
-	int32 timeout_count = 4;
+message FortUpdateLatencyTelemetry {
+	int32 latency_ms = 1;
+	int32 fort_type = 2;
+	float distance = 3;
 }
