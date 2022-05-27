@@ -10158,10 +10158,6 @@ message GM11SettingsProto {
 	optional float ob_float = 5;
 }
 
-message GM12SettingsProto {
-	repeated string ob_list_string = 1;
-}
-
 message GM13SettingsProto {
 	optional bool ob_bool = 1;
 }
@@ -10392,7 +10388,6 @@ message GameMasterClientTemplateProto {
 	optional ImpressionTrackingSettingsProto impression_tracking_setting = 140;
 	optional GM11SettingsProto ob_gm_11_settings = 141;
 	optional GM7SettingsProto ob_gm_7_settings = 143;
-	optional GM12SettingsProto ob_gm_12_settings = 144;
 	optional GM13SettingsProto ob_gm_13_settings = 145;
 	optional TicketGiftingSettingsProto ticket_gifting_settings = 146;
 	optional GM8SettingsProto ob_gm_8_settings = 147;
@@ -18952,9 +18947,9 @@ message QuestPreconditionProto {
 	optional MonthYearBucket month_year_bucket = 6;
 	optional Group group = 7;
 	optional StorylineProgressConditionProto story_line = 8;
-	optional Team team = 9;
+	optional TeamProto team = 9;
 
-	message Team {
+	message TeamProto {
 		optional Operator operator = 1;
 		optional Team team = 2;
 	}
@@ -19065,7 +19060,7 @@ message QuestProto {
 
 	optional QuestType quest_type = 1;
 	optional WithSingleDayProto with_single_day = 98;
-	optional DaysWithARowQuestProto days_in_arow = 99;
+	optional DaysWithARowQuestProto days_in_a_row = 99;
 	optional string quest_id = 100;
 	optional int64 quest_seed = 101;
 	optional Context quest_context = 102;
