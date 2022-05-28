@@ -13997,11 +13997,6 @@ message NMMLOLBMPFK {
 	PlayerAvatarProto eibgbdmchhn = 2;
 }
 
-message NMOBFFNPFNA {
-	uint64 dnjgofifndd = 1;
-	int32 lgcaimddche = 2;
-}
-
 message NODAIJGMLPK {
 	repeated FEDGPBDGPFD fjmfcfcklac = 1;
 }
@@ -18544,6 +18539,11 @@ message PokemonSettingsProto {
 	repeated PokemonDisplayProto.Costume bobhndjgllb = 67;
 }
 
+message PokemonStaminaUpdateProto {
+	uint64 dnjgofifndd = 1;
+	int32 lgcaimddche = 2;
+}
+
 message PokemonStatsAttributesProto {
 	int32 eedfnmpdhie = 1;
 	int32 oiannbbbkde = 2;
@@ -21827,7 +21827,7 @@ message UpdateInvasionBattleProto {
 
 	IncidentLookupProto incident_lookup = 1;
 	int32 lkoimeeahok = 2;
-	repeated NMOBFFNPFNA ejmadggfinp = 3;
+	repeated PokemonStaminaUpdateProto health_update = 3;
 	bool fcompndghgi = 4;
 	UpdateType update_type = 5;
 	int64 hppjbmlfaob = 6;
