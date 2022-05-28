@@ -25,6 +25,6 @@ import "ObFieldMessageOrResponseProto.proto";
 import "ObCombatMismatchData.proto";
 
 message ObFieldMessageOrResponseProtoTwo {
-	ObFieldMessageOrResponseProto goeolbggimf = 1;
+	ObFieldMessageOrResponseProto ob_field_message_or_response = 1;
 	repeated ObCombatMismatchData ob_combat_mismatch_data = 2;
 }
