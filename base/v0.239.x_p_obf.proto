@@ -11180,7 +11180,7 @@ message HIELBHJKFAH {
 }
 
 message HJDFJPFLHJF {
-	LFKKIHBGGJB state = 1;
+	LFKKIHBGGJB goeolbggimf = 1;
 	repeated ObCombatMismatchData fmjfklefhcf = 2;
 }
 
@@ -13323,7 +13323,7 @@ message MHBDHLDPGLB {
 }
 
 message MHHAPGOLLAD {
-	PMDHOKMEBCA state = 1;
+	PMDHOKMEBCA goeolbggimf = 1;
 	repeated RaidClientLogsProto fmjfklefhcf = 2;
 }
 
@@ -14527,7 +14527,7 @@ message ObCombatMismatchData {
 		float bkdkmnoopgj = 4;
 	}
 
-	MismatchState state = 1;
+	MismatchState goeolbggimf = 1;
 }
 
 message ObCombatSettings {
@@ -19556,7 +19556,7 @@ message RaidClientLogsProto {
 		float bkdkmnoopgj = 5;
 	}
 
-	AHONJPBEGIM state = 1;
+	AHONJPBEGIM goeolbggimf = 1;
 }
 
 message RaidClientSettingsProto {
