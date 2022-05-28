@@ -7940,88 +7940,6 @@ message ECIODEPODEG {
 	HGDFKODGPLG eiinffegelf = 2;
 }
 
-message EDBIAHLLJKM {
-	enum AHLHDLGPJGD {
-		NONE_COMBAT_SWAP_STATE = 0;
-		ENTER_COMBAT_SWAP_STATE = 1;
-		EXIT_COMBAT_SWAP_STATE = 2;
-		DO_WORK_COMBAT_SWAP_STATE = 3;
-	}
-
-	enum AOLHHBBNPCG {
-		NONE_COMBAT_STATE_V2 = 0;
-		OBSERVE_COMBAT_STATE = 1;
-	}
-
-	enum BMLOHBHEPPD {
-		NONE_COMBAT_SPECIAL_MOVE_STATE = 0;
-		ENTER_COMBAT_SPECIAL_MOVE_STATE = 1;
-		EXIT_COMBAT_SPECIAL_MOVE_STATE = 2;
-		DO_WORK_COMBAT_SPECIAL_MOVE_STATE = 3;
-	}
-
-	enum BOBOPOJMLLA {
-		NONE_COMBAT_ACTIVE_STATE = 0;
-		ENTER_COMBAT_ACTIVE_STATE = 1;
-		EXIT_COMBAT_ACTIVE_STATE = 2;
-		DO_WORK_COMBAT_ACTIVE_STATE = 3;
-	}
-
-	enum GPIKCJKJFBO {
-		NONE_COMBAT_READY_STATE = 0;
-		ENTER_COMBAT_READY_STATE = 1;
-		EXIT_COMBAT_READY_STATE = 2;
-		DO_WORK_COMBAT_READY_STATE = 3;
-	}
-
-	oneof MOIKPNEDFGO {
-		BOBOPOJMLLA combat_active_state_function = 2;
-		NHFMNCHMJPG combat_end_state_function = 3;
-		GPIKCJKJFBO combat_ready_state_function = 4;
-		AHLHDLGPJGD combat_swap_state_function = 5;
-		BMLOHBHEPPD combat_special_move_state_function = 6;
-		OADDMLOHABC combat_wait_for_player_state_function = 7;
-		PIALEACIHJO combat_presentation_director_function = 8;
-		NPONBAOEGOB combat_director_v2_function = 9;
-		AOLHHBBNPCG combat_state_v2_function = 10;
-	}
-
-	enum NHFMNCHMJPG {
-		NONE_COMBAT_END_STATE = 0;
-		ENTER_COMBAT_END_STATE = 1;
-		EXIT_COMBAT_END_STATE = 2;
-		DO_WORK_COMBAT_END_STATE = 3;
-	}
-
-	enum NPONBAOEGOB {
-		NONE_COMBAT_DIRECTOR_V2 = 0;
-		TRY_START_COMBAT = 1;
-		START_COMBAT_ERROR = 2;
-		RECEIVE_COMBAT_UPDATE = 3;
-		TRY_FAST_ATTACK = 4;
-		SWAP_POKEMON_TO = 5;
-		QUEUE_SPECIAL_ATTACK = 6;
-		TRY_SPECIAL_ATTACK = 7;
-		TRY_EXECUTE_BUFFERED_ACTION = 8;
-		CAN_ACT_ON_TURN = 9;
-		CAN_PERFORM_ATTACK = 10;
-	}
-
-	enum OADDMLOHABC {
-		NONE_COMBAT_WAIT_FOR_PLAYER_STATE = 0;
-		ENTER_COMBAT_WAIT_FOR_PLAYER_STATE = 1;
-		EXIT_COMBAT_WAIT_FOR_PLAYER_STATE = 2;
-		DO_WORK_COMBAT_WAIT_FOR_PLAYER_STATE = 3;
-	}
-
-	enum PIALEACIHJO {
-		NONE_COMBAT_PRESENTATION_DIRECTOR = 0;
-		PLAY_MINI_GAME = 1;
-	}
-
-	int32 icceibnpdeh = 1;
-}
-
 message EDBKNLANPPF {
 	repeated TutorialCompletion elhihepdmjc = 1;
 	bool ojkkinldbgi = 2;
@@ -15154,7 +15072,7 @@ message PJANGAFAEEC {
 		FDNHGHFBPJB combat_id_mismatch_data = 41;
 		LGEPHMNPENC league_id_mismatch_data = 42;
 		NPBBLGANMEK challenge_id_mismatch_data = 43;
-		EDBIAHLLJKM progress_token_data = 44;
+		ProgressTokenDataV2 progress_token_data = 44;
 		OnApplicationFocusDataProto on_application_focus_data = 45;
 		OnApplicationPauseDataProto on_application_pause_data = 46;
 		OnApplicationQuitDataProto on_application_quit_data = 47;
@@ -18982,6 +18900,88 @@ message ProgressTokenDataProto {
 		ON_CLICK_INVENTORY = 15;
 		ON_TAP = 16;
 		HANDLE_RAID_BATTLE_COMPLETE = 17;
+	}
+
+	int32 icceibnpdeh = 1;
+}
+
+message ProgressTokenDataV2 {
+	enum CombatSwapStateFunctionProto {
+		NONE_COMBAT_SWAP_STATE = 0;
+		ENTER_COMBAT_SWAP_STATE = 1;
+		EXIT_COMBAT_SWAP_STATE = 2;
+		DO_WORK_COMBAT_SWAP_STATE = 3;
+	}
+
+	enum CombatStateV2FunctionProto {
+		NONE_COMBAT_STATE_V2 = 0;
+		OBSERVE_COMBAT_STATE = 1;
+	}
+
+	enum CombatSpecialMoveStateFunctionProto {
+		NONE_COMBAT_SPECIAL_MOVE_STATE = 0;
+		ENTER_COMBAT_SPECIAL_MOVE_STATE = 1;
+		EXIT_COMBAT_SPECIAL_MOVE_STATE = 2;
+		DO_WORK_COMBAT_SPECIAL_MOVE_STATE = 3;
+	}
+
+	enum CombatActiveStateFunctionProto {
+		NONE_COMBAT_ACTIVE_STATE = 0;
+		ENTER_COMBAT_ACTIVE_STATE = 1;
+		EXIT_COMBAT_ACTIVE_STATE = 2;
+		DO_WORK_COMBAT_ACTIVE_STATE = 3;
+	}
+
+	enum CombatReadyStateFunctionProto {
+		NONE_COMBAT_READY_STATE = 0;
+		ENTER_COMBAT_READY_STATE = 1;
+		EXIT_COMBAT_READY_STATE = 2;
+		DO_WORK_COMBAT_READY_STATE = 3;
+	}
+
+	oneof CombatFunction {
+		CombatActiveStateFunctionProto combat_active_state_function = 2;
+		CombatEndStateFunctionProto combat_end_state_function = 3;
+		CombatReadyStateFunctionProto combat_ready_state_function = 4;
+		CombatSwapStateFunctionProto combat_swap_state_function = 5;
+		CombatSpecialMoveStateFunctionProto combat_special_move_state_function = 6;
+		CombatWaitForPlayerStateFunctionProto combat_wait_for_player_state_function = 7;
+		CombatPresentationDirectorFunctionProto combat_presentation_director_function = 8;
+		CombatDirectorV2FunctionProto combat_director_v2_function = 9;
+		CombatStateV2FunctionProto combat_state_v2_function = 10;
+	}
+
+	enum CombatEndStateFunctionProto {
+		NONE_COMBAT_END_STATE = 0;
+		ENTER_COMBAT_END_STATE = 1;
+		EXIT_COMBAT_END_STATE = 2;
+		DO_WORK_COMBAT_END_STATE = 3;
+	}
+
+	enum CombatDirectorV2FunctionProto {
+		NONE_COMBAT_DIRECTOR_V2 = 0;
+		TRY_START_COMBAT = 1;
+		START_COMBAT_ERROR = 2;
+		RECEIVE_COMBAT_UPDATE = 3;
+		TRY_FAST_ATTACK = 4;
+		SWAP_POKEMON_TO = 5;
+		QUEUE_SPECIAL_ATTACK = 6;
+		TRY_SPECIAL_ATTACK = 7;
+		TRY_EXECUTE_BUFFERED_ACTION = 8;
+		CAN_ACT_ON_TURN = 9;
+		CAN_PERFORM_ATTACK = 10;
+	}
+
+	enum CombatWaitForPlayerStateFunctionProto {
+		NONE_COMBAT_WAIT_FOR_PLAYER_STATE = 0;
+		ENTER_COMBAT_WAIT_FOR_PLAYER_STATE = 1;
+		EXIT_COMBAT_WAIT_FOR_PLAYER_STATE = 2;
+		DO_WORK_COMBAT_WAIT_FOR_PLAYER_STATE = 3;
+	}
+
+	enum CombatPresentationDirectorFunctionProto {
+		NONE_COMBAT_PRESENTATION_DIRECTOR = 0;
+		PLAY_MINI_GAME = 1;
 	}
 
 	int32 icceibnpdeh = 1;
