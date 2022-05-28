@@ -3998,77 +3998,9 @@ message ABAEIHKNPCI {
 	int64 kmogeeemnmc = 3;
 }
 
-message ABJDGPHOKAP {
-	bool oknglgemojk = 1;
-	bool dfcadaialkj = 2;
-}
-
 message ACBAFAEAFNC {
 	RoutePlayStatus.Status status = 1;
 	int64 fjcnpabjnie = 2;
-}
-
-message ACCIFOKPPNN {
-	oneof NCOIAPCOMKP {
-		ABJDGPHOKAP join_lobby_data = 2;
-		GHLHOPOCFFA join_lobby_response_data = 3;
-		OODJNIFGABH leave_lobby_data = 4;
-		PMEFEIICKDM leave_lobby_response_data = 5;
-		GKFHGHCKHHL lobby_visibility_data = 6;
-		DIAGBNPPHMA lobby_visibility_response_data = 7;
-		GLPFDDIELED get_raid_details_data = 8;
-		FIDPEEEFILA get_raid_details_response_data = 9;
-		KOICDIBELHN start_raid_battle_data = 10;
-		MJECHBJGHKB start_raid_battle_response_data = 11;
-		IGDHKCHLJIE attack_raid_data = 12;
-		DDKCMBPBGFN attack_raid_response_data = 13;
-		DONHFGCPIAA send_raid_invitation_data = 14;
-		KNJBNOHDHFP send_raid_invitation_response_data = 15;
-		OONKHODGBPO on_application_focus_data = 16;
-		NNALPBEPMPH on_application_pause_data = 17;
-		DFOLNGNCJAA on_application_quit_data = 18;
-		LGONJMMIKEI exception_caught_data = 19;
-		ProgressTokenDataProto progress_token_data = 20;
-		RpcErrorDataProto rpc_error_data = 21;
-		OJECLAAMNAG client_prediction_inconsistency_data = 22;
-		ICLAPNGBFPG raid_end_data = 23;
-	}
-
-	message AHONJPBEGIM {
-		enum LAAGOLMAAJA {
-			NO_TYPE = 0;
-			JOIN_LOBBY_REQUEST = 1;
-			JOIN_LOBBY_RESPONSE = 2;
-			LEAVE_LOBBY_REQUEST = 3;
-			LEAVE_LOBBY_RESPONSE = 4;
-			LOBBY_VISIBILITY_REQUEST = 5;
-			LOBBY_VISIBILITY_RESPONSE = 6;
-			GET_RAID_DETAILS_REQUEST = 7;
-			GET_RAID_DETAILS_RESPONSE = 8;
-			START_RAID_BATTLE_REQUEST = 9;
-			START_RAID_BATTLE_RESPONSE = 10;
-			ATTACK_RAID_REQUEST = 11;
-			ATTACK_RAID_RESPONSE = 12;
-			SEND_RAID_INVITATION_REQUEST = 13;
-			SEND_RAID_INVITATION_RESPONSE = 14;
-			ON_APPLICATION_FOCUS = 15;
-			ON_APPLICATION_PAUSE = 16;
-			ON_APPLICATION_QUIT = 17;
-			EXCEPTION_CAUGHT = 18;
-			PROGRESS_TOKEN = 19;
-			RPC_ERROR = 20;
-			CLIENT_PREDICTION_INCONSISTENCY = 21;
-			PLAYER_END_RAID = 22;
-		}
-
-		LAAGOLMAAJA type = 1;
-		uint32 blfmpehkdlp = 2;
-		uint32 hejlhgphghb = 3;
-		float pjbmjhcppfp = 4;
-		float bkdkmnoopgj = 5;
-	}
-
-	AHONJPBEGIM goeolbggimf = 1;
 }
 
 message ACOCNFJGOPJ {
@@ -4837,6 +4769,33 @@ message AttackRaidBattleOutProto {
 	BattleUpdateProto battle_update = 2;
 	AdDetails sponsored_gift = 3;
 	AdProto ad = 4;
+}
+
+message AttackRaidDataLogDetails {
+	BattleActionProto.ActionType type = 1;
+	uint32 gffapdfphbe = 2;
+	int32 iijbejpcmdl = 3;
+	int32 ohcfconpicc = 4;
+	int32 lbhofnhcapn = 5;
+	int32 phphcaephai = 6;
+	uint64 bfdnegladog = 7;
+	uint32 lolhanjhdfc = 8;
+	uint32 bphojpiblac = 9;
+}
+
+message AttackRaidDataProto {
+	repeated AttackRaidDataLogDetails ob_details = 1;
+	AttackRaidDataLogDetails bmkifbapcci = 2;
+	uint32 aebkkbiagnf = 3;
+}
+
+message AttackRaidResponseDataProto {
+	AttackRaidBattleOutProto.Result result = 1;
+	BattleLogProto.State mpdedahhgml = 2;
+	uint32 ckepijbnlep = 3;
+	repeated AttackRaidDataLogDetails gnohlnnehcb = 4;
+	uint32 obbnopnpgdm = 5;
+	uint32 jkhkcnokcji = 6;
 }
 
 message AvailableSkuProto {
@@ -6406,6 +6365,10 @@ message ClientPokestopNpcDialogueStepProto {
 	repeated ClientDialogueLineProto dialogue_line = 1;
 }
 
+message ClientPredictionInconsistencyDataProto {
+	uint32 bncondhfbgi = 1;
+}
+
 message ClientQuestProto {
 	QuestProto quest = 1;
 	QuestDisplayProto bcaabhcnjhn = 2;
@@ -7346,15 +7309,6 @@ message DCLKBBFPKEB {
 	int32 dlmikmmcccg = 1;
 }
 
-message DDKCMBPBGFN {
-	AttackRaidBattleOutProto.Result result = 1;
-	BattleLogProto.State mpdedahhgml = 2;
-	uint32 ckepijbnlep = 3;
-	repeated NCNDKAAIEAH gnohlnnehcb = 4;
-	uint32 obbnopnpgdm = 5;
-	uint32 jkhkcnokcji = 6;
-}
-
 message DDPJOEMMGDF {
 	int32 dlmikmmcccg = 1;
 	uint32 mgedodjhfcb = 2;
@@ -7371,9 +7325,6 @@ message DEPDCGPHBPC {
 
 	Status status = 1;
 	ClientPlayerProto inaeonjikcp = 2;
-}
-
-message DFOLNGNCJAA {
 }
 
 message DGNMLKDHPPN {
@@ -7408,10 +7359,6 @@ message DHHHHOFLCHG {
 	uint32 mgedodjhfcb = 2;
 	InvasionStatus.Status result = 3;
 	OPDFFONLNJM dpihoegdbjp = 4;
-}
-
-message DIAGBNPPHMA {
-	SetLobbyVisibilityOutProto.Result result = 1;
 }
 
 message DIICKBBAAHN {
@@ -7488,9 +7435,6 @@ message DOEGHFCILMH {
 	NFFICPMOJKL kgamiafgadp = 1;
 	string cpccfggmddj = 2;
 	string dpcjibgkhcd = 3;
-}
-
-message DONHFGCPIAA {
 }
 
 message DPIPDALMMMI {
@@ -8221,7 +8165,7 @@ message ELAEJGCDEHH {
 message ELBAMDKDJGF {
 	string daofednkckc = 1;
 	string klalaicagcb = 2;
-	repeated BattleActionProto floijaiogfj = 3;
+	repeated BattleActionProto ob_details = 3;
 	BattleActionProto bmkifbapcci = 4;
 	int64 timestamp_ms = 5;
 	CDFLMEELCLK kljdpefdlbd = 6;
@@ -8670,6 +8614,15 @@ message ExRaidSettingsProto {
 	FriendshipLevelMilestone fchpaenmfic = 1;
 }
 
+message ExceptionCaugthDataProto {
+	enum ExceptionType {
+		NO_EXCEPTION = 0;
+	}
+
+	int32 jidigljapii = 1;
+	ExceptionType ob_exception = 2;
+}
+
 message ExclusiveTicketInfoProto {
 	int64 jggjgedfnfh = 1;
 	string piekppadlef = 2;
@@ -8811,19 +8764,6 @@ message FGKMFAKBJID {
 
 message FHEDNFFFEKP {
 	repeated int64 timestamp_ms = 1;
-}
-
-message FIDPEEEFILA {
-	GetRaidDetailsOutProto.Result result = 1;
-	bool agkhhoibkjd = 2;
-	bool ljcghjgcead = 3;
-	int32 dljloeahmgk = 4;
-	bool ickpehgndjj = 5;
-	int32 gelljojcgkm = 6;
-	uint32 ckepijbnlep = 7;
-	int32 kblbakllgoj = 8;
-	bool ocfkbkoadhf = 9;
-	bool fkfngjjjfcj = 10;
 }
 
 message FIFMPNODPAE {
@@ -9457,21 +9397,6 @@ message GGNDAIHJFDN {
 	string fdcjafbhofo = 1;
 }
 
-message GHLHOPOCFFA {
-	JoinLobbyOutProto.Result result = 1;
-	repeated int32 pnehijkpnba = 2;
-	int32 gigjbobmdhp = 3;
-	uint32 bgnndpplioi = 4;
-	uint32 fikajpffgeo = 5;
-	uint32 chmcfjlnedk = 6;
-	uint32 fkajlnenbko = 7;
-	string hdofgpdgnhc = 8;
-	bool oknglgemojk = 9;
-	uint32 ccoolbgcjnf = 10;
-	int32 kflblleikdf = 11;
-	GameplayWeatherProto.WeatherCondition fimecbldfon = 12;
-}
-
 message GIEIOFMCPOI {
 	string ofafcgobopf = 1;
 }
@@ -9492,9 +9417,6 @@ message GKAPDMPDIBK {
 	uint32 kdcmlomfcee = 6;
 }
 
-message GKFHGHCKHHL {
-}
-
 message GKHNIJPAJPP {
 }
 
@@ -9505,9 +9427,6 @@ message GLBFFEIBMEH {
 	uint64 dnjgofifndd = 4;
 	double ecpamcmljgm = 5;
 	double nibhbnkajpk = 6;
-}
-
-message GLPFDDIELED {
 }
 
 message GM10SettingsProto {
@@ -10654,6 +10573,9 @@ message GetQuestDetailsOutProto {
 	repeated ClientQuestProto igkpkablcih = 2;
 }
 
+message GetRaidDetailsDataProto {
+}
+
 message GetRaidDetailsOutProto {
 	enum Result {
 		UNSET = 0;
@@ -10682,6 +10604,19 @@ message GetRaidDetailsOutProto {
 	bool ocfkbkoadhf = 15;
 	bool fkfngjjjfcj = 16;
 	Item imhnnfmchbj = 17;
+}
+
+message GetRaidDetailsResponseDataProto {
+	GetRaidDetailsOutProto.Result result = 1;
+	bool agkhhoibkjd = 2;
+	bool ljcghjgcead = 3;
+	int32 dljloeahmgk = 4;
+	bool ickpehgndjj = 5;
+	int32 gelljojcgkm = 6;
+	uint32 ckepijbnlep = 7;
+	int32 kblbakllgoj = 8;
+	bool ocfkbkoadhf = 9;
+	bool fkfngjjjfcj = 10;
 }
 
 message GetReferralCodeOutProto {
@@ -11571,19 +11506,6 @@ message IBDPCKJHKJC {
 	string lcfaklliclg = 2;
 }
 
-message ICLAPNGBFPG {
-	enum AONADOHGKMO {
-		NO_END = 0;
-		LEAVE_LOBBY = 1;
-		TIME_OUT = 2;
-		ENCOUNTER_POKEMON_NOT_CAUGHT = 3;
-		ENCOUNTER_POKEMON_CAUGHT = 4;
-		WITH_ERROR = 5;
-	}
-
-	AONADOHGKMO type = 1;
-}
-
 message IDCDFDMPNLN {
 	string dclgcdocplk = 1;
 }
@@ -11675,12 +11597,6 @@ message IFIPOFFEHMK {
 
 message IGAAIPPJFKP {
 	uint32 joppdknnhme = 1;
-}
-
-message IGDHKCHLJIE {
-	repeated NCNDKAAIEAH floijaiogfj = 1;
-	NCNDKAAIEAH bmkifbapcci = 2;
-	uint32 aebkkbiagnf = 3;
 }
 
 message IHIAKKPACOP {
@@ -12434,7 +12350,7 @@ message JNALOABAKIL {
 message JNBEOJJEPPA {
 	string daofednkckc = 1;
 	string klalaicagcb = 2;
-	repeated BattleActionProto floijaiogfj = 3;
+	repeated BattleActionProto ob_details = 3;
 	BattleActionProto bmkifbapcci = 4;
 	double ecpamcmljgm = 5;
 	double nibhbnkajpk = 6;
@@ -12541,6 +12457,11 @@ message JoinBuddyMultiplayerSessionOutProto {
 	int32 gnglbipijog = 4;
 }
 
+message JoinLobbyDataProto {
+	bool oknglgemojk = 1;
+	bool dfcadaialkj = 2;
+}
+
 message JoinLobbyOutProto {
 	enum Result {
 		UNSET = 0;
@@ -12562,6 +12483,21 @@ message JoinLobbyOutProto {
 
 	Result result = 1;
 	LobbyProto lobby = 2;
+}
+
+message JoinLobbyResponseDataProto {
+	JoinLobbyOutProto.Result result = 1;
+	repeated int32 pnehijkpnba = 2;
+	int32 gigjbobmdhp = 3;
+	uint32 bgnndpplioi = 4;
+	uint32 fikajpffgeo = 5;
+	uint32 chmcfjlnedk = 6;
+	uint32 fkajlnenbko = 7;
+	string hdofgpdgnhc = 8;
+	bool oknglgemojk = 9;
+	uint32 ccoolbgcjnf = 10;
+	int32 kflblleikdf = 11;
+	GameplayWeatherProto.WeatherCondition fimecbldfon = 12;
 }
 
 message JournalAddEntryProto {
@@ -12766,11 +12702,6 @@ message KNFJJEMCONE {
 	int32 move_settings = 9;
 }
 
-message KNJBNOHDHFP {
-	SendRaidInvitationOutProto.Result result = 1;
-	int32 gihefpbnhio = 2;
-}
-
 message KNJHPHHFGPK {
 	repeated string bjibdgnpema = 1;
 }
@@ -12816,10 +12747,6 @@ message KOEAKLLCMGF {
 	CaptureProbabilityProto capture_probability = 3;
 	Item imhnnfmchbj = 4;
 	int32 kgkphoiicnb = 5;
-}
-
-message KOICDIBELHN {
-	repeated uint64 fendffbodog = 1;
 }
 
 message KOOCDBFOPBM {
@@ -12919,15 +12846,6 @@ message LGDJOIJIODF {
 message LGEPHMNPENC {
 	string abkfijbmack = 1;
 	PJANGAFAEEC.BGCMHPJCPJE.GBDCLJJDBMN kgkbenkaoam = 2;
-}
-
-message LGONJMMIKEI {
-	enum JGKACKMAMAH {
-		NO_EXCEPTION = 0;
-	}
-
-	int32 jidigljapii = 1;
-	JGKACKMAMAH nhmbfllgppp = 2;
 }
 
 message LHAAMEPGJFH {
@@ -13086,6 +13004,9 @@ message LeaveInteractionRangeTelemetry {
 	string campaign_id = 7;
 }
 
+message LeaveLobbyDataProto {
+}
+
 message LeaveLobbyOutProto {
 	enum Result {
 		UNSET = 0;
@@ -13096,6 +13017,10 @@ message LeaveLobbyOutProto {
 
 	Result result = 1;
 	LobbyProto lobby = 2;
+}
+
+message LeaveLobbyResponseDataProto {
+	LeaveLobbyOutProto.Result result = 1;
 }
 
 message LeavePointOfInterestTelemetry {
@@ -13304,6 +13229,13 @@ message LobbyProto {
 	repeated string gemaihpoelm = 14;
 }
 
+message LobbyVisibilityDataProto {
+}
+
+message LobbyVisibilityResponseDataProto {
+	SetLobbyVisibilityOutProto.Result result = 1;
+}
+
 message LocationE6Proto {
 	int32 latitude_e6 = 1;
 	int32 longitude_e6 = 2;
@@ -13392,7 +13324,7 @@ message MCHCBGCBHOH {
 	PlayerPublicProfileProto eljmjbdpfni = 2;
 	repeated string gbohkapdnkg = 3;
 	uint64 ojgnnigjfoj = 4;
-	GPGDANOBKPA nhmbfllgppp = 5;
+	GPGDANOBKPA ob_exception = 5;
 	CombatPlayerPreferencesProto combat_player_preferences = 6;
 }
 
@@ -13541,7 +13473,7 @@ message MHBDHLDPGLB {
 
 message MHHAPGOLLAD {
 	PMDHOKMEBCA goeolbggimf = 1;
-	repeated ACCIFOKPPNN fmjfklefhcf = 2;
+	repeated RaidClientLogsProto fmjfklefhcf = 2;
 }
 
 message MHKEGPJLAKM {
@@ -13577,11 +13509,6 @@ message MJCGHGDKGAN {
 	}
 
 	Result result = 1;
-}
-
-message MJECHBJGHKB {
-	StartRaidBattleOutProto.Result result = 1;
-	FriendshipLevelMilestone aghnlkbmhnm = 8;
 }
 
 message MKJCAKKOOIH {
@@ -14099,18 +14026,6 @@ message NCHNHBCNOHA {
 	string eijpegbndpb = 1;
 }
 
-message NCNDKAAIEAH {
-	BattleActionProto.ActionType type = 1;
-	uint32 gffapdfphbe = 2;
-	int32 iijbejpcmdl = 3;
-	int32 ohcfconpicc = 4;
-	int32 lbhofnhcapn = 5;
-	int32 phphcaephai = 6;
-	uint64 bfdnegladog = 7;
-	uint32 lolhanjhdfc = 8;
-	uint32 bphojpiblac = 9;
-}
-
 message NDFANOPDLFB {
 	int32 afckjjcldga = 1;
 	repeated string mhimlgaokfj = 2;
@@ -14255,10 +14170,6 @@ message NMOBFFNPFNA {
 
 message NMOOPGNFCBN {
 	int32 dlmikmmcccg = 1;
-}
-
-message NNALPBEPMPH {
-	bool ieocmoooaec = 1;
 }
 
 message NNLFEOMEDMO {
@@ -14622,10 +14533,6 @@ message OIIPCEMAGAJ {
 	CHGFALNGFMN hnhejmpinag = 200;
 }
 
-message OJECLAAMNAG {
-	uint32 bncondhfbgi = 1;
-}
-
 message OJGKBLMHMEK {
 	Item item = 1;
 	uint64 dnjgofifndd = 2;
@@ -14692,15 +14599,8 @@ message OOAEPOGEOIO {
 	double nibhbnkajpk = 3;
 }
 
-message OODJNIFGABH {
-}
-
 message OOMJKLPNAJO {
 	string eijpegbndpb = 1;
-}
-
-message OONKHODGBPO {
-	bool accndiajoci = 1;
 }
 
 message OPDFFONLNJM {
@@ -14887,6 +14787,17 @@ message ObSponsoredBalloon {
 	string fipckddhfec = 2;
 	string nboedacbodi = 3;
 	string hojhmagcjed = 4;
+}
+
+message OnApplicationFocusDataProto {
+	bool accndiajoci = 1;
+}
+
+message OnApplicationPauseDataProto {
+	bool ieocmoooaec = 1;
+}
+
+message OnApplicationQuitDataProto {
 }
 
 message OnboardingSettingsProto {
@@ -15244,9 +15155,9 @@ message PJANGAFAEEC {
 		LGEPHMNPENC league_id_mismatch_data = 42;
 		NPBBLGANMEK challenge_id_mismatch_data = 43;
 		EDBIAHLLJKM progress_token_data = 44;
-		OONKHODGBPO on_application_focus_data = 45;
-		NNALPBEPMPH on_application_pause_data = 46;
-		DFOLNGNCJAA on_application_quit_data = 47;
+		OnApplicationFocusDataProto on_application_focus_data = 45;
+		OnApplicationPauseDataProto on_application_pause_data = 46;
+		OnApplicationQuitDataProto on_application_quit_data = 47;
 		PKGKMLOBBFO exception_caught_data = 48;
 		BDOGOPEHFBM combat_pub_sub_data = 49;
 		BNDGGAIFIMC combat_end_data = 50;
@@ -15330,7 +15241,7 @@ message PKGKMLOBBFO {
 	}
 
 	int32 jidigljapii = 1;
-	BGCGGAGALBF nhmbfllgppp = 2;
+	BGCGGAGALBF ob_exception = 2;
 }
 
 message PKPEPECHAJB {
@@ -15366,10 +15277,6 @@ message PMDHOKMEBCA {
 	string hdofgpdgnhc = 6;
 }
 
-message PMEFEIICKDM {
-	LeaveLobbyOutProto.Result result = 1;
-}
-
 message PMPOJPCCCCA {
 	oneof BBGBJGKKCDE {
 		BNFHIHJHCGC pokecoin = 1;
@@ -15387,7 +15294,7 @@ message PMPOJPCCCCA {
 message POGBCFJAEKF {
 	string daofednkckc = 1;
 	string klalaicagcb = 2;
-	repeated BattleActionProto floijaiogfj = 3;
+	repeated BattleActionProto ob_details = 3;
 	BattleActionProto bmkifbapcci = 4;
 	double ecpamcmljgm = 5;
 	double nibhbnkajpk = 6;
@@ -19650,6 +19557,69 @@ message QuitCombatOutProto {
 	CombatProto dpihoegdbjp = 2;
 }
 
+message RaidClientLogsProto {
+	oneof LogData {
+		JoinLobbyDataProto join_lobby_data = 2;
+		JoinLobbyResponseDataProto join_lobby_response_data = 3;
+		LeaveLobbyDataProto leave_lobby_data = 4;
+		LeaveLobbyResponseDataProto leave_lobby_response_data = 5;
+		LobbyVisibilityDataProto lobby_visibility_data = 6;
+		LobbyVisibilityResponseDataProto lobby_visibility_response_data = 7;
+		GetRaidDetailsDataProto get_raid_details_data = 8;
+		GetRaidDetailsResponseDataProto get_raid_details_response_data = 9;
+		StartRaidBattleDataProto start_raid_battle_data = 10;
+		StartRaidBattleResponseDataProto start_raid_battle_response_data = 11;
+		AttackRaidDataProto attack_raid_data = 12;
+		AttackRaidResponseDataProto attack_raid_response_data = 13;
+		SendRaidInvitationDataProto send_raid_invitation_data = 14;
+		SendRaidInvitationResponseDataProto send_raid_invitation_response_data = 15;
+		OnApplicationFocusDataProto on_application_focus_data = 16;
+		OnApplicationPauseDataProto on_application_pause_data = 17;
+		OnApplicationQuitDataProto on_application_quit_data = 18;
+		ExceptionCaugthDataProto exception_caught_data = 19;
+		ProgressTokenDataProto progress_token_data = 20;
+		RpcErrorDataProto rpc_error_data = 21;
+		ClientPredictionInconsistencyDataProto client_prediction_inconsistency_data = 22;
+		RaidEndDataProto raid_end_data = 23;
+	}
+
+	message AHONJPBEGIM {
+		enum LAAGOLMAAJA {
+			NO_TYPE = 0;
+			JOIN_LOBBY_REQUEST = 1;
+			JOIN_LOBBY_RESPONSE = 2;
+			LEAVE_LOBBY_REQUEST = 3;
+			LEAVE_LOBBY_RESPONSE = 4;
+			LOBBY_VISIBILITY_REQUEST = 5;
+			LOBBY_VISIBILITY_RESPONSE = 6;
+			GET_RAID_DETAILS_REQUEST = 7;
+			GET_RAID_DETAILS_RESPONSE = 8;
+			START_RAID_BATTLE_REQUEST = 9;
+			START_RAID_BATTLE_RESPONSE = 10;
+			ATTACK_RAID_REQUEST = 11;
+			ATTACK_RAID_RESPONSE = 12;
+			SEND_RAID_INVITATION_REQUEST = 13;
+			SEND_RAID_INVITATION_RESPONSE = 14;
+			ON_APPLICATION_FOCUS = 15;
+			ON_APPLICATION_PAUSE = 16;
+			ON_APPLICATION_QUIT = 17;
+			EXCEPTION_CAUGHT = 18;
+			PROGRESS_TOKEN = 19;
+			RPC_ERROR = 20;
+			CLIENT_PREDICTION_INCONSISTENCY = 21;
+			PLAYER_END_RAID = 22;
+		}
+
+		LAAGOLMAAJA type = 1;
+		uint32 blfmpehkdlp = 2;
+		uint32 hejlhgphghb = 3;
+		float pjbmjhcppfp = 4;
+		float bkdkmnoopgj = 5;
+	}
+
+	AHONJPBEGIM goeolbggimf = 1;
+}
+
 message RaidClientSettingsProto {
 	bool jbapldiglhi = 1;
 	int32 jipokfnoenl = 2;
@@ -19686,6 +19656,19 @@ message RaidEncounterProto {
 	string piekppadlef = 7;
 	bool mndgbmpfcio = 8;
 	bool kchdeeofoip = 9;
+}
+
+message RaidEndDataProto {
+	enum EndType {
+		NO_END = 0;
+		LEAVE_LOBBY = 1;
+		TIME_OUT = 2;
+		ENCOUNTER_POKEMON_NOT_CAUGHT = 3;
+		ENCOUNTER_POKEMON_CAUGHT = 4;
+		WITH_ERROR = 5;
+	}
+
+	EndType type = 1;
 }
 
 message RaidInfoProto {
@@ -20558,6 +20541,9 @@ message SendGiftOutProto {
 	int32 goaiobanfab = 2;
 }
 
+message SendRaidInvitationDataProto {
+}
+
 message SendRaidInvitationOutProto {
 	enum Result {
 		UNSET = 0;
@@ -20573,6 +20559,11 @@ message SendRaidInvitationOutProto {
 	}
 
 	Result result = 1;
+	int32 gihefpbnhio = 2;
+}
+
+message SendRaidInvitationResponseDataProto {
+	SendRaidInvitationOutProto.Result result = 1;
 	int32 gihefpbnhio = 2;
 }
 
@@ -21109,6 +21100,10 @@ message StartIncidentOutProto {
 	ClientIncidentProto jblkklnblbb = 2;
 }
 
+message StartRaidBattleDataProto {
+	repeated uint64 fendffbodog = 1;
+}
+
 message StartRaidBattleOutProto {
 	enum Result {
 		UNSET = 0;
@@ -21128,6 +21123,11 @@ message StartRaidBattleOutProto {
 
 	Result result = 1;
 	BattleProto battle = 2;
+}
+
+message StartRaidBattleResponseDataProto {
+	StartRaidBattleOutProto.Result result = 1;
+	FriendshipLevelMilestone aghnlkbmhnm = 8;
 }
 
 message StartTutorialOutProto {
@@ -22620,7 +22620,7 @@ message WithRaidLevelProto {
 }
 
 message WithRaidLocationProto {
-	RaidLocationRequirement nhmbfllgppp = 1;
+	RaidLocationRequirement ob_exception = 1;
 }
 
 message WithSingleDayProto {
