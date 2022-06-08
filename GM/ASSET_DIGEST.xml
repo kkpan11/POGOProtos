@@ -352,6 +352,13 @@
       <size type="number">8146</size>
     </item>
     <item type="object">
+      <assetId type="string">0349d980-39a5-464d-9ae5-584c13075762/1654624666904792</assetId>
+      <bundleName type="string">f_shirt_tcgcollabtshirtandcap_bundle</bundleName>
+      <version type="string">1654624666904792</version>
+      <checksum type="number">1686221898</checksum>
+      <size type="number">224972</size>
+    </item>
+    <item type="object">
       <assetId type="string">034fb22c-6d96-45d7-b8af-60a292a79799/1616622396215460</assetId>
       <bundleName type="string">f_shirt_acetrainerbw_0_bundle_icon</bundleName>
       <version type="string">1616622396215460</version>
@@ -7340,6 +7347,13 @@
       <size type="number">4277</size>
     </item>
     <item type="object">
+      <assetId type="string">477d315f-c295-471d-8291-97ddc1dbe798/1654624665193536</assetId>
+      <bundleName type="string">f_shirt_tcgcollabtshirtandcap_00_bundle_icon</bundleName>
+      <version type="string">1654624665193536</version>
+      <checksum type="number">764610866</checksum>
+      <size type="number">11760</size>
+    </item>
+    <item type="object">
       <assetId type="string">478a4215-1711-4a61-b3d5-fba48cb9ce8d/1616632160079719</assetId>
       <bundleName type="string">pokemon_icon_101</bundleName>
       <version type="string">1616632160079719</version>
@@ -9994,6 +10008,13 @@
       <version type="string">1631838398989548</version>
       <checksum type="number">742150611</checksum>
       <size type="number">222341</size>
+    </item>
+    <item type="object">
+      <assetId type="string">60c4036f-c7b6-4f60-9b70-c1128dd61c11/1654624664330696</assetId>
+      <bundleName type="string">m_shirt_tcgcollabtshirtandcap_00_bundle_icon</bundleName>
+      <version type="string">1654624664330696</version>
+      <checksum type="number">1674060837</checksum>
+      <size type="number">10862</size>
     </item>
     <item type="object">
       <assetId type="string">60cdf9d4-992d-487f-a343-4786ef745ed4/1616632272222240</assetId>
@@ -14149,6 +14170,13 @@
       <size type="number">14201</size>
     </item>
     <item type="object">
+      <assetId type="string">86333993-ba2f-4c1d-9c70-21ab24738ad3/1654624666017945</assetId>
+      <bundleName type="string">f_hat_tcgcollabtshirtandcap_00_bundle_icon</bundleName>
+      <version type="string">1654624666017945</version>
+      <checksum type="number">1031095538</checksum>
+      <size type="number">8181</size>
+    </item>
+    <item type="object">
       <assetId type="string">864578d4-c608-4a9d-b770-92105b233066/1616631920647765</assetId>
       <bundleName type="string">pokemon_icon_573</bundleName>
       <version type="string">1616631920647765</version>
@@ -15136,6 +15164,13 @@
       <version type="string">1616621995583437</version>
       <checksum type="number">2312668478</checksum>
       <size type="number">150456</size>
+    </item>
+    <item type="object">
+      <assetId type="string">8f3d4bfc-7e7c-47c0-b1f9-09dbafac9091/1654624668952503</assetId>
+      <bundleName type="string">m_shirt_tcgcollabtshirtandcap_bundle</bundleName>
+      <version type="string">1654624668952503</version>
+      <checksum type="number">2807431158</checksum>
+      <size type="number">217989</size>
     </item>
     <item type="object">
       <assetId type="string">8f4353cc-a16e-481e-b6e4-f6aad8b372a0/1616622384223670</assetId>
@@ -20879,6 +20914,13 @@
       <key type="string">GTPF2/HJYIQKnjwPyAGSGQ==</key>
     </item>
     <item type="object">
+      <assetId type="string">c63c1119-502a-4bcb-81d7-d4b273f6ac19/1654624668063461</assetId>
+      <bundleName type="string">m_hat_tcgcollabtshirtandcap_00_bundle_icon</bundleName>
+      <version type="string">1654624668063461</version>
+      <checksum type="number">4084013871</checksum>
+      <size type="number">8221</size>
+    </item>
+    <item type="object">
       <assetId type="string">c676a73f-72dc-4863-8dc2-44296dd5c44a/1616623973814474</assetId>
       <bundleName type="string">m_shirt_teamrocket_bundle</bundleName>
       <version type="string">1616623973814474</version>
@@ -25562,6 +25604,13 @@
       <size type="number">177972</size>
     </item>
     <item type="object">
+      <assetId type="string">f167153c-b90f-4f30-a5fe-6b5fae01a379/1654624663389037</assetId>
+      <bundleName type="string">m_hat_tcgcollabtshirtandcap_bundle</bundleName>
+      <version type="string">1654624663389037</version>
+      <checksum type="number">2844994820</checksum>
+      <size type="number">158967</size>
+    </item>
+    <item type="object">
       <assetId type="string">f17525c7-f87b-4e1e-ba45-d7716ab7956a/1616622462379141</assetId>
       <bundleName type="string">f_gloves_giovanni_bundle</bundleName>
       <version type="string">1616622462379141</version>
@@ -26061,6 +26110,13 @@
       <version type="string">1619809694052311</version>
       <checksum type="number">2332710860</checksum>
       <size type="number">6746</size>
+    </item>
+    <item type="object">
+      <assetId type="string">f5d6d20c-4693-4b64-919d-d7e5e1d60b45/1654624670473519</assetId>
+      <bundleName type="string">f_hat_tcgcollabtshirtandcap_bundle</bundleName>
+      <version type="string">1654624670473519</version>
+      <checksum type="number">1340610890</checksum>
+      <size type="number">168190</size>
     </item>
     <item type="object">
       <assetId type="string">f5f3a3d9-4529-4d43-ad59-80335559e193/1616622153240775</assetId>
@@ -27217,6 +27273,6 @@
       <size type="number">1240971</size>
     </item>
   </digest>
-  <timestamp type="string">1654411894066051</timestamp>
+  <timestamp type="string">1654624670473519</timestamp>
   <result type="string">SUCCESS</result>
 </root>
