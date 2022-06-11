@@ -4019,6 +4019,11 @@ message ARPlusEncounterValuesProto {
 	optional bool pokemon_frightened = 3;
 }
 
+message AcceptCombatChallengeDataProto {
+	optional int32 ob_int32 = 1;
+	repeated int32 ob_list_int32 = 2;
+}
+
 message AcceptCombatChallengeOutProto {
 	enum Result {
 		UNSET = 0;
@@ -4041,6 +4046,13 @@ message AcceptCombatChallengeOutProto {
 message AcceptCombatChallengeProto {
 	optional string challenge_id = 1;
 	repeated fixed64 attacking_pokemon_id = 6;
+}
+
+message AcceptCombatChallengeResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional AcceptCombatChallengeOutProto.Result result = 3;
+	optional ObCommunCombatChallengeDataProto challenge = 4;
 }
 
 message AcceptFriendInviteOutProto {
@@ -6830,6 +6842,10 @@ message CameraSettingsProto {
 	repeated float vert_ctr_ratio = 16;
 }
 
+message CancelCombatChallengeDataProto {
+	optional int32 ob_int32 = 1;
+}
+
 message CancelCombatChallengeOutProto {
 	enum Result {
 		UNSET = 0;
@@ -6849,6 +6865,12 @@ message CancelCombatChallengeProto {
 	optional string challenge_id = 1;
 }
 
+message CancelCombatChallengeResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional CancelCombatChallengeOutProto.Result result = 3;
+}
+
 message CancelFriendInviteOutProto {
 	enum Result {
 		UNSET = 0;
@@ -6866,6 +6888,10 @@ message CancelFriendInviteProto {
 	optional string nia_account_id = 2;
 }
 
+message CancelMatchmakingDataProto {
+	optional int32 ob_int32 = 1;
+}
+
 message CancelMatchmakingOutProto {
 	enum Result {
 		UNSET = 0;
@@ -6880,6 +6906,12 @@ message CancelMatchmakingOutProto {
 
 message CancelMatchmakingProto {
 	optional string queue_id = 1;
+}
+
+message CancelMatchmakingResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional CancelMatchmakingOutProto.Result result = 3;
 }
 
 message CancelRouteOutProto {
@@ -6995,6 +7027,11 @@ message CatchPokemonTelemetry {
 	optional int32 hit_grade = 4;
 	optional bool curve_ball = 5;
 	optional double miss_percent = 6;
+}
+
+message ChallengeIdMismatchDataProto {
+	optional string ob_string = 1;
+	optional ObCombatMismatchData.MismatchState.Type type = 2;
 }
 
 message ChangeArTelemetry {
@@ -7608,6 +7645,15 @@ message CombatDefensiveInputChallengeSettings {
 	optional float full_rotations_for_max_score = 1;
 }
 
+message CombatEndDataProto {
+	enum EndType {
+		NO_END = 0;
+		COMBAT_STATE_EXIT = 1;
+	}
+
+	optional EndType end_type = 1;
+}
+
 message CombatFriendRequestOutProto {
 	enum Result {
 		UNSET = 0;
@@ -7664,6 +7710,11 @@ message CombatGlobalSettingsProto {
 
 message CombatHubEntranceTelemetry {
 	optional CombatHubEntranceTelemetryIds combat_hub_telemetry_id = 1;
+}
+
+message CombatIdMismatchDataProto {
+	optional string ob_string = 1;
+	optional ObCombatMismatchData.MismatchState.Type type = 2;
 }
 
 message CombatLeagueProto {
@@ -7941,6 +7992,55 @@ message CombatProto {
 	optional int32 ob_int32_2 = 18;
 }
 
+message CombatPubSubDataProto {
+	enum Type {
+		NO_TYPE = 0;
+		END_NPC_COMBAT = 1;
+		END_INVASION_COMBAT = 2;
+		COMBAT_NOTIFY = 3;
+		END_PVP_COMBAT = 4;
+		VS_SEEKER_MATCH_STARTED = 5;
+		COMBAT_CHARGE_ATTACK_ANIMATION_ACTIVE_CHANGE = 6;
+		COMBAT_UPDATE_ACTION_UI = 7;
+		COMBAT_EXIT_COMBAT_STATE = 8;
+		COMBAT_SUPER_EFFECTIVE_CHARGED_ATTACKS_UPDATE = 9;
+		COMBAT_STATE_ENTERED = 10;
+		COMBAT_STATE_DONE = 11;
+		COMBAT_STATE_EXITED = 12;
+		COMBAT_INITIALIZE_PRESENTATION_DIRECTOR = 13;
+		COMBAT_SHOW_UI = 14;
+		COMBAT_HIDE_UI = 15;
+		COMBAT_SHOW_MESSAGE = 16;
+		COMBAT_SHOW_TOAST = 17;
+		COMBAT_SHOW_TUTORIAL = 18;
+		COMBAT_UPDATE_IS_SHOWING_CHARGE_ANIM = 19;
+		COMBAT_PLAY_MINI_GAME = 20;
+		COMBAT_CONTINUE_AFTER_MINI_GAME = 21;
+		COMBAT_SHOW_SPECIAL_ATTACK = 22;
+		COMBAT_SPECIAL_MOVE_STATE_ENDED = 23;
+		COMBAT_CLEAN_UP_SPECIAL_MOVE_STATE = 24;
+		COMBAT_HANDLE_SPECIAL_MOVE_CAMERA_ZOOM = 25;
+		COMBAT_SHIELD_USED = 26;
+		COMBAT_DEFENDER_FLINCH = 27;
+		COMBAT_OPPONENT_REACT = 28;
+		COMBAT_FOCUS_ON_POKEMON = 29;
+		COMBAT_PLAY_START_FADE_TRANSITION = 30;
+		COMBAT_PLAY_END_FADE_TRANSITION = 31;
+		COMBAT_COUNTDOWN_STARTED = 32;
+		COMBAT_PLAY_BACK_BUTTON_SFX = 33;
+		COMBAT_SETUP_COMBAT_STAGE_SUBSCRIPTIONS = 34;
+		COMBAT_OPPONENT_RETRIEVE_POKEMON = 35;
+		COMBAT_HIDE_NAMEPLATE = 36;
+		COMBAT_DISPLAY_PHYSICAL_SHIELD = 37;
+		COMBAT_UPDATE_TIMER = 38;
+		COMBAT_STOP_CHARGE_ATTACK_EFFECTS = 39;
+		COMBAT_DEFENSIVE_MINI_GAME_DECIDED = 40;
+		COMBAT_DEFENSIVE_MINI_GAME_SERVER_RESPONSE = 41;
+	}
+
+	optional Type type = 1;
+}
+
 message CombatQuestUpdateProto {
 	optional int32 super_effective_charged_attacks_update = 1;
 }
@@ -8005,9 +8105,10 @@ message CombatSettingsProto {
 	optional float purified_pokemon_attack_multiplier_vs_shadow = 32;
 	repeated FastMoveLeakBaselineProto fast_move_leak_baseline = 35;
 	optional bool ob_bool = 36;
+	optional int32 ob_int32_1 = 37;
 	optional ObCombatSettings ob_combat_settings = 38;
 	optional ObCombatSettings1 ob_combat_settings_1 = 39;
-	optional int32 ob_int32 = 40;
+	optional int32 ob_int32_2 = 40;
 }
 
 message CombatStatStageSettingsProto {
@@ -8015,6 +8116,27 @@ message CombatStatStageSettingsProto {
 	optional int32 maximum_stat_stage = 2;
 	repeated float attack_buff_multiplier = 3;
 	repeated float defense_buff_multiplier = 4;
+}
+
+message CombatSyncServerDataProto {
+	optional int32 ob_int32 = 1;
+}
+
+message CombatSyncServerResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional CombatSyncServerResponseStateDataProto.Result result = 2;
+	optional uint32 ob_uint32 = 3;
+}
+
+message CombatSyncServerResponseStateDataProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		FAILURE = 2;
+	}
+
+	optional int64 ob_int64 = 1;
+	optional Result result = 2;
 }
 
 message CombatTypeProto {
@@ -8383,6 +8505,10 @@ message CreateBuddyMultiplayerSessionOutProto {
 message CreateBuddyMultiplayerSessionProto {
 }
 
+message CreateCombatChallengeDataProto {
+	optional int32 ob_int32 = 1;
+}
+
 message CreateCombatChallengeOutProto {
 	enum Result {
 		UNSET = 0;
@@ -8398,6 +8524,12 @@ message CreateCombatChallengeOutProto {
 
 message CreateCombatChallengeProto {
 	optional string challenge_id = 1;
+}
+
+message CreateCombatChallengeResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional CreateCombatChallengeOutProto.Result result = 3;
 }
 
 message CreatePokemonTagOutProto {
@@ -8553,6 +8685,10 @@ message DebugInfoProto {
 	optional double longitude = 2;
 }
 
+message DeclineCombatChallengeDataProto {
+	optional int32 ob_int32 = 1;
+}
+
 message DeclineCombatChallengeOutProto {
 	enum Result {
 		UNSET = 0;
@@ -8568,6 +8704,12 @@ message DeclineCombatChallengeOutProto {
 
 message DeclineCombatChallengeProto {
 	optional string challenge_id = 1;
+}
+
+message DeclineCombatChallengeResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional DeclineCombatChallengeOutProto.Result result = 3;
 }
 
 message DeclineExRaidPassLogEntry {
@@ -9579,6 +9721,16 @@ message ExceptionCaugthDataProto {
 	optional ExceptionType ob_exception = 2;
 }
 
+message ExceptionCaugthDataV2Proto {
+	enum ExceptionType {
+		NO_EXCEPTION = 0;
+		COMBAT_PUB_SUB = 1;
+	}
+
+	optional int32 ob_int32 = 1;
+	optional ExceptionType type = 2;
+}
+
 message ExclusiveRaidCancellationProto {
 	optional string fort_id = 1;
 	optional int64 start_time_ms = 2;
@@ -10418,6 +10570,10 @@ message GcmToken {
 	optional string registration_id = 1;
 }
 
+message GenerateCombatChallengeIdDataProto {
+	optional int32 ob_int32 = 1;
+}
+
 message GenerateCombatChallengeIdOutProto {
 	enum Result {
 		UNSET = 0;
@@ -10432,6 +10588,12 @@ message GenerateCombatChallengeIdOutProto {
 
 message GenerateCombatChallengeIdProto {
 	optional string ob_string = 1;
+}
+
+message GenerateCombatChallengeIdResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional GenerateCombatChallengeIdOutProto.Result result = 3;
 }
 
 message GenerateGmapSignedUrlOutProto {
@@ -10701,6 +10863,10 @@ message GetClientFeatureFlagsResponse {
 	optional SocialClientGlobalSettings global_settings = 2;
 }
 
+message GetCombatChallengeDataProto {
+	optional int32 ob_int32 = 1;
+}
+
 message GetCombatChallengeOutProto {
 	enum Result {
 		UNSET = 0;
@@ -10714,6 +10880,17 @@ message GetCombatChallengeOutProto {
 
 message GetCombatChallengeProto {
 	optional string challenge_id = 1;
+}
+
+message GetCombatChallengeResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional GetCombatChallengeOutProto.Result result = 3;
+	optional ObCommunCombatChallengeDataProto challenge = 4;
+}
+
+message GetCombatPlayerProfileDataProto {
+	optional int32 ob_int32 = 1;
 }
 
 message GetCombatPlayerProfileOutProto {
@@ -10730,6 +10907,12 @@ message GetCombatPlayerProfileOutProto {
 
 message GetCombatPlayerProfileProto {
 	optional string player_id = 1;
+}
+
+message GetCombatPlayerProfileResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional GetCombatPlayerProfileOutProto.Result result = 3;
 }
 
 message GetCombatResultsOutProto {
@@ -11388,6 +11571,10 @@ message GetMapObjectsTriggerTelemetry {
 	optional TriggerType trigger_type = 1;
 }
 
+message GetMatchmakingStatusDataProto {
+	optional int32 ob_int32 = 1;
+}
+
 message GetMatchmakingStatusOutProto {
 	enum Result {
 		UNSET = 0;
@@ -11406,6 +11593,13 @@ message GetMatchmakingStatusOutProto {
 
 message GetMatchmakingStatusProto {
 	optional string queue_id = 1;
+}
+
+message GetMatchmakingStatusResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional GetMatchmakingStatusOutProto.Result result = 3;
+	optional ObCommunCombatChallengeDataProto challenge = 4;
 }
 
 message GetMementoListOutProto {
@@ -12956,6 +13150,20 @@ message InvasionAvailabilitySettingsProto {
 	optional int64 availability_end_minute = 2;
 }
 
+message InvasionBattleResponseUpdateProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional InvasionStatus.Status status = 3;
+}
+
+message InvasionBattleUpdateProto {
+	optional int32 ob_int32_1 = 1;
+	optional int32 ob_int32_2 = 2;
+	optional bool ob_bool = 3;
+	optional UpdateInvasionBattleProto.UpdateType update_type = 4;
+	optional uint32 ob_uint32 = 5;
+}
+
 message InvasionCreateDetail {
 	optional EnumWrapper.InvasionCharacter origin = 1;
 }
@@ -12999,6 +13207,21 @@ message InvasionNpcDisplaySettingsProto {
 	optional bool is_male = 9;
 	optional string party_selection_music = 10;
 	optional string combat_music = 11;
+}
+
+message InvasionOpenCombatSessionDataProto {
+	optional int32 ob_int32_1 = 1;
+	optional CombatType type = 2;
+	repeated int32 ob_list_int32 = 3;
+	optional uint32 ob_uint32 = 4;
+	optional int32 ob_int32_2 = 5;
+}
+
+message InvasionOpenCombatSessionResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional InvasionStatus.Status result = 3;
+	optional ObCommunWebCombatStateProto ob_commun_web_combat_state = 4;
 }
 
 message InvasionStatus {
@@ -13396,6 +13619,11 @@ message LayerRule {
 	repeated MaskedColor fill_colors = 1;
 	repeated GmmRoadPriority road_priority = 2;
 	optional uint32 road_attribute_bitfield = 3;
+}
+
+message LeagueIdMismatchDataProto {
+	optional string ob_string = 1;
+	optional ObCombatMismatchData.MismatchState.Type type = 2;
 }
 
 message LeaveBuddyMultiplayerSessionOutProto {
@@ -14345,6 +14573,124 @@ message NpcPokemonProto {
 	optional PokemonDisplayProto pokemon_display = 2;
 }
 
+message ObCombatMismatchData {
+	optional OpenCombatSessionDataProto open_combat_session_data = 2;
+	optional OpenCombatSessionResponseDataProto open_combat_session_response_data = 3;
+	optional UpdateCombatDataProto update_combat_data = 4;
+	optional UpdateCombatResponseDataProto update_combat_response_data = 5;
+	optional QuitCombatDataProto quit_combat_data = 6;
+	optional QuitCombatResponseDataProto quit_combat_response_data = 7;
+	optional WebSocketResponseDataProto web_socket_response_data = 8;
+	optional RpcErrorDataProto rpc_error_data = 9;
+	optional GetCombatPlayerProfileDataProto get_combat_player_profile_data = 10;
+	optional GetCombatPlayerProfileResponseDataProto get_combat_player_profile_response_data = 11;
+	optional GenerateCombatChallengeIdDataProto generate_combat_challenge_id_data = 12;
+	optional GenerateCombatChallengeIdResponseDataProto generate_combat_challenge_id_response_data = 13;
+	optional CreateCombatChallengeDataProto create_combat_challenge_data = 14;
+	optional CreateCombatChallengeResponseDataProto create_combat_challenge_response_data = 15;
+	optional OpenCombatChallengeDataProto open_combat_challenge_data = 16;
+	optional OpenCombatChallengeResponseDataProto open_combat_challenge_response_data = 17;
+	optional OpenNpcCombatSessionDataProto open_npc_combat_session_data = 18;
+	optional OpenNpcCombatSessionResponseDataProto open_npc_combat_session_response_data = 19;
+	optional AcceptCombatChallengeDataProto accept_combat_challenge_data = 20;
+	optional AcceptCombatChallengeResponseDataProto accept_combat_challenge_response_data = 21;
+	optional SubmitCombatChallengePokemonsDataProto submit_combat_challenge_pokemons_data = 22;
+	optional SubmitCombatChallengePokemonsResponseDataProto submit_combat_challenge_pokemons_response_data = 23;
+	optional DeclineCombatChallengeDataProto decline_combat_challenge_data = 24;
+	optional DeclineCombatChallengeResponseDataProto decline_combat_challenge_response_data = 25;
+	optional CancelCombatChallengeDataProto cancel_combat_challenge_data = 26;
+	optional CancelCombatChallengeResponseDataProto cancel_combat_challenge_response_data = 27;
+	optional GetCombatChallengeDataProto get_combat_challenge_data = 28;
+	optional GetCombatChallengeResponseDataProto get_combat_challenge_response_data = 29;
+	optional VsSeekerStartMatchmakingDataProto vs_seeker_start_matchmaking_data = 30;
+	optional VsSeekerStartMatchmakingResponseDataProto vs_seeker_start_matchmaking_response_data = 31;
+	optional GetMatchmakingStatusDataProto get_matchmaking_status_data = 32;
+	optional GetMatchmakingStatusResponseDataProto get_matchmaking_status_response_data = 33;
+	optional CancelMatchmakingDataProto cancel_matchmaking_data = 34;
+	optional CancelMatchmakingResponseDataProto cancel_matchmaking_response_data = 35;
+	optional SubmitCombatActionProto submit_combat_action = 36;
+	optional InvasionOpenCombatSessionDataProto invasion_open_combat_session_data = 37;
+	optional InvasionOpenCombatSessionResponseDataProto invasion_open_combat_session_response_data = 38;
+	optional InvasionBattleUpdateProto invasion_battle_update = 39;
+	optional InvasionBattleResponseUpdateProto invasion_battle_response_update = 40;
+	optional CombatIdMismatchDataProto combat_id_mismatch_data = 41;
+	optional LeagueIdMismatchDataProto league_id_mismatch_data = 42;
+	optional ChallengeIdMismatchDataProto challenge_id_mismatch_data = 43;
+	optional ProgressTokenDataV2 progress_token_data = 44;
+	optional OnApplicationFocusDataProto on_application_focus_data = 45;
+	optional OnApplicationPauseDataProto on_application_pause_data = 46;
+	optional OnApplicationQuitDataProto on_application_quit_data = 47;
+	optional ExceptionCaugthDataV2Proto exception_caught_data = 48;
+	optional CombatPubSubDataProto combat_pub_sub_data = 49;
+	optional CombatEndDataProto combat_end_data = 50;
+	optional CombatSyncServerDataProto combat_sync_server_data = 51;
+	optional CombatSyncServerResponseDataProto combat_sync_server_response_data = 52;
+
+	message MismatchState {
+		enum Type {
+			NO_TYPE = 0;
+			OPEN_COMBAT_SESSION = 1;
+			OPEN_COMBAT_SESSION_RESPONSE = 2;
+			UPDATE_COMBAT = 3;
+			UPDATE_COMBAT_RESPONSE = 4;
+			QUIT_COMBAT = 5;
+			QUIT_COMBAT_RESPONSE = 6;
+			WEB_SOCKET_RESPONSE = 7;
+			RPC_ERROR = 8;
+			GET_COMBAT_PLAYER_PROFILE = 9;
+			GET_COMBAT_PLAYER_PROFILE_RESPONSE = 10;
+			GENERATE_COMBAT_CHALLENGE_ID = 11;
+			GENERATE_COMBAT_CHALLENGE_ID_RESPONSE = 12;
+			CREATE_COMBAT_CHALLENGE = 13;
+			CREATE_COMBAT_CHALLENGE_RESPONSE = 14;
+			OPEN_COMBAT_CHALLENGE = 15;
+			OPEN_COMBAT_CHALLENGE_RESPONSE = 16;
+			OPEN_NPC_COMBAT_SESSION = 17;
+			OPEN_NPC_COMBAT_SESSION_RESPONSE = 18;
+			ACCEPT_COMBAT_CHALLENGE = 19;
+			ACCEPT_COMBAT_CHALLENGE_RESPONSE = 20;
+			SUBMIT_COMBAT_CHALLENGE_POKEMONS = 21;
+			SUBMIT_COMBAT_CHALLENGE_POKEMONS_RESPONSE = 22;
+			DECLINE_COMBAT_CHALLENGE = 23;
+			DECLINE_COMBAT_CHALLENGE_RESPONSE = 24;
+			CANCEL_COMBAT_CHALLENGE = 25;
+			CANCEL_COMBAT_CHALLENGE_RESPONSE = 26;
+			GET_COMBAT_CHALLENGE = 27;
+			GET_COMBAT_CHALLENGE_RESPONSE = 28;
+			VS_SEEKER_START_MATCHMAKING = 29;
+			VS_SEEKER_START_MATCHMAKING_RESPONSE = 30;
+			GET_MATCHMAKING_STATUS = 31;
+			GET_MATCHMAKING_STATUS_RESPONSE = 32;
+			CANCEL_MATCHMAKING = 33;
+			CANCEL_MATCHMAKING_RESPONSE = 34;
+			SUBMIT_COMBAT_ACTION = 35;
+			INVASION_OPEN_COMBAT_SESSION = 36;
+			INVASION_OPEN_COMBAT_SESSION_RESPONSE = 37;
+			INVASION_BATTLE_UPDATE = 38;
+			INVASION_BATTLE_UPDATE_RESPONSE = 39;
+			COMBAT_ID_MISMATCH = 40;
+			LEAGUE_ID_MISMATCH = 41;
+			CHALLENGE_ID_MISMATCH = 42;
+			PROGRESS_TOKEN = 43;
+			ON_APPLICATION_FOCUS = 44;
+			ON_APPLICATION_PAUSE = 45;
+			ON_APPLICATION_QUIT = 46;
+			EXCEPTION_CAUGHT = 47;
+			PUB_SUB_MESSAGE = 48;
+			PLAYER_END_COMBAT = 49;
+			COMBAT_SYNC_SERVER = 50;
+			COMBAT_SYNC_SERVER_RESPONSE = 51;
+		}
+
+		optional Type type = 1;
+		optional uint32 ob_uint32_1 = 2;
+		optional uint32 ob_uint32_2 = 3;
+		optional float ob_float = 4;
+	}
+
+	optional MismatchState state = 1;
+}
+
 message ObCombatProto {
 	optional int32 ob_int32_1 = 1;
 	optional int32 ob_int32_2 = 2;
@@ -14362,6 +14708,61 @@ message ObCombatSettings1 {
 	optional bool ob_bool_2 = 2;
 	optional bool ob_bool_3 = 3;
 	optional bool ob_bool_4 = 4;
+}
+
+message ObCommunCombatChallengeDataProto {
+	optional CombatType type = 1;
+	repeated int32 ob_int32_list_1 = 2;
+	repeated int32 ob_int32_list_2 = 3;
+	optional CombatChallengeProto.CombatChallengeState combat_challenge_state = 4;
+	optional uint32 ob_uint32_1 = 5;
+	optional uint32 ob_uint32_2 = 6;
+}
+
+message ObCommunCombatDataProto {
+	optional CombatActionProto.ActionType type = 1;
+	optional int32 ob_int32_1 = 2;
+	optional int32 ob_int32_2 = 3;
+	optional int32 ob_int32_3 = 4;
+	optional int32 ob_int32_4 = 5;
+	optional int32 ob_int32_5 = 6;
+	optional int32 ob_int32_6 = 7;
+	optional float ob_float = 8;
+	optional int32 ob_move = 9;
+}
+
+message ObCommunWebCombatStateProto {
+	message ObMaybePokemonData {
+		optional int32 ob_int32_1 = 1;
+		optional int32 ob_int32_2 = 2;
+		optional int32 ob_int32_3 = 3;
+		optional int32 ob_int32_4 = 4;
+		optional int32 ob_int32_5 = 5;
+	}
+
+	message ObCommunWebCombatDataProto {
+		optional ObMaybePokemonData ob_active_pokemon = 1;
+		repeated ObMaybePokemonData ob_active_pokemon_list_1 = 2;
+		repeated ObMaybePokemonData ob_active_pokemon_list_2 = 3;
+		optional ObCommunCombatDataProto ob_commun_combat_data_1 = 4;
+		optional bool ob_bool = 5;
+		optional int32 ob_int32_1 = 6;
+		optional ObCommunCombatDataProto ob_commun_combat_data_2 = 7;
+		optional uint32 ob_uint32 = 8;
+		optional int32 ob_int32_2 = 9;
+	}
+
+	optional CombatProto.CombatState ob_combat_state = 1;
+	optional ObCommunWebCombatDataProto ob_commun_web_combat_data_1 = 3;
+	optional ObCommunWebCombatDataProto ob_commun_web_combat_data_2 = 4;
+	optional uint32 ob_uint32_1 = 7;
+	optional int32 ob_int32 = 8;
+	optional uint32 ob_uint32_2 = 9;
+	optional uint32 ob_uint32_3 = 10;
+	optional uint32 ob_uint32_4 = 11;
+	optional uint32 ob_uint32_5 = 12;
+	optional uint32 ob_uint32_6 = 13;
+	optional uint32 ob_uint32_7 = 14;
 }
 
 message ObEggIncubators1 {
@@ -14410,6 +14811,46 @@ message ObEggStatus {
 message ObEvoleField {
 	optional float ob_float_1 = 1;
 	optional float ob_float_2 = 2;
+}
+
+message ObFieldMessageOrResponseProto {
+	optional string ob_string_1 = 1;
+	optional string ob_string_2 = 2;
+	optional string ob_string_3 = 3;
+	optional string ob_string_4 = 4;
+	optional string ob_string_5 = 5;
+	optional string ob_string_6 = 6;
+	repeated ObFieldMessageOrResponseProtoOne ob_field_message_or_response_one_1 = 7;
+	repeated ObFieldMessageOrResponseProtoOne ob_field_message_or_response_one_2 = 8;
+	optional int64 ob_int64_1 = 9;
+	optional int64 ob_int64_2 = 10;
+	optional int64 ob_int64_3 = 11;
+	optional int64 ob_int64_4 = 12;
+	optional int64 ob_int64_5 = 13;
+}
+
+message ObFieldMessageOrResponseProtoOne {
+	optional uint64 ob_uint64 = 1;
+	optional int32 ob_int32_1 = 2;
+	optional int32 ob_int32_2 = 3;
+	optional float ob_float = 4;
+	optional int32 ob_int32_3 = 5;
+	optional int32 ob_int32_4 = 6;
+	optional int32 ob_int32_5 = 7;
+	optional int32 ob_int32_6 = 8;
+	optional PokemonDisplayProto pokemon_display = 9;
+	optional int32 ob_int32_7 = 10;
+	optional int32 ob_int32_8 = 11;
+	optional int32 ob_int32_9 = 12;
+	optional int32 ob_int32_10 = 13;
+	optional int32 ob_int32_11 = 14;
+	optional string ob_string = 15;
+	optional Item pokeball = 16;
+}
+
+message ObFieldMessageOrResponseProtoTwo {
+	optional ObFieldMessageOrResponseProto ob_field_message_or_response = 1;
+	repeated ObCombatMismatchData ob_combat_mismatch_data = 2;
 }
 
 message ObMegaEvolvePokemonProtoField {
@@ -14562,6 +15003,12 @@ message OpenBuddyGiftOutProto {
 message OpenBuddyGiftProto {
 }
 
+message OpenCombatChallengeDataProto {
+	optional int32 ob_int32 = 1;
+	optional CombatType type = 2;
+	repeated int32 ob_list_int32 = 3;
+}
+
 message OpenCombatChallengeOutProto {
 	enum Result {
 		UNSET = 0;
@@ -14589,6 +15036,20 @@ message OpenCombatChallengeProto {
 	optional string combat_league_template_id = 3;
 	optional string opponent_player_id = 4;
 	repeated fixed64 attacking_pokemon_id = 5;
+}
+
+message OpenCombatChallengeResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional OpenCombatChallengeOutProto.Result result = 3;
+	optional ObCommunCombatChallengeDataProto challenge = 4;
+}
+
+message OpenCombatSessionDataProto {
+	optional int32 ob_int32 = 1;
+	repeated int32 ob_list_int32 = 2;
+	optional uint32 ob_uint32 = 3;
+	optional CombatType combat_type = 4;
 }
 
 message OpenCombatSessionOutProto {
@@ -14620,6 +15081,12 @@ message OpenCombatSessionProto {
 	optional string combat_league_template_id = 3;
 	optional int64 lobby_join_time_ms = 4;
 	optional CombatType combat_type = 5;
+}
+
+message OpenCombatSessionResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional OpenCombatSessionOutProto ob_open_combat_session_response = 3;
 }
 
 message OpenGiftLogEntry {
@@ -14672,6 +15139,12 @@ message OpenInvasionCombatSessionProto {
 	optional int64 lobby_join_time_ms = 4;
 }
 
+message OpenNpcCombatSessionDataProto {
+	optional int32 ob_int32 = 1;
+	repeated int32 ob_list_int32 = 2;
+	optional uint32 ob_uint32 = 3;
+}
+
 message OpenNpcCombatSessionOutProto {
 	enum Result {
 		UNSET = 0;
@@ -14689,6 +15162,13 @@ message OpenNpcCombatSessionProto {
 	repeated fixed64 attacking_pokemon_id = 1;
 	optional string combat_npc_template_id = 2;
 	optional int64 lobby_join_time_ms = 3;
+}
+
+message OpenNpcCombatSessionResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional OpenNpcCombatSessionOutProto.Result result = 3;
+	optional ObCommunWebCombatStateProto ob_commun_web_combat_state = 4;
 }
 
 message OpenSponsoredGiftOutProto {
@@ -18576,6 +19056,86 @@ message ProgressTokenDataProto {
 	optional int32 ob_progress_token_int32 = 1;
 }
 
+message ProgressTokenDataV2 {
+	optional CombatActiveStateFunctionProto combat_active_state_function = 2;
+	optional CombatEndStateFunctionProto combat_end_state_function = 3;
+	optional CombatReadyStateFunctionProto combat_ready_state_function = 4;
+	optional CombatSwapStateFunctionProto combat_swap_state_function = 5;
+	optional CombatSpecialMoveStateFunctionProto combat_special_move_state_function = 6;
+	optional CombatWaitForPlayerStateFunctionProto combat_wait_for_player_state_function = 7;
+	optional CombatPresentationDirectorFunctionProto combat_presentation_director_function = 8;
+	optional CombatDirectorV2FunctionProto combat_director_v2_function = 9;
+	optional CombatStateV2FunctionProto combat_state_v2_function = 10;
+
+	enum CombatSwapStateFunctionProto {
+		NONE_COMBAT_SWAP_STATE = 0;
+		ENTER_COMBAT_SWAP_STATE = 1;
+		EXIT_COMBAT_SWAP_STATE = 2;
+		DO_WORK_COMBAT_SWAP_STATE = 3;
+	}
+
+	enum CombatStateV2FunctionProto {
+		NONE_COMBAT_STATE_V2 = 0;
+		OBSERVE_COMBAT_STATE = 1;
+	}
+
+	enum CombatSpecialMoveStateFunctionProto {
+		NONE_COMBAT_SPECIAL_MOVE_STATE = 0;
+		ENTER_COMBAT_SPECIAL_MOVE_STATE = 1;
+		EXIT_COMBAT_SPECIAL_MOVE_STATE = 2;
+		DO_WORK_COMBAT_SPECIAL_MOVE_STATE = 3;
+	}
+
+	enum CombatActiveStateFunctionProto {
+		NONE_COMBAT_ACTIVE_STATE = 0;
+		ENTER_COMBAT_ACTIVE_STATE = 1;
+		EXIT_COMBAT_ACTIVE_STATE = 2;
+		DO_WORK_COMBAT_ACTIVE_STATE = 3;
+	}
+
+	enum CombatReadyStateFunctionProto {
+		NONE_COMBAT_READY_STATE = 0;
+		ENTER_COMBAT_READY_STATE = 1;
+		EXIT_COMBAT_READY_STATE = 2;
+		DO_WORK_COMBAT_READY_STATE = 3;
+	}
+
+	enum CombatEndStateFunctionProto {
+		NONE_COMBAT_END_STATE = 0;
+		ENTER_COMBAT_END_STATE = 1;
+		EXIT_COMBAT_END_STATE = 2;
+		DO_WORK_COMBAT_END_STATE = 3;
+	}
+
+	enum CombatDirectorV2FunctionProto {
+		NONE_COMBAT_DIRECTOR_V2 = 0;
+		TRY_START_COMBAT = 1;
+		START_COMBAT_ERROR = 2;
+		RECEIVE_COMBAT_UPDATE = 3;
+		TRY_FAST_ATTACK = 4;
+		SWAP_POKEMON_TO = 5;
+		QUEUE_SPECIAL_ATTACK = 6;
+		TRY_SPECIAL_ATTACK = 7;
+		TRY_EXECUTE_BUFFERED_ACTION = 8;
+		CAN_ACT_ON_TURN = 9;
+		CAN_PERFORM_ATTACK = 10;
+	}
+
+	enum CombatWaitForPlayerStateFunctionProto {
+		NONE_COMBAT_WAIT_FOR_PLAYER_STATE = 0;
+		ENTER_COMBAT_WAIT_FOR_PLAYER_STATE = 1;
+		EXIT_COMBAT_WAIT_FOR_PLAYER_STATE = 2;
+		DO_WORK_COMBAT_WAIT_FOR_PLAYER_STATE = 3;
+	}
+
+	enum CombatPresentationDirectorFunctionProto {
+		NONE_COMBAT_PRESENTATION_DIRECTOR = 0;
+		PLAY_MINI_GAME = 1;
+	}
+
+	optional int32 ob_int32 = 1;
+}
+
 message ProjectVacationProto {
 	optional bool enable2020 = 1;
 }
@@ -19154,6 +19714,10 @@ message QuestsProto {
 	repeated QuestIncidentProto quest_incident = 5;
 }
 
+message QuitCombatDataProto {
+	optional int32 ob_int32 = 1;
+}
+
 message QuitCombatOutProto {
 	enum Result {
 		UNSET = 0;
@@ -19169,6 +19733,12 @@ message QuitCombatOutProto {
 
 message QuitCombatProto {
 	optional string combat_id = 1;
+}
+
+message QuitCombatResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional QuitCombatOutProto ob_quit_combat_response = 3;
 }
 
 message RaidClientLogInfoProto {
@@ -21363,6 +21933,16 @@ message StoreIapSettingsProto {
 	optional IapLibraryVersion library_version = 2;
 }
 
+message SubmitCombatActionProto {
+	optional ObCommunCombatDataProto ob_commun_combat_data = 1;
+}
+
+message SubmitCombatChallengePokemonsDataProto {
+	optional int32 ob_int32 = 1;
+	repeated int32 ob_list_int32 = 2;
+	optional uint32 ob_uint32 = 3;
+}
+
 message SubmitCombatChallengePokemonsOutProto {
 	enum Result {
 		UNSET = 0;
@@ -21385,6 +21965,13 @@ message SubmitCombatChallengePokemonsProto {
 	optional string challenge_id = 1;
 	repeated fixed64 attacking_pokemon_id = 2;
 	optional int64 lobby_join_time_ms = 3;
+}
+
+message SubmitCombatChallengePokemonsResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional SubmitCombatChallengePokemonsOutProto.Result result = 3;
+	optional ObCommunCombatChallengeDataProto challenge = 4;
 }
 
 message SubmitNewPoiOutProto {
@@ -22048,6 +22635,11 @@ message UpdateBreadcrumbHistoryResponseProto {
 	optional Status status = 1;
 }
 
+message UpdateCombatDataProto {
+	optional int32 ob_int32 = 1;
+	optional ObCommunCombatDataProto ob_commun_combat_data = 2;
+}
+
 message UpdateCombatOutProto {
 	enum Result {
 		UNSET = 0;
@@ -22083,6 +22675,13 @@ message UpdateCombatProto {
 	optional string combat_id = 1;
 	optional CombatActionProto action = 2;
 	optional string debug_log = 3;
+}
+
+message UpdateCombatResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional UpdateCombatOutProto.Result result = 3;
+	optional ObCommunWebCombatStateProto ob_commun_web_combat_state = 4;
 }
 
 message UpdateFacebookStatusOutProto {
@@ -22809,6 +23408,11 @@ message VsSeekerSetLogEntry {
 	optional int32 number_of_battles = 8;
 }
 
+message VsSeekerStartMatchmakingDataProto {
+	optional int32 ob_int32 = 1;
+	repeated int32 ob_list_int32 = 2;
+}
+
 message VsSeekerStartMatchmakingOutProto {
 	enum Result {
 		UNSET = 0;
@@ -22834,6 +23438,13 @@ message VsSeekerStartMatchmakingOutProto {
 message VsSeekerStartMatchmakingProto {
 	optional string combat_league_template_id = 1;
 	repeated fixed64 attacking_pokemon_id = 2;
+}
+
+message VsSeekerStartMatchmakingResponseDataProto {
+	optional int32 ob_int32 = 1;
+	optional uint32 ob_uint32 = 2;
+	optional VsSeekerStartMatchmakingOutProto.Result result = 3;
+	optional ObCommunCombatChallengeDataProto challenge = 4;
 }
 
 message VsSeekerWinRewardsLogEntry {
@@ -22932,6 +23543,10 @@ message WeatherDetailClickTelemetry {
 	optional string gameplay_weather_type = 1;
 	optional bool alert_active = 2;
 	optional WeatherAlertProto.Severity severity = 3;
+}
+
+message WebSocketResponseDataProto {
+	optional ObCommunWebCombatStateProto ob_commun_web_combat_state = 1;
 }
 
 message WebTelemetry {
