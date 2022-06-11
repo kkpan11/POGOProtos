@@ -7433,6 +7433,23 @@ message CreatePokemonTagOutProto {
 	PokemonTagProto created_tag = 2;
 }
 
+message CreatePostcardOutProto {
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_SENDER_DOES_NOT_EXIST = 2;
+		ERROR_GIFT_DOES_NOT_EXIST = 3;
+		ERROR_POSTCARD_ALREADY_CREATED = 4;
+		ERROR_POSTCARD_INVENTORY_FULL = 5;
+		ERROR_NOT_ENABLED = 6;
+		ERROR_RATE_LIMITED = 7;
+		ERROR_PLAYER_HAS_NO_STICKERS = 8;
+	}
+
+	Result result = 1;
+	PostcardDisplayProto ob_postcard_display = 2;
+}
+
 message CrossGameSocialGlobalSettingsProto {
 	int32 gjjphgnclek = 1;
 	int32 ojekmifomon = 2;
@@ -20467,17 +20484,17 @@ message SendGiftOutProto {
 	enum Result {
 		UNSET = 0;
 		SUCCESS = 1;
-		ERROR_SENDER_DOES_NOT_EXIST = 2;
-		ERROR_GIFT_DOES_NOT_EXIST = 3;
-		ERROR_POSTCARD_ALREADY_CREATED = 4;
-		ERROR_POSTCARD_INVENTORY_FULL = 5;
-		ERROR_NOT_ENABLED = 6;
-		ERROR_RATE_LIMITED = 7;
+		ERROR_UNKNOWN = 2;
+		ERROR_PLAYER_DOES_NOT_EXIST = 3;
+		ERROR_GIFT_DOES_NOT_EXIST = 4;
+		ERROR_GIFT_ALREADY_SENT_TODAY = 5;
+		ERROR_PLAYER_HAS_UNOPENED_GIFT = 6;
+		ERROR_FRIEND_UPDATE = 7;
 		ERROR_PLAYER_HAS_NO_STICKERS = 8;
 	}
 
 	Result result = 1;
-	PostcardDisplayProto ob_postcard_display = 2;
+	int32 gcmglcjkngk = 2;
 }
 
 message SendRaidInvitationDataProto {
