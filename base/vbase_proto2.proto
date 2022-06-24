@@ -5036,6 +5036,7 @@ message AllTypesAndMessagesResponsesProto {
 		optional GetAvailableSkusAndBalancesProto get_available_skus_and_balances_proto_5020 = 5020;
 		optional RedeemGoogleReceiptProto redeem_googlereceipt_proto_5021 = 5021;
 		optional RedeemAppleReceiptProto redeem_applereceipt_proto_5022 = 5022;
+		optional FitnessUpdateProto fitness_update_proto_5024 = 5024;
 		optional GetFitnessReportProto get_fitness_report_proto_5025 = 5025;
 		optional ClientTelemetrySettingsRequestProto client_telemetry_settings_request_proto_5026 = 5026;
 		optional SetInGameCurrencyExchangeRateProto set_in_game_currency_exchange_rate_proto_5032 = 5032;
@@ -5106,12 +5107,14 @@ message AllTypesAndMessagesResponsesProto {
 		optional GenerateGmapSignedUrlProto generategmap_signed_url_proto_620300 = 620300;
 		optional GetGmapSettingsProto getgmap_settings_proto_620301 = 620301;
 		optional PoiVideoSubmissionMetadataProto poi_video_submission_metadataproto_620400 = 620400;
+		optional GetGrapeshotUploadUrlProto getgrapeshot_upload_url_proto_620401 = 620401;
 		optional AsyncFileUploadCompleteProto async_file_upload_complete_proto_620402 = 620402;
 		optional GetARMappingSettingsProto get_a_r_mapping_settings_proto_620403 = 620403;
 		optional GetImagesForPoiProto get_images_for_poi_proto_620500 = 620500;
 		optional SubmitPlayerImageVoteForPoiProto submit_player_image_vote_for_poi_proto_620501 = 620501;
 		optional GetImageGallerySettingsProto get_imagegallery_settings_proto_620502 = 620502;
 		optional GetPoisInRadiusProto get_pois_in_radius_proto_620601 = 620601;
+		optional FitnessUpdateProto fitness_update_proto_640000 = 640000;
 		optional GetFitnessReportProto get_fitness_report_proto_640001 = 640001;
 		optional GetAdventureSyncSettingsRequestProto get_adventure_sync_settings_request_proto_640002 = 640002;
 		optional UpdateAdventureSyncSettingsRequestProto update_adventure_sync_settings_request_proto_640003 = 640003;
@@ -5353,6 +5356,7 @@ message AllTypesAndMessagesResponsesProto {
 		optional GetAvailableSkusAndBalancesOutProto get_available_skus_and_balances_out_proto_5020 = 5020;
 		optional RedeemGoogleReceiptOutProto redeem_googlereceipt_out_proto_5021 = 5021;
 		optional RedeemAppleReceiptOutProto redeem_applereceipt_out_proto_5022 = 5022;
+		optional FitnessUpdateOutProto fitness_update_out_proto_5024 = 5024;
 		optional GetFitnessReportOutProto get_fitness_report_out_proto_5025 = 5025;
 		optional SetInGameCurrencyExchangeRateOutProto set_in_game_currency_exchange_rate_out_proto_5032 = 5032;
 		optional GeofenceUpdateOutProto geofence_update_out_proto_5033 = 5033;
@@ -5411,12 +5415,14 @@ message AllTypesAndMessagesResponsesProto {
 		optional GetPlayerSubmissionValidationSettingsOutProto get_player_submission_validation_settings_out_proto_620003 = 620003;
 		optional GenerateGmapSignedUrlOutProto generategmap_signed_url_out_proto_620300 = 620300;
 		optional GetGmapSettingsOutProto getgmap_settings_out_proto_620301 = 620301;
+		optional GetGrapeshotUploadUrlOutProto getgrapeshot_upload_url_out_proto_620401 = 620401;
 		optional AsyncFileUploadCompleteOutProto async_file_upload_complete_out_proto_620402 = 620402;
 		optional GetARMappingSettingsOutProto get_a_r_mapping_settings_out_proto_620403 = 620403;
 		optional GetImagesForPoiOutProto get_images_for_poi_out_proto_620500 = 620500;
 		optional SubmitPlayerImageVoteForPoiOutProto submit_player_image_vote_for_poi_out_proto_620501 = 620501;
 		optional GetImageGallerySettingsOutProto get_imagegallery_settings_out_proto_620502 = 620502;
 		optional GetPoisInRadiusOutProto get_pois_in_radius_out_proto_620601 = 620601;
+		optional FitnessUpdateOutProto fitness_update_out_proto_640000 = 640000;
 		optional GetFitnessReportOutProto get_fitness_report_out_proto_640001 = 640001;
 		optional GetAdventureSyncSettingsResponseProto get_adventure_sync_settings_response_proto_640002 = 640002;
 		optional UpdateAdventureSyncSettingsResponseProto update_adventure_sync_settings_response_proto_640003 = 640003;
