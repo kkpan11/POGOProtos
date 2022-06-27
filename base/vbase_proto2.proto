@@ -9894,6 +9894,23 @@ message EvolutionBranchProto {
 	optional int32 purification_evolution_candy_cost = 19;
 }
 
+message EvolutionChainDataProto {
+	optional string pokedex_header = 1;
+	repeated EvolutionChainEntryProto evolution_chain_entry = 2;
+}
+
+message EvolutionChainDisplaySettingsProto {
+	optional HoloPokemonId pokemon = 1;
+	repeated EvolutionChainDataProto chain = 2;
+}
+
+message EvolutionChainEntryProto {
+	optional HoloPokemonId pokemon = 1;
+	optional HoloTemporaryEvolutionId mega_evolution = 2;
+	optional PokemonDisplayProto.Form form = 3;
+	optional PokemonDisplayProto.Gender gender = 4;
+}
+
 message EvolutionQuestInfoProto {
 	optional string quest_requirement_template_id = 1;
 	optional string description = 2 [deprecated = true];
@@ -10808,7 +10825,7 @@ message GameMasterClientTemplateProto {
 	optional GM9SettingsProto ob_gm_9_settings = 139;
 	optional ImpressionTrackingSettingsProto impression_tracking_setting = 140;
 	optional GM11SettingsProto ob_gm_11_settings = 141;
-	optional ObGMEvolutionTemp ob_evolution_temp = 142;
+	optional EvolutionChainDisplaySettingsProto evolution_chain_display_settings = 142;
 	optional GM7SettingsProto ob_gm_7_settings = 143;
 	optional GM13SettingsProto ob_gm_13_settings = 145;
 	optional TicketGiftingSettingsProto ticket_gifting_settings = 146;
@@ -15304,23 +15321,6 @@ message ObFieldMessageOrResponseProtoOne {
 message ObFieldMessageOrResponseProtoTwo {
 	optional ObFieldMessageOrResponseProto ob_field_message_or_response = 1;
 	repeated ObCombatMismatchData ob_combat_mismatch_data = 2;
-}
-
-message ObGMEvolutionTemp {
-	optional HoloPokemonId pokemon = 1;
-	repeated ObGMEvolutionTemp1 ob_gm_evolution = 2;
-}
-
-message ObGMEvolutionTemp1 {
-	optional string ob_string = 1;
-	repeated ObGMEvolutionTemp2 ob_gm_evolution = 2;
-}
-
-message ObGMEvolutionTemp2 {
-	optional HoloPokemonId pokemon = 1;
-	optional HoloTemporaryEvolutionId mega_evolution = 2;
-	optional PokemonDisplayProto.Form form = 3;
-	optional PokemonDisplayProto.Gender gender = 4;
 }
 
 message ObMegaEvolvePokemonProtoField {

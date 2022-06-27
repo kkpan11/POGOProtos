@@ -8938,6 +8938,23 @@ message EvolutionBranchProto {
 	int32 pefghmholld = 19;
 }
 
+message EvolutionChainDataProto {
+	string hoijbgbblam = 1;
+	repeated EvolutionChainEntryProto evolution_chain_entry = 2;
+}
+
+message EvolutionChainDisplaySettingsProto {
+	HoloPokemonId pokemon = 1;
+	repeated EvolutionChainDataProto chain = 2;
+}
+
+message EvolutionChainEntryProto {
+	HoloPokemonId pokemon = 1;
+	HoloTemporaryEvolutionId hfjdnmmbgge = 2;
+	PokemonDisplayProto.Form bmopheeeicj = 3;
+	PokemonDisplayProto.Gender gender = 4;
+}
+
 message EvolutionQuestInfoProto {
 	string gpplpekahmk = 1;
 	string liangffdfec = 2;
@@ -10046,7 +10063,7 @@ message GameMasterClientTemplateProto {
 	GM9SettingsProto ob_gm_9_settings = 139;
 	ImpressionTrackingSettingsProto impression_tracking_setting = 140;
 	GM11SettingsProto ob_gm_11_settings = 141;
-	ObGMEvolutionTemp ob_evolution_temp = 142;
+	EvolutionChainDisplaySettingsProto evolution_chain_display_settings = 142;
 	GM7SettingsProto ob_gm_7_settings = 143;
 	GM13SettingsProto ob_gm_13_settings = 145;
 	TicketGiftingSettingsProto ticket_gifting_settings = 146;
@@ -15188,23 +15205,6 @@ message ObEggStatus {
 	float lalgdifnoel = 3;
 	Type ikimajmoeam = 4;
 	float hnijggnkbab = 5;
-}
-
-message ObGMEvolutionTemp {
-	HoloPokemonId pokemon = 1;
-	repeated ObGMEvolutionTemp1 ob_gm_evolution = 2;
-}
-
-message ObGMEvolutionTemp1 {
-	string hoijbgbblam = 1;
-	repeated ObGMEvolutionTemp2 ob_gm_evolution = 2;
-}
-
-message ObGMEvolutionTemp2 {
-	HoloPokemonId pokemon = 1;
-	HoloTemporaryEvolutionId hfjdnmmbgge = 2;
-	PokemonDisplayProto.Form bmopheeeicj = 3;
-	PokemonDisplayProto.Gender gender = 4;
 }
 
 message ObMegaEvolvePokemonProtoField {

@@ -153,7 +153,7 @@ import "GM5SettingsProto.proto";
 import "GM9SettingsProto.proto";
 import "ImpressionTrackingSettingsProto.proto";
 import "GM11SettingsProto.proto";
-import "ObGMEvolutionTemp.proto";
+import "EvolutionChainDisplaySettingsProto.proto";
 import "GM7SettingsProto.proto";
 import "GM13SettingsProto.proto";
 import "TicketGiftingSettingsProto.proto";
@@ -297,7 +297,7 @@ message GameMasterClientTemplateProto {
 	GM9SettingsProto ob_gm_9_settings = 139;
 	ImpressionTrackingSettingsProto impression_tracking_setting = 140;
 	GM11SettingsProto ob_gm_11_settings = 141;
-	ObGMEvolutionTemp ob_evolution_temp = 142;
+	EvolutionChainDisplaySettingsProto evolution_chain_display_settings = 142;
 	GM7SettingsProto ob_gm_7_settings = 143;
 	GM13SettingsProto ob_gm_13_settings = 145;
 	TicketGiftingSettingsProto ticket_gifting_settings = 146;

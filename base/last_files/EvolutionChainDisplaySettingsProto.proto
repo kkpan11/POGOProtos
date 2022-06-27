@@ -22,11 +22,9 @@ syntax = "proto3";
 package POGOProtos.Rpc;
 
 import "HoloPokemonId.proto";
-import "HoloTemporaryEvolutionId.proto";
+import "EvolutionChainDataProto.proto";
 
-message ObGMEvolutionTemp2 {
+message EvolutionChainDisplaySettingsProto {
 	HoloPokemonId pokemon = 1;
-	HoloTemporaryEvolutionId mega_evolution = 2;
-	PokemonDisplayProto.Form form = 3;
-	PokemonDisplayProto.Gender gender = 4;
+	repeated EvolutionChainDataProto chain = 2;
 }

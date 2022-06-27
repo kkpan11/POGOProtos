@@ -21,9 +21,9 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-import "ObGMEvolutionTemp2.proto";
+import "EvolutionChainEntryProto.proto";
 
-message ObGMEvolutionTemp1 {
-	string ob_string = 1;
-	repeated ObGMEvolutionTemp2 ob_gm_evolution = 2;
+message EvolutionChainDataProto {
+	string pokedex_header = 1;
+	repeated EvolutionChainEntryProto evolution_chain_entry = 2;
 }
