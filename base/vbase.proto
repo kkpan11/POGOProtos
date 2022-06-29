@@ -10553,10 +10553,6 @@ message GM11SettingsProto {
 	float ob_float = 5;
 }
 
-message GM13SettingsProto {
-	bool ob_bool = 1;
-}
-
 message GM14SettingsProto {
 	float ob_float = 1;
 }
@@ -10794,7 +10790,7 @@ message GameMasterClientTemplateProto {
 	GM11SettingsProto ob_gm_11_settings = 141;
 	EvolutionChainDisplaySettingsProto evolution_chain_display_settings = 142;
 	GM7SettingsProto ob_gm_7_settings = 143;
-	GM13SettingsProto ob_gm_13_settings = 145;
+	PopupControlSettingsProto popup_control_settings = 145;
 	TicketGiftingSettingsProto ticket_gifting_settings = 146;
 	GM8SettingsProto ob_gm_8_settings = 147;
 	GM10SettingsProto ob_gm_10_settings = 148;
@@ -19253,6 +19249,10 @@ message Polyline {
 
 message PolylineList {
 	repeated Polyline polylines = 1;
+}
+
+message PopupControlSettingsProto {
+	bool enabled = 1;
 }
 
 message PostStaticNewsfeedRequest {

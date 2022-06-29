@@ -21,6 +21,6 @@
 syntax = "proto3";
 package POGOProtos.Rpc;
 
-message GM13SettingsProto {
-	bool ob_bool = 1;
+message PopupControlSettingsProto {
+	bool enabled = 1;
 }
