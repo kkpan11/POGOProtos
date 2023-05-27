@@ -16,7 +16,7 @@ jobs:
     
     strategy:
       matrix:
-        versions: [0.241.x_obf, 0.241.x_p_obf, base, base_proto2]
+        versions: [0.241.x_obf, 0.241.x_p_obf]
 
     steps:
     - uses: actions/checkout@v2
