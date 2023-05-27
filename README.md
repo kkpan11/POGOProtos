@@ -121,12 +121,10 @@ python compile_base.py -l cpp -k -v base:
 _* = Needs plugins_
 
 ##### Decode Game Master or Asset Digest:
-
 ```
   python compile_base.py -gm [./v2_GAME_MASTER] (out as same bin name *.txt)
   python compile_base.py -ga [./ASSET_DIGEST] (out as same bin name *.txt)
 ```
 ---
-
 ### Initial
 - [AeonLucid](https://github.com/AeonLucid/POGOProtos)
