@@ -1,7 +1,7 @@
 <!-- define variables -->
 [1.1]: http://i.imgur.com/M4fJ65n.png (ATTENTION)
 
-POGOProtos [![Python script](https://github.com/Furtif/POGOProtos/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/Furtif/POGOProtos/actions) [![Discord](https://img.shields.io/discord/709943719863910461?label=Discord&style=flat-square)](https://discord.gg/wtNgst3W64) [![Sponsor](https://img.shields.io/badge/Sponsor-Link-brightgreen.svg)](https://github.com/sponsors/Furtif) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?hosted_button_id=WXA874KBC7RNN)  [![NuGet](https://img.shields.io/nuget/v/POGOProtos.Core.svg?maxAge=60)](https://www.nuget.org/packages/POGOProtos.Core) [![POGOProtos.Core on fuget.org](https://www.fuget.org/packages/POGOProtos.Core/badge.svg)](https://www.fuget.org/packages/POGOProtos.Core) 
+POGOProtos [![Python script](https://github.com/Furtif/POGOProtos/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/Furtif/POGOProtos/actions) [![Discord](https://img.shields.io/discord/709943719863910461?label=Discord&style=flat-square)](https://discord.gg/wtNgst3W64) [![Sponsor](https://img.shields.io/badge/Sponsor-Link-brightgreen.svg)](https://github.com/sponsors/Furtif) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?hosted_button_id=WXA874KBC7RNN) 
 =========
 
 
